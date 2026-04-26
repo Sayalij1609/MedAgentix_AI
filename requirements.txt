@@ -1,0 +1,12 @@
+flask
+xgboost
+lightgbm
+langgraph
+langchain
+chromadb
+transformers
+torch
+shap
+opencv-python
+psycopg2
+sqlalchemy
