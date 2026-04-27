@@ -1,0 +1,2001 @@
+Symptom,Duration,Interpretation,Recommended_Action,Temporal_Pattern,Severity_Flag
+Fever,<1 day,Likely Viral,Home monitoring,Early stage pattern,Low
+Fever,<1 day,Likely Viral,Home monitoring,Early stage pattern,Moderate
+Fever,<1 day,Likely Viral,Home monitoring,Early stage pattern,High
+Fever,<1 day,Likely Viral,Home monitoring,Subacute progression,Low
+Fever,<1 day,Likely Viral,Home monitoring,Subacute progression,Moderate
+Fever,<1 day,Likely Viral,Home monitoring,Subacute progression,High
+Fever,<1 day,Likely Viral,Home monitoring,Persistent warning sign,Low
+Fever,<1 day,Likely Viral,Home monitoring,Persistent warning sign,Moderate
+Fever,<1 day,Likely Viral,Home monitoring,Persistent warning sign,High
+Fever,<1 day,Likely Viral,Home monitoring,Possible chronic evolution,Low
+Fever,<1 day,Likely Viral,Home monitoring,Possible chronic evolution,Moderate
+Fever,<1 day,Likely Viral,Home monitoring,Possible chronic evolution,High
+Fever,<1 day,Likely Viral,Home monitoring,Acute onset requiring review,Low
+Fever,<1 day,Likely Viral,Home monitoring,Acute onset requiring review,Moderate
+Fever,<1 day,Likely Viral,Home monitoring,Acute onset requiring review,High
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,<1 day,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Early stage pattern,Low
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Early stage pattern,High
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Subacute progression,Low
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Subacute progression,Moderate
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Subacute progression,High
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Persistent warning sign,Low
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Persistent warning sign,High
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Possible chronic evolution,High
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,<1 day,Likely Viral,Basic lab screening suggested,Acute onset requiring review,High
+Fever,<1 day,Likely Viral,Consider physician evaluation,Early stage pattern,Low
+Fever,<1 day,Likely Viral,Consider physician evaluation,Early stage pattern,Moderate
+Fever,<1 day,Likely Viral,Consider physician evaluation,Early stage pattern,High
+Fever,<1 day,Likely Viral,Consider physician evaluation,Subacute progression,Low
+Fever,<1 day,Likely Viral,Consider physician evaluation,Subacute progression,Moderate
+Fever,<1 day,Likely Viral,Consider physician evaluation,Subacute progression,High
+Fever,<1 day,Likely Viral,Consider physician evaluation,Persistent warning sign,Low
+Fever,<1 day,Likely Viral,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,<1 day,Likely Viral,Consider physician evaluation,Persistent warning sign,High
+Fever,<1 day,Likely Viral,Consider physician evaluation,Possible chronic evolution,Low
+Fever,<1 day,Likely Viral,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,<1 day,Likely Viral,Consider physician evaluation,Possible chronic evolution,High
+Fever,<1 day,Likely Viral,Consider physician evaluation,Acute onset requiring review,Low
+Fever,<1 day,Likely Viral,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,<1 day,Likely Viral,Consider physician evaluation,Acute onset requiring review,High
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Early stage pattern,High
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Subacute progression,Low
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Subacute progression,High
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,<1 day,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,<1 day,Monitor Progression,Home monitoring,Early stage pattern,Low
+Fever,<1 day,Monitor Progression,Home monitoring,Early stage pattern,Moderate
+Fever,<1 day,Monitor Progression,Home monitoring,Early stage pattern,High
+Fever,<1 day,Monitor Progression,Home monitoring,Subacute progression,Low
+Fever,<1 day,Monitor Progression,Home monitoring,Subacute progression,Moderate
+Fever,<1 day,Monitor Progression,Home monitoring,Subacute progression,High
+Fever,<1 day,Monitor Progression,Home monitoring,Persistent warning sign,Low
+Fever,<1 day,Monitor Progression,Home monitoring,Persistent warning sign,Moderate
+Fever,<1 day,Monitor Progression,Home monitoring,Persistent warning sign,High
+Fever,<1 day,Monitor Progression,Home monitoring,Possible chronic evolution,Low
+Fever,<1 day,Monitor Progression,Home monitoring,Possible chronic evolution,Moderate
+Fever,<1 day,Monitor Progression,Home monitoring,Possible chronic evolution,High
+Fever,<1 day,Monitor Progression,Home monitoring,Acute onset requiring review,Low
+Fever,<1 day,Monitor Progression,Home monitoring,Acute onset requiring review,Moderate
+Fever,<1 day,Monitor Progression,Home monitoring,Acute onset requiring review,High
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,<1 day,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Early stage pattern,Low
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Early stage pattern,High
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Subacute progression,Low
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Subacute progression,Moderate
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Subacute progression,High
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Persistent warning sign,Low
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Persistent warning sign,High
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,High
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,<1 day,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,High
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Early stage pattern,Low
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Early stage pattern,Moderate
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Early stage pattern,High
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Subacute progression,Low
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Subacute progression,Moderate
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Subacute progression,High
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Persistent warning sign,Low
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Persistent warning sign,High
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Possible chronic evolution,Low
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Possible chronic evolution,High
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Acute onset requiring review,Low
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,<1 day,Monitor Progression,Consider physician evaluation,Acute onset requiring review,High
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,High
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Subacute progression,Low
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Subacute progression,High
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,<1 day,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Early stage pattern,Low
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Early stage pattern,Moderate
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Early stage pattern,High
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Subacute progression,Low
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Subacute progression,Moderate
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Subacute progression,High
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Persistent warning sign,Low
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Persistent warning sign,Moderate
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Persistent warning sign,High
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,Low
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,Moderate
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,High
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,Low
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,Moderate
+Fever,<1 day,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,High
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,<1 day,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,Low
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,High
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,Low
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,Moderate
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,High
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,Low
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,High
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,High
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,<1 day,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,High
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,Low
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,Moderate
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,High
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,Low
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,Moderate
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,High
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Persistent warning sign,Low
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Persistent warning sign,High
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Possible chronic evolution,Low
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Possible chronic evolution,High
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Acute onset requiring review,Low
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,<1 day,Possible Bacterial Cause,Consider physician evaluation,Acute onset requiring review,High
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Early stage pattern,High
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Subacute progression,Low
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Subacute progression,High
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,<1 day,Possible Bacterial Cause,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Early stage pattern,Low
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Early stage pattern,Moderate
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Early stage pattern,High
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Subacute progression,Low
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Subacute progression,Moderate
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Subacute progression,High
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Persistent warning sign,Low
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Persistent warning sign,Moderate
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Persistent warning sign,High
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Possible chronic evolution,Low
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Possible chronic evolution,Moderate
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Possible chronic evolution,High
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Acute onset requiring review,Low
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Acute onset requiring review,Moderate
+Fever,<1 day,Requires Further Evaluation,Home monitoring,Acute onset requiring review,High
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,<1 day,Requires Further Evaluation,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Early stage pattern,Low
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Early stage pattern,High
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Subacute progression,Low
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Subacute progression,Moderate
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Subacute progression,High
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Persistent warning sign,Low
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Persistent warning sign,High
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Possible chronic evolution,High
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,<1 day,Requires Further Evaluation,Basic lab screening suggested,Acute onset requiring review,High
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Early stage pattern,Low
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Early stage pattern,Moderate
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Early stage pattern,High
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Subacute progression,Low
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Subacute progression,Moderate
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Subacute progression,High
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Persistent warning sign,Low
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Persistent warning sign,High
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Possible chronic evolution,Low
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Possible chronic evolution,High
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Acute onset requiring review,Low
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,<1 day,Requires Further Evaluation,Consider physician evaluation,Acute onset requiring review,High
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Early stage pattern,High
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Subacute progression,Low
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Subacute progression,High
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,<1 day,Requires Further Evaluation,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Early stage pattern,Low
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Early stage pattern,Moderate
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Early stage pattern,High
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Subacute progression,Low
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Subacute progression,Moderate
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Subacute progression,High
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Persistent warning sign,Low
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Persistent warning sign,Moderate
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Persistent warning sign,High
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Possible chronic evolution,Low
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Possible chronic evolution,Moderate
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Possible chronic evolution,High
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Acute onset requiring review,Low
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Acute onset requiring review,Moderate
+Fever,<1 day,Potential Chronic Condition,Home monitoring,Acute onset requiring review,High
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,<1 day,Potential Chronic Condition,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Early stage pattern,Low
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Early stage pattern,High
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Subacute progression,Low
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Subacute progression,Moderate
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Subacute progression,High
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Persistent warning sign,Low
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Persistent warning sign,High
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Possible chronic evolution,High
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,<1 day,Potential Chronic Condition,Basic lab screening suggested,Acute onset requiring review,High
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Early stage pattern,Low
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Early stage pattern,Moderate
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Early stage pattern,High
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Subacute progression,Low
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Subacute progression,Moderate
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Subacute progression,High
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Persistent warning sign,Low
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Persistent warning sign,High
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Possible chronic evolution,Low
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Possible chronic evolution,High
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Acute onset requiring review,Low
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,<1 day,Potential Chronic Condition,Consider physician evaluation,Acute onset requiring review,High
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Early stage pattern,High
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Subacute progression,Low
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Subacute progression,High
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,<1 day,Potential Chronic Condition,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Early stage pattern,Low
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Early stage pattern,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Early stage pattern,High
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Subacute progression,Low
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Subacute progression,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Subacute progression,High
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Persistent warning sign,Low
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Persistent warning sign,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Persistent warning sign,High
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Possible chronic evolution,Low
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Possible chronic evolution,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Possible chronic evolution,High
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Acute onset requiring review,Low
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Acute onset requiring review,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Home monitoring,Acute onset requiring review,High
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Early stage pattern,Low
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Early stage pattern,High
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Subacute progression,Low
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Subacute progression,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Subacute progression,High
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Persistent warning sign,Low
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Persistent warning sign,High
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Possible chronic evolution,High
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Basic lab screening suggested,Acute onset requiring review,High
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Early stage pattern,Low
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Early stage pattern,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Early stage pattern,High
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Subacute progression,Low
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Subacute progression,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Subacute progression,High
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Persistent warning sign,Low
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Persistent warning sign,High
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Possible chronic evolution,Low
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Possible chronic evolution,High
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Acute onset requiring review,Low
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Consider physician evaluation,Acute onset requiring review,High
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Early stage pattern,High
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Subacute progression,Low
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Subacute progression,High
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,<1 day,Urgent Assessment Recommended,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,<1 day,Serious if Persistent,Home monitoring,Early stage pattern,Low
+Fever,<1 day,Serious if Persistent,Home monitoring,Early stage pattern,Moderate
+Fever,<1 day,Serious if Persistent,Home monitoring,Early stage pattern,High
+Fever,<1 day,Serious if Persistent,Home monitoring,Subacute progression,Low
+Fever,<1 day,Serious if Persistent,Home monitoring,Subacute progression,Moderate
+Fever,<1 day,Serious if Persistent,Home monitoring,Subacute progression,High
+Fever,<1 day,Serious if Persistent,Home monitoring,Persistent warning sign,Low
+Fever,<1 day,Serious if Persistent,Home monitoring,Persistent warning sign,Moderate
+Fever,<1 day,Serious if Persistent,Home monitoring,Persistent warning sign,High
+Fever,<1 day,Serious if Persistent,Home monitoring,Possible chronic evolution,Low
+Fever,<1 day,Serious if Persistent,Home monitoring,Possible chronic evolution,Moderate
+Fever,<1 day,Serious if Persistent,Home monitoring,Possible chronic evolution,High
+Fever,<1 day,Serious if Persistent,Home monitoring,Acute onset requiring review,Low
+Fever,<1 day,Serious if Persistent,Home monitoring,Acute onset requiring review,Moderate
+Fever,<1 day,Serious if Persistent,Home monitoring,Acute onset requiring review,High
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,<1 day,Serious if Persistent,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Early stage pattern,Low
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Early stage pattern,High
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Subacute progression,Low
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Subacute progression,Moderate
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Subacute progression,High
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Persistent warning sign,Low
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Persistent warning sign,High
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Possible chronic evolution,High
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,<1 day,Serious if Persistent,Basic lab screening suggested,Acute onset requiring review,High
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Early stage pattern,Low
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Early stage pattern,Moderate
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Early stage pattern,High
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Subacute progression,Low
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Subacute progression,Moderate
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Subacute progression,High
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Persistent warning sign,Low
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Persistent warning sign,High
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Possible chronic evolution,Low
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Possible chronic evolution,High
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Acute onset requiring review,Low
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,<1 day,Serious if Persistent,Consider physician evaluation,Acute onset requiring review,High
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Early stage pattern,High
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Subacute progression,Low
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Subacute progression,High
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,<1 day,Serious if Persistent,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Early stage pattern,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Early stage pattern,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Early stage pattern,High
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Subacute progression,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Subacute progression,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Subacute progression,High
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Persistent warning sign,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Persistent warning sign,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Persistent warning sign,High
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Possible chronic evolution,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Possible chronic evolution,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Possible chronic evolution,High
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Acute onset requiring review,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Acute onset requiring review,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Home monitoring,Acute onset requiring review,High
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Early stage pattern,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Early stage pattern,High
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Subacute progression,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Subacute progression,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Subacute progression,High
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Persistent warning sign,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Persistent warning sign,High
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Possible chronic evolution,High
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Basic lab screening suggested,Acute onset requiring review,High
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Early stage pattern,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Early stage pattern,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Early stage pattern,High
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Subacute progression,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Subacute progression,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Subacute progression,High
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Persistent warning sign,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Persistent warning sign,High
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Possible chronic evolution,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Possible chronic evolution,High
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Acute onset requiring review,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Consider physician evaluation,Acute onset requiring review,High
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Early stage pattern,High
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Subacute progression,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Subacute progression,High
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,<1 day,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,1-3 days,Likely Viral,Home monitoring,Early stage pattern,Low
+Fever,1-3 days,Likely Viral,Home monitoring,Early stage pattern,Moderate
+Fever,1-3 days,Likely Viral,Home monitoring,Early stage pattern,High
+Fever,1-3 days,Likely Viral,Home monitoring,Subacute progression,Low
+Fever,1-3 days,Likely Viral,Home monitoring,Subacute progression,Moderate
+Fever,1-3 days,Likely Viral,Home monitoring,Subacute progression,High
+Fever,1-3 days,Likely Viral,Home monitoring,Persistent warning sign,Low
+Fever,1-3 days,Likely Viral,Home monitoring,Persistent warning sign,Moderate
+Fever,1-3 days,Likely Viral,Home monitoring,Persistent warning sign,High
+Fever,1-3 days,Likely Viral,Home monitoring,Possible chronic evolution,Low
+Fever,1-3 days,Likely Viral,Home monitoring,Possible chronic evolution,Moderate
+Fever,1-3 days,Likely Viral,Home monitoring,Possible chronic evolution,High
+Fever,1-3 days,Likely Viral,Home monitoring,Acute onset requiring review,Low
+Fever,1-3 days,Likely Viral,Home monitoring,Acute onset requiring review,Moderate
+Fever,1-3 days,Likely Viral,Home monitoring,Acute onset requiring review,High
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,1-3 days,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Early stage pattern,Low
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Early stage pattern,High
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Subacute progression,Low
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Subacute progression,Moderate
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Subacute progression,High
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Persistent warning sign,Low
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Persistent warning sign,High
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Possible chronic evolution,High
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,1-3 days,Likely Viral,Basic lab screening suggested,Acute onset requiring review,High
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Early stage pattern,Low
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Early stage pattern,Moderate
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Early stage pattern,High
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Subacute progression,Low
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Subacute progression,Moderate
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Subacute progression,High
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Persistent warning sign,Low
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Persistent warning sign,High
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Possible chronic evolution,Low
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Possible chronic evolution,High
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Acute onset requiring review,Low
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,1-3 days,Likely Viral,Consider physician evaluation,Acute onset requiring review,High
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Early stage pattern,High
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Subacute progression,Low
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Subacute progression,High
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,1-3 days,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,1-3 days,Monitor Progression,Home monitoring,Early stage pattern,Low
+Fever,1-3 days,Monitor Progression,Home monitoring,Early stage pattern,Moderate
+Fever,1-3 days,Monitor Progression,Home monitoring,Early stage pattern,High
+Fever,1-3 days,Monitor Progression,Home monitoring,Subacute progression,Low
+Fever,1-3 days,Monitor Progression,Home monitoring,Subacute progression,Moderate
+Fever,1-3 days,Monitor Progression,Home monitoring,Subacute progression,High
+Fever,1-3 days,Monitor Progression,Home monitoring,Persistent warning sign,Low
+Fever,1-3 days,Monitor Progression,Home monitoring,Persistent warning sign,Moderate
+Fever,1-3 days,Monitor Progression,Home monitoring,Persistent warning sign,High
+Fever,1-3 days,Monitor Progression,Home monitoring,Possible chronic evolution,Low
+Fever,1-3 days,Monitor Progression,Home monitoring,Possible chronic evolution,Moderate
+Fever,1-3 days,Monitor Progression,Home monitoring,Possible chronic evolution,High
+Fever,1-3 days,Monitor Progression,Home monitoring,Acute onset requiring review,Low
+Fever,1-3 days,Monitor Progression,Home monitoring,Acute onset requiring review,Moderate
+Fever,1-3 days,Monitor Progression,Home monitoring,Acute onset requiring review,High
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,1-3 days,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Early stage pattern,Low
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Early stage pattern,High
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Subacute progression,Low
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Subacute progression,Moderate
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Subacute progression,High
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Persistent warning sign,Low
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Persistent warning sign,High
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,High
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,1-3 days,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,High
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Early stage pattern,Low
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Early stage pattern,Moderate
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Early stage pattern,High
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Subacute progression,Low
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Subacute progression,Moderate
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Subacute progression,High
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Persistent warning sign,Low
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Persistent warning sign,High
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Possible chronic evolution,Low
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Possible chronic evolution,High
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Acute onset requiring review,Low
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,1-3 days,Monitor Progression,Consider physician evaluation,Acute onset requiring review,High
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,High
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Subacute progression,Low
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Subacute progression,High
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,1-3 days,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Early stage pattern,Low
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Early stage pattern,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Early stage pattern,High
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Subacute progression,Low
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Subacute progression,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Subacute progression,High
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Persistent warning sign,Low
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Persistent warning sign,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Persistent warning sign,High
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,Low
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,High
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,Low
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,High
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,Low
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,High
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,Low
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,High
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,Low
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,High
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,High
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,High
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,Low
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,High
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,Low
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,High
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Persistent warning sign,Low
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Persistent warning sign,High
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Possible chronic evolution,Low
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Possible chronic evolution,High
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Acute onset requiring review,Low
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Consider physician evaluation,Acute onset requiring review,High
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Early stage pattern,High
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Subacute progression,Low
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Subacute progression,High
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,1-3 days,Possible Bacterial Cause,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Early stage pattern,Low
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Early stage pattern,Moderate
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Early stage pattern,High
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Subacute progression,Low
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Subacute progression,Moderate
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Subacute progression,High
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Persistent warning sign,Low
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Persistent warning sign,Moderate
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Persistent warning sign,High
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Possible chronic evolution,Low
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Possible chronic evolution,Moderate
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Possible chronic evolution,High
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Acute onset requiring review,Low
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Acute onset requiring review,Moderate
+Fever,1-3 days,Requires Further Evaluation,Home monitoring,Acute onset requiring review,High
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,1-3 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Early stage pattern,Low
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Early stage pattern,High
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Subacute progression,Low
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Subacute progression,Moderate
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Subacute progression,High
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Persistent warning sign,Low
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Persistent warning sign,High
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Possible chronic evolution,High
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,1-3 days,Requires Further Evaluation,Basic lab screening suggested,Acute onset requiring review,High
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Early stage pattern,Low
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Early stage pattern,Moderate
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Early stage pattern,High
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Subacute progression,Low
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Subacute progression,Moderate
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Subacute progression,High
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Persistent warning sign,Low
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Persistent warning sign,High
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Possible chronic evolution,Low
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Possible chronic evolution,High
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Acute onset requiring review,Low
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,1-3 days,Requires Further Evaluation,Consider physician evaluation,Acute onset requiring review,High
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Early stage pattern,High
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Subacute progression,Low
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Subacute progression,High
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,1-3 days,Requires Further Evaluation,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Early stage pattern,Low
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Early stage pattern,Moderate
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Early stage pattern,High
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Subacute progression,Low
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Subacute progression,Moderate
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Subacute progression,High
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Persistent warning sign,Low
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Persistent warning sign,Moderate
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Persistent warning sign,High
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Possible chronic evolution,Low
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Possible chronic evolution,Moderate
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Possible chronic evolution,High
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Acute onset requiring review,Low
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Acute onset requiring review,Moderate
+Fever,1-3 days,Potential Chronic Condition,Home monitoring,Acute onset requiring review,High
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,1-3 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Early stage pattern,Low
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Early stage pattern,High
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Subacute progression,Low
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Subacute progression,Moderate
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Subacute progression,High
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Persistent warning sign,Low
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Persistent warning sign,High
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Possible chronic evolution,High
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,1-3 days,Potential Chronic Condition,Basic lab screening suggested,Acute onset requiring review,High
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Early stage pattern,Low
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Early stage pattern,Moderate
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Early stage pattern,High
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Subacute progression,Low
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Subacute progression,Moderate
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Subacute progression,High
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Persistent warning sign,Low
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Persistent warning sign,High
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Possible chronic evolution,Low
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Possible chronic evolution,High
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Acute onset requiring review,Low
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,1-3 days,Potential Chronic Condition,Consider physician evaluation,Acute onset requiring review,High
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Early stage pattern,High
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Subacute progression,Low
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Subacute progression,High
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,1-3 days,Potential Chronic Condition,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Early stage pattern,Low
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Early stage pattern,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Early stage pattern,High
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Subacute progression,Low
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Subacute progression,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Subacute progression,High
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Persistent warning sign,Low
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Persistent warning sign,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Persistent warning sign,High
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Possible chronic evolution,Low
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Possible chronic evolution,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Possible chronic evolution,High
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Acute onset requiring review,Low
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Acute onset requiring review,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Home monitoring,Acute onset requiring review,High
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Early stage pattern,Low
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Early stage pattern,High
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Subacute progression,Low
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Subacute progression,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Subacute progression,High
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Persistent warning sign,Low
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Persistent warning sign,High
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Possible chronic evolution,High
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Basic lab screening suggested,Acute onset requiring review,High
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Early stage pattern,Low
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Early stage pattern,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Early stage pattern,High
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Subacute progression,Low
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Subacute progression,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Subacute progression,High
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Persistent warning sign,Low
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Persistent warning sign,High
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Possible chronic evolution,Low
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Possible chronic evolution,High
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Acute onset requiring review,Low
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Consider physician evaluation,Acute onset requiring review,High
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Early stage pattern,High
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Subacute progression,Low
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Subacute progression,High
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,1-3 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,1-3 days,Serious if Persistent,Home monitoring,Early stage pattern,Low
+Fever,1-3 days,Serious if Persistent,Home monitoring,Early stage pattern,Moderate
+Fever,1-3 days,Serious if Persistent,Home monitoring,Early stage pattern,High
+Fever,1-3 days,Serious if Persistent,Home monitoring,Subacute progression,Low
+Fever,1-3 days,Serious if Persistent,Home monitoring,Subacute progression,Moderate
+Fever,1-3 days,Serious if Persistent,Home monitoring,Subacute progression,High
+Fever,1-3 days,Serious if Persistent,Home monitoring,Persistent warning sign,Low
+Fever,1-3 days,Serious if Persistent,Home monitoring,Persistent warning sign,Moderate
+Fever,1-3 days,Serious if Persistent,Home monitoring,Persistent warning sign,High
+Fever,1-3 days,Serious if Persistent,Home monitoring,Possible chronic evolution,Low
+Fever,1-3 days,Serious if Persistent,Home monitoring,Possible chronic evolution,Moderate
+Fever,1-3 days,Serious if Persistent,Home monitoring,Possible chronic evolution,High
+Fever,1-3 days,Serious if Persistent,Home monitoring,Acute onset requiring review,Low
+Fever,1-3 days,Serious if Persistent,Home monitoring,Acute onset requiring review,Moderate
+Fever,1-3 days,Serious if Persistent,Home monitoring,Acute onset requiring review,High
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,1-3 days,Serious if Persistent,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Early stage pattern,Low
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Early stage pattern,High
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Subacute progression,Low
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Subacute progression,Moderate
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Subacute progression,High
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Persistent warning sign,Low
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Persistent warning sign,High
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Possible chronic evolution,High
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,1-3 days,Serious if Persistent,Basic lab screening suggested,Acute onset requiring review,High
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Early stage pattern,Low
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Early stage pattern,Moderate
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Early stage pattern,High
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Subacute progression,Low
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Subacute progression,Moderate
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Subacute progression,High
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Persistent warning sign,Low
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Persistent warning sign,High
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Possible chronic evolution,Low
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Possible chronic evolution,High
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Acute onset requiring review,Low
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,1-3 days,Serious if Persistent,Consider physician evaluation,Acute onset requiring review,High
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Early stage pattern,High
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Subacute progression,Low
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Subacute progression,High
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,1-3 days,Serious if Persistent,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Early stage pattern,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Early stage pattern,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Early stage pattern,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Subacute progression,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Subacute progression,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Subacute progression,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Persistent warning sign,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Persistent warning sign,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Persistent warning sign,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Possible chronic evolution,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Possible chronic evolution,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Possible chronic evolution,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Acute onset requiring review,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Acute onset requiring review,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Home monitoring,Acute onset requiring review,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Early stage pattern,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Early stage pattern,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Subacute progression,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Subacute progression,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Subacute progression,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Persistent warning sign,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Persistent warning sign,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Possible chronic evolution,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Acute onset requiring review,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Early stage pattern,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Early stage pattern,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Early stage pattern,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Subacute progression,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Subacute progression,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Subacute progression,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Persistent warning sign,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Persistent warning sign,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Possible chronic evolution,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Possible chronic evolution,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Acute onset requiring review,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Consider physician evaluation,Acute onset requiring review,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Early stage pattern,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Subacute progression,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Subacute progression,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,1-3 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,3-5 days,Likely Viral,Home monitoring,Early stage pattern,Low
+Fever,3-5 days,Likely Viral,Home monitoring,Early stage pattern,Moderate
+Fever,3-5 days,Likely Viral,Home monitoring,Early stage pattern,High
+Fever,3-5 days,Likely Viral,Home monitoring,Subacute progression,Low
+Fever,3-5 days,Likely Viral,Home monitoring,Subacute progression,Moderate
+Fever,3-5 days,Likely Viral,Home monitoring,Subacute progression,High
+Fever,3-5 days,Likely Viral,Home monitoring,Persistent warning sign,Low
+Fever,3-5 days,Likely Viral,Home monitoring,Persistent warning sign,Moderate
+Fever,3-5 days,Likely Viral,Home monitoring,Persistent warning sign,High
+Fever,3-5 days,Likely Viral,Home monitoring,Possible chronic evolution,Low
+Fever,3-5 days,Likely Viral,Home monitoring,Possible chronic evolution,Moderate
+Fever,3-5 days,Likely Viral,Home monitoring,Possible chronic evolution,High
+Fever,3-5 days,Likely Viral,Home monitoring,Acute onset requiring review,Low
+Fever,3-5 days,Likely Viral,Home monitoring,Acute onset requiring review,Moderate
+Fever,3-5 days,Likely Viral,Home monitoring,Acute onset requiring review,High
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,3-5 days,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Early stage pattern,Low
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Early stage pattern,High
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Subacute progression,Low
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Subacute progression,Moderate
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Subacute progression,High
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Persistent warning sign,Low
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Persistent warning sign,High
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Possible chronic evolution,High
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,3-5 days,Likely Viral,Basic lab screening suggested,Acute onset requiring review,High
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Early stage pattern,Low
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Early stage pattern,Moderate
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Early stage pattern,High
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Subacute progression,Low
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Subacute progression,Moderate
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Subacute progression,High
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Persistent warning sign,Low
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Persistent warning sign,High
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Possible chronic evolution,Low
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Possible chronic evolution,High
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Acute onset requiring review,Low
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,3-5 days,Likely Viral,Consider physician evaluation,Acute onset requiring review,High
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Early stage pattern,High
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Subacute progression,Low
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Subacute progression,High
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,3-5 days,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,3-5 days,Monitor Progression,Home monitoring,Early stage pattern,Low
+Fever,3-5 days,Monitor Progression,Home monitoring,Early stage pattern,Moderate
+Fever,3-5 days,Monitor Progression,Home monitoring,Early stage pattern,High
+Fever,3-5 days,Monitor Progression,Home monitoring,Subacute progression,Low
+Fever,3-5 days,Monitor Progression,Home monitoring,Subacute progression,Moderate
+Fever,3-5 days,Monitor Progression,Home monitoring,Subacute progression,High
+Fever,3-5 days,Monitor Progression,Home monitoring,Persistent warning sign,Low
+Fever,3-5 days,Monitor Progression,Home monitoring,Persistent warning sign,Moderate
+Fever,3-5 days,Monitor Progression,Home monitoring,Persistent warning sign,High
+Fever,3-5 days,Monitor Progression,Home monitoring,Possible chronic evolution,Low
+Fever,3-5 days,Monitor Progression,Home monitoring,Possible chronic evolution,Moderate
+Fever,3-5 days,Monitor Progression,Home monitoring,Possible chronic evolution,High
+Fever,3-5 days,Monitor Progression,Home monitoring,Acute onset requiring review,Low
+Fever,3-5 days,Monitor Progression,Home monitoring,Acute onset requiring review,Moderate
+Fever,3-5 days,Monitor Progression,Home monitoring,Acute onset requiring review,High
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,3-5 days,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Early stage pattern,Low
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Early stage pattern,High
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Subacute progression,Low
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Subacute progression,Moderate
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Subacute progression,High
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Persistent warning sign,Low
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Persistent warning sign,High
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,High
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,3-5 days,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,High
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Early stage pattern,Low
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Early stage pattern,Moderate
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Early stage pattern,High
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Subacute progression,Low
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Subacute progression,Moderate
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Subacute progression,High
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Persistent warning sign,Low
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Persistent warning sign,High
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Possible chronic evolution,Low
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Possible chronic evolution,High
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Acute onset requiring review,Low
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,3-5 days,Monitor Progression,Consider physician evaluation,Acute onset requiring review,High
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,High
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Subacute progression,Low
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Subacute progression,High
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,3-5 days,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Early stage pattern,Low
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Early stage pattern,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Early stage pattern,High
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Subacute progression,Low
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Subacute progression,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Subacute progression,High
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Persistent warning sign,Low
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Persistent warning sign,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Persistent warning sign,High
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,Low
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,High
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,Low
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,High
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,Low
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,High
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,Low
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,High
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,Low
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,High
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,High
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,High
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,Low
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,High
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,Low
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,High
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Persistent warning sign,Low
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Persistent warning sign,High
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Possible chronic evolution,Low
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Possible chronic evolution,High
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Acute onset requiring review,Low
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Consider physician evaluation,Acute onset requiring review,High
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Early stage pattern,High
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Subacute progression,Low
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Subacute progression,High
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,3-5 days,Possible Bacterial Cause,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Early stage pattern,Low
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Early stage pattern,Moderate
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Early stage pattern,High
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Subacute progression,Low
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Subacute progression,Moderate
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Subacute progression,High
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Persistent warning sign,Low
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Persistent warning sign,Moderate
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Persistent warning sign,High
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Possible chronic evolution,Low
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Possible chronic evolution,Moderate
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Possible chronic evolution,High
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Acute onset requiring review,Low
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Acute onset requiring review,Moderate
+Fever,3-5 days,Requires Further Evaluation,Home monitoring,Acute onset requiring review,High
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,3-5 days,Requires Further Evaluation,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Early stage pattern,Low
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Early stage pattern,High
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Subacute progression,Low
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Subacute progression,Moderate
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Subacute progression,High
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Persistent warning sign,Low
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Persistent warning sign,High
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Possible chronic evolution,High
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,3-5 days,Requires Further Evaluation,Basic lab screening suggested,Acute onset requiring review,High
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Early stage pattern,Low
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Early stage pattern,Moderate
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Early stage pattern,High
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Subacute progression,Low
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Subacute progression,Moderate
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Subacute progression,High
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Persistent warning sign,Low
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Persistent warning sign,High
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Possible chronic evolution,Low
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Possible chronic evolution,High
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Acute onset requiring review,Low
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,3-5 days,Requires Further Evaluation,Consider physician evaluation,Acute onset requiring review,High
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Early stage pattern,High
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Subacute progression,Low
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Subacute progression,High
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,3-5 days,Requires Further Evaluation,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Early stage pattern,Low
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Early stage pattern,Moderate
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Early stage pattern,High
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Subacute progression,Low
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Subacute progression,Moderate
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Subacute progression,High
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Persistent warning sign,Low
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Persistent warning sign,Moderate
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Persistent warning sign,High
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Possible chronic evolution,Low
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Possible chronic evolution,Moderate
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Possible chronic evolution,High
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Acute onset requiring review,Low
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Acute onset requiring review,Moderate
+Fever,3-5 days,Potential Chronic Condition,Home monitoring,Acute onset requiring review,High
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,3-5 days,Potential Chronic Condition,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Early stage pattern,Low
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Early stage pattern,High
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Subacute progression,Low
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Subacute progression,Moderate
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Subacute progression,High
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Persistent warning sign,Low
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Persistent warning sign,High
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Possible chronic evolution,High
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,3-5 days,Potential Chronic Condition,Basic lab screening suggested,Acute onset requiring review,High
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Early stage pattern,Low
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Early stage pattern,Moderate
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Early stage pattern,High
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Subacute progression,Low
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Subacute progression,Moderate
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Subacute progression,High
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Persistent warning sign,Low
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Persistent warning sign,High
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Possible chronic evolution,Low
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Possible chronic evolution,High
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Acute onset requiring review,Low
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,3-5 days,Potential Chronic Condition,Consider physician evaluation,Acute onset requiring review,High
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Early stage pattern,High
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Subacute progression,Low
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Subacute progression,High
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,3-5 days,Potential Chronic Condition,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Early stage pattern,Low
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Early stage pattern,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Early stage pattern,High
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Subacute progression,Low
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Subacute progression,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Subacute progression,High
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Persistent warning sign,Low
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Persistent warning sign,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Persistent warning sign,High
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Possible chronic evolution,Low
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Possible chronic evolution,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Possible chronic evolution,High
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Acute onset requiring review,Low
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Acute onset requiring review,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Home monitoring,Acute onset requiring review,High
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Early stage pattern,Low
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Early stage pattern,High
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Subacute progression,Low
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Subacute progression,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Subacute progression,High
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Persistent warning sign,Low
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Persistent warning sign,High
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Possible chronic evolution,High
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Basic lab screening suggested,Acute onset requiring review,High
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Early stage pattern,Low
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Early stage pattern,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Early stage pattern,High
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Subacute progression,Low
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Subacute progression,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Subacute progression,High
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Persistent warning sign,Low
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Persistent warning sign,High
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Possible chronic evolution,Low
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Possible chronic evolution,High
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Acute onset requiring review,Low
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Consider physician evaluation,Acute onset requiring review,High
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Early stage pattern,High
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Subacute progression,Low
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Subacute progression,High
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,3-5 days,Urgent Assessment Recommended,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,3-5 days,Serious if Persistent,Home monitoring,Early stage pattern,Low
+Fever,3-5 days,Serious if Persistent,Home monitoring,Early stage pattern,Moderate
+Fever,3-5 days,Serious if Persistent,Home monitoring,Early stage pattern,High
+Fever,3-5 days,Serious if Persistent,Home monitoring,Subacute progression,Low
+Fever,3-5 days,Serious if Persistent,Home monitoring,Subacute progression,Moderate
+Fever,3-5 days,Serious if Persistent,Home monitoring,Subacute progression,High
+Fever,3-5 days,Serious if Persistent,Home monitoring,Persistent warning sign,Low
+Fever,3-5 days,Serious if Persistent,Home monitoring,Persistent warning sign,Moderate
+Fever,3-5 days,Serious if Persistent,Home monitoring,Persistent warning sign,High
+Fever,3-5 days,Serious if Persistent,Home monitoring,Possible chronic evolution,Low
+Fever,3-5 days,Serious if Persistent,Home monitoring,Possible chronic evolution,Moderate
+Fever,3-5 days,Serious if Persistent,Home monitoring,Possible chronic evolution,High
+Fever,3-5 days,Serious if Persistent,Home monitoring,Acute onset requiring review,Low
+Fever,3-5 days,Serious if Persistent,Home monitoring,Acute onset requiring review,Moderate
+Fever,3-5 days,Serious if Persistent,Home monitoring,Acute onset requiring review,High
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,3-5 days,Serious if Persistent,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Early stage pattern,Low
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Early stage pattern,High
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Subacute progression,Low
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Subacute progression,Moderate
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Subacute progression,High
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Persistent warning sign,Low
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Persistent warning sign,High
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Possible chronic evolution,High
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,3-5 days,Serious if Persistent,Basic lab screening suggested,Acute onset requiring review,High
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Early stage pattern,Low
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Early stage pattern,Moderate
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Early stage pattern,High
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Subacute progression,Low
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Subacute progression,Moderate
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Subacute progression,High
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Persistent warning sign,Low
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Persistent warning sign,High
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Possible chronic evolution,Low
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Possible chronic evolution,High
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Acute onset requiring review,Low
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,3-5 days,Serious if Persistent,Consider physician evaluation,Acute onset requiring review,High
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Early stage pattern,High
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Subacute progression,Low
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Subacute progression,High
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,3-5 days,Serious if Persistent,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Early stage pattern,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Early stage pattern,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Early stage pattern,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Subacute progression,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Subacute progression,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Subacute progression,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Persistent warning sign,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Persistent warning sign,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Persistent warning sign,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Possible chronic evolution,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Possible chronic evolution,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Possible chronic evolution,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Acute onset requiring review,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Acute onset requiring review,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Home monitoring,Acute onset requiring review,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Early stage pattern,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Early stage pattern,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Subacute progression,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Subacute progression,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Subacute progression,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Persistent warning sign,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Persistent warning sign,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Possible chronic evolution,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Basic lab screening suggested,Acute onset requiring review,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Early stage pattern,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Early stage pattern,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Early stage pattern,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Subacute progression,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Subacute progression,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Subacute progression,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Persistent warning sign,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Persistent warning sign,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Possible chronic evolution,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Possible chronic evolution,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Acute onset requiring review,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Consider physician evaluation,Acute onset requiring review,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Early stage pattern,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Subacute progression,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Subacute progression,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,3-5 days,Acute Self-Limiting Pattern,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,5-7 days,Likely Viral,Home monitoring,Early stage pattern,Low
+Fever,5-7 days,Likely Viral,Home monitoring,Early stage pattern,Moderate
+Fever,5-7 days,Likely Viral,Home monitoring,Early stage pattern,High
+Fever,5-7 days,Likely Viral,Home monitoring,Subacute progression,Low
+Fever,5-7 days,Likely Viral,Home monitoring,Subacute progression,Moderate
+Fever,5-7 days,Likely Viral,Home monitoring,Subacute progression,High
+Fever,5-7 days,Likely Viral,Home monitoring,Persistent warning sign,Low
+Fever,5-7 days,Likely Viral,Home monitoring,Persistent warning sign,Moderate
+Fever,5-7 days,Likely Viral,Home monitoring,Persistent warning sign,High
+Fever,5-7 days,Likely Viral,Home monitoring,Possible chronic evolution,Low
+Fever,5-7 days,Likely Viral,Home monitoring,Possible chronic evolution,Moderate
+Fever,5-7 days,Likely Viral,Home monitoring,Possible chronic evolution,High
+Fever,5-7 days,Likely Viral,Home monitoring,Acute onset requiring review,Low
+Fever,5-7 days,Likely Viral,Home monitoring,Acute onset requiring review,Moderate
+Fever,5-7 days,Likely Viral,Home monitoring,Acute onset requiring review,High
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,5-7 days,Likely Viral,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Early stage pattern,Low
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Early stage pattern,High
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Subacute progression,Low
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Subacute progression,Moderate
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Subacute progression,High
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Persistent warning sign,Low
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Persistent warning sign,High
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Possible chronic evolution,High
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,5-7 days,Likely Viral,Basic lab screening suggested,Acute onset requiring review,High
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Early stage pattern,Low
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Early stage pattern,Moderate
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Early stage pattern,High
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Subacute progression,Low
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Subacute progression,Moderate
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Subacute progression,High
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Persistent warning sign,Low
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Persistent warning sign,High
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Possible chronic evolution,Low
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Possible chronic evolution,High
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Acute onset requiring review,Low
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,5-7 days,Likely Viral,Consider physician evaluation,Acute onset requiring review,High
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Early stage pattern,High
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Subacute progression,Low
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Subacute progression,High
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,5-7 days,Likely Viral,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,5-7 days,Monitor Progression,Home monitoring,Early stage pattern,Low
+Fever,5-7 days,Monitor Progression,Home monitoring,Early stage pattern,Moderate
+Fever,5-7 days,Monitor Progression,Home monitoring,Early stage pattern,High
+Fever,5-7 days,Monitor Progression,Home monitoring,Subacute progression,Low
+Fever,5-7 days,Monitor Progression,Home monitoring,Subacute progression,Moderate
+Fever,5-7 days,Monitor Progression,Home monitoring,Subacute progression,High
+Fever,5-7 days,Monitor Progression,Home monitoring,Persistent warning sign,Low
+Fever,5-7 days,Monitor Progression,Home monitoring,Persistent warning sign,Moderate
+Fever,5-7 days,Monitor Progression,Home monitoring,Persistent warning sign,High
+Fever,5-7 days,Monitor Progression,Home monitoring,Possible chronic evolution,Low
+Fever,5-7 days,Monitor Progression,Home monitoring,Possible chronic evolution,Moderate
+Fever,5-7 days,Monitor Progression,Home monitoring,Possible chronic evolution,High
+Fever,5-7 days,Monitor Progression,Home monitoring,Acute onset requiring review,Low
+Fever,5-7 days,Monitor Progression,Home monitoring,Acute onset requiring review,Moderate
+Fever,5-7 days,Monitor Progression,Home monitoring,Acute onset requiring review,High
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,5-7 days,Monitor Progression,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Early stage pattern,Low
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Early stage pattern,High
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Subacute progression,Low
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Subacute progression,Moderate
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Subacute progression,High
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Persistent warning sign,Low
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Persistent warning sign,High
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Possible chronic evolution,High
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,5-7 days,Monitor Progression,Basic lab screening suggested,Acute onset requiring review,High
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Early stage pattern,Low
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Early stage pattern,Moderate
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Early stage pattern,High
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Subacute progression,Low
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Subacute progression,Moderate
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Subacute progression,High
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Persistent warning sign,Low
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Persistent warning sign,Moderate
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Persistent warning sign,High
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Possible chronic evolution,Low
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Possible chronic evolution,Moderate
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Possible chronic evolution,High
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Acute onset requiring review,Low
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Acute onset requiring review,Moderate
+Fever,5-7 days,Monitor Progression,Consider physician evaluation,Acute onset requiring review,High
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,Low
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,Moderate
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Early stage pattern,High
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Subacute progression,Low
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Subacute progression,Moderate
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Subacute progression,High
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,Low
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,Moderate
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Persistent warning sign,High
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,Low
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,Moderate
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Possible chronic evolution,High
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,Low
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,Moderate
+Fever,5-7 days,Monitor Progression,Escalate if symptoms worsen,Acute onset requiring review,High
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Early stage pattern,Low
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Early stage pattern,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Early stage pattern,High
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Subacute progression,Low
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Subacute progression,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Subacute progression,High
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Persistent warning sign,Low
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Persistent warning sign,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Persistent warning sign,High
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,Low
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Possible chronic evolution,High
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,Low
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Home monitoring,Acute onset requiring review,High
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,Low
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Early stage pattern,High
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,Low
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Subacute progression,High
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,Low
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Persistent warning sign,High
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,Low
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Possible chronic evolution,High
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,Low
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Repeat assessment in 24 hrs,Acute onset requiring review,High
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,Low
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Early stage pattern,High
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,Low
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Subacute progression,High
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,Low
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Persistent warning sign,High
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,Low
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Possible chronic evolution,High
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,Low
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Basic lab screening suggested,Acute onset requiring review,High
+Fever,5-7 days,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,Low
+Fever,5-7 days,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,Moderate
+Fever,5-7 days,Possible Bacterial Cause,Consider physician evaluation,Early stage pattern,High
+Fever,5-7 days,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,Low
+Fever,5-7 days,Possible Bacterial Cause,Consider physician evaluation,Subacute progression,Moderate

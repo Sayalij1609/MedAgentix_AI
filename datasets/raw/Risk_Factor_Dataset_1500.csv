@@ -1,0 +1,1501 @@
+Risk_Factor,Condition,Weight,Gender_Specific_Risk,Lifestyle_Profile,Risk_Score,Recommendation
+Smoking,Lung Disease,High,Male,Moderately Active,3,Regular screening advised
+Male >45,Cardiac Risk,High,Male,Active,2,Lifestyle modification needed
+Sedentary Lifestyle,Diabetes,High,Both,Moderately Active,9,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,High,Male,Moderately Active,7,High-risk monitoring required
+Alcohol Use,Liver Disease,Medium,Female,Active,2,Preventive intervention suggested
+Smoking,COPD,High,Both,Sedentary,1,Preventive intervention suggested
+Male >45,Cardiac Risk,High,Female,Active,9,High-risk monitoring required
+Poor Diet,Obesity,High,Both,Active,1,Lifestyle modification needed
+Alcohol Use,Liver Disease,High,Male,Smoker,5,Preventive intervention suggested
+Family History,Cancer Risk,Medium,Male,Sedentary,2,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Male,Smoker,7,High-risk monitoring required
+Male >45,Cardiac Risk,High,Male,Moderately Active,1,High-risk monitoring required
+High Cholesterol,Heart Disease,Low,Both,Sedentary,4,Preventive intervention suggested
+High Cholesterol,Stroke,Medium,Female,Moderately Active,4,Periodic diagnostic assessment
+Male >45,Prostate Risk,High,Female,Alcohol Consumer,7,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Medium,Male,Active,2,Lifestyle modification needed
+Obesity,Heart Disease,Medium,Male,Smoker,7,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,Medium,Both,Active,2,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,Medium,Female,Smoker,3,Preventive intervention suggested
+Age > 50,Hypertension,High,Female,Alcohol Consumer,3,Periodic diagnostic assessment
+Smoking,Cancer Risk,Medium,Both,Alcohol Consumer,10,Lifestyle modification needed
+Obesity,Hypertension,High,Both,Alcohol Consumer,1,Periodic diagnostic assessment
+Family History,Diabetes,Low,Female,Sedentary,4,Regular screening advised
+Sedentary Lifestyle,Diabetes,High,Male,Smoker,2,Periodic diagnostic assessment
+Obesity,Diabetes,High,Both,Moderately Active,5,Periodic diagnostic assessment
+Poor Diet,Obesity,High,Both,Moderately Active,5,Preventive intervention suggested
+Family History,Diabetes,High,Female,Active,4,Lifestyle modification needed
+Smoking,COPD,Low,Both,Moderately Active,10,Lifestyle modification needed
+Age > 50,Heart Disease,High,Male,Moderately Active,2,Regular screening advised
+Family History,Cancer Risk,Medium,Female,Smoker,4,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Both,Alcohol Consumer,8,Lifestyle modification needed
+Female Pregnancy,Anemia,Medium,Male,Smoker,6,Preventive intervention suggested
+High Cholesterol,Heart Disease,High,Male,Active,1,Preventive intervention suggested
+Family History,Cancer Risk,Medium,Male,Alcohol Consumer,8,Lifestyle modification needed
+High Cholesterol,Atherosclerosis,Medium,Male,Active,8,Periodic diagnostic assessment
+Smoking,Lung Disease,High,Both,Active,2,Lifestyle modification needed
+Obesity,Hypertension,Medium,Male,Smoker,1,Lifestyle modification needed
+High Cholesterol,Atherosclerosis,High,Female,Smoker,5,Preventive intervention suggested
+Male >45,Hypertension,High,Male,Moderately Active,5,Lifestyle modification needed
+Age > 50,Hypertension,High,Male,Sedentary,1,Regular screening advised
+Poor Diet,Obesity,Medium,Both,Moderately Active,1,Periodic diagnostic assessment
+Smoking,Lung Disease,Low,Male,Moderately Active,7,Regular screening advised
+Poor Diet,Diabetes,High,Male,Alcohol Consumer,2,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,Medium,Female,Moderately Active,6,Lifestyle modification needed
+Alcohol Use,Hypertension,Low,Both,Sedentary,8,High-risk monitoring required
+Smoking,Lung Disease,Medium,Both,Active,2,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,Medium,Female,Active,4,High-risk monitoring required
+Alcohol Use,Liver Disease,Medium,Both,Sedentary,10,Periodic diagnostic assessment
+Age > 50,Hypertension,High,Female,Active,3,High-risk monitoring required
+Smoking,Lung Disease,High,Male,Sedentary,5,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,Medium,Both,Sedentary,9,Preventive intervention suggested
+Alcohol Use,Liver Disease,Low,Female,Sedentary,1,Regular screening advised
+Family History,Cancer Risk,High,Female,Moderately Active,8,Periodic diagnostic assessment
+High Cholesterol,Stroke,Low,Male,Moderately Active,9,Regular screening advised
+Family History,Heart Disease,High,Female,Moderately Active,1,High-risk monitoring required
+Family History,Cancer Risk,High,Male,Moderately Active,2,High-risk monitoring required
+Male >45,Prostate Risk,High,Both,Moderately Active,4,Lifestyle modification needed
+Obesity,Hypertension,Low,Both,Sedentary,7,Lifestyle modification needed
+Alcohol Use,Liver Disease,High,Male,Smoker,1,Preventive intervention suggested
+Sedentary Lifestyle,Obesity,High,Female,Sedentary,5,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,High,Female,Sedentary,5,Regular screening advised
+Alcohol Use,Hypertension,High,Female,Alcohol Consumer,6,Regular screening advised
+Smoking,COPD,Low,Female,Active,2,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,High,Female,Smoker,10,Periodic diagnostic assessment
+Smoking,COPD,High,Male,Sedentary,1,Preventive intervention suggested
+Age > 50,Hypertension,High,Both,Moderately Active,6,Preventive intervention suggested
+Smoking,Cancer Risk,High,Both,Sedentary,2,High-risk monitoring required
+Male >45,Prostate Risk,High,Female,Smoker,5,Periodic diagnostic assessment
+Obesity,Diabetes,Medium,Female,Moderately Active,10,Periodic diagnostic assessment
+Alcohol Use,Hypertension,High,Male,Sedentary,5,Lifestyle modification needed
+High Cholesterol,Stroke,High,Female,Smoker,8,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,Medium,Both,Moderately Active,2,High-risk monitoring required
+Male >45,Hypertension,High,Female,Active,4,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Low,Male,Moderately Active,8,Periodic diagnostic assessment
+Smoking,COPD,Medium,Both,Alcohol Consumer,4,Preventive intervention suggested
+Female Pregnancy,Anemia,Medium,Both,Active,2,Preventive intervention suggested
+Sedentary Lifestyle,Obesity,High,Both,Alcohol Consumer,8,Regular screening advised
+Male >45,Cardiac Risk,High,Male,Smoker,3,Preventive intervention suggested
+Male >45,Hypertension,High,Female,Alcohol Consumer,9,Preventive intervention suggested
+Male >45,Prostate Risk,High,Both,Smoker,8,High-risk monitoring required
+Sedentary Lifestyle,Diabetes,Medium,Both,Smoker,4,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,High,Male,Sedentary,6,High-risk monitoring required
+Male >45,Cardiac Risk,Low,Male,Smoker,3,Lifestyle modification needed
+Smoking,COPD,Medium,Both,Smoker,7,Regular screening advised
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Both,Active,10,Preventive intervention suggested
+Female Pregnancy,Gestational Diabetes,High,Female,Smoker,7,Periodic diagnostic assessment
+Male >45,Hypertension,High,Female,Moderately Active,5,Preventive intervention suggested
+Female Pregnancy,Gestational Diabetes,Medium,Both,Smoker,3,Preventive intervention suggested
+Obesity,Heart Disease,Medium,Female,Alcohol Consumer,10,Regular screening advised
+Smoking,Cancer Risk,Medium,Female,Moderately Active,1,High-risk monitoring required
+High Cholesterol,Heart Disease,Medium,Female,Sedentary,7,High-risk monitoring required
+High Cholesterol,Heart Disease,High,Female,Active,9,Regular screening advised
+Family History,Cancer Risk,High,Both,Active,1,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,High,Male,Moderately Active,8,Regular screening advised
+Poor Diet,Diabetes,Medium,Female,Sedentary,3,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,High,Male,Sedentary,2,Periodic diagnostic assessment
+Age > 50,Stroke,High,Female,Smoker,4,Regular screening advised
+Poor Diet,Vitamin Deficiency,High,Male,Active,5,Periodic diagnostic assessment
+Smoking,Cancer Risk,High,Female,Alcohol Consumer,7,High-risk monitoring required
+Smoking,Cancer Risk,High,Male,Smoker,8,Regular screening advised
+High Cholesterol,Heart Disease,High,Female,Moderately Active,7,Lifestyle modification needed
+Male >45,Hypertension,Medium,Both,Smoker,8,Preventive intervention suggested
+Poor Diet,Obesity,Medium,Male,Active,5,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,High,Both,Smoker,6,Regular screening advised
+Female Pregnancy,Anemia,Medium,Male,Sedentary,5,High-risk monitoring required
+Alcohol Use,Pancreatitis,High,Female,Alcohol Consumer,1,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,Medium,Female,Smoker,9,Lifestyle modification needed
+Female Pregnancy,Hypertension,High,Female,Active,2,High-risk monitoring required
+Sedentary Lifestyle,Cardiovascular Risk,High,Female,Alcohol Consumer,6,Preventive intervention suggested
+Male >45,Hypertension,Medium,Both,Alcohol Consumer,6,High-risk monitoring required
+Female Pregnancy,Anemia,Medium,Male,Active,4,High-risk monitoring required
+Smoking,Cancer Risk,Medium,Both,Moderately Active,4,Lifestyle modification needed
+Female Pregnancy,Anemia,High,Both,Alcohol Consumer,5,Regular screening advised
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Male,Sedentary,1,Periodic diagnostic assessment
+Obesity,Hypertension,Low,Male,Alcohol Consumer,5,Lifestyle modification needed
+Female Pregnancy,Gestational Diabetes,High,Both,Sedentary,8,Preventive intervention suggested
+Female Pregnancy,Anemia,Medium,Male,Sedentary,8,Regular screening advised
+Smoking,COPD,Medium,Both,Active,3,Lifestyle modification needed
+Poor Diet,Obesity,Low,Male,Active,9,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,High,Male,Alcohol Consumer,7,Preventive intervention suggested
+Female Pregnancy,Anemia,High,Female,Sedentary,10,Periodic diagnostic assessment
+Age > 50,Hypertension,High,Male,Moderately Active,4,High-risk monitoring required
+Smoking,Lung Disease,Medium,Both,Active,3,Regular screening advised
+High Cholesterol,Heart Disease,High,Female,Sedentary,1,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Medium,Female,Active,4,High-risk monitoring required
+Poor Diet,Vitamin Deficiency,High,Male,Smoker,2,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,Low,Female,Moderately Active,2,Regular screening advised
+Obesity,Hypertension,High,Both,Sedentary,8,Regular screening advised
+Female Pregnancy,Hypertension,Medium,Female,Sedentary,9,Periodic diagnostic assessment
+Female Pregnancy,Anemia,Low,Male,Smoker,6,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,Low,Both,Alcohol Consumer,10,Regular screening advised
+Alcohol Use,Pancreatitis,Low,Male,Smoker,9,Preventive intervention suggested
+Alcohol Use,Liver Disease,High,Female,Smoker,2,Preventive intervention suggested
+Family History,Diabetes,Medium,Both,Active,3,High-risk monitoring required
+High Cholesterol,Stroke,Medium,Both,Smoker,9,Regular screening advised
+Female Pregnancy,Gestational Diabetes,Medium,Female,Active,7,Periodic diagnostic assessment
+Age > 50,Hypertension,High,Female,Smoker,1,Lifestyle modification needed
+Male >45,Prostate Risk,High,Female,Smoker,1,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Low,Female,Smoker,8,Regular screening advised
+Age > 50,Hypertension,High,Male,Moderately Active,5,Periodic diagnostic assessment
+Age > 50,Hypertension,Medium,Male,Active,8,Regular screening advised
+Obesity,Hypertension,High,Female,Alcohol Consumer,5,Preventive intervention suggested
+Female Pregnancy,Anemia,Medium,Both,Moderately Active,7,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,High,Male,Active,5,Preventive intervention suggested
+Family History,Heart Disease,Medium,Male,Sedentary,5,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,Medium,Male,Smoker,9,Preventive intervention suggested
+Family History,Diabetes,High,Both,Smoker,8,High-risk monitoring required
+Sedentary Lifestyle,Diabetes,Medium,Female,Moderately Active,7,Regular screening advised
+Family History,Heart Disease,Medium,Female,Smoker,3,Preventive intervention suggested
+Age > 50,Heart Disease,Medium,Both,Sedentary,2,Preventive intervention suggested
+Smoking,Cancer Risk,High,Male,Moderately Active,7,Lifestyle modification needed
+Smoking,COPD,High,Female,Sedentary,10,Preventive intervention suggested
+Smoking,COPD,High,Both,Smoker,6,Preventive intervention suggested
+Male >45,Cardiac Risk,High,Male,Sedentary,4,Regular screening advised
+High Cholesterol,Atherosclerosis,High,Both,Active,8,Lifestyle modification needed
+Alcohol Use,Liver Disease,Low,Male,Sedentary,6,High-risk monitoring required
+High Cholesterol,Atherosclerosis,Medium,Female,Alcohol Consumer,3,Lifestyle modification needed
+Obesity,Diabetes,High,Female,Alcohol Consumer,4,Preventive intervention suggested
+Poor Diet,Diabetes,Medium,Both,Sedentary,8,High-risk monitoring required
+Age > 50,Stroke,High,Both,Alcohol Consumer,3,Regular screening advised
+Female Pregnancy,Anemia,High,Female,Smoker,5,Preventive intervention suggested
+Alcohol Use,Liver Disease,High,Female,Active,4,Preventive intervention suggested
+Poor Diet,Obesity,High,Both,Sedentary,1,Preventive intervention suggested
+Alcohol Use,Liver Disease,High,Both,Active,10,Preventive intervention suggested
+Alcohol Use,Liver Disease,High,Female,Moderately Active,4,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,High,Both,Moderately Active,2,Regular screening advised
+Alcohol Use,Hypertension,Low,Female,Moderately Active,2,High-risk monitoring required
+Family History,Heart Disease,Medium,Male,Moderately Active,9,High-risk monitoring required
+Male >45,Hypertension,High,Male,Sedentary,8,High-risk monitoring required
+Family History,Cancer Risk,Medium,Male,Moderately Active,4,Preventive intervention suggested
+Male >45,Prostate Risk,Low,Female,Active,5,Periodic diagnostic assessment
+Smoking,COPD,Medium,Both,Sedentary,10,Preventive intervention suggested
+Family History,Cancer Risk,High,Female,Active,10,Periodic diagnostic assessment
+Family History,Heart Disease,Medium,Male,Smoker,5,Preventive intervention suggested
+Smoking,Lung Disease,Low,Male,Sedentary,8,Regular screening advised
+Smoking,Lung Disease,High,Male,Smoker,8,High-risk monitoring required
+Male >45,Prostate Risk,High,Both,Moderately Active,7,Regular screening advised
+Female Pregnancy,Hypertension,Medium,Female,Active,6,Lifestyle modification needed
+Female Pregnancy,Anemia,High,Female,Active,6,Periodic diagnostic assessment
+Family History,Cancer Risk,Medium,Male,Active,8,Regular screening advised
+Sedentary Lifestyle,Diabetes,High,Male,Active,6,Lifestyle modification needed
+Obesity,Heart Disease,Medium,Both,Moderately Active,10,Lifestyle modification needed
+Sedentary Lifestyle,Cardiovascular Risk,High,Both,Active,5,Lifestyle modification needed
+Obesity,Heart Disease,Medium,Male,Active,1,Lifestyle modification needed
+Age > 50,Stroke,High,Male,Alcohol Consumer,6,Regular screening advised
+Obesity,Hypertension,Low,Both,Smoker,9,Regular screening advised
+Smoking,COPD,Medium,Female,Alcohol Consumer,10,Regular screening advised
+Female Pregnancy,Hypertension,Medium,Both,Active,9,High-risk monitoring required
+Female Pregnancy,Hypertension,High,Male,Smoker,7,Preventive intervention suggested
+Smoking,COPD,High,Female,Active,2,High-risk monitoring required
+Poor Diet,Diabetes,Low,Female,Alcohol Consumer,10,Periodic diagnostic assessment
+Family History,Diabetes,High,Both,Sedentary,8,Periodic diagnostic assessment
+Poor Diet,Obesity,Low,Both,Active,9,Lifestyle modification needed
+High Cholesterol,Heart Disease,High,Female,Sedentary,8,Preventive intervention suggested
+High Cholesterol,Stroke,Low,Female,Sedentary,5,High-risk monitoring required
+Obesity,Heart Disease,High,Male,Active,2,Regular screening advised
+High Cholesterol,Atherosclerosis,High,Female,Moderately Active,9,Regular screening advised
+Poor Diet,Vitamin Deficiency,High,Both,Active,7,High-risk monitoring required
+High Cholesterol,Stroke,Low,Female,Alcohol Consumer,5,High-risk monitoring required
+Smoking,Cancer Risk,Medium,Male,Smoker,4,Regular screening advised
+Family History,Heart Disease,Medium,Female,Alcohol Consumer,4,Preventive intervention suggested
+Male >45,Hypertension,High,Both,Alcohol Consumer,1,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,Low,Both,Sedentary,6,High-risk monitoring required
+Age > 50,Heart Disease,High,Both,Smoker,2,Lifestyle modification needed
+Age > 50,Heart Disease,High,Male,Smoker,7,Preventive intervention suggested
+Family History,Cancer Risk,Medium,Both,Sedentary,10,Periodic diagnostic assessment
+Smoking,Lung Disease,Low,Both,Active,2,High-risk monitoring required
+Female Pregnancy,Hypertension,Medium,Both,Smoker,7,High-risk monitoring required
+Sedentary Lifestyle,Diabetes,Low,Female,Active,5,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,High,Male,Moderately Active,7,Periodic diagnostic assessment
+Age > 50,Heart Disease,Medium,Male,Moderately Active,5,High-risk monitoring required
+Family History,Cancer Risk,Low,Both,Smoker,3,Lifestyle modification needed
+High Cholesterol,Stroke,High,Both,Alcohol Consumer,6,Regular screening advised
+High Cholesterol,Stroke,Low,Male,Smoker,2,High-risk monitoring required
+Poor Diet,Obesity,High,Both,Smoker,5,Regular screening advised
+High Cholesterol,Atherosclerosis,High,Male,Alcohol Consumer,8,High-risk monitoring required
+Smoking,COPD,High,Male,Smoker,10,Preventive intervention suggested
+Male >45,Cardiac Risk,Medium,Female,Sedentary,4,High-risk monitoring required
+Obesity,Diabetes,Medium,Male,Alcohol Consumer,9,Lifestyle modification needed
+Family History,Diabetes,High,Both,Moderately Active,4,Regular screening advised
+Obesity,Hypertension,Medium,Both,Moderately Active,2,Lifestyle modification needed
+Female Pregnancy,Anemia,High,Both,Smoker,10,Periodic diagnostic assessment
+Family History,Heart Disease,Medium,Female,Active,8,Preventive intervention suggested
+Alcohol Use,Hypertension,High,Female,Alcohol Consumer,2,High-risk monitoring required
+Female Pregnancy,Anemia,Low,Female,Sedentary,2,Regular screening advised
+Poor Diet,Vitamin Deficiency,Medium,Female,Alcohol Consumer,9,Regular screening advised
+Female Pregnancy,Hypertension,High,Female,Alcohol Consumer,8,Periodic diagnostic assessment
+Obesity,Diabetes,Medium,Female,Active,9,Lifestyle modification needed
+Age > 50,Heart Disease,High,Female,Alcohol Consumer,9,Periodic diagnostic assessment
+Obesity,Hypertension,Medium,Female,Smoker,7,High-risk monitoring required
+Poor Diet,Diabetes,High,Both,Sedentary,2,High-risk monitoring required
+Smoking,Cancer Risk,High,Female,Sedentary,10,Lifestyle modification needed
+Family History,Cancer Risk,High,Male,Sedentary,5,Preventive intervention suggested
+Obesity,Heart Disease,High,Male,Sedentary,9,Preventive intervention suggested
+Family History,Cancer Risk,High,Both,Alcohol Consumer,2,Preventive intervention suggested
+Male >45,Prostate Risk,Low,Female,Moderately Active,4,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,Medium,Male,Moderately Active,2,High-risk monitoring required
+Smoking,Cancer Risk,High,Both,Alcohol Consumer,1,High-risk monitoring required
+Poor Diet,Diabetes,High,Male,Moderately Active,3,Periodic diagnostic assessment
+Obesity,Heart Disease,Medium,Female,Sedentary,4,Preventive intervention suggested
+Poor Diet,Obesity,High,Female,Moderately Active,9,Lifestyle modification needed
+Alcohol Use,Hypertension,High,Male,Sedentary,10,Preventive intervention suggested
+Female Pregnancy,Anemia,High,Both,Alcohol Consumer,7,Lifestyle modification needed
+Sedentary Lifestyle,Diabetes,Low,Female,Active,8,High-risk monitoring required
+Male >45,Cardiac Risk,High,Both,Active,5,Regular screening advised
+Obesity,Hypertension,Medium,Both,Moderately Active,7,Regular screening advised
+Sedentary Lifestyle,Cardiovascular Risk,High,Male,Smoker,1,Preventive intervention suggested
+Male >45,Prostate Risk,Medium,Male,Sedentary,4,Regular screening advised
+Family History,Cancer Risk,High,Both,Sedentary,3,Lifestyle modification needed
+Age > 50,Stroke,High,Female,Moderately Active,8,Preventive intervention suggested
+Poor Diet,Diabetes,High,Male,Sedentary,4,Lifestyle modification needed
+Male >45,Hypertension,High,Female,Active,5,Lifestyle modification needed
+Alcohol Use,Liver Disease,Low,Female,Alcohol Consumer,8,Regular screening advised
+Smoking,COPD,High,Male,Alcohol Consumer,10,Lifestyle modification needed
+Obesity,Hypertension,Medium,Both,Sedentary,4,Periodic diagnostic assessment
+High Cholesterol,Atherosclerosis,High,Male,Alcohol Consumer,6,Regular screening advised
+Male >45,Hypertension,Medium,Both,Alcohol Consumer,1,Preventive intervention suggested
+Female Pregnancy,Gestational Diabetes,High,Female,Sedentary,1,High-risk monitoring required
+Smoking,COPD,Medium,Both,Active,10,High-risk monitoring required
+Obesity,Diabetes,Medium,Female,Moderately Active,8,Preventive intervention suggested
+Obesity,Diabetes,Low,Female,Active,5,Lifestyle modification needed
+Age > 50,Heart Disease,High,Female,Sedentary,9,Preventive intervention suggested
+Male >45,Prostate Risk,Medium,Both,Moderately Active,5,High-risk monitoring required
+Age > 50,Hypertension,Medium,Male,Sedentary,7,Preventive intervention suggested
+Female Pregnancy,Anemia,Medium,Male,Smoker,8,High-risk monitoring required
+Male >45,Prostate Risk,High,Both,Smoker,2,Preventive intervention suggested
+Poor Diet,Diabetes,High,Female,Active,2,High-risk monitoring required
+Alcohol Use,Hypertension,Medium,Both,Smoker,3,Preventive intervention suggested
+Family History,Diabetes,Low,Female,Alcohol Consumer,7,High-risk monitoring required
+Age > 50,Heart Disease,High,Female,Sedentary,9,Lifestyle modification needed
+Age > 50,Heart Disease,High,Both,Smoker,1,Lifestyle modification needed
+Smoking,Lung Disease,High,Female,Sedentary,7,Periodic diagnostic assessment
+Age > 50,Hypertension,Low,Female,Sedentary,6,Preventive intervention suggested
+Smoking,Cancer Risk,Low,Female,Smoker,6,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Low,Male,Smoker,9,Preventive intervention suggested
+Male >45,Cardiac Risk,Medium,Female,Smoker,4,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,High,Female,Moderately Active,2,Lifestyle modification needed
+Smoking,COPD,Low,Both,Smoker,2,High-risk monitoring required
+Family History,Heart Disease,Low,Both,Sedentary,5,Lifestyle modification needed
+Obesity,Hypertension,Medium,Male,Moderately Active,3,Lifestyle modification needed
+Female Pregnancy,Gestational Diabetes,Medium,Both,Sedentary,8,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Male,Sedentary,7,Preventive intervention suggested
+Male >45,Prostate Risk,High,Both,Active,3,High-risk monitoring required
+Smoking,COPD,Medium,Both,Sedentary,3,Periodic diagnostic assessment
+Poor Diet,Diabetes,High,Male,Smoker,9,Regular screening advised
+Smoking,Cancer Risk,Low,Male,Moderately Active,6,Lifestyle modification needed
+Family History,Heart Disease,High,Male,Sedentary,4,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,High,Both,Alcohol Consumer,2,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Male,Moderately Active,10,Periodic diagnostic assessment
+Family History,Heart Disease,Low,Male,Active,1,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,Medium,Both,Smoker,10,Regular screening advised
+Female Pregnancy,Hypertension,High,Both,Sedentary,8,Lifestyle modification needed
+High Cholesterol,Heart Disease,Medium,Both,Active,3,Preventive intervention suggested
+High Cholesterol,Heart Disease,Medium,Female,Alcohol Consumer,3,High-risk monitoring required
+Family History,Heart Disease,High,Female,Smoker,3,High-risk monitoring required
+Male >45,Hypertension,Low,Male,Smoker,2,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,Low,Male,Sedentary,7,Periodic diagnostic assessment
+High Cholesterol,Atherosclerosis,High,Male,Sedentary,10,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Medium,Both,Smoker,8,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,Low,Female,Alcohol Consumer,8,Lifestyle modification needed
+Sedentary Lifestyle,Diabetes,Medium,Male,Sedentary,8,Periodic diagnostic assessment
+Female Pregnancy,Anemia,Medium,Male,Smoker,3,High-risk monitoring required
+Family History,Diabetes,Medium,Female,Active,10,Periodic diagnostic assessment
+Sedentary Lifestyle,Cardiovascular Risk,High,Male,Smoker,9,Preventive intervention suggested
+Male >45,Prostate Risk,High,Both,Alcohol Consumer,2,Lifestyle modification needed
+Smoking,COPD,Medium,Female,Alcohol Consumer,6,Lifestyle modification needed
+Sedentary Lifestyle,Diabetes,Medium,Both,Active,1,Regular screening advised
+Obesity,Heart Disease,Medium,Female,Alcohol Consumer,8,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,Low,Both,Sedentary,3,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,High,Both,Sedentary,9,Periodic diagnostic assessment
+Male >45,Prostate Risk,High,Female,Smoker,1,High-risk monitoring required
+Family History,Heart Disease,Low,Female,Alcohol Consumer,5,Regular screening advised
+Poor Diet,Obesity,Medium,Both,Alcohol Consumer,10,Lifestyle modification needed
+Age > 50,Hypertension,Medium,Both,Alcohol Consumer,7,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,High,Both,Active,4,Regular screening advised
+Female Pregnancy,Anemia,Medium,Female,Moderately Active,7,Periodic diagnostic assessment
+Poor Diet,Obesity,High,Both,Active,3,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,Medium,Both,Smoker,9,Preventive intervention suggested
+Family History,Cancer Risk,Medium,Both,Sedentary,9,High-risk monitoring required
+Alcohol Use,Pancreatitis,Medium,Male,Sedentary,9,High-risk monitoring required
+Sedentary Lifestyle,Cardiovascular Risk,High,Both,Moderately Active,8,High-risk monitoring required
+Female Pregnancy,Anemia,High,Both,Sedentary,5,Regular screening advised
+Poor Diet,Vitamin Deficiency,Medium,Female,Sedentary,3,High-risk monitoring required
+Age > 50,Stroke,High,Male,Sedentary,8,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,Medium,Both,Sedentary,9,High-risk monitoring required
+Obesity,Diabetes,High,Both,Moderately Active,4,Regular screening advised
+Male >45,Cardiac Risk,High,Male,Active,7,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,High,Male,Active,9,Lifestyle modification needed
+High Cholesterol,Stroke,High,Female,Smoker,4,High-risk monitoring required
+Family History,Diabetes,High,Male,Alcohol Consumer,4,Periodic diagnostic assessment
+Age > 50,Heart Disease,Medium,Male,Active,7,Preventive intervention suggested
+Obesity,Heart Disease,High,Female,Active,1,High-risk monitoring required
+Poor Diet,Vitamin Deficiency,Low,Female,Sedentary,8,Periodic diagnostic assessment
+Male >45,Prostate Risk,High,Male,Alcohol Consumer,8,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Medium,Both,Smoker,5,Lifestyle modification needed
+Age > 50,Hypertension,Medium,Female,Alcohol Consumer,4,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,High,Female,Alcohol Consumer,6,Regular screening advised
+High Cholesterol,Stroke,Low,Male,Smoker,6,Lifestyle modification needed
+Age > 50,Stroke,Medium,Female,Sedentary,6,High-risk monitoring required
+Poor Diet,Vitamin Deficiency,High,Female,Sedentary,4,Regular screening advised
+Smoking,COPD,Medium,Female,Alcohol Consumer,5,Regular screening advised
+Alcohol Use,Hypertension,High,Male,Moderately Active,8,Lifestyle modification needed
+Female Pregnancy,Hypertension,High,Female,Smoker,9,Preventive intervention suggested
+Male >45,Hypertension,High,Male,Alcohol Consumer,2,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,High,Male,Alcohol Consumer,2,Regular screening advised
+Male >45,Hypertension,Medium,Both,Moderately Active,3,High-risk monitoring required
+Male >45,Prostate Risk,Low,Male,Alcohol Consumer,8,Regular screening advised
+Male >45,Prostate Risk,High,Female,Moderately Active,9,Preventive intervention suggested
+Female Pregnancy,Hypertension,Low,Female,Sedentary,1,Preventive intervention suggested
+Alcohol Use,Liver Disease,High,Both,Active,1,Preventive intervention suggested
+Family History,Heart Disease,Low,Male,Active,8,Regular screening advised
+Alcohol Use,Hypertension,Low,Male,Smoker,6,Preventive intervention suggested
+Female Pregnancy,Anemia,Medium,Both,Alcohol Consumer,3,High-risk monitoring required
+Smoking,Lung Disease,High,Female,Alcohol Consumer,3,Lifestyle modification needed
+Age > 50,Heart Disease,High,Female,Alcohol Consumer,7,Periodic diagnostic assessment
+High Cholesterol,Atherosclerosis,Medium,Female,Moderately Active,5,Lifestyle modification needed
+Smoking,Lung Disease,High,Female,Alcohol Consumer,1,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,Low,Male,Smoker,10,Regular screening advised
+Sedentary Lifestyle,Diabetes,Low,Female,Moderately Active,9,Lifestyle modification needed
+Age > 50,Heart Disease,Medium,Female,Moderately Active,10,High-risk monitoring required
+Poor Diet,Vitamin Deficiency,High,Female,Moderately Active,5,Lifestyle modification needed
+Male >45,Cardiac Risk,Medium,Female,Active,9,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Both,Smoker,1,High-risk monitoring required
+High Cholesterol,Stroke,Medium,Female,Smoker,3,High-risk monitoring required
+High Cholesterol,Atherosclerosis,High,Female,Moderately Active,4,High-risk monitoring required
+Obesity,Hypertension,High,Both,Smoker,7,Periodic diagnostic assessment
+Male >45,Cardiac Risk,Medium,Female,Moderately Active,6,Regular screening advised
+Female Pregnancy,Anemia,Low,Both,Moderately Active,1,High-risk monitoring required
+High Cholesterol,Stroke,High,Male,Active,4,Periodic diagnostic assessment
+Male >45,Cardiac Risk,Medium,Female,Sedentary,1,Lifestyle modification needed
+Sedentary Lifestyle,Diabetes,Low,Female,Moderately Active,10,Lifestyle modification needed
+High Cholesterol,Atherosclerosis,High,Female,Smoker,8,Periodic diagnostic assessment
+Family History,Diabetes,Medium,Both,Smoker,8,Regular screening advised
+Female Pregnancy,Anemia,High,Female,Sedentary,7,Regular screening advised
+Poor Diet,Diabetes,High,Male,Sedentary,9,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,Medium,Male,Moderately Active,6,Lifestyle modification needed
+High Cholesterol,Stroke,High,Female,Alcohol Consumer,6,High-risk monitoring required
+Female Pregnancy,Hypertension,High,Female,Smoker,3,High-risk monitoring required
+Obesity,Diabetes,High,Female,Moderately Active,9,Regular screening advised
+Male >45,Cardiac Risk,High,Male,Active,1,Preventive intervention suggested
+Obesity,Heart Disease,Medium,Both,Moderately Active,1,Lifestyle modification needed
+Male >45,Prostate Risk,Medium,Both,Alcohol Consumer,8,Preventive intervention suggested
+Age > 50,Heart Disease,Medium,Female,Active,1,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,High,Male,Alcohol Consumer,7,Lifestyle modification needed
+Smoking,Lung Disease,Medium,Male,Moderately Active,10,Periodic diagnostic assessment
+Alcohol Use,Hypertension,Medium,Female,Active,6,Preventive intervention suggested
+Female Pregnancy,Hypertension,Medium,Both,Moderately Active,5,Regular screening advised
+Age > 50,Heart Disease,Medium,Female,Alcohol Consumer,8,Regular screening advised
+Age > 50,Hypertension,Low,Female,Smoker,6,Periodic diagnostic assessment
+Smoking,Cancer Risk,High,Male,Moderately Active,10,Preventive intervention suggested
+Alcohol Use,Liver Disease,High,Both,Sedentary,9,Periodic diagnostic assessment
+Age > 50,Heart Disease,High,Female,Active,4,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Male,Sedentary,3,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,High,Female,Alcohol Consumer,6,Preventive intervention suggested
+Obesity,Heart Disease,High,Both,Sedentary,1,Regular screening advised
+High Cholesterol,Atherosclerosis,High,Female,Alcohol Consumer,10,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,Low,Female,Smoker,8,Lifestyle modification needed
+Family History,Heart Disease,High,Female,Moderately Active,10,Preventive intervention suggested
+Smoking,Cancer Risk,Medium,Male,Active,2,High-risk monitoring required
+Obesity,Hypertension,High,Both,Moderately Active,7,High-risk monitoring required
+Family History,Cancer Risk,Low,Female,Smoker,6,High-risk monitoring required
+Smoking,Lung Disease,Low,Female,Smoker,9,Periodic diagnostic assessment
+Male >45,Prostate Risk,Low,Male,Sedentary,9,Regular screening advised
+Poor Diet,Vitamin Deficiency,High,Female,Active,5,Preventive intervention suggested
+High Cholesterol,Atherosclerosis,High,Both,Moderately Active,10,Periodic diagnostic assessment
+Obesity,Heart Disease,Medium,Male,Sedentary,5,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,Low,Female,Sedentary,7,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,Medium,Male,Smoker,10,Periodic diagnostic assessment
+Sedentary Lifestyle,Cardiovascular Risk,Low,Female,Active,7,High-risk monitoring required
+Poor Diet,Obesity,High,Female,Smoker,6,Preventive intervention suggested
+Poor Diet,Diabetes,Medium,Both,Moderately Active,8,High-risk monitoring required
+Obesity,Hypertension,High,Female,Smoker,10,Lifestyle modification needed
+Family History,Diabetes,Medium,Female,Sedentary,2,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,High,Male,Alcohol Consumer,1,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,High,Both,Active,7,Preventive intervention suggested
+Obesity,Heart Disease,Medium,Female,Moderately Active,7,Preventive intervention suggested
+Smoking,COPD,High,Female,Alcohol Consumer,7,Periodic diagnostic assessment
+Male >45,Hypertension,Medium,Male,Sedentary,9,Periodic diagnostic assessment
+Smoking,Lung Disease,High,Both,Sedentary,3,Periodic diagnostic assessment
+Age > 50,Hypertension,High,Both,Smoker,6,Preventive intervention suggested
+Smoking,Lung Disease,Low,Male,Alcohol Consumer,9,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,High,Female,Sedentary,7,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,Medium,Female,Active,8,Regular screening advised
+Alcohol Use,Hypertension,High,Male,Active,3,High-risk monitoring required
+Alcohol Use,Hypertension,Medium,Male,Alcohol Consumer,8,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,Medium,Both,Smoker,6,Regular screening advised
+Alcohol Use,Liver Disease,High,Male,Active,6,Regular screening advised
+Obesity,Heart Disease,Medium,Male,Alcohol Consumer,3,High-risk monitoring required
+Male >45,Prostate Risk,High,Male,Smoker,3,Lifestyle modification needed
+High Cholesterol,Heart Disease,Low,Both,Moderately Active,8,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,Low,Male,Moderately Active,5,Regular screening advised
+Poor Diet,Diabetes,High,Both,Moderately Active,6,High-risk monitoring required
+Sedentary Lifestyle,Cardiovascular Risk,Low,Both,Smoker,9,High-risk monitoring required
+Poor Diet,Obesity,High,Both,Active,6,High-risk monitoring required
+Female Pregnancy,Hypertension,Low,Both,Sedentary,10,Periodic diagnostic assessment
+Smoking,Cancer Risk,Low,Male,Moderately Active,5,Regular screening advised
+Obesity,Hypertension,High,Both,Smoker,7,Periodic diagnostic assessment
+Obesity,Heart Disease,Medium,Male,Smoker,9,Lifestyle modification needed
+Male >45,Cardiac Risk,Medium,Male,Moderately Active,6,Preventive intervention suggested
+Poor Diet,Diabetes,High,Male,Smoker,3,Lifestyle modification needed
+High Cholesterol,Stroke,Medium,Female,Smoker,8,Preventive intervention suggested
+Female Pregnancy,Anemia,Low,Both,Active,4,High-risk monitoring required
+Age > 50,Stroke,Medium,Female,Moderately Active,8,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,Medium,Both,Active,5,Periodic diagnostic assessment
+Family History,Heart Disease,High,Male,Smoker,9,Lifestyle modification needed
+High Cholesterol,Atherosclerosis,High,Both,Moderately Active,5,Regular screening advised
+Female Pregnancy,Anemia,Medium,Male,Smoker,2,Lifestyle modification needed
+Sedentary Lifestyle,Diabetes,High,Female,Alcohol Consumer,7,Lifestyle modification needed
+Poor Diet,Diabetes,High,Male,Active,10,High-risk monitoring required
+Male >45,Prostate Risk,High,Male,Sedentary,5,High-risk monitoring required
+Poor Diet,Obesity,High,Both,Active,3,Preventive intervention suggested
+Age > 50,Stroke,High,Male,Moderately Active,4,Lifestyle modification needed
+Family History,Cancer Risk,High,Both,Smoker,8,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,Medium,Female,Smoker,8,Regular screening advised
+Smoking,COPD,Medium,Female,Sedentary,8,Preventive intervention suggested
+Family History,Heart Disease,Low,Both,Active,8,High-risk monitoring required
+Smoking,Cancer Risk,Medium,Female,Moderately Active,8,High-risk monitoring required
+Family History,Diabetes,Medium,Both,Moderately Active,10,Preventive intervention suggested
+Family History,Heart Disease,High,Male,Active,8,Regular screening advised
+Smoking,Lung Disease,Medium,Male,Smoker,4,Lifestyle modification needed
+Alcohol Use,Liver Disease,High,Female,Active,6,High-risk monitoring required
+Smoking,COPD,High,Both,Moderately Active,1,Preventive intervention suggested
+Alcohol Use,Pancreatitis,High,Male,Smoker,2,Regular screening advised
+Age > 50,Heart Disease,Medium,Male,Alcohol Consumer,4,Periodic diagnostic assessment
+Female Pregnancy,Gestational Diabetes,Low,Female,Active,7,Lifestyle modification needed
+Female Pregnancy,Gestational Diabetes,Medium,Male,Active,2,High-risk monitoring required
+Family History,Diabetes,Low,Male,Moderately Active,2,Periodic diagnostic assessment
+Poor Diet,Diabetes,High,Male,Smoker,6,Lifestyle modification needed
+Obesity,Hypertension,High,Female,Moderately Active,2,Regular screening advised
+Obesity,Diabetes,High,Female,Sedentary,7,High-risk monitoring required
+Obesity,Diabetes,Medium,Male,Moderately Active,9,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,High,Both,Active,5,Lifestyle modification needed
+Male >45,Hypertension,Medium,Both,Smoker,5,Regular screening advised
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Male,Smoker,10,Regular screening advised
+Male >45,Cardiac Risk,High,Female,Moderately Active,7,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,High,Male,Smoker,2,Regular screening advised
+Poor Diet,Diabetes,Low,Male,Active,1,Preventive intervention suggested
+Male >45,Prostate Risk,High,Both,Smoker,7,Preventive intervention suggested
+Smoking,Cancer Risk,Medium,Both,Moderately Active,5,Regular screening advised
+Alcohol Use,Liver Disease,Medium,Male,Moderately Active,9,High-risk monitoring required
+High Cholesterol,Stroke,High,Both,Active,5,Preventive intervention suggested
+Sedentary Lifestyle,Obesity,Medium,Female,Active,8,Periodic diagnostic assessment
+Poor Diet,Diabetes,Medium,Both,Moderately Active,2,Regular screening advised
+Obesity,Heart Disease,Low,Female,Sedentary,9,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,Medium,Both,Sedentary,2,Regular screening advised
+Family History,Diabetes,Medium,Male,Sedentary,10,Regular screening advised
+Female Pregnancy,Anemia,Medium,Male,Smoker,10,Lifestyle modification needed
+Family History,Cancer Risk,Medium,Male,Alcohol Consumer,2,Lifestyle modification needed
+Male >45,Cardiac Risk,Low,Male,Moderately Active,1,Preventive intervention suggested
+Family History,Diabetes,High,Male,Active,9,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Both,Sedentary,5,Regular screening advised
+Poor Diet,Obesity,Low,Both,Active,3,Lifestyle modification needed
+Male >45,Cardiac Risk,High,Male,Smoker,5,High-risk monitoring required
+Family History,Cancer Risk,High,Male,Sedentary,4,High-risk monitoring required
+Poor Diet,Obesity,High,Male,Smoker,6,Periodic diagnostic assessment
+Female Pregnancy,Gestational Diabetes,High,Both,Moderately Active,3,Regular screening advised
+High Cholesterol,Atherosclerosis,Medium,Female,Active,6,Regular screening advised
+High Cholesterol,Stroke,High,Male,Moderately Active,9,Lifestyle modification needed
+High Cholesterol,Heart Disease,High,Male,Sedentary,2,Regular screening advised
+Sedentary Lifestyle,Diabetes,Medium,Female,Smoker,2,Periodic diagnostic assessment
+Smoking,Cancer Risk,Low,Female,Active,10,Periodic diagnostic assessment
+Age > 50,Stroke,High,Male,Moderately Active,5,High-risk monitoring required
+Family History,Diabetes,High,Both,Sedentary,6,Preventive intervention suggested
+Alcohol Use,Liver Disease,Low,Male,Moderately Active,10,Regular screening advised
+Obesity,Diabetes,Low,Female,Sedentary,7,Regular screening advised
+Male >45,Prostate Risk,High,Male,Smoker,5,Preventive intervention suggested
+Alcohol Use,Liver Disease,Low,Both,Sedentary,10,Regular screening advised
+Sedentary Lifestyle,Cardiovascular Risk,Low,Both,Moderately Active,6,Preventive intervention suggested
+Male >45,Cardiac Risk,High,Female,Moderately Active,1,Preventive intervention suggested
+Female Pregnancy,Hypertension,High,Male,Active,8,Regular screening advised
+Obesity,Diabetes,Low,Male,Moderately Active,4,Preventive intervention suggested
+Family History,Heart Disease,High,Both,Active,10,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,Low,Male,Moderately Active,8,Lifestyle modification needed
+Smoking,COPD,Low,Female,Active,3,Periodic diagnostic assessment
+High Cholesterol,Stroke,Medium,Male,Smoker,7,Lifestyle modification needed
+Family History,Cancer Risk,High,Female,Sedentary,8,Lifestyle modification needed
+Age > 50,Hypertension,High,Male,Sedentary,8,Preventive intervention suggested
+Male >45,Prostate Risk,Low,Female,Smoker,3,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,High,Both,Moderately Active,9,Regular screening advised
+High Cholesterol,Stroke,Medium,Both,Smoker,6,Periodic diagnostic assessment
+Male >45,Prostate Risk,Medium,Male,Active,6,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,High,Female,Active,8,Periodic diagnostic assessment
+Family History,Heart Disease,High,Male,Active,4,Lifestyle modification needed
+Alcohol Use,Pancreatitis,High,Both,Active,4,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,High,Male,Moderately Active,4,Periodic diagnostic assessment
+Family History,Heart Disease,High,Both,Active,6,Periodic diagnostic assessment
+Poor Diet,Diabetes,High,Male,Smoker,9,High-risk monitoring required
+Obesity,Hypertension,Low,Male,Moderately Active,10,Lifestyle modification needed
+Age > 50,Hypertension,Medium,Female,Alcohol Consumer,4,Lifestyle modification needed
+Family History,Heart Disease,Low,Female,Active,1,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,High,Male,Alcohol Consumer,6,Regular screening advised
+Family History,Heart Disease,High,Female,Alcohol Consumer,2,High-risk monitoring required
+Alcohol Use,Hypertension,Low,Male,Smoker,8,High-risk monitoring required
+Obesity,Heart Disease,High,Both,Alcohol Consumer,6,Lifestyle modification needed
+Poor Diet,Diabetes,Medium,Both,Sedentary,3,Lifestyle modification needed
+Age > 50,Hypertension,High,Female,Alcohol Consumer,1,Lifestyle modification needed
+Poor Diet,Obesity,High,Both,Moderately Active,10,Regular screening advised
+Female Pregnancy,Gestational Diabetes,Medium,Male,Moderately Active,6,High-risk monitoring required
+Obesity,Heart Disease,High,Male,Sedentary,8,Regular screening advised
+Alcohol Use,Liver Disease,Medium,Male,Sedentary,5,Regular screening advised
+Age > 50,Heart Disease,Medium,Both,Smoker,3,Preventive intervention suggested
+Female Pregnancy,Anemia,Medium,Female,Active,8,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,Medium,Male,Sedentary,1,High-risk monitoring required
+Alcohol Use,Liver Disease,Low,Male,Smoker,3,Regular screening advised
+Male >45,Cardiac Risk,Medium,Both,Smoker,1,Preventive intervention suggested
+Obesity,Heart Disease,High,Male,Active,2,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Medium,Both,Alcohol Consumer,5,High-risk monitoring required
+Alcohol Use,Liver Disease,Low,Female,Alcohol Consumer,9,Preventive intervention suggested
+Obesity,Diabetes,Medium,Female,Active,5,Periodic diagnostic assessment
+Female Pregnancy,Gestational Diabetes,Low,Male,Moderately Active,5,Regular screening advised
+Female Pregnancy,Gestational Diabetes,Medium,Female,Smoker,8,High-risk monitoring required
+Smoking,Cancer Risk,Medium,Male,Sedentary,7,High-risk monitoring required
+Obesity,Hypertension,Low,Female,Smoker,5,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Low,Both,Active,2,High-risk monitoring required
+Male >45,Prostate Risk,High,Both,Moderately Active,9,Regular screening advised
+High Cholesterol,Stroke,Medium,Both,Smoker,10,Lifestyle modification needed
+Female Pregnancy,Anemia,Low,Both,Active,9,Periodic diagnostic assessment
+Male >45,Hypertension,High,Both,Moderately Active,2,Preventive intervention suggested
+Obesity,Diabetes,High,Male,Moderately Active,1,Preventive intervention suggested
+Smoking,Cancer Risk,Medium,Both,Moderately Active,10,High-risk monitoring required
+Family History,Heart Disease,High,Male,Active,7,Periodic diagnostic assessment
+High Cholesterol,Stroke,Medium,Female,Alcohol Consumer,8,Regular screening advised
+Poor Diet,Vitamin Deficiency,Medium,Female,Active,7,Lifestyle modification needed
+Obesity,Heart Disease,High,Male,Active,10,Regular screening advised
+Alcohol Use,Pancreatitis,High,Female,Sedentary,7,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,Medium,Male,Sedentary,7,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,High,Female,Active,7,High-risk monitoring required
+Sedentary Lifestyle,Obesity,High,Female,Sedentary,1,High-risk monitoring required
+Alcohol Use,Hypertension,Medium,Female,Active,4,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Medium,Female,Sedentary,7,Periodic diagnostic assessment
+Smoking,Lung Disease,Medium,Female,Smoker,9,High-risk monitoring required
+Age > 50,Hypertension,High,Male,Sedentary,9,Preventive intervention suggested
+Obesity,Heart Disease,High,Male,Moderately Active,4,Lifestyle modification needed
+Age > 50,Heart Disease,Low,Male,Sedentary,4,High-risk monitoring required
+Family History,Diabetes,Medium,Both,Active,1,Lifestyle modification needed
+Family History,Diabetes,High,Male,Smoker,10,Periodic diagnostic assessment
+Family History,Diabetes,Low,Female,Active,5,Regular screening advised
+High Cholesterol,Atherosclerosis,Low,Both,Moderately Active,4,Lifestyle modification needed
+Sedentary Lifestyle,Cardiovascular Risk,High,Both,Active,1,Preventive intervention suggested
+Obesity,Heart Disease,Low,Male,Moderately Active,5,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,High,Both,Sedentary,7,Preventive intervention suggested
+Family History,Diabetes,Medium,Female,Sedentary,9,Periodic diagnostic assessment
+High Cholesterol,Stroke,Low,Both,Sedentary,9,Periodic diagnostic assessment
+Poor Diet,Obesity,Medium,Male,Smoker,2,High-risk monitoring required
+Alcohol Use,Pancreatitis,Medium,Female,Sedentary,5,Lifestyle modification needed
+Obesity,Heart Disease,High,Male,Alcohol Consumer,7,High-risk monitoring required
+Obesity,Heart Disease,Low,Female,Sedentary,5,Preventive intervention suggested
+High Cholesterol,Heart Disease,High,Both,Alcohol Consumer,4,High-risk monitoring required
+Sedentary Lifestyle,Diabetes,Medium,Female,Sedentary,9,High-risk monitoring required
+Obesity,Heart Disease,High,Male,Sedentary,2,Preventive intervention suggested
+Obesity,Heart Disease,Medium,Both,Moderately Active,6,Regular screening advised
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Female,Smoker,6,High-risk monitoring required
+Alcohol Use,Pancreatitis,Medium,Male,Smoker,1,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,Low,Male,Alcohol Consumer,2,Preventive intervention suggested
+Male >45,Prostate Risk,Medium,Male,Moderately Active,4,High-risk monitoring required
+High Cholesterol,Stroke,High,Female,Moderately Active,6,Lifestyle modification needed
+Smoking,COPD,Medium,Male,Sedentary,1,Regular screening advised
+Female Pregnancy,Anemia,Medium,Male,Alcohol Consumer,3,Preventive intervention suggested
+Smoking,Lung Disease,High,Both,Smoker,7,Preventive intervention suggested
+Female Pregnancy,Anemia,Low,Both,Moderately Active,6,Regular screening advised
+Family History,Heart Disease,Medium,Both,Active,4,Lifestyle modification needed
+Family History,Diabetes,Low,Female,Alcohol Consumer,10,High-risk monitoring required
+Obesity,Diabetes,High,Female,Sedentary,8,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,Medium,Both,Moderately Active,6,Preventive intervention suggested
+Family History,Cancer Risk,Low,Female,Active,4,Lifestyle modification needed
+Obesity,Diabetes,High,Both,Alcohol Consumer,3,Regular screening advised
+Family History,Heart Disease,High,Male,Smoker,5,Periodic diagnostic assessment
+Poor Diet,Diabetes,High,Male,Active,1,Regular screening advised
+Smoking,COPD,Medium,Male,Alcohol Consumer,5,Preventive intervention suggested
+Obesity,Diabetes,High,Both,Active,5,Preventive intervention suggested
+Smoking,Cancer Risk,Medium,Both,Alcohol Consumer,3,Preventive intervention suggested
+Smoking,Cancer Risk,High,Male,Sedentary,2,Regular screening advised
+Female Pregnancy,Gestational Diabetes,High,Female,Alcohol Consumer,4,High-risk monitoring required
+High Cholesterol,Heart Disease,Low,Both,Smoker,4,Preventive intervention suggested
+Family History,Cancer Risk,Low,Both,Active,2,Periodic diagnostic assessment
+Female Pregnancy,Gestational Diabetes,High,Both,Active,2,High-risk monitoring required
+Sedentary Lifestyle,Cardiovascular Risk,High,Female,Sedentary,8,Regular screening advised
+Smoking,Lung Disease,High,Female,Sedentary,6,Preventive intervention suggested
+Smoking,Lung Disease,High,Male,Active,3,Lifestyle modification needed
+Family History,Diabetes,High,Both,Sedentary,2,High-risk monitoring required
+Family History,Cancer Risk,Low,Female,Smoker,5,Preventive intervention suggested
+Female Pregnancy,Anemia,High,Male,Active,3,Regular screening advised
+Obesity,Diabetes,Medium,Both,Smoker,10,Preventive intervention suggested
+Obesity,Heart Disease,Medium,Female,Alcohol Consumer,1,Lifestyle modification needed
+Female Pregnancy,Anemia,Low,Female,Smoker,1,Regular screening advised
+Alcohol Use,Pancreatitis,Medium,Both,Alcohol Consumer,10,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,High,Both,Alcohol Consumer,10,Regular screening advised
+High Cholesterol,Stroke,High,Female,Sedentary,7,Lifestyle modification needed
+Male >45,Hypertension,Low,Both,Moderately Active,9,Preventive intervention suggested
+Female Pregnancy,Gestational Diabetes,Low,Female,Sedentary,4,High-risk monitoring required
+Alcohol Use,Liver Disease,Medium,Both,Smoker,7,Lifestyle modification needed
+Smoking,COPD,Medium,Both,Smoker,2,Preventive intervention suggested
+Female Pregnancy,Anemia,Low,Female,Active,2,Preventive intervention suggested
+High Cholesterol,Atherosclerosis,High,Male,Active,10,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,High,Both,Smoker,6,High-risk monitoring required
+Age > 50,Heart Disease,High,Female,Alcohol Consumer,10,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,High,Both,Smoker,2,Regular screening advised
+Sedentary Lifestyle,Obesity,Medium,Both,Sedentary,9,Periodic diagnostic assessment
+Family History,Heart Disease,Low,Male,Smoker,3,Preventive intervention suggested
+Smoking,COPD,High,Male,Active,7,Lifestyle modification needed
+Female Pregnancy,Gestational Diabetes,High,Male,Smoker,1,Periodic diagnostic assessment
+Smoking,COPD,Medium,Both,Alcohol Consumer,3,Preventive intervention suggested
+Age > 50,Hypertension,High,Both,Smoker,10,Preventive intervention suggested
+Male >45,Cardiac Risk,High,Male,Moderately Active,2,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,High,Both,Smoker,7,Periodic diagnostic assessment
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Female,Sedentary,8,Lifestyle modification needed
+Obesity,Hypertension,High,Both,Alcohol Consumer,5,Periodic diagnostic assessment
+Family History,Heart Disease,High,Both,Moderately Active,4,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,Medium,Female,Moderately Active,3,Periodic diagnostic assessment
+Male >45,Hypertension,High,Both,Active,6,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,High,Both,Smoker,9,High-risk monitoring required
+High Cholesterol,Atherosclerosis,Medium,Male,Smoker,3,Regular screening advised
+Age > 50,Heart Disease,Medium,Male,Sedentary,5,Lifestyle modification needed
+Age > 50,Hypertension,High,Male,Alcohol Consumer,1,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,High,Both,Alcohol Consumer,4,Periodic diagnostic assessment
+High Cholesterol,Atherosclerosis,Medium,Both,Sedentary,1,Preventive intervention suggested
+High Cholesterol,Heart Disease,High,Both,Sedentary,9,Regular screening advised
+Age > 50,Hypertension,Medium,Both,Smoker,4,High-risk monitoring required
+Poor Diet,Vitamin Deficiency,High,Male,Moderately Active,5,Preventive intervention suggested
+Obesity,Heart Disease,Low,Male,Alcohol Consumer,2,Preventive intervention suggested
+Age > 50,Stroke,Medium,Female,Moderately Active,3,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,Medium,Both,Moderately Active,1,Lifestyle modification needed
+Family History,Heart Disease,Low,Both,Alcohol Consumer,5,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,Medium,Both,Sedentary,9,Lifestyle modification needed
+Obesity,Heart Disease,Low,Both,Moderately Active,7,Periodic diagnostic assessment
+Male >45,Prostate Risk,Low,Male,Moderately Active,6,High-risk monitoring required
+Family History,Diabetes,Medium,Both,Alcohol Consumer,8,Periodic diagnostic assessment
+Age > 50,Heart Disease,High,Female,Moderately Active,10,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,High,Female,Smoker,2,Preventive intervention suggested
+Alcohol Use,Pancreatitis,High,Male,Alcohol Consumer,6,Periodic diagnostic assessment
+Male >45,Prostate Risk,Medium,Female,Moderately Active,6,Periodic diagnostic assessment
+Smoking,Lung Disease,Low,Both,Alcohol Consumer,1,Regular screening advised
+Sedentary Lifestyle,Diabetes,High,Male,Smoker,2,Lifestyle modification needed
+Male >45,Hypertension,High,Both,Smoker,2,Lifestyle modification needed
+Age > 50,Stroke,High,Male,Active,2,Regular screening advised
+Obesity,Hypertension,High,Both,Moderately Active,5,Preventive intervention suggested
+High Cholesterol,Heart Disease,High,Female,Sedentary,1,Preventive intervention suggested
+Smoking,Cancer Risk,Low,Both,Alcohol Consumer,2,Periodic diagnostic assessment
+Age > 50,Hypertension,High,Female,Alcohol Consumer,2,High-risk monitoring required
+Alcohol Use,Pancreatitis,Low,Female,Smoker,7,Regular screening advised
+Female Pregnancy,Gestational Diabetes,Medium,Male,Smoker,9,High-risk monitoring required
+Obesity,Hypertension,High,Both,Sedentary,1,Periodic diagnostic assessment
+Male >45,Cardiac Risk,Low,Male,Alcohol Consumer,10,Preventive intervention suggested
+Male >45,Hypertension,High,Female,Moderately Active,6,Lifestyle modification needed
+High Cholesterol,Stroke,High,Male,Moderately Active,3,Lifestyle modification needed
+Poor Diet,Obesity,Medium,Male,Alcohol Consumer,1,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,High,Female,Active,5,Regular screening advised
+Sedentary Lifestyle,Diabetes,High,Female,Sedentary,3,Lifestyle modification needed
+Smoking,COPD,High,Male,Sedentary,8,Preventive intervention suggested
+Family History,Heart Disease,High,Both,Alcohol Consumer,3,Periodic diagnostic assessment
+Poor Diet,Obesity,High,Female,Moderately Active,1,High-risk monitoring required
+Sedentary Lifestyle,Obesity,High,Both,Smoker,5,High-risk monitoring required
+Obesity,Heart Disease,High,Female,Smoker,8,High-risk monitoring required
+Alcohol Use,Hypertension,High,Male,Alcohol Consumer,2,High-risk monitoring required
+Obesity,Heart Disease,Medium,Both,Active,2,Regular screening advised
+Male >45,Hypertension,Low,Both,Alcohol Consumer,7,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,High,Both,Alcohol Consumer,8,Lifestyle modification needed
+Family History,Diabetes,Medium,Both,Sedentary,3,Preventive intervention suggested
+Male >45,Hypertension,Low,Female,Alcohol Consumer,1,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,Low,Both,Moderately Active,8,Lifestyle modification needed
+Obesity,Heart Disease,High,Both,Moderately Active,8,High-risk monitoring required
+Age > 50,Heart Disease,High,Male,Active,5,High-risk monitoring required
+Sedentary Lifestyle,Obesity,High,Both,Sedentary,7,Preventive intervention suggested
+Female Pregnancy,Gestational Diabetes,Low,Both,Sedentary,2,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,Medium,Both,Alcohol Consumer,3,Preventive intervention suggested
+High Cholesterol,Heart Disease,High,Male,Alcohol Consumer,5,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,Medium,Female,Smoker,8,Periodic diagnostic assessment
+Age > 50,Hypertension,High,Female,Moderately Active,4,Regular screening advised
+Male >45,Hypertension,Medium,Male,Moderately Active,3,High-risk monitoring required
+Poor Diet,Vitamin Deficiency,High,Both,Moderately Active,7,High-risk monitoring required
+Smoking,COPD,High,Female,Moderately Active,10,Lifestyle modification needed
+High Cholesterol,Atherosclerosis,Medium,Male,Alcohol Consumer,10,Lifestyle modification needed
+Obesity,Heart Disease,Medium,Both,Moderately Active,1,Lifestyle modification needed
+Alcohol Use,Liver Disease,Medium,Female,Alcohol Consumer,10,Regular screening advised
+Alcohol Use,Liver Disease,Medium,Both,Smoker,8,Lifestyle modification needed
+Sedentary Lifestyle,Cardiovascular Risk,High,Both,Moderately Active,10,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,High,Female,Smoker,10,Periodic diagnostic assessment
+Smoking,Lung Disease,Medium,Male,Active,1,Lifestyle modification needed
+Male >45,Hypertension,High,Male,Alcohol Consumer,2,Lifestyle modification needed
+Female Pregnancy,Hypertension,High,Both,Alcohol Consumer,2,Regular screening advised
+Female Pregnancy,Hypertension,Low,Both,Alcohol Consumer,1,Preventive intervention suggested
+Male >45,Prostate Risk,Medium,Male,Alcohol Consumer,7,Lifestyle modification needed
+Female Pregnancy,Anemia,Medium,Both,Alcohol Consumer,2,Preventive intervention suggested
+Obesity,Hypertension,Medium,Male,Active,5,Periodic diagnostic assessment
+Male >45,Prostate Risk,Medium,Male,Active,10,Periodic diagnostic assessment
+Smoking,Cancer Risk,Low,Both,Moderately Active,6,Preventive intervention suggested
+Family History,Cancer Risk,Low,Both,Alcohol Consumer,5,High-risk monitoring required
+Male >45,Prostate Risk,High,Both,Sedentary,7,Lifestyle modification needed
+High Cholesterol,Stroke,High,Female,Moderately Active,6,Periodic diagnostic assessment
+Male >45,Prostate Risk,Medium,Female,Alcohol Consumer,6,Preventive intervention suggested
+Obesity,Heart Disease,Low,Male,Smoker,3,Regular screening advised
+Sedentary Lifestyle,Diabetes,Medium,Female,Alcohol Consumer,10,Regular screening advised
+Obesity,Hypertension,High,Male,Active,3,Preventive intervention suggested
+Poor Diet,Obesity,Low,Female,Moderately Active,6,Regular screening advised
+Poor Diet,Diabetes,High,Female,Alcohol Consumer,9,High-risk monitoring required
+Poor Diet,Diabetes,High,Male,Smoker,8,Regular screening advised
+Sedentary Lifestyle,Diabetes,High,Both,Sedentary,4,Regular screening advised
+Poor Diet,Vitamin Deficiency,Medium,Male,Alcohol Consumer,3,Regular screening advised
+Family History,Cancer Risk,High,Male,Active,5,Preventive intervention suggested
+Family History,Heart Disease,Medium,Both,Moderately Active,9,Regular screening advised
+Smoking,Lung Disease,High,Both,Alcohol Consumer,10,High-risk monitoring required
+Family History,Diabetes,Medium,Male,Smoker,7,Periodic diagnostic assessment
+Age > 50,Stroke,Low,Both,Active,9,Regular screening advised
+Male >45,Prostate Risk,Medium,Male,Alcohol Consumer,5,Periodic diagnostic assessment
+Poor Diet,Obesity,High,Female,Alcohol Consumer,8,Lifestyle modification needed
+Family History,Diabetes,High,Both,Active,8,Regular screening advised
+Alcohol Use,Liver Disease,Medium,Male,Moderately Active,6,Preventive intervention suggested
+Family History,Heart Disease,Medium,Both,Sedentary,4,High-risk monitoring required
+Smoking,COPD,High,Female,Active,9,Lifestyle modification needed
+Female Pregnancy,Anemia,Medium,Both,Sedentary,3,Lifestyle modification needed
+Female Pregnancy,Hypertension,Medium,Both,Moderately Active,5,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,High,Both,Sedentary,3,Regular screening advised
+Smoking,Lung Disease,High,Both,Smoker,10,Regular screening advised
+Male >45,Cardiac Risk,High,Female,Alcohol Consumer,6,Preventive intervention suggested
+Poor Diet,Obesity,Medium,Both,Sedentary,7,Lifestyle modification needed
+Poor Diet,Diabetes,Low,Female,Smoker,9,Regular screening advised
+Male >45,Prostate Risk,Medium,Both,Moderately Active,8,Regular screening advised
+Male >45,Prostate Risk,Medium,Male,Active,4,Preventive intervention suggested
+Poor Diet,Diabetes,Medium,Both,Sedentary,3,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,Medium,Both,Sedentary,6,Lifestyle modification needed
+Female Pregnancy,Anemia,Medium,Both,Sedentary,6,Preventive intervention suggested
+Alcohol Use,Hypertension,Low,Male,Alcohol Consumer,4,Regular screening advised
+Alcohol Use,Liver Disease,High,Female,Moderately Active,3,Lifestyle modification needed
+Female Pregnancy,Gestational Diabetes,Low,Female,Moderately Active,9,Periodic diagnostic assessment
+Family History,Diabetes,Medium,Both,Alcohol Consumer,1,Preventive intervention suggested
+Smoking,Cancer Risk,Low,Male,Sedentary,8,Regular screening advised
+Female Pregnancy,Hypertension,Medium,Female,Sedentary,9,Periodic diagnostic assessment
+Alcohol Use,Hypertension,Low,Male,Sedentary,10,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,High,Both,Moderately Active,5,High-risk monitoring required
+Family History,Heart Disease,Medium,Both,Smoker,2,Preventive intervention suggested
+Poor Diet,Obesity,Medium,Male,Moderately Active,6,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,Medium,Male,Active,3,High-risk monitoring required
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Female,Sedentary,10,Preventive intervention suggested
+Alcohol Use,Hypertension,High,Female,Alcohol Consumer,9,Preventive intervention suggested
+High Cholesterol,Atherosclerosis,Medium,Male,Moderately Active,4,High-risk monitoring required
+Smoking,Lung Disease,Low,Male,Active,2,Preventive intervention suggested
+Male >45,Cardiac Risk,Low,Female,Alcohol Consumer,2,Regular screening advised
+Alcohol Use,Pancreatitis,Low,Both,Smoker,5,Lifestyle modification needed
+Sedentary Lifestyle,Diabetes,Medium,Both,Moderately Active,3,Periodic diagnostic assessment
+Obesity,Diabetes,Low,Female,Sedentary,8,Preventive intervention suggested
+Male >45,Prostate Risk,High,Male,Alcohol Consumer,3,Periodic diagnostic assessment
+Poor Diet,Obesity,High,Both,Alcohol Consumer,7,Periodic diagnostic assessment
+Male >45,Prostate Risk,High,Female,Alcohol Consumer,4,Regular screening advised
+Female Pregnancy,Anemia,Medium,Female,Moderately Active,5,Regular screening advised
+Age > 50,Hypertension,High,Male,Sedentary,5,Preventive intervention suggested
+Male >45,Cardiac Risk,High,Female,Smoker,5,Regular screening advised
+High Cholesterol,Heart Disease,High,Male,Alcohol Consumer,6,Lifestyle modification needed
+High Cholesterol,Stroke,Medium,Male,Moderately Active,7,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,Low,Both,Moderately Active,9,Periodic diagnostic assessment
+Alcohol Use,Hypertension,High,Both,Sedentary,7,Lifestyle modification needed
+Smoking,Lung Disease,Low,Male,Smoker,10,Preventive intervention suggested
+Alcohol Use,Pancreatitis,High,Male,Sedentary,1,Lifestyle modification needed
+Age > 50,Hypertension,Low,Male,Sedentary,5,Lifestyle modification needed
+Female Pregnancy,Hypertension,Low,Male,Moderately Active,1,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Female,Sedentary,8,Regular screening advised
+Family History,Cancer Risk,High,Male,Active,5,Preventive intervention suggested
+Smoking,Cancer Risk,Medium,Male,Sedentary,7,Regular screening advised
+Smoking,Cancer Risk,Medium,Female,Moderately Active,1,Lifestyle modification needed
+Female Pregnancy,Hypertension,High,Both,Moderately Active,8,Preventive intervention suggested
+Alcohol Use,Hypertension,Low,Both,Active,9,Periodic diagnostic assessment
+Smoking,COPD,Medium,Female,Moderately Active,6,Regular screening advised
+Sedentary Lifestyle,Obesity,Medium,Female,Sedentary,1,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Low,Male,Active,1,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,High,Female,Active,4,Lifestyle modification needed
+Female Pregnancy,Gestational Diabetes,High,Female,Active,1,High-risk monitoring required
+Obesity,Heart Disease,Medium,Male,Moderately Active,8,Lifestyle modification needed
+Family History,Heart Disease,High,Female,Smoker,4,Regular screening advised
+High Cholesterol,Heart Disease,High,Female,Active,8,Preventive intervention suggested
+Male >45,Prostate Risk,Medium,Female,Moderately Active,10,Lifestyle modification needed
+Male >45,Prostate Risk,Medium,Female,Sedentary,10,Periodic diagnostic assessment
+Obesity,Diabetes,Medium,Female,Sedentary,5,Periodic diagnostic assessment
+Family History,Diabetes,Low,Both,Alcohol Consumer,7,Lifestyle modification needed
+Age > 50,Hypertension,High,Both,Moderately Active,6,Regular screening advised
+Male >45,Prostate Risk,Medium,Both,Smoker,9,Lifestyle modification needed
+Poor Diet,Obesity,Medium,Both,Sedentary,2,Regular screening advised
+Male >45,Hypertension,Low,Male,Moderately Active,1,Lifestyle modification needed
+Smoking,COPD,Medium,Male,Alcohol Consumer,7,Preventive intervention suggested
+Male >45,Hypertension,High,Female,Active,6,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,Low,Male,Smoker,2,Preventive intervention suggested
+Age > 50,Stroke,High,Female,Sedentary,1,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,Low,Male,Sedentary,2,Lifestyle modification needed
+Male >45,Cardiac Risk,Low,Male,Alcohol Consumer,7,Lifestyle modification needed
+Sedentary Lifestyle,Diabetes,High,Both,Moderately Active,9,Periodic diagnostic assessment
+High Cholesterol,Stroke,Low,Both,Alcohol Consumer,6,Preventive intervention suggested
+High Cholesterol,Atherosclerosis,Low,Male,Alcohol Consumer,7,Periodic diagnostic assessment
+Family History,Heart Disease,Low,Both,Smoker,6,High-risk monitoring required
+Male >45,Prostate Risk,High,Female,Smoker,6,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,High,Female,Alcohol Consumer,5,High-risk monitoring required
+Female Pregnancy,Anemia,High,Male,Active,5,Periodic diagnostic assessment
+Age > 50,Hypertension,Low,Female,Active,5,Lifestyle modification needed
+Sedentary Lifestyle,Cardiovascular Risk,Low,Both,Sedentary,9,Periodic diagnostic assessment
+Male >45,Hypertension,High,Male,Active,1,Preventive intervention suggested
+Family History,Cancer Risk,Low,Female,Alcohol Consumer,4,Lifestyle modification needed
+Alcohol Use,Hypertension,Low,Female,Alcohol Consumer,4,Regular screening advised
+Family History,Diabetes,Low,Both,Alcohol Consumer,2,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,High,Both,Smoker,2,Regular screening advised
+Family History,Diabetes,High,Female,Smoker,2,Lifestyle modification needed
+Poor Diet,Diabetes,High,Both,Smoker,1,High-risk monitoring required
+Male >45,Cardiac Risk,Medium,Both,Moderately Active,6,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,Low,Both,Smoker,8,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,Low,Female,Sedentary,7,Lifestyle modification needed
+Obesity,Hypertension,Low,Both,Active,9,Preventive intervention suggested
+Alcohol Use,Liver Disease,Medium,Female,Moderately Active,3,Preventive intervention suggested
+Male >45,Cardiac Risk,Medium,Both,Alcohol Consumer,4,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,Medium,Male,Active,5,Preventive intervention suggested
+Family History,Heart Disease,High,Male,Active,7,Preventive intervention suggested
+Family History,Diabetes,Medium,Female,Alcohol Consumer,1,High-risk monitoring required
+Obesity,Hypertension,High,Female,Alcohol Consumer,3,Preventive intervention suggested
+Age > 50,Heart Disease,Medium,Female,Moderately Active,2,Regular screening advised
+Age > 50,Heart Disease,High,Male,Sedentary,1,High-risk monitoring required
+Smoking,COPD,Medium,Male,Sedentary,4,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,High,Female,Alcohol Consumer,8,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Male,Smoker,10,Periodic diagnostic assessment
+Age > 50,Stroke,Low,Female,Moderately Active,10,High-risk monitoring required
+Age > 50,Stroke,High,Male,Active,7,High-risk monitoring required
+Family History,Cancer Risk,Low,Both,Smoker,4,Preventive intervention suggested
+Male >45,Hypertension,Low,Female,Smoker,10,Periodic diagnostic assessment
+Smoking,Lung Disease,Medium,Female,Alcohol Consumer,1,Regular screening advised
+Sedentary Lifestyle,Diabetes,Medium,Female,Smoker,3,Regular screening advised
+Family History,Heart Disease,Medium,Both,Sedentary,4,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,High,Female,Active,9,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Medium,Female,Moderately Active,2,Preventive intervention suggested
+Male >45,Hypertension,High,Both,Moderately Active,7,Lifestyle modification needed
+Poor Diet,Diabetes,Medium,Female,Alcohol Consumer,6,Preventive intervention suggested
+Male >45,Cardiac Risk,Medium,Male,Alcohol Consumer,9,Lifestyle modification needed
+Obesity,Hypertension,High,Both,Moderately Active,7,Lifestyle modification needed
+Poor Diet,Diabetes,Medium,Both,Alcohol Consumer,2,Lifestyle modification needed
+Family History,Cancer Risk,High,Female,Smoker,7,High-risk monitoring required
+Female Pregnancy,Hypertension,High,Both,Sedentary,3,Lifestyle modification needed
+Smoking,Lung Disease,Medium,Both,Alcohol Consumer,5,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,Medium,Male,Moderately Active,1,High-risk monitoring required
+Smoking,Cancer Risk,High,Male,Alcohol Consumer,10,Preventive intervention suggested
+Family History,Cancer Risk,High,Female,Smoker,3,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,Low,Male,Sedentary,7,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,Low,Female,Alcohol Consumer,8,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,Medium,Male,Alcohol Consumer,7,High-risk monitoring required
+High Cholesterol,Stroke,High,Both,Alcohol Consumer,9,Periodic diagnostic assessment
+Age > 50,Hypertension,Low,Female,Active,4,Periodic diagnostic assessment
+Male >45,Prostate Risk,High,Male,Alcohol Consumer,7,Periodic diagnostic assessment
+Age > 50,Heart Disease,Medium,Female,Sedentary,5,Preventive intervention suggested
+Obesity,Hypertension,Medium,Male,Alcohol Consumer,3,Preventive intervention suggested
+Female Pregnancy,Gestational Diabetes,High,Male,Moderately Active,10,Periodic diagnostic assessment
+Obesity,Hypertension,Medium,Female,Active,3,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,High,Female,Active,5,High-risk monitoring required
+Obesity,Heart Disease,High,Male,Active,8,High-risk monitoring required
+Smoking,Cancer Risk,High,Both,Alcohol Consumer,10,Lifestyle modification needed
+High Cholesterol,Stroke,Medium,Male,Sedentary,10,Lifestyle modification needed
+Obesity,Diabetes,Low,Both,Active,7,High-risk monitoring required
+Alcohol Use,Pancreatitis,High,Female,Sedentary,3,Regular screening advised
+Obesity,Diabetes,Low,Female,Active,8,Preventive intervention suggested
+Female Pregnancy,Hypertension,High,Both,Smoker,4,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,Medium,Female,Smoker,2,Periodic diagnostic assessment
+Poor Diet,Diabetes,Medium,Both,Sedentary,10,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,Medium,Male,Sedentary,1,Lifestyle modification needed
+Age > 50,Hypertension,High,Both,Sedentary,6,Regular screening advised
+Age > 50,Heart Disease,Medium,Male,Moderately Active,5,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,High,Male,Smoker,10,High-risk monitoring required
+Age > 50,Heart Disease,High,Female,Sedentary,7,Regular screening advised
+High Cholesterol,Stroke,Low,Female,Moderately Active,2,High-risk monitoring required
+Family History,Heart Disease,Medium,Male,Moderately Active,10,Regular screening advised
+Smoking,Cancer Risk,High,Both,Alcohol Consumer,2,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,Medium,Both,Sedentary,5,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,Medium,Male,Alcohol Consumer,10,Preventive intervention suggested
+Male >45,Hypertension,High,Female,Moderately Active,10,Lifestyle modification needed
+Alcohol Use,Liver Disease,Low,Male,Smoker,2,Lifestyle modification needed
+Poor Diet,Obesity,Medium,Female,Sedentary,9,Lifestyle modification needed
+Age > 50,Hypertension,Medium,Female,Sedentary,2,High-risk monitoring required
+Alcohol Use,Pancreatitis,High,Male,Active,6,High-risk monitoring required
+High Cholesterol,Stroke,High,Male,Moderately Active,4,High-risk monitoring required
+Family History,Heart Disease,Medium,Female,Active,3,Preventive intervention suggested
+Obesity,Heart Disease,Medium,Both,Sedentary,8,Preventive intervention suggested
+Age > 50,Hypertension,Medium,Both,Sedentary,9,Periodic diagnostic assessment
+Age > 50,Heart Disease,High,Female,Sedentary,2,Lifestyle modification needed
+Alcohol Use,Liver Disease,Medium,Female,Alcohol Consumer,3,Periodic diagnostic assessment
+Poor Diet,Obesity,Medium,Male,Sedentary,6,Regular screening advised
+Alcohol Use,Hypertension,Low,Male,Sedentary,8,High-risk monitoring required
+Sedentary Lifestyle,Diabetes,Medium,Male,Sedentary,1,Lifestyle modification needed
+Smoking,COPD,Medium,Female,Alcohol Consumer,3,Lifestyle modification needed
+Family History,Diabetes,High,Both,Sedentary,6,Lifestyle modification needed
+Smoking,Cancer Risk,High,Male,Moderately Active,1,Preventive intervention suggested
+High Cholesterol,Stroke,High,Male,Active,5,Regular screening advised
+Poor Diet,Diabetes,Medium,Male,Active,9,High-risk monitoring required
+Age > 50,Hypertension,High,Both,Moderately Active,6,Lifestyle modification needed
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Female,Smoker,2,High-risk monitoring required
+Obesity,Diabetes,Medium,Male,Alcohol Consumer,9,Periodic diagnostic assessment
+Smoking,Lung Disease,Medium,Both,Sedentary,5,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Medium,Male,Sedentary,10,High-risk monitoring required
+Male >45,Prostate Risk,Low,Male,Smoker,1,Regular screening advised
+High Cholesterol,Atherosclerosis,Low,Female,Moderately Active,10,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,Medium,Female,Moderately Active,9,Regular screening advised
+Female Pregnancy,Hypertension,Low,Both,Smoker,2,Preventive intervention suggested
+Alcohol Use,Pancreatitis,High,Female,Smoker,4,Lifestyle modification needed
+Obesity,Heart Disease,Medium,Female,Smoker,3,High-risk monitoring required
+Family History,Diabetes,Medium,Male,Smoker,2,High-risk monitoring required
+Female Pregnancy,Anemia,High,Female,Sedentary,10,Periodic diagnostic assessment
+Obesity,Heart Disease,Low,Both,Active,6,Periodic diagnostic assessment
+Smoking,COPD,Medium,Female,Alcohol Consumer,7,Lifestyle modification needed
+Poor Diet,Diabetes,High,Female,Smoker,2,High-risk monitoring required
+Sedentary Lifestyle,Diabetes,High,Female,Alcohol Consumer,6,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,High,Male,Alcohol Consumer,8,Regular screening advised
+Poor Diet,Vitamin Deficiency,Medium,Both,Active,8,Lifestyle modification needed
+Alcohol Use,Hypertension,Low,Male,Alcohol Consumer,7,High-risk monitoring required
+Female Pregnancy,Hypertension,High,Male,Moderately Active,3,Periodic diagnostic assessment
+Age > 50,Heart Disease,High,Female,Alcohol Consumer,5,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,Medium,Male,Sedentary,5,Periodic diagnostic assessment
+Alcohol Use,Hypertension,High,Female,Active,10,Regular screening advised
+Poor Diet,Vitamin Deficiency,Medium,Male,Sedentary,1,High-risk monitoring required
+Male >45,Cardiac Risk,Low,Both,Sedentary,2,High-risk monitoring required
+Age > 50,Heart Disease,Medium,Both,Smoker,6,Preventive intervention suggested
+High Cholesterol,Heart Disease,Medium,Male,Moderately Active,8,Lifestyle modification needed
+Sedentary Lifestyle,Diabetes,Medium,Female,Smoker,3,High-risk monitoring required
+Obesity,Diabetes,Low,Both,Active,3,Preventive intervention suggested
+High Cholesterol,Atherosclerosis,Low,Both,Smoker,8,Periodic diagnostic assessment
+High Cholesterol,Stroke,Low,Both,Smoker,9,Preventive intervention suggested
+High Cholesterol,Heart Disease,Medium,Female,Alcohol Consumer,1,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,Medium,Both,Sedentary,7,Periodic diagnostic assessment
+Poor Diet,Obesity,Low,Male,Alcohol Consumer,8,High-risk monitoring required
+Smoking,Cancer Risk,Medium,Both,Active,3,Periodic diagnostic assessment
+Alcohol Use,Hypertension,Medium,Both,Alcohol Consumer,2,Lifestyle modification needed
+Female Pregnancy,Hypertension,High,Both,Active,9,Periodic diagnostic assessment
+Alcohol Use,Pancreatitis,Low,Female,Alcohol Consumer,1,Preventive intervention suggested
+Female Pregnancy,Hypertension,High,Both,Sedentary,7,High-risk monitoring required
+Alcohol Use,Hypertension,Low,Both,Alcohol Consumer,5,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,High,Both,Moderately Active,10,Regular screening advised
+Alcohol Use,Pancreatitis,High,Female,Smoker,2,Lifestyle modification needed
+Male >45,Cardiac Risk,High,Female,Sedentary,3,Periodic diagnostic assessment
+Alcohol Use,Hypertension,High,Male,Active,10,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,Low,Female,Sedentary,3,High-risk monitoring required
+Sedentary Lifestyle,Cardiovascular Risk,Low,Both,Active,6,Regular screening advised
+Obesity,Heart Disease,High,Male,Smoker,7,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,Medium,Both,Moderately Active,4,Periodic diagnostic assessment
+Family History,Cancer Risk,High,Male,Active,3,Preventive intervention suggested
+High Cholesterol,Heart Disease,Medium,Both,Alcohol Consumer,4,Preventive intervention suggested
+High Cholesterol,Heart Disease,Medium,Both,Smoker,1,High-risk monitoring required
+Female Pregnancy,Anemia,High,Both,Active,2,Periodic diagnostic assessment
+Family History,Diabetes,High,Both,Sedentary,6,High-risk monitoring required
+Alcohol Use,Liver Disease,Medium,Both,Smoker,8,Lifestyle modification needed
+Poor Diet,Diabetes,Medium,Both,Moderately Active,6,Periodic diagnostic assessment
+Age > 50,Hypertension,Low,Male,Active,7,Regular screening advised
+Male >45,Cardiac Risk,High,Female,Moderately Active,5,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Low,Male,Active,10,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,Low,Male,Active,10,Lifestyle modification needed
+High Cholesterol,Stroke,High,Both,Alcohol Consumer,3,Regular screening advised
+Obesity,Hypertension,Medium,Both,Active,8,High-risk monitoring required
+High Cholesterol,Stroke,High,Female,Sedentary,3,Regular screening advised
+Alcohol Use,Liver Disease,Medium,Female,Active,5,High-risk monitoring required
+Obesity,Hypertension,Low,Male,Alcohol Consumer,7,Lifestyle modification needed
+Female Pregnancy,Gestational Diabetes,Low,Female,Moderately Active,10,Regular screening advised
+Female Pregnancy,Hypertension,Medium,Male,Active,2,Periodic diagnostic assessment
+Alcohol Use,Hypertension,Low,Female,Moderately Active,1,Regular screening advised
+High Cholesterol,Heart Disease,Low,Female,Smoker,10,Regular screening advised
+Male >45,Hypertension,High,Female,Smoker,7,Preventive intervention suggested
+Smoking,Cancer Risk,Medium,Female,Smoker,2,Periodic diagnostic assessment
+Male >45,Prostate Risk,Medium,Female,Smoker,1,Regular screening advised
+Family History,Heart Disease,High,Female,Active,8,High-risk monitoring required
+Sedentary Lifestyle,Obesity,High,Female,Moderately Active,5,Preventive intervention suggested
+Smoking,Cancer Risk,High,Female,Active,8,Lifestyle modification needed
+Obesity,Diabetes,Medium,Both,Alcohol Consumer,4,Preventive intervention suggested
+High Cholesterol,Atherosclerosis,High,Both,Sedentary,8,Periodic diagnostic assessment
+Female Pregnancy,Gestational Diabetes,Low,Male,Sedentary,1,Preventive intervention suggested
+Smoking,Lung Disease,High,Both,Alcohol Consumer,8,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Male,Active,3,Preventive intervention suggested
+Age > 50,Stroke,High,Both,Active,4,Lifestyle modification needed
+Age > 50,Heart Disease,High,Female,Active,8,Periodic diagnostic assessment
+Obesity,Heart Disease,Low,Male,Active,8,Periodic diagnostic assessment
+Poor Diet,Diabetes,Low,Male,Smoker,6,Preventive intervention suggested
+Family History,Cancer Risk,High,Both,Alcohol Consumer,3,High-risk monitoring required
+Sedentary Lifestyle,Obesity,High,Female,Active,2,High-risk monitoring required
+Obesity,Hypertension,Low,Female,Alcohol Consumer,3,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,Low,Male,Alcohol Consumer,7,Lifestyle modification needed
+Age > 50,Stroke,Low,Male,Moderately Active,2,Periodic diagnostic assessment
+Alcohol Use,Hypertension,High,Female,Moderately Active,4,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Medium,Male,Moderately Active,10,Regular screening advised
+Poor Diet,Diabetes,High,Both,Active,5,High-risk monitoring required
+High Cholesterol,Atherosclerosis,High,Male,Active,9,Regular screening advised
+Poor Diet,Obesity,High,Both,Alcohol Consumer,4,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,Low,Male,Moderately Active,8,Preventive intervention suggested
+Obesity,Diabetes,High,Male,Active,6,High-risk monitoring required
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Both,Smoker,1,Regular screening advised
+Age > 50,Hypertension,Low,Male,Smoker,9,Regular screening advised
+Smoking,Lung Disease,High,Both,Alcohol Consumer,6,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,High,Female,Moderately Active,2,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Medium,Female,Moderately Active,7,Lifestyle modification needed
+Smoking,COPD,High,Male,Smoker,3,Lifestyle modification needed
+Poor Diet,Obesity,Low,Female,Moderately Active,8,Lifestyle modification needed
+Family History,Diabetes,Medium,Male,Active,10,Regular screening advised
+Alcohol Use,Liver Disease,Low,Female,Smoker,7,Lifestyle modification needed
+Family History,Cancer Risk,High,Both,Moderately Active,10,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,High,Male,Smoker,9,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,Medium,Female,Sedentary,1,Preventive intervention suggested
+Sedentary Lifestyle,Obesity,Medium,Both,Moderately Active,10,Lifestyle modification needed
+Poor Diet,Diabetes,Medium,Male,Active,8,Periodic diagnostic assessment
+Age > 50,Stroke,Medium,Female,Active,8,Preventive intervention suggested
+Sedentary Lifestyle,Obesity,High,Male,Smoker,4,Lifestyle modification needed
+Family History,Diabetes,Medium,Male,Active,8,High-risk monitoring required
+Obesity,Heart Disease,Medium,Both,Alcohol Consumer,1,Preventive intervention suggested
+Female Pregnancy,Gestational Diabetes,High,Female,Moderately Active,6,Preventive intervention suggested
+Age > 50,Hypertension,Low,Both,Sedentary,9,Regular screening advised
+Alcohol Use,Hypertension,High,Both,Alcohol Consumer,9,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,Low,Female,Active,9,High-risk monitoring required
+Age > 50,Heart Disease,Medium,Female,Alcohol Consumer,1,High-risk monitoring required
+Family History,Cancer Risk,High,Both,Active,9,Lifestyle modification needed
+Obesity,Hypertension,Medium,Male,Smoker,10,Lifestyle modification needed
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Female,Alcohol Consumer,7,High-risk monitoring required
+Age > 50,Heart Disease,Medium,Female,Smoker,9,Periodic diagnostic assessment
+Smoking,COPD,High,Both,Alcohol Consumer,5,Preventive intervention suggested
+Poor Diet,Obesity,High,Both,Active,4,Preventive intervention suggested
+Smoking,Lung Disease,Medium,Male,Sedentary,2,Regular screening advised
+Obesity,Hypertension,Low,Male,Smoker,3,Lifestyle modification needed
+Male >45,Hypertension,Low,Female,Alcohol Consumer,3,Preventive intervention suggested
+Family History,Diabetes,Medium,Both,Active,5,Lifestyle modification needed
+Smoking,Lung Disease,High,Male,Alcohol Consumer,6,Preventive intervention suggested
+Poor Diet,Obesity,High,Female,Smoker,10,Periodic diagnostic assessment
+Male >45,Prostate Risk,Medium,Both,Moderately Active,5,Lifestyle modification needed
+Alcohol Use,Liver Disease,Medium,Female,Active,3,High-risk monitoring required
+Alcohol Use,Hypertension,High,Both,Moderately Active,9,High-risk monitoring required
+Obesity,Diabetes,High,Both,Moderately Active,3,Lifestyle modification needed
+Smoking,Lung Disease,High,Both,Moderately Active,8,High-risk monitoring required
+Family History,Cancer Risk,Medium,Both,Active,6,High-risk monitoring required
+Obesity,Hypertension,Medium,Male,Alcohol Consumer,5,Regular screening advised
+Age > 50,Stroke,High,Male,Smoker,6,Lifestyle modification needed
+Age > 50,Hypertension,High,Both,Sedentary,5,Preventive intervention suggested
+Alcohol Use,Pancreatitis,High,Both,Smoker,6,Regular screening advised
+Female Pregnancy,Gestational Diabetes,Low,Both,Active,5,Regular screening advised
+High Cholesterol,Stroke,High,Female,Sedentary,2,High-risk monitoring required
+Age > 50,Hypertension,High,Both,Alcohol Consumer,4,High-risk monitoring required
+Sedentary Lifestyle,Obesity,Low,Female,Active,9,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Both,Alcohol Consumer,1,High-risk monitoring required
+High Cholesterol,Atherosclerosis,High,Female,Sedentary,7,High-risk monitoring required
+Age > 50,Stroke,Medium,Female,Smoker,9,Regular screening advised
+Sedentary Lifestyle,Diabetes,High,Both,Smoker,8,High-risk monitoring required
+Obesity,Heart Disease,High,Female,Smoker,3,Periodic diagnostic assessment
+Poor Diet,Diabetes,Low,Female,Smoker,9,High-risk monitoring required
+Smoking,Cancer Risk,High,Male,Active,7,High-risk monitoring required
+High Cholesterol,Atherosclerosis,High,Both,Alcohol Consumer,3,Lifestyle modification needed
+Obesity,Hypertension,Medium,Female,Active,5,Periodic diagnostic assessment
+Alcohol Use,Hypertension,High,Female,Moderately Active,1,Regular screening advised
+Obesity,Hypertension,Medium,Both,Smoker,2,High-risk monitoring required
+High Cholesterol,Atherosclerosis,Medium,Both,Moderately Active,1,Regular screening advised
+Alcohol Use,Hypertension,High,Male,Alcohol Consumer,6,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,Medium,Female,Smoker,2,High-risk monitoring required
+Male >45,Hypertension,High,Female,Moderately Active,10,Regular screening advised
+Obesity,Hypertension,Medium,Both,Moderately Active,6,Lifestyle modification needed
+Age > 50,Stroke,Medium,Both,Sedentary,1,High-risk monitoring required
+Alcohol Use,Pancreatitis,High,Male,Alcohol Consumer,4,Lifestyle modification needed
+Smoking,Cancer Risk,High,Both,Sedentary,6,High-risk monitoring required
+Alcohol Use,Pancreatitis,High,Female,Active,9,Periodic diagnostic assessment
+Family History,Cancer Risk,Low,Both,Sedentary,6,Preventive intervention suggested
+High Cholesterol,Heart Disease,High,Male,Active,4,Lifestyle modification needed
+Male >45,Cardiac Risk,High,Both,Alcohol Consumer,9,Periodic diagnostic assessment
+Male >45,Hypertension,High,Male,Smoker,8,Regular screening advised
+Smoking,Lung Disease,High,Female,Sedentary,5,High-risk monitoring required
+Obesity,Hypertension,High,Both,Alcohol Consumer,6,Lifestyle modification needed
+Alcohol Use,Liver Disease,High,Male,Moderately Active,3,Lifestyle modification needed
+Sedentary Lifestyle,Cardiovascular Risk,Low,Male,Active,7,Regular screening advised
+Smoking,Lung Disease,High,Female,Active,4,Regular screening advised
+Age > 50,Hypertension,Medium,Male,Smoker,2,High-risk monitoring required
+Age > 50,Heart Disease,Medium,Male,Active,2,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,High,Male,Sedentary,1,Regular screening advised
+Obesity,Heart Disease,High,Both,Sedentary,6,Lifestyle modification needed
+Male >45,Hypertension,High,Both,Alcohol Consumer,2,Regular screening advised
+Poor Diet,Diabetes,Medium,Both,Moderately Active,5,Lifestyle modification needed
+Male >45,Cardiac Risk,High,Male,Moderately Active,9,Preventive intervention suggested
+Family History,Heart Disease,High,Female,Active,3,High-risk monitoring required
+High Cholesterol,Heart Disease,Medium,Male,Smoker,2,High-risk monitoring required
+Smoking,COPD,Low,Male,Smoker,6,High-risk monitoring required
+Male >45,Hypertension,Low,Female,Smoker,2,Preventive intervention suggested
+Alcohol Use,Hypertension,High,Female,Smoker,4,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,High,Female,Moderately Active,2,Preventive intervention suggested
+Family History,Cancer Risk,Low,Both,Smoker,2,Preventive intervention suggested
+Female Pregnancy,Hypertension,High,Male,Active,3,Preventive intervention suggested
+High Cholesterol,Stroke,High,Male,Moderately Active,2,High-risk monitoring required
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Female,Active,4,Preventive intervention suggested
+Female Pregnancy,Anemia,High,Both,Alcohol Consumer,5,Preventive intervention suggested
+Family History,Diabetes,High,Female,Smoker,9,High-risk monitoring required
+Obesity,Hypertension,Low,Female,Smoker,8,Lifestyle modification needed
+Obesity,Diabetes,Low,Male,Active,8,Regular screening advised
+Obesity,Hypertension,High,Female,Moderately Active,5,Periodic diagnostic assessment
+Poor Diet,Diabetes,High,Both,Alcohol Consumer,8,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,High,Female,Alcohol Consumer,5,Periodic diagnostic assessment
+Family History,Heart Disease,High,Male,Smoker,2,Preventive intervention suggested
+Female Pregnancy,Anemia,High,Female,Smoker,1,Regular screening advised
+Obesity,Heart Disease,High,Female,Moderately Active,8,Preventive intervention suggested
+Obesity,Hypertension,High,Female,Active,10,Preventive intervention suggested
+Male >45,Hypertension,Medium,Female,Smoker,9,Lifestyle modification needed
+Male >45,Cardiac Risk,Medium,Female,Alcohol Consumer,7,Periodic diagnostic assessment
+Family History,Diabetes,Medium,Male,Alcohol Consumer,1,Lifestyle modification needed
+Family History,Diabetes,High,Both,Active,6,Preventive intervention suggested
+Smoking,COPD,Medium,Female,Smoker,6,Regular screening advised
+Sedentary Lifestyle,Obesity,Medium,Female,Alcohol Consumer,2,Regular screening advised
+Alcohol Use,Liver Disease,Medium,Male,Alcohol Consumer,6,Regular screening advised
+Female Pregnancy,Hypertension,High,Both,Alcohol Consumer,7,High-risk monitoring required
+Age > 50,Hypertension,Medium,Male,Sedentary,7,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,High,Female,Active,4,High-risk monitoring required
+Female Pregnancy,Hypertension,High,Both,Sedentary,3,Periodic diagnostic assessment
+Alcohol Use,Hypertension,High,Male,Smoker,2,Periodic diagnostic assessment
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Female,Alcohol Consumer,7,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,High,Both,Alcohol Consumer,2,Periodic diagnostic assessment
+Family History,Diabetes,Low,Both,Smoker,7,Lifestyle modification needed
+Family History,Cancer Risk,High,Female,Alcohol Consumer,5,Preventive intervention suggested
+Male >45,Prostate Risk,Medium,Female,Sedentary,10,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,High,Male,Active,9,Lifestyle modification needed
+Poor Diet,Obesity,Medium,Both,Smoker,5,Periodic diagnostic assessment
+Poor Diet,Obesity,High,Both,Active,9,Lifestyle modification needed
+Family History,Diabetes,Low,Male,Sedentary,7,Preventive intervention suggested
+Family History,Cancer Risk,High,Female,Sedentary,5,Lifestyle modification needed
+Alcohol Use,Pancreatitis,High,Female,Moderately Active,2,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,Medium,Female,Smoker,8,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,High,Male,Moderately Active,3,High-risk monitoring required
+Obesity,Diabetes,Medium,Female,Alcohol Consumer,3,Regular screening advised
+Female Pregnancy,Gestational Diabetes,Low,Male,Sedentary,10,High-risk monitoring required
+Smoking,COPD,High,Both,Active,7,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,High,Both,Active,9,Periodic diagnostic assessment
+Male >45,Prostate Risk,Medium,Male,Moderately Active,10,Regular screening advised
+Family History,Diabetes,High,Both,Smoker,4,Preventive intervention suggested
+Sedentary Lifestyle,Obesity,Low,Male,Sedentary,8,Preventive intervention suggested
+Alcohol Use,Pancreatitis,Low,Both,Sedentary,2,High-risk monitoring required
+Male >45,Prostate Risk,Medium,Male,Sedentary,3,High-risk monitoring required
+Female Pregnancy,Hypertension,Medium,Female,Active,10,Regular screening advised
+Age > 50,Hypertension,High,Both,Moderately Active,5,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,High,Both,Sedentary,2,Periodic diagnostic assessment
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Female,Sedentary,5,Regular screening advised
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Male,Smoker,6,Preventive intervention suggested
+Age > 50,Stroke,High,Female,Smoker,7,High-risk monitoring required
+High Cholesterol,Atherosclerosis,High,Both,Sedentary,9,Regular screening advised
+Family History,Diabetes,High,Both,Sedentary,8,Regular screening advised
+Age > 50,Hypertension,High,Both,Smoker,3,Regular screening advised
+High Cholesterol,Atherosclerosis,High,Female,Alcohol Consumer,2,Regular screening advised
+Obesity,Diabetes,Medium,Both,Moderately Active,10,Preventive intervention suggested
+Family History,Diabetes,Medium,Both,Moderately Active,5,Lifestyle modification needed
+Poor Diet,Obesity,High,Male,Active,7,High-risk monitoring required
+Obesity,Hypertension,High,Both,Moderately Active,1,Regular screening advised
+Male >45,Hypertension,High,Male,Active,8,Lifestyle modification needed
+Alcohol Use,Pancreatitis,High,Male,Smoker,10,Preventive intervention suggested
+Poor Diet,Obesity,Low,Female,Moderately Active,10,Regular screening advised
+Age > 50,Hypertension,Medium,Female,Smoker,2,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,High,Female,Sedentary,8,Preventive intervention suggested
+Obesity,Hypertension,High,Both,Moderately Active,5,Lifestyle modification needed
+High Cholesterol,Atherosclerosis,Medium,Male,Active,5,High-risk monitoring required
+Sedentary Lifestyle,Diabetes,Medium,Male,Sedentary,10,Preventive intervention suggested
+Smoking,Lung Disease,Medium,Female,Smoker,4,Preventive intervention suggested
+High Cholesterol,Stroke,High,Male,Active,9,Regular screening advised
+Age > 50,Stroke,High,Female,Sedentary,10,Periodic diagnostic assessment
+Age > 50,Heart Disease,Medium,Both,Smoker,5,Preventive intervention suggested
+Family History,Cancer Risk,High,Both,Active,10,Lifestyle modification needed
+Alcohol Use,Liver Disease,Medium,Female,Smoker,3,Regular screening advised
+Family History,Heart Disease,Medium,Male,Sedentary,2,High-risk monitoring required
+Age > 50,Heart Disease,Medium,Female,Sedentary,7,High-risk monitoring required
+Alcohol Use,Pancreatitis,High,Female,Alcohol Consumer,6,Preventive intervention suggested
+Obesity,Hypertension,High,Female,Moderately Active,9,Preventive intervention suggested
+Age > 50,Heart Disease,Low,Male,Moderately Active,1,Preventive intervention suggested
+Alcohol Use,Liver Disease,High,Female,Active,8,Regular screening advised
+Female Pregnancy,Anemia,High,Both,Smoker,8,Preventive intervention suggested
+Smoking,Cancer Risk,High,Male,Sedentary,2,Lifestyle modification needed
+Alcohol Use,Liver Disease,High,Both,Alcohol Consumer,5,Periodic diagnostic assessment
+Poor Diet,Diabetes,High,Male,Alcohol Consumer,10,Lifestyle modification needed
+High Cholesterol,Atherosclerosis,Medium,Female,Active,6,Regular screening advised
+Alcohol Use,Pancreatitis,High,Male,Smoker,6,Periodic diagnostic assessment
+Smoking,COPD,Low,Male,Smoker,8,Preventive intervention suggested
+Alcohol Use,Pancreatitis,High,Female,Active,10,Preventive intervention suggested
+Family History,Heart Disease,High,Both,Moderately Active,4,Regular screening advised
+Alcohol Use,Hypertension,High,Both,Active,9,Periodic diagnostic assessment
+High Cholesterol,Atherosclerosis,Medium,Male,Moderately Active,7,Regular screening advised
+Age > 50,Heart Disease,Low,Female,Sedentary,3,Regular screening advised
+Alcohol Use,Hypertension,High,Both,Sedentary,10,Lifestyle modification needed
+Family History,Heart Disease,Low,Female,Alcohol Consumer,4,Preventive intervention suggested
+Female Pregnancy,Anemia,Medium,Both,Alcohol Consumer,7,Regular screening advised
+High Cholesterol,Heart Disease,High,Female,Smoker,2,Regular screening advised
+Male >45,Prostate Risk,High,Both,Moderately Active,3,Preventive intervention suggested
+Male >45,Hypertension,High,Male,Sedentary,8,Preventive intervention suggested
+Smoking,COPD,Medium,Male,Sedentary,4,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,High,Both,Active,1,Periodic diagnostic assessment
+Smoking,Cancer Risk,Medium,Male,Smoker,10,High-risk monitoring required
+Family History,Diabetes,High,Both,Active,2,Preventive intervention suggested
+Obesity,Diabetes,High,Male,Active,7,High-risk monitoring required
+Family History,Heart Disease,High,Both,Smoker,10,High-risk monitoring required
+Family History,Cancer Risk,Medium,Male,Alcohol Consumer,5,Regular screening advised
+High Cholesterol,Stroke,Low,Female,Active,1,Lifestyle modification needed
+Female Pregnancy,Anemia,High,Both,Alcohol Consumer,8,High-risk monitoring required
+Poor Diet,Vitamin Deficiency,Medium,Both,Smoker,5,Regular screening advised
+Obesity,Diabetes,Low,Male,Active,4,Regular screening advised
+Sedentary Lifestyle,Cardiovascular Risk,High,Both,Moderately Active,7,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,Medium,Female,Moderately Active,8,Preventive intervention suggested
+Age > 50,Heart Disease,Low,Male,Smoker,8,Preventive intervention suggested
+Age > 50,Stroke,High,Male,Sedentary,10,Preventive intervention suggested
+Age > 50,Stroke,Low,Both,Smoker,7,Preventive intervention suggested
+Poor Diet,Vitamin Deficiency,High,Female,Active,8,Preventive intervention suggested
+Female Pregnancy,Hypertension,High,Both,Smoker,4,Regular screening advised
+Male >45,Cardiac Risk,Medium,Female,Alcohol Consumer,2,High-risk monitoring required
+High Cholesterol,Heart Disease,Low,Both,Sedentary,8,Preventive intervention suggested
+Age > 50,Heart Disease,Medium,Male,Smoker,6,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,Medium,Both,Sedentary,10,Preventive intervention suggested
+Obesity,Hypertension,High,Female,Smoker,6,Preventive intervention suggested
+Obesity,Heart Disease,Medium,Both,Active,8,Lifestyle modification needed
+Obesity,Diabetes,Low,Female,Active,7,Preventive intervention suggested
+Alcohol Use,Liver Disease,Medium,Male,Active,6,High-risk monitoring required
+Family History,Heart Disease,Low,Both,Active,2,High-risk monitoring required
+High Cholesterol,Atherosclerosis,High,Male,Alcohol Consumer,4,Preventive intervention suggested
+Alcohol Use,Hypertension,High,Male,Alcohol Consumer,5,Lifestyle modification needed
+Male >45,Hypertension,High,Both,Active,8,Preventive intervention suggested
+Smoking,Lung Disease,High,Both,Active,9,Regular screening advised
+Male >45,Cardiac Risk,Low,Male,Moderately Active,6,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Medium,Both,Smoker,2,Lifestyle modification needed
+Family History,Diabetes,High,Male,Moderately Active,8,Preventive intervention suggested
+Age > 50,Heart Disease,High,Female,Sedentary,5,Periodic diagnostic assessment
+Obesity,Diabetes,Medium,Both,Smoker,6,Lifestyle modification needed
+Obesity,Heart Disease,Medium,Male,Moderately Active,7,Preventive intervention suggested
+High Cholesterol,Heart Disease,High,Both,Sedentary,1,Preventive intervention suggested
+Obesity,Diabetes,High,Both,Active,2,High-risk monitoring required
+Family History,Diabetes,High,Male,Smoker,1,Preventive intervention suggested
+Age > 50,Hypertension,High,Male,Alcohol Consumer,1,Periodic diagnostic assessment
+Alcohol Use,Hypertension,Medium,Both,Alcohol Consumer,5,High-risk monitoring required
+Family History,Cancer Risk,High,Both,Alcohol Consumer,3,Preventive intervention suggested
+Female Pregnancy,Hypertension,Medium,Both,Alcohol Consumer,10,Preventive intervention suggested
+Family History,Heart Disease,Medium,Male,Sedentary,2,Regular screening advised
+Male >45,Prostate Risk,Medium,Both,Moderately Active,9,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,Low,Both,Sedentary,9,High-risk monitoring required
+Obesity,Diabetes,Low,Both,Alcohol Consumer,5,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Medium,Both,Active,1,High-risk monitoring required
+Alcohol Use,Pancreatitis,Medium,Male,Active,2,Preventive intervention suggested
+Alcohol Use,Pancreatitis,High,Female,Sedentary,4,Periodic diagnostic assessment
+Poor Diet,Vitamin Deficiency,High,Both,Alcohol Consumer,10,Lifestyle modification needed
+Family History,Diabetes,Medium,Both,Alcohol Consumer,3,Preventive intervention suggested
+Male >45,Hypertension,Medium,Female,Alcohol Consumer,10,Lifestyle modification needed
+Family History,Diabetes,Low,Both,Smoker,7,Regular screening advised
+Smoking,Lung Disease,Medium,Male,Smoker,4,Preventive intervention suggested
+Smoking,COPD,High,Female,Alcohol Consumer,9,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,High,Both,Smoker,8,Preventive intervention suggested
+High Cholesterol,Atherosclerosis,Low,Male,Smoker,8,Lifestyle modification needed
+Male >45,Hypertension,Low,Male,Smoker,8,Regular screening advised
+Obesity,Heart Disease,Medium,Male,Alcohol Consumer,7,Regular screening advised
+Smoking,COPD,High,Male,Alcohol Consumer,3,Regular screening advised
+Family History,Diabetes,High,Female,Sedentary,8,Regular screening advised
+Obesity,Diabetes,High,Female,Active,5,High-risk monitoring required
+Sedentary Lifestyle,Obesity,High,Female,Active,2,Periodic diagnostic assessment
+Family History,Cancer Risk,High,Female,Smoker,10,High-risk monitoring required
+Poor Diet,Obesity,High,Female,Smoker,10,Lifestyle modification needed
+Obesity,Heart Disease,High,Female,Smoker,3,High-risk monitoring required
+Smoking,Cancer Risk,High,Female,Smoker,4,Preventive intervention suggested
+Family History,Heart Disease,Low,Both,Smoker,5,Regular screening advised
+Obesity,Heart Disease,Low,Both,Sedentary,9,Regular screening advised
+Male >45,Cardiac Risk,Medium,Both,Alcohol Consumer,10,Regular screening advised
+Poor Diet,Vitamin Deficiency,Medium,Female,Alcohol Consumer,1,Regular screening advised
+Male >45,Cardiac Risk,High,Female,Moderately Active,4,Periodic diagnostic assessment
+Female Pregnancy,Gestational Diabetes,High,Both,Sedentary,7,Periodic diagnostic assessment
+Age > 50,Stroke,High,Male,Sedentary,7,Lifestyle modification needed
+High Cholesterol,Atherosclerosis,High,Female,Smoker,5,Regular screening advised
+Smoking,Lung Disease,Medium,Female,Moderately Active,3,High-risk monitoring required
+Smoking,Lung Disease,Medium,Female,Moderately Active,1,Periodic diagnostic assessment
+Family History,Cancer Risk,Low,Male,Sedentary,7,Regular screening advised
+Family History,Cancer Risk,Medium,Female,Sedentary,7,Regular screening advised
+Age > 50,Heart Disease,Medium,Both,Alcohol Consumer,4,Preventive intervention suggested
+Male >45,Hypertension,Medium,Male,Sedentary,1,High-risk monitoring required
+Female Pregnancy,Hypertension,Medium,Female,Active,7,Lifestyle modification needed
+Age > 50,Stroke,High,Both,Active,4,Periodic diagnostic assessment
+Obesity,Hypertension,High,Female,Active,9,Lifestyle modification needed
+Obesity,Hypertension,Medium,Male,Moderately Active,9,Preventive intervention suggested
+Male >45,Prostate Risk,Low,Female,Alcohol Consumer,5,Lifestyle modification needed
+Age > 50,Heart Disease,High,Female,Sedentary,10,High-risk monitoring required
+High Cholesterol,Heart Disease,High,Male,Alcohol Consumer,9,High-risk monitoring required
+Age > 50,Heart Disease,High,Both,Active,5,Regular screening advised
+High Cholesterol,Stroke,Low,Male,Alcohol Consumer,5,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,Medium,Female,Sedentary,5,Preventive intervention suggested
+Alcohol Use,Liver Disease,High,Female,Sedentary,4,Preventive intervention suggested
+Poor Diet,Obesity,Low,Both,Moderately Active,1,Periodic diagnostic assessment
+Female Pregnancy,Gestational Diabetes,High,Both,Moderately Active,7,Periodic diagnostic assessment
+Female Pregnancy,Anemia,Medium,Both,Active,9,Regular screening advised
+Female Pregnancy,Hypertension,Low,Female,Alcohol Consumer,6,Preventive intervention suggested
+Obesity,Heart Disease,High,Male,Smoker,6,Lifestyle modification needed
+Female Pregnancy,Gestational Diabetes,Medium,Male,Sedentary,6,Lifestyle modification needed
+Smoking,Cancer Risk,High,Both,Moderately Active,4,Preventive intervention suggested
+Family History,Cancer Risk,Medium,Both,Alcohol Consumer,4,Regular screening advised
+Sedentary Lifestyle,Diabetes,Medium,Female,Alcohol Consumer,9,Preventive intervention suggested
+Obesity,Heart Disease,Medium,Both,Alcohol Consumer,10,Periodic diagnostic assessment
+Obesity,Diabetes,High,Both,Active,3,High-risk monitoring required
+Poor Diet,Diabetes,High,Both,Sedentary,4,Regular screening advised
+Male >45,Hypertension,Medium,Both,Smoker,1,Preventive intervention suggested
+Age > 50,Stroke,Medium,Female,Sedentary,2,Periodic diagnostic assessment
+Female Pregnancy,Anemia,Medium,Male,Moderately Active,1,High-risk monitoring required
+High Cholesterol,Stroke,Medium,Male,Smoker,4,High-risk monitoring required
+Smoking,Cancer Risk,High,Both,Moderately Active,7,Regular screening advised
+Sedentary Lifestyle,Obesity,Low,Female,Active,2,Regular screening advised
+Female Pregnancy,Anemia,High,Both,Sedentary,5,Lifestyle modification needed
+Smoking,COPD,Medium,Female,Active,6,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,High,Both,Smoker,2,Preventive intervention suggested
+Poor Diet,Diabetes,Low,Male,Active,7,High-risk monitoring required
+Smoking,Lung Disease,Low,Female,Active,5,Periodic diagnostic assessment
+High Cholesterol,Atherosclerosis,Low,Male,Alcohol Consumer,1,High-risk monitoring required
+High Cholesterol,Heart Disease,Low,Female,Moderately Active,10,Periodic diagnostic assessment
+Age > 50,Stroke,Medium,Female,Alcohol Consumer,10,Regular screening advised
+Family History,Heart Disease,High,Male,Smoker,9,High-risk monitoring required
+Poor Diet,Diabetes,Low,Male,Alcohol Consumer,2,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,Low,Both,Sedentary,6,Preventive intervention suggested
+Female Pregnancy,Hypertension,High,Male,Moderately Active,3,Regular screening advised
+Age > 50,Heart Disease,Medium,Female,Alcohol Consumer,6,High-risk monitoring required
+Poor Diet,Vitamin Deficiency,High,Male,Smoker,5,Periodic diagnostic assessment
+Family History,Diabetes,Medium,Male,Alcohol Consumer,10,Lifestyle modification needed
+Age > 50,Heart Disease,Medium,Both,Active,7,High-risk monitoring required
+Sedentary Lifestyle,Obesity,High,Male,Active,6,Lifestyle modification needed
+Female Pregnancy,Hypertension,High,Female,Alcohol Consumer,6,Periodic diagnostic assessment
+Poor Diet,Obesity,High,Female,Sedentary,3,Regular screening advised
+Female Pregnancy,Gestational Diabetes,Medium,Male,Moderately Active,4,Preventive intervention suggested
+Poor Diet,Diabetes,Medium,Both,Sedentary,7,Lifestyle modification needed
+High Cholesterol,Atherosclerosis,High,Male,Sedentary,1,Regular screening advised
+Family History,Cancer Risk,High,Male,Sedentary,8,Lifestyle modification needed
+Poor Diet,Obesity,Low,Male,Moderately Active,4,High-risk monitoring required
+Obesity,Diabetes,High,Both,Moderately Active,6,Periodic diagnostic assessment
+Sedentary Lifestyle,Obesity,Medium,Male,Sedentary,2,Regular screening advised
+Obesity,Hypertension,High,Male,Sedentary,4,High-risk monitoring required
+Female Pregnancy,Gestational Diabetes,Medium,Female,Moderately Active,9,Periodic diagnostic assessment
+High Cholesterol,Stroke,Low,Male,Moderately Active,4,Lifestyle modification needed
+Male >45,Prostate Risk,High,Female,Alcohol Consumer,7,Lifestyle modification needed
+Age > 50,Hypertension,High,Both,Sedentary,3,High-risk monitoring required
+Sedentary Lifestyle,Obesity,High,Female,Moderately Active,9,Periodic diagnostic assessment
+Female Pregnancy,Gestational Diabetes,High,Female,Alcohol Consumer,2,Lifestyle modification needed
+Male >45,Prostate Risk,High,Both,Alcohol Consumer,6,Preventive intervention suggested
+Male >45,Prostate Risk,Low,Both,Sedentary,9,Preventive intervention suggested
+Female Pregnancy,Anemia,Medium,Female,Alcohol Consumer,1,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,Medium,Male,Smoker,4,High-risk monitoring required
+High Cholesterol,Heart Disease,High,Female,Sedentary,9,Regular screening advised
+Obesity,Diabetes,Medium,Both,Sedentary,4,Periodic diagnostic assessment
+Age > 50,Stroke,Medium,Female,Smoker,8,Preventive intervention suggested
+High Cholesterol,Heart Disease,Medium,Female,Sedentary,5,Preventive intervention suggested
+Age > 50,Heart Disease,Medium,Female,Active,6,Regular screening advised
+Alcohol Use,Pancreatitis,Medium,Both,Active,5,Lifestyle modification needed
+Smoking,Lung Disease,Low,Male,Alcohol Consumer,4,High-risk monitoring required
+Sedentary Lifestyle,Diabetes,Medium,Female,Sedentary,4,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Female,Active,5,High-risk monitoring required
+Family History,Diabetes,High,Both,Active,8,Periodic diagnostic assessment
+Obesity,Hypertension,Medium,Both,Moderately Active,8,Lifestyle modification needed
+Male >45,Hypertension,High,Female,Smoker,6,Regular screening advised
+Family History,Cancer Risk,Medium,Both,Smoker,4,Preventive intervention suggested
+Female Pregnancy,Hypertension,Low,Male,Alcohol Consumer,3,High-risk monitoring required
+Age > 50,Stroke,High,Female,Sedentary,4,Preventive intervention suggested
+High Cholesterol,Stroke,High,Both,Alcohol Consumer,5,High-risk monitoring required
+Poor Diet,Diabetes,High,Male,Moderately Active,3,High-risk monitoring required
+Poor Diet,Vitamin Deficiency,High,Both,Alcohol Consumer,7,Preventive intervention suggested
+Sedentary Lifestyle,Cardiovascular Risk,Low,Female,Moderately Active,8,Regular screening advised
+Family History,Heart Disease,High,Both,Sedentary,2,Lifestyle modification needed
+Smoking,Cancer Risk,High,Male,Alcohol Consumer,8,Regular screening advised
+Obesity,Diabetes,Low,Female,Sedentary,4,Lifestyle modification needed
+Alcohol Use,Pancreatitis,Medium,Female,Active,6,Periodic diagnostic assessment
+Age > 50,Heart Disease,Medium,Female,Smoker,3,Regular screening advised
+Obesity,Heart Disease,Medium,Both,Active,7,Lifestyle modification needed
+Obesity,Diabetes,Medium,Both,Smoker,3,Periodic diagnostic assessment
+Poor Diet,Obesity,High,Both,Smoker,5,Lifestyle modification needed
+Age > 50,Heart Disease,Medium,Female,Alcohol Consumer,4,Periodic diagnostic assessment
+Family History,Heart Disease,High,Female,Smoker,10,Regular screening advised
+Smoking,COPD,High,Female,Sedentary,5,Preventive intervention suggested
+Poor Diet,Diabetes,Medium,Male,Alcohol Consumer,7,Preventive intervention suggested
+High Cholesterol,Stroke,Medium,Both,Active,7,Regular screening advised
+Sedentary Lifestyle,Obesity,Medium,Both,Alcohol Consumer,5,Regular screening advised
+Sedentary Lifestyle,Cardiovascular Risk,Medium,Both,Active,6,Regular screening advised
+Smoking,Cancer Risk,High,Female,Smoker,8,Lifestyle modification needed
+Alcohol Use,Liver Disease,Medium,Female,Active,2,Preventive intervention suggested
+High Cholesterol,Heart Disease,High,Male,Smoker,1,Regular screening advised
+Alcohol Use,Liver Disease,High,Male,Sedentary,8,Preventive intervention suggested
+Female Pregnancy,Gestational Diabetes,Low,Both,Moderately Active,8,Lifestyle modification needed
+Female Pregnancy,Anemia,High,Male,Active,10,Regular screening advised
+Obesity,Hypertension,Low,Both,Smoker,3,Regular screening advised
+Age > 50,Hypertension,Medium,Female,Sedentary,3,Lifestyle modification needed
+Age > 50,Hypertension,Medium,Female,Active,9,Regular screening advised
+High Cholesterol,Stroke,Medium,Male,Alcohol Consumer,1,Regular screening advised
+High Cholesterol,Atherosclerosis,High,Female,Moderately Active,4,Regular screening advised
+Age > 50,Stroke,Low,Male,Sedentary,4,Regular screening advised
+Sedentary Lifestyle,Obesity,High,Both,Moderately Active,3,Regular screening advised
+High Cholesterol,Stroke,Low,Female,Sedentary,9,Lifestyle modification needed
+Poor Diet,Diabetes,High,Female,Smoker,2,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,Medium,Male,Active,7,High-risk monitoring required
+Age > 50,Stroke,Medium,Male,Active,5,Periodic diagnostic assessment
+Family History,Cancer Risk,Low,Male,Smoker,5,Periodic diagnostic assessment
+Female Pregnancy,Gestational Diabetes,High,Both,Moderately Active,5,Regular screening advised
+Poor Diet,Obesity,High,Both,Smoker,3,High-risk monitoring required
+Obesity,Heart Disease,High,Both,Sedentary,8,Regular screening advised
+Family History,Cancer Risk,High,Both,Smoker,7,Periodic diagnostic assessment
+Sedentary Lifestyle,Diabetes,High,Male,Moderately Active,1,Periodic diagnostic assessment
+Smoking,COPD,Medium,Female,Moderately Active,10,Regular screening advised
+Age > 50,Heart Disease,Medium,Female,Moderately Active,3,Preventive intervention suggested
+Sedentary Lifestyle,Diabetes,Low,Both,Alcohol Consumer,8,High-risk monitoring required
+Obesity,Hypertension,Medium,Male,Alcohol Consumer,7,High-risk monitoring required
+Age > 50,Heart Disease,High,Female,Sedentary,4,Lifestyle modification needed
+Male >45,Cardiac Risk,High,Both,Moderately Active,4,Periodic diagnostic assessment
+High Cholesterol,Stroke,Medium,Female,Active,2,Preventive intervention suggested
+Smoking,Lung Disease,Low,Male,Moderately Active,3,Regular screening advised
+Obesity,Heart Disease,High,Male,Moderately Active,9,Regular screening advised
+High Cholesterol,Stroke,Medium,Male,Moderately Active,4,Preventive intervention suggested
+Obesity,Heart Disease,Medium,Female,Alcohol Consumer,8,Lifestyle modification needed
+Alcohol Use,Hypertension,Low,Female,Smoker,7,Lifestyle modification needed
+Female Pregnancy,Anemia,Medium,Both,Smoker,3,Preventive intervention suggested
+Age > 50,Stroke,Medium,Male,Sedentary,10,Periodic diagnostic assessment
+Obesity,Heart Disease,High,Female,Smoker,8,High-risk monitoring required
+Female Pregnancy,Anemia,Medium,Both,Smoker,2,High-risk monitoring required
+Obesity,Heart Disease,Medium,Male,Moderately Active,1,Regular screening advised
+Male >45,Hypertension,High,Female,Smoker,7,Preventive intervention suggested
+Family History,Diabetes,Medium,Both,Alcohol Consumer,2,Preventive intervention suggested
+Age > 50,Heart Disease,Medium,Both,Moderately Active,4,Preventive intervention suggested
+Alcohol Use,Pancreatitis,Medium,Both,Smoker,6,Regular screening advised
+High Cholesterol,Heart Disease,High,Male,Smoker,1,High-risk monitoring required
+Age > 50,Hypertension,High,Male,Sedentary,10,Preventive intervention suggested
+Obesity,Hypertension,Medium,Both,Moderately Active,1,Regular screening advised
+Smoking,Cancer Risk,High,Female,Smoker,10,Regular screening advised
+Male >45,Cardiac Risk,High,Male,Smoker,5,High-risk monitoring required
+Male >45,Hypertension,High,Female,Alcohol Consumer,5,Preventive intervention suggested
+Smoking,Lung Disease,High,Female,Moderately Active,5,Lifestyle modification needed
+High Cholesterol,Stroke,Medium,Male,Smoker,1,Regular screening advised
+Smoking,Cancer Risk,Medium,Female,Sedentary,7,Lifestyle modification needed
+Obesity,Hypertension,Medium,Male,Moderately Active,8,Lifestyle modification needed
+Male >45,Cardiac Risk,Medium,Male,Moderately Active,4,Regular screening advised
+Obesity,Diabetes,Medium,Female,Smoker,10,Regular screening advised
+Obesity,Diabetes,Medium,Female,Active,5,Regular screening advised
+Family History,Cancer Risk,High,Female,Smoker,2,Regular screening advised
+Age > 50,Stroke,High,Male,Alcohol Consumer,1,Regular screening advised
+Sedentary Lifestyle,Diabetes,High,Female,Alcohol Consumer,9,High-risk monitoring required
+Female Pregnancy,Anemia,High,Both,Smoker,6,High-risk monitoring required
+Family History,Diabetes,High,Female,Smoker,7,Periodic diagnostic assessment
+Age > 50,Stroke,High,Male,Active,8,Preventive intervention suggested
+Obesity,Diabetes,High,Both,Sedentary,4,High-risk monitoring required
+Female Pregnancy,Hypertension,High,Female,Alcohol Consumer,7,Lifestyle modification needed
+Age > 50,Hypertension,High,Female,Active,6,Regular screening advised
+Family History,Heart Disease,Medium,Both,Smoker,7,Periodic diagnostic assessment
+Smoking,COPD,Medium,Female,Active,7,High-risk monitoring required
+Poor Diet,Diabetes,High,Both,Alcohol Consumer,9,Regular screening advised
+Obesity,Hypertension,High,Female,Alcohol Consumer,8,Lifestyle modification needed
+Female Pregnancy,Gestational Diabetes,Medium,Both,Moderately Active,4,Lifestyle modification needed
+Obesity,Heart Disease,High,Male,Smoker,1,Lifestyle modification needed
+Family History,Diabetes,High,Male,Sedentary,8,Regular screening advised
+Obesity,Heart Disease,High,Female,Active,6,Lifestyle modification needed
+Poor Diet,Vitamin Deficiency,Low,Female,Smoker,7,Periodic diagnostic assessment
+High Cholesterol,Atherosclerosis,Medium,Male,Sedentary,2,Regular screening advised
+Smoking,COPD,High,Male,Active,10,High-risk monitoring required
+Obesity,Hypertension,High,Both,Active,5,Regular screening advised
+Poor Diet,Vitamin Deficiency,Medium,Female,Smoker,6,High-risk monitoring required
+Obesity,Heart Disease,High,Both,Moderately Active,2,Preventive intervention suggested
+Age > 50,Hypertension,High,Female,Moderately Active,5,Lifestyle modification needed
+Female Pregnancy,Hypertension,Medium,Both,Sedentary,3,Regular screening advised
+Poor Diet,Obesity,Medium,Both,Active,5,Periodic diagnostic assessment
+Female Pregnancy,Hypertension,High,Female,Sedentary,7,Regular screening advised
+Family History,Cancer Risk,High,Male,Moderately Active,1,Lifestyle modification needed
+Female Pregnancy,Hypertension,Medium,Both,Moderately Active,1,Periodic diagnostic assessment
+High Cholesterol,Heart Disease,Medium,Female,Sedentary,7,Preventive intervention suggested
+Smoking,Cancer Risk,High,Female,Moderately Active,9,Preventive intervention suggested
+Smoking,Lung Disease,Medium,Both,Active,5,Preventive intervention suggested
+Obesity,Heart Disease,Low,Both,Smoker,5,Lifestyle modification needed
+Sedentary Lifestyle,Obesity,High,Male,Active,6,Periodic diagnostic assessment
+Smoking,Cancer Risk,High,Male,Smoker,7,Lifestyle modification needed
+Age > 50,Heart Disease,Medium,Female,Moderately Active,1,Regular screening advised
+Male >45,Hypertension,Medium,Female,Moderately Active,7,Lifestyle modification needed
+Age > 50,Heart Disease,Medium,Female,Sedentary,10,Lifestyle modification needed
+High Cholesterol,Stroke,High,Both,Active,8,Preventive intervention suggested
+Alcohol Use,Pancreatitis,High,Female,Active,2,Regular screening advised
+Smoking,Lung Disease,Medium,Both,Alcohol Consumer,4,Regular screening advised
+Poor Diet,Vitamin Deficiency,High,Female,Sedentary,2,Periodic diagnostic assessment
+Obesity,Hypertension,Medium,Both,Smoker,5,Periodic diagnostic assessment
+Obesity,Diabetes,Medium,Both,Alcohol Consumer,3,Preventive intervention suggested
+Age > 50,Stroke,High,Both,Alcohol Consumer,8,Regular screening advised
+Male >45,Hypertension,Medium,Both,Active,4,Regular screening advised
+Obesity,Heart Disease,High,Male,Alcohol Consumer,8,High-risk monitoring required
+Smoking,Lung Disease,Low,Male,Moderately Active,2,Periodic diagnostic assessment
+Alcohol Use,Liver Disease,Low,Male,Alcohol Consumer,5,High-risk monitoring required
+Male >45,Cardiac Risk,Medium,Both,Active,4,High-risk monitoring required

@@ -1,0 +1,501 @@
+Disease,Fever,Cough,Fatigue,Difficulty Breathing,Age,Gender,Blood Pressure,Cholesterol Level,Outcome Variable,Duration,Severity,Secondary_Disease
+Influenza,Yes,No,Yes,Yes,19,Female,Low,Normal,Positive,14 days,High,Dengue Fever
+Common Cold,No,Yes,Yes,No,25,Female,Normal,Normal,Negative,7 days,Moderate,Bladder Cancer
+Eczema,No,Yes,Yes,No,25,Female,Normal,Normal,Negative,10 days,Moderate,Chickenpox
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive,2 days,High,Brain Tumor
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive,3 days,High,Colorectal Cancer
+Eczema,Yes,No,No,No,25,Female,Normal,Normal,Positive,7 days,High,Pneumothorax
+Influenza,Yes,Yes,Yes,Yes,25,Female,Normal,Normal,Positive,14 days,High,Rabies
+Influenza,Yes,Yes,Yes,Yes,25,Female,Normal,Normal,Positive,2 days,High,Dementia
+Hyperthyroidism,No,Yes,No,No,28,Female,Normal,Normal,Negative,2 days,Moderate,Obsessive-Compulsive Disorde...
+Hyperthyroidism,No,Yes,No,No,28,Female,Normal,Normal,Negative,3 days,Moderate,Lymphoma
+Asthma,Yes,No,No,Yes,28,Male,High,Normal,Positive,10 days,High,Tonsillitis
+Allergic Rhinitis,No,Yes,Yes,No,29,Female,Normal,Low,Negative,14 days,Moderate,Malaria
+Anxiety Disorders,No,Yes,No,No,29,Female,Normal,High,Negative,10 days,Moderate,Glaucoma
+Common Cold,No,No,No,No,29,Female,Low,Normal,Negative,3 days,Moderate,Hyperthyroidism
+Diabetes,No,No,No,No,29,Male,Low,Normal,Negative,5 days,Moderate,Hemophilia
+Gastroenteritis,No,Yes,No,No,29,Female,Normal,Normal,Negative,10 days,Moderate,Cerebral Palsy
+Pancreatitis,Yes,No,No,No,29,Female,High,Normal,Negative,14 days,Moderate,Down Syndrome
+Rheumatoid Arthritis,No,Yes,Yes,Yes,29,Female,High,High,Negative,5 days,Moderate,Tetanus
+Depression,Yes,Yes,Yes,Yes,29,Male,High,Normal,Positive,10 days,High,Osteoarthritis
+Liver Cancer,Yes,Yes,Yes,Yes,29,Female,Normal,Normal,Positive,7 days,High,Thyroid Cancer
+Stroke,Yes,Yes,Yes,Yes,29,Female,Normal,Normal,Positive,10 days,High,Scoliosis
+Urinary Tract Infection,Yes,Yes,Yes,No,29,Male,High,High,Positive,5 days,High,Melanoma
+Dengue Fever,Yes,No,Yes,No,30,Female,Normal,Normal,Negative,10 days,Moderate,Esophageal Cancer
+Dengue Fever,Yes,No,Yes,No,30,Female,Normal,Normal,Negative,14 days,Moderate,Sepsis
+Eczema,No,Yes,Yes,No,30,Male,High,High,Negative,5 days,Moderate,Common Cold
+Gastroenteritis,Yes,Yes,Yes,No,30,Male,High,High,Negative,10 days,Moderate,Colorectal Cancer
+Hepatitis,Yes,Yes,Yes,Yes,30,Male,High,Normal,Negative,3 days,Moderate,Pneumothorax
+Kidney Cancer,No,No,Yes,No,30,Male,Normal,Normal,Negative,3 days,Moderate,Schizophrenia
+Migraine,Yes,No,No,No,30,Female,Normal,Normal,Negative,2 days,Moderate,Ebola Virus
+Migraine,No,Yes,Yes,No,30,Female,Normal,Normal,Negative,14 days,Moderate,Systemic Lupus Erythematosus...
+Muscular Dystrophy,No,No,Yes,No,30,Male,High,High,Negative,3 days,Moderate,Polycystic Ovary Syndrome (PCOS)
+Sinusitis,No,Yes,Yes,No,30,Male,Normal,Normal,Negative,3 days,Moderate,Kidney Cancer
+Ulcerative Colitis,Yes,Yes,No,No,30,Female,Normal,Normal,Negative,14 days,Moderate,Urinary Tract Infection
+Ulcerative Colitis,No,Yes,Yes,No,30,Female,Normal,Normal,Negative,3 days,Moderate,Glaucoma
+Asthma,Yes,Yes,No,Yes,30,Female,Normal,Normal,Positive,3 days,High,Myocardial Infarction (Heart...
+Asthma,Yes,Yes,No,Yes,30,Female,Normal,Normal,Positive,2 days,High,Eczema
+Asthma,Yes,Yes,Yes,Yes,30,Female,Normal,Normal,Positive,10 days,High,Allergic Rhinitis
+Bipolar Disorder,No,No,Yes,No,30,Female,High,High,Positive,3 days,High,Lyme Disease
+Bronchitis,Yes,Yes,No,Yes,30,Female,Low,Normal,Positive,2 days,High,HIV/AIDS
+Bronchitis,Yes,Yes,Yes,Yes,30,Male,High,High,Positive,2 days,High,Schizophrenia
+Bronchitis,Yes,Yes,Yes,Yes,30,Male,High,High,Positive,14 days,High,Cholera
+Cerebral Palsy,No,No,Yes,Yes,30,Female,Normal,Normal,Positive,7 days,High,Bronchitis
+Colorectal Cancer,No,No,Yes,No,30,Female,Normal,High,Positive,5 days,High,Ulcerative Colitis
+Eczema,Yes,No,No,No,30,Male,High,High,Positive,3 days,High,Autism Spectrum Disorder (ASD)
+Hypertensive Heart Disease,No,No,Yes,No,30,Female,High,High,Positive,2 days,High,Bronchitis
+Influenza,Yes,Yes,Yes,No,30,Male,High,Normal,Positive,7 days,High,Esophageal Cancer
+Influenza,Yes,Yes,Yes,Yes,30,Female,Normal,Normal,Positive,14 days,High,Thyroid Cancer
+Multiple Sclerosis,No,No,Yes,No,30,Female,High,High,Positive,3 days,High,Parkinson's Disease
+Myocardial Infarction (Heart...,Yes,Yes,Yes,Yes,30,Female,High,High,Positive,3 days,High,Scoliosis
+Urinary Tract Infection (UTI),Yes,No,No,No,30,Female,Normal,Normal,Positive,7 days,High,Dengue Fever
+Asthma,No,No,No,Yes,31,Male,Normal,Low,Negative,10 days,Moderate,Cystic Fibrosis
+Osteoporosis,No,No,No,Yes,31,Male,Low,Normal,Negative,2 days,Moderate,Prader-Willi Syndrome
+Common Cold,Yes,No,Yes,Yes,31,Male,High,High,Positive,3 days,High,Chickenpox
+Migraine,Yes,No,No,No,31,Female,Normal,Normal,Positive,7 days,High,Allergic Rhinitis
+Pneumonia,Yes,No,Yes,Yes,32,Female,High,Normal,Positive,10 days,High,Cataracts
+Allergic Rhinitis,No,No,Yes,No,35,Female,Normal,Low,Negative,5 days,Moderate,Epilepsy
+Asthma,No,Yes,Yes,Yes,35,Female,Normal,High,Negative,10 days,Moderate,Kidney Cancer
+Asthma,Yes,Yes,Yes,Yes,35,Female,Normal,Normal,Negative,2 days,Moderate,Pneumonia
+Asthma,No,Yes,Yes,Yes,35,Female,High,Normal,Negative,14 days,Moderate,Hyperthyroidism
+Asthma,No,Yes,Yes,Yes,35,Female,High,Normal,Negative,7 days,Moderate,Urinary Tract Infection (UTI)
+Atherosclerosis,No,No,Yes,No,35,Male,Normal,Normal,Negative,3 days,Moderate,Mumps
+Chronic Obstructive Pulmonary...,Yes,Yes,Yes,Yes,35,Male,Normal,Normal,Negative,5 days,Moderate,Cataracts
+Common Cold,Yes,Yes,Yes,No,35,Male,High,Normal,Negative,2 days,Moderate,Diverticulitis
+Eczema,No,Yes,No,No,35,Male,High,Normal,Negative,10 days,Moderate,Acne
+Epilepsy,No,No,Yes,No,35,Male,High,High,Negative,3 days,Moderate,Sleep Apnea
+Hypertension,Yes,Yes,Yes,No,35,Female,High,Normal,Negative,5 days,Moderate,Measles
+Hyperthyroidism,Yes,Yes,Yes,No,35,Female,Normal,Normal,Negative,5 days,Moderate,Hepatitis B
+Obsessive-Compulsive Disorde...,No,No,Yes,No,35,Male,Normal,Normal,Negative,3 days,Moderate,Kidney Disease
+Pneumonia,Yes,Yes,Yes,Yes,35,Female,Normal,Normal,Negative,2 days,Moderate,Hepatitis B
+Pneumonia,Yes,Yes,Yes,Yes,35,Female,Normal,Normal,Negative,3 days,Moderate,Bronchitis
+Psoriasis,Yes,No,No,No,35,Female,Normal,Low,Negative,7 days,Moderate,Bronchitis
+Psoriasis,No,Yes,Yes,No,35,Female,Normal,Low,Negative,14 days,Moderate,Depression
+Rubella,Yes,No,Yes,No,35,Female,High,Normal,Negative,10 days,Moderate,Endometriosis
+Rubella,Yes,No,Yes,No,35,Female,High,Normal,Negative,7 days,Moderate,Tourette Syndrome
+Urinary Tract Infection (UTI),No,Yes,Yes,No,35,Male,High,High,Negative,14 days,Moderate,Asthma
+Asthma,Yes,Yes,No,Yes,35,Male,Normal,Normal,Positive,3 days,High,Zika Virus
+Asthma,Yes,Yes,No,Yes,35,Male,Normal,Normal,Positive,7 days,High,Cirrhosis
+Cirrhosis,No,No,Yes,No,35,Female,Normal,High,Positive,2 days,High,Epilepsy
+Conjunctivitis (Pink Eye),No,Yes,No,No,35,Female,High,High,Positive,2 days,High,Hypertension
+Depression,No,No,Yes,No,35,Female,Normal,High,Positive,5 days,High,Cirrhosis
+Gastroenteritis,Yes,No,Yes,Yes,35,Male,Low,High,Positive,5 days,High,Urinary Tract Infection
+Hyperthyroidism,Yes,Yes,Yes,No,35,Male,High,High,Positive,3 days,High,Otitis Media (Ear Infection)
+Hyperthyroidism,Yes,Yes,Yes,No,35,Male,High,High,Positive,7 days,High,Hypoglycemia
+Kidney Cancer,No,No,Yes,No,35,Male,High,High,Positive,10 days,High,Ulcerative Colitis
+Liver Cancer,No,No,Yes,No,35,Female,High,High,Positive,5 days,High,Hyperthyroidism
+Liver Disease,No,No,Yes,No,35,Male,High,High,Positive,2 days,High,Esophageal Cancer
+Malaria,Yes,No,No,No,35,Male,High,High,Positive,2 days,High,Polycystic Ovary Syndrome (PCOS)
+Malaria,Yes,No,No,No,35,Male,High,High,Positive,3 days,High,Bronchitis
+Migraine,No,Yes,Yes,No,35,Male,High,High,Positive,3 days,High,Pneumocystis Pneumonia (PCP)
+Migraine,Yes,No,No,No,35,Male,High,High,Positive,14 days,High,Prader-Willi Syndrome
+Pancreatitis,No,No,Yes,No,35,Male,Normal,High,Positive,7 days,High,Common Cold
+Rheumatoid Arthritis,Yes,Yes,Yes,No,35,Male,Normal,Low,Positive,2 days,High,Bipolar Disorder
+Rheumatoid Arthritis,No,No,Yes,No,35,Female,Normal,Low,Positive,2 days,High,Bladder Cancer
+Spina Bifida,No,No,Yes,No,35,Female,Normal,Normal,Positive,14 days,High,Sickle Cell Anemia
+Ulcerative Colitis,No,No,Yes,No,35,Male,High,High,Positive,14 days,High,Hyperthyroidism
+Ulcerative Colitis,Yes,No,No,No,35,Male,High,High,Positive,10 days,High,Allergic Rhinitis
+Urinary Tract Infection,Yes,No,Yes,No,35,Female,Normal,High,Positive,14 days,High,Hypoglycemia
+Allergic Rhinitis,No,Yes,No,No,38,Female,Low,Normal,Negative,5 days,Moderate,Schizophrenia
+Depression,No,No,No,No,38,Female,Normal,High,Negative,10 days,Moderate,Tourette Syndrome
+Gastroenteritis,No,No,No,No,38,Male,Normal,Low,Negative,7 days,Moderate,Gout
+Influenza,No,No,No,No,38,Male,Normal,Normal,Negative,14 days,Moderate,Hypertensive Heart Disease
+Kidney Disease,No,No,Yes,No,38,Female,Low,Normal,Negative,7 days,Moderate,Zika Virus
+Liver Cancer,Yes,Yes,No,No,38,Female,High,Normal,Negative,14 days,Moderate,Hypoglycemia
+Liver Disease,No,Yes,No,Yes,38,Male,Low,Normal,Negative,2 days,Moderate,Chronic Obstructive Pulmonary Disease (COPD)
+Osteoporosis,No,Yes,No,No,38,Female,Normal,High,Negative,7 days,Moderate,Down Syndrome
+Stroke,Yes,Yes,No,No,38,Female,High,Normal,Negative,10 days,Moderate,"Eating Disorders (Anorexia,..."
+Anxiety Disorders,Yes,No,Yes,Yes,38,Male,High,High,Positive,7 days,High,Rubella
+Diabetes,Yes,No,Yes,Yes,38,Male,High,Low,Positive,10 days,High,Common Cold
+Migraine,Yes,Yes,No,No,38,Male,High,High,Positive,10 days,High,Pneumocystis Pneumonia (PCP)
+Osteoarthritis,Yes,Yes,Yes,No,38,Male,High,High,Positive,14 days,High,Sickle Cell Anemia
+Pneumonia,Yes,Yes,Yes,Yes,38,Male,Normal,Normal,Positive,10 days,High,Chronic Obstructive Pulmonary Disease (COPD)
+Klinefelter Syndrome,No,No,Yes,No,39,Female,Normal,Normal,Positive,3 days,High,Polycystic Ovary Syndrome (PCOS)
+Acne,No,No,Yes,No,40,Male,Normal,Normal,Negative,2 days,Moderate,Klinefelter Syndrome
+Brain Tumor,No,No,Yes,No,40,Male,Normal,Normal,Negative,10 days,Moderate,Parkinson's Disease
+Bronchitis,No,Yes,No,Yes,40,Female,Normal,Normal,Negative,5 days,Moderate,Cirrhosis
+Cystic Fibrosis,No,No,Yes,Yes,40,Male,High,High,Negative,2 days,Moderate,Muscular Dystrophy
+Diabetes,Yes,No,No,No,40,Female,High,High,Negative,14 days,Moderate,Cirrhosis
+Glaucoma,No,No,Yes,No,40,Male,High,Normal,Negative,5 days,Moderate,Acne
+Osteoarthritis,No,No,Yes,No,40,Male,High,Normal,Negative,10 days,Moderate,Pneumonia
+Rabies,Yes,Yes,No,No,40,Female,High,Normal,Negative,3 days,Moderate,Urinary Tract Infection (UTI)
+Rabies,Yes,Yes,No,No,40,Female,High,Normal,Negative,3 days,Moderate,Anemia
+Asthma,Yes,No,Yes,No,40,Male,Low,Normal,Positive,2 days,High,Polycystic Ovary Syndrome (PCOS)
+Asthma,Yes,Yes,No,Yes,40,Female,Normal,Normal,Positive,5 days,High,Stroke
+Asthma,Yes,Yes,No,Yes,40,Female,Normal,Normal,Positive,10 days,High,Brain Tumor
+Asthma,No,No,Yes,Yes,40,Male,High,High,Positive,10 days,High,Hyperglycemia
+Asthma,Yes,No,Yes,Yes,40,Male,Normal,High,Positive,2 days,High,Anemia
+Asthma,Yes,No,Yes,Yes,40,Male,Normal,High,Positive,10 days,High,Otitis Media (Ear Infection)
+Chickenpox,No,Yes,No,No,40,Male,Normal,High,Positive,3 days,High,Mumps
+Chickenpox,No,Yes,No,No,40,Male,Normal,High,Positive,10 days,High,Kidney Disease
+Coronary Artery Disease,No,No,Yes,No,40,Female,High,High,Positive,3 days,High,Ebola Virus
+"Eating Disorders (Anorexia,...",No,No,Yes,No,40,Female,High,High,Positive,2 days,High,Psoriasis
+Fibromyalgia,No,No,Yes,No,40,Female,High,High,Positive,5 days,High,Depression
+Gastroenteritis,Yes,Yes,Yes,No,40,Male,High,High,Positive,7 days,High,Acne
+Hemophilia,No,No,Yes,No,40,Female,Normal,Normal,Positive,3 days,High,Dementia
+Hyperthyroidism,No,No,Yes,No,40,Male,High,High,Positive,5 days,High,Tonsillitis
+Hypoglycemia,No,No,Yes,No,40,Female,High,High,Positive,10 days,High,Osteoarthritis
+Lymphoma,No,Yes,No,No,40,Female,Normal,High,Positive,10 days,High,Rheumatoid Arthritis
+Pneumonia,Yes,Yes,Yes,Yes,40,Female,Normal,High,Positive,5 days,High,Epilepsy
+Psoriasis,No,Yes,Yes,No,40,Male,High,Normal,Positive,5 days,High,Parkinson's Disease
+Psoriasis,Yes,No,No,No,40,Male,High,Normal,Positive,2 days,High,Prader-Willi Syndrome
+Psoriasis,No,Yes,No,No,40,Female,Normal,High,Positive,3 days,High,Hemophilia
+Tuberculosis,Yes,Yes,Yes,Yes,40,Male,High,High,Positive,5 days,High,Pneumonia
+Tuberculosis,Yes,Yes,Yes,Yes,40,Male,High,High,Positive,5 days,High,Autism Spectrum Disorder (ASD)
+Anxiety Disorders,No,No,No,No,42,Male,Low,Normal,Negative,2 days,Moderate,Zika Virus
+Common Cold,Yes,Yes,No,No,42,Female,High,High,Negative,14 days,Moderate,Rheumatoid Arthritis
+Depression,Yes,No,No,Yes,42,Male,High,Normal,Negative,3 days,Moderate,Lymphoma
+Influenza,No,Yes,No,No,42,Female,Normal,High,Negative,5 days,Moderate,Cystic Fibrosis
+Kidney Cancer,Yes,No,No,No,42,Female,Normal,Normal,Negative,10 days,Moderate,"Eating Disorders (Anorexia,..."
+Liver Cancer,Yes,No,Yes,Yes,42,Male,Normal,Low,Negative,2 days,Moderate,Pneumocystis Pneumonia (PCP)
+Liver Disease,Yes,No,No,Yes,42,Female,Normal,Normal,Negative,14 days,Moderate,Autism Spectrum Disorder (ASD)
+Lung Cancer,Yes,No,Yes,Yes,42,Male,Normal,Low,Negative,14 days,Moderate,Rabies
+Migraine,Yes,Yes,Yes,No,42,Male,High,High,Negative,3 days,Moderate,Obsessive-Compulsive Disorde...
+Osteoarthritis,No,No,Yes,No,42,Male,Normal,Low,Negative,5 days,Moderate,Anxiety Disorders
+Stroke,Yes,No,Yes,No,42,Male,Normal,Low,Negative,3 days,Moderate,Chronic Obstructive Pulmonary Disease (COPD)
+Urinary Tract Infection,No,Yes,Yes,Yes,42,Female,Normal,Low,Negative,14 days,Moderate,Measles
+Diabetes,Yes,Yes,Yes,No,42,Male,High,Normal,Positive,10 days,High,Ulcerative Colitis
+Hypothyroidism,Yes,Yes,Yes,No,42,Female,High,High,Positive,5 days,High,Tuberculosis
+Hypothyroidism,Yes,Yes,Yes,No,42,Female,High,High,Positive,2 days,High,Bladder Cancer
+Kidney Disease,Yes,No,Yes,No,42,Female,High,Low,Positive,14 days,High,Common Cold
+Pneumonia,No,Yes,Yes,Yes,43,Female,High,Normal,Positive,2 days,High,Cataracts
+Allergic Rhinitis,No,Yes,Yes,No,45,Male,High,Normal,Negative,3 days,Moderate,Atherosclerosis
+Autism Spectrum Disorder (ASD),No,No,Yes,No,45,Male,Normal,Normal,Negative,14 days,Moderate,Colorectal Cancer
+Crohn's Disease,Yes,No,Yes,No,45,Male,High,Normal,Negative,2 days,Moderate,Eczema
+Hepatitis,Yes,No,Yes,No,45,Female,High,High,Negative,3 days,Moderate,Mumps
+Hepatitis,Yes,No,Yes,No,45,Female,High,High,Negative,7 days,Moderate,Marfan Syndrome
+Hyperglycemia,No,No,Yes,No,45,Male,Normal,Normal,Negative,3 days,Moderate,Hepatitis
+Kidney Cancer,No,Yes,Yes,Yes,45,Male,Normal,Low,Negative,3 days,Moderate,Hyperglycemia
+Kidney Disease,Yes,Yes,No,No,45,Male,Normal,High,Negative,14 days,Moderate,Rheumatoid Arthritis
+Melanoma,Yes,No,Yes,No,45,Male,High,Normal,Negative,10 days,Moderate,Otitis Media (Ear Infection)
+Migraine,No,No,No,No,45,Female,Low,Normal,Negative,10 days,Moderate,Myocardial Infarction (Heart...
+Ovarian Cancer,No,No,Yes,No,45,Male,Normal,Normal,Negative,7 days,Moderate,Hypothyroidism
+Pancreatitis,No,Yes,Yes,Yes,45,Male,Normal,Low,Negative,14 days,Moderate,Ovarian Cancer
+Rheumatoid Arthritis,Yes,No,No,No,45,Male,Normal,Normal,Negative,2 days,Moderate,Anxiety Disorders
+Stroke,No,No,Yes,No,45,Male,Normal,Normal,Negative,7 days,Moderate,Dengue Fever
+Turner Syndrome,No,No,Yes,No,45,Male,High,High,Negative,2 days,Moderate,Measles
+Turner Syndrome,No,No,Yes,No,45,Male,High,High,Negative,7 days,Moderate,Appendicitis
+Urinary Tract Infection,No,No,No,No,45,Female,Low,Normal,Negative,3 days,Moderate,Zika Virus
+Zika Virus,No,Yes,Yes,No,45,Female,High,High,Negative,5 days,Moderate,Sleep Apnea
+Zika Virus,No,Yes,Yes,No,45,Female,High,High,Negative,14 days,Moderate,Pancreatitis
+Allergic Rhinitis,Yes,Yes,Yes,No,45,Male,High,Normal,Positive,14 days,High,Kidney Disease
+Anxiety Disorders,Yes,Yes,Yes,No,45,Male,High,Normal,Positive,10 days,High,Cystic Fibrosis
+Asthma,Yes,Yes,No,Yes,45,Male,Normal,Normal,Positive,14 days,High,Spina Bifida
+Asthma,Yes,Yes,No,Yes,45,Male,Normal,Normal,Positive,2 days,High,Measles
+Cataracts,No,No,Yes,No,45,Female,Normal,High,Positive,14 days,High,Cholecystitis
+Crohn's Disease,No,No,Yes,No,45,Female,High,High,Positive,2 days,High,Scoliosis
+Crohn's Disease,Yes,Yes,Yes,No,45,Female,High,High,Positive,14 days,High,Prader-Willi Syndrome
+Depression,No,No,Yes,No,45,Female,High,High,Positive,7 days,High,Tonsillitis
+Diabetes,Yes,No,Yes,No,45,Female,High,High,Positive,3 days,High,Myocardial Infarction (Heart...
+Diabetes,No,Yes,Yes,No,45,Male,Normal,High,Positive,3 days,High,Epilepsy
+Hypertension,Yes,No,Yes,No,45,Male,Normal,High,Positive,14 days,High,Measles
+Hypothyroidism,No,No,Yes,No,45,Female,High,High,Positive,2 days,High,Typhoid Fever
+Liver Disease,Yes,Yes,Yes,No,45,Female,Normal,High,Positive,14 days,High,Pneumocystis Pneumonia (PCP)
+Multiple Sclerosis,Yes,No,No,No,45,Female,High,High,Positive,2 days,High,Appendicitis
+Multiple Sclerosis,Yes,No,No,No,45,Female,High,High,Positive,10 days,High,Rheumatoid Arthritis
+Osteoarthritis,Yes,No,Yes,Yes,45,Male,High,Normal,Positive,5 days,High,Klinefelter Syndrome
+Osteoporosis,Yes,Yes,Yes,No,45,Female,Normal,High,Positive,14 days,High,Bladder Cancer
+Pneumocystis Pneumonia (PCP),Yes,Yes,Yes,No,45,Female,High,High,Positive,7 days,High,Bladder Cancer
+Pneumonia,Yes,Yes,Yes,Yes,45,Male,High,High,Positive,10 days,High,Ovarian Cancer
+Scoliosis,No,No,No,No,45,Female,High,High,Positive,5 days,High,Schizophrenia
+Sickle Cell Anemia,No,No,Yes,No,45,Female,Normal,Normal,Positive,2 days,High,Influenza
+Tetanus,No,No,Yes,No,45,Male,Normal,High,Positive,14 days,High,Diabetes
+Tetanus,No,No,Yes,No,45,Male,Normal,High,Positive,7 days,High,Influenza
+Hypertension,No,No,No,No,48,Female,Low,High,Negative,7 days,Moderate,Dengue Fever
+Hypothyroidism,No,No,Yes,No,48,Male,Normal,High,Negative,14 days,Moderate,Gastroenteritis
+Hypothyroidism,No,No,Yes,No,48,Male,Normal,High,Negative,14 days,Moderate,Crohn's Disease
+Allergic Rhinitis,Yes,No,No,No,50,Male,High,High,Negative,3 days,Moderate,Hypertension
+Anemia,No,No,Yes,No,50,Male,Normal,Normal,Negative,5 days,Moderate,Psoriasis
+Anxiety Disorders,No,No,Yes,No,50,Male,Normal,Normal,Negative,10 days,Moderate,Hepatitis
+Cholera,Yes,No,Yes,Yes,50,Female,High,High,Negative,7 days,Moderate,Testicular Cancer
+Cholera,Yes,No,Yes,Yes,50,Female,High,High,Negative,2 days,Moderate,Bronchitis
+Crohn's Disease,Yes,Yes,Yes,No,50,Male,Normal,High,Negative,2 days,Moderate,Liver Cancer
+Crohn's Disease,No,No,Yes,No,50,Male,Normal,High,Negative,14 days,Moderate,Hypertension
+Depression,No,Yes,Yes,No,50,Female,Low,Low,Negative,10 days,Moderate,Psoriasis
+Diabetes,No,Yes,No,No,50,Male,Normal,High,Negative,5 days,Moderate,Marfan Syndrome
+Endometriosis,Yes,No,No,No,50,Male,High,Normal,Negative,10 days,Moderate,Polio
+Hypertension,No,Yes,No,No,50,Female,Normal,Low,Negative,5 days,Moderate,Epilepsy
+Hypothyroidism,Yes,Yes,Yes,No,50,Male,Normal,High,Negative,2 days,Moderate,Mumps
+Kidney Cancer,No,Yes,No,No,50,Male,Low,High,Negative,14 days,Moderate,Hepatitis B
+Kidney Disease,No,Yes,No,Yes,50,Male,Normal,Normal,Negative,7 days,Moderate,Psoriasis
+Pancreatitis,No,Yes,No,No,50,Male,Low,High,Negative,2 days,Moderate,Prostate Cancer
+Rheumatoid Arthritis,No,Yes,No,No,50,Female,Low,Normal,Negative,2 days,Moderate,Hypothyroidism
+Sepsis,Yes,Yes,Yes,No,50,Male,Normal,Normal,Negative,10 days,Moderate,Schizophrenia
+Sleep Apnea,Yes,No,Yes,Yes,50,Male,High,High,Negative,14 days,Moderate,Chronic Obstructive Pulmonary...
+Urinary Tract Infection,Yes,Yes,No,Yes,50,Male,High,Normal,Negative,5 days,Moderate,Lyme Disease
+Asthma,Yes,Yes,Yes,Yes,50,Female,Normal,High,Positive,3 days,High,Obsessive-Compulsive Disorde...
+Bronchitis,Yes,Yes,Yes,Yes,50,Male,High,High,Positive,2 days,High,Diverticulitis
+Down Syndrome,No,No,Yes,No,50,Female,High,High,Positive,10 days,High,Stroke
+Ebola Virus,Yes,Yes,Yes,Yes,50,Male,Normal,Normal,Positive,7 days,High,Esophageal Cancer
+Ebola Virus,Yes,Yes,Yes,Yes,50,Male,Normal,Normal,Positive,2 days,High,Lymphoma
+Eczema,No,Yes,No,No,50,Female,High,High,Positive,3 days,High,Sinusitis
+Gastroenteritis,Yes,Yes,Yes,Yes,50,Female,High,Normal,Positive,5 days,High,Turner Syndrome
+Klinefelter Syndrome,No,No,Yes,No,50,Female,Normal,Normal,Positive,10 days,High,Hyperthyroidism
+Liver Cancer,No,Yes,Yes,Yes,50,Male,High,High,Positive,10 days,High,Rubella
+Lyme Disease,Yes,No,No,No,50,Male,Normal,High,Positive,7 days,High,Chickenpox
+Lyme Disease,Yes,No,No,No,50,Male,Normal,High,Positive,7 days,High,Chronic Kidney Disease
+Pancreatic Cancer,No,No,Yes,No,50,Female,High,High,Positive,7 days,High,Tuberculosis
+Pneumothorax,No,No,Yes,Yes,50,Female,High,High,Positive,7 days,High,Pancreatic Cancer
+Stroke,No,Yes,Yes,Yes,50,Male,High,High,Positive,5 days,High,Muscular Dystrophy
+Ulcerative Colitis,No,Yes,Yes,No,50,Female,Normal,High,Positive,7 days,High,Turner Syndrome
+Hypertension,Yes,Yes,No,No,52,Male,Normal,Low,Negative,7 days,Moderate,Glaucoma
+Multiple Sclerosis,No,Yes,Yes,No,52,Male,Normal,Normal,Negative,14 days,Moderate,Bladder Cancer
+Multiple Sclerosis,No,Yes,Yes,No,52,Male,Normal,Normal,Negative,10 days,Moderate,Polycystic Ovary Syndrome (PCOS)
+Appendicitis,Yes,No,Yes,No,55,Male,Normal,Normal,Negative,7 days,Moderate,Diabetes
+Bronchitis,No,No,Yes,Yes,55,Male,High,High,Negative,5 days,Moderate,Epilepsy
+Bronchitis,Yes,Yes,Yes,Yes,55,Male,High,Normal,Negative,10 days,Moderate,Polycystic Ovary Syndrome (PCOS)
+Common Cold,Yes,No,Yes,Yes,55,Male,Normal,Low,Negative,10 days,Moderate,Stroke
+Diabetes,No,Yes,No,No,55,Female,Normal,High,Negative,2 days,Moderate,Diverticulitis
+Esophageal Cancer,No,No,Yes,No,55,Male,Normal,Normal,Negative,7 days,Moderate,Urinary Tract Infection (UTI)
+HIV/AIDS,Yes,No,No,No,55,Female,High,High,Negative,7 days,Moderate,Esophageal Cancer
+HIV/AIDS,Yes,No,No,No,55,Female,High,High,Negative,2 days,Moderate,Diabetes
+Hypertension,No,Yes,No,No,55,Female,Normal,Low,Negative,7 days,Moderate,Ulcerative Colitis
+Liver Disease,No,Yes,Yes,No,55,Male,High,Low,Negative,14 days,Moderate,Osteoporosis
+Marfan Syndrome,No,No,Yes,No,55,Male,High,High,Negative,14 days,Moderate,Lung Cancer
+Migraine,No,Yes,Yes,Yes,55,Female,Normal,Low,Negative,3 days,Moderate,Muscular Dystrophy
+Osteoporosis,No,No,Yes,No,55,Male,High,Normal,Negative,2 days,Moderate,Diabetes
+Parkinson's Disease,No,No,Yes,No,55,Female,Normal,Low,Negative,5 days,Moderate,Mumps
+Parkinson's Disease,No,No,Yes,No,55,Female,Normal,Low,Negative,5 days,Moderate,Malaria
+Anxiety Disorders,Yes,Yes,No,No,55,Female,Normal,Low,Positive,5 days,High,Anemia
+Coronary Artery Disease,No,No,Yes,No,55,Female,Normal,Normal,Positive,2 days,High,Muscular Dystrophy
+Coronary Artery Disease,No,No,Yes,No,55,Female,Normal,Normal,Positive,5 days,High,Testicular Cancer
+Hemorrhoids,No,No,No,No,55,Female,High,High,Positive,3 days,High,Cataracts
+Hypertension,Yes,No,Yes,No,55,Male,High,Normal,Positive,10 days,High,Hypothyroidism
+Hypothyroidism,No,No,Yes,No,55,Female,High,High,Positive,2 days,High,Eczema
+Osteoarthritis,Yes,Yes,No,No,55,Female,High,High,Positive,10 days,High,Hypertension
+Osteoporosis,Yes,No,Yes,Yes,55,Male,High,Low,Positive,10 days,High,Schizophrenia
+Osteoporosis,No,Yes,Yes,No,55,Female,Normal,Normal,Positive,3 days,High,Rabies
+Osteoporosis,Yes,No,Yes,No,55,Female,Normal,Normal,Positive,7 days,High,Malaria
+Osteoporosis,Yes,No,Yes,No,55,Female,Normal,Normal,Positive,3 days,High,Malaria
+Polycystic Ovary Syndrome (PCOS),Yes,Yes,No,No,55,Female,Normal,Normal,Positive,10 days,High,Hypertension
+Systemic Lupus Erythematosus...,No,Yes,Yes,No,55,Female,High,High,Positive,3 days,High,Lung Cancer
+Typhoid Fever,No,Yes,No,No,55,Male,Normal,Low,Positive,5 days,High,Klinefelter Syndrome
+Typhoid Fever,No,Yes,No,No,55,Male,Normal,Low,Positive,14 days,High,Melanoma
+Influenza,Yes,Yes,Yes,Yes,56,Male,High,High,Positive,3 days,High,Osteoarthritis
+Pneumonia,Yes,Yes,No,Yes,57,Male,Normal,High,Negative,2 days,Moderate,Common Cold
+Breast Cancer,No,No,Yes,No,60,Male,High,High,Negative,2 days,Moderate,Tonsillitis
+Coronary Artery Disease,Yes,Yes,No,No,60,Male,High,High,Negative,5 days,Moderate,Pancreatic Cancer
+Coronary Artery Disease,Yes,Yes,No,No,60,Male,High,High,Negative,10 days,Moderate,Osteomyelitis
+Hyperthyroidism,No,No,Yes,No,60,Male,Normal,Normal,Negative,3 days,Moderate,Esophageal Cancer
+Measles,Yes,Yes,No,No,60,Female,High,Normal,Negative,2 days,Moderate,Gastroenteritis
+Measles,Yes,Yes,No,No,60,Female,High,Normal,Negative,2 days,Moderate,Sinusitis
+Osteoarthritis,No,Yes,No,Yes,60,Female,Normal,Normal,Negative,7 days,Moderate,Mumps
+Osteomyelitis,No,No,Yes,No,60,Male,Normal,Normal,Negative,3 days,Moderate,Cirrhosis
+Osteoporosis,Yes,No,No,No,60,Male,High,High,Negative,2 days,Moderate,Endometriosis
+Osteoporosis,No,Yes,No,No,60,Male,High,High,Negative,10 days,Moderate,Epilepsy
+Osteoporosis,No,Yes,No,No,60,Male,High,High,Negative,7 days,Moderate,Parkinson's Disease
+Polio,Yes,Yes,Yes,No,60,Male,Normal,Normal,Negative,5 days,Moderate,Diverticulitis
+Asthma,Yes,Yes,Yes,Yes,60,Female,High,High,Positive,7 days,High,Psoriasis
+Chronic Kidney Disease,No,No,Yes,No,60,Female,Normal,High,Positive,10 days,High,Rabies
+Hemophilia,No,No,Yes,No,60,Female,Normal,Normal,Positive,14 days,High,Mumps
+Hepatitis B,No,Yes,Yes,No,60,Male,Normal,Low,Positive,10 days,High,Gout
+Hepatitis B,No,Yes,Yes,No,60,Male,Normal,Low,Positive,7 days,High,Bronchitis
+Hypertension,No,No,Yes,No,60,Female,High,Normal,Positive,2 days,High,Kidney Cancer
+Hypertension,Yes,No,Yes,No,60,Male,High,Normal,Positive,2 days,High,Endometriosis
+Hypertension,No,No,No,No,60,Female,High,High,Positive,2 days,High,Migraine
+Kidney Cancer,Yes,Yes,Yes,No,60,Female,High,Normal,Positive,10 days,High,Appendicitis
+Kidney Disease,Yes,Yes,Yes,Yes,60,Female,High,High,Positive,14 days,High,Myocardial Infarction (Heart...
+Osteoporosis,Yes,No,Yes,No,60,Male,High,Normal,Positive,3 days,High,Pneumonia
+Pancreatitis,Yes,Yes,Yes,No,60,Female,High,Normal,Positive,14 days,High,Typhoid Fever
+Parkinson's Disease,Yes,Yes,No,No,60,Male,High,Normal,Positive,10 days,High,Breast Cancer
+Parkinson's Disease,Yes,Yes,No,No,60,Male,High,Normal,Positive,3 days,High,Williams Syndrome
+Prader-Willi Syndrome,No,No,Yes,No,60,Female,Normal,Normal,Positive,5 days,High,Cirrhosis
+Rheumatoid Arthritis,No,No,Yes,No,60,Female,High,High,Positive,14 days,High,Dementia
+Thyroid Cancer,No,No,Yes,No,60,Female,High,High,Positive,5 days,High,Spina Bifida
+Tuberculosis,Yes,Yes,Yes,No,60,Female,High,High,Positive,14 days,High,Tourette Syndrome
+Bladder Cancer,No,No,Yes,No,65,Male,Normal,Normal,Negative,10 days,Moderate,"Eating Disorders (Anorexia,..."
+Diabetes,No,No,Yes,No,65,Male,Normal,High,Negative,14 days,Moderate,Prostate Cancer
+Otitis Media (Ear Infection),Yes,Yes,Yes,No,65,Male,Normal,Normal,Negative,7 days,Moderate,Tonsillitis
+Stroke,Yes,No,Yes,No,65,Female,High,Low,Negative,10 days,Moderate,Colorectal Cancer
+Stroke,Yes,No,Yes,No,65,Female,High,Low,Negative,10 days,Moderate,Ulcerative Colitis
+Tourette Syndrome,No,No,Yes,No,65,Male,High,High,Negative,2 days,Moderate,Asthma
+Urinary Tract Infection (UTI),Yes,No,Yes,No,65,Male,High,Normal,Negative,7 days,Moderate,Anxiety Disorders
+Alzheimer's Disease,No,Yes,No,No,65,Male,Normal,High,Positive,5 days,High,Anemia
+Alzheimer's Disease,No,Yes,No,No,65,Male,Normal,High,Positive,10 days,High,Lymphoma
+Alzheimer's Disease,No,No,Yes,No,65,Female,High,High,Positive,14 days,High,Hepatitis
+Bronchitis,Yes,No,Yes,Yes,65,Male,High,High,Positive,7 days,High,Appendicitis
+Chronic Obstructive Pulmonary Disease (COPD),Yes,No,Yes,Yes,65,Female,High,High,Positive,10 days,High,Tuberculosis
+Chronic Obstructive Pulmonary Disease (COPD),Yes,No,Yes,Yes,65,Female,High,High,Positive,5 days,High,Migraine
+Dementia,No,No,Yes,No,65,Female,High,High,Positive,7 days,High,Psoriasis
+Diabetes,Yes,Yes,Yes,No,65,Female,Normal,High,Positive,2 days,High,Obsessive-Compulsive Disorde...
+Diverticulitis,No,No,Yes,No,65,Female,High,High,Positive,14 days,High,Hypertensive Heart Disease
+Liver Cancer,Yes,Yes,Yes,No,65,Female,High,High,Positive,14 days,High,Chronic Obstructive Pulmonary...
+Lung Cancer,Yes,Yes,Yes,No,65,Female,High,High,Positive,5 days,High,Klinefelter Syndrome
+Lung Cancer,Yes,No,Yes,No,65,Female,Normal,High,Positive,3 days,High,Zika Virus
+Mumps,No,No,Yes,No,65,Male,Normal,High,Positive,7 days,High,Pancreatic Cancer
+Mumps,No,No,Yes,No,65,Male,Normal,High,Positive,5 days,High,Migraine
+Osteoporosis,No,Yes,Yes,No,65,Female,High,High,Positive,2 days,High,Appendicitis
+Stroke,Yes,Yes,Yes,No,65,Female,High,High,Positive,14 days,High,Chronic Kidney Disease
+Alzheimer's Disease,Yes,No,Yes,No,70,Female,High,Normal,Negative,3 days,Moderate,Kidney Cancer
+Alzheimer's Disease,Yes,No,Yes,No,70,Female,High,Normal,Negative,10 days,Moderate,Gastroenteritis
+Cholecystitis,No,No,Yes,No,70,Male,Normal,Normal,Negative,3 days,Moderate,Otitis Media (Ear Infection)
+Chronic Obstructive Pulmonary Disease (COPD),No,Yes,Yes,Yes,70,Male,Normal,High,Negative,7 days,Moderate,Asthma
+Chronic Obstructive Pulmonary Disease (COPD),No,Yes,Yes,Yes,70,Male,Normal,High,Negative,7 days,Moderate,Myocardial Infarction (Heart...
+Osteoporosis,Yes,No,No,No,70,Male,Normal,Normal,Negative,3 days,Moderate,Polio
+Parkinson's Disease,No,No,Yes,No,70,Male,Normal,Normal,Negative,5 days,Moderate,Dengue Fever
+Prostate Cancer,Yes,Yes,No,No,70,Male,High,Normal,Negative,2 days,Moderate,Cholera
+Schizophrenia,No,Yes,Yes,No,70,Male,Normal,Normal,Negative,5 days,Moderate,"Eating Disorders (Anorexia,..."
+Gout,Yes,No,Yes,No,70,Female,Normal,High,Positive,10 days,High,Urinary Tract Infection
+Migraine,No,No,Yes,No,70,Female,Normal,Normal,Positive,2 days,High,Zika Virus
+Stroke,No,Yes,No,No,70,Male,Normal,High,Positive,5 days,High,Gastroenteritis
+Stroke,No,Yes,No,No,70,Male,Normal,High,Positive,10 days,High,Breast Cancer
+Testicular Cancer,No,No,Yes,No,70,Female,High,High,Positive,7 days,High,Lung Cancer
+Tonsillitis,Yes,Yes,Yes,No,70,Female,High,High,Positive,10 days,High,Gout
+Williams Syndrome,No,No,Yes,No,70,Female,Normal,Normal,Positive,7 days,High,Allergic Rhinitis
+Stroke,Yes,No,Yes,No,80,Female,High,High,Positive,2 days,High,Hepatitis
+Stroke,Yes,No,Yes,No,80,Female,High,High,Positive,14 days,High,Malaria
+Stroke,Yes,No,Yes,No,85,Male,High,High,Positive,14 days,High,Hypertensive Heart Disease
+Stroke,Yes,No,Yes,No,85,Male,High,High,Positive,10 days,High,Spina Bifida
+Stroke,Yes,No,Yes,No,90,Female,High,High,Positive,5 days,High,Hypoglycemia
+Stroke,Yes,No,Yes,No,90,Female,High,High,Positive,5 days,High,Esophageal Cancer
+Liver Cancer,Yes,Yes,No,No,44,Female,High,Normal,Negative,14 days,Mild,Obsessive-Compulsive Disorde...
+Anxiety Disorders,Yes,No,Yes,Yes,37,Male,High,High,Positive,3 days,Moderate,Urinary Tract Infection
+Diabetes,No,Yes,Yes,No,43,Male,Normal,High,Positive,14 days,Mild,Epilepsy
+Asthma,Yes,No,Yes,No,42,Male,Low,Normal,Positive,2 days,Mild,Osteoporosis
+Malaria,Yes,No,No,No,30,Male,High,High,Positive,10 days,Mild,Bronchitis
+Migraine,Yes,Yes,Yes,No,36,Male,High,High,Negative,14 days,Severe,Endometriosis
+Liver Disease,Yes,No,No,Yes,35,Female,Normal,Normal,Negative,5 days,Mild,Autism Spectrum Disorder (ASD)
+Stroke,Yes,No,Yes,No,83,Female,High,High,Positive,3 days,Severe,Hepatitis
+Hypertension,No,No,No,No,53,Female,High,High,Positive,3 days,Moderate,Migraine
+Liver Disease,Yes,Yes,Yes,No,37,Female,Normal,High,Positive,5 days,Mild,Liver Cancer
+Alzheimer's Disease,No,No,Yes,No,68,Female,High,High,Positive,5 days,High,Hepatitis
+Stroke,Yes,No,Yes,No,88,Female,High,High,Positive,21 days,Mild,Malaria
+Asthma,No,Yes,Yes,Yes,36,Female,High,Normal,Negative,10 days,Mild,Hyperthyroidism
+Diabetes,Yes,No,Yes,No,52,Female,High,High,Positive,7 days,Mild,Myocardial Infarction (Heart...
+Typhoid Fever,No,Yes,No,No,61,Male,Normal,Low,Positive,21 days,High,Klinefelter Syndrome
+Asthma,No,No,No,Yes,34,Male,Normal,Low,Negative,14 days,Mild,Osteoporosis
+Pneumonia,Yes,No,Yes,Yes,26,Female,High,Normal,Positive,21 days,High,Cataracts
+Otitis Media (Ear Infection),Yes,Yes,Yes,No,63,Male,Normal,Normal,Negative,21 days,Moderate,Tonsillitis
+Stroke,Yes,Yes,Yes,Yes,29,Female,Normal,Normal,Positive,7 days,High,Scoliosis
+Kidney Cancer,No,Yes,Yes,Yes,40,Male,Normal,Low,Negative,21 days,High,Klinefelter Syndrome
+Migraine,No,Yes,Yes,No,40,Male,High,High,Positive,3 days,High,Pneumocystis Pneumonia (PCP)
+Multiple Sclerosis,No,Yes,Yes,No,52,Male,Normal,Normal,Negative,14 days,Mild,Polycystic Ovary Syndrome (PCOS)
+Stroke,Yes,No,Yes,No,78,Male,High,High,Positive,3 days,Moderate,Cystic Fibrosis
+Stroke,No,Yes,No,No,76,Male,Normal,High,Positive,5 days,Moderate,Breast Cancer
+Osteoarthritis,Yes,Yes,No,No,61,Female,High,High,Positive,21 days,Mild,Hyperthyroidism
+Asthma,Yes,Yes,No,Yes,35,Female,Normal,Normal,Positive,21 days,High,Myocardial Infarction (Heart...
+Gastroenteritis,Yes,No,Yes,Yes,30,Male,Low,High,Positive,2 days,Moderate,Urinary Tract Infection
+Urinary Tract Infection (UTI),Yes,No,No,No,29,Female,Normal,Normal,Positive,10 days,High,Hyperglycemia
+Common Cold,No,Yes,Yes,No,22,Female,Normal,Normal,Negative,7 days,Severe,Migraine
+Migraine,Yes,No,No,No,32,Female,Normal,Normal,Positive,3 days,High,Allergic Rhinitis
+Coronary Artery Disease,No,No,Yes,No,58,Female,Normal,Normal,Positive,7 days,Severe,Testicular Cancer
+Autism Spectrum Disorder (ASD),No,No,Yes,No,46,Male,Normal,Normal,Negative,3 days,Severe,Anxiety Disorders
+Systemic Lupus Erythematosus...,No,Yes,Yes,No,62,Female,High,High,Positive,21 days,Mild,Sinusitis
+Typhoid Fever,No,Yes,No,No,54,Male,Normal,Low,Positive,21 days,Severe,Klinefelter Syndrome
+Endometriosis,Yes,No,No,No,49,Male,High,Normal,Negative,7 days,Severe,Polio
+Depression,No,Yes,Yes,No,57,Female,Low,Low,Negative,7 days,High,Psoriasis
+Pneumothorax,No,No,Yes,Yes,56,Female,High,High,Positive,21 days,Mild,Pancreatic Cancer
+Common Cold,Yes,No,Yes,Yes,35,Male,High,High,Positive,2 days,High,Chickenpox
+Bronchitis,Yes,Yes,Yes,Yes,36,Male,High,High,Positive,5 days,Mild,Sinusitis
+Prader-Willi Syndrome,No,No,Yes,No,52,Female,Normal,Normal,Positive,7 days,Mild,Cirrhosis
+Stroke,Yes,No,Yes,No,78,Female,High,High,Positive,14 days,High,Malaria
+Hyperthyroidism,No,Yes,No,No,20,Female,Normal,Normal,Negative,21 days,Moderate,Obsessive-Compulsive Disorde...
+Hypoglycemia,No,No,Yes,No,42,Female,High,High,Positive,2 days,High,Osteoarthritis
+Gastroenteritis,Yes,No,Yes,Yes,34,Male,Low,High,Positive,10 days,Moderate,Hepatitis B
+Crohn's Disease,Yes,No,Yes,No,39,Male,High,Normal,Negative,3 days,Mild,Eczema
+Hemophilia,No,No,Yes,No,56,Female,Normal,Normal,Positive,7 days,Mild,Klinefelter Syndrome
+Gastroenteritis,Yes,Yes,Yes,Yes,50,Female,High,Normal,Positive,21 days,High,Pneumonia
+Kidney Cancer,No,No,Yes,No,28,Male,Normal,Normal,Negative,10 days,Mild,Crohn's Disease
+Tetanus,No,No,Yes,No,44,Male,Normal,High,Positive,21 days,Mild,Diabetes
+Osteoporosis,Yes,No,Yes,No,48,Female,Normal,Normal,Positive,10 days,Moderate,Hypothyroidism
+Ulcerative Colitis,Yes,Yes,No,No,37,Female,Normal,Normal,Negative,10 days,Moderate,Gout
+Chronic Obstructive Pulmonary...,Yes,Yes,Yes,Yes,31,Male,Normal,Normal,Negative,10 days,Severe,Cataracts
+Depression,No,No,No,No,41,Female,Normal,High,Negative,10 days,Moderate,Tourette Syndrome
+Diabetes,No,Yes,No,No,44,Male,Normal,High,Negative,7 days,High,Marfan Syndrome
+Down Syndrome,No,No,Yes,No,46,Female,High,High,Positive,10 days,Severe,Myocardial Infarction (Heart...
+"Eating Disorders (Anorexia,...",No,No,Yes,No,32,Female,High,High,Positive,2 days,High,Scoliosis
+Asthma,Yes,Yes,No,Yes,30,Male,Normal,Normal,Positive,3 days,Moderate,Systemic Lupus Erythematosus...
+Osteoporosis,Yes,No,No,No,60,Male,High,High,Negative,14 days,Mild,Hyperthyroidism
+Anemia,No,No,Yes,No,56,Male,Normal,Normal,Negative,21 days,High,Osteoporosis
+Stroke,Yes,No,Yes,No,86,Male,High,High,Positive,5 days,Severe,Kidney Cancer
+Zika Virus,No,Yes,Yes,No,43,Female,High,High,Negative,14 days,Severe,Lung Cancer
+Multiple Sclerosis,No,Yes,Yes,No,47,Male,Normal,Normal,Negative,21 days,Severe,Liver Cancer
+Sepsis,Yes,Yes,Yes,No,46,Male,Normal,Normal,Negative,14 days,Severe,Schizophrenia
+Gastroenteritis,Yes,Yes,Yes,Yes,54,Female,High,Normal,Positive,7 days,Severe,Turner Syndrome
+Tuberculosis,Yes,Yes,Yes,Yes,42,Male,High,High,Positive,2 days,Mild,Measles
+Migraine,Yes,No,No,No,25,Female,Normal,Normal,Negative,5 days,Mild,Colorectal Cancer
+Anxiety Disorders,No,Yes,No,No,27,Female,Normal,High,Negative,10 days,Severe,Cerebral Palsy
+Depression,No,No,Yes,No,38,Female,High,High,Positive,5 days,Severe,Pancreatitis
+Migraine,No,No,No,No,49,Female,Low,Normal,Negative,7 days,Mild,Pneumocystis Pneumonia (PCP)
+Chronic Obstructive Pulmonary...,Yes,Yes,Yes,Yes,32,Male,Normal,Normal,Negative,21 days,Mild,Cataracts
+Osteoporosis,No,Yes,No,No,63,Male,High,High,Negative,21 days,Moderate,Crohn's Disease
+Eczema,Yes,No,No,No,32,Male,High,High,Positive,7 days,Moderate,Autism Spectrum Disorder (ASD)
+Chickenpox,No,Yes,No,No,38,Male,Normal,High,Positive,2 days,Moderate,Mumps
+Hypertension,Yes,No,Yes,No,37,Male,Normal,High,Positive,7 days,High,Measles
+Osteoporosis,Yes,No,No,No,64,Male,High,High,Negative,21 days,Severe,Polycystic Ovary Syndrome (PCOS)
+Liver Cancer,No,Yes,Yes,Yes,44,Male,High,High,Positive,14 days,Severe,Rubella
+Pneumonia,Yes,Yes,Yes,Yes,44,Male,High,High,Positive,3 days,Mild,Ovarian Cancer
+Lymphoma,No,Yes,No,No,36,Female,Normal,High,Positive,10 days,Mild,Rheumatoid Arthritis
+Asthma,Yes,Yes,Yes,Yes,51,Female,Normal,High,Positive,2 days,Mild,Obsessive-Compulsive Disorde...
+Pancreatitis,No,Yes,Yes,Yes,51,Male,Normal,Low,Negative,10 days,Moderate,Ovarian Cancer
+Bronchitis,Yes,No,Yes,Yes,65,Male,High,High,Positive,2 days,Moderate,Gastroenteritis
+Allergic Rhinitis,Yes,Yes,Yes,No,53,Male,High,Normal,Positive,14 days,Moderate,Kidney Disease
+Dementia,No,No,Yes,No,73,Female,High,High,Positive,10 days,Moderate,Psoriasis
+Osteoporosis,No,No,No,Yes,34,Male,Low,Normal,Negative,2 days,Mild,Prader-Willi Syndrome
+Kidney Cancer,Yes,Yes,Yes,No,53,Female,High,Normal,Positive,10 days,High,Appendicitis
+Acne,No,No,Yes,No,36,Male,Normal,Normal,Negative,3 days,High,Rabies
+Acne,No,No,Yes,No,48,Male,Normal,Normal,Negative,3 days,High,Klinefelter Syndrome
+Depression,No,No,Yes,No,53,Female,High,High,Positive,21 days,Mild,Ebola Virus
+Common Cold,No,Yes,Yes,No,18,Female,Normal,Normal,Negative,10 days,Mild,Myocardial Infarction (Heart...
+Pancreatitis,No,Yes,No,No,46,Male,Low,High,Negative,10 days,High,Osteoarthritis
+Urinary Tract Infection,Yes,Yes,No,Yes,42,Male,High,Normal,Negative,2 days,Moderate,Lyme Disease
+Asthma,Yes,No,Yes,Yes,33,Male,Normal,High,Positive,3 days,Severe,Anemia
+Common Cold,Yes,No,Yes,Yes,34,Male,High,High,Positive,14 days,High,Chickenpox
+Kidney Cancer,No,Yes,No,No,47,Male,Low,High,Negative,21 days,Mild,Hepatitis B
+Diabetes,No,Yes,No,No,50,Female,Normal,High,Negative,10 days,High,Diverticulitis
+Hypertension,No,No,No,No,56,Female,Low,High,Negative,2 days,Moderate,Tonsillitis
+Osteoporosis,No,No,Yes,No,52,Male,High,Normal,Negative,2 days,Moderate,Sleep Apnea
+Measles,Yes,Yes,No,No,56,Female,High,Normal,Negative,3 days,High,Lyme Disease
+Allergic Rhinitis,No,Yes,No,No,35,Female,Low,Normal,Negative,21 days,High,Schizophrenia
+Hypertension,Yes,Yes,No,No,59,Male,Normal,Low,Negative,5 days,Mild,Fibromyalgia
+Urinary Tract Infection,Yes,No,Yes,No,35,Female,Normal,High,Positive,21 days,High,Spina Bifida
+Asthma,Yes,Yes,No,Yes,37,Female,Normal,Normal,Positive,21 days,Moderate,Brain Tumor
+Stroke,Yes,No,Yes,No,84,Female,High,High,Positive,5 days,Moderate,Esophageal Cancer
+Kidney Cancer,Yes,No,No,No,37,Female,Normal,Normal,Negative,10 days,Severe,"Eating Disorders (Anorexia,..."
+Stroke,Yes,No,Yes,No,79,Male,High,High,Positive,2 days,Mild,Hypertensive Heart Disease
+Influenza,No,Yes,No,No,40,Female,Normal,High,Negative,14 days,Moderate,Cystic Fibrosis
+Stroke,Yes,No,Yes,No,65,Female,High,Low,Negative,21 days,High,Colorectal Cancer
+Chickenpox,No,Yes,No,No,38,Male,Normal,High,Positive,3 days,Severe,Cirrhosis
+Migraine,No,No,Yes,No,69,Female,Normal,Normal,Positive,5 days,Mild,Zika Virus
+Chickenpox,No,Yes,No,No,42,Male,Normal,High,Positive,3 days,Moderate,Kidney Disease
+Lung Cancer,Yes,No,Yes,Yes,43,Male,Normal,Low,Negative,5 days,Severe,Rabies
+Depression,No,No,No,No,36,Female,Normal,High,Negative,14 days,Moderate,Tourette Syndrome
+Liver Disease,No,Yes,Yes,No,62,Male,High,Low,Negative,3 days,Moderate,Osteoporosis
+Stroke,Yes,No,Yes,No,90,Male,High,High,Positive,21 days,Moderate,Hypertensive Heart Disease
+Asthma,No,Yes,Yes,Yes,43,Female,High,Normal,Negative,2 days,Moderate,Urinary Tract Infection (UTI)
+Common Cold,No,Yes,Yes,No,17,Female,Normal,Normal,Negative,5 days,Severe,Bladder Cancer
+Tuberculosis,Yes,Yes,Yes,No,63,Female,High,High,Positive,21 days,Moderate,Bladder Cancer
+Asthma,Yes,Yes,Yes,Yes,30,Female,Normal,Normal,Positive,14 days,Mild,Allergic Rhinitis
+Liver Cancer,No,Yes,Yes,Yes,44,Male,High,High,Positive,2 days,Severe,Chronic Obstructive Pulmonary Disease (COPD)
+Influenza,No,Yes,No,No,49,Female,Normal,High,Negative,7 days,High,Cystic Fibrosis
+Anxiety Disorders,No,No,Yes,No,44,Male,Normal,Normal,Negative,21 days,Moderate,Esophageal Cancer
+Migraine,Yes,Yes,Yes,No,34,Male,High,High,Negative,3 days,Severe,Obsessive-Compulsive Disorde...
+Cystic Fibrosis,No,No,Yes,Yes,42,Male,High,High,Negative,21 days,Mild,Muscular Dystrophy
+Acne,No,No,Yes,No,39,Male,Normal,Normal,Negative,5 days,High,Klinefelter Syndrome
+Liver Disease,No,Yes,No,Yes,32,Male,Low,Normal,Negative,7 days,High,Chronic Obstructive Pulmonary Disease (COPD)
+Klinefelter Syndrome,No,No,Yes,No,33,Female,Normal,Normal,Positive,2 days,High,Chronic Obstructive Pulmonary...
+Osteoarthritis,No,No,Yes,No,47,Male,Normal,Low,Negative,2 days,Mild,Anxiety Disorders
+Migraine,No,No,Yes,No,63,Female,Normal,Normal,Positive,5 days,High,Zika Virus
+Tourette Syndrome,No,No,Yes,No,59,Male,High,High,Negative,10 days,Mild,Asthma
+Anxiety Disorders,No,No,Yes,No,50,Male,Normal,Normal,Negative,10 days,Moderate,Systemic Lupus Erythematosus...
+Allergic Rhinitis,No,Yes,Yes,No,40,Male,High,Normal,Negative,7 days,Mild,Atherosclerosis
+Hemophilia,No,No,Yes,No,65,Female,Normal,Normal,Positive,21 days,Moderate,Mumps
+Coronary Artery Disease,Yes,Yes,No,No,67,Male,High,High,Negative,2 days,High,Osteomyelitis
+Hyperthyroidism,No,No,Yes,No,34,Male,High,High,Positive,14 days,Mild,Tonsillitis
+Chickenpox,No,Yes,No,No,32,Male,Normal,High,Positive,5 days,High,Mumps
+Turner Syndrome,No,No,Yes,No,48,Male,High,High,Negative,5 days,Severe,Appendicitis
+Urinary Tract Infection,Yes,Yes,Yes,No,34,Male,High,High,Positive,10 days,Moderate,HIV/AIDS
+Hypothyroidism,Yes,Yes,Yes,No,39,Female,High,High,Positive,7 days,Moderate,Bladder Cancer
+Eczema,No,Yes,No,No,54,Female,High,High,Positive,5 days,Severe,Sinusitis
+Asthma,No,No,No,Yes,30,Male,Normal,Low,Negative,2 days,High,Hemophilia
+Osteoporosis,Yes,No,No,No,53,Male,High,High,Negative,21 days,High,Endometriosis
+Coronary Artery Disease,Yes,Yes,No,No,52,Male,High,High,Negative,7 days,Moderate,Osteomyelitis
+Osteoporosis,No,Yes,No,No,66,Male,High,High,Negative,21 days,Moderate,Epilepsy
+Chronic Obstructive Pulmonary Disease (COPD),Yes,No,Yes,Yes,72,Female,High,High,Positive,5 days,High,Polio
+Influenza,No,Yes,No,No,37,Female,Normal,High,Negative,3 days,High,Hypertensive Heart Disease
+Asthma,Yes,Yes,No,Yes,38,Female,Normal,Normal,Positive,3 days,Mild,Hypothyroidism
+Pancreatitis,Yes,No,No,No,32,Female,High,Normal,Negative,10 days,Mild,Down Syndrome
+Pancreatitis,No,Yes,No,No,55,Male,Low,High,Negative,14 days,Moderate,Prostate Cancer
+Eczema,Yes,No,No,No,19,Female,Normal,Normal,Positive,7 days,Severe,Pneumothorax
+Liver Cancer,No,Yes,Yes,Yes,46,Male,High,High,Positive,3 days,Mild,Rubella
+Measles,Yes,Yes,No,No,68,Female,High,Normal,Negative,21 days,Mild,Sinusitis
