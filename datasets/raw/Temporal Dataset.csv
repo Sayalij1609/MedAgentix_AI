@@ -1,0 +1,1793 @@
+Symptom,Duration,Interpretation,Risk_Level,Clinical_Category,Emergency_Flag
+Fever,< 1 day,Acute condition likely,Medium,Respiratory,Yes
+Fever,< 1 day,Possible infection,High,Cardiac,No
+Fever,< 1 day,Monitor symptoms,Critical,Neurological,Yes
+Fever,< 1 day,Requires clinical evaluation,Low,GI,No
+Fever,< 1 day,Chronic condition suspected,Medium,General,Yes
+Fever,< 1 day,Emergency evaluation needed,High,Respiratory,No
+Fever,< 1 day,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Fever,< 1 day,Underlying disease progression,Low,Neurological,No
+Fever,1-3 days,Acute condition likely,Medium,GI,Yes
+Fever,1-3 days,Possible infection,High,General,No
+Fever,1-3 days,Monitor symptoms,Critical,Respiratory,Yes
+Fever,1-3 days,Requires clinical evaluation,Low,Cardiac,No
+Fever,1-3 days,Chronic condition suspected,Medium,Neurological,Yes
+Fever,1-3 days,Emergency evaluation needed,High,GI,No
+Fever,1-3 days,Lifestyle-related issue possible,Critical,General,Yes
+Fever,1-3 days,Underlying disease progression,Low,Respiratory,No
+Fever,3-7 days,Acute condition likely,Medium,Cardiac,Yes
+Fever,3-7 days,Possible infection,High,Neurological,No
+Fever,3-7 days,Monitor symptoms,Critical,GI,Yes
+Fever,3-7 days,Requires clinical evaluation,Low,General,No
+Fever,3-7 days,Chronic condition suspected,Medium,Respiratory,Yes
+Fever,3-7 days,Emergency evaluation needed,High,Cardiac,No
+Fever,3-7 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Fever,3-7 days,Underlying disease progression,Low,GI,No
+Fever,1-2 weeks,Acute condition likely,Medium,General,Yes
+Fever,1-2 weeks,Possible infection,High,Respiratory,No
+Fever,1-2 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Fever,1-2 weeks,Requires clinical evaluation,Low,Neurological,No
+Fever,1-2 weeks,Chronic condition suspected,Medium,GI,Yes
+Fever,1-2 weeks,Emergency evaluation needed,High,General,No
+Fever,1-2 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Fever,1-2 weeks,Underlying disease progression,Low,Cardiac,No
+Fever,2-4 weeks,Acute condition likely,Medium,Neurological,Yes
+Fever,2-4 weeks,Possible infection,High,GI,No
+Fever,2-4 weeks,Monitor symptoms,Critical,General,Yes
+Fever,2-4 weeks,Requires clinical evaluation,Low,Respiratory,No
+Fever,2-4 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Fever,2-4 weeks,Emergency evaluation needed,High,Neurological,No
+Fever,2-4 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Fever,2-4 weeks,Underlying disease progression,Low,General,No
+Fever,1-3 months,Acute condition likely,Medium,Respiratory,Yes
+Fever,1-3 months,Possible infection,High,Cardiac,No
+Fever,1-3 months,Monitor symptoms,Critical,Neurological,Yes
+Fever,1-3 months,Requires clinical evaluation,Low,GI,No
+Fever,1-3 months,Chronic condition suspected,Medium,General,Yes
+Fever,1-3 months,Emergency evaluation needed,High,Respiratory,No
+Fever,1-3 months,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Fever,1-3 months,Underlying disease progression,Low,Neurological,No
+Fever,Chronic (>3 months),Acute condition likely,Medium,GI,Yes
+Fever,Chronic (>3 months),Possible infection,High,General,No
+Fever,Chronic (>3 months),Monitor symptoms,Critical,Respiratory,Yes
+Fever,Chronic (>3 months),Requires clinical evaluation,Low,Cardiac,No
+Fever,Chronic (>3 months),Chronic condition suspected,Medium,Neurological,Yes
+Fever,Chronic (>3 months),Emergency evaluation needed,High,GI,No
+Fever,Chronic (>3 months),Lifestyle-related issue possible,Critical,General,Yes
+Fever,Chronic (>3 months),Underlying disease progression,Low,Respiratory,No
+Cough,< 1 day,Acute condition likely,Medium,Cardiac,Yes
+Cough,< 1 day,Possible infection,High,Neurological,No
+Cough,< 1 day,Monitor symptoms,Critical,GI,Yes
+Cough,< 1 day,Requires clinical evaluation,Low,General,No
+Cough,< 1 day,Chronic condition suspected,Medium,Respiratory,Yes
+Cough,< 1 day,Emergency evaluation needed,High,Cardiac,No
+Cough,< 1 day,Lifestyle-related issue possible,Critical,Neurological,Yes
+Cough,< 1 day,Underlying disease progression,Low,GI,No
+Cough,1-3 days,Acute condition likely,Medium,General,Yes
+Cough,1-3 days,Possible infection,High,Respiratory,No
+Cough,1-3 days,Monitor symptoms,Critical,Cardiac,Yes
+Cough,1-3 days,Requires clinical evaluation,Low,Neurological,No
+Cough,1-3 days,Chronic condition suspected,Medium,GI,Yes
+Cough,1-3 days,Emergency evaluation needed,High,General,No
+Cough,1-3 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Cough,1-3 days,Underlying disease progression,Low,Cardiac,No
+Cough,3-7 days,Acute condition likely,Medium,Neurological,Yes
+Cough,3-7 days,Possible infection,High,GI,No
+Cough,3-7 days,Monitor symptoms,Critical,General,Yes
+Cough,3-7 days,Requires clinical evaluation,Low,Respiratory,No
+Cough,3-7 days,Chronic condition suspected,Medium,Cardiac,Yes
+Cough,3-7 days,Emergency evaluation needed,High,Neurological,No
+Cough,3-7 days,Lifestyle-related issue possible,Critical,GI,Yes
+Cough,3-7 days,Underlying disease progression,Low,General,No
+Cough,1-2 weeks,Acute condition likely,Medium,Respiratory,Yes
+Cough,1-2 weeks,Possible infection,High,Cardiac,No
+Cough,1-2 weeks,Monitor symptoms,Critical,Neurological,Yes
+Cough,1-2 weeks,Requires clinical evaluation,Low,GI,No
+Cough,1-2 weeks,Chronic condition suspected,Medium,General,Yes
+Cough,1-2 weeks,Emergency evaluation needed,High,Respiratory,No
+Cough,1-2 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Cough,1-2 weeks,Underlying disease progression,Low,Neurological,No
+Cough,2-4 weeks,Acute condition likely,Medium,GI,Yes
+Cough,2-4 weeks,Possible infection,High,General,No
+Cough,2-4 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Cough,2-4 weeks,Requires clinical evaluation,Low,Cardiac,No
+Cough,2-4 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Cough,2-4 weeks,Emergency evaluation needed,High,GI,No
+Cough,2-4 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Cough,2-4 weeks,Underlying disease progression,Low,Respiratory,No
+Cough,1-3 months,Acute condition likely,Medium,Cardiac,Yes
+Cough,1-3 months,Possible infection,High,Neurological,No
+Cough,1-3 months,Monitor symptoms,Critical,GI,Yes
+Cough,1-3 months,Requires clinical evaluation,Low,General,No
+Cough,1-3 months,Chronic condition suspected,Medium,Respiratory,Yes
+Cough,1-3 months,Emergency evaluation needed,High,Cardiac,No
+Cough,1-3 months,Lifestyle-related issue possible,Critical,Neurological,Yes
+Cough,1-3 months,Underlying disease progression,Low,GI,No
+Cough,Chronic (>3 months),Acute condition likely,Medium,General,Yes
+Cough,Chronic (>3 months),Possible infection,High,Respiratory,No
+Cough,Chronic (>3 months),Monitor symptoms,Critical,Cardiac,Yes
+Cough,Chronic (>3 months),Requires clinical evaluation,Low,Neurological,No
+Cough,Chronic (>3 months),Chronic condition suspected,Medium,GI,Yes
+Cough,Chronic (>3 months),Emergency evaluation needed,High,General,No
+Cough,Chronic (>3 months),Lifestyle-related issue possible,Critical,Respiratory,Yes
+Cough,Chronic (>3 months),Underlying disease progression,Low,Cardiac,No
+Chest Pain,< 1 day,Acute condition likely,Medium,Neurological,Yes
+Chest Pain,< 1 day,Possible infection,High,GI,No
+Chest Pain,< 1 day,Monitor symptoms,Critical,General,Yes
+Chest Pain,< 1 day,Requires clinical evaluation,Low,Respiratory,No
+Chest Pain,< 1 day,Chronic condition suspected,Medium,Cardiac,Yes
+Chest Pain,< 1 day,Emergency evaluation needed,High,Neurological,No
+Chest Pain,< 1 day,Lifestyle-related issue possible,Critical,GI,Yes
+Chest Pain,< 1 day,Underlying disease progression,Low,General,No
+Chest Pain,1-3 days,Acute condition likely,Medium,Respiratory,Yes
+Chest Pain,1-3 days,Possible infection,High,Cardiac,No
+Chest Pain,1-3 days,Monitor symptoms,Critical,Neurological,Yes
+Chest Pain,1-3 days,Requires clinical evaluation,Low,GI,No
+Chest Pain,1-3 days,Chronic condition suspected,Medium,General,Yes
+Chest Pain,1-3 days,Emergency evaluation needed,High,Respiratory,No
+Chest Pain,1-3 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Chest Pain,1-3 days,Underlying disease progression,Low,Neurological,No
+Chest Pain,3-7 days,Acute condition likely,Medium,GI,Yes
+Chest Pain,3-7 days,Possible infection,High,General,No
+Chest Pain,3-7 days,Monitor symptoms,Critical,Respiratory,Yes
+Chest Pain,3-7 days,Requires clinical evaluation,Low,Cardiac,No
+Chest Pain,3-7 days,Chronic condition suspected,Medium,Neurological,Yes
+Chest Pain,3-7 days,Emergency evaluation needed,High,GI,No
+Chest Pain,3-7 days,Lifestyle-related issue possible,Critical,General,Yes
+Chest Pain,3-7 days,Underlying disease progression,Low,Respiratory,No
+Chest Pain,1-2 weeks,Acute condition likely,Medium,Cardiac,Yes
+Chest Pain,1-2 weeks,Possible infection,High,Neurological,No
+Chest Pain,1-2 weeks,Monitor symptoms,Critical,GI,Yes
+Chest Pain,1-2 weeks,Requires clinical evaluation,Low,General,No
+Chest Pain,1-2 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Chest Pain,1-2 weeks,Emergency evaluation needed,High,Cardiac,No
+Chest Pain,1-2 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Chest Pain,1-2 weeks,Underlying disease progression,Low,GI,No
+Chest Pain,2-4 weeks,Acute condition likely,Medium,General,Yes
+Chest Pain,2-4 weeks,Possible infection,High,Respiratory,No
+Chest Pain,2-4 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Chest Pain,2-4 weeks,Requires clinical evaluation,Low,Neurological,No
+Chest Pain,2-4 weeks,Chronic condition suspected,Medium,GI,Yes
+Chest Pain,2-4 weeks,Emergency evaluation needed,High,General,No
+Chest Pain,2-4 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Chest Pain,2-4 weeks,Underlying disease progression,Low,Cardiac,No
+Chest Pain,1-3 months,Acute condition likely,Medium,Neurological,Yes
+Chest Pain,1-3 months,Possible infection,High,GI,No
+Chest Pain,1-3 months,Monitor symptoms,Critical,General,Yes
+Chest Pain,1-3 months,Requires clinical evaluation,Low,Respiratory,No
+Chest Pain,1-3 months,Chronic condition suspected,Medium,Cardiac,Yes
+Chest Pain,1-3 months,Emergency evaluation needed,High,Neurological,No
+Chest Pain,1-3 months,Lifestyle-related issue possible,Critical,GI,Yes
+Chest Pain,1-3 months,Underlying disease progression,Low,General,No
+Chest Pain,Chronic (>3 months),Acute condition likely,Medium,Respiratory,Yes
+Chest Pain,Chronic (>3 months),Possible infection,High,Cardiac,No
+Chest Pain,Chronic (>3 months),Monitor symptoms,Critical,Neurological,Yes
+Chest Pain,Chronic (>3 months),Requires clinical evaluation,Low,GI,No
+Chest Pain,Chronic (>3 months),Chronic condition suspected,Medium,General,Yes
+Chest Pain,Chronic (>3 months),Emergency evaluation needed,High,Respiratory,No
+Chest Pain,Chronic (>3 months),Lifestyle-related issue possible,Critical,Cardiac,Yes
+Chest Pain,Chronic (>3 months),Underlying disease progression,Low,Neurological,No
+Headache,< 1 day,Acute condition likely,Medium,GI,Yes
+Headache,< 1 day,Possible infection,High,General,No
+Headache,< 1 day,Monitor symptoms,Critical,Respiratory,Yes
+Headache,< 1 day,Requires clinical evaluation,Low,Cardiac,No
+Headache,< 1 day,Chronic condition suspected,Medium,Neurological,Yes
+Headache,< 1 day,Emergency evaluation needed,High,GI,No
+Headache,< 1 day,Lifestyle-related issue possible,Critical,General,Yes
+Headache,< 1 day,Underlying disease progression,Low,Respiratory,No
+Headache,1-3 days,Acute condition likely,Medium,Cardiac,Yes
+Headache,1-3 days,Possible infection,High,Neurological,No
+Headache,1-3 days,Monitor symptoms,Critical,GI,Yes
+Headache,1-3 days,Requires clinical evaluation,Low,General,No
+Headache,1-3 days,Chronic condition suspected,Medium,Respiratory,Yes
+Headache,1-3 days,Emergency evaluation needed,High,Cardiac,No
+Headache,1-3 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Headache,1-3 days,Underlying disease progression,Low,GI,No
+Headache,3-7 days,Acute condition likely,Medium,General,Yes
+Headache,3-7 days,Possible infection,High,Respiratory,No
+Headache,3-7 days,Monitor symptoms,Critical,Cardiac,Yes
+Headache,3-7 days,Requires clinical evaluation,Low,Neurological,No
+Headache,3-7 days,Chronic condition suspected,Medium,GI,Yes
+Headache,3-7 days,Emergency evaluation needed,High,General,No
+Headache,3-7 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Headache,3-7 days,Underlying disease progression,Low,Cardiac,No
+Headache,1-2 weeks,Acute condition likely,Medium,Neurological,Yes
+Headache,1-2 weeks,Possible infection,High,GI,No
+Headache,1-2 weeks,Monitor symptoms,Critical,General,Yes
+Headache,1-2 weeks,Requires clinical evaluation,Low,Respiratory,No
+Headache,1-2 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Headache,1-2 weeks,Emergency evaluation needed,High,Neurological,No
+Headache,1-2 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Headache,1-2 weeks,Underlying disease progression,Low,General,No
+Headache,2-4 weeks,Acute condition likely,Medium,Respiratory,Yes
+Headache,2-4 weeks,Possible infection,High,Cardiac,No
+Headache,2-4 weeks,Monitor symptoms,Critical,Neurological,Yes
+Headache,2-4 weeks,Requires clinical evaluation,Low,GI,No
+Headache,2-4 weeks,Chronic condition suspected,Medium,General,Yes
+Headache,2-4 weeks,Emergency evaluation needed,High,Respiratory,No
+Headache,2-4 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Headache,2-4 weeks,Underlying disease progression,Low,Neurological,No
+Headache,1-3 months,Acute condition likely,Medium,GI,Yes
+Headache,1-3 months,Possible infection,High,General,No
+Headache,1-3 months,Monitor symptoms,Critical,Respiratory,Yes
+Headache,1-3 months,Requires clinical evaluation,Low,Cardiac,No
+Headache,1-3 months,Chronic condition suspected,Medium,Neurological,Yes
+Headache,1-3 months,Emergency evaluation needed,High,GI,No
+Headache,1-3 months,Lifestyle-related issue possible,Critical,General,Yes
+Headache,1-3 months,Underlying disease progression,Low,Respiratory,No
+Headache,Chronic (>3 months),Acute condition likely,Medium,Cardiac,Yes
+Headache,Chronic (>3 months),Possible infection,High,Neurological,No
+Headache,Chronic (>3 months),Monitor symptoms,Critical,GI,Yes
+Headache,Chronic (>3 months),Requires clinical evaluation,Low,General,No
+Headache,Chronic (>3 months),Chronic condition suspected,Medium,Respiratory,Yes
+Headache,Chronic (>3 months),Emergency evaluation needed,High,Cardiac,No
+Headache,Chronic (>3 months),Lifestyle-related issue possible,Critical,Neurological,Yes
+Headache,Chronic (>3 months),Underlying disease progression,Low,GI,No
+Abdominal Pain,< 1 day,Acute condition likely,Medium,General,Yes
+Abdominal Pain,< 1 day,Possible infection,High,Respiratory,No
+Abdominal Pain,< 1 day,Monitor symptoms,Critical,Cardiac,Yes
+Abdominal Pain,< 1 day,Requires clinical evaluation,Low,Neurological,No
+Abdominal Pain,< 1 day,Chronic condition suspected,Medium,GI,Yes
+Abdominal Pain,< 1 day,Emergency evaluation needed,High,General,No
+Abdominal Pain,< 1 day,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Abdominal Pain,< 1 day,Underlying disease progression,Low,Cardiac,No
+Abdominal Pain,1-3 days,Acute condition likely,Medium,Neurological,Yes
+Abdominal Pain,1-3 days,Possible infection,High,GI,No
+Abdominal Pain,1-3 days,Monitor symptoms,Critical,General,Yes
+Abdominal Pain,1-3 days,Requires clinical evaluation,Low,Respiratory,No
+Abdominal Pain,1-3 days,Chronic condition suspected,Medium,Cardiac,Yes
+Abdominal Pain,1-3 days,Emergency evaluation needed,High,Neurological,No
+Abdominal Pain,1-3 days,Lifestyle-related issue possible,Critical,GI,Yes
+Abdominal Pain,1-3 days,Underlying disease progression,Low,General,No
+Abdominal Pain,3-7 days,Acute condition likely,Medium,Respiratory,Yes
+Abdominal Pain,3-7 days,Possible infection,High,Cardiac,No
+Abdominal Pain,3-7 days,Monitor symptoms,Critical,Neurological,Yes
+Abdominal Pain,3-7 days,Requires clinical evaluation,Low,GI,No
+Abdominal Pain,3-7 days,Chronic condition suspected,Medium,General,Yes
+Abdominal Pain,3-7 days,Emergency evaluation needed,High,Respiratory,No
+Abdominal Pain,3-7 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Abdominal Pain,3-7 days,Underlying disease progression,Low,Neurological,No
+Abdominal Pain,1-2 weeks,Acute condition likely,Medium,GI,Yes
+Abdominal Pain,1-2 weeks,Possible infection,High,General,No
+Abdominal Pain,1-2 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Abdominal Pain,1-2 weeks,Requires clinical evaluation,Low,Cardiac,No
+Abdominal Pain,1-2 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Abdominal Pain,1-2 weeks,Emergency evaluation needed,High,GI,No
+Abdominal Pain,1-2 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Abdominal Pain,1-2 weeks,Underlying disease progression,Low,Respiratory,No
+Abdominal Pain,2-4 weeks,Acute condition likely,Medium,Cardiac,Yes
+Abdominal Pain,2-4 weeks,Possible infection,High,Neurological,No
+Abdominal Pain,2-4 weeks,Monitor symptoms,Critical,GI,Yes
+Abdominal Pain,2-4 weeks,Requires clinical evaluation,Low,General,No
+Abdominal Pain,2-4 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Abdominal Pain,2-4 weeks,Emergency evaluation needed,High,Cardiac,No
+Abdominal Pain,2-4 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Abdominal Pain,2-4 weeks,Underlying disease progression,Low,GI,No
+Abdominal Pain,1-3 months,Acute condition likely,Medium,General,Yes
+Abdominal Pain,1-3 months,Possible infection,High,Respiratory,No
+Abdominal Pain,1-3 months,Monitor symptoms,Critical,Cardiac,Yes
+Abdominal Pain,1-3 months,Requires clinical evaluation,Low,Neurological,No
+Abdominal Pain,1-3 months,Chronic condition suspected,Medium,GI,Yes
+Abdominal Pain,1-3 months,Emergency evaluation needed,High,General,No
+Abdominal Pain,1-3 months,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Abdominal Pain,1-3 months,Underlying disease progression,Low,Cardiac,No
+Abdominal Pain,Chronic (>3 months),Acute condition likely,Medium,Neurological,Yes
+Abdominal Pain,Chronic (>3 months),Possible infection,High,GI,No
+Abdominal Pain,Chronic (>3 months),Monitor symptoms,Critical,General,Yes
+Abdominal Pain,Chronic (>3 months),Requires clinical evaluation,Low,Respiratory,No
+Abdominal Pain,Chronic (>3 months),Chronic condition suspected,Medium,Cardiac,Yes
+Abdominal Pain,Chronic (>3 months),Emergency evaluation needed,High,Neurological,No
+Abdominal Pain,Chronic (>3 months),Lifestyle-related issue possible,Critical,GI,Yes
+Abdominal Pain,Chronic (>3 months),Underlying disease progression,Low,General,No
+Vomiting,< 1 day,Acute condition likely,Medium,Respiratory,Yes
+Vomiting,< 1 day,Possible infection,High,Cardiac,No
+Vomiting,< 1 day,Monitor symptoms,Critical,Neurological,Yes
+Vomiting,< 1 day,Requires clinical evaluation,Low,GI,No
+Vomiting,< 1 day,Chronic condition suspected,Medium,General,Yes
+Vomiting,< 1 day,Emergency evaluation needed,High,Respiratory,No
+Vomiting,< 1 day,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Vomiting,< 1 day,Underlying disease progression,Low,Neurological,No
+Vomiting,1-3 days,Acute condition likely,Medium,GI,Yes
+Vomiting,1-3 days,Possible infection,High,General,No
+Vomiting,1-3 days,Monitor symptoms,Critical,Respiratory,Yes
+Vomiting,1-3 days,Requires clinical evaluation,Low,Cardiac,No
+Vomiting,1-3 days,Chronic condition suspected,Medium,Neurological,Yes
+Vomiting,1-3 days,Emergency evaluation needed,High,GI,No
+Vomiting,1-3 days,Lifestyle-related issue possible,Critical,General,Yes
+Vomiting,1-3 days,Underlying disease progression,Low,Respiratory,No
+Vomiting,3-7 days,Acute condition likely,Medium,Cardiac,Yes
+Vomiting,3-7 days,Possible infection,High,Neurological,No
+Vomiting,3-7 days,Monitor symptoms,Critical,GI,Yes
+Vomiting,3-7 days,Requires clinical evaluation,Low,General,No
+Vomiting,3-7 days,Chronic condition suspected,Medium,Respiratory,Yes
+Vomiting,3-7 days,Emergency evaluation needed,High,Cardiac,No
+Vomiting,3-7 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Vomiting,3-7 days,Underlying disease progression,Low,GI,No
+Vomiting,1-2 weeks,Acute condition likely,Medium,General,Yes
+Vomiting,1-2 weeks,Possible infection,High,Respiratory,No
+Vomiting,1-2 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Vomiting,1-2 weeks,Requires clinical evaluation,Low,Neurological,No
+Vomiting,1-2 weeks,Chronic condition suspected,Medium,GI,Yes
+Vomiting,1-2 weeks,Emergency evaluation needed,High,General,No
+Vomiting,1-2 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Vomiting,1-2 weeks,Underlying disease progression,Low,Cardiac,No
+Vomiting,2-4 weeks,Acute condition likely,Medium,Neurological,Yes
+Vomiting,2-4 weeks,Possible infection,High,GI,No
+Vomiting,2-4 weeks,Monitor symptoms,Critical,General,Yes
+Vomiting,2-4 weeks,Requires clinical evaluation,Low,Respiratory,No
+Vomiting,2-4 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Vomiting,2-4 weeks,Emergency evaluation needed,High,Neurological,No
+Vomiting,2-4 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Vomiting,2-4 weeks,Underlying disease progression,Low,General,No
+Vomiting,1-3 months,Acute condition likely,Medium,Respiratory,Yes
+Vomiting,1-3 months,Possible infection,High,Cardiac,No
+Vomiting,1-3 months,Monitor symptoms,Critical,Neurological,Yes
+Vomiting,1-3 months,Requires clinical evaluation,Low,GI,No
+Vomiting,1-3 months,Chronic condition suspected,Medium,General,Yes
+Vomiting,1-3 months,Emergency evaluation needed,High,Respiratory,No
+Vomiting,1-3 months,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Vomiting,1-3 months,Underlying disease progression,Low,Neurological,No
+Vomiting,Chronic (>3 months),Acute condition likely,Medium,GI,Yes
+Vomiting,Chronic (>3 months),Possible infection,High,General,No
+Vomiting,Chronic (>3 months),Monitor symptoms,Critical,Respiratory,Yes
+Vomiting,Chronic (>3 months),Requires clinical evaluation,Low,Cardiac,No
+Vomiting,Chronic (>3 months),Chronic condition suspected,Medium,Neurological,Yes
+Vomiting,Chronic (>3 months),Emergency evaluation needed,High,GI,No
+Vomiting,Chronic (>3 months),Lifestyle-related issue possible,Critical,General,Yes
+Vomiting,Chronic (>3 months),Underlying disease progression,Low,Respiratory,No
+Diarrhea,< 1 day,Acute condition likely,Medium,Cardiac,Yes
+Diarrhea,< 1 day,Possible infection,High,Neurological,No
+Diarrhea,< 1 day,Monitor symptoms,Critical,GI,Yes
+Diarrhea,< 1 day,Requires clinical evaluation,Low,General,No
+Diarrhea,< 1 day,Chronic condition suspected,Medium,Respiratory,Yes
+Diarrhea,< 1 day,Emergency evaluation needed,High,Cardiac,No
+Diarrhea,< 1 day,Lifestyle-related issue possible,Critical,Neurological,Yes
+Diarrhea,< 1 day,Underlying disease progression,Low,GI,No
+Diarrhea,1-3 days,Acute condition likely,Medium,General,Yes
+Diarrhea,1-3 days,Possible infection,High,Respiratory,No
+Diarrhea,1-3 days,Monitor symptoms,Critical,Cardiac,Yes
+Diarrhea,1-3 days,Requires clinical evaluation,Low,Neurological,No
+Diarrhea,1-3 days,Chronic condition suspected,Medium,GI,Yes
+Diarrhea,1-3 days,Emergency evaluation needed,High,General,No
+Diarrhea,1-3 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Diarrhea,1-3 days,Underlying disease progression,Low,Cardiac,No
+Diarrhea,3-7 days,Acute condition likely,Medium,Neurological,Yes
+Diarrhea,3-7 days,Possible infection,High,GI,No
+Diarrhea,3-7 days,Monitor symptoms,Critical,General,Yes
+Diarrhea,3-7 days,Requires clinical evaluation,Low,Respiratory,No
+Diarrhea,3-7 days,Chronic condition suspected,Medium,Cardiac,Yes
+Diarrhea,3-7 days,Emergency evaluation needed,High,Neurological,No
+Diarrhea,3-7 days,Lifestyle-related issue possible,Critical,GI,Yes
+Diarrhea,3-7 days,Underlying disease progression,Low,General,No
+Diarrhea,1-2 weeks,Acute condition likely,Medium,Respiratory,Yes
+Diarrhea,1-2 weeks,Possible infection,High,Cardiac,No
+Diarrhea,1-2 weeks,Monitor symptoms,Critical,Neurological,Yes
+Diarrhea,1-2 weeks,Requires clinical evaluation,Low,GI,No
+Diarrhea,1-2 weeks,Chronic condition suspected,Medium,General,Yes
+Diarrhea,1-2 weeks,Emergency evaluation needed,High,Respiratory,No
+Diarrhea,1-2 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Diarrhea,1-2 weeks,Underlying disease progression,Low,Neurological,No
+Diarrhea,2-4 weeks,Acute condition likely,Medium,GI,Yes
+Diarrhea,2-4 weeks,Possible infection,High,General,No
+Diarrhea,2-4 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Diarrhea,2-4 weeks,Requires clinical evaluation,Low,Cardiac,No
+Diarrhea,2-4 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Diarrhea,2-4 weeks,Emergency evaluation needed,High,GI,No
+Diarrhea,2-4 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Diarrhea,2-4 weeks,Underlying disease progression,Low,Respiratory,No
+Diarrhea,1-3 months,Acute condition likely,Medium,Cardiac,Yes
+Diarrhea,1-3 months,Possible infection,High,Neurological,No
+Diarrhea,1-3 months,Monitor symptoms,Critical,GI,Yes
+Diarrhea,1-3 months,Requires clinical evaluation,Low,General,No
+Diarrhea,1-3 months,Chronic condition suspected,Medium,Respiratory,Yes
+Diarrhea,1-3 months,Emergency evaluation needed,High,Cardiac,No
+Diarrhea,1-3 months,Lifestyle-related issue possible,Critical,Neurological,Yes
+Diarrhea,1-3 months,Underlying disease progression,Low,GI,No
+Diarrhea,Chronic (>3 months),Acute condition likely,Medium,General,Yes
+Diarrhea,Chronic (>3 months),Possible infection,High,Respiratory,No
+Diarrhea,Chronic (>3 months),Monitor symptoms,Critical,Cardiac,Yes
+Diarrhea,Chronic (>3 months),Requires clinical evaluation,Low,Neurological,No
+Diarrhea,Chronic (>3 months),Chronic condition suspected,Medium,GI,Yes
+Diarrhea,Chronic (>3 months),Emergency evaluation needed,High,General,No
+Diarrhea,Chronic (>3 months),Lifestyle-related issue possible,Critical,Respiratory,Yes
+Diarrhea,Chronic (>3 months),Underlying disease progression,Low,Cardiac,No
+Fatigue,< 1 day,Acute condition likely,Medium,Neurological,Yes
+Fatigue,< 1 day,Possible infection,High,GI,No
+Fatigue,< 1 day,Monitor symptoms,Critical,General,Yes
+Fatigue,< 1 day,Requires clinical evaluation,Low,Respiratory,No
+Fatigue,< 1 day,Chronic condition suspected,Medium,Cardiac,Yes
+Fatigue,< 1 day,Emergency evaluation needed,High,Neurological,No
+Fatigue,< 1 day,Lifestyle-related issue possible,Critical,GI,Yes
+Fatigue,< 1 day,Underlying disease progression,Low,General,No
+Fatigue,1-3 days,Acute condition likely,Medium,Respiratory,Yes
+Fatigue,1-3 days,Possible infection,High,Cardiac,No
+Fatigue,1-3 days,Monitor symptoms,Critical,Neurological,Yes
+Fatigue,1-3 days,Requires clinical evaluation,Low,GI,No
+Fatigue,1-3 days,Chronic condition suspected,Medium,General,Yes
+Fatigue,1-3 days,Emergency evaluation needed,High,Respiratory,No
+Fatigue,1-3 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Fatigue,1-3 days,Underlying disease progression,Low,Neurological,No
+Fatigue,3-7 days,Acute condition likely,Medium,GI,Yes
+Fatigue,3-7 days,Possible infection,High,General,No
+Fatigue,3-7 days,Monitor symptoms,Critical,Respiratory,Yes
+Fatigue,3-7 days,Requires clinical evaluation,Low,Cardiac,No
+Fatigue,3-7 days,Chronic condition suspected,Medium,Neurological,Yes
+Fatigue,3-7 days,Emergency evaluation needed,High,GI,No
+Fatigue,3-7 days,Lifestyle-related issue possible,Critical,General,Yes
+Fatigue,3-7 days,Underlying disease progression,Low,Respiratory,No
+Fatigue,1-2 weeks,Acute condition likely,Medium,Cardiac,Yes
+Fatigue,1-2 weeks,Possible infection,High,Neurological,No
+Fatigue,1-2 weeks,Monitor symptoms,Critical,GI,Yes
+Fatigue,1-2 weeks,Requires clinical evaluation,Low,General,No
+Fatigue,1-2 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Fatigue,1-2 weeks,Emergency evaluation needed,High,Cardiac,No
+Fatigue,1-2 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Fatigue,1-2 weeks,Underlying disease progression,Low,GI,No
+Fatigue,2-4 weeks,Acute condition likely,Medium,General,Yes
+Fatigue,2-4 weeks,Possible infection,High,Respiratory,No
+Fatigue,2-4 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Fatigue,2-4 weeks,Requires clinical evaluation,Low,Neurological,No
+Fatigue,2-4 weeks,Chronic condition suspected,Medium,GI,Yes
+Fatigue,2-4 weeks,Emergency evaluation needed,High,General,No
+Fatigue,2-4 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Fatigue,2-4 weeks,Underlying disease progression,Low,Cardiac,No
+Fatigue,1-3 months,Acute condition likely,Medium,Neurological,Yes
+Fatigue,1-3 months,Possible infection,High,GI,No
+Fatigue,1-3 months,Monitor symptoms,Critical,General,Yes
+Fatigue,1-3 months,Requires clinical evaluation,Low,Respiratory,No
+Fatigue,1-3 months,Chronic condition suspected,Medium,Cardiac,Yes
+Fatigue,1-3 months,Emergency evaluation needed,High,Neurological,No
+Fatigue,1-3 months,Lifestyle-related issue possible,Critical,GI,Yes
+Fatigue,1-3 months,Underlying disease progression,Low,General,No
+Fatigue,Chronic (>3 months),Acute condition likely,Medium,Respiratory,Yes
+Fatigue,Chronic (>3 months),Possible infection,High,Cardiac,No
+Fatigue,Chronic (>3 months),Monitor symptoms,Critical,Neurological,Yes
+Fatigue,Chronic (>3 months),Requires clinical evaluation,Low,GI,No
+Fatigue,Chronic (>3 months),Chronic condition suspected,Medium,General,Yes
+Fatigue,Chronic (>3 months),Emergency evaluation needed,High,Respiratory,No
+Fatigue,Chronic (>3 months),Lifestyle-related issue possible,Critical,Cardiac,Yes
+Fatigue,Chronic (>3 months),Underlying disease progression,Low,Neurological,No
+Breathlessness,< 1 day,Acute condition likely,Medium,GI,Yes
+Breathlessness,< 1 day,Possible infection,High,General,No
+Breathlessness,< 1 day,Monitor symptoms,Critical,Respiratory,Yes
+Breathlessness,< 1 day,Requires clinical evaluation,Low,Cardiac,No
+Breathlessness,< 1 day,Chronic condition suspected,Medium,Neurological,Yes
+Breathlessness,< 1 day,Emergency evaluation needed,High,GI,No
+Breathlessness,< 1 day,Lifestyle-related issue possible,Critical,General,Yes
+Breathlessness,< 1 day,Underlying disease progression,Low,Respiratory,No
+Breathlessness,1-3 days,Acute condition likely,Medium,Cardiac,Yes
+Breathlessness,1-3 days,Possible infection,High,Neurological,No
+Breathlessness,1-3 days,Monitor symptoms,Critical,GI,Yes
+Breathlessness,1-3 days,Requires clinical evaluation,Low,General,No
+Breathlessness,1-3 days,Chronic condition suspected,Medium,Respiratory,Yes
+Breathlessness,1-3 days,Emergency evaluation needed,High,Cardiac,No
+Breathlessness,1-3 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Breathlessness,1-3 days,Underlying disease progression,Low,GI,No
+Breathlessness,3-7 days,Acute condition likely,Medium,General,Yes
+Breathlessness,3-7 days,Possible infection,High,Respiratory,No
+Breathlessness,3-7 days,Monitor symptoms,Critical,Cardiac,Yes
+Breathlessness,3-7 days,Requires clinical evaluation,Low,Neurological,No
+Breathlessness,3-7 days,Chronic condition suspected,Medium,GI,Yes
+Breathlessness,3-7 days,Emergency evaluation needed,High,General,No
+Breathlessness,3-7 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Breathlessness,3-7 days,Underlying disease progression,Low,Cardiac,No
+Breathlessness,1-2 weeks,Acute condition likely,Medium,Neurological,Yes
+Breathlessness,1-2 weeks,Possible infection,High,GI,No
+Breathlessness,1-2 weeks,Monitor symptoms,Critical,General,Yes
+Breathlessness,1-2 weeks,Requires clinical evaluation,Low,Respiratory,No
+Breathlessness,1-2 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Breathlessness,1-2 weeks,Emergency evaluation needed,High,Neurological,No
+Breathlessness,1-2 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Breathlessness,1-2 weeks,Underlying disease progression,Low,General,No
+Breathlessness,2-4 weeks,Acute condition likely,Medium,Respiratory,Yes
+Breathlessness,2-4 weeks,Possible infection,High,Cardiac,No
+Breathlessness,2-4 weeks,Monitor symptoms,Critical,Neurological,Yes
+Breathlessness,2-4 weeks,Requires clinical evaluation,Low,GI,No
+Breathlessness,2-4 weeks,Chronic condition suspected,Medium,General,Yes
+Breathlessness,2-4 weeks,Emergency evaluation needed,High,Respiratory,No
+Breathlessness,2-4 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Breathlessness,2-4 weeks,Underlying disease progression,Low,Neurological,No
+Breathlessness,1-3 months,Acute condition likely,Medium,GI,Yes
+Breathlessness,1-3 months,Possible infection,High,General,No
+Breathlessness,1-3 months,Monitor symptoms,Critical,Respiratory,Yes
+Breathlessness,1-3 months,Requires clinical evaluation,Low,Cardiac,No
+Breathlessness,1-3 months,Chronic condition suspected,Medium,Neurological,Yes
+Breathlessness,1-3 months,Emergency evaluation needed,High,GI,No
+Breathlessness,1-3 months,Lifestyle-related issue possible,Critical,General,Yes
+Breathlessness,1-3 months,Underlying disease progression,Low,Respiratory,No
+Breathlessness,Chronic (>3 months),Acute condition likely,Medium,Cardiac,Yes
+Breathlessness,Chronic (>3 months),Possible infection,High,Neurological,No
+Breathlessness,Chronic (>3 months),Monitor symptoms,Critical,GI,Yes
+Breathlessness,Chronic (>3 months),Requires clinical evaluation,Low,General,No
+Breathlessness,Chronic (>3 months),Chronic condition suspected,Medium,Respiratory,Yes
+Breathlessness,Chronic (>3 months),Emergency evaluation needed,High,Cardiac,No
+Breathlessness,Chronic (>3 months),Lifestyle-related issue possible,Critical,Neurological,Yes
+Breathlessness,Chronic (>3 months),Underlying disease progression,Low,GI,No
+Joint Pain,< 1 day,Acute condition likely,Medium,General,Yes
+Joint Pain,< 1 day,Possible infection,High,Respiratory,No
+Joint Pain,< 1 day,Monitor symptoms,Critical,Cardiac,Yes
+Joint Pain,< 1 day,Requires clinical evaluation,Low,Neurological,No
+Joint Pain,< 1 day,Chronic condition suspected,Medium,GI,Yes
+Joint Pain,< 1 day,Emergency evaluation needed,High,General,No
+Joint Pain,< 1 day,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Joint Pain,< 1 day,Underlying disease progression,Low,Cardiac,No
+Joint Pain,1-3 days,Acute condition likely,Medium,Neurological,Yes
+Joint Pain,1-3 days,Possible infection,High,GI,No
+Joint Pain,1-3 days,Monitor symptoms,Critical,General,Yes
+Joint Pain,1-3 days,Requires clinical evaluation,Low,Respiratory,No
+Joint Pain,1-3 days,Chronic condition suspected,Medium,Cardiac,Yes
+Joint Pain,1-3 days,Emergency evaluation needed,High,Neurological,No
+Joint Pain,1-3 days,Lifestyle-related issue possible,Critical,GI,Yes
+Joint Pain,1-3 days,Underlying disease progression,Low,General,No
+Joint Pain,3-7 days,Acute condition likely,Medium,Respiratory,Yes
+Joint Pain,3-7 days,Possible infection,High,Cardiac,No
+Joint Pain,3-7 days,Monitor symptoms,Critical,Neurological,Yes
+Joint Pain,3-7 days,Requires clinical evaluation,Low,GI,No
+Joint Pain,3-7 days,Chronic condition suspected,Medium,General,Yes
+Joint Pain,3-7 days,Emergency evaluation needed,High,Respiratory,No
+Joint Pain,3-7 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Joint Pain,3-7 days,Underlying disease progression,Low,Neurological,No
+Joint Pain,1-2 weeks,Acute condition likely,Medium,GI,Yes
+Joint Pain,1-2 weeks,Possible infection,High,General,No
+Joint Pain,1-2 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Joint Pain,1-2 weeks,Requires clinical evaluation,Low,Cardiac,No
+Joint Pain,1-2 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Joint Pain,1-2 weeks,Emergency evaluation needed,High,GI,No
+Joint Pain,1-2 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Joint Pain,1-2 weeks,Underlying disease progression,Low,Respiratory,No
+Joint Pain,2-4 weeks,Acute condition likely,Medium,Cardiac,Yes
+Joint Pain,2-4 weeks,Possible infection,High,Neurological,No
+Joint Pain,2-4 weeks,Monitor symptoms,Critical,GI,Yes
+Joint Pain,2-4 weeks,Requires clinical evaluation,Low,General,No
+Joint Pain,2-4 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Joint Pain,2-4 weeks,Emergency evaluation needed,High,Cardiac,No
+Joint Pain,2-4 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Joint Pain,2-4 weeks,Underlying disease progression,Low,GI,No
+Joint Pain,1-3 months,Acute condition likely,Medium,General,Yes
+Joint Pain,1-3 months,Possible infection,High,Respiratory,No
+Joint Pain,1-3 months,Monitor symptoms,Critical,Cardiac,Yes
+Joint Pain,1-3 months,Requires clinical evaluation,Low,Neurological,No
+Joint Pain,1-3 months,Chronic condition suspected,Medium,GI,Yes
+Joint Pain,1-3 months,Emergency evaluation needed,High,General,No
+Joint Pain,1-3 months,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Joint Pain,1-3 months,Underlying disease progression,Low,Cardiac,No
+Joint Pain,Chronic (>3 months),Acute condition likely,Medium,Neurological,Yes
+Joint Pain,Chronic (>3 months),Possible infection,High,GI,No
+Joint Pain,Chronic (>3 months),Monitor symptoms,Critical,General,Yes
+Joint Pain,Chronic (>3 months),Requires clinical evaluation,Low,Respiratory,No
+Joint Pain,Chronic (>3 months),Chronic condition suspected,Medium,Cardiac,Yes
+Joint Pain,Chronic (>3 months),Emergency evaluation needed,High,Neurological,No
+Joint Pain,Chronic (>3 months),Lifestyle-related issue possible,Critical,GI,Yes
+Joint Pain,Chronic (>3 months),Underlying disease progression,Low,General,No
+Back Pain,< 1 day,Acute condition likely,Medium,Respiratory,Yes
+Back Pain,< 1 day,Possible infection,High,Cardiac,No
+Back Pain,< 1 day,Monitor symptoms,Critical,Neurological,Yes
+Back Pain,< 1 day,Requires clinical evaluation,Low,GI,No
+Back Pain,< 1 day,Chronic condition suspected,Medium,General,Yes
+Back Pain,< 1 day,Emergency evaluation needed,High,Respiratory,No
+Back Pain,< 1 day,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Back Pain,< 1 day,Underlying disease progression,Low,Neurological,No
+Back Pain,1-3 days,Acute condition likely,Medium,GI,Yes
+Back Pain,1-3 days,Possible infection,High,General,No
+Back Pain,1-3 days,Monitor symptoms,Critical,Respiratory,Yes
+Back Pain,1-3 days,Requires clinical evaluation,Low,Cardiac,No
+Back Pain,1-3 days,Chronic condition suspected,Medium,Neurological,Yes
+Back Pain,1-3 days,Emergency evaluation needed,High,GI,No
+Back Pain,1-3 days,Lifestyle-related issue possible,Critical,General,Yes
+Back Pain,1-3 days,Underlying disease progression,Low,Respiratory,No
+Back Pain,3-7 days,Acute condition likely,Medium,Cardiac,Yes
+Back Pain,3-7 days,Possible infection,High,Neurological,No
+Back Pain,3-7 days,Monitor symptoms,Critical,GI,Yes
+Back Pain,3-7 days,Requires clinical evaluation,Low,General,No
+Back Pain,3-7 days,Chronic condition suspected,Medium,Respiratory,Yes
+Back Pain,3-7 days,Emergency evaluation needed,High,Cardiac,No
+Back Pain,3-7 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Back Pain,3-7 days,Underlying disease progression,Low,GI,No
+Back Pain,1-2 weeks,Acute condition likely,Medium,General,Yes
+Back Pain,1-2 weeks,Possible infection,High,Respiratory,No
+Back Pain,1-2 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Back Pain,1-2 weeks,Requires clinical evaluation,Low,Neurological,No
+Back Pain,1-2 weeks,Chronic condition suspected,Medium,GI,Yes
+Back Pain,1-2 weeks,Emergency evaluation needed,High,General,No
+Back Pain,1-2 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Back Pain,1-2 weeks,Underlying disease progression,Low,Cardiac,No
+Back Pain,2-4 weeks,Acute condition likely,Medium,Neurological,Yes
+Back Pain,2-4 weeks,Possible infection,High,GI,No
+Back Pain,2-4 weeks,Monitor symptoms,Critical,General,Yes
+Back Pain,2-4 weeks,Requires clinical evaluation,Low,Respiratory,No
+Back Pain,2-4 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Back Pain,2-4 weeks,Emergency evaluation needed,High,Neurological,No
+Back Pain,2-4 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Back Pain,2-4 weeks,Underlying disease progression,Low,General,No
+Back Pain,1-3 months,Acute condition likely,Medium,Respiratory,Yes
+Back Pain,1-3 months,Possible infection,High,Cardiac,No
+Back Pain,1-3 months,Monitor symptoms,Critical,Neurological,Yes
+Back Pain,1-3 months,Requires clinical evaluation,Low,GI,No
+Back Pain,1-3 months,Chronic condition suspected,Medium,General,Yes
+Back Pain,1-3 months,Emergency evaluation needed,High,Respiratory,No
+Back Pain,1-3 months,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Back Pain,1-3 months,Underlying disease progression,Low,Neurological,No
+Back Pain,Chronic (>3 months),Acute condition likely,Medium,GI,Yes
+Back Pain,Chronic (>3 months),Possible infection,High,General,No
+Back Pain,Chronic (>3 months),Monitor symptoms,Critical,Respiratory,Yes
+Back Pain,Chronic (>3 months),Requires clinical evaluation,Low,Cardiac,No
+Back Pain,Chronic (>3 months),Chronic condition suspected,Medium,Neurological,Yes
+Back Pain,Chronic (>3 months),Emergency evaluation needed,High,GI,No
+Back Pain,Chronic (>3 months),Lifestyle-related issue possible,Critical,General,Yes
+Back Pain,Chronic (>3 months),Underlying disease progression,Low,Respiratory,No
+Dizziness,< 1 day,Acute condition likely,Medium,Cardiac,Yes
+Dizziness,< 1 day,Possible infection,High,Neurological,No
+Dizziness,< 1 day,Monitor symptoms,Critical,GI,Yes
+Dizziness,< 1 day,Requires clinical evaluation,Low,General,No
+Dizziness,< 1 day,Chronic condition suspected,Medium,Respiratory,Yes
+Dizziness,< 1 day,Emergency evaluation needed,High,Cardiac,No
+Dizziness,< 1 day,Lifestyle-related issue possible,Critical,Neurological,Yes
+Dizziness,< 1 day,Underlying disease progression,Low,GI,No
+Dizziness,1-3 days,Acute condition likely,Medium,General,Yes
+Dizziness,1-3 days,Possible infection,High,Respiratory,No
+Dizziness,1-3 days,Monitor symptoms,Critical,Cardiac,Yes
+Dizziness,1-3 days,Requires clinical evaluation,Low,Neurological,No
+Dizziness,1-3 days,Chronic condition suspected,Medium,GI,Yes
+Dizziness,1-3 days,Emergency evaluation needed,High,General,No
+Dizziness,1-3 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Dizziness,1-3 days,Underlying disease progression,Low,Cardiac,No
+Dizziness,3-7 days,Acute condition likely,Medium,Neurological,Yes
+Dizziness,3-7 days,Possible infection,High,GI,No
+Dizziness,3-7 days,Monitor symptoms,Critical,General,Yes
+Dizziness,3-7 days,Requires clinical evaluation,Low,Respiratory,No
+Dizziness,3-7 days,Chronic condition suspected,Medium,Cardiac,Yes
+Dizziness,3-7 days,Emergency evaluation needed,High,Neurological,No
+Dizziness,3-7 days,Lifestyle-related issue possible,Critical,GI,Yes
+Dizziness,3-7 days,Underlying disease progression,Low,General,No
+Dizziness,1-2 weeks,Acute condition likely,Medium,Respiratory,Yes
+Dizziness,1-2 weeks,Possible infection,High,Cardiac,No
+Dizziness,1-2 weeks,Monitor symptoms,Critical,Neurological,Yes
+Dizziness,1-2 weeks,Requires clinical evaluation,Low,GI,No
+Dizziness,1-2 weeks,Chronic condition suspected,Medium,General,Yes
+Dizziness,1-2 weeks,Emergency evaluation needed,High,Respiratory,No
+Dizziness,1-2 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Dizziness,1-2 weeks,Underlying disease progression,Low,Neurological,No
+Dizziness,2-4 weeks,Acute condition likely,Medium,GI,Yes
+Dizziness,2-4 weeks,Possible infection,High,General,No
+Dizziness,2-4 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Dizziness,2-4 weeks,Requires clinical evaluation,Low,Cardiac,No
+Dizziness,2-4 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Dizziness,2-4 weeks,Emergency evaluation needed,High,GI,No
+Dizziness,2-4 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Dizziness,2-4 weeks,Underlying disease progression,Low,Respiratory,No
+Dizziness,1-3 months,Acute condition likely,Medium,Cardiac,Yes
+Dizziness,1-3 months,Possible infection,High,Neurological,No
+Dizziness,1-3 months,Monitor symptoms,Critical,GI,Yes
+Dizziness,1-3 months,Requires clinical evaluation,Low,General,No
+Dizziness,1-3 months,Chronic condition suspected,Medium,Respiratory,Yes
+Dizziness,1-3 months,Emergency evaluation needed,High,Cardiac,No
+Dizziness,1-3 months,Lifestyle-related issue possible,Critical,Neurological,Yes
+Dizziness,1-3 months,Underlying disease progression,Low,GI,No
+Dizziness,Chronic (>3 months),Acute condition likely,Medium,General,Yes
+Dizziness,Chronic (>3 months),Possible infection,High,Respiratory,No
+Dizziness,Chronic (>3 months),Monitor symptoms,Critical,Cardiac,Yes
+Dizziness,Chronic (>3 months),Requires clinical evaluation,Low,Neurological,No
+Dizziness,Chronic (>3 months),Chronic condition suspected,Medium,GI,Yes
+Dizziness,Chronic (>3 months),Emergency evaluation needed,High,General,No
+Dizziness,Chronic (>3 months),Lifestyle-related issue possible,Critical,Respiratory,Yes
+Dizziness,Chronic (>3 months),Underlying disease progression,Low,Cardiac,No
+Palpitations,< 1 day,Acute condition likely,Medium,Neurological,Yes
+Palpitations,< 1 day,Possible infection,High,GI,No
+Palpitations,< 1 day,Monitor symptoms,Critical,General,Yes
+Palpitations,< 1 day,Requires clinical evaluation,Low,Respiratory,No
+Palpitations,< 1 day,Chronic condition suspected,Medium,Cardiac,Yes
+Palpitations,< 1 day,Emergency evaluation needed,High,Neurological,No
+Palpitations,< 1 day,Lifestyle-related issue possible,Critical,GI,Yes
+Palpitations,< 1 day,Underlying disease progression,Low,General,No
+Palpitations,1-3 days,Acute condition likely,Medium,Respiratory,Yes
+Palpitations,1-3 days,Possible infection,High,Cardiac,No
+Palpitations,1-3 days,Monitor symptoms,Critical,Neurological,Yes
+Palpitations,1-3 days,Requires clinical evaluation,Low,GI,No
+Palpitations,1-3 days,Chronic condition suspected,Medium,General,Yes
+Palpitations,1-3 days,Emergency evaluation needed,High,Respiratory,No
+Palpitations,1-3 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Palpitations,1-3 days,Underlying disease progression,Low,Neurological,No
+Palpitations,3-7 days,Acute condition likely,Medium,GI,Yes
+Palpitations,3-7 days,Possible infection,High,General,No
+Palpitations,3-7 days,Monitor symptoms,Critical,Respiratory,Yes
+Palpitations,3-7 days,Requires clinical evaluation,Low,Cardiac,No
+Palpitations,3-7 days,Chronic condition suspected,Medium,Neurological,Yes
+Palpitations,3-7 days,Emergency evaluation needed,High,GI,No
+Palpitations,3-7 days,Lifestyle-related issue possible,Critical,General,Yes
+Palpitations,3-7 days,Underlying disease progression,Low,Respiratory,No
+Palpitations,1-2 weeks,Acute condition likely,Medium,Cardiac,Yes
+Palpitations,1-2 weeks,Possible infection,High,Neurological,No
+Palpitations,1-2 weeks,Monitor symptoms,Critical,GI,Yes
+Palpitations,1-2 weeks,Requires clinical evaluation,Low,General,No
+Palpitations,1-2 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Palpitations,1-2 weeks,Emergency evaluation needed,High,Cardiac,No
+Palpitations,1-2 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Palpitations,1-2 weeks,Underlying disease progression,Low,GI,No
+Palpitations,2-4 weeks,Acute condition likely,Medium,General,Yes
+Palpitations,2-4 weeks,Possible infection,High,Respiratory,No
+Palpitations,2-4 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Palpitations,2-4 weeks,Requires clinical evaluation,Low,Neurological,No
+Palpitations,2-4 weeks,Chronic condition suspected,Medium,GI,Yes
+Palpitations,2-4 weeks,Emergency evaluation needed,High,General,No
+Palpitations,2-4 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Palpitations,2-4 weeks,Underlying disease progression,Low,Cardiac,No
+Palpitations,1-3 months,Acute condition likely,Medium,Neurological,Yes
+Palpitations,1-3 months,Possible infection,High,GI,No
+Palpitations,1-3 months,Monitor symptoms,Critical,General,Yes
+Palpitations,1-3 months,Requires clinical evaluation,Low,Respiratory,No
+Palpitations,1-3 months,Chronic condition suspected,Medium,Cardiac,Yes
+Palpitations,1-3 months,Emergency evaluation needed,High,Neurological,No
+Palpitations,1-3 months,Lifestyle-related issue possible,Critical,GI,Yes
+Palpitations,1-3 months,Underlying disease progression,Low,General,No
+Palpitations,Chronic (>3 months),Acute condition likely,Medium,Respiratory,Yes
+Palpitations,Chronic (>3 months),Possible infection,High,Cardiac,No
+Palpitations,Chronic (>3 months),Monitor symptoms,Critical,Neurological,Yes
+Palpitations,Chronic (>3 months),Requires clinical evaluation,Low,GI,No
+Palpitations,Chronic (>3 months),Chronic condition suspected,Medium,General,Yes
+Palpitations,Chronic (>3 months),Emergency evaluation needed,High,Respiratory,No
+Palpitations,Chronic (>3 months),Lifestyle-related issue possible,Critical,Cardiac,Yes
+Palpitations,Chronic (>3 months),Underlying disease progression,Low,Neurological,No
+Rash,< 1 day,Acute condition likely,Medium,GI,Yes
+Rash,< 1 day,Possible infection,High,General,No
+Rash,< 1 day,Monitor symptoms,Critical,Respiratory,Yes
+Rash,< 1 day,Requires clinical evaluation,Low,Cardiac,No
+Rash,< 1 day,Chronic condition suspected,Medium,Neurological,Yes
+Rash,< 1 day,Emergency evaluation needed,High,GI,No
+Rash,< 1 day,Lifestyle-related issue possible,Critical,General,Yes
+Rash,< 1 day,Underlying disease progression,Low,Respiratory,No
+Rash,1-3 days,Acute condition likely,Medium,Cardiac,Yes
+Rash,1-3 days,Possible infection,High,Neurological,No
+Rash,1-3 days,Monitor symptoms,Critical,GI,Yes
+Rash,1-3 days,Requires clinical evaluation,Low,General,No
+Rash,1-3 days,Chronic condition suspected,Medium,Respiratory,Yes
+Rash,1-3 days,Emergency evaluation needed,High,Cardiac,No
+Rash,1-3 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Rash,1-3 days,Underlying disease progression,Low,GI,No
+Rash,3-7 days,Acute condition likely,Medium,General,Yes
+Rash,3-7 days,Possible infection,High,Respiratory,No
+Rash,3-7 days,Monitor symptoms,Critical,Cardiac,Yes
+Rash,3-7 days,Requires clinical evaluation,Low,Neurological,No
+Rash,3-7 days,Chronic condition suspected,Medium,GI,Yes
+Rash,3-7 days,Emergency evaluation needed,High,General,No
+Rash,3-7 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Rash,3-7 days,Underlying disease progression,Low,Cardiac,No
+Rash,1-2 weeks,Acute condition likely,Medium,Neurological,Yes
+Rash,1-2 weeks,Possible infection,High,GI,No
+Rash,1-2 weeks,Monitor symptoms,Critical,General,Yes
+Rash,1-2 weeks,Requires clinical evaluation,Low,Respiratory,No
+Rash,1-2 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Rash,1-2 weeks,Emergency evaluation needed,High,Neurological,No
+Rash,1-2 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Rash,1-2 weeks,Underlying disease progression,Low,General,No
+Rash,2-4 weeks,Acute condition likely,Medium,Respiratory,Yes
+Rash,2-4 weeks,Possible infection,High,Cardiac,No
+Rash,2-4 weeks,Monitor symptoms,Critical,Neurological,Yes
+Rash,2-4 weeks,Requires clinical evaluation,Low,GI,No
+Rash,2-4 weeks,Chronic condition suspected,Medium,General,Yes
+Rash,2-4 weeks,Emergency evaluation needed,High,Respiratory,No
+Rash,2-4 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Rash,2-4 weeks,Underlying disease progression,Low,Neurological,No
+Rash,1-3 months,Acute condition likely,Medium,GI,Yes
+Rash,1-3 months,Possible infection,High,General,No
+Rash,1-3 months,Monitor symptoms,Critical,Respiratory,Yes
+Rash,1-3 months,Requires clinical evaluation,Low,Cardiac,No
+Rash,1-3 months,Chronic condition suspected,Medium,Neurological,Yes
+Rash,1-3 months,Emergency evaluation needed,High,GI,No
+Rash,1-3 months,Lifestyle-related issue possible,Critical,General,Yes
+Rash,1-3 months,Underlying disease progression,Low,Respiratory,No
+Rash,Chronic (>3 months),Acute condition likely,Medium,Cardiac,Yes
+Rash,Chronic (>3 months),Possible infection,High,Neurological,No
+Rash,Chronic (>3 months),Monitor symptoms,Critical,GI,Yes
+Rash,Chronic (>3 months),Requires clinical evaluation,Low,General,No
+Rash,Chronic (>3 months),Chronic condition suspected,Medium,Respiratory,Yes
+Rash,Chronic (>3 months),Emergency evaluation needed,High,Cardiac,No
+Rash,Chronic (>3 months),Lifestyle-related issue possible,Critical,Neurological,Yes
+Rash,Chronic (>3 months),Underlying disease progression,Low,GI,No
+Itching,< 1 day,Acute condition likely,Medium,General,Yes
+Itching,< 1 day,Possible infection,High,Respiratory,No
+Itching,< 1 day,Monitor symptoms,Critical,Cardiac,Yes
+Itching,< 1 day,Requires clinical evaluation,Low,Neurological,No
+Itching,< 1 day,Chronic condition suspected,Medium,GI,Yes
+Itching,< 1 day,Emergency evaluation needed,High,General,No
+Itching,< 1 day,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Itching,< 1 day,Underlying disease progression,Low,Cardiac,No
+Itching,1-3 days,Acute condition likely,Medium,Neurological,Yes
+Itching,1-3 days,Possible infection,High,GI,No
+Itching,1-3 days,Monitor symptoms,Critical,General,Yes
+Itching,1-3 days,Requires clinical evaluation,Low,Respiratory,No
+Itching,1-3 days,Chronic condition suspected,Medium,Cardiac,Yes
+Itching,1-3 days,Emergency evaluation needed,High,Neurological,No
+Itching,1-3 days,Lifestyle-related issue possible,Critical,GI,Yes
+Itching,1-3 days,Underlying disease progression,Low,General,No
+Itching,3-7 days,Acute condition likely,Medium,Respiratory,Yes
+Itching,3-7 days,Possible infection,High,Cardiac,No
+Itching,3-7 days,Monitor symptoms,Critical,Neurological,Yes
+Itching,3-7 days,Requires clinical evaluation,Low,GI,No
+Itching,3-7 days,Chronic condition suspected,Medium,General,Yes
+Itching,3-7 days,Emergency evaluation needed,High,Respiratory,No
+Itching,3-7 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Itching,3-7 days,Underlying disease progression,Low,Neurological,No
+Itching,1-2 weeks,Acute condition likely,Medium,GI,Yes
+Itching,1-2 weeks,Possible infection,High,General,No
+Itching,1-2 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Itching,1-2 weeks,Requires clinical evaluation,Low,Cardiac,No
+Itching,1-2 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Itching,1-2 weeks,Emergency evaluation needed,High,GI,No
+Itching,1-2 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Itching,1-2 weeks,Underlying disease progression,Low,Respiratory,No
+Itching,2-4 weeks,Acute condition likely,Medium,Cardiac,Yes
+Itching,2-4 weeks,Possible infection,High,Neurological,No
+Itching,2-4 weeks,Monitor symptoms,Critical,GI,Yes
+Itching,2-4 weeks,Requires clinical evaluation,Low,General,No
+Itching,2-4 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Itching,2-4 weeks,Emergency evaluation needed,High,Cardiac,No
+Itching,2-4 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Itching,2-4 weeks,Underlying disease progression,Low,GI,No
+Itching,1-3 months,Acute condition likely,Medium,General,Yes
+Itching,1-3 months,Possible infection,High,Respiratory,No
+Itching,1-3 months,Monitor symptoms,Critical,Cardiac,Yes
+Itching,1-3 months,Requires clinical evaluation,Low,Neurological,No
+Itching,1-3 months,Chronic condition suspected,Medium,GI,Yes
+Itching,1-3 months,Emergency evaluation needed,High,General,No
+Itching,1-3 months,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Itching,1-3 months,Underlying disease progression,Low,Cardiac,No
+Itching,Chronic (>3 months),Acute condition likely,Medium,Neurological,Yes
+Itching,Chronic (>3 months),Possible infection,High,GI,No
+Itching,Chronic (>3 months),Monitor symptoms,Critical,General,Yes
+Itching,Chronic (>3 months),Requires clinical evaluation,Low,Respiratory,No
+Itching,Chronic (>3 months),Chronic condition suspected,Medium,Cardiac,Yes
+Itching,Chronic (>3 months),Emergency evaluation needed,High,Neurological,No
+Itching,Chronic (>3 months),Lifestyle-related issue possible,Critical,GI,Yes
+Itching,Chronic (>3 months),Underlying disease progression,Low,General,No
+Weight Loss,< 1 day,Acute condition likely,Medium,Respiratory,Yes
+Weight Loss,< 1 day,Possible infection,High,Cardiac,No
+Weight Loss,< 1 day,Monitor symptoms,Critical,Neurological,Yes
+Weight Loss,< 1 day,Requires clinical evaluation,Low,GI,No
+Weight Loss,< 1 day,Chronic condition suspected,Medium,General,Yes
+Weight Loss,< 1 day,Emergency evaluation needed,High,Respiratory,No
+Weight Loss,< 1 day,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Weight Loss,< 1 day,Underlying disease progression,Low,Neurological,No
+Weight Loss,1-3 days,Acute condition likely,Medium,GI,Yes
+Weight Loss,1-3 days,Possible infection,High,General,No
+Weight Loss,1-3 days,Monitor symptoms,Critical,Respiratory,Yes
+Weight Loss,1-3 days,Requires clinical evaluation,Low,Cardiac,No
+Weight Loss,1-3 days,Chronic condition suspected,Medium,Neurological,Yes
+Weight Loss,1-3 days,Emergency evaluation needed,High,GI,No
+Weight Loss,1-3 days,Lifestyle-related issue possible,Critical,General,Yes
+Weight Loss,1-3 days,Underlying disease progression,Low,Respiratory,No
+Weight Loss,3-7 days,Acute condition likely,Medium,Cardiac,Yes
+Weight Loss,3-7 days,Possible infection,High,Neurological,No
+Weight Loss,3-7 days,Monitor symptoms,Critical,GI,Yes
+Weight Loss,3-7 days,Requires clinical evaluation,Low,General,No
+Weight Loss,3-7 days,Chronic condition suspected,Medium,Respiratory,Yes
+Weight Loss,3-7 days,Emergency evaluation needed,High,Cardiac,No
+Weight Loss,3-7 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Weight Loss,3-7 days,Underlying disease progression,Low,GI,No
+Weight Loss,1-2 weeks,Acute condition likely,Medium,General,Yes
+Weight Loss,1-2 weeks,Possible infection,High,Respiratory,No
+Weight Loss,1-2 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Weight Loss,1-2 weeks,Requires clinical evaluation,Low,Neurological,No
+Weight Loss,1-2 weeks,Chronic condition suspected,Medium,GI,Yes
+Weight Loss,1-2 weeks,Emergency evaluation needed,High,General,No
+Weight Loss,1-2 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Weight Loss,1-2 weeks,Underlying disease progression,Low,Cardiac,No
+Weight Loss,2-4 weeks,Acute condition likely,Medium,Neurological,Yes
+Weight Loss,2-4 weeks,Possible infection,High,GI,No
+Weight Loss,2-4 weeks,Monitor symptoms,Critical,General,Yes
+Weight Loss,2-4 weeks,Requires clinical evaluation,Low,Respiratory,No
+Weight Loss,2-4 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Weight Loss,2-4 weeks,Emergency evaluation needed,High,Neurological,No
+Weight Loss,2-4 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Weight Loss,2-4 weeks,Underlying disease progression,Low,General,No
+Weight Loss,1-3 months,Acute condition likely,Medium,Respiratory,Yes
+Weight Loss,1-3 months,Possible infection,High,Cardiac,No
+Weight Loss,1-3 months,Monitor symptoms,Critical,Neurological,Yes
+Weight Loss,1-3 months,Requires clinical evaluation,Low,GI,No
+Weight Loss,1-3 months,Chronic condition suspected,Medium,General,Yes
+Weight Loss,1-3 months,Emergency evaluation needed,High,Respiratory,No
+Weight Loss,1-3 months,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Weight Loss,1-3 months,Underlying disease progression,Low,Neurological,No
+Weight Loss,Chronic (>3 months),Acute condition likely,Medium,GI,Yes
+Weight Loss,Chronic (>3 months),Possible infection,High,General,No
+Weight Loss,Chronic (>3 months),Monitor symptoms,Critical,Respiratory,Yes
+Weight Loss,Chronic (>3 months),Requires clinical evaluation,Low,Cardiac,No
+Weight Loss,Chronic (>3 months),Chronic condition suspected,Medium,Neurological,Yes
+Weight Loss,Chronic (>3 months),Emergency evaluation needed,High,GI,No
+Weight Loss,Chronic (>3 months),Lifestyle-related issue possible,Critical,General,Yes
+Weight Loss,Chronic (>3 months),Underlying disease progression,Low,Respiratory,No
+Weight Gain,< 1 day,Acute condition likely,Medium,Cardiac,Yes
+Weight Gain,< 1 day,Possible infection,High,Neurological,No
+Weight Gain,< 1 day,Monitor symptoms,Critical,GI,Yes
+Weight Gain,< 1 day,Requires clinical evaluation,Low,General,No
+Weight Gain,< 1 day,Chronic condition suspected,Medium,Respiratory,Yes
+Weight Gain,< 1 day,Emergency evaluation needed,High,Cardiac,No
+Weight Gain,< 1 day,Lifestyle-related issue possible,Critical,Neurological,Yes
+Weight Gain,< 1 day,Underlying disease progression,Low,GI,No
+Weight Gain,1-3 days,Acute condition likely,Medium,General,Yes
+Weight Gain,1-3 days,Possible infection,High,Respiratory,No
+Weight Gain,1-3 days,Monitor symptoms,Critical,Cardiac,Yes
+Weight Gain,1-3 days,Requires clinical evaluation,Low,Neurological,No
+Weight Gain,1-3 days,Chronic condition suspected,Medium,GI,Yes
+Weight Gain,1-3 days,Emergency evaluation needed,High,General,No
+Weight Gain,1-3 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Weight Gain,1-3 days,Underlying disease progression,Low,Cardiac,No
+Weight Gain,3-7 days,Acute condition likely,Medium,Neurological,Yes
+Weight Gain,3-7 days,Possible infection,High,GI,No
+Weight Gain,3-7 days,Monitor symptoms,Critical,General,Yes
+Weight Gain,3-7 days,Requires clinical evaluation,Low,Respiratory,No
+Weight Gain,3-7 days,Chronic condition suspected,Medium,Cardiac,Yes
+Weight Gain,3-7 days,Emergency evaluation needed,High,Neurological,No
+Weight Gain,3-7 days,Lifestyle-related issue possible,Critical,GI,Yes
+Weight Gain,3-7 days,Underlying disease progression,Low,General,No
+Weight Gain,1-2 weeks,Acute condition likely,Medium,Respiratory,Yes
+Weight Gain,1-2 weeks,Possible infection,High,Cardiac,No
+Weight Gain,1-2 weeks,Monitor symptoms,Critical,Neurological,Yes
+Weight Gain,1-2 weeks,Requires clinical evaluation,Low,GI,No
+Weight Gain,1-2 weeks,Chronic condition suspected,Medium,General,Yes
+Weight Gain,1-2 weeks,Emergency evaluation needed,High,Respiratory,No
+Weight Gain,1-2 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Weight Gain,1-2 weeks,Underlying disease progression,Low,Neurological,No
+Weight Gain,2-4 weeks,Acute condition likely,Medium,GI,Yes
+Weight Gain,2-4 weeks,Possible infection,High,General,No
+Weight Gain,2-4 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Weight Gain,2-4 weeks,Requires clinical evaluation,Low,Cardiac,No
+Weight Gain,2-4 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Weight Gain,2-4 weeks,Emergency evaluation needed,High,GI,No
+Weight Gain,2-4 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Weight Gain,2-4 weeks,Underlying disease progression,Low,Respiratory,No
+Weight Gain,1-3 months,Acute condition likely,Medium,Cardiac,Yes
+Weight Gain,1-3 months,Possible infection,High,Neurological,No
+Weight Gain,1-3 months,Monitor symptoms,Critical,GI,Yes
+Weight Gain,1-3 months,Requires clinical evaluation,Low,General,No
+Weight Gain,1-3 months,Chronic condition suspected,Medium,Respiratory,Yes
+Weight Gain,1-3 months,Emergency evaluation needed,High,Cardiac,No
+Weight Gain,1-3 months,Lifestyle-related issue possible,Critical,Neurological,Yes
+Weight Gain,1-3 months,Underlying disease progression,Low,GI,No
+Weight Gain,Chronic (>3 months),Acute condition likely,Medium,General,Yes
+Weight Gain,Chronic (>3 months),Possible infection,High,Respiratory,No
+Weight Gain,Chronic (>3 months),Monitor symptoms,Critical,Cardiac,Yes
+Weight Gain,Chronic (>3 months),Requires clinical evaluation,Low,Neurological,No
+Weight Gain,Chronic (>3 months),Chronic condition suspected,Medium,GI,Yes
+Weight Gain,Chronic (>3 months),Emergency evaluation needed,High,General,No
+Weight Gain,Chronic (>3 months),Lifestyle-related issue possible,Critical,Respiratory,Yes
+Weight Gain,Chronic (>3 months),Underlying disease progression,Low,Cardiac,No
+Frequent Urination,< 1 day,Acute condition likely,Medium,Neurological,Yes
+Frequent Urination,< 1 day,Possible infection,High,GI,No
+Frequent Urination,< 1 day,Monitor symptoms,Critical,General,Yes
+Frequent Urination,< 1 day,Requires clinical evaluation,Low,Respiratory,No
+Frequent Urination,< 1 day,Chronic condition suspected,Medium,Cardiac,Yes
+Frequent Urination,< 1 day,Emergency evaluation needed,High,Neurological,No
+Frequent Urination,< 1 day,Lifestyle-related issue possible,Critical,GI,Yes
+Frequent Urination,< 1 day,Underlying disease progression,Low,General,No
+Frequent Urination,1-3 days,Acute condition likely,Medium,Respiratory,Yes
+Frequent Urination,1-3 days,Possible infection,High,Cardiac,No
+Frequent Urination,1-3 days,Monitor symptoms,Critical,Neurological,Yes
+Frequent Urination,1-3 days,Requires clinical evaluation,Low,GI,No
+Frequent Urination,1-3 days,Chronic condition suspected,Medium,General,Yes
+Frequent Urination,1-3 days,Emergency evaluation needed,High,Respiratory,No
+Frequent Urination,1-3 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Frequent Urination,1-3 days,Underlying disease progression,Low,Neurological,No
+Frequent Urination,3-7 days,Acute condition likely,Medium,GI,Yes
+Frequent Urination,3-7 days,Possible infection,High,General,No
+Frequent Urination,3-7 days,Monitor symptoms,Critical,Respiratory,Yes
+Frequent Urination,3-7 days,Requires clinical evaluation,Low,Cardiac,No
+Frequent Urination,3-7 days,Chronic condition suspected,Medium,Neurological,Yes
+Frequent Urination,3-7 days,Emergency evaluation needed,High,GI,No
+Frequent Urination,3-7 days,Lifestyle-related issue possible,Critical,General,Yes
+Frequent Urination,3-7 days,Underlying disease progression,Low,Respiratory,No
+Frequent Urination,1-2 weeks,Acute condition likely,Medium,Cardiac,Yes
+Frequent Urination,1-2 weeks,Possible infection,High,Neurological,No
+Frequent Urination,1-2 weeks,Monitor symptoms,Critical,GI,Yes
+Frequent Urination,1-2 weeks,Requires clinical evaluation,Low,General,No
+Frequent Urination,1-2 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Frequent Urination,1-2 weeks,Emergency evaluation needed,High,Cardiac,No
+Frequent Urination,1-2 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Frequent Urination,1-2 weeks,Underlying disease progression,Low,GI,No
+Frequent Urination,2-4 weeks,Acute condition likely,Medium,General,Yes
+Frequent Urination,2-4 weeks,Possible infection,High,Respiratory,No
+Frequent Urination,2-4 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Frequent Urination,2-4 weeks,Requires clinical evaluation,Low,Neurological,No
+Frequent Urination,2-4 weeks,Chronic condition suspected,Medium,GI,Yes
+Frequent Urination,2-4 weeks,Emergency evaluation needed,High,General,No
+Frequent Urination,2-4 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Frequent Urination,2-4 weeks,Underlying disease progression,Low,Cardiac,No
+Frequent Urination,1-3 months,Acute condition likely,Medium,Neurological,Yes
+Frequent Urination,1-3 months,Possible infection,High,GI,No
+Frequent Urination,1-3 months,Monitor symptoms,Critical,General,Yes
+Frequent Urination,1-3 months,Requires clinical evaluation,Low,Respiratory,No
+Frequent Urination,1-3 months,Chronic condition suspected,Medium,Cardiac,Yes
+Frequent Urination,1-3 months,Emergency evaluation needed,High,Neurological,No
+Frequent Urination,1-3 months,Lifestyle-related issue possible,Critical,GI,Yes
+Frequent Urination,1-3 months,Underlying disease progression,Low,General,No
+Frequent Urination,Chronic (>3 months),Acute condition likely,Medium,Respiratory,Yes
+Frequent Urination,Chronic (>3 months),Possible infection,High,Cardiac,No
+Frequent Urination,Chronic (>3 months),Monitor symptoms,Critical,Neurological,Yes
+Frequent Urination,Chronic (>3 months),Requires clinical evaluation,Low,GI,No
+Frequent Urination,Chronic (>3 months),Chronic condition suspected,Medium,General,Yes
+Frequent Urination,Chronic (>3 months),Emergency evaluation needed,High,Respiratory,No
+Frequent Urination,Chronic (>3 months),Lifestyle-related issue possible,Critical,Cardiac,Yes
+Frequent Urination,Chronic (>3 months),Underlying disease progression,Low,Neurological,No
+Blurred Vision,< 1 day,Acute condition likely,Medium,GI,Yes
+Blurred Vision,< 1 day,Possible infection,High,General,No
+Blurred Vision,< 1 day,Monitor symptoms,Critical,Respiratory,Yes
+Blurred Vision,< 1 day,Requires clinical evaluation,Low,Cardiac,No
+Blurred Vision,< 1 day,Chronic condition suspected,Medium,Neurological,Yes
+Blurred Vision,< 1 day,Emergency evaluation needed,High,GI,No
+Blurred Vision,< 1 day,Lifestyle-related issue possible,Critical,General,Yes
+Blurred Vision,< 1 day,Underlying disease progression,Low,Respiratory,No
+Blurred Vision,1-3 days,Acute condition likely,Medium,Cardiac,Yes
+Blurred Vision,1-3 days,Possible infection,High,Neurological,No
+Blurred Vision,1-3 days,Monitor symptoms,Critical,GI,Yes
+Blurred Vision,1-3 days,Requires clinical evaluation,Low,General,No
+Blurred Vision,1-3 days,Chronic condition suspected,Medium,Respiratory,Yes
+Blurred Vision,1-3 days,Emergency evaluation needed,High,Cardiac,No
+Blurred Vision,1-3 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Blurred Vision,1-3 days,Underlying disease progression,Low,GI,No
+Blurred Vision,3-7 days,Acute condition likely,Medium,General,Yes
+Blurred Vision,3-7 days,Possible infection,High,Respiratory,No
+Blurred Vision,3-7 days,Monitor symptoms,Critical,Cardiac,Yes
+Blurred Vision,3-7 days,Requires clinical evaluation,Low,Neurological,No
+Blurred Vision,3-7 days,Chronic condition suspected,Medium,GI,Yes
+Blurred Vision,3-7 days,Emergency evaluation needed,High,General,No
+Blurred Vision,3-7 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Blurred Vision,3-7 days,Underlying disease progression,Low,Cardiac,No
+Blurred Vision,1-2 weeks,Acute condition likely,Medium,Neurological,Yes
+Blurred Vision,1-2 weeks,Possible infection,High,GI,No
+Blurred Vision,1-2 weeks,Monitor symptoms,Critical,General,Yes
+Blurred Vision,1-2 weeks,Requires clinical evaluation,Low,Respiratory,No
+Blurred Vision,1-2 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Blurred Vision,1-2 weeks,Emergency evaluation needed,High,Neurological,No
+Blurred Vision,1-2 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Blurred Vision,1-2 weeks,Underlying disease progression,Low,General,No
+Blurred Vision,2-4 weeks,Acute condition likely,Medium,Respiratory,Yes
+Blurred Vision,2-4 weeks,Possible infection,High,Cardiac,No
+Blurred Vision,2-4 weeks,Monitor symptoms,Critical,Neurological,Yes
+Blurred Vision,2-4 weeks,Requires clinical evaluation,Low,GI,No
+Blurred Vision,2-4 weeks,Chronic condition suspected,Medium,General,Yes
+Blurred Vision,2-4 weeks,Emergency evaluation needed,High,Respiratory,No
+Blurred Vision,2-4 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Blurred Vision,2-4 weeks,Underlying disease progression,Low,Neurological,No
+Blurred Vision,1-3 months,Acute condition likely,Medium,GI,Yes
+Blurred Vision,1-3 months,Possible infection,High,General,No
+Blurred Vision,1-3 months,Monitor symptoms,Critical,Respiratory,Yes
+Blurred Vision,1-3 months,Requires clinical evaluation,Low,Cardiac,No
+Blurred Vision,1-3 months,Chronic condition suspected,Medium,Neurological,Yes
+Blurred Vision,1-3 months,Emergency evaluation needed,High,GI,No
+Blurred Vision,1-3 months,Lifestyle-related issue possible,Critical,General,Yes
+Blurred Vision,1-3 months,Underlying disease progression,Low,Respiratory,No
+Blurred Vision,Chronic (>3 months),Acute condition likely,Medium,Cardiac,Yes
+Blurred Vision,Chronic (>3 months),Possible infection,High,Neurological,No
+Blurred Vision,Chronic (>3 months),Monitor symptoms,Critical,GI,Yes
+Blurred Vision,Chronic (>3 months),Requires clinical evaluation,Low,General,No
+Blurred Vision,Chronic (>3 months),Chronic condition suspected,Medium,Respiratory,Yes
+Blurred Vision,Chronic (>3 months),Emergency evaluation needed,High,Cardiac,No
+Blurred Vision,Chronic (>3 months),Lifestyle-related issue possible,Critical,Neurological,Yes
+Blurred Vision,Chronic (>3 months),Underlying disease progression,Low,GI,No
+Seizure,< 1 day,Acute condition likely,Medium,General,Yes
+Seizure,< 1 day,Possible infection,High,Respiratory,No
+Seizure,< 1 day,Monitor symptoms,Critical,Cardiac,Yes
+Seizure,< 1 day,Requires clinical evaluation,Low,Neurological,No
+Seizure,< 1 day,Chronic condition suspected,Medium,GI,Yes
+Seizure,< 1 day,Emergency evaluation needed,High,General,No
+Seizure,< 1 day,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Seizure,< 1 day,Underlying disease progression,Low,Cardiac,No
+Seizure,1-3 days,Acute condition likely,Medium,Neurological,Yes
+Seizure,1-3 days,Possible infection,High,GI,No
+Seizure,1-3 days,Monitor symptoms,Critical,General,Yes
+Seizure,1-3 days,Requires clinical evaluation,Low,Respiratory,No
+Seizure,1-3 days,Chronic condition suspected,Medium,Cardiac,Yes
+Seizure,1-3 days,Emergency evaluation needed,High,Neurological,No
+Seizure,1-3 days,Lifestyle-related issue possible,Critical,GI,Yes
+Seizure,1-3 days,Underlying disease progression,Low,General,No
+Seizure,3-7 days,Acute condition likely,Medium,Respiratory,Yes
+Seizure,3-7 days,Possible infection,High,Cardiac,No
+Seizure,3-7 days,Monitor symptoms,Critical,Neurological,Yes
+Seizure,3-7 days,Requires clinical evaluation,Low,GI,No
+Seizure,3-7 days,Chronic condition suspected,Medium,General,Yes
+Seizure,3-7 days,Emergency evaluation needed,High,Respiratory,No
+Seizure,3-7 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Seizure,3-7 days,Underlying disease progression,Low,Neurological,No
+Seizure,1-2 weeks,Acute condition likely,Medium,GI,Yes
+Seizure,1-2 weeks,Possible infection,High,General,No
+Seizure,1-2 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Seizure,1-2 weeks,Requires clinical evaluation,Low,Cardiac,No
+Seizure,1-2 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Seizure,1-2 weeks,Emergency evaluation needed,High,GI,No
+Seizure,1-2 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Seizure,1-2 weeks,Underlying disease progression,Low,Respiratory,No
+Seizure,2-4 weeks,Acute condition likely,Medium,Cardiac,Yes
+Seizure,2-4 weeks,Possible infection,High,Neurological,No
+Seizure,2-4 weeks,Monitor symptoms,Critical,GI,Yes
+Seizure,2-4 weeks,Requires clinical evaluation,Low,General,No
+Seizure,2-4 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Seizure,2-4 weeks,Emergency evaluation needed,High,Cardiac,No
+Seizure,2-4 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Seizure,2-4 weeks,Underlying disease progression,Low,GI,No
+Seizure,1-3 months,Acute condition likely,Medium,General,Yes
+Seizure,1-3 months,Possible infection,High,Respiratory,No
+Seizure,1-3 months,Monitor symptoms,Critical,Cardiac,Yes
+Seizure,1-3 months,Requires clinical evaluation,Low,Neurological,No
+Seizure,1-3 months,Chronic condition suspected,Medium,GI,Yes
+Seizure,1-3 months,Emergency evaluation needed,High,General,No
+Seizure,1-3 months,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Seizure,1-3 months,Underlying disease progression,Low,Cardiac,No
+Seizure,Chronic (>3 months),Acute condition likely,Medium,Neurological,Yes
+Seizure,Chronic (>3 months),Possible infection,High,GI,No
+Seizure,Chronic (>3 months),Monitor symptoms,Critical,General,Yes
+Seizure,Chronic (>3 months),Requires clinical evaluation,Low,Respiratory,No
+Seizure,Chronic (>3 months),Chronic condition suspected,Medium,Cardiac,Yes
+Seizure,Chronic (>3 months),Emergency evaluation needed,High,Neurological,No
+Seizure,Chronic (>3 months),Lifestyle-related issue possible,Critical,GI,Yes
+Seizure,Chronic (>3 months),Underlying disease progression,Low,General,No
+Depression,< 1 day,Acute condition likely,Medium,Respiratory,Yes
+Depression,< 1 day,Possible infection,High,Cardiac,No
+Depression,< 1 day,Monitor symptoms,Critical,Neurological,Yes
+Depression,< 1 day,Requires clinical evaluation,Low,GI,No
+Depression,< 1 day,Chronic condition suspected,Medium,General,Yes
+Depression,< 1 day,Emergency evaluation needed,High,Respiratory,No
+Depression,< 1 day,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Depression,< 1 day,Underlying disease progression,Low,Neurological,No
+Depression,1-3 days,Acute condition likely,Medium,GI,Yes
+Depression,1-3 days,Possible infection,High,General,No
+Depression,1-3 days,Monitor symptoms,Critical,Respiratory,Yes
+Depression,1-3 days,Requires clinical evaluation,Low,Cardiac,No
+Depression,1-3 days,Chronic condition suspected,Medium,Neurological,Yes
+Depression,1-3 days,Emergency evaluation needed,High,GI,No
+Depression,1-3 days,Lifestyle-related issue possible,Critical,General,Yes
+Depression,1-3 days,Underlying disease progression,Low,Respiratory,No
+Depression,3-7 days,Acute condition likely,Medium,Cardiac,Yes
+Depression,3-7 days,Possible infection,High,Neurological,No
+Depression,3-7 days,Monitor symptoms,Critical,GI,Yes
+Depression,3-7 days,Requires clinical evaluation,Low,General,No
+Depression,3-7 days,Chronic condition suspected,Medium,Respiratory,Yes
+Depression,3-7 days,Emergency evaluation needed,High,Cardiac,No
+Depression,3-7 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Depression,3-7 days,Underlying disease progression,Low,GI,No
+Depression,1-2 weeks,Acute condition likely,Medium,General,Yes
+Depression,1-2 weeks,Possible infection,High,Respiratory,No
+Depression,1-2 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Depression,1-2 weeks,Requires clinical evaluation,Low,Neurological,No
+Depression,1-2 weeks,Chronic condition suspected,Medium,GI,Yes
+Depression,1-2 weeks,Emergency evaluation needed,High,General,No
+Depression,1-2 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Depression,1-2 weeks,Underlying disease progression,Low,Cardiac,No
+Depression,2-4 weeks,Acute condition likely,Medium,Neurological,Yes
+Depression,2-4 weeks,Possible infection,High,GI,No
+Depression,2-4 weeks,Monitor symptoms,Critical,General,Yes
+Depression,2-4 weeks,Requires clinical evaluation,Low,Respiratory,No
+Depression,2-4 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Depression,2-4 weeks,Emergency evaluation needed,High,Neurological,No
+Depression,2-4 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Depression,2-4 weeks,Underlying disease progression,Low,General,No
+Depression,1-3 months,Acute condition likely,Medium,Respiratory,Yes
+Depression,1-3 months,Possible infection,High,Cardiac,No
+Depression,1-3 months,Monitor symptoms,Critical,Neurological,Yes
+Depression,1-3 months,Requires clinical evaluation,Low,GI,No
+Depression,1-3 months,Chronic condition suspected,Medium,General,Yes
+Depression,1-3 months,Emergency evaluation needed,High,Respiratory,No
+Depression,1-3 months,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Depression,1-3 months,Underlying disease progression,Low,Neurological,No
+Depression,Chronic (>3 months),Acute condition likely,Medium,GI,Yes
+Depression,Chronic (>3 months),Possible infection,High,General,No
+Depression,Chronic (>3 months),Monitor symptoms,Critical,Respiratory,Yes
+Depression,Chronic (>3 months),Requires clinical evaluation,Low,Cardiac,No
+Depression,Chronic (>3 months),Chronic condition suspected,Medium,Neurological,Yes
+Depression,Chronic (>3 months),Emergency evaluation needed,High,GI,No
+Depression,Chronic (>3 months),Lifestyle-related issue possible,Critical,General,Yes
+Depression,Chronic (>3 months),Underlying disease progression,Low,Respiratory,No
+Anxiety,< 1 day,Acute condition likely,Medium,Cardiac,Yes
+Anxiety,< 1 day,Possible infection,High,Neurological,No
+Anxiety,< 1 day,Monitor symptoms,Critical,GI,Yes
+Anxiety,< 1 day,Requires clinical evaluation,Low,General,No
+Anxiety,< 1 day,Chronic condition suspected,Medium,Respiratory,Yes
+Anxiety,< 1 day,Emergency evaluation needed,High,Cardiac,No
+Anxiety,< 1 day,Lifestyle-related issue possible,Critical,Neurological,Yes
+Anxiety,< 1 day,Underlying disease progression,Low,GI,No
+Anxiety,1-3 days,Acute condition likely,Medium,General,Yes
+Anxiety,1-3 days,Possible infection,High,Respiratory,No
+Anxiety,1-3 days,Monitor symptoms,Critical,Cardiac,Yes
+Anxiety,1-3 days,Requires clinical evaluation,Low,Neurological,No
+Anxiety,1-3 days,Chronic condition suspected,Medium,GI,Yes
+Anxiety,1-3 days,Emergency evaluation needed,High,General,No
+Anxiety,1-3 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Anxiety,1-3 days,Underlying disease progression,Low,Cardiac,No
+Anxiety,3-7 days,Acute condition likely,Medium,Neurological,Yes
+Anxiety,3-7 days,Possible infection,High,GI,No
+Anxiety,3-7 days,Monitor symptoms,Critical,General,Yes
+Anxiety,3-7 days,Requires clinical evaluation,Low,Respiratory,No
+Anxiety,3-7 days,Chronic condition suspected,Medium,Cardiac,Yes
+Anxiety,3-7 days,Emergency evaluation needed,High,Neurological,No
+Anxiety,3-7 days,Lifestyle-related issue possible,Critical,GI,Yes
+Anxiety,3-7 days,Underlying disease progression,Low,General,No
+Anxiety,1-2 weeks,Acute condition likely,Medium,Respiratory,Yes
+Anxiety,1-2 weeks,Possible infection,High,Cardiac,No
+Anxiety,1-2 weeks,Monitor symptoms,Critical,Neurological,Yes
+Anxiety,1-2 weeks,Requires clinical evaluation,Low,GI,No
+Anxiety,1-2 weeks,Chronic condition suspected,Medium,General,Yes
+Anxiety,1-2 weeks,Emergency evaluation needed,High,Respiratory,No
+Anxiety,1-2 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Anxiety,1-2 weeks,Underlying disease progression,Low,Neurological,No
+Anxiety,2-4 weeks,Acute condition likely,Medium,GI,Yes
+Anxiety,2-4 weeks,Possible infection,High,General,No
+Anxiety,2-4 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Anxiety,2-4 weeks,Requires clinical evaluation,Low,Cardiac,No
+Anxiety,2-4 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Anxiety,2-4 weeks,Emergency evaluation needed,High,GI,No
+Anxiety,2-4 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Anxiety,2-4 weeks,Underlying disease progression,Low,Respiratory,No
+Anxiety,1-3 months,Acute condition likely,Medium,Cardiac,Yes
+Anxiety,1-3 months,Possible infection,High,Neurological,No
+Anxiety,1-3 months,Monitor symptoms,Critical,GI,Yes
+Anxiety,1-3 months,Requires clinical evaluation,Low,General,No
+Anxiety,1-3 months,Chronic condition suspected,Medium,Respiratory,Yes
+Anxiety,1-3 months,Emergency evaluation needed,High,Cardiac,No
+Anxiety,1-3 months,Lifestyle-related issue possible,Critical,Neurological,Yes
+Anxiety,1-3 months,Underlying disease progression,Low,GI,No
+Anxiety,Chronic (>3 months),Acute condition likely,Medium,General,Yes
+Anxiety,Chronic (>3 months),Possible infection,High,Respiratory,No
+Anxiety,Chronic (>3 months),Monitor symptoms,Critical,Cardiac,Yes
+Anxiety,Chronic (>3 months),Requires clinical evaluation,Low,Neurological,No
+Anxiety,Chronic (>3 months),Chronic condition suspected,Medium,GI,Yes
+Anxiety,Chronic (>3 months),Emergency evaluation needed,High,General,No
+Anxiety,Chronic (>3 months),Lifestyle-related issue possible,Critical,Respiratory,Yes
+Anxiety,Chronic (>3 months),Underlying disease progression,Low,Cardiac,No
+Insomnia,< 1 day,Acute condition likely,Medium,Neurological,Yes
+Insomnia,< 1 day,Possible infection,High,GI,No
+Insomnia,< 1 day,Monitor symptoms,Critical,General,Yes
+Insomnia,< 1 day,Requires clinical evaluation,Low,Respiratory,No
+Insomnia,< 1 day,Chronic condition suspected,Medium,Cardiac,Yes
+Insomnia,< 1 day,Emergency evaluation needed,High,Neurological,No
+Insomnia,< 1 day,Lifestyle-related issue possible,Critical,GI,Yes
+Insomnia,< 1 day,Underlying disease progression,Low,General,No
+Insomnia,1-3 days,Acute condition likely,Medium,Respiratory,Yes
+Insomnia,1-3 days,Possible infection,High,Cardiac,No
+Insomnia,1-3 days,Monitor symptoms,Critical,Neurological,Yes
+Insomnia,1-3 days,Requires clinical evaluation,Low,GI,No
+Insomnia,1-3 days,Chronic condition suspected,Medium,General,Yes
+Insomnia,1-3 days,Emergency evaluation needed,High,Respiratory,No
+Insomnia,1-3 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Insomnia,1-3 days,Underlying disease progression,Low,Neurological,No
+Insomnia,3-7 days,Acute condition likely,Medium,GI,Yes
+Insomnia,3-7 days,Possible infection,High,General,No
+Insomnia,3-7 days,Monitor symptoms,Critical,Respiratory,Yes
+Insomnia,3-7 days,Requires clinical evaluation,Low,Cardiac,No
+Insomnia,3-7 days,Chronic condition suspected,Medium,Neurological,Yes
+Insomnia,3-7 days,Emergency evaluation needed,High,GI,No
+Insomnia,3-7 days,Lifestyle-related issue possible,Critical,General,Yes
+Insomnia,3-7 days,Underlying disease progression,Low,Respiratory,No
+Insomnia,1-2 weeks,Acute condition likely,Medium,Cardiac,Yes
+Insomnia,1-2 weeks,Possible infection,High,Neurological,No
+Insomnia,1-2 weeks,Monitor symptoms,Critical,GI,Yes
+Insomnia,1-2 weeks,Requires clinical evaluation,Low,General,No
+Insomnia,1-2 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Insomnia,1-2 weeks,Emergency evaluation needed,High,Cardiac,No
+Insomnia,1-2 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Insomnia,1-2 weeks,Underlying disease progression,Low,GI,No
+Insomnia,2-4 weeks,Acute condition likely,Medium,General,Yes
+Insomnia,2-4 weeks,Possible infection,High,Respiratory,No
+Insomnia,2-4 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Insomnia,2-4 weeks,Requires clinical evaluation,Low,Neurological,No
+Insomnia,2-4 weeks,Chronic condition suspected,Medium,GI,Yes
+Insomnia,2-4 weeks,Emergency evaluation needed,High,General,No
+Insomnia,2-4 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Insomnia,2-4 weeks,Underlying disease progression,Low,Cardiac,No
+Insomnia,1-3 months,Acute condition likely,Medium,Neurological,Yes
+Insomnia,1-3 months,Possible infection,High,GI,No
+Insomnia,1-3 months,Monitor symptoms,Critical,General,Yes
+Insomnia,1-3 months,Requires clinical evaluation,Low,Respiratory,No
+Insomnia,1-3 months,Chronic condition suspected,Medium,Cardiac,Yes
+Insomnia,1-3 months,Emergency evaluation needed,High,Neurological,No
+Insomnia,1-3 months,Lifestyle-related issue possible,Critical,GI,Yes
+Insomnia,1-3 months,Underlying disease progression,Low,General,No
+Insomnia,Chronic (>3 months),Acute condition likely,Medium,Respiratory,Yes
+Insomnia,Chronic (>3 months),Possible infection,High,Cardiac,No
+Insomnia,Chronic (>3 months),Monitor symptoms,Critical,Neurological,Yes
+Insomnia,Chronic (>3 months),Requires clinical evaluation,Low,GI,No
+Insomnia,Chronic (>3 months),Chronic condition suspected,Medium,General,Yes
+Insomnia,Chronic (>3 months),Emergency evaluation needed,High,Respiratory,No
+Insomnia,Chronic (>3 months),Lifestyle-related issue possible,Critical,Cardiac,Yes
+Insomnia,Chronic (>3 months),Underlying disease progression,Low,Neurological,No
+Hair Loss,< 1 day,Acute condition likely,Medium,GI,Yes
+Hair Loss,< 1 day,Possible infection,High,General,No
+Hair Loss,< 1 day,Monitor symptoms,Critical,Respiratory,Yes
+Hair Loss,< 1 day,Requires clinical evaluation,Low,Cardiac,No
+Hair Loss,< 1 day,Chronic condition suspected,Medium,Neurological,Yes
+Hair Loss,< 1 day,Emergency evaluation needed,High,GI,No
+Hair Loss,< 1 day,Lifestyle-related issue possible,Critical,General,Yes
+Hair Loss,< 1 day,Underlying disease progression,Low,Respiratory,No
+Hair Loss,1-3 days,Acute condition likely,Medium,Cardiac,Yes
+Hair Loss,1-3 days,Possible infection,High,Neurological,No
+Hair Loss,1-3 days,Monitor symptoms,Critical,GI,Yes
+Hair Loss,1-3 days,Requires clinical evaluation,Low,General,No
+Hair Loss,1-3 days,Chronic condition suspected,Medium,Respiratory,Yes
+Hair Loss,1-3 days,Emergency evaluation needed,High,Cardiac,No
+Hair Loss,1-3 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Hair Loss,1-3 days,Underlying disease progression,Low,GI,No
+Hair Loss,3-7 days,Acute condition likely,Medium,General,Yes
+Hair Loss,3-7 days,Possible infection,High,Respiratory,No
+Hair Loss,3-7 days,Monitor symptoms,Critical,Cardiac,Yes
+Hair Loss,3-7 days,Requires clinical evaluation,Low,Neurological,No
+Hair Loss,3-7 days,Chronic condition suspected,Medium,GI,Yes
+Hair Loss,3-7 days,Emergency evaluation needed,High,General,No
+Hair Loss,3-7 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Hair Loss,3-7 days,Underlying disease progression,Low,Cardiac,No
+Hair Loss,1-2 weeks,Acute condition likely,Medium,Neurological,Yes
+Hair Loss,1-2 weeks,Possible infection,High,GI,No
+Hair Loss,1-2 weeks,Monitor symptoms,Critical,General,Yes
+Hair Loss,1-2 weeks,Requires clinical evaluation,Low,Respiratory,No
+Hair Loss,1-2 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Hair Loss,1-2 weeks,Emergency evaluation needed,High,Neurological,No
+Hair Loss,1-2 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Hair Loss,1-2 weeks,Underlying disease progression,Low,General,No
+Hair Loss,2-4 weeks,Acute condition likely,Medium,Respiratory,Yes
+Hair Loss,2-4 weeks,Possible infection,High,Cardiac,No
+Hair Loss,2-4 weeks,Monitor symptoms,Critical,Neurological,Yes
+Hair Loss,2-4 weeks,Requires clinical evaluation,Low,GI,No
+Hair Loss,2-4 weeks,Chronic condition suspected,Medium,General,Yes
+Hair Loss,2-4 weeks,Emergency evaluation needed,High,Respiratory,No
+Hair Loss,2-4 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Hair Loss,2-4 weeks,Underlying disease progression,Low,Neurological,No
+Hair Loss,1-3 months,Acute condition likely,Medium,GI,Yes
+Hair Loss,1-3 months,Possible infection,High,General,No
+Hair Loss,1-3 months,Monitor symptoms,Critical,Respiratory,Yes
+Hair Loss,1-3 months,Requires clinical evaluation,Low,Cardiac,No
+Hair Loss,1-3 months,Chronic condition suspected,Medium,Neurological,Yes
+Hair Loss,1-3 months,Emergency evaluation needed,High,GI,No
+Hair Loss,1-3 months,Lifestyle-related issue possible,Critical,General,Yes
+Hair Loss,1-3 months,Underlying disease progression,Low,Respiratory,No
+Hair Loss,Chronic (>3 months),Acute condition likely,Medium,Cardiac,Yes
+Hair Loss,Chronic (>3 months),Possible infection,High,Neurological,No
+Hair Loss,Chronic (>3 months),Monitor symptoms,Critical,GI,Yes
+Hair Loss,Chronic (>3 months),Requires clinical evaluation,Low,General,No
+Hair Loss,Chronic (>3 months),Chronic condition suspected,Medium,Respiratory,Yes
+Hair Loss,Chronic (>3 months),Emergency evaluation needed,High,Cardiac,No
+Hair Loss,Chronic (>3 months),Lifestyle-related issue possible,Critical,Neurological,Yes
+Hair Loss,Chronic (>3 months),Underlying disease progression,Low,GI,No
+Nausea,< 1 day,Acute condition likely,Medium,General,Yes
+Nausea,< 1 day,Possible infection,High,Respiratory,No
+Nausea,< 1 day,Monitor symptoms,Critical,Cardiac,Yes
+Nausea,< 1 day,Requires clinical evaluation,Low,Neurological,No
+Nausea,< 1 day,Chronic condition suspected,Medium,GI,Yes
+Nausea,< 1 day,Emergency evaluation needed,High,General,No
+Nausea,< 1 day,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Nausea,< 1 day,Underlying disease progression,Low,Cardiac,No
+Nausea,1-3 days,Acute condition likely,Medium,Neurological,Yes
+Nausea,1-3 days,Possible infection,High,GI,No
+Nausea,1-3 days,Monitor symptoms,Critical,General,Yes
+Nausea,1-3 days,Requires clinical evaluation,Low,Respiratory,No
+Nausea,1-3 days,Chronic condition suspected,Medium,Cardiac,Yes
+Nausea,1-3 days,Emergency evaluation needed,High,Neurological,No
+Nausea,1-3 days,Lifestyle-related issue possible,Critical,GI,Yes
+Nausea,1-3 days,Underlying disease progression,Low,General,No
+Nausea,3-7 days,Acute condition likely,Medium,Respiratory,Yes
+Nausea,3-7 days,Possible infection,High,Cardiac,No
+Nausea,3-7 days,Monitor symptoms,Critical,Neurological,Yes
+Nausea,3-7 days,Requires clinical evaluation,Low,GI,No
+Nausea,3-7 days,Chronic condition suspected,Medium,General,Yes
+Nausea,3-7 days,Emergency evaluation needed,High,Respiratory,No
+Nausea,3-7 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Nausea,3-7 days,Underlying disease progression,Low,Neurological,No
+Nausea,1-2 weeks,Acute condition likely,Medium,GI,Yes
+Nausea,1-2 weeks,Possible infection,High,General,No
+Nausea,1-2 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Nausea,1-2 weeks,Requires clinical evaluation,Low,Cardiac,No
+Nausea,1-2 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Nausea,1-2 weeks,Emergency evaluation needed,High,GI,No
+Nausea,1-2 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Nausea,1-2 weeks,Underlying disease progression,Low,Respiratory,No
+Nausea,2-4 weeks,Acute condition likely,Medium,Cardiac,Yes
+Nausea,2-4 weeks,Possible infection,High,Neurological,No
+Nausea,2-4 weeks,Monitor symptoms,Critical,GI,Yes
+Nausea,2-4 weeks,Requires clinical evaluation,Low,General,No
+Nausea,2-4 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Nausea,2-4 weeks,Emergency evaluation needed,High,Cardiac,No
+Nausea,2-4 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Nausea,2-4 weeks,Underlying disease progression,Low,GI,No
+Nausea,1-3 months,Acute condition likely,Medium,General,Yes
+Nausea,1-3 months,Possible infection,High,Respiratory,No
+Nausea,1-3 months,Monitor symptoms,Critical,Cardiac,Yes
+Nausea,1-3 months,Requires clinical evaluation,Low,Neurological,No
+Nausea,1-3 months,Chronic condition suspected,Medium,GI,Yes
+Nausea,1-3 months,Emergency evaluation needed,High,General,No
+Nausea,1-3 months,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Nausea,1-3 months,Underlying disease progression,Low,Cardiac,No
+Nausea,Chronic (>3 months),Acute condition likely,Medium,Neurological,Yes
+Nausea,Chronic (>3 months),Possible infection,High,GI,No
+Nausea,Chronic (>3 months),Monitor symptoms,Critical,General,Yes
+Nausea,Chronic (>3 months),Requires clinical evaluation,Low,Respiratory,No
+Nausea,Chronic (>3 months),Chronic condition suspected,Medium,Cardiac,Yes
+Nausea,Chronic (>3 months),Emergency evaluation needed,High,Neurological,No
+Nausea,Chronic (>3 months),Lifestyle-related issue possible,Critical,GI,Yes
+Nausea,Chronic (>3 months),Underlying disease progression,Low,General,No
+Constipation,< 1 day,Acute condition likely,Medium,Respiratory,Yes
+Constipation,< 1 day,Possible infection,High,Cardiac,No
+Constipation,< 1 day,Monitor symptoms,Critical,Neurological,Yes
+Constipation,< 1 day,Requires clinical evaluation,Low,GI,No
+Constipation,< 1 day,Chronic condition suspected,Medium,General,Yes
+Constipation,< 1 day,Emergency evaluation needed,High,Respiratory,No
+Constipation,< 1 day,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Constipation,< 1 day,Underlying disease progression,Low,Neurological,No
+Constipation,1-3 days,Acute condition likely,Medium,GI,Yes
+Constipation,1-3 days,Possible infection,High,General,No
+Constipation,1-3 days,Monitor symptoms,Critical,Respiratory,Yes
+Constipation,1-3 days,Requires clinical evaluation,Low,Cardiac,No
+Constipation,1-3 days,Chronic condition suspected,Medium,Neurological,Yes
+Constipation,1-3 days,Emergency evaluation needed,High,GI,No
+Constipation,1-3 days,Lifestyle-related issue possible,Critical,General,Yes
+Constipation,1-3 days,Underlying disease progression,Low,Respiratory,No
+Constipation,3-7 days,Acute condition likely,Medium,Cardiac,Yes
+Constipation,3-7 days,Possible infection,High,Neurological,No
+Constipation,3-7 days,Monitor symptoms,Critical,GI,Yes
+Constipation,3-7 days,Requires clinical evaluation,Low,General,No
+Constipation,3-7 days,Chronic condition suspected,Medium,Respiratory,Yes
+Constipation,3-7 days,Emergency evaluation needed,High,Cardiac,No
+Constipation,3-7 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Constipation,3-7 days,Underlying disease progression,Low,GI,No
+Constipation,1-2 weeks,Acute condition likely,Medium,General,Yes
+Constipation,1-2 weeks,Possible infection,High,Respiratory,No
+Constipation,1-2 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Constipation,1-2 weeks,Requires clinical evaluation,Low,Neurological,No
+Constipation,1-2 weeks,Chronic condition suspected,Medium,GI,Yes
+Constipation,1-2 weeks,Emergency evaluation needed,High,General,No
+Constipation,1-2 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Constipation,1-2 weeks,Underlying disease progression,Low,Cardiac,No
+Constipation,2-4 weeks,Acute condition likely,Medium,Neurological,Yes
+Constipation,2-4 weeks,Possible infection,High,GI,No
+Constipation,2-4 weeks,Monitor symptoms,Critical,General,Yes
+Constipation,2-4 weeks,Requires clinical evaluation,Low,Respiratory,No
+Constipation,2-4 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Constipation,2-4 weeks,Emergency evaluation needed,High,Neurological,No
+Constipation,2-4 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Constipation,2-4 weeks,Underlying disease progression,Low,General,No
+Constipation,1-3 months,Acute condition likely,Medium,Respiratory,Yes
+Constipation,1-3 months,Possible infection,High,Cardiac,No
+Constipation,1-3 months,Monitor symptoms,Critical,Neurological,Yes
+Constipation,1-3 months,Requires clinical evaluation,Low,GI,No
+Constipation,1-3 months,Chronic condition suspected,Medium,General,Yes
+Constipation,1-3 months,Emergency evaluation needed,High,Respiratory,No
+Constipation,1-3 months,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Constipation,1-3 months,Underlying disease progression,Low,Neurological,No
+Constipation,Chronic (>3 months),Acute condition likely,Medium,GI,Yes
+Constipation,Chronic (>3 months),Possible infection,High,General,No
+Constipation,Chronic (>3 months),Monitor symptoms,Critical,Respiratory,Yes
+Constipation,Chronic (>3 months),Requires clinical evaluation,Low,Cardiac,No
+Constipation,Chronic (>3 months),Chronic condition suspected,Medium,Neurological,Yes
+Constipation,Chronic (>3 months),Emergency evaluation needed,High,GI,No
+Constipation,Chronic (>3 months),Lifestyle-related issue possible,Critical,General,Yes
+Constipation,Chronic (>3 months),Underlying disease progression,Low,Respiratory,No
+Swelling,< 1 day,Acute condition likely,Medium,Cardiac,Yes
+Swelling,< 1 day,Possible infection,High,Neurological,No
+Swelling,< 1 day,Monitor symptoms,Critical,GI,Yes
+Swelling,< 1 day,Requires clinical evaluation,Low,General,No
+Swelling,< 1 day,Chronic condition suspected,Medium,Respiratory,Yes
+Swelling,< 1 day,Emergency evaluation needed,High,Cardiac,No
+Swelling,< 1 day,Lifestyle-related issue possible,Critical,Neurological,Yes
+Swelling,< 1 day,Underlying disease progression,Low,GI,No
+Swelling,1-3 days,Acute condition likely,Medium,General,Yes
+Swelling,1-3 days,Possible infection,High,Respiratory,No
+Swelling,1-3 days,Monitor symptoms,Critical,Cardiac,Yes
+Swelling,1-3 days,Requires clinical evaluation,Low,Neurological,No
+Swelling,1-3 days,Chronic condition suspected,Medium,GI,Yes
+Swelling,1-3 days,Emergency evaluation needed,High,General,No
+Swelling,1-3 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Swelling,1-3 days,Underlying disease progression,Low,Cardiac,No
+Swelling,3-7 days,Acute condition likely,Medium,Neurological,Yes
+Swelling,3-7 days,Possible infection,High,GI,No
+Swelling,3-7 days,Monitor symptoms,Critical,General,Yes
+Swelling,3-7 days,Requires clinical evaluation,Low,Respiratory,No
+Swelling,3-7 days,Chronic condition suspected,Medium,Cardiac,Yes
+Swelling,3-7 days,Emergency evaluation needed,High,Neurological,No
+Swelling,3-7 days,Lifestyle-related issue possible,Critical,GI,Yes
+Swelling,3-7 days,Underlying disease progression,Low,General,No
+Swelling,1-2 weeks,Acute condition likely,Medium,Respiratory,Yes
+Swelling,1-2 weeks,Possible infection,High,Cardiac,No
+Swelling,1-2 weeks,Monitor symptoms,Critical,Neurological,Yes
+Swelling,1-2 weeks,Requires clinical evaluation,Low,GI,No
+Swelling,1-2 weeks,Chronic condition suspected,Medium,General,Yes
+Swelling,1-2 weeks,Emergency evaluation needed,High,Respiratory,No
+Swelling,1-2 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Swelling,1-2 weeks,Underlying disease progression,Low,Neurological,No
+Swelling,2-4 weeks,Acute condition likely,Medium,GI,Yes
+Swelling,2-4 weeks,Possible infection,High,General,No
+Swelling,2-4 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Swelling,2-4 weeks,Requires clinical evaluation,Low,Cardiac,No
+Swelling,2-4 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Swelling,2-4 weeks,Emergency evaluation needed,High,GI,No
+Swelling,2-4 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Swelling,2-4 weeks,Underlying disease progression,Low,Respiratory,No
+Swelling,1-3 months,Acute condition likely,Medium,Cardiac,Yes
+Swelling,1-3 months,Possible infection,High,Neurological,No
+Swelling,1-3 months,Monitor symptoms,Critical,GI,Yes
+Swelling,1-3 months,Requires clinical evaluation,Low,General,No
+Swelling,1-3 months,Chronic condition suspected,Medium,Respiratory,Yes
+Swelling,1-3 months,Emergency evaluation needed,High,Cardiac,No
+Swelling,1-3 months,Lifestyle-related issue possible,Critical,Neurological,Yes
+Swelling,1-3 months,Underlying disease progression,Low,GI,No
+Swelling,Chronic (>3 months),Acute condition likely,Medium,General,Yes
+Swelling,Chronic (>3 months),Possible infection,High,Respiratory,No
+Swelling,Chronic (>3 months),Monitor symptoms,Critical,Cardiac,Yes
+Swelling,Chronic (>3 months),Requires clinical evaluation,Low,Neurological,No
+Swelling,Chronic (>3 months),Chronic condition suspected,Medium,GI,Yes
+Swelling,Chronic (>3 months),Emergency evaluation needed,High,General,No
+Swelling,Chronic (>3 months),Lifestyle-related issue possible,Critical,Respiratory,Yes
+Swelling,Chronic (>3 months),Underlying disease progression,Low,Cardiac,No
+Bleeding,< 1 day,Acute condition likely,Medium,Neurological,Yes
+Bleeding,< 1 day,Possible infection,High,GI,No
+Bleeding,< 1 day,Monitor symptoms,Critical,General,Yes
+Bleeding,< 1 day,Requires clinical evaluation,Low,Respiratory,No
+Bleeding,< 1 day,Chronic condition suspected,Medium,Cardiac,Yes
+Bleeding,< 1 day,Emergency evaluation needed,High,Neurological,No
+Bleeding,< 1 day,Lifestyle-related issue possible,Critical,GI,Yes
+Bleeding,< 1 day,Underlying disease progression,Low,General,No
+Bleeding,1-3 days,Acute condition likely,Medium,Respiratory,Yes
+Bleeding,1-3 days,Possible infection,High,Cardiac,No
+Bleeding,1-3 days,Monitor symptoms,Critical,Neurological,Yes
+Bleeding,1-3 days,Requires clinical evaluation,Low,GI,No
+Bleeding,1-3 days,Chronic condition suspected,Medium,General,Yes
+Bleeding,1-3 days,Emergency evaluation needed,High,Respiratory,No
+Bleeding,1-3 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Bleeding,1-3 days,Underlying disease progression,Low,Neurological,No
+Bleeding,3-7 days,Acute condition likely,Medium,GI,Yes
+Bleeding,3-7 days,Possible infection,High,General,No
+Bleeding,3-7 days,Monitor symptoms,Critical,Respiratory,Yes
+Bleeding,3-7 days,Requires clinical evaluation,Low,Cardiac,No
+Bleeding,3-7 days,Chronic condition suspected,Medium,Neurological,Yes
+Bleeding,3-7 days,Emergency evaluation needed,High,GI,No
+Bleeding,3-7 days,Lifestyle-related issue possible,Critical,General,Yes
+Bleeding,3-7 days,Underlying disease progression,Low,Respiratory,No
+Bleeding,1-2 weeks,Acute condition likely,Medium,Cardiac,Yes
+Bleeding,1-2 weeks,Possible infection,High,Neurological,No
+Bleeding,1-2 weeks,Monitor symptoms,Critical,GI,Yes
+Bleeding,1-2 weeks,Requires clinical evaluation,Low,General,No
+Bleeding,1-2 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Bleeding,1-2 weeks,Emergency evaluation needed,High,Cardiac,No
+Bleeding,1-2 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Bleeding,1-2 weeks,Underlying disease progression,Low,GI,No
+Bleeding,2-4 weeks,Acute condition likely,Medium,General,Yes
+Bleeding,2-4 weeks,Possible infection,High,Respiratory,No
+Bleeding,2-4 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Bleeding,2-4 weeks,Requires clinical evaluation,Low,Neurological,No
+Bleeding,2-4 weeks,Chronic condition suspected,Medium,GI,Yes
+Bleeding,2-4 weeks,Emergency evaluation needed,High,General,No
+Bleeding,2-4 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Bleeding,2-4 weeks,Underlying disease progression,Low,Cardiac,No
+Bleeding,1-3 months,Acute condition likely,Medium,Neurological,Yes
+Bleeding,1-3 months,Possible infection,High,GI,No
+Bleeding,1-3 months,Monitor symptoms,Critical,General,Yes
+Bleeding,1-3 months,Requires clinical evaluation,Low,Respiratory,No
+Bleeding,1-3 months,Chronic condition suspected,Medium,Cardiac,Yes
+Bleeding,1-3 months,Emergency evaluation needed,High,Neurological,No
+Bleeding,1-3 months,Lifestyle-related issue possible,Critical,GI,Yes
+Bleeding,1-3 months,Underlying disease progression,Low,General,No
+Bleeding,Chronic (>3 months),Acute condition likely,Medium,Respiratory,Yes
+Bleeding,Chronic (>3 months),Possible infection,High,Cardiac,No
+Bleeding,Chronic (>3 months),Monitor symptoms,Critical,Neurological,Yes
+Bleeding,Chronic (>3 months),Requires clinical evaluation,Low,GI,No
+Bleeding,Chronic (>3 months),Chronic condition suspected,Medium,General,Yes
+Bleeding,Chronic (>3 months),Emergency evaluation needed,High,Respiratory,No
+Bleeding,Chronic (>3 months),Lifestyle-related issue possible,Critical,Cardiac,Yes
+Bleeding,Chronic (>3 months),Underlying disease progression,Low,Neurological,No
+Weakness,< 1 day,Acute condition likely,Medium,GI,Yes
+Weakness,< 1 day,Possible infection,High,General,No
+Weakness,< 1 day,Monitor symptoms,Critical,Respiratory,Yes
+Weakness,< 1 day,Requires clinical evaluation,Low,Cardiac,No
+Weakness,< 1 day,Chronic condition suspected,Medium,Neurological,Yes
+Weakness,< 1 day,Emergency evaluation needed,High,GI,No
+Weakness,< 1 day,Lifestyle-related issue possible,Critical,General,Yes
+Weakness,< 1 day,Underlying disease progression,Low,Respiratory,No
+Weakness,1-3 days,Acute condition likely,Medium,Cardiac,Yes
+Weakness,1-3 days,Possible infection,High,Neurological,No
+Weakness,1-3 days,Monitor symptoms,Critical,GI,Yes
+Weakness,1-3 days,Requires clinical evaluation,Low,General,No
+Weakness,1-3 days,Chronic condition suspected,Medium,Respiratory,Yes
+Weakness,1-3 days,Emergency evaluation needed,High,Cardiac,No
+Weakness,1-3 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Weakness,1-3 days,Underlying disease progression,Low,GI,No
+Weakness,3-7 days,Acute condition likely,Medium,General,Yes
+Weakness,3-7 days,Possible infection,High,Respiratory,No
+Weakness,3-7 days,Monitor symptoms,Critical,Cardiac,Yes
+Weakness,3-7 days,Requires clinical evaluation,Low,Neurological,No
+Weakness,3-7 days,Chronic condition suspected,Medium,GI,Yes
+Weakness,3-7 days,Emergency evaluation needed,High,General,No
+Weakness,3-7 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Weakness,3-7 days,Underlying disease progression,Low,Cardiac,No
+Weakness,1-2 weeks,Acute condition likely,Medium,Neurological,Yes
+Weakness,1-2 weeks,Possible infection,High,GI,No
+Weakness,1-2 weeks,Monitor symptoms,Critical,General,Yes
+Weakness,1-2 weeks,Requires clinical evaluation,Low,Respiratory,No
+Weakness,1-2 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Weakness,1-2 weeks,Emergency evaluation needed,High,Neurological,No
+Weakness,1-2 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Weakness,1-2 weeks,Underlying disease progression,Low,General,No
+Weakness,2-4 weeks,Acute condition likely,Medium,Respiratory,Yes
+Weakness,2-4 weeks,Possible infection,High,Cardiac,No
+Weakness,2-4 weeks,Monitor symptoms,Critical,Neurological,Yes
+Weakness,2-4 weeks,Requires clinical evaluation,Low,GI,No
+Weakness,2-4 weeks,Chronic condition suspected,Medium,General,Yes
+Weakness,2-4 weeks,Emergency evaluation needed,High,Respiratory,No
+Weakness,2-4 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Weakness,2-4 weeks,Underlying disease progression,Low,Neurological,No
+Weakness,1-3 months,Acute condition likely,Medium,GI,Yes
+Weakness,1-3 months,Possible infection,High,General,No
+Weakness,1-3 months,Monitor symptoms,Critical,Respiratory,Yes
+Weakness,1-3 months,Requires clinical evaluation,Low,Cardiac,No
+Weakness,1-3 months,Chronic condition suspected,Medium,Neurological,Yes
+Weakness,1-3 months,Emergency evaluation needed,High,GI,No
+Weakness,1-3 months,Lifestyle-related issue possible,Critical,General,Yes
+Weakness,1-3 months,Underlying disease progression,Low,Respiratory,No
+Weakness,Chronic (>3 months),Acute condition likely,Medium,Cardiac,Yes
+Weakness,Chronic (>3 months),Possible infection,High,Neurological,No
+Weakness,Chronic (>3 months),Monitor symptoms,Critical,GI,Yes
+Weakness,Chronic (>3 months),Requires clinical evaluation,Low,General,No
+Weakness,Chronic (>3 months),Chronic condition suspected,Medium,Respiratory,Yes
+Weakness,Chronic (>3 months),Emergency evaluation needed,High,Cardiac,No
+Weakness,Chronic (>3 months),Lifestyle-related issue possible,Critical,Neurological,Yes
+Weakness,Chronic (>3 months),Underlying disease progression,Low,GI,No
+Confusion,< 1 day,Acute condition likely,Medium,General,Yes
+Confusion,< 1 day,Possible infection,High,Respiratory,No
+Confusion,< 1 day,Monitor symptoms,Critical,Cardiac,Yes
+Confusion,< 1 day,Requires clinical evaluation,Low,Neurological,No
+Confusion,< 1 day,Chronic condition suspected,Medium,GI,Yes
+Confusion,< 1 day,Emergency evaluation needed,High,General,No
+Confusion,< 1 day,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Confusion,< 1 day,Underlying disease progression,Low,Cardiac,No
+Confusion,1-3 days,Acute condition likely,Medium,Neurological,Yes
+Confusion,1-3 days,Possible infection,High,GI,No
+Confusion,1-3 days,Monitor symptoms,Critical,General,Yes
+Confusion,1-3 days,Requires clinical evaluation,Low,Respiratory,No
+Confusion,1-3 days,Chronic condition suspected,Medium,Cardiac,Yes
+Confusion,1-3 days,Emergency evaluation needed,High,Neurological,No
+Confusion,1-3 days,Lifestyle-related issue possible,Critical,GI,Yes
+Confusion,1-3 days,Underlying disease progression,Low,General,No
+Confusion,3-7 days,Acute condition likely,Medium,Respiratory,Yes
+Confusion,3-7 days,Possible infection,High,Cardiac,No
+Confusion,3-7 days,Monitor symptoms,Critical,Neurological,Yes
+Confusion,3-7 days,Requires clinical evaluation,Low,GI,No
+Confusion,3-7 days,Chronic condition suspected,Medium,General,Yes
+Confusion,3-7 days,Emergency evaluation needed,High,Respiratory,No
+Confusion,3-7 days,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Confusion,3-7 days,Underlying disease progression,Low,Neurological,No
+Confusion,1-2 weeks,Acute condition likely,Medium,GI,Yes
+Confusion,1-2 weeks,Possible infection,High,General,No
+Confusion,1-2 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Confusion,1-2 weeks,Requires clinical evaluation,Low,Cardiac,No
+Confusion,1-2 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Confusion,1-2 weeks,Emergency evaluation needed,High,GI,No
+Confusion,1-2 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Confusion,1-2 weeks,Underlying disease progression,Low,Respiratory,No
+Confusion,2-4 weeks,Acute condition likely,Medium,Cardiac,Yes
+Confusion,2-4 weeks,Possible infection,High,Neurological,No
+Confusion,2-4 weeks,Monitor symptoms,Critical,GI,Yes
+Confusion,2-4 weeks,Requires clinical evaluation,Low,General,No
+Confusion,2-4 weeks,Chronic condition suspected,Medium,Respiratory,Yes
+Confusion,2-4 weeks,Emergency evaluation needed,High,Cardiac,No
+Confusion,2-4 weeks,Lifestyle-related issue possible,Critical,Neurological,Yes
+Confusion,2-4 weeks,Underlying disease progression,Low,GI,No
+Confusion,1-3 months,Acute condition likely,Medium,General,Yes
+Confusion,1-3 months,Possible infection,High,Respiratory,No
+Confusion,1-3 months,Monitor symptoms,Critical,Cardiac,Yes
+Confusion,1-3 months,Requires clinical evaluation,Low,Neurological,No
+Confusion,1-3 months,Chronic condition suspected,Medium,GI,Yes
+Confusion,1-3 months,Emergency evaluation needed,High,General,No
+Confusion,1-3 months,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Confusion,1-3 months,Underlying disease progression,Low,Cardiac,No
+Confusion,Chronic (>3 months),Acute condition likely,Medium,Neurological,Yes
+Confusion,Chronic (>3 months),Possible infection,High,GI,No
+Confusion,Chronic (>3 months),Monitor symptoms,Critical,General,Yes
+Confusion,Chronic (>3 months),Requires clinical evaluation,Low,Respiratory,No
+Confusion,Chronic (>3 months),Chronic condition suspected,Medium,Cardiac,Yes
+Confusion,Chronic (>3 months),Emergency evaluation needed,High,Neurological,No
+Confusion,Chronic (>3 months),Lifestyle-related issue possible,Critical,GI,Yes
+Confusion,Chronic (>3 months),Underlying disease progression,Low,General,No
+Sore Throat,< 1 day,Acute condition likely,Medium,Respiratory,Yes
+Sore Throat,< 1 day,Possible infection,High,Cardiac,No
+Sore Throat,< 1 day,Monitor symptoms,Critical,Neurological,Yes
+Sore Throat,< 1 day,Requires clinical evaluation,Low,GI,No
+Sore Throat,< 1 day,Chronic condition suspected,Medium,General,Yes
+Sore Throat,< 1 day,Emergency evaluation needed,High,Respiratory,No
+Sore Throat,< 1 day,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Sore Throat,< 1 day,Underlying disease progression,Low,Neurological,No
+Sore Throat,1-3 days,Acute condition likely,Medium,GI,Yes
+Sore Throat,1-3 days,Possible infection,High,General,No
+Sore Throat,1-3 days,Monitor symptoms,Critical,Respiratory,Yes
+Sore Throat,1-3 days,Requires clinical evaluation,Low,Cardiac,No
+Sore Throat,1-3 days,Chronic condition suspected,Medium,Neurological,Yes
+Sore Throat,1-3 days,Emergency evaluation needed,High,GI,No
+Sore Throat,1-3 days,Lifestyle-related issue possible,Critical,General,Yes
+Sore Throat,1-3 days,Underlying disease progression,Low,Respiratory,No
+Sore Throat,3-7 days,Acute condition likely,Medium,Cardiac,Yes
+Sore Throat,3-7 days,Possible infection,High,Neurological,No
+Sore Throat,3-7 days,Monitor symptoms,Critical,GI,Yes
+Sore Throat,3-7 days,Requires clinical evaluation,Low,General,No
+Sore Throat,3-7 days,Chronic condition suspected,Medium,Respiratory,Yes
+Sore Throat,3-7 days,Emergency evaluation needed,High,Cardiac,No
+Sore Throat,3-7 days,Lifestyle-related issue possible,Critical,Neurological,Yes
+Sore Throat,3-7 days,Underlying disease progression,Low,GI,No
+Sore Throat,1-2 weeks,Acute condition likely,Medium,General,Yes
+Sore Throat,1-2 weeks,Possible infection,High,Respiratory,No
+Sore Throat,1-2 weeks,Monitor symptoms,Critical,Cardiac,Yes
+Sore Throat,1-2 weeks,Requires clinical evaluation,Low,Neurological,No
+Sore Throat,1-2 weeks,Chronic condition suspected,Medium,GI,Yes
+Sore Throat,1-2 weeks,Emergency evaluation needed,High,General,No
+Sore Throat,1-2 weeks,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Sore Throat,1-2 weeks,Underlying disease progression,Low,Cardiac,No
+Sore Throat,2-4 weeks,Acute condition likely,Medium,Neurological,Yes
+Sore Throat,2-4 weeks,Possible infection,High,GI,No
+Sore Throat,2-4 weeks,Monitor symptoms,Critical,General,Yes
+Sore Throat,2-4 weeks,Requires clinical evaluation,Low,Respiratory,No
+Sore Throat,2-4 weeks,Chronic condition suspected,Medium,Cardiac,Yes
+Sore Throat,2-4 weeks,Emergency evaluation needed,High,Neurological,No
+Sore Throat,2-4 weeks,Lifestyle-related issue possible,Critical,GI,Yes
+Sore Throat,2-4 weeks,Underlying disease progression,Low,General,No
+Sore Throat,1-3 months,Acute condition likely,Medium,Respiratory,Yes
+Sore Throat,1-3 months,Possible infection,High,Cardiac,No
+Sore Throat,1-3 months,Monitor symptoms,Critical,Neurological,Yes
+Sore Throat,1-3 months,Requires clinical evaluation,Low,GI,No
+Sore Throat,1-3 months,Chronic condition suspected,Medium,General,Yes
+Sore Throat,1-3 months,Emergency evaluation needed,High,Respiratory,No
+Sore Throat,1-3 months,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Sore Throat,1-3 months,Underlying disease progression,Low,Neurological,No
+Sore Throat,Chronic (>3 months),Acute condition likely,Medium,GI,Yes
+Sore Throat,Chronic (>3 months),Possible infection,High,General,No
+Sore Throat,Chronic (>3 months),Monitor symptoms,Critical,Respiratory,Yes
+Sore Throat,Chronic (>3 months),Requires clinical evaluation,Low,Cardiac,No
+Sore Throat,Chronic (>3 months),Chronic condition suspected,Medium,Neurological,Yes
+Sore Throat,Chronic (>3 months),Emergency evaluation needed,High,GI,No
+Sore Throat,Chronic (>3 months),Lifestyle-related issue possible,Critical,General,Yes
+Sore Throat,Chronic (>3 months),Underlying disease progression,Low,Respiratory,No
+Runny Nose,< 1 day,Acute condition likely,Medium,Cardiac,Yes
+Runny Nose,< 1 day,Possible infection,High,Neurological,No
+Runny Nose,< 1 day,Monitor symptoms,Critical,GI,Yes
+Runny Nose,< 1 day,Requires clinical evaluation,Low,General,No
+Runny Nose,< 1 day,Chronic condition suspected,Medium,Respiratory,Yes
+Runny Nose,< 1 day,Emergency evaluation needed,High,Cardiac,No
+Runny Nose,< 1 day,Lifestyle-related issue possible,Critical,Neurological,Yes
+Runny Nose,< 1 day,Underlying disease progression,Low,GI,No
+Runny Nose,1-3 days,Acute condition likely,Medium,General,Yes
+Runny Nose,1-3 days,Possible infection,High,Respiratory,No
+Runny Nose,1-3 days,Monitor symptoms,Critical,Cardiac,Yes
+Runny Nose,1-3 days,Requires clinical evaluation,Low,Neurological,No
+Runny Nose,1-3 days,Chronic condition suspected,Medium,GI,Yes
+Runny Nose,1-3 days,Emergency evaluation needed,High,General,No
+Runny Nose,1-3 days,Lifestyle-related issue possible,Critical,Respiratory,Yes
+Runny Nose,1-3 days,Underlying disease progression,Low,Cardiac,No
+Runny Nose,3-7 days,Acute condition likely,Medium,Neurological,Yes
+Runny Nose,3-7 days,Possible infection,High,GI,No
+Runny Nose,3-7 days,Monitor symptoms,Critical,General,Yes
+Runny Nose,3-7 days,Requires clinical evaluation,Low,Respiratory,No
+Runny Nose,3-7 days,Chronic condition suspected,Medium,Cardiac,Yes
+Runny Nose,3-7 days,Emergency evaluation needed,High,Neurological,No
+Runny Nose,3-7 days,Lifestyle-related issue possible,Critical,GI,Yes
+Runny Nose,3-7 days,Underlying disease progression,Low,General,No
+Runny Nose,1-2 weeks,Acute condition likely,Medium,Respiratory,Yes
+Runny Nose,1-2 weeks,Possible infection,High,Cardiac,No
+Runny Nose,1-2 weeks,Monitor symptoms,Critical,Neurological,Yes
+Runny Nose,1-2 weeks,Requires clinical evaluation,Low,GI,No
+Runny Nose,1-2 weeks,Chronic condition suspected,Medium,General,Yes
+Runny Nose,1-2 weeks,Emergency evaluation needed,High,Respiratory,No
+Runny Nose,1-2 weeks,Lifestyle-related issue possible,Critical,Cardiac,Yes
+Runny Nose,1-2 weeks,Underlying disease progression,Low,Neurological,No
+Runny Nose,2-4 weeks,Acute condition likely,Medium,GI,Yes
+Runny Nose,2-4 weeks,Possible infection,High,General,No
+Runny Nose,2-4 weeks,Monitor symptoms,Critical,Respiratory,Yes
+Runny Nose,2-4 weeks,Requires clinical evaluation,Low,Cardiac,No
+Runny Nose,2-4 weeks,Chronic condition suspected,Medium,Neurological,Yes
+Runny Nose,2-4 weeks,Emergency evaluation needed,High,GI,No
+Runny Nose,2-4 weeks,Lifestyle-related issue possible,Critical,General,Yes
+Runny Nose,2-4 weeks,Underlying disease progression,Low,Respiratory,No
+Runny Nose,1-3 months,Acute condition likely,Medium,Cardiac,Yes
+Runny Nose,1-3 months,Possible infection,High,Neurological,No
+Runny Nose,1-3 months,Monitor symptoms,Critical,GI,Yes
+Runny Nose,1-3 months,Requires clinical evaluation,Low,General,No
+Runny Nose,1-3 months,Chronic condition suspected,Medium,Respiratory,Yes
+Runny Nose,1-3 months,Emergency evaluation needed,High,Cardiac,No
+Runny Nose,1-3 months,Lifestyle-related issue possible,Critical,Neurological,Yes
+Runny Nose,1-3 months,Underlying disease progression,Low,GI,No
+Runny Nose,Chronic (>3 months),Acute condition likely,Medium,General,Yes
+Runny Nose,Chronic (>3 months),Possible infection,High,Respiratory,No
+Runny Nose,Chronic (>3 months),Monitor symptoms,Critical,Cardiac,Yes
+Runny Nose,Chronic (>3 months),Requires clinical evaluation,Low,Neurological,No
+Runny Nose,Chronic (>3 months),Chronic condition suspected,Medium,GI,Yes
+Runny Nose,Chronic (>3 months),Emergency evaluation needed,High,General,No
+Runny Nose,Chronic (>3 months),Lifestyle-related issue possible,Critical,Respiratory,Yes
+Runny Nose,Chronic (>3 months),Underlying disease progression,Low,Cardiac,No

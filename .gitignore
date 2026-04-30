@@ -1,6 +1,5 @@
 # CSV files
-*.csv
-
+datasets/processed/
 # Python
 __pycache__/
 *.py[cod]

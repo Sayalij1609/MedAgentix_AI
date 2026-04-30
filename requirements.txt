@@ -10,3 +10,10 @@ shap
 opencv-python
 psycopg2
 sqlalchemy
+pandas 
+numpy 
+scikit-learn 
+matplotlib 
+seaborn 
+shap 
+imbalanced-learn

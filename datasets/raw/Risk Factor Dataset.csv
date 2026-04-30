@@ -1,0 +1,2941 @@
+Risk_Factor,Associated_Condition,Weight,Is_Modifiable,Risk_Type,Recommended_Action
+Age > 60,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Age > 60,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Age > 60,Heart Disease,High,No,Medical,Immediate Attention
+Age > 60,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Age > 60,Diabetes,Low,No,Genetic,Moderate Monitoring
+Age > 60,Diabetes,Medium,Yes,Environmental,High Monitoring
+Age > 60,Diabetes,High,No,Medical,Immediate Attention
+Age > 60,Diabetes,Critical,Yes,Lifestyle,Preventive
+Age > 60,Hypertension,Low,No,Genetic,Moderate Monitoring
+Age > 60,Hypertension,Medium,Yes,Environmental,High Monitoring
+Age > 60,Hypertension,High,No,Medical,Immediate Attention
+Age > 60,Hypertension,Critical,Yes,Lifestyle,Preventive
+Age > 60,Stroke,Low,No,Genetic,Moderate Monitoring
+Age > 60,Stroke,Medium,Yes,Environmental,High Monitoring
+Age > 60,Stroke,High,No,Medical,Immediate Attention
+Age > 60,Stroke,Critical,Yes,Lifestyle,Preventive
+Age > 60,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Age > 60,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Age > 60,Kidney Disease,High,No,Medical,Immediate Attention
+Age > 60,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Age > 60,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Age > 60,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Age > 60,Liver Disease,High,No,Medical,Immediate Attention
+Age > 60,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Age > 60,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Age > 60,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Age > 60,Respiratory Disorder,High,No,Medical,Immediate Attention
+Age > 60,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Age > 60,Cancer,Low,No,Genetic,Moderate Monitoring
+Age > 60,Cancer,Medium,Yes,Environmental,High Monitoring
+Age > 60,Cancer,High,No,Medical,Immediate Attention
+Age > 60,Cancer,Critical,Yes,Lifestyle,Preventive
+Age > 60,Obesity,Low,No,Genetic,Moderate Monitoring
+Age > 60,Obesity,Medium,Yes,Environmental,High Monitoring
+Age > 60,Obesity,High,No,Medical,Immediate Attention
+Age > 60,Obesity,Critical,Yes,Lifestyle,Preventive
+Age > 60,Depression,Low,No,Genetic,Moderate Monitoring
+Age > 60,Depression,Medium,Yes,Environmental,High Monitoring
+Age > 60,Depression,High,No,Medical,Immediate Attention
+Age > 60,Depression,Critical,Yes,Lifestyle,Preventive
+Age > 60,Anxiety,Low,No,Genetic,Moderate Monitoring
+Age > 60,Anxiety,Medium,Yes,Environmental,High Monitoring
+Age > 60,Anxiety,High,No,Medical,Immediate Attention
+Age > 60,Anxiety,Critical,Yes,Lifestyle,Preventive
+Age > 60,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Age > 60,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Age > 60,Infection Risk,High,No,Medical,Immediate Attention
+Age > 60,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Age > 60,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Age > 60,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Age > 60,Metabolic Disorder,High,No,Medical,Immediate Attention
+Age > 60,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Age > 60,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Age > 60,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Age > 60,Autoimmune Disease,High,No,Medical,Immediate Attention
+Age > 60,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Age > 60,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Age > 60,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Age > 60,Hormonal Disorder,High,No,Medical,Immediate Attention
+Age > 60,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Age < 5,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Age < 5,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Age < 5,Heart Disease,High,No,Medical,Immediate Attention
+Age < 5,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Age < 5,Diabetes,Low,No,Genetic,Moderate Monitoring
+Age < 5,Diabetes,Medium,Yes,Environmental,High Monitoring
+Age < 5,Diabetes,High,No,Medical,Immediate Attention
+Age < 5,Diabetes,Critical,Yes,Lifestyle,Preventive
+Age < 5,Hypertension,Low,No,Genetic,Moderate Monitoring
+Age < 5,Hypertension,Medium,Yes,Environmental,High Monitoring
+Age < 5,Hypertension,High,No,Medical,Immediate Attention
+Age < 5,Hypertension,Critical,Yes,Lifestyle,Preventive
+Age < 5,Stroke,Low,No,Genetic,Moderate Monitoring
+Age < 5,Stroke,Medium,Yes,Environmental,High Monitoring
+Age < 5,Stroke,High,No,Medical,Immediate Attention
+Age < 5,Stroke,Critical,Yes,Lifestyle,Preventive
+Age < 5,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Age < 5,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Age < 5,Kidney Disease,High,No,Medical,Immediate Attention
+Age < 5,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Age < 5,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Age < 5,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Age < 5,Liver Disease,High,No,Medical,Immediate Attention
+Age < 5,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Age < 5,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Age < 5,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Age < 5,Respiratory Disorder,High,No,Medical,Immediate Attention
+Age < 5,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Age < 5,Cancer,Low,No,Genetic,Moderate Monitoring
+Age < 5,Cancer,Medium,Yes,Environmental,High Monitoring
+Age < 5,Cancer,High,No,Medical,Immediate Attention
+Age < 5,Cancer,Critical,Yes,Lifestyle,Preventive
+Age < 5,Obesity,Low,No,Genetic,Moderate Monitoring
+Age < 5,Obesity,Medium,Yes,Environmental,High Monitoring
+Age < 5,Obesity,High,No,Medical,Immediate Attention
+Age < 5,Obesity,Critical,Yes,Lifestyle,Preventive
+Age < 5,Depression,Low,No,Genetic,Moderate Monitoring
+Age < 5,Depression,Medium,Yes,Environmental,High Monitoring
+Age < 5,Depression,High,No,Medical,Immediate Attention
+Age < 5,Depression,Critical,Yes,Lifestyle,Preventive
+Age < 5,Anxiety,Low,No,Genetic,Moderate Monitoring
+Age < 5,Anxiety,Medium,Yes,Environmental,High Monitoring
+Age < 5,Anxiety,High,No,Medical,Immediate Attention
+Age < 5,Anxiety,Critical,Yes,Lifestyle,Preventive
+Age < 5,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Age < 5,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Age < 5,Infection Risk,High,No,Medical,Immediate Attention
+Age < 5,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Age < 5,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Age < 5,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Age < 5,Metabolic Disorder,High,No,Medical,Immediate Attention
+Age < 5,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Age < 5,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Age < 5,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Age < 5,Autoimmune Disease,High,No,Medical,Immediate Attention
+Age < 5,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Age < 5,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Age < 5,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Age < 5,Hormonal Disorder,High,No,Medical,Immediate Attention
+Age < 5,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Smoking,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Smoking,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Smoking,Heart Disease,High,No,Medical,Immediate Attention
+Smoking,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Smoking,Diabetes,Low,No,Genetic,Moderate Monitoring
+Smoking,Diabetes,Medium,Yes,Environmental,High Monitoring
+Smoking,Diabetes,High,No,Medical,Immediate Attention
+Smoking,Diabetes,Critical,Yes,Lifestyle,Preventive
+Smoking,Hypertension,Low,No,Genetic,Moderate Monitoring
+Smoking,Hypertension,Medium,Yes,Environmental,High Monitoring
+Smoking,Hypertension,High,No,Medical,Immediate Attention
+Smoking,Hypertension,Critical,Yes,Lifestyle,Preventive
+Smoking,Stroke,Low,No,Genetic,Moderate Monitoring
+Smoking,Stroke,Medium,Yes,Environmental,High Monitoring
+Smoking,Stroke,High,No,Medical,Immediate Attention
+Smoking,Stroke,Critical,Yes,Lifestyle,Preventive
+Smoking,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Smoking,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Smoking,Kidney Disease,High,No,Medical,Immediate Attention
+Smoking,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Smoking,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Smoking,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Smoking,Liver Disease,High,No,Medical,Immediate Attention
+Smoking,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Smoking,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Smoking,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Smoking,Respiratory Disorder,High,No,Medical,Immediate Attention
+Smoking,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Smoking,Cancer,Low,No,Genetic,Moderate Monitoring
+Smoking,Cancer,Medium,Yes,Environmental,High Monitoring
+Smoking,Cancer,High,No,Medical,Immediate Attention
+Smoking,Cancer,Critical,Yes,Lifestyle,Preventive
+Smoking,Obesity,Low,No,Genetic,Moderate Monitoring
+Smoking,Obesity,Medium,Yes,Environmental,High Monitoring
+Smoking,Obesity,High,No,Medical,Immediate Attention
+Smoking,Obesity,Critical,Yes,Lifestyle,Preventive
+Smoking,Depression,Low,No,Genetic,Moderate Monitoring
+Smoking,Depression,Medium,Yes,Environmental,High Monitoring
+Smoking,Depression,High,No,Medical,Immediate Attention
+Smoking,Depression,Critical,Yes,Lifestyle,Preventive
+Smoking,Anxiety,Low,No,Genetic,Moderate Monitoring
+Smoking,Anxiety,Medium,Yes,Environmental,High Monitoring
+Smoking,Anxiety,High,No,Medical,Immediate Attention
+Smoking,Anxiety,Critical,Yes,Lifestyle,Preventive
+Smoking,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Smoking,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Smoking,Infection Risk,High,No,Medical,Immediate Attention
+Smoking,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Smoking,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Smoking,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Smoking,Metabolic Disorder,High,No,Medical,Immediate Attention
+Smoking,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Smoking,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Smoking,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Smoking,Autoimmune Disease,High,No,Medical,Immediate Attention
+Smoking,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Smoking,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Smoking,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Smoking,Hormonal Disorder,High,No,Medical,Immediate Attention
+Smoking,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Heart Disease,High,No,Medical,Immediate Attention
+Alcohol Use,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Diabetes,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Diabetes,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Diabetes,High,No,Medical,Immediate Attention
+Alcohol Use,Diabetes,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Hypertension,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Hypertension,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Hypertension,High,No,Medical,Immediate Attention
+Alcohol Use,Hypertension,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Stroke,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Stroke,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Stroke,High,No,Medical,Immediate Attention
+Alcohol Use,Stroke,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Kidney Disease,High,No,Medical,Immediate Attention
+Alcohol Use,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Liver Disease,High,No,Medical,Immediate Attention
+Alcohol Use,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Respiratory Disorder,High,No,Medical,Immediate Attention
+Alcohol Use,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Cancer,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Cancer,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Cancer,High,No,Medical,Immediate Attention
+Alcohol Use,Cancer,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Obesity,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Obesity,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Obesity,High,No,Medical,Immediate Attention
+Alcohol Use,Obesity,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Depression,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Depression,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Depression,High,No,Medical,Immediate Attention
+Alcohol Use,Depression,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Anxiety,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Anxiety,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Anxiety,High,No,Medical,Immediate Attention
+Alcohol Use,Anxiety,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Infection Risk,High,No,Medical,Immediate Attention
+Alcohol Use,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Metabolic Disorder,High,No,Medical,Immediate Attention
+Alcohol Use,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Autoimmune Disease,High,No,Medical,Immediate Attention
+Alcohol Use,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Alcohol Use,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Alcohol Use,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Alcohol Use,Hormonal Disorder,High,No,Medical,Immediate Attention
+Alcohol Use,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Obesity,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Obesity,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Obesity,Heart Disease,High,No,Medical,Immediate Attention
+Obesity,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Obesity,Diabetes,Low,No,Genetic,Moderate Monitoring
+Obesity,Diabetes,Medium,Yes,Environmental,High Monitoring
+Obesity,Diabetes,High,No,Medical,Immediate Attention
+Obesity,Diabetes,Critical,Yes,Lifestyle,Preventive
+Obesity,Hypertension,Low,No,Genetic,Moderate Monitoring
+Obesity,Hypertension,Medium,Yes,Environmental,High Monitoring
+Obesity,Hypertension,High,No,Medical,Immediate Attention
+Obesity,Hypertension,Critical,Yes,Lifestyle,Preventive
+Obesity,Stroke,Low,No,Genetic,Moderate Monitoring
+Obesity,Stroke,Medium,Yes,Environmental,High Monitoring
+Obesity,Stroke,High,No,Medical,Immediate Attention
+Obesity,Stroke,Critical,Yes,Lifestyle,Preventive
+Obesity,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Obesity,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Obesity,Kidney Disease,High,No,Medical,Immediate Attention
+Obesity,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Obesity,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Obesity,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Obesity,Liver Disease,High,No,Medical,Immediate Attention
+Obesity,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Obesity,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Obesity,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Obesity,Respiratory Disorder,High,No,Medical,Immediate Attention
+Obesity,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Obesity,Cancer,Low,No,Genetic,Moderate Monitoring
+Obesity,Cancer,Medium,Yes,Environmental,High Monitoring
+Obesity,Cancer,High,No,Medical,Immediate Attention
+Obesity,Cancer,Critical,Yes,Lifestyle,Preventive
+Obesity,Obesity,Low,No,Genetic,Moderate Monitoring
+Obesity,Obesity,Medium,Yes,Environmental,High Monitoring
+Obesity,Obesity,High,No,Medical,Immediate Attention
+Obesity,Obesity,Critical,Yes,Lifestyle,Preventive
+Obesity,Depression,Low,No,Genetic,Moderate Monitoring
+Obesity,Depression,Medium,Yes,Environmental,High Monitoring
+Obesity,Depression,High,No,Medical,Immediate Attention
+Obesity,Depression,Critical,Yes,Lifestyle,Preventive
+Obesity,Anxiety,Low,No,Genetic,Moderate Monitoring
+Obesity,Anxiety,Medium,Yes,Environmental,High Monitoring
+Obesity,Anxiety,High,No,Medical,Immediate Attention
+Obesity,Anxiety,Critical,Yes,Lifestyle,Preventive
+Obesity,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Obesity,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Obesity,Infection Risk,High,No,Medical,Immediate Attention
+Obesity,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Obesity,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Obesity,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Obesity,Metabolic Disorder,High,No,Medical,Immediate Attention
+Obesity,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Obesity,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Obesity,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Obesity,Autoimmune Disease,High,No,Medical,Immediate Attention
+Obesity,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Obesity,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Obesity,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Obesity,Hormonal Disorder,High,No,Medical,Immediate Attention
+Obesity,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Heart Disease,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Diabetes,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Diabetes,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Diabetes,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Diabetes,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Hypertension,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Hypertension,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Hypertension,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Hypertension,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Stroke,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Stroke,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Stroke,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Stroke,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Kidney Disease,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Liver Disease,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Respiratory Disorder,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Cancer,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Cancer,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Cancer,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Cancer,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Obesity,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Obesity,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Obesity,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Obesity,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Depression,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Depression,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Depression,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Depression,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Anxiety,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Anxiety,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Anxiety,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Anxiety,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Infection Risk,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Metabolic Disorder,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Autoimmune Disease,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Sedentary Lifestyle,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Sedentary Lifestyle,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Sedentary Lifestyle,Hormonal Disorder,High,No,Medical,Immediate Attention
+Sedentary Lifestyle,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Heart Disease,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Heart Disease,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Heart Disease,High,No,Medical,Immediate Attention
+High Cholesterol,Heart Disease,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Diabetes,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Diabetes,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Diabetes,High,No,Medical,Immediate Attention
+High Cholesterol,Diabetes,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Hypertension,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Hypertension,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Hypertension,High,No,Medical,Immediate Attention
+High Cholesterol,Hypertension,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Stroke,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Stroke,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Stroke,High,No,Medical,Immediate Attention
+High Cholesterol,Stroke,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Kidney Disease,High,No,Medical,Immediate Attention
+High Cholesterol,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Liver Disease,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Liver Disease,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Liver Disease,High,No,Medical,Immediate Attention
+High Cholesterol,Liver Disease,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Respiratory Disorder,High,No,Medical,Immediate Attention
+High Cholesterol,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Cancer,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Cancer,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Cancer,High,No,Medical,Immediate Attention
+High Cholesterol,Cancer,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Obesity,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Obesity,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Obesity,High,No,Medical,Immediate Attention
+High Cholesterol,Obesity,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Depression,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Depression,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Depression,High,No,Medical,Immediate Attention
+High Cholesterol,Depression,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Anxiety,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Anxiety,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Anxiety,High,No,Medical,Immediate Attention
+High Cholesterol,Anxiety,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Infection Risk,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Infection Risk,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Infection Risk,High,No,Medical,Immediate Attention
+High Cholesterol,Infection Risk,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Metabolic Disorder,High,No,Medical,Immediate Attention
+High Cholesterol,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Autoimmune Disease,High,No,Medical,Immediate Attention
+High Cholesterol,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+High Cholesterol,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+High Cholesterol,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+High Cholesterol,Hormonal Disorder,High,No,Medical,Immediate Attention
+High Cholesterol,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Hypertension,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Hypertension,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Hypertension,Heart Disease,High,No,Medical,Immediate Attention
+Hypertension,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Hypertension,Diabetes,Low,No,Genetic,Moderate Monitoring
+Hypertension,Diabetes,Medium,Yes,Environmental,High Monitoring
+Hypertension,Diabetes,High,No,Medical,Immediate Attention
+Hypertension,Diabetes,Critical,Yes,Lifestyle,Preventive
+Hypertension,Hypertension,Low,No,Genetic,Moderate Monitoring
+Hypertension,Hypertension,Medium,Yes,Environmental,High Monitoring
+Hypertension,Hypertension,High,No,Medical,Immediate Attention
+Hypertension,Hypertension,Critical,Yes,Lifestyle,Preventive
+Hypertension,Stroke,Low,No,Genetic,Moderate Monitoring
+Hypertension,Stroke,Medium,Yes,Environmental,High Monitoring
+Hypertension,Stroke,High,No,Medical,Immediate Attention
+Hypertension,Stroke,Critical,Yes,Lifestyle,Preventive
+Hypertension,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Hypertension,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Hypertension,Kidney Disease,High,No,Medical,Immediate Attention
+Hypertension,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Hypertension,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Hypertension,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Hypertension,Liver Disease,High,No,Medical,Immediate Attention
+Hypertension,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Hypertension,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Hypertension,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Hypertension,Respiratory Disorder,High,No,Medical,Immediate Attention
+Hypertension,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Hypertension,Cancer,Low,No,Genetic,Moderate Monitoring
+Hypertension,Cancer,Medium,Yes,Environmental,High Monitoring
+Hypertension,Cancer,High,No,Medical,Immediate Attention
+Hypertension,Cancer,Critical,Yes,Lifestyle,Preventive
+Hypertension,Obesity,Low,No,Genetic,Moderate Monitoring
+Hypertension,Obesity,Medium,Yes,Environmental,High Monitoring
+Hypertension,Obesity,High,No,Medical,Immediate Attention
+Hypertension,Obesity,Critical,Yes,Lifestyle,Preventive
+Hypertension,Depression,Low,No,Genetic,Moderate Monitoring
+Hypertension,Depression,Medium,Yes,Environmental,High Monitoring
+Hypertension,Depression,High,No,Medical,Immediate Attention
+Hypertension,Depression,Critical,Yes,Lifestyle,Preventive
+Hypertension,Anxiety,Low,No,Genetic,Moderate Monitoring
+Hypertension,Anxiety,Medium,Yes,Environmental,High Monitoring
+Hypertension,Anxiety,High,No,Medical,Immediate Attention
+Hypertension,Anxiety,Critical,Yes,Lifestyle,Preventive
+Hypertension,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Hypertension,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Hypertension,Infection Risk,High,No,Medical,Immediate Attention
+Hypertension,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Hypertension,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Hypertension,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Hypertension,Metabolic Disorder,High,No,Medical,Immediate Attention
+Hypertension,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Hypertension,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Hypertension,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Hypertension,Autoimmune Disease,High,No,Medical,Immediate Attention
+Hypertension,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Hypertension,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Hypertension,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Hypertension,Hormonal Disorder,High,No,Medical,Immediate Attention
+Hypertension,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Diabetes,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Diabetes,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Diabetes,Heart Disease,High,No,Medical,Immediate Attention
+Diabetes,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Diabetes,Diabetes,Low,No,Genetic,Moderate Monitoring
+Diabetes,Diabetes,Medium,Yes,Environmental,High Monitoring
+Diabetes,Diabetes,High,No,Medical,Immediate Attention
+Diabetes,Diabetes,Critical,Yes,Lifestyle,Preventive
+Diabetes,Hypertension,Low,No,Genetic,Moderate Monitoring
+Diabetes,Hypertension,Medium,Yes,Environmental,High Monitoring
+Diabetes,Hypertension,High,No,Medical,Immediate Attention
+Diabetes,Hypertension,Critical,Yes,Lifestyle,Preventive
+Diabetes,Stroke,Low,No,Genetic,Moderate Monitoring
+Diabetes,Stroke,Medium,Yes,Environmental,High Monitoring
+Diabetes,Stroke,High,No,Medical,Immediate Attention
+Diabetes,Stroke,Critical,Yes,Lifestyle,Preventive
+Diabetes,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Diabetes,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Diabetes,Kidney Disease,High,No,Medical,Immediate Attention
+Diabetes,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Diabetes,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Diabetes,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Diabetes,Liver Disease,High,No,Medical,Immediate Attention
+Diabetes,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Diabetes,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Diabetes,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Diabetes,Respiratory Disorder,High,No,Medical,Immediate Attention
+Diabetes,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Diabetes,Cancer,Low,No,Genetic,Moderate Monitoring
+Diabetes,Cancer,Medium,Yes,Environmental,High Monitoring
+Diabetes,Cancer,High,No,Medical,Immediate Attention
+Diabetes,Cancer,Critical,Yes,Lifestyle,Preventive
+Diabetes,Obesity,Low,No,Genetic,Moderate Monitoring
+Diabetes,Obesity,Medium,Yes,Environmental,High Monitoring
+Diabetes,Obesity,High,No,Medical,Immediate Attention
+Diabetes,Obesity,Critical,Yes,Lifestyle,Preventive
+Diabetes,Depression,Low,No,Genetic,Moderate Monitoring
+Diabetes,Depression,Medium,Yes,Environmental,High Monitoring
+Diabetes,Depression,High,No,Medical,Immediate Attention
+Diabetes,Depression,Critical,Yes,Lifestyle,Preventive
+Diabetes,Anxiety,Low,No,Genetic,Moderate Monitoring
+Diabetes,Anxiety,Medium,Yes,Environmental,High Monitoring
+Diabetes,Anxiety,High,No,Medical,Immediate Attention
+Diabetes,Anxiety,Critical,Yes,Lifestyle,Preventive
+Diabetes,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Diabetes,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Diabetes,Infection Risk,High,No,Medical,Immediate Attention
+Diabetes,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Diabetes,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Diabetes,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Diabetes,Metabolic Disorder,High,No,Medical,Immediate Attention
+Diabetes,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Diabetes,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Diabetes,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Diabetes,Autoimmune Disease,High,No,Medical,Immediate Attention
+Diabetes,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Diabetes,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Diabetes,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Diabetes,Hormonal Disorder,High,No,Medical,Immediate Attention
+Diabetes,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Family History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Family History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Family History,Heart Disease,High,No,Medical,Immediate Attention
+Family History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Family History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Family History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Family History,Diabetes,High,No,Medical,Immediate Attention
+Family History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Family History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Family History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Family History,Hypertension,High,No,Medical,Immediate Attention
+Family History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Family History,Stroke,Low,No,Genetic,Moderate Monitoring
+Family History,Stroke,Medium,Yes,Environmental,High Monitoring
+Family History,Stroke,High,No,Medical,Immediate Attention
+Family History,Stroke,Critical,Yes,Lifestyle,Preventive
+Family History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Family History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Family History,Kidney Disease,High,No,Medical,Immediate Attention
+Family History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Family History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Family History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Family History,Liver Disease,High,No,Medical,Immediate Attention
+Family History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Family History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Family History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Family History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Family History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Family History,Cancer,Low,No,Genetic,Moderate Monitoring
+Family History,Cancer,Medium,Yes,Environmental,High Monitoring
+Family History,Cancer,High,No,Medical,Immediate Attention
+Family History,Cancer,Critical,Yes,Lifestyle,Preventive
+Family History,Obesity,Low,No,Genetic,Moderate Monitoring
+Family History,Obesity,Medium,Yes,Environmental,High Monitoring
+Family History,Obesity,High,No,Medical,Immediate Attention
+Family History,Obesity,Critical,Yes,Lifestyle,Preventive
+Family History,Depression,Low,No,Genetic,Moderate Monitoring
+Family History,Depression,Medium,Yes,Environmental,High Monitoring
+Family History,Depression,High,No,Medical,Immediate Attention
+Family History,Depression,Critical,Yes,Lifestyle,Preventive
+Family History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Family History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Family History,Anxiety,High,No,Medical,Immediate Attention
+Family History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Family History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Family History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Family History,Infection Risk,High,No,Medical,Immediate Attention
+Family History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Family History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Family History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Family History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Family History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Family History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Family History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Family History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Family History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Family History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Family History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Family History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Family History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Heart Disease,High,No,Medical,Immediate Attention
+Genetic Predisposition,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Diabetes,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Diabetes,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Diabetes,High,No,Medical,Immediate Attention
+Genetic Predisposition,Diabetes,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Hypertension,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Hypertension,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Hypertension,High,No,Medical,Immediate Attention
+Genetic Predisposition,Hypertension,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Stroke,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Stroke,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Stroke,High,No,Medical,Immediate Attention
+Genetic Predisposition,Stroke,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Kidney Disease,High,No,Medical,Immediate Attention
+Genetic Predisposition,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Liver Disease,High,No,Medical,Immediate Attention
+Genetic Predisposition,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Respiratory Disorder,High,No,Medical,Immediate Attention
+Genetic Predisposition,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Cancer,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Cancer,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Cancer,High,No,Medical,Immediate Attention
+Genetic Predisposition,Cancer,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Obesity,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Obesity,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Obesity,High,No,Medical,Immediate Attention
+Genetic Predisposition,Obesity,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Depression,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Depression,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Depression,High,No,Medical,Immediate Attention
+Genetic Predisposition,Depression,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Anxiety,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Anxiety,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Anxiety,High,No,Medical,Immediate Attention
+Genetic Predisposition,Anxiety,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Infection Risk,High,No,Medical,Immediate Attention
+Genetic Predisposition,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Metabolic Disorder,High,No,Medical,Immediate Attention
+Genetic Predisposition,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Autoimmune Disease,High,No,Medical,Immediate Attention
+Genetic Predisposition,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Genetic Predisposition,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Genetic Predisposition,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Genetic Predisposition,Hormonal Disorder,High,No,Medical,Immediate Attention
+Genetic Predisposition,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Heart Disease,High,No,Medical,Immediate Attention
+Poor Diet,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Diabetes,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Diabetes,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Diabetes,High,No,Medical,Immediate Attention
+Poor Diet,Diabetes,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Hypertension,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Hypertension,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Hypertension,High,No,Medical,Immediate Attention
+Poor Diet,Hypertension,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Stroke,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Stroke,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Stroke,High,No,Medical,Immediate Attention
+Poor Diet,Stroke,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Kidney Disease,High,No,Medical,Immediate Attention
+Poor Diet,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Liver Disease,High,No,Medical,Immediate Attention
+Poor Diet,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Respiratory Disorder,High,No,Medical,Immediate Attention
+Poor Diet,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Cancer,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Cancer,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Cancer,High,No,Medical,Immediate Attention
+Poor Diet,Cancer,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Obesity,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Obesity,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Obesity,High,No,Medical,Immediate Attention
+Poor Diet,Obesity,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Depression,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Depression,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Depression,High,No,Medical,Immediate Attention
+Poor Diet,Depression,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Anxiety,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Anxiety,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Anxiety,High,No,Medical,Immediate Attention
+Poor Diet,Anxiety,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Infection Risk,High,No,Medical,Immediate Attention
+Poor Diet,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Metabolic Disorder,High,No,Medical,Immediate Attention
+Poor Diet,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Autoimmune Disease,High,No,Medical,Immediate Attention
+Poor Diet,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Poor Diet,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Poor Diet,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Poor Diet,Hormonal Disorder,High,No,Medical,Immediate Attention
+Poor Diet,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Heart Disease,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Heart Disease,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Heart Disease,High,No,Medical,Immediate Attention
+High Salt Intake,Heart Disease,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Diabetes,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Diabetes,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Diabetes,High,No,Medical,Immediate Attention
+High Salt Intake,Diabetes,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Hypertension,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Hypertension,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Hypertension,High,No,Medical,Immediate Attention
+High Salt Intake,Hypertension,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Stroke,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Stroke,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Stroke,High,No,Medical,Immediate Attention
+High Salt Intake,Stroke,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Kidney Disease,High,No,Medical,Immediate Attention
+High Salt Intake,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Liver Disease,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Liver Disease,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Liver Disease,High,No,Medical,Immediate Attention
+High Salt Intake,Liver Disease,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Respiratory Disorder,High,No,Medical,Immediate Attention
+High Salt Intake,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Cancer,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Cancer,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Cancer,High,No,Medical,Immediate Attention
+High Salt Intake,Cancer,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Obesity,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Obesity,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Obesity,High,No,Medical,Immediate Attention
+High Salt Intake,Obesity,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Depression,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Depression,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Depression,High,No,Medical,Immediate Attention
+High Salt Intake,Depression,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Anxiety,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Anxiety,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Anxiety,High,No,Medical,Immediate Attention
+High Salt Intake,Anxiety,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Infection Risk,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Infection Risk,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Infection Risk,High,No,Medical,Immediate Attention
+High Salt Intake,Infection Risk,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Metabolic Disorder,High,No,Medical,Immediate Attention
+High Salt Intake,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Autoimmune Disease,High,No,Medical,Immediate Attention
+High Salt Intake,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+High Salt Intake,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+High Salt Intake,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+High Salt Intake,Hormonal Disorder,High,No,Medical,Immediate Attention
+High Salt Intake,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Heart Disease,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Heart Disease,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Heart Disease,High,No,Medical,Immediate Attention
+High Sugar Intake,Heart Disease,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Diabetes,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Diabetes,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Diabetes,High,No,Medical,Immediate Attention
+High Sugar Intake,Diabetes,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Hypertension,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Hypertension,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Hypertension,High,No,Medical,Immediate Attention
+High Sugar Intake,Hypertension,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Stroke,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Stroke,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Stroke,High,No,Medical,Immediate Attention
+High Sugar Intake,Stroke,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Kidney Disease,High,No,Medical,Immediate Attention
+High Sugar Intake,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Liver Disease,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Liver Disease,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Liver Disease,High,No,Medical,Immediate Attention
+High Sugar Intake,Liver Disease,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Respiratory Disorder,High,No,Medical,Immediate Attention
+High Sugar Intake,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Cancer,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Cancer,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Cancer,High,No,Medical,Immediate Attention
+High Sugar Intake,Cancer,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Obesity,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Obesity,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Obesity,High,No,Medical,Immediate Attention
+High Sugar Intake,Obesity,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Depression,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Depression,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Depression,High,No,Medical,Immediate Attention
+High Sugar Intake,Depression,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Anxiety,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Anxiety,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Anxiety,High,No,Medical,Immediate Attention
+High Sugar Intake,Anxiety,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Infection Risk,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Infection Risk,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Infection Risk,High,No,Medical,Immediate Attention
+High Sugar Intake,Infection Risk,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Metabolic Disorder,High,No,Medical,Immediate Attention
+High Sugar Intake,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Autoimmune Disease,High,No,Medical,Immediate Attention
+High Sugar Intake,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+High Sugar Intake,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+High Sugar Intake,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+High Sugar Intake,Hormonal Disorder,High,No,Medical,Immediate Attention
+High Sugar Intake,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Heart Disease,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Diabetes,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Diabetes,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Diabetes,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Diabetes,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Hypertension,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Hypertension,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Hypertension,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Hypertension,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Stroke,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Stroke,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Stroke,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Stroke,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Kidney Disease,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Liver Disease,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Respiratory Disorder,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Cancer,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Cancer,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Cancer,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Cancer,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Obesity,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Obesity,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Obesity,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Obesity,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Depression,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Depression,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Depression,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Depression,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Anxiety,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Anxiety,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Anxiety,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Anxiety,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Infection Risk,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Metabolic Disorder,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Autoimmune Disease,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Air Pollution Exposure,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Air Pollution Exposure,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Air Pollution Exposure,Hormonal Disorder,High,No,Medical,Immediate Attention
+Air Pollution Exposure,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Heart Disease,High,No,Medical,Immediate Attention
+Occupational Hazard,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Diabetes,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Diabetes,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Diabetes,High,No,Medical,Immediate Attention
+Occupational Hazard,Diabetes,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Hypertension,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Hypertension,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Hypertension,High,No,Medical,Immediate Attention
+Occupational Hazard,Hypertension,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Stroke,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Stroke,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Stroke,High,No,Medical,Immediate Attention
+Occupational Hazard,Stroke,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Kidney Disease,High,No,Medical,Immediate Attention
+Occupational Hazard,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Liver Disease,High,No,Medical,Immediate Attention
+Occupational Hazard,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Respiratory Disorder,High,No,Medical,Immediate Attention
+Occupational Hazard,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Cancer,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Cancer,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Cancer,High,No,Medical,Immediate Attention
+Occupational Hazard,Cancer,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Obesity,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Obesity,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Obesity,High,No,Medical,Immediate Attention
+Occupational Hazard,Obesity,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Depression,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Depression,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Depression,High,No,Medical,Immediate Attention
+Occupational Hazard,Depression,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Anxiety,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Anxiety,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Anxiety,High,No,Medical,Immediate Attention
+Occupational Hazard,Anxiety,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Infection Risk,High,No,Medical,Immediate Attention
+Occupational Hazard,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Metabolic Disorder,High,No,Medical,Immediate Attention
+Occupational Hazard,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Autoimmune Disease,High,No,Medical,Immediate Attention
+Occupational Hazard,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Occupational Hazard,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Occupational Hazard,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Occupational Hazard,Hormonal Disorder,High,No,Medical,Immediate Attention
+Occupational Hazard,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Heart Disease,High,No,Medical,Immediate Attention
+Chronic Stress,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Diabetes,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Diabetes,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Diabetes,High,No,Medical,Immediate Attention
+Chronic Stress,Diabetes,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Hypertension,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Hypertension,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Hypertension,High,No,Medical,Immediate Attention
+Chronic Stress,Hypertension,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Stroke,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Stroke,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Stroke,High,No,Medical,Immediate Attention
+Chronic Stress,Stroke,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Kidney Disease,High,No,Medical,Immediate Attention
+Chronic Stress,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Liver Disease,High,No,Medical,Immediate Attention
+Chronic Stress,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Respiratory Disorder,High,No,Medical,Immediate Attention
+Chronic Stress,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Cancer,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Cancer,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Cancer,High,No,Medical,Immediate Attention
+Chronic Stress,Cancer,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Obesity,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Obesity,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Obesity,High,No,Medical,Immediate Attention
+Chronic Stress,Obesity,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Depression,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Depression,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Depression,High,No,Medical,Immediate Attention
+Chronic Stress,Depression,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Anxiety,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Anxiety,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Anxiety,High,No,Medical,Immediate Attention
+Chronic Stress,Anxiety,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Infection Risk,High,No,Medical,Immediate Attention
+Chronic Stress,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Metabolic Disorder,High,No,Medical,Immediate Attention
+Chronic Stress,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Autoimmune Disease,High,No,Medical,Immediate Attention
+Chronic Stress,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Chronic Stress,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Chronic Stress,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Chronic Stress,Hormonal Disorder,High,No,Medical,Immediate Attention
+Chronic Stress,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Heart Disease,High,No,Medical,Immediate Attention
+Sleep Deprivation,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Diabetes,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Diabetes,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Diabetes,High,No,Medical,Immediate Attention
+Sleep Deprivation,Diabetes,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Hypertension,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Hypertension,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Hypertension,High,No,Medical,Immediate Attention
+Sleep Deprivation,Hypertension,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Stroke,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Stroke,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Stroke,High,No,Medical,Immediate Attention
+Sleep Deprivation,Stroke,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Kidney Disease,High,No,Medical,Immediate Attention
+Sleep Deprivation,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Liver Disease,High,No,Medical,Immediate Attention
+Sleep Deprivation,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Respiratory Disorder,High,No,Medical,Immediate Attention
+Sleep Deprivation,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Cancer,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Cancer,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Cancer,High,No,Medical,Immediate Attention
+Sleep Deprivation,Cancer,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Obesity,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Obesity,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Obesity,High,No,Medical,Immediate Attention
+Sleep Deprivation,Obesity,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Depression,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Depression,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Depression,High,No,Medical,Immediate Attention
+Sleep Deprivation,Depression,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Anxiety,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Anxiety,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Anxiety,High,No,Medical,Immediate Attention
+Sleep Deprivation,Anxiety,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Infection Risk,High,No,Medical,Immediate Attention
+Sleep Deprivation,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Metabolic Disorder,High,No,Medical,Immediate Attention
+Sleep Deprivation,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Autoimmune Disease,High,No,Medical,Immediate Attention
+Sleep Deprivation,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Sleep Deprivation,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Sleep Deprivation,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Sleep Deprivation,Hormonal Disorder,High,No,Medical,Immediate Attention
+Sleep Deprivation,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Heart Disease,High,No,Medical,Immediate Attention
+Weak Immunity,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Diabetes,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Diabetes,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Diabetes,High,No,Medical,Immediate Attention
+Weak Immunity,Diabetes,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Hypertension,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Hypertension,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Hypertension,High,No,Medical,Immediate Attention
+Weak Immunity,Hypertension,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Stroke,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Stroke,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Stroke,High,No,Medical,Immediate Attention
+Weak Immunity,Stroke,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Kidney Disease,High,No,Medical,Immediate Attention
+Weak Immunity,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Liver Disease,High,No,Medical,Immediate Attention
+Weak Immunity,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Respiratory Disorder,High,No,Medical,Immediate Attention
+Weak Immunity,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Cancer,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Cancer,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Cancer,High,No,Medical,Immediate Attention
+Weak Immunity,Cancer,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Obesity,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Obesity,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Obesity,High,No,Medical,Immediate Attention
+Weak Immunity,Obesity,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Depression,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Depression,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Depression,High,No,Medical,Immediate Attention
+Weak Immunity,Depression,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Anxiety,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Anxiety,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Anxiety,High,No,Medical,Immediate Attention
+Weak Immunity,Anxiety,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Infection Risk,High,No,Medical,Immediate Attention
+Weak Immunity,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Metabolic Disorder,High,No,Medical,Immediate Attention
+Weak Immunity,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Autoimmune Disease,High,No,Medical,Immediate Attention
+Weak Immunity,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Weak Immunity,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Weak Immunity,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Weak Immunity,Hormonal Disorder,High,No,Medical,Immediate Attention
+Weak Immunity,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Heart Disease,High,No,Medical,Immediate Attention
+Previous Infection,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Diabetes,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Diabetes,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Diabetes,High,No,Medical,Immediate Attention
+Previous Infection,Diabetes,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Hypertension,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Hypertension,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Hypertension,High,No,Medical,Immediate Attention
+Previous Infection,Hypertension,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Stroke,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Stroke,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Stroke,High,No,Medical,Immediate Attention
+Previous Infection,Stroke,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Kidney Disease,High,No,Medical,Immediate Attention
+Previous Infection,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Liver Disease,High,No,Medical,Immediate Attention
+Previous Infection,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Respiratory Disorder,High,No,Medical,Immediate Attention
+Previous Infection,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Cancer,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Cancer,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Cancer,High,No,Medical,Immediate Attention
+Previous Infection,Cancer,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Obesity,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Obesity,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Obesity,High,No,Medical,Immediate Attention
+Previous Infection,Obesity,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Depression,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Depression,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Depression,High,No,Medical,Immediate Attention
+Previous Infection,Depression,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Anxiety,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Anxiety,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Anxiety,High,No,Medical,Immediate Attention
+Previous Infection,Anxiety,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Infection Risk,High,No,Medical,Immediate Attention
+Previous Infection,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Metabolic Disorder,High,No,Medical,Immediate Attention
+Previous Infection,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Autoimmune Disease,High,No,Medical,Immediate Attention
+Previous Infection,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Previous Infection,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Previous Infection,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Previous Infection,Hormonal Disorder,High,No,Medical,Immediate Attention
+Previous Infection,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Medication History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Medication History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Medication History,Heart Disease,High,No,Medical,Immediate Attention
+Medication History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Medication History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Medication History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Medication History,Diabetes,High,No,Medical,Immediate Attention
+Medication History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Medication History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Medication History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Medication History,Hypertension,High,No,Medical,Immediate Attention
+Medication History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Medication History,Stroke,Low,No,Genetic,Moderate Monitoring
+Medication History,Stroke,Medium,Yes,Environmental,High Monitoring
+Medication History,Stroke,High,No,Medical,Immediate Attention
+Medication History,Stroke,Critical,Yes,Lifestyle,Preventive
+Medication History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Medication History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Medication History,Kidney Disease,High,No,Medical,Immediate Attention
+Medication History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Medication History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Medication History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Medication History,Liver Disease,High,No,Medical,Immediate Attention
+Medication History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Medication History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Medication History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Medication History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Medication History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Medication History,Cancer,Low,No,Genetic,Moderate Monitoring
+Medication History,Cancer,Medium,Yes,Environmental,High Monitoring
+Medication History,Cancer,High,No,Medical,Immediate Attention
+Medication History,Cancer,Critical,Yes,Lifestyle,Preventive
+Medication History,Obesity,Low,No,Genetic,Moderate Monitoring
+Medication History,Obesity,Medium,Yes,Environmental,High Monitoring
+Medication History,Obesity,High,No,Medical,Immediate Attention
+Medication History,Obesity,Critical,Yes,Lifestyle,Preventive
+Medication History,Depression,Low,No,Genetic,Moderate Monitoring
+Medication History,Depression,Medium,Yes,Environmental,High Monitoring
+Medication History,Depression,High,No,Medical,Immediate Attention
+Medication History,Depression,Critical,Yes,Lifestyle,Preventive
+Medication History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Medication History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Medication History,Anxiety,High,No,Medical,Immediate Attention
+Medication History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Medication History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Medication History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Medication History,Infection Risk,High,No,Medical,Immediate Attention
+Medication History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Medication History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Medication History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Medication History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Medication History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Medication History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Medication History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Medication History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Medication History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Medication History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Medication History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Medication History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Medication History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Heart Disease,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Diabetes,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Diabetes,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Diabetes,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Diabetes,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Hypertension,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Hypertension,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Hypertension,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Hypertension,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Stroke,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Stroke,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Stroke,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Stroke,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Kidney Disease,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Liver Disease,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Respiratory Disorder,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Cancer,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Cancer,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Cancer,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Cancer,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Obesity,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Obesity,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Obesity,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Obesity,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Depression,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Depression,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Depression,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Depression,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Anxiety,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Anxiety,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Anxiety,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Anxiety,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Infection Risk,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Metabolic Disorder,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Autoimmune Disease,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Hormonal Imbalance,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Hormonal Imbalance,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Hormonal Imbalance,Hormonal Disorder,High,No,Medical,Immediate Attention
+Hormonal Imbalance,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Heart Disease,High,No,Medical,Immediate Attention
+Pregnancy,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Diabetes,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Diabetes,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Diabetes,High,No,Medical,Immediate Attention
+Pregnancy,Diabetes,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Hypertension,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Hypertension,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Hypertension,High,No,Medical,Immediate Attention
+Pregnancy,Hypertension,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Stroke,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Stroke,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Stroke,High,No,Medical,Immediate Attention
+Pregnancy,Stroke,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Kidney Disease,High,No,Medical,Immediate Attention
+Pregnancy,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Liver Disease,High,No,Medical,Immediate Attention
+Pregnancy,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Respiratory Disorder,High,No,Medical,Immediate Attention
+Pregnancy,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Cancer,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Cancer,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Cancer,High,No,Medical,Immediate Attention
+Pregnancy,Cancer,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Obesity,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Obesity,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Obesity,High,No,Medical,Immediate Attention
+Pregnancy,Obesity,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Depression,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Depression,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Depression,High,No,Medical,Immediate Attention
+Pregnancy,Depression,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Anxiety,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Anxiety,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Anxiety,High,No,Medical,Immediate Attention
+Pregnancy,Anxiety,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Infection Risk,High,No,Medical,Immediate Attention
+Pregnancy,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Metabolic Disorder,High,No,Medical,Immediate Attention
+Pregnancy,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Autoimmune Disease,High,No,Medical,Immediate Attention
+Pregnancy,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Pregnancy,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Pregnancy,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Pregnancy,Hormonal Disorder,High,No,Medical,Immediate Attention
+Pregnancy,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Menopause,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Menopause,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Menopause,Heart Disease,High,No,Medical,Immediate Attention
+Menopause,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Menopause,Diabetes,Low,No,Genetic,Moderate Monitoring
+Menopause,Diabetes,Medium,Yes,Environmental,High Monitoring
+Menopause,Diabetes,High,No,Medical,Immediate Attention
+Menopause,Diabetes,Critical,Yes,Lifestyle,Preventive
+Menopause,Hypertension,Low,No,Genetic,Moderate Monitoring
+Menopause,Hypertension,Medium,Yes,Environmental,High Monitoring
+Menopause,Hypertension,High,No,Medical,Immediate Attention
+Menopause,Hypertension,Critical,Yes,Lifestyle,Preventive
+Menopause,Stroke,Low,No,Genetic,Moderate Monitoring
+Menopause,Stroke,Medium,Yes,Environmental,High Monitoring
+Menopause,Stroke,High,No,Medical,Immediate Attention
+Menopause,Stroke,Critical,Yes,Lifestyle,Preventive
+Menopause,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Menopause,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Menopause,Kidney Disease,High,No,Medical,Immediate Attention
+Menopause,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Menopause,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Menopause,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Menopause,Liver Disease,High,No,Medical,Immediate Attention
+Menopause,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Menopause,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Menopause,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Menopause,Respiratory Disorder,High,No,Medical,Immediate Attention
+Menopause,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Menopause,Cancer,Low,No,Genetic,Moderate Monitoring
+Menopause,Cancer,Medium,Yes,Environmental,High Monitoring
+Menopause,Cancer,High,No,Medical,Immediate Attention
+Menopause,Cancer,Critical,Yes,Lifestyle,Preventive
+Menopause,Obesity,Low,No,Genetic,Moderate Monitoring
+Menopause,Obesity,Medium,Yes,Environmental,High Monitoring
+Menopause,Obesity,High,No,Medical,Immediate Attention
+Menopause,Obesity,Critical,Yes,Lifestyle,Preventive
+Menopause,Depression,Low,No,Genetic,Moderate Monitoring
+Menopause,Depression,Medium,Yes,Environmental,High Monitoring
+Menopause,Depression,High,No,Medical,Immediate Attention
+Menopause,Depression,Critical,Yes,Lifestyle,Preventive
+Menopause,Anxiety,Low,No,Genetic,Moderate Monitoring
+Menopause,Anxiety,Medium,Yes,Environmental,High Monitoring
+Menopause,Anxiety,High,No,Medical,Immediate Attention
+Menopause,Anxiety,Critical,Yes,Lifestyle,Preventive
+Menopause,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Menopause,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Menopause,Infection Risk,High,No,Medical,Immediate Attention
+Menopause,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Menopause,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Menopause,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Menopause,Metabolic Disorder,High,No,Medical,Immediate Attention
+Menopause,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Menopause,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Menopause,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Menopause,Autoimmune Disease,High,No,Medical,Immediate Attention
+Menopause,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Menopause,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Menopause,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Menopause,Hormonal Disorder,High,No,Medical,Immediate Attention
+Menopause,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Heart Disease,High,No,Medical,Immediate Attention
+Kidney Disease History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Diabetes,High,No,Medical,Immediate Attention
+Kidney Disease History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Hypertension,High,No,Medical,Immediate Attention
+Kidney Disease History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Stroke,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Stroke,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Stroke,High,No,Medical,Immediate Attention
+Kidney Disease History,Stroke,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Kidney Disease,High,No,Medical,Immediate Attention
+Kidney Disease History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Liver Disease,High,No,Medical,Immediate Attention
+Kidney Disease History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Kidney Disease History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Cancer,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Cancer,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Cancer,High,No,Medical,Immediate Attention
+Kidney Disease History,Cancer,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Obesity,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Obesity,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Obesity,High,No,Medical,Immediate Attention
+Kidney Disease History,Obesity,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Depression,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Depression,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Depression,High,No,Medical,Immediate Attention
+Kidney Disease History,Depression,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Anxiety,High,No,Medical,Immediate Attention
+Kidney Disease History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Infection Risk,High,No,Medical,Immediate Attention
+Kidney Disease History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Kidney Disease History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Kidney Disease History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Kidney Disease History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Kidney Disease History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Kidney Disease History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Kidney Disease History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Heart Disease,High,No,Medical,Immediate Attention
+Liver Disease History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Diabetes,High,No,Medical,Immediate Attention
+Liver Disease History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Hypertension,High,No,Medical,Immediate Attention
+Liver Disease History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Stroke,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Stroke,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Stroke,High,No,Medical,Immediate Attention
+Liver Disease History,Stroke,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Kidney Disease,High,No,Medical,Immediate Attention
+Liver Disease History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Liver Disease,High,No,Medical,Immediate Attention
+Liver Disease History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Liver Disease History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Cancer,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Cancer,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Cancer,High,No,Medical,Immediate Attention
+Liver Disease History,Cancer,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Obesity,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Obesity,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Obesity,High,No,Medical,Immediate Attention
+Liver Disease History,Obesity,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Depression,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Depression,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Depression,High,No,Medical,Immediate Attention
+Liver Disease History,Depression,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Anxiety,High,No,Medical,Immediate Attention
+Liver Disease History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Infection Risk,High,No,Medical,Immediate Attention
+Liver Disease History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Liver Disease History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Liver Disease History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Liver Disease History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Liver Disease History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Liver Disease History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Liver Disease History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Heart Disease,High,No,Medical,Immediate Attention
+Cardiac History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Diabetes,High,No,Medical,Immediate Attention
+Cardiac History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Hypertension,High,No,Medical,Immediate Attention
+Cardiac History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Stroke,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Stroke,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Stroke,High,No,Medical,Immediate Attention
+Cardiac History,Stroke,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Kidney Disease,High,No,Medical,Immediate Attention
+Cardiac History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Liver Disease,High,No,Medical,Immediate Attention
+Cardiac History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Cardiac History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Cancer,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Cancer,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Cancer,High,No,Medical,Immediate Attention
+Cardiac History,Cancer,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Obesity,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Obesity,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Obesity,High,No,Medical,Immediate Attention
+Cardiac History,Obesity,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Depression,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Depression,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Depression,High,No,Medical,Immediate Attention
+Cardiac History,Depression,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Anxiety,High,No,Medical,Immediate Attention
+Cardiac History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Infection Risk,High,No,Medical,Immediate Attention
+Cardiac History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Cardiac History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Cardiac History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Cardiac History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Cardiac History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Cardiac History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Cardiac History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Heart Disease,High,No,Medical,Immediate Attention
+Autoimmune History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Diabetes,High,No,Medical,Immediate Attention
+Autoimmune History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Hypertension,High,No,Medical,Immediate Attention
+Autoimmune History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Stroke,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Stroke,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Stroke,High,No,Medical,Immediate Attention
+Autoimmune History,Stroke,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Kidney Disease,High,No,Medical,Immediate Attention
+Autoimmune History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Liver Disease,High,No,Medical,Immediate Attention
+Autoimmune History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Autoimmune History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Cancer,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Cancer,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Cancer,High,No,Medical,Immediate Attention
+Autoimmune History,Cancer,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Obesity,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Obesity,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Obesity,High,No,Medical,Immediate Attention
+Autoimmune History,Obesity,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Depression,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Depression,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Depression,High,No,Medical,Immediate Attention
+Autoimmune History,Depression,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Anxiety,High,No,Medical,Immediate Attention
+Autoimmune History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Infection Risk,High,No,Medical,Immediate Attention
+Autoimmune History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Autoimmune History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Autoimmune History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Autoimmune History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Autoimmune History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Autoimmune History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Autoimmune History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Cancer History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Cancer History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Cancer History,Heart Disease,High,No,Medical,Immediate Attention
+Cancer History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Cancer History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Cancer History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Cancer History,Diabetes,High,No,Medical,Immediate Attention
+Cancer History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Cancer History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Cancer History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Cancer History,Hypertension,High,No,Medical,Immediate Attention
+Cancer History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Cancer History,Stroke,Low,No,Genetic,Moderate Monitoring
+Cancer History,Stroke,Medium,Yes,Environmental,High Monitoring
+Cancer History,Stroke,High,No,Medical,Immediate Attention
+Cancer History,Stroke,Critical,Yes,Lifestyle,Preventive
+Cancer History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Cancer History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Cancer History,Kidney Disease,High,No,Medical,Immediate Attention
+Cancer History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Cancer History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Cancer History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Cancer History,Liver Disease,High,No,Medical,Immediate Attention
+Cancer History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Cancer History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Cancer History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Cancer History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Cancer History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Cancer History,Cancer,Low,No,Genetic,Moderate Monitoring
+Cancer History,Cancer,Medium,Yes,Environmental,High Monitoring
+Cancer History,Cancer,High,No,Medical,Immediate Attention
+Cancer History,Cancer,Critical,Yes,Lifestyle,Preventive
+Cancer History,Obesity,Low,No,Genetic,Moderate Monitoring
+Cancer History,Obesity,Medium,Yes,Environmental,High Monitoring
+Cancer History,Obesity,High,No,Medical,Immediate Attention
+Cancer History,Obesity,Critical,Yes,Lifestyle,Preventive
+Cancer History,Depression,Low,No,Genetic,Moderate Monitoring
+Cancer History,Depression,Medium,Yes,Environmental,High Monitoring
+Cancer History,Depression,High,No,Medical,Immediate Attention
+Cancer History,Depression,Critical,Yes,Lifestyle,Preventive
+Cancer History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Cancer History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Cancer History,Anxiety,High,No,Medical,Immediate Attention
+Cancer History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Cancer History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Cancer History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Cancer History,Infection Risk,High,No,Medical,Immediate Attention
+Cancer History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Cancer History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Cancer History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Cancer History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Cancer History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Cancer History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Cancer History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Cancer History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Cancer History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Cancer History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Cancer History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Cancer History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Cancer History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Allergy History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Allergy History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Allergy History,Heart Disease,High,No,Medical,Immediate Attention
+Allergy History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Allergy History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Allergy History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Allergy History,Diabetes,High,No,Medical,Immediate Attention
+Allergy History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Allergy History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Allergy History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Allergy History,Hypertension,High,No,Medical,Immediate Attention
+Allergy History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Allergy History,Stroke,Low,No,Genetic,Moderate Monitoring
+Allergy History,Stroke,Medium,Yes,Environmental,High Monitoring
+Allergy History,Stroke,High,No,Medical,Immediate Attention
+Allergy History,Stroke,Critical,Yes,Lifestyle,Preventive
+Allergy History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Allergy History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Allergy History,Kidney Disease,High,No,Medical,Immediate Attention
+Allergy History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Allergy History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Allergy History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Allergy History,Liver Disease,High,No,Medical,Immediate Attention
+Allergy History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Allergy History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Allergy History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Allergy History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Allergy History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Allergy History,Cancer,Low,No,Genetic,Moderate Monitoring
+Allergy History,Cancer,Medium,Yes,Environmental,High Monitoring
+Allergy History,Cancer,High,No,Medical,Immediate Attention
+Allergy History,Cancer,Critical,Yes,Lifestyle,Preventive
+Allergy History,Obesity,Low,No,Genetic,Moderate Monitoring
+Allergy History,Obesity,Medium,Yes,Environmental,High Monitoring
+Allergy History,Obesity,High,No,Medical,Immediate Attention
+Allergy History,Obesity,Critical,Yes,Lifestyle,Preventive
+Allergy History,Depression,Low,No,Genetic,Moderate Monitoring
+Allergy History,Depression,Medium,Yes,Environmental,High Monitoring
+Allergy History,Depression,High,No,Medical,Immediate Attention
+Allergy History,Depression,Critical,Yes,Lifestyle,Preventive
+Allergy History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Allergy History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Allergy History,Anxiety,High,No,Medical,Immediate Attention
+Allergy History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Allergy History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Allergy History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Allergy History,Infection Risk,High,No,Medical,Immediate Attention
+Allergy History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Allergy History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Allergy History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Allergy History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Allergy History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Allergy History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Allergy History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Allergy History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Allergy History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Allergy History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Allergy History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Allergy History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Allergy History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Heart Disease,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Diabetes,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Diabetes,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Diabetes,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Diabetes,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Hypertension,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Hypertension,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Hypertension,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Hypertension,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Stroke,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Stroke,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Stroke,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Stroke,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Kidney Disease,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Liver Disease,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Respiratory Disorder,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Cancer,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Cancer,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Cancer,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Cancer,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Obesity,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Obesity,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Obesity,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Obesity,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Depression,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Depression,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Depression,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Depression,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Anxiety,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Anxiety,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Anxiety,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Anxiety,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Infection Risk,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Metabolic Disorder,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Autoimmune Disease,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Vitamin Deficiency,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Vitamin Deficiency,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Vitamin Deficiency,Hormonal Disorder,High,No,Medical,Immediate Attention
+Vitamin Deficiency,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Dehydration,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Dehydration,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Dehydration,Heart Disease,High,No,Medical,Immediate Attention
+Dehydration,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Dehydration,Diabetes,Low,No,Genetic,Moderate Monitoring
+Dehydration,Diabetes,Medium,Yes,Environmental,High Monitoring
+Dehydration,Diabetes,High,No,Medical,Immediate Attention
+Dehydration,Diabetes,Critical,Yes,Lifestyle,Preventive
+Dehydration,Hypertension,Low,No,Genetic,Moderate Monitoring
+Dehydration,Hypertension,Medium,Yes,Environmental,High Monitoring
+Dehydration,Hypertension,High,No,Medical,Immediate Attention
+Dehydration,Hypertension,Critical,Yes,Lifestyle,Preventive
+Dehydration,Stroke,Low,No,Genetic,Moderate Monitoring
+Dehydration,Stroke,Medium,Yes,Environmental,High Monitoring
+Dehydration,Stroke,High,No,Medical,Immediate Attention
+Dehydration,Stroke,Critical,Yes,Lifestyle,Preventive
+Dehydration,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Dehydration,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Dehydration,Kidney Disease,High,No,Medical,Immediate Attention
+Dehydration,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Dehydration,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Dehydration,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Dehydration,Liver Disease,High,No,Medical,Immediate Attention
+Dehydration,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Dehydration,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Dehydration,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Dehydration,Respiratory Disorder,High,No,Medical,Immediate Attention
+Dehydration,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Dehydration,Cancer,Low,No,Genetic,Moderate Monitoring
+Dehydration,Cancer,Medium,Yes,Environmental,High Monitoring
+Dehydration,Cancer,High,No,Medical,Immediate Attention
+Dehydration,Cancer,Critical,Yes,Lifestyle,Preventive
+Dehydration,Obesity,Low,No,Genetic,Moderate Monitoring
+Dehydration,Obesity,Medium,Yes,Environmental,High Monitoring
+Dehydration,Obesity,High,No,Medical,Immediate Attention
+Dehydration,Obesity,Critical,Yes,Lifestyle,Preventive
+Dehydration,Depression,Low,No,Genetic,Moderate Monitoring
+Dehydration,Depression,Medium,Yes,Environmental,High Monitoring
+Dehydration,Depression,High,No,Medical,Immediate Attention
+Dehydration,Depression,Critical,Yes,Lifestyle,Preventive
+Dehydration,Anxiety,Low,No,Genetic,Moderate Monitoring
+Dehydration,Anxiety,Medium,Yes,Environmental,High Monitoring
+Dehydration,Anxiety,High,No,Medical,Immediate Attention
+Dehydration,Anxiety,Critical,Yes,Lifestyle,Preventive
+Dehydration,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Dehydration,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Dehydration,Infection Risk,High,No,Medical,Immediate Attention
+Dehydration,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Dehydration,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Dehydration,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Dehydration,Metabolic Disorder,High,No,Medical,Immediate Attention
+Dehydration,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Dehydration,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Dehydration,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Dehydration,Autoimmune Disease,High,No,Medical,Immediate Attention
+Dehydration,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Dehydration,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Dehydration,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Dehydration,Hormonal Disorder,High,No,Medical,Immediate Attention
+Dehydration,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Heart Disease,High,No,Medical,Immediate Attention
+Poor Hygiene,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Diabetes,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Diabetes,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Diabetes,High,No,Medical,Immediate Attention
+Poor Hygiene,Diabetes,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Hypertension,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Hypertension,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Hypertension,High,No,Medical,Immediate Attention
+Poor Hygiene,Hypertension,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Stroke,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Stroke,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Stroke,High,No,Medical,Immediate Attention
+Poor Hygiene,Stroke,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Kidney Disease,High,No,Medical,Immediate Attention
+Poor Hygiene,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Liver Disease,High,No,Medical,Immediate Attention
+Poor Hygiene,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Respiratory Disorder,High,No,Medical,Immediate Attention
+Poor Hygiene,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Cancer,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Cancer,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Cancer,High,No,Medical,Immediate Attention
+Poor Hygiene,Cancer,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Obesity,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Obesity,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Obesity,High,No,Medical,Immediate Attention
+Poor Hygiene,Obesity,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Depression,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Depression,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Depression,High,No,Medical,Immediate Attention
+Poor Hygiene,Depression,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Anxiety,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Anxiety,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Anxiety,High,No,Medical,Immediate Attention
+Poor Hygiene,Anxiety,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Infection Risk,High,No,Medical,Immediate Attention
+Poor Hygiene,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Metabolic Disorder,High,No,Medical,Immediate Attention
+Poor Hygiene,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Autoimmune Disease,High,No,Medical,Immediate Attention
+Poor Hygiene,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Poor Hygiene,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Poor Hygiene,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Poor Hygiene,Hormonal Disorder,High,No,Medical,Immediate Attention
+Poor Hygiene,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Travel History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Travel History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Travel History,Heart Disease,High,No,Medical,Immediate Attention
+Travel History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Travel History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Travel History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Travel History,Diabetes,High,No,Medical,Immediate Attention
+Travel History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Travel History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Travel History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Travel History,Hypertension,High,No,Medical,Immediate Attention
+Travel History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Travel History,Stroke,Low,No,Genetic,Moderate Monitoring
+Travel History,Stroke,Medium,Yes,Environmental,High Monitoring
+Travel History,Stroke,High,No,Medical,Immediate Attention
+Travel History,Stroke,Critical,Yes,Lifestyle,Preventive
+Travel History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Travel History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Travel History,Kidney Disease,High,No,Medical,Immediate Attention
+Travel History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Travel History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Travel History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Travel History,Liver Disease,High,No,Medical,Immediate Attention
+Travel History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Travel History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Travel History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Travel History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Travel History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Travel History,Cancer,Low,No,Genetic,Moderate Monitoring
+Travel History,Cancer,Medium,Yes,Environmental,High Monitoring
+Travel History,Cancer,High,No,Medical,Immediate Attention
+Travel History,Cancer,Critical,Yes,Lifestyle,Preventive
+Travel History,Obesity,Low,No,Genetic,Moderate Monitoring
+Travel History,Obesity,Medium,Yes,Environmental,High Monitoring
+Travel History,Obesity,High,No,Medical,Immediate Attention
+Travel History,Obesity,Critical,Yes,Lifestyle,Preventive
+Travel History,Depression,Low,No,Genetic,Moderate Monitoring
+Travel History,Depression,Medium,Yes,Environmental,High Monitoring
+Travel History,Depression,High,No,Medical,Immediate Attention
+Travel History,Depression,Critical,Yes,Lifestyle,Preventive
+Travel History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Travel History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Travel History,Anxiety,High,No,Medical,Immediate Attention
+Travel History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Travel History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Travel History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Travel History,Infection Risk,High,No,Medical,Immediate Attention
+Travel History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Travel History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Travel History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Travel History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Travel History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Travel History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Travel History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Travel History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Travel History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Travel History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Travel History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Travel History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Travel History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Heart Disease,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Diabetes,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Diabetes,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Diabetes,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Diabetes,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Hypertension,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Hypertension,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Hypertension,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Hypertension,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Stroke,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Stroke,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Stroke,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Stroke,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Kidney Disease,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Liver Disease,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Respiratory Disorder,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Cancer,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Cancer,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Cancer,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Cancer,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Obesity,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Obesity,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Obesity,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Obesity,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Depression,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Depression,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Depression,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Depression,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Anxiety,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Anxiety,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Anxiety,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Anxiety,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Infection Risk,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Metabolic Disorder,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Autoimmune Disease,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Unsafe Water Intake,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Unsafe Water Intake,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Unsafe Water Intake,Hormonal Disorder,High,No,Medical,Immediate Attention
+Unsafe Water Intake,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Heart Disease,High,No,Medical,Immediate Attention
+Unprotected Exposure,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Diabetes,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Diabetes,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Diabetes,High,No,Medical,Immediate Attention
+Unprotected Exposure,Diabetes,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Hypertension,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Hypertension,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Hypertension,High,No,Medical,Immediate Attention
+Unprotected Exposure,Hypertension,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Stroke,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Stroke,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Stroke,High,No,Medical,Immediate Attention
+Unprotected Exposure,Stroke,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Kidney Disease,High,No,Medical,Immediate Attention
+Unprotected Exposure,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Liver Disease,High,No,Medical,Immediate Attention
+Unprotected Exposure,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Respiratory Disorder,High,No,Medical,Immediate Attention
+Unprotected Exposure,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Cancer,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Cancer,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Cancer,High,No,Medical,Immediate Attention
+Unprotected Exposure,Cancer,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Obesity,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Obesity,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Obesity,High,No,Medical,Immediate Attention
+Unprotected Exposure,Obesity,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Depression,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Depression,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Depression,High,No,Medical,Immediate Attention
+Unprotected Exposure,Depression,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Anxiety,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Anxiety,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Anxiety,High,No,Medical,Immediate Attention
+Unprotected Exposure,Anxiety,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Infection Risk,High,No,Medical,Immediate Attention
+Unprotected Exposure,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Metabolic Disorder,High,No,Medical,Immediate Attention
+Unprotected Exposure,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Autoimmune Disease,High,No,Medical,Immediate Attention
+Unprotected Exposure,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Unprotected Exposure,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Unprotected Exposure,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Unprotected Exposure,Hormonal Disorder,High,No,Medical,Immediate Attention
+Unprotected Exposure,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Heart Disease,High,No,Medical,Immediate Attention
+Radiation Exposure,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Diabetes,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Diabetes,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Diabetes,High,No,Medical,Immediate Attention
+Radiation Exposure,Diabetes,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Hypertension,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Hypertension,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Hypertension,High,No,Medical,Immediate Attention
+Radiation Exposure,Hypertension,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Stroke,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Stroke,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Stroke,High,No,Medical,Immediate Attention
+Radiation Exposure,Stroke,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Kidney Disease,High,No,Medical,Immediate Attention
+Radiation Exposure,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Liver Disease,High,No,Medical,Immediate Attention
+Radiation Exposure,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Respiratory Disorder,High,No,Medical,Immediate Attention
+Radiation Exposure,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Cancer,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Cancer,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Cancer,High,No,Medical,Immediate Attention
+Radiation Exposure,Cancer,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Obesity,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Obesity,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Obesity,High,No,Medical,Immediate Attention
+Radiation Exposure,Obesity,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Depression,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Depression,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Depression,High,No,Medical,Immediate Attention
+Radiation Exposure,Depression,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Anxiety,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Anxiety,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Anxiety,High,No,Medical,Immediate Attention
+Radiation Exposure,Anxiety,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Infection Risk,High,No,Medical,Immediate Attention
+Radiation Exposure,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Metabolic Disorder,High,No,Medical,Immediate Attention
+Radiation Exposure,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Autoimmune Disease,High,No,Medical,Immediate Attention
+Radiation Exposure,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Radiation Exposure,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Radiation Exposure,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Radiation Exposure,Hormonal Disorder,High,No,Medical,Immediate Attention
+Radiation Exposure,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Heart Disease,High,No,Medical,Immediate Attention
+Drug Abuse,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Diabetes,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Diabetes,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Diabetes,High,No,Medical,Immediate Attention
+Drug Abuse,Diabetes,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Hypertension,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Hypertension,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Hypertension,High,No,Medical,Immediate Attention
+Drug Abuse,Hypertension,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Stroke,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Stroke,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Stroke,High,No,Medical,Immediate Attention
+Drug Abuse,Stroke,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Kidney Disease,High,No,Medical,Immediate Attention
+Drug Abuse,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Liver Disease,High,No,Medical,Immediate Attention
+Drug Abuse,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Respiratory Disorder,High,No,Medical,Immediate Attention
+Drug Abuse,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Cancer,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Cancer,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Cancer,High,No,Medical,Immediate Attention
+Drug Abuse,Cancer,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Obesity,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Obesity,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Obesity,High,No,Medical,Immediate Attention
+Drug Abuse,Obesity,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Depression,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Depression,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Depression,High,No,Medical,Immediate Attention
+Drug Abuse,Depression,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Anxiety,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Anxiety,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Anxiety,High,No,Medical,Immediate Attention
+Drug Abuse,Anxiety,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Infection Risk,High,No,Medical,Immediate Attention
+Drug Abuse,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Metabolic Disorder,High,No,Medical,Immediate Attention
+Drug Abuse,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Autoimmune Disease,High,No,Medical,Immediate Attention
+Drug Abuse,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Drug Abuse,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Drug Abuse,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Drug Abuse,Hormonal Disorder,High,No,Medical,Immediate Attention
+Drug Abuse,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Heart Disease,High,No,Medical,Immediate Attention
+Mental Health Disorder,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Diabetes,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Diabetes,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Diabetes,High,No,Medical,Immediate Attention
+Mental Health Disorder,Diabetes,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Hypertension,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Hypertension,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Hypertension,High,No,Medical,Immediate Attention
+Mental Health Disorder,Hypertension,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Stroke,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Stroke,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Stroke,High,No,Medical,Immediate Attention
+Mental Health Disorder,Stroke,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Kidney Disease,High,No,Medical,Immediate Attention
+Mental Health Disorder,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Liver Disease,High,No,Medical,Immediate Attention
+Mental Health Disorder,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Respiratory Disorder,High,No,Medical,Immediate Attention
+Mental Health Disorder,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Cancer,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Cancer,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Cancer,High,No,Medical,Immediate Attention
+Mental Health Disorder,Cancer,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Obesity,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Obesity,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Obesity,High,No,Medical,Immediate Attention
+Mental Health Disorder,Obesity,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Depression,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Depression,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Depression,High,No,Medical,Immediate Attention
+Mental Health Disorder,Depression,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Anxiety,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Anxiety,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Anxiety,High,No,Medical,Immediate Attention
+Mental Health Disorder,Anxiety,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Infection Risk,High,No,Medical,Immediate Attention
+Mental Health Disorder,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Metabolic Disorder,High,No,Medical,Immediate Attention
+Mental Health Disorder,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Autoimmune Disease,High,No,Medical,Immediate Attention
+Mental Health Disorder,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Mental Health Disorder,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Mental Health Disorder,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Mental Health Disorder,Hormonal Disorder,High,No,Medical,Immediate Attention
+Mental Health Disorder,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Heart Disease,High,No,Medical,Immediate Attention
+Physical Inactivity,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Diabetes,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Diabetes,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Diabetes,High,No,Medical,Immediate Attention
+Physical Inactivity,Diabetes,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Hypertension,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Hypertension,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Hypertension,High,No,Medical,Immediate Attention
+Physical Inactivity,Hypertension,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Stroke,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Stroke,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Stroke,High,No,Medical,Immediate Attention
+Physical Inactivity,Stroke,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Kidney Disease,High,No,Medical,Immediate Attention
+Physical Inactivity,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Liver Disease,High,No,Medical,Immediate Attention
+Physical Inactivity,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Respiratory Disorder,High,No,Medical,Immediate Attention
+Physical Inactivity,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Cancer,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Cancer,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Cancer,High,No,Medical,Immediate Attention
+Physical Inactivity,Cancer,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Obesity,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Obesity,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Obesity,High,No,Medical,Immediate Attention
+Physical Inactivity,Obesity,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Depression,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Depression,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Depression,High,No,Medical,Immediate Attention
+Physical Inactivity,Depression,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Anxiety,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Anxiety,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Anxiety,High,No,Medical,Immediate Attention
+Physical Inactivity,Anxiety,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Infection Risk,High,No,Medical,Immediate Attention
+Physical Inactivity,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Metabolic Disorder,High,No,Medical,Immediate Attention
+Physical Inactivity,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Autoimmune Disease,High,No,Medical,Immediate Attention
+Physical Inactivity,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Physical Inactivity,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Physical Inactivity,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Physical Inactivity,Hormonal Disorder,High,No,Medical,Immediate Attention
+Physical Inactivity,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Heart Disease,High,No,Medical,Immediate Attention
+Excess Screen Time,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Diabetes,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Diabetes,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Diabetes,High,No,Medical,Immediate Attention
+Excess Screen Time,Diabetes,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Hypertension,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Hypertension,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Hypertension,High,No,Medical,Immediate Attention
+Excess Screen Time,Hypertension,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Stroke,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Stroke,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Stroke,High,No,Medical,Immediate Attention
+Excess Screen Time,Stroke,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Kidney Disease,High,No,Medical,Immediate Attention
+Excess Screen Time,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Liver Disease,High,No,Medical,Immediate Attention
+Excess Screen Time,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Respiratory Disorder,High,No,Medical,Immediate Attention
+Excess Screen Time,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Cancer,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Cancer,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Cancer,High,No,Medical,Immediate Attention
+Excess Screen Time,Cancer,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Obesity,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Obesity,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Obesity,High,No,Medical,Immediate Attention
+Excess Screen Time,Obesity,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Depression,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Depression,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Depression,High,No,Medical,Immediate Attention
+Excess Screen Time,Depression,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Anxiety,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Anxiety,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Anxiety,High,No,Medical,Immediate Attention
+Excess Screen Time,Anxiety,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Infection Risk,High,No,Medical,Immediate Attention
+Excess Screen Time,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Metabolic Disorder,High,No,Medical,Immediate Attention
+Excess Screen Time,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Autoimmune Disease,High,No,Medical,Immediate Attention
+Excess Screen Time,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Excess Screen Time,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Excess Screen Time,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Excess Screen Time,Hormonal Disorder,High,No,Medical,Immediate Attention
+Excess Screen Time,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Heart Disease,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Heart Disease,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Heart Disease,High,No,Medical,Immediate Attention
+High Caffeine Intake,Heart Disease,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Diabetes,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Diabetes,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Diabetes,High,No,Medical,Immediate Attention
+High Caffeine Intake,Diabetes,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Hypertension,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Hypertension,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Hypertension,High,No,Medical,Immediate Attention
+High Caffeine Intake,Hypertension,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Stroke,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Stroke,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Stroke,High,No,Medical,Immediate Attention
+High Caffeine Intake,Stroke,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Kidney Disease,High,No,Medical,Immediate Attention
+High Caffeine Intake,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Liver Disease,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Liver Disease,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Liver Disease,High,No,Medical,Immediate Attention
+High Caffeine Intake,Liver Disease,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Respiratory Disorder,High,No,Medical,Immediate Attention
+High Caffeine Intake,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Cancer,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Cancer,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Cancer,High,No,Medical,Immediate Attention
+High Caffeine Intake,Cancer,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Obesity,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Obesity,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Obesity,High,No,Medical,Immediate Attention
+High Caffeine Intake,Obesity,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Depression,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Depression,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Depression,High,No,Medical,Immediate Attention
+High Caffeine Intake,Depression,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Anxiety,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Anxiety,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Anxiety,High,No,Medical,Immediate Attention
+High Caffeine Intake,Anxiety,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Infection Risk,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Infection Risk,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Infection Risk,High,No,Medical,Immediate Attention
+High Caffeine Intake,Infection Risk,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Metabolic Disorder,High,No,Medical,Immediate Attention
+High Caffeine Intake,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Autoimmune Disease,High,No,Medical,Immediate Attention
+High Caffeine Intake,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+High Caffeine Intake,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+High Caffeine Intake,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+High Caffeine Intake,Hormonal Disorder,High,No,Medical,Immediate Attention
+High Caffeine Intake,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Heart Disease,High,No,Medical,Immediate Attention
+Low Fiber Diet,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Diabetes,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Diabetes,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Diabetes,High,No,Medical,Immediate Attention
+Low Fiber Diet,Diabetes,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Hypertension,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Hypertension,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Hypertension,High,No,Medical,Immediate Attention
+Low Fiber Diet,Hypertension,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Stroke,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Stroke,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Stroke,High,No,Medical,Immediate Attention
+Low Fiber Diet,Stroke,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Kidney Disease,High,No,Medical,Immediate Attention
+Low Fiber Diet,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Liver Disease,High,No,Medical,Immediate Attention
+Low Fiber Diet,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Respiratory Disorder,High,No,Medical,Immediate Attention
+Low Fiber Diet,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Cancer,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Cancer,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Cancer,High,No,Medical,Immediate Attention
+Low Fiber Diet,Cancer,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Obesity,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Obesity,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Obesity,High,No,Medical,Immediate Attention
+Low Fiber Diet,Obesity,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Depression,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Depression,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Depression,High,No,Medical,Immediate Attention
+Low Fiber Diet,Depression,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Anxiety,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Anxiety,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Anxiety,High,No,Medical,Immediate Attention
+Low Fiber Diet,Anxiety,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Infection Risk,High,No,Medical,Immediate Attention
+Low Fiber Diet,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Metabolic Disorder,High,No,Medical,Immediate Attention
+Low Fiber Diet,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Autoimmune Disease,High,No,Medical,Immediate Attention
+Low Fiber Diet,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Low Fiber Diet,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Low Fiber Diet,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Low Fiber Diet,Hormonal Disorder,High,No,Medical,Immediate Attention
+Low Fiber Diet,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Heart Disease,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Heart Disease,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Heart Disease,High,No,Medical,Immediate Attention
+High Fat Diet,Heart Disease,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Diabetes,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Diabetes,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Diabetes,High,No,Medical,Immediate Attention
+High Fat Diet,Diabetes,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Hypertension,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Hypertension,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Hypertension,High,No,Medical,Immediate Attention
+High Fat Diet,Hypertension,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Stroke,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Stroke,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Stroke,High,No,Medical,Immediate Attention
+High Fat Diet,Stroke,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Kidney Disease,High,No,Medical,Immediate Attention
+High Fat Diet,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Liver Disease,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Liver Disease,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Liver Disease,High,No,Medical,Immediate Attention
+High Fat Diet,Liver Disease,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Respiratory Disorder,High,No,Medical,Immediate Attention
+High Fat Diet,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Cancer,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Cancer,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Cancer,High,No,Medical,Immediate Attention
+High Fat Diet,Cancer,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Obesity,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Obesity,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Obesity,High,No,Medical,Immediate Attention
+High Fat Diet,Obesity,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Depression,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Depression,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Depression,High,No,Medical,Immediate Attention
+High Fat Diet,Depression,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Anxiety,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Anxiety,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Anxiety,High,No,Medical,Immediate Attention
+High Fat Diet,Anxiety,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Infection Risk,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Infection Risk,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Infection Risk,High,No,Medical,Immediate Attention
+High Fat Diet,Infection Risk,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Metabolic Disorder,High,No,Medical,Immediate Attention
+High Fat Diet,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Autoimmune Disease,High,No,Medical,Immediate Attention
+High Fat Diet,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+High Fat Diet,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+High Fat Diet,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+High Fat Diet,Hormonal Disorder,High,No,Medical,Immediate Attention
+High Fat Diet,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Heart Disease,High,No,Medical,Immediate Attention
+Urban Lifestyle,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Diabetes,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Diabetes,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Diabetes,High,No,Medical,Immediate Attention
+Urban Lifestyle,Diabetes,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Hypertension,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Hypertension,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Hypertension,High,No,Medical,Immediate Attention
+Urban Lifestyle,Hypertension,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Stroke,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Stroke,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Stroke,High,No,Medical,Immediate Attention
+Urban Lifestyle,Stroke,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Kidney Disease,High,No,Medical,Immediate Attention
+Urban Lifestyle,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Liver Disease,High,No,Medical,Immediate Attention
+Urban Lifestyle,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Respiratory Disorder,High,No,Medical,Immediate Attention
+Urban Lifestyle,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Cancer,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Cancer,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Cancer,High,No,Medical,Immediate Attention
+Urban Lifestyle,Cancer,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Obesity,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Obesity,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Obesity,High,No,Medical,Immediate Attention
+Urban Lifestyle,Obesity,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Depression,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Depression,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Depression,High,No,Medical,Immediate Attention
+Urban Lifestyle,Depression,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Anxiety,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Anxiety,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Anxiety,High,No,Medical,Immediate Attention
+Urban Lifestyle,Anxiety,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Infection Risk,High,No,Medical,Immediate Attention
+Urban Lifestyle,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Metabolic Disorder,High,No,Medical,Immediate Attention
+Urban Lifestyle,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Autoimmune Disease,High,No,Medical,Immediate Attention
+Urban Lifestyle,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Urban Lifestyle,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Urban Lifestyle,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Urban Lifestyle,Hormonal Disorder,High,No,Medical,Immediate Attention
+Urban Lifestyle,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Heart Disease,High,No,Medical,Immediate Attention
+Rural Exposure,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Diabetes,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Diabetes,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Diabetes,High,No,Medical,Immediate Attention
+Rural Exposure,Diabetes,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Hypertension,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Hypertension,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Hypertension,High,No,Medical,Immediate Attention
+Rural Exposure,Hypertension,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Stroke,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Stroke,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Stroke,High,No,Medical,Immediate Attention
+Rural Exposure,Stroke,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Kidney Disease,High,No,Medical,Immediate Attention
+Rural Exposure,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Liver Disease,High,No,Medical,Immediate Attention
+Rural Exposure,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Respiratory Disorder,High,No,Medical,Immediate Attention
+Rural Exposure,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Cancer,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Cancer,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Cancer,High,No,Medical,Immediate Attention
+Rural Exposure,Cancer,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Obesity,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Obesity,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Obesity,High,No,Medical,Immediate Attention
+Rural Exposure,Obesity,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Depression,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Depression,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Depression,High,No,Medical,Immediate Attention
+Rural Exposure,Depression,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Anxiety,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Anxiety,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Anxiety,High,No,Medical,Immediate Attention
+Rural Exposure,Anxiety,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Infection Risk,High,No,Medical,Immediate Attention
+Rural Exposure,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Metabolic Disorder,High,No,Medical,Immediate Attention
+Rural Exposure,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Autoimmune Disease,High,No,Medical,Immediate Attention
+Rural Exposure,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Rural Exposure,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Rural Exposure,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Rural Exposure,Hormonal Disorder,High,No,Medical,Immediate Attention
+Rural Exposure,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Heart Disease,High,No,Medical,Immediate Attention
+Climate Exposure,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Diabetes,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Diabetes,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Diabetes,High,No,Medical,Immediate Attention
+Climate Exposure,Diabetes,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Hypertension,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Hypertension,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Hypertension,High,No,Medical,Immediate Attention
+Climate Exposure,Hypertension,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Stroke,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Stroke,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Stroke,High,No,Medical,Immediate Attention
+Climate Exposure,Stroke,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Kidney Disease,High,No,Medical,Immediate Attention
+Climate Exposure,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Liver Disease,High,No,Medical,Immediate Attention
+Climate Exposure,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Respiratory Disorder,High,No,Medical,Immediate Attention
+Climate Exposure,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Cancer,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Cancer,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Cancer,High,No,Medical,Immediate Attention
+Climate Exposure,Cancer,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Obesity,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Obesity,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Obesity,High,No,Medical,Immediate Attention
+Climate Exposure,Obesity,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Depression,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Depression,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Depression,High,No,Medical,Immediate Attention
+Climate Exposure,Depression,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Anxiety,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Anxiety,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Anxiety,High,No,Medical,Immediate Attention
+Climate Exposure,Anxiety,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Infection Risk,High,No,Medical,Immediate Attention
+Climate Exposure,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Metabolic Disorder,High,No,Medical,Immediate Attention
+Climate Exposure,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Autoimmune Disease,High,No,Medical,Immediate Attention
+Climate Exposure,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Climate Exposure,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Climate Exposure,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Climate Exposure,Hormonal Disorder,High,No,Medical,Immediate Attention
+Climate Exposure,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Heart Disease,High,No,Medical,Immediate Attention
+Seasonal Variation,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Diabetes,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Diabetes,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Diabetes,High,No,Medical,Immediate Attention
+Seasonal Variation,Diabetes,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Hypertension,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Hypertension,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Hypertension,High,No,Medical,Immediate Attention
+Seasonal Variation,Hypertension,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Stroke,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Stroke,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Stroke,High,No,Medical,Immediate Attention
+Seasonal Variation,Stroke,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Kidney Disease,High,No,Medical,Immediate Attention
+Seasonal Variation,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Liver Disease,High,No,Medical,Immediate Attention
+Seasonal Variation,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Respiratory Disorder,High,No,Medical,Immediate Attention
+Seasonal Variation,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Cancer,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Cancer,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Cancer,High,No,Medical,Immediate Attention
+Seasonal Variation,Cancer,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Obesity,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Obesity,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Obesity,High,No,Medical,Immediate Attention
+Seasonal Variation,Obesity,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Depression,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Depression,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Depression,High,No,Medical,Immediate Attention
+Seasonal Variation,Depression,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Anxiety,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Anxiety,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Anxiety,High,No,Medical,Immediate Attention
+Seasonal Variation,Anxiety,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Infection Risk,High,No,Medical,Immediate Attention
+Seasonal Variation,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Metabolic Disorder,High,No,Medical,Immediate Attention
+Seasonal Variation,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Autoimmune Disease,High,No,Medical,Immediate Attention
+Seasonal Variation,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Seasonal Variation,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Seasonal Variation,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Seasonal Variation,Hormonal Disorder,High,No,Medical,Immediate Attention
+Seasonal Variation,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
+Injury History,Heart Disease,Low,No,Genetic,Moderate Monitoring
+Injury History,Heart Disease,Medium,Yes,Environmental,High Monitoring
+Injury History,Heart Disease,High,No,Medical,Immediate Attention
+Injury History,Heart Disease,Critical,Yes,Lifestyle,Preventive
+Injury History,Diabetes,Low,No,Genetic,Moderate Monitoring
+Injury History,Diabetes,Medium,Yes,Environmental,High Monitoring
+Injury History,Diabetes,High,No,Medical,Immediate Attention
+Injury History,Diabetes,Critical,Yes,Lifestyle,Preventive
+Injury History,Hypertension,Low,No,Genetic,Moderate Monitoring
+Injury History,Hypertension,Medium,Yes,Environmental,High Monitoring
+Injury History,Hypertension,High,No,Medical,Immediate Attention
+Injury History,Hypertension,Critical,Yes,Lifestyle,Preventive
+Injury History,Stroke,Low,No,Genetic,Moderate Monitoring
+Injury History,Stroke,Medium,Yes,Environmental,High Monitoring
+Injury History,Stroke,High,No,Medical,Immediate Attention
+Injury History,Stroke,Critical,Yes,Lifestyle,Preventive
+Injury History,Kidney Disease,Low,No,Genetic,Moderate Monitoring
+Injury History,Kidney Disease,Medium,Yes,Environmental,High Monitoring
+Injury History,Kidney Disease,High,No,Medical,Immediate Attention
+Injury History,Kidney Disease,Critical,Yes,Lifestyle,Preventive
+Injury History,Liver Disease,Low,No,Genetic,Moderate Monitoring
+Injury History,Liver Disease,Medium,Yes,Environmental,High Monitoring
+Injury History,Liver Disease,High,No,Medical,Immediate Attention
+Injury History,Liver Disease,Critical,Yes,Lifestyle,Preventive
+Injury History,Respiratory Disorder,Low,No,Genetic,Moderate Monitoring
+Injury History,Respiratory Disorder,Medium,Yes,Environmental,High Monitoring
+Injury History,Respiratory Disorder,High,No,Medical,Immediate Attention
+Injury History,Respiratory Disorder,Critical,Yes,Lifestyle,Preventive
+Injury History,Cancer,Low,No,Genetic,Moderate Monitoring
+Injury History,Cancer,Medium,Yes,Environmental,High Monitoring
+Injury History,Cancer,High,No,Medical,Immediate Attention
+Injury History,Cancer,Critical,Yes,Lifestyle,Preventive
+Injury History,Obesity,Low,No,Genetic,Moderate Monitoring
+Injury History,Obesity,Medium,Yes,Environmental,High Monitoring
+Injury History,Obesity,High,No,Medical,Immediate Attention
+Injury History,Obesity,Critical,Yes,Lifestyle,Preventive
+Injury History,Depression,Low,No,Genetic,Moderate Monitoring
+Injury History,Depression,Medium,Yes,Environmental,High Monitoring
+Injury History,Depression,High,No,Medical,Immediate Attention
+Injury History,Depression,Critical,Yes,Lifestyle,Preventive
+Injury History,Anxiety,Low,No,Genetic,Moderate Monitoring
+Injury History,Anxiety,Medium,Yes,Environmental,High Monitoring
+Injury History,Anxiety,High,No,Medical,Immediate Attention
+Injury History,Anxiety,Critical,Yes,Lifestyle,Preventive
+Injury History,Infection Risk,Low,No,Genetic,Moderate Monitoring
+Injury History,Infection Risk,Medium,Yes,Environmental,High Monitoring
+Injury History,Infection Risk,High,No,Medical,Immediate Attention
+Injury History,Infection Risk,Critical,Yes,Lifestyle,Preventive
+Injury History,Metabolic Disorder,Low,No,Genetic,Moderate Monitoring
+Injury History,Metabolic Disorder,Medium,Yes,Environmental,High Monitoring
+Injury History,Metabolic Disorder,High,No,Medical,Immediate Attention
+Injury History,Metabolic Disorder,Critical,Yes,Lifestyle,Preventive
+Injury History,Autoimmune Disease,Low,No,Genetic,Moderate Monitoring
+Injury History,Autoimmune Disease,Medium,Yes,Environmental,High Monitoring
+Injury History,Autoimmune Disease,High,No,Medical,Immediate Attention
+Injury History,Autoimmune Disease,Critical,Yes,Lifestyle,Preventive
+Injury History,Hormonal Disorder,Low,No,Genetic,Moderate Monitoring
+Injury History,Hormonal Disorder,Medium,Yes,Environmental,High Monitoring
+Injury History,Hormonal Disorder,High,No,Medical,Immediate Attention
+Injury History,Hormonal Disorder,Critical,Yes,Lifestyle,Preventive
