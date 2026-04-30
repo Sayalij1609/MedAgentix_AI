@@ -78,7 +78,7 @@ def xgb_feature_importance(
     # Plot
     top = importance.head(top_n)
     fig, ax = plt.subplots(figsize=(10, max(6, top_n * 0.4)))
-    sns.barplot(x='importance', y='feature', data=top, palette='viridis', ax=ax)
+    sns.barplot(x='importance', y='feature', hue='feature', data=top, palette='viridis', ax=ax, legend=False)
     ax.set_title(f'Top {top_n} Features — XGBoost Importance', fontsize=14, fontweight='bold')
     ax.set_xlabel('Importance Score')
     plt.tight_layout()
@@ -167,6 +167,9 @@ def shap_analysis(
     else:
         mean_abs_shap = np.abs(shap_values).mean(axis=0)
 
+    if hasattr(mean_abs_shap, 'ndim') and mean_abs_shap.ndim > 1:
+        mean_abs_shap = np.mean(mean_abs_shap, axis=1)
+
     shap_importance = pd.DataFrame({
         'feature': X_train.columns,
         'mean_abs_shap': mean_abs_shap,
@@ -177,7 +180,7 @@ def shap_analysis(
     try:
         fig, ax = plt.subplots(figsize=(10, max(6, top_n * 0.4)))
         top = shap_importance.head(top_n)
-        sns.barplot(x='mean_abs_shap', y='feature', data=top, palette='magma', ax=ax)
+        sns.barplot(x='mean_abs_shap', y='feature', hue='feature', data=top, palette='magma', ax=ax, legend=False)
         ax.set_title(f'Top {top_n} Features — SHAP Importance', fontsize=14, fontweight='bold')
         ax.set_xlabel('Mean |SHAP Value|')
         plt.tight_layout()
@@ -246,7 +249,7 @@ def feature_scoring(X: pd.DataFrame, y: pd.Series) -> pd.DataFrame:
     top_n = config.TOP_N_FEATURES
     top = result.head(top_n)
     fig, ax = plt.subplots(figsize=(10, max(6, top_n * 0.4)))
-    sns.barplot(x='mutual_info_score', y='feature', data=top, palette='coolwarm', ax=ax)
+    sns.barplot(x='mutual_info_score', y='feature', hue='feature', data=top, palette='coolwarm', ax=ax, legend=False)
     ax.set_title(f'Top {top_n} Features — Mutual Information', fontsize=14, fontweight='bold')
     ax.set_xlabel('MI Score')
     plt.tight_layout()

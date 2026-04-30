@@ -75,17 +75,17 @@ COLUMN_CONFIG = {
     "core": {
         "categorical": [
             "disease", "fever", "cough", "fatigue", "difficulty_breathing",
-            "gender", "blood_pressure", "cholesterol_level", "outcome_variable",
+            "gender", "blood_pressure", "cholesterol", "outcome",
             "severity", "secondary_disease",
         ],
         "numeric": ["age"],
         "text": [],
-        "target": "outcome_variable",
+        "target": "outcome",
         "join_key": "disease",
         "ordinal": {
             "severity": {"Low": 1, "Moderate": 2, "High": 3},
             "blood_pressure": {"Low": 1, "Normal": 2, "High": 3},
-            "cholesterol_level": {"Normal": 1, "High": 2},
+            "cholesterol": {"Normal": 1, "High": 2},
         },
         "binary": {
             "fever": {"Yes": 1, "No": 0},
@@ -214,11 +214,11 @@ COLUMN_CONFIG = {
 RANDOM_STATE = 42
 TEST_SIZE = 0.2
 VALIDATION_SIZE = None  # Set to 0.15 for 70/15/15 split
-TARGET_COLUMN = "outcome_variable"  # Configurable target for diagnostic model
+TARGET_COLUMN = "outcome"  # Configurable target for diagnostic model
 
 # Balancing configuration — only datasets with classification targets
 BALANCING_TARGETS = {
-    "core": "outcome_variable",
+    "core": "outcome",
     "emergency": "urgency_level",
     "diagnostic": "severity",
 }
