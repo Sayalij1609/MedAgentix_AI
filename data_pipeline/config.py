@@ -41,15 +41,15 @@ def ensure_dirs():
 # ─── Dataset Registry ────────────────────────────────────────────────────────
 # Short name → raw CSV filename
 DATASET_REGISTRY = {
-    "core": "CORE CLINICAL DATASET.csv",
-    "drug": "Drug_Medication_Dataset_5000_Unique_NoRepeats.csv",
-    "emergency": "Emergency_Condition_Dataset_3000_Unique.csv",
-    "medical_knowledge": "Medical_Knowledge_Dataset_2000.csv",
-    "risk": "Risk_Factor_Dataset_1500.csv",
-    "symptom_intelligence": "Symptom_Intelligence_Dataset_1500.csv",
-    "temporal": "Temporal_Dataset_2000_Unique.csv",
-    "differential": "Updated_Differential_Diagnosis_Dataset.csv",
-    "diagnostic": "Updated_Test_Diagnostic_Recommendation_Dataset.csv",
+    "core": "Core Clinical Dataset.csv",
+    "drug": "Drug Medication Dataset.csv",
+    "emergency": "Emergency Condition Dataset.csv",
+    "medical_knowledge": "Medical Knowledge Dataset.csv",
+    "risk": "Risk Factor Dataset.csv",
+    "symptom_intelligence": "Symptom Intelligence Dataset.csv",
+    "temporal": "Temporal Dataset.csv",
+    "differential": "Differential Diagnosis Dataset.csv",
+    "diagnostic": "Test Diagnostic Recommendation Dataset.csv",
 }
 
 # ─── Group Assignments ───────────────────────────────────────────────────────
