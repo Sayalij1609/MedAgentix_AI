@@ -30,42 +30,42 @@ def main():
     # Ensure output directories exist
     config.ensure_dirs()
 
-    # ─── Step 1: Load All Datasets ──────────────────────────────
-    print("\n\n📂 STEP 1: Loading all 9 datasets...")
+    # --- Step 1: Load All Datasets ------------------------------
+    print("\n\n STEP 1: Loading all 9 datasets...")
     datasets = load_all()
 
     # Show before-cleaning summary
-    print("\n📊 Pre-Cleaning Summary:")
+    print("\n Pre-Cleaning Summary:")
     print(f"{'Dataset':<30} {'Rows':>8} {'Cols':>6} {'Nulls':>8} {'Dupes':>8}")
-    print("─" * 65)
+    print("-" * 65)
     for name, df in datasets.items():
         nulls = df.isnull().sum().sum()
         dupes = df.duplicated().sum()
         print(f"{name:<30} {df.shape[0]:>8} {df.shape[1]:>6} {nulls:>8} {dupes:>8}")
 
-    # ─── Step 2: Preprocess All ─────────────────────────────────
-    print("\n\n🧹 STEP 2: Cleaning all datasets...")
+    # --- Step 2: Preprocess All ---------------------------------
+    print("\n\n STEP 2: Cleaning all datasets...")
     cleaned = preprocess_all(datasets)
 
     # Show after-cleaning summary
-    print("\n📊 Post-Cleaning Summary:")
+    print("\n Post-Cleaning Summary:")
     print(f"{'Dataset':<30} {'Rows':>8} {'Cols':>6} {'Nulls':>8}")
-    print("─" * 55)
+    print("-" * 55)
     for name, df in cleaned.items():
         nulls = df.isnull().sum().sum()
         print(f"{name:<30} {df.shape[0]:>8} {df.shape[1]:>6} {nulls:>8}")
 
-    # ─── Step 3: EDA ────────────────────────────────────────────
-    print("\n\n📈 STEP 3: Running EDA & Visualization...")
+    # --- Step 3: EDA --------------------------------------------
+    print("\n\n STEP 3: Running EDA & Visualization...")
     run_eda(cleaned)
 
-    # ─── Summary ────────────────────────────────────────────────
+    # --- Summary ------------------------------------------------
     print("\n\n" + "=" * 60)
-    print("  ✅ Notebook 01 Complete")
+    print("  [OK] Notebook 01 Complete")
     print("=" * 60)
     print(f"\n  Outputs:")
-    print(f"  ├── Cleaned CSVs: {config.CLEANED_DIR}")
-    print(f"  └── EDA Plots:    {config.EDA_PLOTS_DIR}")
+    print(f"  |-- Cleaned CSVs: {config.CLEANED_DIR}")
+    print(f"  +-- EDA Plots:    {config.EDA_PLOTS_DIR}")
     print(f"\n  Next: Run 02_feature_engineering.py")
 
     return cleaned

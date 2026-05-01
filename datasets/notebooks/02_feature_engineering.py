@@ -32,9 +32,9 @@ def load_cleaned_datasets() -> dict:
         filepath = config.CLEANED_DIR / f"clean_{name}.csv"
         if filepath.exists():
             datasets[name] = pd.read_csv(filepath)
-            print(f"  ✅ Loaded clean_{name}.csv ({datasets[name].shape[0]} rows)")
+            print(f"  [OK] Loaded clean_{name}.csv ({datasets[name].shape[0]} rows)")
         else:
-            print(f"  ⚠️ {filepath} not found — skipping")
+            print(f"  [WARN] {filepath} not found — skipping")
     return datasets
 
 
@@ -46,42 +46,42 @@ def main():
     config.ensure_dirs()
 
     # Load cleaned datasets from Step 2
-    print("\n📂 Loading cleaned datasets...")
+    print("\n Loading cleaned datasets...")
     cleaned = load_cleaned_datasets()
 
     if not cleaned:
-        print("\n❌ No cleaned datasets found! Run 01_common_cleaning_eda.py first.")
+        print("\n[ERROR] No cleaned datasets found! Run 01_common_cleaning_eda.py first.")
         return
 
-    # ─── Step 4: Encoding ───────────────────────────────────────
-    print("\n\n🔢 STEP 4: Encoding all datasets...")
+    # --- Step 4: Encoding ---------------------------------------
+    print("\n\n STEP 4: Encoding all datasets...")
     encoded = encode_all(cleaned)
 
     # Show encoding summary
-    print("\n📊 Encoding Summary:")
+    print("\n Encoding Summary:")
     print(f"{'Dataset':<30} {'Before Cols':>12} {'After Cols':>12}")
-    print("─" * 55)
+    print("-" * 55)
     for name in encoded:
         before = cleaned[name].shape[1] if name in cleaned else 0
         after = encoded[name].shape[1]
         print(f"{name:<30} {before:>12} {after:>12}")
 
-    # ─── Step 5: Feature Engineering ────────────────────────────
-    print("\n\n⚙️ STEP 5: Feature Engineering...")
+    # --- Step 5: Feature Engineering ----------------------------
+    print("\n\nSTEP 5: Feature Engineering...")
     engineered = engineer_all(encoded)
 
     # Show new features summary
-    print("\n📊 Feature Engineering Summary:")
+    print("\n Feature Engineering Summary:")
     print(f"{'Dataset':<30} {'Encoded Cols':>12} {'Engineered Cols':>16} {'New Features':>13}")
-    print("─" * 75)
+    print("-" * 75)
     for name in engineered:
         enc_cols = encoded[name].shape[1] if name in encoded else 0
         eng_cols = engineered[name].shape[1]
         new = eng_cols - enc_cols
         print(f"{name:<30} {enc_cols:>12} {eng_cols:>16} {new:>13}")
 
-    # ─── Step 6: Class Balancing ────────────────────────────────
-    print("\n\n⚖️ STEP 6: Class Balancing (selective)...")
+    # --- Step 6: Class Balancing --------------------------------
+    print("\n\nSTEP 6: Class Balancing (selective)...")
     balanced = {}
 
     for name, df in engineered.items():
@@ -94,14 +94,14 @@ def main():
         else:
             balanced[name] = df
 
-    # ─── Step 7: Save ──────────────────────────────────────────
-    print("\n\n💾 STEP 7: All processed datasets saved:")
-    print(f"  ├── Encoded:    {config.ENCODED_DIR}")
-    print(f"  └── Engineered: {config.ENGINEERED_DIR}")
+    # --- Step 7: Save ------------------------------------------
+    print("\n\n STEP 7: All processed datasets saved:")
+    print(f"  |-- Encoded:    {config.ENCODED_DIR}")
+    print(f"  +-- Engineered: {config.ENGINEERED_DIR}")
 
-    # ─── Summary ────────────────────────────────────────────────
+    # --- Summary ------------------------------------------------
     print("\n\n" + "=" * 60)
-    print("  ✅ Notebook 02 Complete")
+    print("  [OK] Notebook 02 Complete")
     print("=" * 60)
     print(f"\n  Part A processing complete for all 9 datasets.")
     print(f"\n  Next: Run 03_merge_and_training.py")

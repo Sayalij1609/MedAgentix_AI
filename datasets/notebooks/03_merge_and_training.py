@@ -37,15 +37,15 @@ def load_engineered_datasets() -> dict:
         filepath = config.ENGINEERED_DIR / f"engineered_{name}.csv"
         if filepath.exists():
             datasets[name] = pd.read_csv(filepath)
-            print(f"  ✅ Loaded engineered_{name}.csv ({datasets[name].shape[0]} rows)")
+            print(f"  [OK] Loaded engineered_{name}.csv ({datasets[name].shape[0]} rows)")
         else:
             # Fallback to encoded
             fallback = config.ENCODED_DIR / f"encoded_{name}.csv"
             if fallback.exists():
                 datasets[name] = pd.read_csv(fallback)
-                print(f"  ⚠️ Using encoded_{name}.csv (no engineered version)")
+                print(f"  [WARN] Using encoded_{name}.csv (no engineered version)")
             else:
-                print(f"  ⚠️ {name} not found — skipping")
+                print(f"  [WARN] {name} not found — skipping")
     return datasets
 
 
@@ -67,15 +67,15 @@ def main():
     config.ensure_dirs()
 
     # Load engineered datasets
-    print("\n📂 Loading engineered datasets...")
+    print("\n Loading engineered datasets...")
     engineered = load_engineered_datasets()
 
     if not engineered:
-        print("\n❌ No engineered datasets found! Run 02_feature_engineering.py first.")
+        print("\n[ERROR] No engineered datasets found! Run 02_feature_engineering.py first.")
         return
 
-    # ─── Step 8: Merge Group A → Master Diagnostic ─────────────
-    print("\n\n🔗 STEP 8: Building Master Diagnostic Dataset...")
+    # --- Step 8: Merge Group A → Master Diagnostic -------------
+    print("\n\n STEP 8: Building Master Diagnostic Dataset...")
     print("  Merging: Core Clinical + Risk Factor + Temporal + (opt) Differential")
     master = build_master_diagnostic(engineered)
 
@@ -84,24 +84,24 @@ def main():
     print(f"    Columns: {master.shape[1]}")
     print(f"    Columns: {list(master.columns)}")
 
-    # ─── Step 9: Prepare Agent Datasets ─────────────────────────
-    print("\n\n🤖 STEP 9: Preparing Agent Datasets (separate)...")
+    # --- Step 9: Prepare Agent Datasets -------------------------
+    print("\n\n STEP 9: Preparing Agent Datasets (separate)...")
     agent_data = prepare_agent_datasets(engineered)
 
     print(f"\n  Agent Datasets:")
     for agent, df in agent_data.items():
         print(f"    {agent}: {df.shape[0]} rows × {df.shape[1]} cols")
 
-    # ─── Step 10: RAG Knowledge Store ───────────────────────────
-    print("\n\n📚 STEP 10: Preparing RAG Knowledge Store...")
+    # --- Step 10: RAG Knowledge Store ---------------------------
+    print("\n\n STEP 10: Preparing RAG Knowledge Store...")
     cleaned = load_cleaned_datasets()
     # Merge cleaned data for RAG (needs text columns, not encoded)
     rag_data = {**engineered}
     rag_data.update(cleaned)
     rag_chunks = prepare_rag_knowledge(rag_data)
 
-    # ─── Step 11: Train-Test Split ──────────────────────────────
-    print("\n\n✂️ STEP 11: Train-Test Split...")
+    # --- Step 11: Train-Test Split ------------------------------
+    print("\n\nSTEP 11: Train-Test Split...")
     splits = train_test_split_pipeline(master)
 
     print(f"\n  Split Summary:")
@@ -109,16 +109,16 @@ def main():
         shape = data.shape if hasattr(data, 'shape') else (len(data),)
         print(f"    {key}: {shape}")
 
-    # ─── Summary ────────────────────────────────────────────────
+    # --- Summary ------------------------------------------------
     print("\n\n" + "=" * 60)
-    print("  ✅ Notebook 03 Complete")
+    print("  [OK] Notebook 03 Complete")
     print("=" * 60)
     print(f"\n  Outputs:")
-    print(f"  ├── Master Diagnostic: {config.MERGED_DIR / 'master_diagnostic.csv'}")
-    print(f"  ├── Agent Datasets:    {config.AGENT_DATASETS_DIR}")
-    print(f"  ├── RAG Knowledge:     {config.RAG_KNOWLEDGE_DIR}")
-    print(f"  └── Train/Test Splits: {config.FEATURE_STORE_DIR}")
-    print(f"\n  ⏭️ Model training deferred to next phase.")
+    print(f"  |-- Master Diagnostic: {config.MERGED_DIR / 'master_diagnostic.csv'}")
+    print(f"  |-- Agent Datasets:    {config.AGENT_DATASETS_DIR}")
+    print(f"  |-- RAG Knowledge:     {config.RAG_KNOWLEDGE_DIR}")
+    print(f"  +-- Train/Test Splits: {config.FEATURE_STORE_DIR}")
+    print(f"\n  Model training deferred to next phase.")
     print(f"\n  Next: Run 04_feature_importance.py")
 
     return master, splits
