@@ -1,1793 +1,1793 @@
 symptom,duration,interpretation,risk_level,clinical_category,emergency_flag
-Fever,5,Acute condition likely,3,4,1
-Fever,5,Possible infection,1,0,0
-Fever,5,Monitor symptoms,0,3,1
-Fever,5,Requires clinical evaluation,2,1,0
-Fever,5,Chronic condition suspected,3,2,1
-Fever,5,Emergency evaluation needed,1,4,0
-Fever,5,Lifestyle-related issue possible,0,0,1
-Fever,5,Underlying disease progression,2,3,0
-Fever,1,Acute condition likely,3,1,1
-Fever,1,Possible infection,1,2,0
-Fever,1,Monitor symptoms,0,4,1
-Fever,1,Requires clinical evaluation,2,0,0
-Fever,1,Chronic condition suspected,3,3,1
-Fever,1,Emergency evaluation needed,1,1,0
-Fever,1,Lifestyle-related issue possible,0,2,1
-Fever,1,Underlying disease progression,2,4,0
-Fever,4,Acute condition likely,3,0,1
-Fever,4,Possible infection,1,3,0
-Fever,4,Monitor symptoms,0,1,1
-Fever,4,Requires clinical evaluation,2,2,0
-Fever,4,Chronic condition suspected,3,4,1
-Fever,4,Emergency evaluation needed,1,0,0
-Fever,4,Lifestyle-related issue possible,0,3,1
-Fever,4,Underlying disease progression,2,1,0
-Fever,0,Acute condition likely,3,2,1
-Fever,0,Possible infection,1,4,0
-Fever,0,Monitor symptoms,0,0,1
-Fever,0,Requires clinical evaluation,2,3,0
-Fever,0,Chronic condition suspected,3,1,1
-Fever,0,Emergency evaluation needed,1,2,0
-Fever,0,Lifestyle-related issue possible,0,4,1
-Fever,0,Underlying disease progression,2,0,0
-Fever,3,Acute condition likely,3,3,1
-Fever,3,Possible infection,1,1,0
-Fever,3,Monitor symptoms,0,2,1
-Fever,3,Requires clinical evaluation,2,4,0
-Fever,3,Chronic condition suspected,3,0,1
-Fever,3,Emergency evaluation needed,1,3,0
-Fever,3,Lifestyle-related issue possible,0,1,1
-Fever,3,Underlying disease progression,2,2,0
-Fever,2,Acute condition likely,3,4,1
-Fever,2,Possible infection,1,0,0
-Fever,2,Monitor symptoms,0,3,1
-Fever,2,Requires clinical evaluation,2,1,0
-Fever,2,Chronic condition suspected,3,2,1
-Fever,2,Emergency evaluation needed,1,4,0
-Fever,2,Lifestyle-related issue possible,0,0,1
-Fever,2,Underlying disease progression,2,3,0
-Fever,6,Acute condition likely,3,1,1
-Fever,6,Possible infection,1,2,0
-Fever,6,Monitor symptoms,0,4,1
-Fever,6,Requires clinical evaluation,2,0,0
-Fever,6,Chronic condition suspected,3,3,1
-Fever,6,Emergency evaluation needed,1,1,0
-Fever,6,Lifestyle-related issue possible,0,2,1
-Fever,6,Underlying disease progression,2,4,0
-Cough,5,Acute condition likely,3,0,1
-Cough,5,Possible infection,1,3,0
-Cough,5,Monitor symptoms,0,1,1
-Cough,5,Requires clinical evaluation,2,2,0
-Cough,5,Chronic condition suspected,3,4,1
-Cough,5,Emergency evaluation needed,1,0,0
-Cough,5,Lifestyle-related issue possible,0,3,1
-Cough,5,Underlying disease progression,2,1,0
-Cough,1,Acute condition likely,3,2,1
-Cough,1,Possible infection,1,4,0
-Cough,1,Monitor symptoms,0,0,1
-Cough,1,Requires clinical evaluation,2,3,0
-Cough,1,Chronic condition suspected,3,1,1
-Cough,1,Emergency evaluation needed,1,2,0
-Cough,1,Lifestyle-related issue possible,0,4,1
-Cough,1,Underlying disease progression,2,0,0
-Cough,4,Acute condition likely,3,3,1
-Cough,4,Possible infection,1,1,0
-Cough,4,Monitor symptoms,0,2,1
-Cough,4,Requires clinical evaluation,2,4,0
-Cough,4,Chronic condition suspected,3,0,1
-Cough,4,Emergency evaluation needed,1,3,0
-Cough,4,Lifestyle-related issue possible,0,1,1
-Cough,4,Underlying disease progression,2,2,0
-Cough,0,Acute condition likely,3,4,1
-Cough,0,Possible infection,1,0,0
-Cough,0,Monitor symptoms,0,3,1
-Cough,0,Requires clinical evaluation,2,1,0
-Cough,0,Chronic condition suspected,3,2,1
-Cough,0,Emergency evaluation needed,1,4,0
-Cough,0,Lifestyle-related issue possible,0,0,1
-Cough,0,Underlying disease progression,2,3,0
-Cough,3,Acute condition likely,3,1,1
-Cough,3,Possible infection,1,2,0
-Cough,3,Monitor symptoms,0,4,1
-Cough,3,Requires clinical evaluation,2,0,0
-Cough,3,Chronic condition suspected,3,3,1
-Cough,3,Emergency evaluation needed,1,1,0
-Cough,3,Lifestyle-related issue possible,0,2,1
-Cough,3,Underlying disease progression,2,4,0
-Cough,2,Acute condition likely,3,0,1
-Cough,2,Possible infection,1,3,0
-Cough,2,Monitor symptoms,0,1,1
-Cough,2,Requires clinical evaluation,2,2,0
-Cough,2,Chronic condition suspected,3,4,1
-Cough,2,Emergency evaluation needed,1,0,0
-Cough,2,Lifestyle-related issue possible,0,3,1
-Cough,2,Underlying disease progression,2,1,0
-Cough,6,Acute condition likely,3,2,1
-Cough,6,Possible infection,1,4,0
-Cough,6,Monitor symptoms,0,0,1
-Cough,6,Requires clinical evaluation,2,3,0
-Cough,6,Chronic condition suspected,3,1,1
-Cough,6,Emergency evaluation needed,1,2,0
-Cough,6,Lifestyle-related issue possible,0,4,1
-Cough,6,Underlying disease progression,2,0,0
-Chest Pain,5,Acute condition likely,3,3,1
-Chest Pain,5,Possible infection,1,1,0
-Chest Pain,5,Monitor symptoms,0,2,1
-Chest Pain,5,Requires clinical evaluation,2,4,0
-Chest Pain,5,Chronic condition suspected,3,0,1
-Chest Pain,5,Emergency evaluation needed,1,3,0
-Chest Pain,5,Lifestyle-related issue possible,0,1,1
-Chest Pain,5,Underlying disease progression,2,2,0
-Chest Pain,1,Acute condition likely,3,4,1
-Chest Pain,1,Possible infection,1,0,0
-Chest Pain,1,Monitor symptoms,0,3,1
-Chest Pain,1,Requires clinical evaluation,2,1,0
-Chest Pain,1,Chronic condition suspected,3,2,1
-Chest Pain,1,Emergency evaluation needed,1,4,0
-Chest Pain,1,Lifestyle-related issue possible,0,0,1
-Chest Pain,1,Underlying disease progression,2,3,0
-Chest Pain,4,Acute condition likely,3,1,1
-Chest Pain,4,Possible infection,1,2,0
-Chest Pain,4,Monitor symptoms,0,4,1
-Chest Pain,4,Requires clinical evaluation,2,0,0
-Chest Pain,4,Chronic condition suspected,3,3,1
-Chest Pain,4,Emergency evaluation needed,1,1,0
-Chest Pain,4,Lifestyle-related issue possible,0,2,1
-Chest Pain,4,Underlying disease progression,2,4,0
-Chest Pain,0,Acute condition likely,3,0,1
-Chest Pain,0,Possible infection,1,3,0
-Chest Pain,0,Monitor symptoms,0,1,1
-Chest Pain,0,Requires clinical evaluation,2,2,0
-Chest Pain,0,Chronic condition suspected,3,4,1
-Chest Pain,0,Emergency evaluation needed,1,0,0
-Chest Pain,0,Lifestyle-related issue possible,0,3,1
-Chest Pain,0,Underlying disease progression,2,1,0
-Chest Pain,3,Acute condition likely,3,2,1
-Chest Pain,3,Possible infection,1,4,0
-Chest Pain,3,Monitor symptoms,0,0,1
-Chest Pain,3,Requires clinical evaluation,2,3,0
-Chest Pain,3,Chronic condition suspected,3,1,1
-Chest Pain,3,Emergency evaluation needed,1,2,0
-Chest Pain,3,Lifestyle-related issue possible,0,4,1
-Chest Pain,3,Underlying disease progression,2,0,0
-Chest Pain,2,Acute condition likely,3,3,1
-Chest Pain,2,Possible infection,1,1,0
-Chest Pain,2,Monitor symptoms,0,2,1
-Chest Pain,2,Requires clinical evaluation,2,4,0
-Chest Pain,2,Chronic condition suspected,3,0,1
-Chest Pain,2,Emergency evaluation needed,1,3,0
-Chest Pain,2,Lifestyle-related issue possible,0,1,1
-Chest Pain,2,Underlying disease progression,2,2,0
-Chest Pain,6,Acute condition likely,3,4,1
-Chest Pain,6,Possible infection,1,0,0
-Chest Pain,6,Monitor symptoms,0,3,1
-Chest Pain,6,Requires clinical evaluation,2,1,0
-Chest Pain,6,Chronic condition suspected,3,2,1
-Chest Pain,6,Emergency evaluation needed,1,4,0
-Chest Pain,6,Lifestyle-related issue possible,0,0,1
-Chest Pain,6,Underlying disease progression,2,3,0
-Headache,5,Acute condition likely,3,1,1
-Headache,5,Possible infection,1,2,0
-Headache,5,Monitor symptoms,0,4,1
-Headache,5,Requires clinical evaluation,2,0,0
-Headache,5,Chronic condition suspected,3,3,1
-Headache,5,Emergency evaluation needed,1,1,0
-Headache,5,Lifestyle-related issue possible,0,2,1
-Headache,5,Underlying disease progression,2,4,0
-Headache,1,Acute condition likely,3,0,1
-Headache,1,Possible infection,1,3,0
-Headache,1,Monitor symptoms,0,1,1
-Headache,1,Requires clinical evaluation,2,2,0
-Headache,1,Chronic condition suspected,3,4,1
-Headache,1,Emergency evaluation needed,1,0,0
-Headache,1,Lifestyle-related issue possible,0,3,1
-Headache,1,Underlying disease progression,2,1,0
-Headache,4,Acute condition likely,3,2,1
-Headache,4,Possible infection,1,4,0
-Headache,4,Monitor symptoms,0,0,1
-Headache,4,Requires clinical evaluation,2,3,0
-Headache,4,Chronic condition suspected,3,1,1
-Headache,4,Emergency evaluation needed,1,2,0
-Headache,4,Lifestyle-related issue possible,0,4,1
-Headache,4,Underlying disease progression,2,0,0
-Headache,0,Acute condition likely,3,3,1
-Headache,0,Possible infection,1,1,0
-Headache,0,Monitor symptoms,0,2,1
-Headache,0,Requires clinical evaluation,2,4,0
-Headache,0,Chronic condition suspected,3,0,1
-Headache,0,Emergency evaluation needed,1,3,0
-Headache,0,Lifestyle-related issue possible,0,1,1
-Headache,0,Underlying disease progression,2,2,0
-Headache,3,Acute condition likely,3,4,1
-Headache,3,Possible infection,1,0,0
-Headache,3,Monitor symptoms,0,3,1
-Headache,3,Requires clinical evaluation,2,1,0
-Headache,3,Chronic condition suspected,3,2,1
-Headache,3,Emergency evaluation needed,1,4,0
-Headache,3,Lifestyle-related issue possible,0,0,1
-Headache,3,Underlying disease progression,2,3,0
-Headache,2,Acute condition likely,3,1,1
-Headache,2,Possible infection,1,2,0
-Headache,2,Monitor symptoms,0,4,1
-Headache,2,Requires clinical evaluation,2,0,0
-Headache,2,Chronic condition suspected,3,3,1
-Headache,2,Emergency evaluation needed,1,1,0
-Headache,2,Lifestyle-related issue possible,0,2,1
-Headache,2,Underlying disease progression,2,4,0
-Headache,6,Acute condition likely,3,0,1
-Headache,6,Possible infection,1,3,0
-Headache,6,Monitor symptoms,0,1,1
-Headache,6,Requires clinical evaluation,2,2,0
-Headache,6,Chronic condition suspected,3,4,1
-Headache,6,Emergency evaluation needed,1,0,0
-Headache,6,Lifestyle-related issue possible,0,3,1
-Headache,6,Underlying disease progression,2,1,0
-Abdominal Pain,5,Acute condition likely,3,2,1
-Abdominal Pain,5,Possible infection,1,4,0
-Abdominal Pain,5,Monitor symptoms,0,0,1
-Abdominal Pain,5,Requires clinical evaluation,2,3,0
-Abdominal Pain,5,Chronic condition suspected,3,1,1
-Abdominal Pain,5,Emergency evaluation needed,1,2,0
-Abdominal Pain,5,Lifestyle-related issue possible,0,4,1
-Abdominal Pain,5,Underlying disease progression,2,0,0
-Abdominal Pain,1,Acute condition likely,3,3,1
-Abdominal Pain,1,Possible infection,1,1,0
-Abdominal Pain,1,Monitor symptoms,0,2,1
-Abdominal Pain,1,Requires clinical evaluation,2,4,0
-Abdominal Pain,1,Chronic condition suspected,3,0,1
-Abdominal Pain,1,Emergency evaluation needed,1,3,0
-Abdominal Pain,1,Lifestyle-related issue possible,0,1,1
-Abdominal Pain,1,Underlying disease progression,2,2,0
-Abdominal Pain,4,Acute condition likely,3,4,1
-Abdominal Pain,4,Possible infection,1,0,0
-Abdominal Pain,4,Monitor symptoms,0,3,1
-Abdominal Pain,4,Requires clinical evaluation,2,1,0
-Abdominal Pain,4,Chronic condition suspected,3,2,1
-Abdominal Pain,4,Emergency evaluation needed,1,4,0
-Abdominal Pain,4,Lifestyle-related issue possible,0,0,1
-Abdominal Pain,4,Underlying disease progression,2,3,0
-Abdominal Pain,0,Acute condition likely,3,1,1
-Abdominal Pain,0,Possible infection,1,2,0
-Abdominal Pain,0,Monitor symptoms,0,4,1
-Abdominal Pain,0,Requires clinical evaluation,2,0,0
-Abdominal Pain,0,Chronic condition suspected,3,3,1
-Abdominal Pain,0,Emergency evaluation needed,1,1,0
-Abdominal Pain,0,Lifestyle-related issue possible,0,2,1
-Abdominal Pain,0,Underlying disease progression,2,4,0
-Abdominal Pain,3,Acute condition likely,3,0,1
-Abdominal Pain,3,Possible infection,1,3,0
-Abdominal Pain,3,Monitor symptoms,0,1,1
-Abdominal Pain,3,Requires clinical evaluation,2,2,0
-Abdominal Pain,3,Chronic condition suspected,3,4,1
-Abdominal Pain,3,Emergency evaluation needed,1,0,0
-Abdominal Pain,3,Lifestyle-related issue possible,0,3,1
-Abdominal Pain,3,Underlying disease progression,2,1,0
-Abdominal Pain,2,Acute condition likely,3,2,1
-Abdominal Pain,2,Possible infection,1,4,0
-Abdominal Pain,2,Monitor symptoms,0,0,1
-Abdominal Pain,2,Requires clinical evaluation,2,3,0
-Abdominal Pain,2,Chronic condition suspected,3,1,1
-Abdominal Pain,2,Emergency evaluation needed,1,2,0
-Abdominal Pain,2,Lifestyle-related issue possible,0,4,1
-Abdominal Pain,2,Underlying disease progression,2,0,0
-Abdominal Pain,6,Acute condition likely,3,3,1
-Abdominal Pain,6,Possible infection,1,1,0
-Abdominal Pain,6,Monitor symptoms,0,2,1
-Abdominal Pain,6,Requires clinical evaluation,2,4,0
-Abdominal Pain,6,Chronic condition suspected,3,0,1
-Abdominal Pain,6,Emergency evaluation needed,1,3,0
-Abdominal Pain,6,Lifestyle-related issue possible,0,1,1
-Abdominal Pain,6,Underlying disease progression,2,2,0
-Vomiting,5,Acute condition likely,3,4,1
-Vomiting,5,Possible infection,1,0,0
-Vomiting,5,Monitor symptoms,0,3,1
-Vomiting,5,Requires clinical evaluation,2,1,0
-Vomiting,5,Chronic condition suspected,3,2,1
-Vomiting,5,Emergency evaluation needed,1,4,0
-Vomiting,5,Lifestyle-related issue possible,0,0,1
-Vomiting,5,Underlying disease progression,2,3,0
-Vomiting,1,Acute condition likely,3,1,1
-Vomiting,1,Possible infection,1,2,0
-Vomiting,1,Monitor symptoms,0,4,1
-Vomiting,1,Requires clinical evaluation,2,0,0
-Vomiting,1,Chronic condition suspected,3,3,1
-Vomiting,1,Emergency evaluation needed,1,1,0
-Vomiting,1,Lifestyle-related issue possible,0,2,1
-Vomiting,1,Underlying disease progression,2,4,0
-Vomiting,4,Acute condition likely,3,0,1
-Vomiting,4,Possible infection,1,3,0
-Vomiting,4,Monitor symptoms,0,1,1
-Vomiting,4,Requires clinical evaluation,2,2,0
-Vomiting,4,Chronic condition suspected,3,4,1
-Vomiting,4,Emergency evaluation needed,1,0,0
-Vomiting,4,Lifestyle-related issue possible,0,3,1
-Vomiting,4,Underlying disease progression,2,1,0
-Vomiting,0,Acute condition likely,3,2,1
-Vomiting,0,Possible infection,1,4,0
-Vomiting,0,Monitor symptoms,0,0,1
-Vomiting,0,Requires clinical evaluation,2,3,0
-Vomiting,0,Chronic condition suspected,3,1,1
-Vomiting,0,Emergency evaluation needed,1,2,0
-Vomiting,0,Lifestyle-related issue possible,0,4,1
-Vomiting,0,Underlying disease progression,2,0,0
-Vomiting,3,Acute condition likely,3,3,1
-Vomiting,3,Possible infection,1,1,0
-Vomiting,3,Monitor symptoms,0,2,1
-Vomiting,3,Requires clinical evaluation,2,4,0
-Vomiting,3,Chronic condition suspected,3,0,1
-Vomiting,3,Emergency evaluation needed,1,3,0
-Vomiting,3,Lifestyle-related issue possible,0,1,1
-Vomiting,3,Underlying disease progression,2,2,0
-Vomiting,2,Acute condition likely,3,4,1
-Vomiting,2,Possible infection,1,0,0
-Vomiting,2,Monitor symptoms,0,3,1
-Vomiting,2,Requires clinical evaluation,2,1,0
-Vomiting,2,Chronic condition suspected,3,2,1
-Vomiting,2,Emergency evaluation needed,1,4,0
-Vomiting,2,Lifestyle-related issue possible,0,0,1
-Vomiting,2,Underlying disease progression,2,3,0
-Vomiting,6,Acute condition likely,3,1,1
-Vomiting,6,Possible infection,1,2,0
-Vomiting,6,Monitor symptoms,0,4,1
-Vomiting,6,Requires clinical evaluation,2,0,0
-Vomiting,6,Chronic condition suspected,3,3,1
-Vomiting,6,Emergency evaluation needed,1,1,0
-Vomiting,6,Lifestyle-related issue possible,0,2,1
-Vomiting,6,Underlying disease progression,2,4,0
-Diarrhea,5,Acute condition likely,3,0,1
-Diarrhea,5,Possible infection,1,3,0
-Diarrhea,5,Monitor symptoms,0,1,1
-Diarrhea,5,Requires clinical evaluation,2,2,0
-Diarrhea,5,Chronic condition suspected,3,4,1
-Diarrhea,5,Emergency evaluation needed,1,0,0
-Diarrhea,5,Lifestyle-related issue possible,0,3,1
-Diarrhea,5,Underlying disease progression,2,1,0
-Diarrhea,1,Acute condition likely,3,2,1
-Diarrhea,1,Possible infection,1,4,0
-Diarrhea,1,Monitor symptoms,0,0,1
-Diarrhea,1,Requires clinical evaluation,2,3,0
-Diarrhea,1,Chronic condition suspected,3,1,1
-Diarrhea,1,Emergency evaluation needed,1,2,0
-Diarrhea,1,Lifestyle-related issue possible,0,4,1
-Diarrhea,1,Underlying disease progression,2,0,0
-Diarrhea,4,Acute condition likely,3,3,1
-Diarrhea,4,Possible infection,1,1,0
-Diarrhea,4,Monitor symptoms,0,2,1
-Diarrhea,4,Requires clinical evaluation,2,4,0
-Diarrhea,4,Chronic condition suspected,3,0,1
-Diarrhea,4,Emergency evaluation needed,1,3,0
-Diarrhea,4,Lifestyle-related issue possible,0,1,1
-Diarrhea,4,Underlying disease progression,2,2,0
-Diarrhea,0,Acute condition likely,3,4,1
-Diarrhea,0,Possible infection,1,0,0
-Diarrhea,0,Monitor symptoms,0,3,1
-Diarrhea,0,Requires clinical evaluation,2,1,0
-Diarrhea,0,Chronic condition suspected,3,2,1
-Diarrhea,0,Emergency evaluation needed,1,4,0
-Diarrhea,0,Lifestyle-related issue possible,0,0,1
-Diarrhea,0,Underlying disease progression,2,3,0
-Diarrhea,3,Acute condition likely,3,1,1
-Diarrhea,3,Possible infection,1,2,0
-Diarrhea,3,Monitor symptoms,0,4,1
-Diarrhea,3,Requires clinical evaluation,2,0,0
-Diarrhea,3,Chronic condition suspected,3,3,1
-Diarrhea,3,Emergency evaluation needed,1,1,0
-Diarrhea,3,Lifestyle-related issue possible,0,2,1
-Diarrhea,3,Underlying disease progression,2,4,0
-Diarrhea,2,Acute condition likely,3,0,1
-Diarrhea,2,Possible infection,1,3,0
-Diarrhea,2,Monitor symptoms,0,1,1
-Diarrhea,2,Requires clinical evaluation,2,2,0
-Diarrhea,2,Chronic condition suspected,3,4,1
-Diarrhea,2,Emergency evaluation needed,1,0,0
-Diarrhea,2,Lifestyle-related issue possible,0,3,1
-Diarrhea,2,Underlying disease progression,2,1,0
-Diarrhea,6,Acute condition likely,3,2,1
-Diarrhea,6,Possible infection,1,4,0
-Diarrhea,6,Monitor symptoms,0,0,1
-Diarrhea,6,Requires clinical evaluation,2,3,0
-Diarrhea,6,Chronic condition suspected,3,1,1
-Diarrhea,6,Emergency evaluation needed,1,2,0
-Diarrhea,6,Lifestyle-related issue possible,0,4,1
-Diarrhea,6,Underlying disease progression,2,0,0
-Fatigue,5,Acute condition likely,3,3,1
-Fatigue,5,Possible infection,1,1,0
-Fatigue,5,Monitor symptoms,0,2,1
-Fatigue,5,Requires clinical evaluation,2,4,0
-Fatigue,5,Chronic condition suspected,3,0,1
-Fatigue,5,Emergency evaluation needed,1,3,0
-Fatigue,5,Lifestyle-related issue possible,0,1,1
-Fatigue,5,Underlying disease progression,2,2,0
-Fatigue,1,Acute condition likely,3,4,1
-Fatigue,1,Possible infection,1,0,0
-Fatigue,1,Monitor symptoms,0,3,1
-Fatigue,1,Requires clinical evaluation,2,1,0
-Fatigue,1,Chronic condition suspected,3,2,1
-Fatigue,1,Emergency evaluation needed,1,4,0
-Fatigue,1,Lifestyle-related issue possible,0,0,1
-Fatigue,1,Underlying disease progression,2,3,0
-Fatigue,4,Acute condition likely,3,1,1
-Fatigue,4,Possible infection,1,2,0
-Fatigue,4,Monitor symptoms,0,4,1
-Fatigue,4,Requires clinical evaluation,2,0,0
-Fatigue,4,Chronic condition suspected,3,3,1
-Fatigue,4,Emergency evaluation needed,1,1,0
-Fatigue,4,Lifestyle-related issue possible,0,2,1
-Fatigue,4,Underlying disease progression,2,4,0
-Fatigue,0,Acute condition likely,3,0,1
-Fatigue,0,Possible infection,1,3,0
-Fatigue,0,Monitor symptoms,0,1,1
-Fatigue,0,Requires clinical evaluation,2,2,0
-Fatigue,0,Chronic condition suspected,3,4,1
-Fatigue,0,Emergency evaluation needed,1,0,0
-Fatigue,0,Lifestyle-related issue possible,0,3,1
-Fatigue,0,Underlying disease progression,2,1,0
-Fatigue,3,Acute condition likely,3,2,1
-Fatigue,3,Possible infection,1,4,0
-Fatigue,3,Monitor symptoms,0,0,1
-Fatigue,3,Requires clinical evaluation,2,3,0
-Fatigue,3,Chronic condition suspected,3,1,1
-Fatigue,3,Emergency evaluation needed,1,2,0
-Fatigue,3,Lifestyle-related issue possible,0,4,1
-Fatigue,3,Underlying disease progression,2,0,0
-Fatigue,2,Acute condition likely,3,3,1
-Fatigue,2,Possible infection,1,1,0
-Fatigue,2,Monitor symptoms,0,2,1
-Fatigue,2,Requires clinical evaluation,2,4,0
-Fatigue,2,Chronic condition suspected,3,0,1
-Fatigue,2,Emergency evaluation needed,1,3,0
-Fatigue,2,Lifestyle-related issue possible,0,1,1
-Fatigue,2,Underlying disease progression,2,2,0
-Fatigue,6,Acute condition likely,3,4,1
-Fatigue,6,Possible infection,1,0,0
-Fatigue,6,Monitor symptoms,0,3,1
-Fatigue,6,Requires clinical evaluation,2,1,0
-Fatigue,6,Chronic condition suspected,3,2,1
-Fatigue,6,Emergency evaluation needed,1,4,0
-Fatigue,6,Lifestyle-related issue possible,0,0,1
-Fatigue,6,Underlying disease progression,2,3,0
-Breathlessness,5,Acute condition likely,3,1,1
-Breathlessness,5,Possible infection,1,2,0
-Breathlessness,5,Monitor symptoms,0,4,1
-Breathlessness,5,Requires clinical evaluation,2,0,0
-Breathlessness,5,Chronic condition suspected,3,3,1
-Breathlessness,5,Emergency evaluation needed,1,1,0
-Breathlessness,5,Lifestyle-related issue possible,0,2,1
-Breathlessness,5,Underlying disease progression,2,4,0
-Breathlessness,1,Acute condition likely,3,0,1
-Breathlessness,1,Possible infection,1,3,0
-Breathlessness,1,Monitor symptoms,0,1,1
-Breathlessness,1,Requires clinical evaluation,2,2,0
-Breathlessness,1,Chronic condition suspected,3,4,1
-Breathlessness,1,Emergency evaluation needed,1,0,0
-Breathlessness,1,Lifestyle-related issue possible,0,3,1
-Breathlessness,1,Underlying disease progression,2,1,0
-Breathlessness,4,Acute condition likely,3,2,1
-Breathlessness,4,Possible infection,1,4,0
-Breathlessness,4,Monitor symptoms,0,0,1
-Breathlessness,4,Requires clinical evaluation,2,3,0
-Breathlessness,4,Chronic condition suspected,3,1,1
-Breathlessness,4,Emergency evaluation needed,1,2,0
-Breathlessness,4,Lifestyle-related issue possible,0,4,1
-Breathlessness,4,Underlying disease progression,2,0,0
-Breathlessness,0,Acute condition likely,3,3,1
-Breathlessness,0,Possible infection,1,1,0
-Breathlessness,0,Monitor symptoms,0,2,1
-Breathlessness,0,Requires clinical evaluation,2,4,0
-Breathlessness,0,Chronic condition suspected,3,0,1
-Breathlessness,0,Emergency evaluation needed,1,3,0
-Breathlessness,0,Lifestyle-related issue possible,0,1,1
-Breathlessness,0,Underlying disease progression,2,2,0
-Breathlessness,3,Acute condition likely,3,4,1
-Breathlessness,3,Possible infection,1,0,0
-Breathlessness,3,Monitor symptoms,0,3,1
-Breathlessness,3,Requires clinical evaluation,2,1,0
-Breathlessness,3,Chronic condition suspected,3,2,1
-Breathlessness,3,Emergency evaluation needed,1,4,0
-Breathlessness,3,Lifestyle-related issue possible,0,0,1
-Breathlessness,3,Underlying disease progression,2,3,0
-Breathlessness,2,Acute condition likely,3,1,1
-Breathlessness,2,Possible infection,1,2,0
-Breathlessness,2,Monitor symptoms,0,4,1
-Breathlessness,2,Requires clinical evaluation,2,0,0
-Breathlessness,2,Chronic condition suspected,3,3,1
-Breathlessness,2,Emergency evaluation needed,1,1,0
-Breathlessness,2,Lifestyle-related issue possible,0,2,1
-Breathlessness,2,Underlying disease progression,2,4,0
-Breathlessness,6,Acute condition likely,3,0,1
-Breathlessness,6,Possible infection,1,3,0
-Breathlessness,6,Monitor symptoms,0,1,1
-Breathlessness,6,Requires clinical evaluation,2,2,0
-Breathlessness,6,Chronic condition suspected,3,4,1
-Breathlessness,6,Emergency evaluation needed,1,0,0
-Breathlessness,6,Lifestyle-related issue possible,0,3,1
-Breathlessness,6,Underlying disease progression,2,1,0
-Joint Pain,5,Acute condition likely,3,2,1
-Joint Pain,5,Possible infection,1,4,0
-Joint Pain,5,Monitor symptoms,0,0,1
-Joint Pain,5,Requires clinical evaluation,2,3,0
-Joint Pain,5,Chronic condition suspected,3,1,1
-Joint Pain,5,Emergency evaluation needed,1,2,0
-Joint Pain,5,Lifestyle-related issue possible,0,4,1
-Joint Pain,5,Underlying disease progression,2,0,0
-Joint Pain,1,Acute condition likely,3,3,1
-Joint Pain,1,Possible infection,1,1,0
-Joint Pain,1,Monitor symptoms,0,2,1
-Joint Pain,1,Requires clinical evaluation,2,4,0
-Joint Pain,1,Chronic condition suspected,3,0,1
-Joint Pain,1,Emergency evaluation needed,1,3,0
-Joint Pain,1,Lifestyle-related issue possible,0,1,1
-Joint Pain,1,Underlying disease progression,2,2,0
-Joint Pain,4,Acute condition likely,3,4,1
-Joint Pain,4,Possible infection,1,0,0
-Joint Pain,4,Monitor symptoms,0,3,1
-Joint Pain,4,Requires clinical evaluation,2,1,0
-Joint Pain,4,Chronic condition suspected,3,2,1
-Joint Pain,4,Emergency evaluation needed,1,4,0
-Joint Pain,4,Lifestyle-related issue possible,0,0,1
-Joint Pain,4,Underlying disease progression,2,3,0
-Joint Pain,0,Acute condition likely,3,1,1
-Joint Pain,0,Possible infection,1,2,0
-Joint Pain,0,Monitor symptoms,0,4,1
-Joint Pain,0,Requires clinical evaluation,2,0,0
-Joint Pain,0,Chronic condition suspected,3,3,1
-Joint Pain,0,Emergency evaluation needed,1,1,0
-Joint Pain,0,Lifestyle-related issue possible,0,2,1
-Joint Pain,0,Underlying disease progression,2,4,0
-Joint Pain,3,Acute condition likely,3,0,1
-Joint Pain,3,Possible infection,1,3,0
-Joint Pain,3,Monitor symptoms,0,1,1
-Joint Pain,3,Requires clinical evaluation,2,2,0
-Joint Pain,3,Chronic condition suspected,3,4,1
-Joint Pain,3,Emergency evaluation needed,1,0,0
-Joint Pain,3,Lifestyle-related issue possible,0,3,1
-Joint Pain,3,Underlying disease progression,2,1,0
-Joint Pain,2,Acute condition likely,3,2,1
-Joint Pain,2,Possible infection,1,4,0
-Joint Pain,2,Monitor symptoms,0,0,1
-Joint Pain,2,Requires clinical evaluation,2,3,0
-Joint Pain,2,Chronic condition suspected,3,1,1
-Joint Pain,2,Emergency evaluation needed,1,2,0
-Joint Pain,2,Lifestyle-related issue possible,0,4,1
-Joint Pain,2,Underlying disease progression,2,0,0
-Joint Pain,6,Acute condition likely,3,3,1
-Joint Pain,6,Possible infection,1,1,0
-Joint Pain,6,Monitor symptoms,0,2,1
-Joint Pain,6,Requires clinical evaluation,2,4,0
-Joint Pain,6,Chronic condition suspected,3,0,1
-Joint Pain,6,Emergency evaluation needed,1,3,0
-Joint Pain,6,Lifestyle-related issue possible,0,1,1
-Joint Pain,6,Underlying disease progression,2,2,0
-Back Pain,5,Acute condition likely,3,4,1
-Back Pain,5,Possible infection,1,0,0
-Back Pain,5,Monitor symptoms,0,3,1
-Back Pain,5,Requires clinical evaluation,2,1,0
-Back Pain,5,Chronic condition suspected,3,2,1
-Back Pain,5,Emergency evaluation needed,1,4,0
-Back Pain,5,Lifestyle-related issue possible,0,0,1
-Back Pain,5,Underlying disease progression,2,3,0
-Back Pain,1,Acute condition likely,3,1,1
-Back Pain,1,Possible infection,1,2,0
-Back Pain,1,Monitor symptoms,0,4,1
-Back Pain,1,Requires clinical evaluation,2,0,0
-Back Pain,1,Chronic condition suspected,3,3,1
-Back Pain,1,Emergency evaluation needed,1,1,0
-Back Pain,1,Lifestyle-related issue possible,0,2,1
-Back Pain,1,Underlying disease progression,2,4,0
-Back Pain,4,Acute condition likely,3,0,1
-Back Pain,4,Possible infection,1,3,0
-Back Pain,4,Monitor symptoms,0,1,1
-Back Pain,4,Requires clinical evaluation,2,2,0
-Back Pain,4,Chronic condition suspected,3,4,1
-Back Pain,4,Emergency evaluation needed,1,0,0
-Back Pain,4,Lifestyle-related issue possible,0,3,1
-Back Pain,4,Underlying disease progression,2,1,0
-Back Pain,0,Acute condition likely,3,2,1
-Back Pain,0,Possible infection,1,4,0
-Back Pain,0,Monitor symptoms,0,0,1
-Back Pain,0,Requires clinical evaluation,2,3,0
-Back Pain,0,Chronic condition suspected,3,1,1
-Back Pain,0,Emergency evaluation needed,1,2,0
-Back Pain,0,Lifestyle-related issue possible,0,4,1
-Back Pain,0,Underlying disease progression,2,0,0
-Back Pain,3,Acute condition likely,3,3,1
-Back Pain,3,Possible infection,1,1,0
-Back Pain,3,Monitor symptoms,0,2,1
-Back Pain,3,Requires clinical evaluation,2,4,0
-Back Pain,3,Chronic condition suspected,3,0,1
-Back Pain,3,Emergency evaluation needed,1,3,0
-Back Pain,3,Lifestyle-related issue possible,0,1,1
-Back Pain,3,Underlying disease progression,2,2,0
-Back Pain,2,Acute condition likely,3,4,1
-Back Pain,2,Possible infection,1,0,0
-Back Pain,2,Monitor symptoms,0,3,1
-Back Pain,2,Requires clinical evaluation,2,1,0
-Back Pain,2,Chronic condition suspected,3,2,1
-Back Pain,2,Emergency evaluation needed,1,4,0
-Back Pain,2,Lifestyle-related issue possible,0,0,1
-Back Pain,2,Underlying disease progression,2,3,0
-Back Pain,6,Acute condition likely,3,1,1
-Back Pain,6,Possible infection,1,2,0
-Back Pain,6,Monitor symptoms,0,4,1
-Back Pain,6,Requires clinical evaluation,2,0,0
-Back Pain,6,Chronic condition suspected,3,3,1
-Back Pain,6,Emergency evaluation needed,1,1,0
-Back Pain,6,Lifestyle-related issue possible,0,2,1
-Back Pain,6,Underlying disease progression,2,4,0
-Dizziness,5,Acute condition likely,3,0,1
-Dizziness,5,Possible infection,1,3,0
-Dizziness,5,Monitor symptoms,0,1,1
-Dizziness,5,Requires clinical evaluation,2,2,0
-Dizziness,5,Chronic condition suspected,3,4,1
-Dizziness,5,Emergency evaluation needed,1,0,0
-Dizziness,5,Lifestyle-related issue possible,0,3,1
-Dizziness,5,Underlying disease progression,2,1,0
-Dizziness,1,Acute condition likely,3,2,1
-Dizziness,1,Possible infection,1,4,0
-Dizziness,1,Monitor symptoms,0,0,1
-Dizziness,1,Requires clinical evaluation,2,3,0
-Dizziness,1,Chronic condition suspected,3,1,1
-Dizziness,1,Emergency evaluation needed,1,2,0
-Dizziness,1,Lifestyle-related issue possible,0,4,1
-Dizziness,1,Underlying disease progression,2,0,0
-Dizziness,4,Acute condition likely,3,3,1
-Dizziness,4,Possible infection,1,1,0
-Dizziness,4,Monitor symptoms,0,2,1
-Dizziness,4,Requires clinical evaluation,2,4,0
-Dizziness,4,Chronic condition suspected,3,0,1
-Dizziness,4,Emergency evaluation needed,1,3,0
-Dizziness,4,Lifestyle-related issue possible,0,1,1
-Dizziness,4,Underlying disease progression,2,2,0
-Dizziness,0,Acute condition likely,3,4,1
-Dizziness,0,Possible infection,1,0,0
-Dizziness,0,Monitor symptoms,0,3,1
-Dizziness,0,Requires clinical evaluation,2,1,0
-Dizziness,0,Chronic condition suspected,3,2,1
-Dizziness,0,Emergency evaluation needed,1,4,0
-Dizziness,0,Lifestyle-related issue possible,0,0,1
-Dizziness,0,Underlying disease progression,2,3,0
-Dizziness,3,Acute condition likely,3,1,1
-Dizziness,3,Possible infection,1,2,0
-Dizziness,3,Monitor symptoms,0,4,1
-Dizziness,3,Requires clinical evaluation,2,0,0
-Dizziness,3,Chronic condition suspected,3,3,1
-Dizziness,3,Emergency evaluation needed,1,1,0
-Dizziness,3,Lifestyle-related issue possible,0,2,1
-Dizziness,3,Underlying disease progression,2,4,0
-Dizziness,2,Acute condition likely,3,0,1
-Dizziness,2,Possible infection,1,3,0
-Dizziness,2,Monitor symptoms,0,1,1
-Dizziness,2,Requires clinical evaluation,2,2,0
-Dizziness,2,Chronic condition suspected,3,4,1
-Dizziness,2,Emergency evaluation needed,1,0,0
-Dizziness,2,Lifestyle-related issue possible,0,3,1
-Dizziness,2,Underlying disease progression,2,1,0
-Dizziness,6,Acute condition likely,3,2,1
-Dizziness,6,Possible infection,1,4,0
-Dizziness,6,Monitor symptoms,0,0,1
-Dizziness,6,Requires clinical evaluation,2,3,0
-Dizziness,6,Chronic condition suspected,3,1,1
-Dizziness,6,Emergency evaluation needed,1,2,0
-Dizziness,6,Lifestyle-related issue possible,0,4,1
-Dizziness,6,Underlying disease progression,2,0,0
-Palpitations,5,Acute condition likely,3,3,1
-Palpitations,5,Possible infection,1,1,0
-Palpitations,5,Monitor symptoms,0,2,1
-Palpitations,5,Requires clinical evaluation,2,4,0
-Palpitations,5,Chronic condition suspected,3,0,1
-Palpitations,5,Emergency evaluation needed,1,3,0
-Palpitations,5,Lifestyle-related issue possible,0,1,1
-Palpitations,5,Underlying disease progression,2,2,0
-Palpitations,1,Acute condition likely,3,4,1
-Palpitations,1,Possible infection,1,0,0
-Palpitations,1,Monitor symptoms,0,3,1
-Palpitations,1,Requires clinical evaluation,2,1,0
-Palpitations,1,Chronic condition suspected,3,2,1
-Palpitations,1,Emergency evaluation needed,1,4,0
-Palpitations,1,Lifestyle-related issue possible,0,0,1
-Palpitations,1,Underlying disease progression,2,3,0
-Palpitations,4,Acute condition likely,3,1,1
-Palpitations,4,Possible infection,1,2,0
-Palpitations,4,Monitor symptoms,0,4,1
-Palpitations,4,Requires clinical evaluation,2,0,0
-Palpitations,4,Chronic condition suspected,3,3,1
-Palpitations,4,Emergency evaluation needed,1,1,0
-Palpitations,4,Lifestyle-related issue possible,0,2,1
-Palpitations,4,Underlying disease progression,2,4,0
-Palpitations,0,Acute condition likely,3,0,1
-Palpitations,0,Possible infection,1,3,0
-Palpitations,0,Monitor symptoms,0,1,1
-Palpitations,0,Requires clinical evaluation,2,2,0
-Palpitations,0,Chronic condition suspected,3,4,1
-Palpitations,0,Emergency evaluation needed,1,0,0
-Palpitations,0,Lifestyle-related issue possible,0,3,1
-Palpitations,0,Underlying disease progression,2,1,0
-Palpitations,3,Acute condition likely,3,2,1
-Palpitations,3,Possible infection,1,4,0
-Palpitations,3,Monitor symptoms,0,0,1
-Palpitations,3,Requires clinical evaluation,2,3,0
-Palpitations,3,Chronic condition suspected,3,1,1
-Palpitations,3,Emergency evaluation needed,1,2,0
-Palpitations,3,Lifestyle-related issue possible,0,4,1
-Palpitations,3,Underlying disease progression,2,0,0
-Palpitations,2,Acute condition likely,3,3,1
-Palpitations,2,Possible infection,1,1,0
-Palpitations,2,Monitor symptoms,0,2,1
-Palpitations,2,Requires clinical evaluation,2,4,0
-Palpitations,2,Chronic condition suspected,3,0,1
-Palpitations,2,Emergency evaluation needed,1,3,0
-Palpitations,2,Lifestyle-related issue possible,0,1,1
-Palpitations,2,Underlying disease progression,2,2,0
-Palpitations,6,Acute condition likely,3,4,1
-Palpitations,6,Possible infection,1,0,0
-Palpitations,6,Monitor symptoms,0,3,1
-Palpitations,6,Requires clinical evaluation,2,1,0
-Palpitations,6,Chronic condition suspected,3,2,1
-Palpitations,6,Emergency evaluation needed,1,4,0
-Palpitations,6,Lifestyle-related issue possible,0,0,1
-Palpitations,6,Underlying disease progression,2,3,0
-Rash,5,Acute condition likely,3,1,1
-Rash,5,Possible infection,1,2,0
-Rash,5,Monitor symptoms,0,4,1
-Rash,5,Requires clinical evaluation,2,0,0
-Rash,5,Chronic condition suspected,3,3,1
-Rash,5,Emergency evaluation needed,1,1,0
-Rash,5,Lifestyle-related issue possible,0,2,1
-Rash,5,Underlying disease progression,2,4,0
-Rash,1,Acute condition likely,3,0,1
-Rash,1,Possible infection,1,3,0
-Rash,1,Monitor symptoms,0,1,1
-Rash,1,Requires clinical evaluation,2,2,0
-Rash,1,Chronic condition suspected,3,4,1
-Rash,1,Emergency evaluation needed,1,0,0
-Rash,1,Lifestyle-related issue possible,0,3,1
-Rash,1,Underlying disease progression,2,1,0
-Rash,4,Acute condition likely,3,2,1
-Rash,4,Possible infection,1,4,0
-Rash,4,Monitor symptoms,0,0,1
-Rash,4,Requires clinical evaluation,2,3,0
-Rash,4,Chronic condition suspected,3,1,1
-Rash,4,Emergency evaluation needed,1,2,0
-Rash,4,Lifestyle-related issue possible,0,4,1
-Rash,4,Underlying disease progression,2,0,0
-Rash,0,Acute condition likely,3,3,1
-Rash,0,Possible infection,1,1,0
-Rash,0,Monitor symptoms,0,2,1
-Rash,0,Requires clinical evaluation,2,4,0
-Rash,0,Chronic condition suspected,3,0,1
-Rash,0,Emergency evaluation needed,1,3,0
-Rash,0,Lifestyle-related issue possible,0,1,1
-Rash,0,Underlying disease progression,2,2,0
-Rash,3,Acute condition likely,3,4,1
-Rash,3,Possible infection,1,0,0
-Rash,3,Monitor symptoms,0,3,1
-Rash,3,Requires clinical evaluation,2,1,0
-Rash,3,Chronic condition suspected,3,2,1
-Rash,3,Emergency evaluation needed,1,4,0
-Rash,3,Lifestyle-related issue possible,0,0,1
-Rash,3,Underlying disease progression,2,3,0
-Rash,2,Acute condition likely,3,1,1
-Rash,2,Possible infection,1,2,0
-Rash,2,Monitor symptoms,0,4,1
-Rash,2,Requires clinical evaluation,2,0,0
-Rash,2,Chronic condition suspected,3,3,1
-Rash,2,Emergency evaluation needed,1,1,0
-Rash,2,Lifestyle-related issue possible,0,2,1
-Rash,2,Underlying disease progression,2,4,0
-Rash,6,Acute condition likely,3,0,1
-Rash,6,Possible infection,1,3,0
-Rash,6,Monitor symptoms,0,1,1
-Rash,6,Requires clinical evaluation,2,2,0
-Rash,6,Chronic condition suspected,3,4,1
-Rash,6,Emergency evaluation needed,1,0,0
-Rash,6,Lifestyle-related issue possible,0,3,1
-Rash,6,Underlying disease progression,2,1,0
-Itching,5,Acute condition likely,3,2,1
-Itching,5,Possible infection,1,4,0
-Itching,5,Monitor symptoms,0,0,1
-Itching,5,Requires clinical evaluation,2,3,0
-Itching,5,Chronic condition suspected,3,1,1
-Itching,5,Emergency evaluation needed,1,2,0
-Itching,5,Lifestyle-related issue possible,0,4,1
-Itching,5,Underlying disease progression,2,0,0
-Itching,1,Acute condition likely,3,3,1
-Itching,1,Possible infection,1,1,0
-Itching,1,Monitor symptoms,0,2,1
-Itching,1,Requires clinical evaluation,2,4,0
-Itching,1,Chronic condition suspected,3,0,1
-Itching,1,Emergency evaluation needed,1,3,0
-Itching,1,Lifestyle-related issue possible,0,1,1
-Itching,1,Underlying disease progression,2,2,0
-Itching,4,Acute condition likely,3,4,1
-Itching,4,Possible infection,1,0,0
-Itching,4,Monitor symptoms,0,3,1
-Itching,4,Requires clinical evaluation,2,1,0
-Itching,4,Chronic condition suspected,3,2,1
-Itching,4,Emergency evaluation needed,1,4,0
-Itching,4,Lifestyle-related issue possible,0,0,1
-Itching,4,Underlying disease progression,2,3,0
-Itching,0,Acute condition likely,3,1,1
-Itching,0,Possible infection,1,2,0
-Itching,0,Monitor symptoms,0,4,1
-Itching,0,Requires clinical evaluation,2,0,0
-Itching,0,Chronic condition suspected,3,3,1
-Itching,0,Emergency evaluation needed,1,1,0
-Itching,0,Lifestyle-related issue possible,0,2,1
-Itching,0,Underlying disease progression,2,4,0
-Itching,3,Acute condition likely,3,0,1
-Itching,3,Possible infection,1,3,0
-Itching,3,Monitor symptoms,0,1,1
-Itching,3,Requires clinical evaluation,2,2,0
-Itching,3,Chronic condition suspected,3,4,1
-Itching,3,Emergency evaluation needed,1,0,0
-Itching,3,Lifestyle-related issue possible,0,3,1
-Itching,3,Underlying disease progression,2,1,0
-Itching,2,Acute condition likely,3,2,1
-Itching,2,Possible infection,1,4,0
-Itching,2,Monitor symptoms,0,0,1
-Itching,2,Requires clinical evaluation,2,3,0
-Itching,2,Chronic condition suspected,3,1,1
-Itching,2,Emergency evaluation needed,1,2,0
-Itching,2,Lifestyle-related issue possible,0,4,1
-Itching,2,Underlying disease progression,2,0,0
-Itching,6,Acute condition likely,3,3,1
-Itching,6,Possible infection,1,1,0
-Itching,6,Monitor symptoms,0,2,1
-Itching,6,Requires clinical evaluation,2,4,0
-Itching,6,Chronic condition suspected,3,0,1
-Itching,6,Emergency evaluation needed,1,3,0
-Itching,6,Lifestyle-related issue possible,0,1,1
-Itching,6,Underlying disease progression,2,2,0
-Weight Loss,5,Acute condition likely,3,4,1
-Weight Loss,5,Possible infection,1,0,0
-Weight Loss,5,Monitor symptoms,0,3,1
-Weight Loss,5,Requires clinical evaluation,2,1,0
-Weight Loss,5,Chronic condition suspected,3,2,1
-Weight Loss,5,Emergency evaluation needed,1,4,0
-Weight Loss,5,Lifestyle-related issue possible,0,0,1
-Weight Loss,5,Underlying disease progression,2,3,0
-Weight Loss,1,Acute condition likely,3,1,1
-Weight Loss,1,Possible infection,1,2,0
-Weight Loss,1,Monitor symptoms,0,4,1
-Weight Loss,1,Requires clinical evaluation,2,0,0
-Weight Loss,1,Chronic condition suspected,3,3,1
-Weight Loss,1,Emergency evaluation needed,1,1,0
-Weight Loss,1,Lifestyle-related issue possible,0,2,1
-Weight Loss,1,Underlying disease progression,2,4,0
-Weight Loss,4,Acute condition likely,3,0,1
-Weight Loss,4,Possible infection,1,3,0
-Weight Loss,4,Monitor symptoms,0,1,1
-Weight Loss,4,Requires clinical evaluation,2,2,0
-Weight Loss,4,Chronic condition suspected,3,4,1
-Weight Loss,4,Emergency evaluation needed,1,0,0
-Weight Loss,4,Lifestyle-related issue possible,0,3,1
-Weight Loss,4,Underlying disease progression,2,1,0
-Weight Loss,0,Acute condition likely,3,2,1
-Weight Loss,0,Possible infection,1,4,0
-Weight Loss,0,Monitor symptoms,0,0,1
-Weight Loss,0,Requires clinical evaluation,2,3,0
-Weight Loss,0,Chronic condition suspected,3,1,1
-Weight Loss,0,Emergency evaluation needed,1,2,0
-Weight Loss,0,Lifestyle-related issue possible,0,4,1
-Weight Loss,0,Underlying disease progression,2,0,0
-Weight Loss,3,Acute condition likely,3,3,1
-Weight Loss,3,Possible infection,1,1,0
-Weight Loss,3,Monitor symptoms,0,2,1
-Weight Loss,3,Requires clinical evaluation,2,4,0
-Weight Loss,3,Chronic condition suspected,3,0,1
-Weight Loss,3,Emergency evaluation needed,1,3,0
-Weight Loss,3,Lifestyle-related issue possible,0,1,1
-Weight Loss,3,Underlying disease progression,2,2,0
-Weight Loss,2,Acute condition likely,3,4,1
-Weight Loss,2,Possible infection,1,0,0
-Weight Loss,2,Monitor symptoms,0,3,1
-Weight Loss,2,Requires clinical evaluation,2,1,0
-Weight Loss,2,Chronic condition suspected,3,2,1
-Weight Loss,2,Emergency evaluation needed,1,4,0
-Weight Loss,2,Lifestyle-related issue possible,0,0,1
-Weight Loss,2,Underlying disease progression,2,3,0
-Weight Loss,6,Acute condition likely,3,1,1
-Weight Loss,6,Possible infection,1,2,0
-Weight Loss,6,Monitor symptoms,0,4,1
-Weight Loss,6,Requires clinical evaluation,2,0,0
-Weight Loss,6,Chronic condition suspected,3,3,1
-Weight Loss,6,Emergency evaluation needed,1,1,0
-Weight Loss,6,Lifestyle-related issue possible,0,2,1
-Weight Loss,6,Underlying disease progression,2,4,0
-Weight Gain,5,Acute condition likely,3,0,1
-Weight Gain,5,Possible infection,1,3,0
-Weight Gain,5,Monitor symptoms,0,1,1
-Weight Gain,5,Requires clinical evaluation,2,2,0
-Weight Gain,5,Chronic condition suspected,3,4,1
-Weight Gain,5,Emergency evaluation needed,1,0,0
-Weight Gain,5,Lifestyle-related issue possible,0,3,1
-Weight Gain,5,Underlying disease progression,2,1,0
-Weight Gain,1,Acute condition likely,3,2,1
-Weight Gain,1,Possible infection,1,4,0
-Weight Gain,1,Monitor symptoms,0,0,1
-Weight Gain,1,Requires clinical evaluation,2,3,0
-Weight Gain,1,Chronic condition suspected,3,1,1
-Weight Gain,1,Emergency evaluation needed,1,2,0
-Weight Gain,1,Lifestyle-related issue possible,0,4,1
-Weight Gain,1,Underlying disease progression,2,0,0
-Weight Gain,4,Acute condition likely,3,3,1
-Weight Gain,4,Possible infection,1,1,0
-Weight Gain,4,Monitor symptoms,0,2,1
-Weight Gain,4,Requires clinical evaluation,2,4,0
-Weight Gain,4,Chronic condition suspected,3,0,1
-Weight Gain,4,Emergency evaluation needed,1,3,0
-Weight Gain,4,Lifestyle-related issue possible,0,1,1
-Weight Gain,4,Underlying disease progression,2,2,0
-Weight Gain,0,Acute condition likely,3,4,1
-Weight Gain,0,Possible infection,1,0,0
-Weight Gain,0,Monitor symptoms,0,3,1
-Weight Gain,0,Requires clinical evaluation,2,1,0
-Weight Gain,0,Chronic condition suspected,3,2,1
-Weight Gain,0,Emergency evaluation needed,1,4,0
-Weight Gain,0,Lifestyle-related issue possible,0,0,1
-Weight Gain,0,Underlying disease progression,2,3,0
-Weight Gain,3,Acute condition likely,3,1,1
-Weight Gain,3,Possible infection,1,2,0
-Weight Gain,3,Monitor symptoms,0,4,1
-Weight Gain,3,Requires clinical evaluation,2,0,0
-Weight Gain,3,Chronic condition suspected,3,3,1
-Weight Gain,3,Emergency evaluation needed,1,1,0
-Weight Gain,3,Lifestyle-related issue possible,0,2,1
-Weight Gain,3,Underlying disease progression,2,4,0
-Weight Gain,2,Acute condition likely,3,0,1
-Weight Gain,2,Possible infection,1,3,0
-Weight Gain,2,Monitor symptoms,0,1,1
-Weight Gain,2,Requires clinical evaluation,2,2,0
-Weight Gain,2,Chronic condition suspected,3,4,1
-Weight Gain,2,Emergency evaluation needed,1,0,0
-Weight Gain,2,Lifestyle-related issue possible,0,3,1
-Weight Gain,2,Underlying disease progression,2,1,0
-Weight Gain,6,Acute condition likely,3,2,1
-Weight Gain,6,Possible infection,1,4,0
-Weight Gain,6,Monitor symptoms,0,0,1
-Weight Gain,6,Requires clinical evaluation,2,3,0
-Weight Gain,6,Chronic condition suspected,3,1,1
-Weight Gain,6,Emergency evaluation needed,1,2,0
-Weight Gain,6,Lifestyle-related issue possible,0,4,1
-Weight Gain,6,Underlying disease progression,2,0,0
-Frequent Urination,5,Acute condition likely,3,3,1
-Frequent Urination,5,Possible infection,1,1,0
-Frequent Urination,5,Monitor symptoms,0,2,1
-Frequent Urination,5,Requires clinical evaluation,2,4,0
-Frequent Urination,5,Chronic condition suspected,3,0,1
-Frequent Urination,5,Emergency evaluation needed,1,3,0
-Frequent Urination,5,Lifestyle-related issue possible,0,1,1
-Frequent Urination,5,Underlying disease progression,2,2,0
-Frequent Urination,1,Acute condition likely,3,4,1
-Frequent Urination,1,Possible infection,1,0,0
-Frequent Urination,1,Monitor symptoms,0,3,1
-Frequent Urination,1,Requires clinical evaluation,2,1,0
-Frequent Urination,1,Chronic condition suspected,3,2,1
-Frequent Urination,1,Emergency evaluation needed,1,4,0
-Frequent Urination,1,Lifestyle-related issue possible,0,0,1
-Frequent Urination,1,Underlying disease progression,2,3,0
-Frequent Urination,4,Acute condition likely,3,1,1
-Frequent Urination,4,Possible infection,1,2,0
-Frequent Urination,4,Monitor symptoms,0,4,1
-Frequent Urination,4,Requires clinical evaluation,2,0,0
-Frequent Urination,4,Chronic condition suspected,3,3,1
-Frequent Urination,4,Emergency evaluation needed,1,1,0
-Frequent Urination,4,Lifestyle-related issue possible,0,2,1
-Frequent Urination,4,Underlying disease progression,2,4,0
-Frequent Urination,0,Acute condition likely,3,0,1
-Frequent Urination,0,Possible infection,1,3,0
-Frequent Urination,0,Monitor symptoms,0,1,1
-Frequent Urination,0,Requires clinical evaluation,2,2,0
-Frequent Urination,0,Chronic condition suspected,3,4,1
-Frequent Urination,0,Emergency evaluation needed,1,0,0
-Frequent Urination,0,Lifestyle-related issue possible,0,3,1
-Frequent Urination,0,Underlying disease progression,2,1,0
-Frequent Urination,3,Acute condition likely,3,2,1
-Frequent Urination,3,Possible infection,1,4,0
-Frequent Urination,3,Monitor symptoms,0,0,1
-Frequent Urination,3,Requires clinical evaluation,2,3,0
-Frequent Urination,3,Chronic condition suspected,3,1,1
-Frequent Urination,3,Emergency evaluation needed,1,2,0
-Frequent Urination,3,Lifestyle-related issue possible,0,4,1
-Frequent Urination,3,Underlying disease progression,2,0,0
-Frequent Urination,2,Acute condition likely,3,3,1
-Frequent Urination,2,Possible infection,1,1,0
-Frequent Urination,2,Monitor symptoms,0,2,1
-Frequent Urination,2,Requires clinical evaluation,2,4,0
-Frequent Urination,2,Chronic condition suspected,3,0,1
-Frequent Urination,2,Emergency evaluation needed,1,3,0
-Frequent Urination,2,Lifestyle-related issue possible,0,1,1
-Frequent Urination,2,Underlying disease progression,2,2,0
-Frequent Urination,6,Acute condition likely,3,4,1
-Frequent Urination,6,Possible infection,1,0,0
-Frequent Urination,6,Monitor symptoms,0,3,1
-Frequent Urination,6,Requires clinical evaluation,2,1,0
-Frequent Urination,6,Chronic condition suspected,3,2,1
-Frequent Urination,6,Emergency evaluation needed,1,4,0
-Frequent Urination,6,Lifestyle-related issue possible,0,0,1
-Frequent Urination,6,Underlying disease progression,2,3,0
-Blurred Vision,5,Acute condition likely,3,1,1
-Blurred Vision,5,Possible infection,1,2,0
-Blurred Vision,5,Monitor symptoms,0,4,1
-Blurred Vision,5,Requires clinical evaluation,2,0,0
-Blurred Vision,5,Chronic condition suspected,3,3,1
-Blurred Vision,5,Emergency evaluation needed,1,1,0
-Blurred Vision,5,Lifestyle-related issue possible,0,2,1
-Blurred Vision,5,Underlying disease progression,2,4,0
-Blurred Vision,1,Acute condition likely,3,0,1
-Blurred Vision,1,Possible infection,1,3,0
-Blurred Vision,1,Monitor symptoms,0,1,1
-Blurred Vision,1,Requires clinical evaluation,2,2,0
-Blurred Vision,1,Chronic condition suspected,3,4,1
-Blurred Vision,1,Emergency evaluation needed,1,0,0
-Blurred Vision,1,Lifestyle-related issue possible,0,3,1
-Blurred Vision,1,Underlying disease progression,2,1,0
-Blurred Vision,4,Acute condition likely,3,2,1
-Blurred Vision,4,Possible infection,1,4,0
-Blurred Vision,4,Monitor symptoms,0,0,1
-Blurred Vision,4,Requires clinical evaluation,2,3,0
-Blurred Vision,4,Chronic condition suspected,3,1,1
-Blurred Vision,4,Emergency evaluation needed,1,2,0
-Blurred Vision,4,Lifestyle-related issue possible,0,4,1
-Blurred Vision,4,Underlying disease progression,2,0,0
-Blurred Vision,0,Acute condition likely,3,3,1
-Blurred Vision,0,Possible infection,1,1,0
-Blurred Vision,0,Monitor symptoms,0,2,1
-Blurred Vision,0,Requires clinical evaluation,2,4,0
-Blurred Vision,0,Chronic condition suspected,3,0,1
-Blurred Vision,0,Emergency evaluation needed,1,3,0
-Blurred Vision,0,Lifestyle-related issue possible,0,1,1
-Blurred Vision,0,Underlying disease progression,2,2,0
-Blurred Vision,3,Acute condition likely,3,4,1
-Blurred Vision,3,Possible infection,1,0,0
-Blurred Vision,3,Monitor symptoms,0,3,1
-Blurred Vision,3,Requires clinical evaluation,2,1,0
-Blurred Vision,3,Chronic condition suspected,3,2,1
-Blurred Vision,3,Emergency evaluation needed,1,4,0
-Blurred Vision,3,Lifestyle-related issue possible,0,0,1
-Blurred Vision,3,Underlying disease progression,2,3,0
-Blurred Vision,2,Acute condition likely,3,1,1
-Blurred Vision,2,Possible infection,1,2,0
-Blurred Vision,2,Monitor symptoms,0,4,1
-Blurred Vision,2,Requires clinical evaluation,2,0,0
-Blurred Vision,2,Chronic condition suspected,3,3,1
-Blurred Vision,2,Emergency evaluation needed,1,1,0
-Blurred Vision,2,Lifestyle-related issue possible,0,2,1
-Blurred Vision,2,Underlying disease progression,2,4,0
-Blurred Vision,6,Acute condition likely,3,0,1
-Blurred Vision,6,Possible infection,1,3,0
-Blurred Vision,6,Monitor symptoms,0,1,1
-Blurred Vision,6,Requires clinical evaluation,2,2,0
-Blurred Vision,6,Chronic condition suspected,3,4,1
-Blurred Vision,6,Emergency evaluation needed,1,0,0
-Blurred Vision,6,Lifestyle-related issue possible,0,3,1
-Blurred Vision,6,Underlying disease progression,2,1,0
-Seizure,5,Acute condition likely,3,2,1
-Seizure,5,Possible infection,1,4,0
-Seizure,5,Monitor symptoms,0,0,1
-Seizure,5,Requires clinical evaluation,2,3,0
-Seizure,5,Chronic condition suspected,3,1,1
-Seizure,5,Emergency evaluation needed,1,2,0
-Seizure,5,Lifestyle-related issue possible,0,4,1
-Seizure,5,Underlying disease progression,2,0,0
-Seizure,1,Acute condition likely,3,3,1
-Seizure,1,Possible infection,1,1,0
-Seizure,1,Monitor symptoms,0,2,1
-Seizure,1,Requires clinical evaluation,2,4,0
-Seizure,1,Chronic condition suspected,3,0,1
-Seizure,1,Emergency evaluation needed,1,3,0
-Seizure,1,Lifestyle-related issue possible,0,1,1
-Seizure,1,Underlying disease progression,2,2,0
-Seizure,4,Acute condition likely,3,4,1
-Seizure,4,Possible infection,1,0,0
-Seizure,4,Monitor symptoms,0,3,1
-Seizure,4,Requires clinical evaluation,2,1,0
-Seizure,4,Chronic condition suspected,3,2,1
-Seizure,4,Emergency evaluation needed,1,4,0
-Seizure,4,Lifestyle-related issue possible,0,0,1
-Seizure,4,Underlying disease progression,2,3,0
-Seizure,0,Acute condition likely,3,1,1
-Seizure,0,Possible infection,1,2,0
-Seizure,0,Monitor symptoms,0,4,1
-Seizure,0,Requires clinical evaluation,2,0,0
-Seizure,0,Chronic condition suspected,3,3,1
-Seizure,0,Emergency evaluation needed,1,1,0
-Seizure,0,Lifestyle-related issue possible,0,2,1
-Seizure,0,Underlying disease progression,2,4,0
-Seizure,3,Acute condition likely,3,0,1
-Seizure,3,Possible infection,1,3,0
-Seizure,3,Monitor symptoms,0,1,1
-Seizure,3,Requires clinical evaluation,2,2,0
-Seizure,3,Chronic condition suspected,3,4,1
-Seizure,3,Emergency evaluation needed,1,0,0
-Seizure,3,Lifestyle-related issue possible,0,3,1
-Seizure,3,Underlying disease progression,2,1,0
-Seizure,2,Acute condition likely,3,2,1
-Seizure,2,Possible infection,1,4,0
-Seizure,2,Monitor symptoms,0,0,1
-Seizure,2,Requires clinical evaluation,2,3,0
-Seizure,2,Chronic condition suspected,3,1,1
-Seizure,2,Emergency evaluation needed,1,2,0
-Seizure,2,Lifestyle-related issue possible,0,4,1
-Seizure,2,Underlying disease progression,2,0,0
-Seizure,6,Acute condition likely,3,3,1
-Seizure,6,Possible infection,1,1,0
-Seizure,6,Monitor symptoms,0,2,1
-Seizure,6,Requires clinical evaluation,2,4,0
-Seizure,6,Chronic condition suspected,3,0,1
-Seizure,6,Emergency evaluation needed,1,3,0
-Seizure,6,Lifestyle-related issue possible,0,1,1
-Seizure,6,Underlying disease progression,2,2,0
-Depression,5,Acute condition likely,3,4,1
-Depression,5,Possible infection,1,0,0
-Depression,5,Monitor symptoms,0,3,1
-Depression,5,Requires clinical evaluation,2,1,0
-Depression,5,Chronic condition suspected,3,2,1
-Depression,5,Emergency evaluation needed,1,4,0
-Depression,5,Lifestyle-related issue possible,0,0,1
-Depression,5,Underlying disease progression,2,3,0
-Depression,1,Acute condition likely,3,1,1
-Depression,1,Possible infection,1,2,0
-Depression,1,Monitor symptoms,0,4,1
-Depression,1,Requires clinical evaluation,2,0,0
-Depression,1,Chronic condition suspected,3,3,1
-Depression,1,Emergency evaluation needed,1,1,0
-Depression,1,Lifestyle-related issue possible,0,2,1
-Depression,1,Underlying disease progression,2,4,0
-Depression,4,Acute condition likely,3,0,1
-Depression,4,Possible infection,1,3,0
-Depression,4,Monitor symptoms,0,1,1
-Depression,4,Requires clinical evaluation,2,2,0
-Depression,4,Chronic condition suspected,3,4,1
-Depression,4,Emergency evaluation needed,1,0,0
-Depression,4,Lifestyle-related issue possible,0,3,1
-Depression,4,Underlying disease progression,2,1,0
-Depression,0,Acute condition likely,3,2,1
-Depression,0,Possible infection,1,4,0
-Depression,0,Monitor symptoms,0,0,1
-Depression,0,Requires clinical evaluation,2,3,0
-Depression,0,Chronic condition suspected,3,1,1
-Depression,0,Emergency evaluation needed,1,2,0
-Depression,0,Lifestyle-related issue possible,0,4,1
-Depression,0,Underlying disease progression,2,0,0
-Depression,3,Acute condition likely,3,3,1
-Depression,3,Possible infection,1,1,0
-Depression,3,Monitor symptoms,0,2,1
-Depression,3,Requires clinical evaluation,2,4,0
-Depression,3,Chronic condition suspected,3,0,1
-Depression,3,Emergency evaluation needed,1,3,0
-Depression,3,Lifestyle-related issue possible,0,1,1
-Depression,3,Underlying disease progression,2,2,0
-Depression,2,Acute condition likely,3,4,1
-Depression,2,Possible infection,1,0,0
-Depression,2,Monitor symptoms,0,3,1
-Depression,2,Requires clinical evaluation,2,1,0
-Depression,2,Chronic condition suspected,3,2,1
-Depression,2,Emergency evaluation needed,1,4,0
-Depression,2,Lifestyle-related issue possible,0,0,1
-Depression,2,Underlying disease progression,2,3,0
-Depression,6,Acute condition likely,3,1,1
-Depression,6,Possible infection,1,2,0
-Depression,6,Monitor symptoms,0,4,1
-Depression,6,Requires clinical evaluation,2,0,0
-Depression,6,Chronic condition suspected,3,3,1
-Depression,6,Emergency evaluation needed,1,1,0
-Depression,6,Lifestyle-related issue possible,0,2,1
-Depression,6,Underlying disease progression,2,4,0
-Anxiety,5,Acute condition likely,3,0,1
-Anxiety,5,Possible infection,1,3,0
-Anxiety,5,Monitor symptoms,0,1,1
-Anxiety,5,Requires clinical evaluation,2,2,0
-Anxiety,5,Chronic condition suspected,3,4,1
-Anxiety,5,Emergency evaluation needed,1,0,0
-Anxiety,5,Lifestyle-related issue possible,0,3,1
-Anxiety,5,Underlying disease progression,2,1,0
-Anxiety,1,Acute condition likely,3,2,1
-Anxiety,1,Possible infection,1,4,0
-Anxiety,1,Monitor symptoms,0,0,1
-Anxiety,1,Requires clinical evaluation,2,3,0
-Anxiety,1,Chronic condition suspected,3,1,1
-Anxiety,1,Emergency evaluation needed,1,2,0
-Anxiety,1,Lifestyle-related issue possible,0,4,1
-Anxiety,1,Underlying disease progression,2,0,0
-Anxiety,4,Acute condition likely,3,3,1
-Anxiety,4,Possible infection,1,1,0
-Anxiety,4,Monitor symptoms,0,2,1
-Anxiety,4,Requires clinical evaluation,2,4,0
-Anxiety,4,Chronic condition suspected,3,0,1
-Anxiety,4,Emergency evaluation needed,1,3,0
-Anxiety,4,Lifestyle-related issue possible,0,1,1
-Anxiety,4,Underlying disease progression,2,2,0
-Anxiety,0,Acute condition likely,3,4,1
-Anxiety,0,Possible infection,1,0,0
-Anxiety,0,Monitor symptoms,0,3,1
-Anxiety,0,Requires clinical evaluation,2,1,0
-Anxiety,0,Chronic condition suspected,3,2,1
-Anxiety,0,Emergency evaluation needed,1,4,0
-Anxiety,0,Lifestyle-related issue possible,0,0,1
-Anxiety,0,Underlying disease progression,2,3,0
-Anxiety,3,Acute condition likely,3,1,1
-Anxiety,3,Possible infection,1,2,0
-Anxiety,3,Monitor symptoms,0,4,1
-Anxiety,3,Requires clinical evaluation,2,0,0
-Anxiety,3,Chronic condition suspected,3,3,1
-Anxiety,3,Emergency evaluation needed,1,1,0
-Anxiety,3,Lifestyle-related issue possible,0,2,1
-Anxiety,3,Underlying disease progression,2,4,0
-Anxiety,2,Acute condition likely,3,0,1
-Anxiety,2,Possible infection,1,3,0
-Anxiety,2,Monitor symptoms,0,1,1
-Anxiety,2,Requires clinical evaluation,2,2,0
-Anxiety,2,Chronic condition suspected,3,4,1
-Anxiety,2,Emergency evaluation needed,1,0,0
-Anxiety,2,Lifestyle-related issue possible,0,3,1
-Anxiety,2,Underlying disease progression,2,1,0
-Anxiety,6,Acute condition likely,3,2,1
-Anxiety,6,Possible infection,1,4,0
-Anxiety,6,Monitor symptoms,0,0,1
-Anxiety,6,Requires clinical evaluation,2,3,0
-Anxiety,6,Chronic condition suspected,3,1,1
-Anxiety,6,Emergency evaluation needed,1,2,0
-Anxiety,6,Lifestyle-related issue possible,0,4,1
-Anxiety,6,Underlying disease progression,2,0,0
-Insomnia,5,Acute condition likely,3,3,1
-Insomnia,5,Possible infection,1,1,0
-Insomnia,5,Monitor symptoms,0,2,1
-Insomnia,5,Requires clinical evaluation,2,4,0
-Insomnia,5,Chronic condition suspected,3,0,1
-Insomnia,5,Emergency evaluation needed,1,3,0
-Insomnia,5,Lifestyle-related issue possible,0,1,1
-Insomnia,5,Underlying disease progression,2,2,0
-Insomnia,1,Acute condition likely,3,4,1
-Insomnia,1,Possible infection,1,0,0
-Insomnia,1,Monitor symptoms,0,3,1
-Insomnia,1,Requires clinical evaluation,2,1,0
-Insomnia,1,Chronic condition suspected,3,2,1
-Insomnia,1,Emergency evaluation needed,1,4,0
-Insomnia,1,Lifestyle-related issue possible,0,0,1
-Insomnia,1,Underlying disease progression,2,3,0
-Insomnia,4,Acute condition likely,3,1,1
-Insomnia,4,Possible infection,1,2,0
-Insomnia,4,Monitor symptoms,0,4,1
-Insomnia,4,Requires clinical evaluation,2,0,0
-Insomnia,4,Chronic condition suspected,3,3,1
-Insomnia,4,Emergency evaluation needed,1,1,0
-Insomnia,4,Lifestyle-related issue possible,0,2,1
-Insomnia,4,Underlying disease progression,2,4,0
-Insomnia,0,Acute condition likely,3,0,1
-Insomnia,0,Possible infection,1,3,0
-Insomnia,0,Monitor symptoms,0,1,1
-Insomnia,0,Requires clinical evaluation,2,2,0
-Insomnia,0,Chronic condition suspected,3,4,1
-Insomnia,0,Emergency evaluation needed,1,0,0
-Insomnia,0,Lifestyle-related issue possible,0,3,1
-Insomnia,0,Underlying disease progression,2,1,0
-Insomnia,3,Acute condition likely,3,2,1
-Insomnia,3,Possible infection,1,4,0
-Insomnia,3,Monitor symptoms,0,0,1
-Insomnia,3,Requires clinical evaluation,2,3,0
-Insomnia,3,Chronic condition suspected,3,1,1
-Insomnia,3,Emergency evaluation needed,1,2,0
-Insomnia,3,Lifestyle-related issue possible,0,4,1
-Insomnia,3,Underlying disease progression,2,0,0
-Insomnia,2,Acute condition likely,3,3,1
-Insomnia,2,Possible infection,1,1,0
-Insomnia,2,Monitor symptoms,0,2,1
-Insomnia,2,Requires clinical evaluation,2,4,0
-Insomnia,2,Chronic condition suspected,3,0,1
-Insomnia,2,Emergency evaluation needed,1,3,0
-Insomnia,2,Lifestyle-related issue possible,0,1,1
-Insomnia,2,Underlying disease progression,2,2,0
-Insomnia,6,Acute condition likely,3,4,1
-Insomnia,6,Possible infection,1,0,0
-Insomnia,6,Monitor symptoms,0,3,1
-Insomnia,6,Requires clinical evaluation,2,1,0
-Insomnia,6,Chronic condition suspected,3,2,1
-Insomnia,6,Emergency evaluation needed,1,4,0
-Insomnia,6,Lifestyle-related issue possible,0,0,1
-Insomnia,6,Underlying disease progression,2,3,0
-Hair Loss,5,Acute condition likely,3,1,1
-Hair Loss,5,Possible infection,1,2,0
-Hair Loss,5,Monitor symptoms,0,4,1
-Hair Loss,5,Requires clinical evaluation,2,0,0
-Hair Loss,5,Chronic condition suspected,3,3,1
-Hair Loss,5,Emergency evaluation needed,1,1,0
-Hair Loss,5,Lifestyle-related issue possible,0,2,1
-Hair Loss,5,Underlying disease progression,2,4,0
-Hair Loss,1,Acute condition likely,3,0,1
-Hair Loss,1,Possible infection,1,3,0
-Hair Loss,1,Monitor symptoms,0,1,1
-Hair Loss,1,Requires clinical evaluation,2,2,0
-Hair Loss,1,Chronic condition suspected,3,4,1
-Hair Loss,1,Emergency evaluation needed,1,0,0
-Hair Loss,1,Lifestyle-related issue possible,0,3,1
-Hair Loss,1,Underlying disease progression,2,1,0
-Hair Loss,4,Acute condition likely,3,2,1
-Hair Loss,4,Possible infection,1,4,0
-Hair Loss,4,Monitor symptoms,0,0,1
-Hair Loss,4,Requires clinical evaluation,2,3,0
-Hair Loss,4,Chronic condition suspected,3,1,1
-Hair Loss,4,Emergency evaluation needed,1,2,0
-Hair Loss,4,Lifestyle-related issue possible,0,4,1
-Hair Loss,4,Underlying disease progression,2,0,0
-Hair Loss,0,Acute condition likely,3,3,1
-Hair Loss,0,Possible infection,1,1,0
-Hair Loss,0,Monitor symptoms,0,2,1
-Hair Loss,0,Requires clinical evaluation,2,4,0
-Hair Loss,0,Chronic condition suspected,3,0,1
-Hair Loss,0,Emergency evaluation needed,1,3,0
-Hair Loss,0,Lifestyle-related issue possible,0,1,1
-Hair Loss,0,Underlying disease progression,2,2,0
-Hair Loss,3,Acute condition likely,3,4,1
-Hair Loss,3,Possible infection,1,0,0
-Hair Loss,3,Monitor symptoms,0,3,1
-Hair Loss,3,Requires clinical evaluation,2,1,0
-Hair Loss,3,Chronic condition suspected,3,2,1
-Hair Loss,3,Emergency evaluation needed,1,4,0
-Hair Loss,3,Lifestyle-related issue possible,0,0,1
-Hair Loss,3,Underlying disease progression,2,3,0
-Hair Loss,2,Acute condition likely,3,1,1
-Hair Loss,2,Possible infection,1,2,0
-Hair Loss,2,Monitor symptoms,0,4,1
-Hair Loss,2,Requires clinical evaluation,2,0,0
-Hair Loss,2,Chronic condition suspected,3,3,1
-Hair Loss,2,Emergency evaluation needed,1,1,0
-Hair Loss,2,Lifestyle-related issue possible,0,2,1
-Hair Loss,2,Underlying disease progression,2,4,0
-Hair Loss,6,Acute condition likely,3,0,1
-Hair Loss,6,Possible infection,1,3,0
-Hair Loss,6,Monitor symptoms,0,1,1
-Hair Loss,6,Requires clinical evaluation,2,2,0
-Hair Loss,6,Chronic condition suspected,3,4,1
-Hair Loss,6,Emergency evaluation needed,1,0,0
-Hair Loss,6,Lifestyle-related issue possible,0,3,1
-Hair Loss,6,Underlying disease progression,2,1,0
-Nausea,5,Acute condition likely,3,2,1
-Nausea,5,Possible infection,1,4,0
-Nausea,5,Monitor symptoms,0,0,1
-Nausea,5,Requires clinical evaluation,2,3,0
-Nausea,5,Chronic condition suspected,3,1,1
-Nausea,5,Emergency evaluation needed,1,2,0
-Nausea,5,Lifestyle-related issue possible,0,4,1
-Nausea,5,Underlying disease progression,2,0,0
-Nausea,1,Acute condition likely,3,3,1
-Nausea,1,Possible infection,1,1,0
-Nausea,1,Monitor symptoms,0,2,1
-Nausea,1,Requires clinical evaluation,2,4,0
-Nausea,1,Chronic condition suspected,3,0,1
-Nausea,1,Emergency evaluation needed,1,3,0
-Nausea,1,Lifestyle-related issue possible,0,1,1
-Nausea,1,Underlying disease progression,2,2,0
-Nausea,4,Acute condition likely,3,4,1
-Nausea,4,Possible infection,1,0,0
-Nausea,4,Monitor symptoms,0,3,1
-Nausea,4,Requires clinical evaluation,2,1,0
-Nausea,4,Chronic condition suspected,3,2,1
-Nausea,4,Emergency evaluation needed,1,4,0
-Nausea,4,Lifestyle-related issue possible,0,0,1
-Nausea,4,Underlying disease progression,2,3,0
-Nausea,0,Acute condition likely,3,1,1
-Nausea,0,Possible infection,1,2,0
-Nausea,0,Monitor symptoms,0,4,1
-Nausea,0,Requires clinical evaluation,2,0,0
-Nausea,0,Chronic condition suspected,3,3,1
-Nausea,0,Emergency evaluation needed,1,1,0
-Nausea,0,Lifestyle-related issue possible,0,2,1
-Nausea,0,Underlying disease progression,2,4,0
-Nausea,3,Acute condition likely,3,0,1
-Nausea,3,Possible infection,1,3,0
-Nausea,3,Monitor symptoms,0,1,1
-Nausea,3,Requires clinical evaluation,2,2,0
-Nausea,3,Chronic condition suspected,3,4,1
-Nausea,3,Emergency evaluation needed,1,0,0
-Nausea,3,Lifestyle-related issue possible,0,3,1
-Nausea,3,Underlying disease progression,2,1,0
-Nausea,2,Acute condition likely,3,2,1
-Nausea,2,Possible infection,1,4,0
-Nausea,2,Monitor symptoms,0,0,1
-Nausea,2,Requires clinical evaluation,2,3,0
-Nausea,2,Chronic condition suspected,3,1,1
-Nausea,2,Emergency evaluation needed,1,2,0
-Nausea,2,Lifestyle-related issue possible,0,4,1
-Nausea,2,Underlying disease progression,2,0,0
-Nausea,6,Acute condition likely,3,3,1
-Nausea,6,Possible infection,1,1,0
-Nausea,6,Monitor symptoms,0,2,1
-Nausea,6,Requires clinical evaluation,2,4,0
-Nausea,6,Chronic condition suspected,3,0,1
-Nausea,6,Emergency evaluation needed,1,3,0
-Nausea,6,Lifestyle-related issue possible,0,1,1
-Nausea,6,Underlying disease progression,2,2,0
-Constipation,5,Acute condition likely,3,4,1
-Constipation,5,Possible infection,1,0,0
-Constipation,5,Monitor symptoms,0,3,1
-Constipation,5,Requires clinical evaluation,2,1,0
-Constipation,5,Chronic condition suspected,3,2,1
-Constipation,5,Emergency evaluation needed,1,4,0
-Constipation,5,Lifestyle-related issue possible,0,0,1
-Constipation,5,Underlying disease progression,2,3,0
-Constipation,1,Acute condition likely,3,1,1
-Constipation,1,Possible infection,1,2,0
-Constipation,1,Monitor symptoms,0,4,1
-Constipation,1,Requires clinical evaluation,2,0,0
-Constipation,1,Chronic condition suspected,3,3,1
-Constipation,1,Emergency evaluation needed,1,1,0
-Constipation,1,Lifestyle-related issue possible,0,2,1
-Constipation,1,Underlying disease progression,2,4,0
-Constipation,4,Acute condition likely,3,0,1
-Constipation,4,Possible infection,1,3,0
-Constipation,4,Monitor symptoms,0,1,1
-Constipation,4,Requires clinical evaluation,2,2,0
-Constipation,4,Chronic condition suspected,3,4,1
-Constipation,4,Emergency evaluation needed,1,0,0
-Constipation,4,Lifestyle-related issue possible,0,3,1
-Constipation,4,Underlying disease progression,2,1,0
-Constipation,0,Acute condition likely,3,2,1
-Constipation,0,Possible infection,1,4,0
-Constipation,0,Monitor symptoms,0,0,1
-Constipation,0,Requires clinical evaluation,2,3,0
-Constipation,0,Chronic condition suspected,3,1,1
-Constipation,0,Emergency evaluation needed,1,2,0
-Constipation,0,Lifestyle-related issue possible,0,4,1
-Constipation,0,Underlying disease progression,2,0,0
-Constipation,3,Acute condition likely,3,3,1
-Constipation,3,Possible infection,1,1,0
-Constipation,3,Monitor symptoms,0,2,1
-Constipation,3,Requires clinical evaluation,2,4,0
-Constipation,3,Chronic condition suspected,3,0,1
-Constipation,3,Emergency evaluation needed,1,3,0
-Constipation,3,Lifestyle-related issue possible,0,1,1
-Constipation,3,Underlying disease progression,2,2,0
-Constipation,2,Acute condition likely,3,4,1
-Constipation,2,Possible infection,1,0,0
-Constipation,2,Monitor symptoms,0,3,1
-Constipation,2,Requires clinical evaluation,2,1,0
-Constipation,2,Chronic condition suspected,3,2,1
-Constipation,2,Emergency evaluation needed,1,4,0
-Constipation,2,Lifestyle-related issue possible,0,0,1
-Constipation,2,Underlying disease progression,2,3,0
-Constipation,6,Acute condition likely,3,1,1
-Constipation,6,Possible infection,1,2,0
-Constipation,6,Monitor symptoms,0,4,1
-Constipation,6,Requires clinical evaluation,2,0,0
-Constipation,6,Chronic condition suspected,3,3,1
-Constipation,6,Emergency evaluation needed,1,1,0
-Constipation,6,Lifestyle-related issue possible,0,2,1
-Constipation,6,Underlying disease progression,2,4,0
-Swelling,5,Acute condition likely,3,0,1
-Swelling,5,Possible infection,1,3,0
-Swelling,5,Monitor symptoms,0,1,1
-Swelling,5,Requires clinical evaluation,2,2,0
-Swelling,5,Chronic condition suspected,3,4,1
-Swelling,5,Emergency evaluation needed,1,0,0
-Swelling,5,Lifestyle-related issue possible,0,3,1
-Swelling,5,Underlying disease progression,2,1,0
-Swelling,1,Acute condition likely,3,2,1
-Swelling,1,Possible infection,1,4,0
-Swelling,1,Monitor symptoms,0,0,1
-Swelling,1,Requires clinical evaluation,2,3,0
-Swelling,1,Chronic condition suspected,3,1,1
-Swelling,1,Emergency evaluation needed,1,2,0
-Swelling,1,Lifestyle-related issue possible,0,4,1
-Swelling,1,Underlying disease progression,2,0,0
-Swelling,4,Acute condition likely,3,3,1
-Swelling,4,Possible infection,1,1,0
-Swelling,4,Monitor symptoms,0,2,1
-Swelling,4,Requires clinical evaluation,2,4,0
-Swelling,4,Chronic condition suspected,3,0,1
-Swelling,4,Emergency evaluation needed,1,3,0
-Swelling,4,Lifestyle-related issue possible,0,1,1
-Swelling,4,Underlying disease progression,2,2,0
-Swelling,0,Acute condition likely,3,4,1
-Swelling,0,Possible infection,1,0,0
-Swelling,0,Monitor symptoms,0,3,1
-Swelling,0,Requires clinical evaluation,2,1,0
-Swelling,0,Chronic condition suspected,3,2,1
-Swelling,0,Emergency evaluation needed,1,4,0
-Swelling,0,Lifestyle-related issue possible,0,0,1
-Swelling,0,Underlying disease progression,2,3,0
-Swelling,3,Acute condition likely,3,1,1
-Swelling,3,Possible infection,1,2,0
-Swelling,3,Monitor symptoms,0,4,1
-Swelling,3,Requires clinical evaluation,2,0,0
-Swelling,3,Chronic condition suspected,3,3,1
-Swelling,3,Emergency evaluation needed,1,1,0
-Swelling,3,Lifestyle-related issue possible,0,2,1
-Swelling,3,Underlying disease progression,2,4,0
-Swelling,2,Acute condition likely,3,0,1
-Swelling,2,Possible infection,1,3,0
-Swelling,2,Monitor symptoms,0,1,1
-Swelling,2,Requires clinical evaluation,2,2,0
-Swelling,2,Chronic condition suspected,3,4,1
-Swelling,2,Emergency evaluation needed,1,0,0
-Swelling,2,Lifestyle-related issue possible,0,3,1
-Swelling,2,Underlying disease progression,2,1,0
-Swelling,6,Acute condition likely,3,2,1
-Swelling,6,Possible infection,1,4,0
-Swelling,6,Monitor symptoms,0,0,1
-Swelling,6,Requires clinical evaluation,2,3,0
-Swelling,6,Chronic condition suspected,3,1,1
-Swelling,6,Emergency evaluation needed,1,2,0
-Swelling,6,Lifestyle-related issue possible,0,4,1
-Swelling,6,Underlying disease progression,2,0,0
-Bleeding,5,Acute condition likely,3,3,1
-Bleeding,5,Possible infection,1,1,0
-Bleeding,5,Monitor symptoms,0,2,1
-Bleeding,5,Requires clinical evaluation,2,4,0
-Bleeding,5,Chronic condition suspected,3,0,1
-Bleeding,5,Emergency evaluation needed,1,3,0
-Bleeding,5,Lifestyle-related issue possible,0,1,1
-Bleeding,5,Underlying disease progression,2,2,0
-Bleeding,1,Acute condition likely,3,4,1
-Bleeding,1,Possible infection,1,0,0
-Bleeding,1,Monitor symptoms,0,3,1
-Bleeding,1,Requires clinical evaluation,2,1,0
-Bleeding,1,Chronic condition suspected,3,2,1
-Bleeding,1,Emergency evaluation needed,1,4,0
-Bleeding,1,Lifestyle-related issue possible,0,0,1
-Bleeding,1,Underlying disease progression,2,3,0
-Bleeding,4,Acute condition likely,3,1,1
-Bleeding,4,Possible infection,1,2,0
-Bleeding,4,Monitor symptoms,0,4,1
-Bleeding,4,Requires clinical evaluation,2,0,0
-Bleeding,4,Chronic condition suspected,3,3,1
-Bleeding,4,Emergency evaluation needed,1,1,0
-Bleeding,4,Lifestyle-related issue possible,0,2,1
-Bleeding,4,Underlying disease progression,2,4,0
-Bleeding,0,Acute condition likely,3,0,1
-Bleeding,0,Possible infection,1,3,0
-Bleeding,0,Monitor symptoms,0,1,1
-Bleeding,0,Requires clinical evaluation,2,2,0
-Bleeding,0,Chronic condition suspected,3,4,1
-Bleeding,0,Emergency evaluation needed,1,0,0
-Bleeding,0,Lifestyle-related issue possible,0,3,1
-Bleeding,0,Underlying disease progression,2,1,0
-Bleeding,3,Acute condition likely,3,2,1
-Bleeding,3,Possible infection,1,4,0
-Bleeding,3,Monitor symptoms,0,0,1
-Bleeding,3,Requires clinical evaluation,2,3,0
-Bleeding,3,Chronic condition suspected,3,1,1
-Bleeding,3,Emergency evaluation needed,1,2,0
-Bleeding,3,Lifestyle-related issue possible,0,4,1
-Bleeding,3,Underlying disease progression,2,0,0
-Bleeding,2,Acute condition likely,3,3,1
-Bleeding,2,Possible infection,1,1,0
-Bleeding,2,Monitor symptoms,0,2,1
-Bleeding,2,Requires clinical evaluation,2,4,0
-Bleeding,2,Chronic condition suspected,3,0,1
-Bleeding,2,Emergency evaluation needed,1,3,0
-Bleeding,2,Lifestyle-related issue possible,0,1,1
-Bleeding,2,Underlying disease progression,2,2,0
-Bleeding,6,Acute condition likely,3,4,1
-Bleeding,6,Possible infection,1,0,0
-Bleeding,6,Monitor symptoms,0,3,1
-Bleeding,6,Requires clinical evaluation,2,1,0
-Bleeding,6,Chronic condition suspected,3,2,1
-Bleeding,6,Emergency evaluation needed,1,4,0
-Bleeding,6,Lifestyle-related issue possible,0,0,1
-Bleeding,6,Underlying disease progression,2,3,0
-Weakness,5,Acute condition likely,3,1,1
-Weakness,5,Possible infection,1,2,0
-Weakness,5,Monitor symptoms,0,4,1
-Weakness,5,Requires clinical evaluation,2,0,0
-Weakness,5,Chronic condition suspected,3,3,1
-Weakness,5,Emergency evaluation needed,1,1,0
-Weakness,5,Lifestyle-related issue possible,0,2,1
-Weakness,5,Underlying disease progression,2,4,0
-Weakness,1,Acute condition likely,3,0,1
-Weakness,1,Possible infection,1,3,0
-Weakness,1,Monitor symptoms,0,1,1
-Weakness,1,Requires clinical evaluation,2,2,0
-Weakness,1,Chronic condition suspected,3,4,1
-Weakness,1,Emergency evaluation needed,1,0,0
-Weakness,1,Lifestyle-related issue possible,0,3,1
-Weakness,1,Underlying disease progression,2,1,0
-Weakness,4,Acute condition likely,3,2,1
-Weakness,4,Possible infection,1,4,0
-Weakness,4,Monitor symptoms,0,0,1
-Weakness,4,Requires clinical evaluation,2,3,0
-Weakness,4,Chronic condition suspected,3,1,1
-Weakness,4,Emergency evaluation needed,1,2,0
-Weakness,4,Lifestyle-related issue possible,0,4,1
-Weakness,4,Underlying disease progression,2,0,0
-Weakness,0,Acute condition likely,3,3,1
-Weakness,0,Possible infection,1,1,0
-Weakness,0,Monitor symptoms,0,2,1
-Weakness,0,Requires clinical evaluation,2,4,0
-Weakness,0,Chronic condition suspected,3,0,1
-Weakness,0,Emergency evaluation needed,1,3,0
-Weakness,0,Lifestyle-related issue possible,0,1,1
-Weakness,0,Underlying disease progression,2,2,0
-Weakness,3,Acute condition likely,3,4,1
-Weakness,3,Possible infection,1,0,0
-Weakness,3,Monitor symptoms,0,3,1
-Weakness,3,Requires clinical evaluation,2,1,0
-Weakness,3,Chronic condition suspected,3,2,1
-Weakness,3,Emergency evaluation needed,1,4,0
-Weakness,3,Lifestyle-related issue possible,0,0,1
-Weakness,3,Underlying disease progression,2,3,0
-Weakness,2,Acute condition likely,3,1,1
-Weakness,2,Possible infection,1,2,0
-Weakness,2,Monitor symptoms,0,4,1
-Weakness,2,Requires clinical evaluation,2,0,0
-Weakness,2,Chronic condition suspected,3,3,1
-Weakness,2,Emergency evaluation needed,1,1,0
-Weakness,2,Lifestyle-related issue possible,0,2,1
-Weakness,2,Underlying disease progression,2,4,0
-Weakness,6,Acute condition likely,3,0,1
-Weakness,6,Possible infection,1,3,0
-Weakness,6,Monitor symptoms,0,1,1
-Weakness,6,Requires clinical evaluation,2,2,0
-Weakness,6,Chronic condition suspected,3,4,1
-Weakness,6,Emergency evaluation needed,1,0,0
-Weakness,6,Lifestyle-related issue possible,0,3,1
-Weakness,6,Underlying disease progression,2,1,0
-Confusion,5,Acute condition likely,3,2,1
-Confusion,5,Possible infection,1,4,0
-Confusion,5,Monitor symptoms,0,0,1
-Confusion,5,Requires clinical evaluation,2,3,0
-Confusion,5,Chronic condition suspected,3,1,1
-Confusion,5,Emergency evaluation needed,1,2,0
-Confusion,5,Lifestyle-related issue possible,0,4,1
-Confusion,5,Underlying disease progression,2,0,0
-Confusion,1,Acute condition likely,3,3,1
-Confusion,1,Possible infection,1,1,0
-Confusion,1,Monitor symptoms,0,2,1
-Confusion,1,Requires clinical evaluation,2,4,0
-Confusion,1,Chronic condition suspected,3,0,1
-Confusion,1,Emergency evaluation needed,1,3,0
-Confusion,1,Lifestyle-related issue possible,0,1,1
-Confusion,1,Underlying disease progression,2,2,0
-Confusion,4,Acute condition likely,3,4,1
-Confusion,4,Possible infection,1,0,0
-Confusion,4,Monitor symptoms,0,3,1
-Confusion,4,Requires clinical evaluation,2,1,0
-Confusion,4,Chronic condition suspected,3,2,1
-Confusion,4,Emergency evaluation needed,1,4,0
-Confusion,4,Lifestyle-related issue possible,0,0,1
-Confusion,4,Underlying disease progression,2,3,0
-Confusion,0,Acute condition likely,3,1,1
-Confusion,0,Possible infection,1,2,0
-Confusion,0,Monitor symptoms,0,4,1
-Confusion,0,Requires clinical evaluation,2,0,0
-Confusion,0,Chronic condition suspected,3,3,1
-Confusion,0,Emergency evaluation needed,1,1,0
-Confusion,0,Lifestyle-related issue possible,0,2,1
-Confusion,0,Underlying disease progression,2,4,0
-Confusion,3,Acute condition likely,3,0,1
-Confusion,3,Possible infection,1,3,0
-Confusion,3,Monitor symptoms,0,1,1
-Confusion,3,Requires clinical evaluation,2,2,0
-Confusion,3,Chronic condition suspected,3,4,1
-Confusion,3,Emergency evaluation needed,1,0,0
-Confusion,3,Lifestyle-related issue possible,0,3,1
-Confusion,3,Underlying disease progression,2,1,0
-Confusion,2,Acute condition likely,3,2,1
-Confusion,2,Possible infection,1,4,0
-Confusion,2,Monitor symptoms,0,0,1
-Confusion,2,Requires clinical evaluation,2,3,0
-Confusion,2,Chronic condition suspected,3,1,1
-Confusion,2,Emergency evaluation needed,1,2,0
-Confusion,2,Lifestyle-related issue possible,0,4,1
-Confusion,2,Underlying disease progression,2,0,0
-Confusion,6,Acute condition likely,3,3,1
-Confusion,6,Possible infection,1,1,0
-Confusion,6,Monitor symptoms,0,2,1
-Confusion,6,Requires clinical evaluation,2,4,0
-Confusion,6,Chronic condition suspected,3,0,1
-Confusion,6,Emergency evaluation needed,1,3,0
-Confusion,6,Lifestyle-related issue possible,0,1,1
-Confusion,6,Underlying disease progression,2,2,0
-Sore Throat,5,Acute condition likely,3,4,1
-Sore Throat,5,Possible infection,1,0,0
-Sore Throat,5,Monitor symptoms,0,3,1
-Sore Throat,5,Requires clinical evaluation,2,1,0
-Sore Throat,5,Chronic condition suspected,3,2,1
-Sore Throat,5,Emergency evaluation needed,1,4,0
-Sore Throat,5,Lifestyle-related issue possible,0,0,1
-Sore Throat,5,Underlying disease progression,2,3,0
-Sore Throat,1,Acute condition likely,3,1,1
-Sore Throat,1,Possible infection,1,2,0
-Sore Throat,1,Monitor symptoms,0,4,1
-Sore Throat,1,Requires clinical evaluation,2,0,0
-Sore Throat,1,Chronic condition suspected,3,3,1
-Sore Throat,1,Emergency evaluation needed,1,1,0
-Sore Throat,1,Lifestyle-related issue possible,0,2,1
-Sore Throat,1,Underlying disease progression,2,4,0
-Sore Throat,4,Acute condition likely,3,0,1
-Sore Throat,4,Possible infection,1,3,0
-Sore Throat,4,Monitor symptoms,0,1,1
-Sore Throat,4,Requires clinical evaluation,2,2,0
-Sore Throat,4,Chronic condition suspected,3,4,1
-Sore Throat,4,Emergency evaluation needed,1,0,0
-Sore Throat,4,Lifestyle-related issue possible,0,3,1
-Sore Throat,4,Underlying disease progression,2,1,0
-Sore Throat,0,Acute condition likely,3,2,1
-Sore Throat,0,Possible infection,1,4,0
-Sore Throat,0,Monitor symptoms,0,0,1
-Sore Throat,0,Requires clinical evaluation,2,3,0
-Sore Throat,0,Chronic condition suspected,3,1,1
-Sore Throat,0,Emergency evaluation needed,1,2,0
-Sore Throat,0,Lifestyle-related issue possible,0,4,1
-Sore Throat,0,Underlying disease progression,2,0,0
-Sore Throat,3,Acute condition likely,3,3,1
-Sore Throat,3,Possible infection,1,1,0
-Sore Throat,3,Monitor symptoms,0,2,1
-Sore Throat,3,Requires clinical evaluation,2,4,0
-Sore Throat,3,Chronic condition suspected,3,0,1
-Sore Throat,3,Emergency evaluation needed,1,3,0
-Sore Throat,3,Lifestyle-related issue possible,0,1,1
-Sore Throat,3,Underlying disease progression,2,2,0
-Sore Throat,2,Acute condition likely,3,4,1
-Sore Throat,2,Possible infection,1,0,0
-Sore Throat,2,Monitor symptoms,0,3,1
-Sore Throat,2,Requires clinical evaluation,2,1,0
-Sore Throat,2,Chronic condition suspected,3,2,1
-Sore Throat,2,Emergency evaluation needed,1,4,0
-Sore Throat,2,Lifestyle-related issue possible,0,0,1
-Sore Throat,2,Underlying disease progression,2,3,0
-Sore Throat,6,Acute condition likely,3,1,1
-Sore Throat,6,Possible infection,1,2,0
-Sore Throat,6,Monitor symptoms,0,4,1
-Sore Throat,6,Requires clinical evaluation,2,0,0
-Sore Throat,6,Chronic condition suspected,3,3,1
-Sore Throat,6,Emergency evaluation needed,1,1,0
-Sore Throat,6,Lifestyle-related issue possible,0,2,1
-Sore Throat,6,Underlying disease progression,2,4,0
-Runny Nose,5,Acute condition likely,3,0,1
-Runny Nose,5,Possible infection,1,3,0
-Runny Nose,5,Monitor symptoms,0,1,1
-Runny Nose,5,Requires clinical evaluation,2,2,0
-Runny Nose,5,Chronic condition suspected,3,4,1
-Runny Nose,5,Emergency evaluation needed,1,0,0
-Runny Nose,5,Lifestyle-related issue possible,0,3,1
-Runny Nose,5,Underlying disease progression,2,1,0
-Runny Nose,1,Acute condition likely,3,2,1
-Runny Nose,1,Possible infection,1,4,0
-Runny Nose,1,Monitor symptoms,0,0,1
-Runny Nose,1,Requires clinical evaluation,2,3,0
-Runny Nose,1,Chronic condition suspected,3,1,1
-Runny Nose,1,Emergency evaluation needed,1,2,0
-Runny Nose,1,Lifestyle-related issue possible,0,4,1
-Runny Nose,1,Underlying disease progression,2,0,0
-Runny Nose,4,Acute condition likely,3,3,1
-Runny Nose,4,Possible infection,1,1,0
-Runny Nose,4,Monitor symptoms,0,2,1
-Runny Nose,4,Requires clinical evaluation,2,4,0
-Runny Nose,4,Chronic condition suspected,3,0,1
-Runny Nose,4,Emergency evaluation needed,1,3,0
-Runny Nose,4,Lifestyle-related issue possible,0,1,1
-Runny Nose,4,Underlying disease progression,2,2,0
-Runny Nose,0,Acute condition likely,3,4,1
-Runny Nose,0,Possible infection,1,0,0
-Runny Nose,0,Monitor symptoms,0,3,1
-Runny Nose,0,Requires clinical evaluation,2,1,0
-Runny Nose,0,Chronic condition suspected,3,2,1
-Runny Nose,0,Emergency evaluation needed,1,4,0
-Runny Nose,0,Lifestyle-related issue possible,0,0,1
-Runny Nose,0,Underlying disease progression,2,3,0
-Runny Nose,3,Acute condition likely,3,1,1
-Runny Nose,3,Possible infection,1,2,0
-Runny Nose,3,Monitor symptoms,0,4,1
-Runny Nose,3,Requires clinical evaluation,2,0,0
-Runny Nose,3,Chronic condition suspected,3,3,1
-Runny Nose,3,Emergency evaluation needed,1,1,0
-Runny Nose,3,Lifestyle-related issue possible,0,2,1
-Runny Nose,3,Underlying disease progression,2,4,0
-Runny Nose,2,Acute condition likely,3,0,1
-Runny Nose,2,Possible infection,1,3,0
-Runny Nose,2,Monitor symptoms,0,1,1
-Runny Nose,2,Requires clinical evaluation,2,2,0
-Runny Nose,2,Chronic condition suspected,3,4,1
-Runny Nose,2,Emergency evaluation needed,1,0,0
-Runny Nose,2,Lifestyle-related issue possible,0,3,1
-Runny Nose,2,Underlying disease progression,2,1,0
-Runny Nose,6,Acute condition likely,3,2,1
-Runny Nose,6,Possible infection,1,4,0
-Runny Nose,6,Monitor symptoms,0,0,1
-Runny Nose,6,Requires clinical evaluation,2,3,0
-Runny Nose,6,Chronic condition suspected,3,1,1
-Runny Nose,6,Emergency evaluation needed,1,2,0
-Runny Nose,6,Lifestyle-related issue possible,0,4,1
-Runny Nose,6,Underlying disease progression,2,0,0
+Fever,5,Acute Condition Likely,2,4,1
+Fever,5,Possible Infection,3,0,0
+Fever,5,Monitor Symptoms,4,3,1
+Fever,5,Requires Clinical Evaluation,1,2,0
+Fever,5,Chronic Condition Suspected,2,1,1
+Fever,5,Emergency Evaluation Needed,3,4,0
+Fever,5,Lifestyle-Related Issue Possible,4,0,1
+Fever,5,Underlying Disease Progression,1,3,0
+Fever,1,Acute Condition Likely,2,2,1
+Fever,1,Possible Infection,3,1,0
+Fever,1,Monitor Symptoms,4,4,1
+Fever,1,Requires Clinical Evaluation,1,0,0
+Fever,1,Chronic Condition Suspected,2,3,1
+Fever,1,Emergency Evaluation Needed,3,2,0
+Fever,1,Lifestyle-Related Issue Possible,4,1,1
+Fever,1,Underlying Disease Progression,1,4,0
+Fever,4,Acute Condition Likely,2,0,1
+Fever,4,Possible Infection,3,3,0
+Fever,4,Monitor Symptoms,4,2,1
+Fever,4,Requires Clinical Evaluation,1,1,0
+Fever,4,Chronic Condition Suspected,2,4,1
+Fever,4,Emergency Evaluation Needed,3,0,0
+Fever,4,Lifestyle-Related Issue Possible,4,3,1
+Fever,4,Underlying Disease Progression,1,2,0
+Fever,0,Acute Condition Likely,2,1,1
+Fever,0,Possible Infection,3,4,0
+Fever,0,Monitor Symptoms,4,0,1
+Fever,0,Requires Clinical Evaluation,1,3,0
+Fever,0,Chronic Condition Suspected,2,2,1
+Fever,0,Emergency Evaluation Needed,3,1,0
+Fever,0,Lifestyle-Related Issue Possible,4,4,1
+Fever,0,Underlying Disease Progression,1,0,0
+Fever,3,Acute Condition Likely,2,3,1
+Fever,3,Possible Infection,3,2,0
+Fever,3,Monitor Symptoms,4,1,1
+Fever,3,Requires Clinical Evaluation,1,4,0
+Fever,3,Chronic Condition Suspected,2,0,1
+Fever,3,Emergency Evaluation Needed,3,3,0
+Fever,3,Lifestyle-Related Issue Possible,4,2,1
+Fever,3,Underlying Disease Progression,1,1,0
+Fever,2,Acute Condition Likely,2,4,1
+Fever,2,Possible Infection,3,0,0
+Fever,2,Monitor Symptoms,4,3,1
+Fever,2,Requires Clinical Evaluation,1,2,0
+Fever,2,Chronic Condition Suspected,2,1,1
+Fever,2,Emergency Evaluation Needed,3,4,0
+Fever,2,Lifestyle-Related Issue Possible,4,0,1
+Fever,2,Underlying Disease Progression,1,3,0
+Fever,6,Acute Condition Likely,2,2,1
+Fever,6,Possible Infection,3,1,0
+Fever,6,Monitor Symptoms,4,4,1
+Fever,6,Requires Clinical Evaluation,1,0,0
+Fever,6,Chronic Condition Suspected,2,3,1
+Fever,6,Emergency Evaluation Needed,3,2,0
+Fever,6,Lifestyle-Related Issue Possible,4,1,1
+Fever,6,Underlying Disease Progression,1,4,0
+Cough,5,Acute Condition Likely,2,0,1
+Cough,5,Possible Infection,3,3,0
+Cough,5,Monitor Symptoms,4,2,1
+Cough,5,Requires Clinical Evaluation,1,1,0
+Cough,5,Chronic Condition Suspected,2,4,1
+Cough,5,Emergency Evaluation Needed,3,0,0
+Cough,5,Lifestyle-Related Issue Possible,4,3,1
+Cough,5,Underlying Disease Progression,1,2,0
+Cough,1,Acute Condition Likely,2,1,1
+Cough,1,Possible Infection,3,4,0
+Cough,1,Monitor Symptoms,4,0,1
+Cough,1,Requires Clinical Evaluation,1,3,0
+Cough,1,Chronic Condition Suspected,2,2,1
+Cough,1,Emergency Evaluation Needed,3,1,0
+Cough,1,Lifestyle-Related Issue Possible,4,4,1
+Cough,1,Underlying Disease Progression,1,0,0
+Cough,4,Acute Condition Likely,2,3,1
+Cough,4,Possible Infection,3,2,0
+Cough,4,Monitor Symptoms,4,1,1
+Cough,4,Requires Clinical Evaluation,1,4,0
+Cough,4,Chronic Condition Suspected,2,0,1
+Cough,4,Emergency Evaluation Needed,3,3,0
+Cough,4,Lifestyle-Related Issue Possible,4,2,1
+Cough,4,Underlying Disease Progression,1,1,0
+Cough,0,Acute Condition Likely,2,4,1
+Cough,0,Possible Infection,3,0,0
+Cough,0,Monitor Symptoms,4,3,1
+Cough,0,Requires Clinical Evaluation,1,2,0
+Cough,0,Chronic Condition Suspected,2,1,1
+Cough,0,Emergency Evaluation Needed,3,4,0
+Cough,0,Lifestyle-Related Issue Possible,4,0,1
+Cough,0,Underlying Disease Progression,1,3,0
+Cough,3,Acute Condition Likely,2,2,1
+Cough,3,Possible Infection,3,1,0
+Cough,3,Monitor Symptoms,4,4,1
+Cough,3,Requires Clinical Evaluation,1,0,0
+Cough,3,Chronic Condition Suspected,2,3,1
+Cough,3,Emergency Evaluation Needed,3,2,0
+Cough,3,Lifestyle-Related Issue Possible,4,1,1
+Cough,3,Underlying Disease Progression,1,4,0
+Cough,2,Acute Condition Likely,2,0,1
+Cough,2,Possible Infection,3,3,0
+Cough,2,Monitor Symptoms,4,2,1
+Cough,2,Requires Clinical Evaluation,1,1,0
+Cough,2,Chronic Condition Suspected,2,4,1
+Cough,2,Emergency Evaluation Needed,3,0,0
+Cough,2,Lifestyle-Related Issue Possible,4,3,1
+Cough,2,Underlying Disease Progression,1,2,0
+Cough,6,Acute Condition Likely,2,1,1
+Cough,6,Possible Infection,3,4,0
+Cough,6,Monitor Symptoms,4,0,1
+Cough,6,Requires Clinical Evaluation,1,3,0
+Cough,6,Chronic Condition Suspected,2,2,1
+Cough,6,Emergency Evaluation Needed,3,1,0
+Cough,6,Lifestyle-Related Issue Possible,4,4,1
+Cough,6,Underlying Disease Progression,1,0,0
+Chest Pain,5,Acute Condition Likely,2,3,1
+Chest Pain,5,Possible Infection,3,2,0
+Chest Pain,5,Monitor Symptoms,4,1,1
+Chest Pain,5,Requires Clinical Evaluation,1,4,0
+Chest Pain,5,Chronic Condition Suspected,2,0,1
+Chest Pain,5,Emergency Evaluation Needed,3,3,0
+Chest Pain,5,Lifestyle-Related Issue Possible,4,2,1
+Chest Pain,5,Underlying Disease Progression,1,1,0
+Chest Pain,1,Acute Condition Likely,2,4,1
+Chest Pain,1,Possible Infection,3,0,0
+Chest Pain,1,Monitor Symptoms,4,3,1
+Chest Pain,1,Requires Clinical Evaluation,1,2,0
+Chest Pain,1,Chronic Condition Suspected,2,1,1
+Chest Pain,1,Emergency Evaluation Needed,3,4,0
+Chest Pain,1,Lifestyle-Related Issue Possible,4,0,1
+Chest Pain,1,Underlying Disease Progression,1,3,0
+Chest Pain,4,Acute Condition Likely,2,2,1
+Chest Pain,4,Possible Infection,3,1,0
+Chest Pain,4,Monitor Symptoms,4,4,1
+Chest Pain,4,Requires Clinical Evaluation,1,0,0
+Chest Pain,4,Chronic Condition Suspected,2,3,1
+Chest Pain,4,Emergency Evaluation Needed,3,2,0
+Chest Pain,4,Lifestyle-Related Issue Possible,4,1,1
+Chest Pain,4,Underlying Disease Progression,1,4,0
+Chest Pain,0,Acute Condition Likely,2,0,1
+Chest Pain,0,Possible Infection,3,3,0
+Chest Pain,0,Monitor Symptoms,4,2,1
+Chest Pain,0,Requires Clinical Evaluation,1,1,0
+Chest Pain,0,Chronic Condition Suspected,2,4,1
+Chest Pain,0,Emergency Evaluation Needed,3,0,0
+Chest Pain,0,Lifestyle-Related Issue Possible,4,3,1
+Chest Pain,0,Underlying Disease Progression,1,2,0
+Chest Pain,3,Acute Condition Likely,2,1,1
+Chest Pain,3,Possible Infection,3,4,0
+Chest Pain,3,Monitor Symptoms,4,0,1
+Chest Pain,3,Requires Clinical Evaluation,1,3,0
+Chest Pain,3,Chronic Condition Suspected,2,2,1
+Chest Pain,3,Emergency Evaluation Needed,3,1,0
+Chest Pain,3,Lifestyle-Related Issue Possible,4,4,1
+Chest Pain,3,Underlying Disease Progression,1,0,0
+Chest Pain,2,Acute Condition Likely,2,3,1
+Chest Pain,2,Possible Infection,3,2,0
+Chest Pain,2,Monitor Symptoms,4,1,1
+Chest Pain,2,Requires Clinical Evaluation,1,4,0
+Chest Pain,2,Chronic Condition Suspected,2,0,1
+Chest Pain,2,Emergency Evaluation Needed,3,3,0
+Chest Pain,2,Lifestyle-Related Issue Possible,4,2,1
+Chest Pain,2,Underlying Disease Progression,1,1,0
+Chest Pain,6,Acute Condition Likely,2,4,1
+Chest Pain,6,Possible Infection,3,0,0
+Chest Pain,6,Monitor Symptoms,4,3,1
+Chest Pain,6,Requires Clinical Evaluation,1,2,0
+Chest Pain,6,Chronic Condition Suspected,2,1,1
+Chest Pain,6,Emergency Evaluation Needed,3,4,0
+Chest Pain,6,Lifestyle-Related Issue Possible,4,0,1
+Chest Pain,6,Underlying Disease Progression,1,3,0
+Headache,5,Acute Condition Likely,2,2,1
+Headache,5,Possible Infection,3,1,0
+Headache,5,Monitor Symptoms,4,4,1
+Headache,5,Requires Clinical Evaluation,1,0,0
+Headache,5,Chronic Condition Suspected,2,3,1
+Headache,5,Emergency Evaluation Needed,3,2,0
+Headache,5,Lifestyle-Related Issue Possible,4,1,1
+Headache,5,Underlying Disease Progression,1,4,0
+Headache,1,Acute Condition Likely,2,0,1
+Headache,1,Possible Infection,3,3,0
+Headache,1,Monitor Symptoms,4,2,1
+Headache,1,Requires Clinical Evaluation,1,1,0
+Headache,1,Chronic Condition Suspected,2,4,1
+Headache,1,Emergency Evaluation Needed,3,0,0
+Headache,1,Lifestyle-Related Issue Possible,4,3,1
+Headache,1,Underlying Disease Progression,1,2,0
+Headache,4,Acute Condition Likely,2,1,1
+Headache,4,Possible Infection,3,4,0
+Headache,4,Monitor Symptoms,4,0,1
+Headache,4,Requires Clinical Evaluation,1,3,0
+Headache,4,Chronic Condition Suspected,2,2,1
+Headache,4,Emergency Evaluation Needed,3,1,0
+Headache,4,Lifestyle-Related Issue Possible,4,4,1
+Headache,4,Underlying Disease Progression,1,0,0
+Headache,0,Acute Condition Likely,2,3,1
+Headache,0,Possible Infection,3,2,0
+Headache,0,Monitor Symptoms,4,1,1
+Headache,0,Requires Clinical Evaluation,1,4,0
+Headache,0,Chronic Condition Suspected,2,0,1
+Headache,0,Emergency Evaluation Needed,3,3,0
+Headache,0,Lifestyle-Related Issue Possible,4,2,1
+Headache,0,Underlying Disease Progression,1,1,0
+Headache,3,Acute Condition Likely,2,4,1
+Headache,3,Possible Infection,3,0,0
+Headache,3,Monitor Symptoms,4,3,1
+Headache,3,Requires Clinical Evaluation,1,2,0
+Headache,3,Chronic Condition Suspected,2,1,1
+Headache,3,Emergency Evaluation Needed,3,4,0
+Headache,3,Lifestyle-Related Issue Possible,4,0,1
+Headache,3,Underlying Disease Progression,1,3,0
+Headache,2,Acute Condition Likely,2,2,1
+Headache,2,Possible Infection,3,1,0
+Headache,2,Monitor Symptoms,4,4,1
+Headache,2,Requires Clinical Evaluation,1,0,0
+Headache,2,Chronic Condition Suspected,2,3,1
+Headache,2,Emergency Evaluation Needed,3,2,0
+Headache,2,Lifestyle-Related Issue Possible,4,1,1
+Headache,2,Underlying Disease Progression,1,4,0
+Headache,6,Acute Condition Likely,2,0,1
+Headache,6,Possible Infection,3,3,0
+Headache,6,Monitor Symptoms,4,2,1
+Headache,6,Requires Clinical Evaluation,1,1,0
+Headache,6,Chronic Condition Suspected,2,4,1
+Headache,6,Emergency Evaluation Needed,3,0,0
+Headache,6,Lifestyle-Related Issue Possible,4,3,1
+Headache,6,Underlying Disease Progression,1,2,0
+Abdominal Pain,5,Acute Condition Likely,2,1,1
+Abdominal Pain,5,Possible Infection,3,4,0
+Abdominal Pain,5,Monitor Symptoms,4,0,1
+Abdominal Pain,5,Requires Clinical Evaluation,1,3,0
+Abdominal Pain,5,Chronic Condition Suspected,2,2,1
+Abdominal Pain,5,Emergency Evaluation Needed,3,1,0
+Abdominal Pain,5,Lifestyle-Related Issue Possible,4,4,1
+Abdominal Pain,5,Underlying Disease Progression,1,0,0
+Abdominal Pain,1,Acute Condition Likely,2,3,1
+Abdominal Pain,1,Possible Infection,3,2,0
+Abdominal Pain,1,Monitor Symptoms,4,1,1
+Abdominal Pain,1,Requires Clinical Evaluation,1,4,0
+Abdominal Pain,1,Chronic Condition Suspected,2,0,1
+Abdominal Pain,1,Emergency Evaluation Needed,3,3,0
+Abdominal Pain,1,Lifestyle-Related Issue Possible,4,2,1
+Abdominal Pain,1,Underlying Disease Progression,1,1,0
+Abdominal Pain,4,Acute Condition Likely,2,4,1
+Abdominal Pain,4,Possible Infection,3,0,0
+Abdominal Pain,4,Monitor Symptoms,4,3,1
+Abdominal Pain,4,Requires Clinical Evaluation,1,2,0
+Abdominal Pain,4,Chronic Condition Suspected,2,1,1
+Abdominal Pain,4,Emergency Evaluation Needed,3,4,0
+Abdominal Pain,4,Lifestyle-Related Issue Possible,4,0,1
+Abdominal Pain,4,Underlying Disease Progression,1,3,0
+Abdominal Pain,0,Acute Condition Likely,2,2,1
+Abdominal Pain,0,Possible Infection,3,1,0
+Abdominal Pain,0,Monitor Symptoms,4,4,1
+Abdominal Pain,0,Requires Clinical Evaluation,1,0,0
+Abdominal Pain,0,Chronic Condition Suspected,2,3,1
+Abdominal Pain,0,Emergency Evaluation Needed,3,2,0
+Abdominal Pain,0,Lifestyle-Related Issue Possible,4,1,1
+Abdominal Pain,0,Underlying Disease Progression,1,4,0
+Abdominal Pain,3,Acute Condition Likely,2,0,1
+Abdominal Pain,3,Possible Infection,3,3,0
+Abdominal Pain,3,Monitor Symptoms,4,2,1
+Abdominal Pain,3,Requires Clinical Evaluation,1,1,0
+Abdominal Pain,3,Chronic Condition Suspected,2,4,1
+Abdominal Pain,3,Emergency Evaluation Needed,3,0,0
+Abdominal Pain,3,Lifestyle-Related Issue Possible,4,3,1
+Abdominal Pain,3,Underlying Disease Progression,1,2,0
+Abdominal Pain,2,Acute Condition Likely,2,1,1
+Abdominal Pain,2,Possible Infection,3,4,0
+Abdominal Pain,2,Monitor Symptoms,4,0,1
+Abdominal Pain,2,Requires Clinical Evaluation,1,3,0
+Abdominal Pain,2,Chronic Condition Suspected,2,2,1
+Abdominal Pain,2,Emergency Evaluation Needed,3,1,0
+Abdominal Pain,2,Lifestyle-Related Issue Possible,4,4,1
+Abdominal Pain,2,Underlying Disease Progression,1,0,0
+Abdominal Pain,6,Acute Condition Likely,2,3,1
+Abdominal Pain,6,Possible Infection,3,2,0
+Abdominal Pain,6,Monitor Symptoms,4,1,1
+Abdominal Pain,6,Requires Clinical Evaluation,1,4,0
+Abdominal Pain,6,Chronic Condition Suspected,2,0,1
+Abdominal Pain,6,Emergency Evaluation Needed,3,3,0
+Abdominal Pain,6,Lifestyle-Related Issue Possible,4,2,1
+Abdominal Pain,6,Underlying Disease Progression,1,1,0
+Vomiting,5,Acute Condition Likely,2,4,1
+Vomiting,5,Possible Infection,3,0,0
+Vomiting,5,Monitor Symptoms,4,3,1
+Vomiting,5,Requires Clinical Evaluation,1,2,0
+Vomiting,5,Chronic Condition Suspected,2,1,1
+Vomiting,5,Emergency Evaluation Needed,3,4,0
+Vomiting,5,Lifestyle-Related Issue Possible,4,0,1
+Vomiting,5,Underlying Disease Progression,1,3,0
+Vomiting,1,Acute Condition Likely,2,2,1
+Vomiting,1,Possible Infection,3,1,0
+Vomiting,1,Monitor Symptoms,4,4,1
+Vomiting,1,Requires Clinical Evaluation,1,0,0
+Vomiting,1,Chronic Condition Suspected,2,3,1
+Vomiting,1,Emergency Evaluation Needed,3,2,0
+Vomiting,1,Lifestyle-Related Issue Possible,4,1,1
+Vomiting,1,Underlying Disease Progression,1,4,0
+Vomiting,4,Acute Condition Likely,2,0,1
+Vomiting,4,Possible Infection,3,3,0
+Vomiting,4,Monitor Symptoms,4,2,1
+Vomiting,4,Requires Clinical Evaluation,1,1,0
+Vomiting,4,Chronic Condition Suspected,2,4,1
+Vomiting,4,Emergency Evaluation Needed,3,0,0
+Vomiting,4,Lifestyle-Related Issue Possible,4,3,1
+Vomiting,4,Underlying Disease Progression,1,2,0
+Vomiting,0,Acute Condition Likely,2,1,1
+Vomiting,0,Possible Infection,3,4,0
+Vomiting,0,Monitor Symptoms,4,0,1
+Vomiting,0,Requires Clinical Evaluation,1,3,0
+Vomiting,0,Chronic Condition Suspected,2,2,1
+Vomiting,0,Emergency Evaluation Needed,3,1,0
+Vomiting,0,Lifestyle-Related Issue Possible,4,4,1
+Vomiting,0,Underlying Disease Progression,1,0,0
+Vomiting,3,Acute Condition Likely,2,3,1
+Vomiting,3,Possible Infection,3,2,0
+Vomiting,3,Monitor Symptoms,4,1,1
+Vomiting,3,Requires Clinical Evaluation,1,4,0
+Vomiting,3,Chronic Condition Suspected,2,0,1
+Vomiting,3,Emergency Evaluation Needed,3,3,0
+Vomiting,3,Lifestyle-Related Issue Possible,4,2,1
+Vomiting,3,Underlying Disease Progression,1,1,0
+Vomiting,2,Acute Condition Likely,2,4,1
+Vomiting,2,Possible Infection,3,0,0
+Vomiting,2,Monitor Symptoms,4,3,1
+Vomiting,2,Requires Clinical Evaluation,1,2,0
+Vomiting,2,Chronic Condition Suspected,2,1,1
+Vomiting,2,Emergency Evaluation Needed,3,4,0
+Vomiting,2,Lifestyle-Related Issue Possible,4,0,1
+Vomiting,2,Underlying Disease Progression,1,3,0
+Vomiting,6,Acute Condition Likely,2,2,1
+Vomiting,6,Possible Infection,3,1,0
+Vomiting,6,Monitor Symptoms,4,4,1
+Vomiting,6,Requires Clinical Evaluation,1,0,0
+Vomiting,6,Chronic Condition Suspected,2,3,1
+Vomiting,6,Emergency Evaluation Needed,3,2,0
+Vomiting,6,Lifestyle-Related Issue Possible,4,1,1
+Vomiting,6,Underlying Disease Progression,1,4,0
+Diarrhea,5,Acute Condition Likely,2,0,1
+Diarrhea,5,Possible Infection,3,3,0
+Diarrhea,5,Monitor Symptoms,4,2,1
+Diarrhea,5,Requires Clinical Evaluation,1,1,0
+Diarrhea,5,Chronic Condition Suspected,2,4,1
+Diarrhea,5,Emergency Evaluation Needed,3,0,0
+Diarrhea,5,Lifestyle-Related Issue Possible,4,3,1
+Diarrhea,5,Underlying Disease Progression,1,2,0
+Diarrhea,1,Acute Condition Likely,2,1,1
+Diarrhea,1,Possible Infection,3,4,0
+Diarrhea,1,Monitor Symptoms,4,0,1
+Diarrhea,1,Requires Clinical Evaluation,1,3,0
+Diarrhea,1,Chronic Condition Suspected,2,2,1
+Diarrhea,1,Emergency Evaluation Needed,3,1,0
+Diarrhea,1,Lifestyle-Related Issue Possible,4,4,1
+Diarrhea,1,Underlying Disease Progression,1,0,0
+Diarrhea,4,Acute Condition Likely,2,3,1
+Diarrhea,4,Possible Infection,3,2,0
+Diarrhea,4,Monitor Symptoms,4,1,1
+Diarrhea,4,Requires Clinical Evaluation,1,4,0
+Diarrhea,4,Chronic Condition Suspected,2,0,1
+Diarrhea,4,Emergency Evaluation Needed,3,3,0
+Diarrhea,4,Lifestyle-Related Issue Possible,4,2,1
+Diarrhea,4,Underlying Disease Progression,1,1,0
+Diarrhea,0,Acute Condition Likely,2,4,1
+Diarrhea,0,Possible Infection,3,0,0
+Diarrhea,0,Monitor Symptoms,4,3,1
+Diarrhea,0,Requires Clinical Evaluation,1,2,0
+Diarrhea,0,Chronic Condition Suspected,2,1,1
+Diarrhea,0,Emergency Evaluation Needed,3,4,0
+Diarrhea,0,Lifestyle-Related Issue Possible,4,0,1
+Diarrhea,0,Underlying Disease Progression,1,3,0
+Diarrhea,3,Acute Condition Likely,2,2,1
+Diarrhea,3,Possible Infection,3,1,0
+Diarrhea,3,Monitor Symptoms,4,4,1
+Diarrhea,3,Requires Clinical Evaluation,1,0,0
+Diarrhea,3,Chronic Condition Suspected,2,3,1
+Diarrhea,3,Emergency Evaluation Needed,3,2,0
+Diarrhea,3,Lifestyle-Related Issue Possible,4,1,1
+Diarrhea,3,Underlying Disease Progression,1,4,0
+Diarrhea,2,Acute Condition Likely,2,0,1
+Diarrhea,2,Possible Infection,3,3,0
+Diarrhea,2,Monitor Symptoms,4,2,1
+Diarrhea,2,Requires Clinical Evaluation,1,1,0
+Diarrhea,2,Chronic Condition Suspected,2,4,1
+Diarrhea,2,Emergency Evaluation Needed,3,0,0
+Diarrhea,2,Lifestyle-Related Issue Possible,4,3,1
+Diarrhea,2,Underlying Disease Progression,1,2,0
+Diarrhea,6,Acute Condition Likely,2,1,1
+Diarrhea,6,Possible Infection,3,4,0
+Diarrhea,6,Monitor Symptoms,4,0,1
+Diarrhea,6,Requires Clinical Evaluation,1,3,0
+Diarrhea,6,Chronic Condition Suspected,2,2,1
+Diarrhea,6,Emergency Evaluation Needed,3,1,0
+Diarrhea,6,Lifestyle-Related Issue Possible,4,4,1
+Diarrhea,6,Underlying Disease Progression,1,0,0
+Fatigue,5,Acute Condition Likely,2,3,1
+Fatigue,5,Possible Infection,3,2,0
+Fatigue,5,Monitor Symptoms,4,1,1
+Fatigue,5,Requires Clinical Evaluation,1,4,0
+Fatigue,5,Chronic Condition Suspected,2,0,1
+Fatigue,5,Emergency Evaluation Needed,3,3,0
+Fatigue,5,Lifestyle-Related Issue Possible,4,2,1
+Fatigue,5,Underlying Disease Progression,1,1,0
+Fatigue,1,Acute Condition Likely,2,4,1
+Fatigue,1,Possible Infection,3,0,0
+Fatigue,1,Monitor Symptoms,4,3,1
+Fatigue,1,Requires Clinical Evaluation,1,2,0
+Fatigue,1,Chronic Condition Suspected,2,1,1
+Fatigue,1,Emergency Evaluation Needed,3,4,0
+Fatigue,1,Lifestyle-Related Issue Possible,4,0,1
+Fatigue,1,Underlying Disease Progression,1,3,0
+Fatigue,4,Acute Condition Likely,2,2,1
+Fatigue,4,Possible Infection,3,1,0
+Fatigue,4,Monitor Symptoms,4,4,1
+Fatigue,4,Requires Clinical Evaluation,1,0,0
+Fatigue,4,Chronic Condition Suspected,2,3,1
+Fatigue,4,Emergency Evaluation Needed,3,2,0
+Fatigue,4,Lifestyle-Related Issue Possible,4,1,1
+Fatigue,4,Underlying Disease Progression,1,4,0
+Fatigue,0,Acute Condition Likely,2,0,1
+Fatigue,0,Possible Infection,3,3,0
+Fatigue,0,Monitor Symptoms,4,2,1
+Fatigue,0,Requires Clinical Evaluation,1,1,0
+Fatigue,0,Chronic Condition Suspected,2,4,1
+Fatigue,0,Emergency Evaluation Needed,3,0,0
+Fatigue,0,Lifestyle-Related Issue Possible,4,3,1
+Fatigue,0,Underlying Disease Progression,1,2,0
+Fatigue,3,Acute Condition Likely,2,1,1
+Fatigue,3,Possible Infection,3,4,0
+Fatigue,3,Monitor Symptoms,4,0,1
+Fatigue,3,Requires Clinical Evaluation,1,3,0
+Fatigue,3,Chronic Condition Suspected,2,2,1
+Fatigue,3,Emergency Evaluation Needed,3,1,0
+Fatigue,3,Lifestyle-Related Issue Possible,4,4,1
+Fatigue,3,Underlying Disease Progression,1,0,0
+Fatigue,2,Acute Condition Likely,2,3,1
+Fatigue,2,Possible Infection,3,2,0
+Fatigue,2,Monitor Symptoms,4,1,1
+Fatigue,2,Requires Clinical Evaluation,1,4,0
+Fatigue,2,Chronic Condition Suspected,2,0,1
+Fatigue,2,Emergency Evaluation Needed,3,3,0
+Fatigue,2,Lifestyle-Related Issue Possible,4,2,1
+Fatigue,2,Underlying Disease Progression,1,1,0
+Fatigue,6,Acute Condition Likely,2,4,1
+Fatigue,6,Possible Infection,3,0,0
+Fatigue,6,Monitor Symptoms,4,3,1
+Fatigue,6,Requires Clinical Evaluation,1,2,0
+Fatigue,6,Chronic Condition Suspected,2,1,1
+Fatigue,6,Emergency Evaluation Needed,3,4,0
+Fatigue,6,Lifestyle-Related Issue Possible,4,0,1
+Fatigue,6,Underlying Disease Progression,1,3,0
+Breathlessness,5,Acute Condition Likely,2,2,1
+Breathlessness,5,Possible Infection,3,1,0
+Breathlessness,5,Monitor Symptoms,4,4,1
+Breathlessness,5,Requires Clinical Evaluation,1,0,0
+Breathlessness,5,Chronic Condition Suspected,2,3,1
+Breathlessness,5,Emergency Evaluation Needed,3,2,0
+Breathlessness,5,Lifestyle-Related Issue Possible,4,1,1
+Breathlessness,5,Underlying Disease Progression,1,4,0
+Breathlessness,1,Acute Condition Likely,2,0,1
+Breathlessness,1,Possible Infection,3,3,0
+Breathlessness,1,Monitor Symptoms,4,2,1
+Breathlessness,1,Requires Clinical Evaluation,1,1,0
+Breathlessness,1,Chronic Condition Suspected,2,4,1
+Breathlessness,1,Emergency Evaluation Needed,3,0,0
+Breathlessness,1,Lifestyle-Related Issue Possible,4,3,1
+Breathlessness,1,Underlying Disease Progression,1,2,0
+Breathlessness,4,Acute Condition Likely,2,1,1
+Breathlessness,4,Possible Infection,3,4,0
+Breathlessness,4,Monitor Symptoms,4,0,1
+Breathlessness,4,Requires Clinical Evaluation,1,3,0
+Breathlessness,4,Chronic Condition Suspected,2,2,1
+Breathlessness,4,Emergency Evaluation Needed,3,1,0
+Breathlessness,4,Lifestyle-Related Issue Possible,4,4,1
+Breathlessness,4,Underlying Disease Progression,1,0,0
+Breathlessness,0,Acute Condition Likely,2,3,1
+Breathlessness,0,Possible Infection,3,2,0
+Breathlessness,0,Monitor Symptoms,4,1,1
+Breathlessness,0,Requires Clinical Evaluation,1,4,0
+Breathlessness,0,Chronic Condition Suspected,2,0,1
+Breathlessness,0,Emergency Evaluation Needed,3,3,0
+Breathlessness,0,Lifestyle-Related Issue Possible,4,2,1
+Breathlessness,0,Underlying Disease Progression,1,1,0
+Breathlessness,3,Acute Condition Likely,2,4,1
+Breathlessness,3,Possible Infection,3,0,0
+Breathlessness,3,Monitor Symptoms,4,3,1
+Breathlessness,3,Requires Clinical Evaluation,1,2,0
+Breathlessness,3,Chronic Condition Suspected,2,1,1
+Breathlessness,3,Emergency Evaluation Needed,3,4,0
+Breathlessness,3,Lifestyle-Related Issue Possible,4,0,1
+Breathlessness,3,Underlying Disease Progression,1,3,0
+Breathlessness,2,Acute Condition Likely,2,2,1
+Breathlessness,2,Possible Infection,3,1,0
+Breathlessness,2,Monitor Symptoms,4,4,1
+Breathlessness,2,Requires Clinical Evaluation,1,0,0
+Breathlessness,2,Chronic Condition Suspected,2,3,1
+Breathlessness,2,Emergency Evaluation Needed,3,2,0
+Breathlessness,2,Lifestyle-Related Issue Possible,4,1,1
+Breathlessness,2,Underlying Disease Progression,1,4,0
+Breathlessness,6,Acute Condition Likely,2,0,1
+Breathlessness,6,Possible Infection,3,3,0
+Breathlessness,6,Monitor Symptoms,4,2,1
+Breathlessness,6,Requires Clinical Evaluation,1,1,0
+Breathlessness,6,Chronic Condition Suspected,2,4,1
+Breathlessness,6,Emergency Evaluation Needed,3,0,0
+Breathlessness,6,Lifestyle-Related Issue Possible,4,3,1
+Breathlessness,6,Underlying Disease Progression,1,2,0
+Joint Pain,5,Acute Condition Likely,2,1,1
+Joint Pain,5,Possible Infection,3,4,0
+Joint Pain,5,Monitor Symptoms,4,0,1
+Joint Pain,5,Requires Clinical Evaluation,1,3,0
+Joint Pain,5,Chronic Condition Suspected,2,2,1
+Joint Pain,5,Emergency Evaluation Needed,3,1,0
+Joint Pain,5,Lifestyle-Related Issue Possible,4,4,1
+Joint Pain,5,Underlying Disease Progression,1,0,0
+Joint Pain,1,Acute Condition Likely,2,3,1
+Joint Pain,1,Possible Infection,3,2,0
+Joint Pain,1,Monitor Symptoms,4,1,1
+Joint Pain,1,Requires Clinical Evaluation,1,4,0
+Joint Pain,1,Chronic Condition Suspected,2,0,1
+Joint Pain,1,Emergency Evaluation Needed,3,3,0
+Joint Pain,1,Lifestyle-Related Issue Possible,4,2,1
+Joint Pain,1,Underlying Disease Progression,1,1,0
+Joint Pain,4,Acute Condition Likely,2,4,1
+Joint Pain,4,Possible Infection,3,0,0
+Joint Pain,4,Monitor Symptoms,4,3,1
+Joint Pain,4,Requires Clinical Evaluation,1,2,0
+Joint Pain,4,Chronic Condition Suspected,2,1,1
+Joint Pain,4,Emergency Evaluation Needed,3,4,0
+Joint Pain,4,Lifestyle-Related Issue Possible,4,0,1
+Joint Pain,4,Underlying Disease Progression,1,3,0
+Joint Pain,0,Acute Condition Likely,2,2,1
+Joint Pain,0,Possible Infection,3,1,0
+Joint Pain,0,Monitor Symptoms,4,4,1
+Joint Pain,0,Requires Clinical Evaluation,1,0,0
+Joint Pain,0,Chronic Condition Suspected,2,3,1
+Joint Pain,0,Emergency Evaluation Needed,3,2,0
+Joint Pain,0,Lifestyle-Related Issue Possible,4,1,1
+Joint Pain,0,Underlying Disease Progression,1,4,0
+Joint Pain,3,Acute Condition Likely,2,0,1
+Joint Pain,3,Possible Infection,3,3,0
+Joint Pain,3,Monitor Symptoms,4,2,1
+Joint Pain,3,Requires Clinical Evaluation,1,1,0
+Joint Pain,3,Chronic Condition Suspected,2,4,1
+Joint Pain,3,Emergency Evaluation Needed,3,0,0
+Joint Pain,3,Lifestyle-Related Issue Possible,4,3,1
+Joint Pain,3,Underlying Disease Progression,1,2,0
+Joint Pain,2,Acute Condition Likely,2,1,1
+Joint Pain,2,Possible Infection,3,4,0
+Joint Pain,2,Monitor Symptoms,4,0,1
+Joint Pain,2,Requires Clinical Evaluation,1,3,0
+Joint Pain,2,Chronic Condition Suspected,2,2,1
+Joint Pain,2,Emergency Evaluation Needed,3,1,0
+Joint Pain,2,Lifestyle-Related Issue Possible,4,4,1
+Joint Pain,2,Underlying Disease Progression,1,0,0
+Joint Pain,6,Acute Condition Likely,2,3,1
+Joint Pain,6,Possible Infection,3,2,0
+Joint Pain,6,Monitor Symptoms,4,1,1
+Joint Pain,6,Requires Clinical Evaluation,1,4,0
+Joint Pain,6,Chronic Condition Suspected,2,0,1
+Joint Pain,6,Emergency Evaluation Needed,3,3,0
+Joint Pain,6,Lifestyle-Related Issue Possible,4,2,1
+Joint Pain,6,Underlying Disease Progression,1,1,0
+Back Pain,5,Acute Condition Likely,2,4,1
+Back Pain,5,Possible Infection,3,0,0
+Back Pain,5,Monitor Symptoms,4,3,1
+Back Pain,5,Requires Clinical Evaluation,1,2,0
+Back Pain,5,Chronic Condition Suspected,2,1,1
+Back Pain,5,Emergency Evaluation Needed,3,4,0
+Back Pain,5,Lifestyle-Related Issue Possible,4,0,1
+Back Pain,5,Underlying Disease Progression,1,3,0
+Back Pain,1,Acute Condition Likely,2,2,1
+Back Pain,1,Possible Infection,3,1,0
+Back Pain,1,Monitor Symptoms,4,4,1
+Back Pain,1,Requires Clinical Evaluation,1,0,0
+Back Pain,1,Chronic Condition Suspected,2,3,1
+Back Pain,1,Emergency Evaluation Needed,3,2,0
+Back Pain,1,Lifestyle-Related Issue Possible,4,1,1
+Back Pain,1,Underlying Disease Progression,1,4,0
+Back Pain,4,Acute Condition Likely,2,0,1
+Back Pain,4,Possible Infection,3,3,0
+Back Pain,4,Monitor Symptoms,4,2,1
+Back Pain,4,Requires Clinical Evaluation,1,1,0
+Back Pain,4,Chronic Condition Suspected,2,4,1
+Back Pain,4,Emergency Evaluation Needed,3,0,0
+Back Pain,4,Lifestyle-Related Issue Possible,4,3,1
+Back Pain,4,Underlying Disease Progression,1,2,0
+Back Pain,0,Acute Condition Likely,2,1,1
+Back Pain,0,Possible Infection,3,4,0
+Back Pain,0,Monitor Symptoms,4,0,1
+Back Pain,0,Requires Clinical Evaluation,1,3,0
+Back Pain,0,Chronic Condition Suspected,2,2,1
+Back Pain,0,Emergency Evaluation Needed,3,1,0
+Back Pain,0,Lifestyle-Related Issue Possible,4,4,1
+Back Pain,0,Underlying Disease Progression,1,0,0
+Back Pain,3,Acute Condition Likely,2,3,1
+Back Pain,3,Possible Infection,3,2,0
+Back Pain,3,Monitor Symptoms,4,1,1
+Back Pain,3,Requires Clinical Evaluation,1,4,0
+Back Pain,3,Chronic Condition Suspected,2,0,1
+Back Pain,3,Emergency Evaluation Needed,3,3,0
+Back Pain,3,Lifestyle-Related Issue Possible,4,2,1
+Back Pain,3,Underlying Disease Progression,1,1,0
+Back Pain,2,Acute Condition Likely,2,4,1
+Back Pain,2,Possible Infection,3,0,0
+Back Pain,2,Monitor Symptoms,4,3,1
+Back Pain,2,Requires Clinical Evaluation,1,2,0
+Back Pain,2,Chronic Condition Suspected,2,1,1
+Back Pain,2,Emergency Evaluation Needed,3,4,0
+Back Pain,2,Lifestyle-Related Issue Possible,4,0,1
+Back Pain,2,Underlying Disease Progression,1,3,0
+Back Pain,6,Acute Condition Likely,2,2,1
+Back Pain,6,Possible Infection,3,1,0
+Back Pain,6,Monitor Symptoms,4,4,1
+Back Pain,6,Requires Clinical Evaluation,1,0,0
+Back Pain,6,Chronic Condition Suspected,2,3,1
+Back Pain,6,Emergency Evaluation Needed,3,2,0
+Back Pain,6,Lifestyle-Related Issue Possible,4,1,1
+Back Pain,6,Underlying Disease Progression,1,4,0
+Dizziness,5,Acute Condition Likely,2,0,1
+Dizziness,5,Possible Infection,3,3,0
+Dizziness,5,Monitor Symptoms,4,2,1
+Dizziness,5,Requires Clinical Evaluation,1,1,0
+Dizziness,5,Chronic Condition Suspected,2,4,1
+Dizziness,5,Emergency Evaluation Needed,3,0,0
+Dizziness,5,Lifestyle-Related Issue Possible,4,3,1
+Dizziness,5,Underlying Disease Progression,1,2,0
+Dizziness,1,Acute Condition Likely,2,1,1
+Dizziness,1,Possible Infection,3,4,0
+Dizziness,1,Monitor Symptoms,4,0,1
+Dizziness,1,Requires Clinical Evaluation,1,3,0
+Dizziness,1,Chronic Condition Suspected,2,2,1
+Dizziness,1,Emergency Evaluation Needed,3,1,0
+Dizziness,1,Lifestyle-Related Issue Possible,4,4,1
+Dizziness,1,Underlying Disease Progression,1,0,0
+Dizziness,4,Acute Condition Likely,2,3,1
+Dizziness,4,Possible Infection,3,2,0
+Dizziness,4,Monitor Symptoms,4,1,1
+Dizziness,4,Requires Clinical Evaluation,1,4,0
+Dizziness,4,Chronic Condition Suspected,2,0,1
+Dizziness,4,Emergency Evaluation Needed,3,3,0
+Dizziness,4,Lifestyle-Related Issue Possible,4,2,1
+Dizziness,4,Underlying Disease Progression,1,1,0
+Dizziness,0,Acute Condition Likely,2,4,1
+Dizziness,0,Possible Infection,3,0,0
+Dizziness,0,Monitor Symptoms,4,3,1
+Dizziness,0,Requires Clinical Evaluation,1,2,0
+Dizziness,0,Chronic Condition Suspected,2,1,1
+Dizziness,0,Emergency Evaluation Needed,3,4,0
+Dizziness,0,Lifestyle-Related Issue Possible,4,0,1
+Dizziness,0,Underlying Disease Progression,1,3,0
+Dizziness,3,Acute Condition Likely,2,2,1
+Dizziness,3,Possible Infection,3,1,0
+Dizziness,3,Monitor Symptoms,4,4,1
+Dizziness,3,Requires Clinical Evaluation,1,0,0
+Dizziness,3,Chronic Condition Suspected,2,3,1
+Dizziness,3,Emergency Evaluation Needed,3,2,0
+Dizziness,3,Lifestyle-Related Issue Possible,4,1,1
+Dizziness,3,Underlying Disease Progression,1,4,0
+Dizziness,2,Acute Condition Likely,2,0,1
+Dizziness,2,Possible Infection,3,3,0
+Dizziness,2,Monitor Symptoms,4,2,1
+Dizziness,2,Requires Clinical Evaluation,1,1,0
+Dizziness,2,Chronic Condition Suspected,2,4,1
+Dizziness,2,Emergency Evaluation Needed,3,0,0
+Dizziness,2,Lifestyle-Related Issue Possible,4,3,1
+Dizziness,2,Underlying Disease Progression,1,2,0
+Dizziness,6,Acute Condition Likely,2,1,1
+Dizziness,6,Possible Infection,3,4,0
+Dizziness,6,Monitor Symptoms,4,0,1
+Dizziness,6,Requires Clinical Evaluation,1,3,0
+Dizziness,6,Chronic Condition Suspected,2,2,1
+Dizziness,6,Emergency Evaluation Needed,3,1,0
+Dizziness,6,Lifestyle-Related Issue Possible,4,4,1
+Dizziness,6,Underlying Disease Progression,1,0,0
+Palpitations,5,Acute Condition Likely,2,3,1
+Palpitations,5,Possible Infection,3,2,0
+Palpitations,5,Monitor Symptoms,4,1,1
+Palpitations,5,Requires Clinical Evaluation,1,4,0
+Palpitations,5,Chronic Condition Suspected,2,0,1
+Palpitations,5,Emergency Evaluation Needed,3,3,0
+Palpitations,5,Lifestyle-Related Issue Possible,4,2,1
+Palpitations,5,Underlying Disease Progression,1,1,0
+Palpitations,1,Acute Condition Likely,2,4,1
+Palpitations,1,Possible Infection,3,0,0
+Palpitations,1,Monitor Symptoms,4,3,1
+Palpitations,1,Requires Clinical Evaluation,1,2,0
+Palpitations,1,Chronic Condition Suspected,2,1,1
+Palpitations,1,Emergency Evaluation Needed,3,4,0
+Palpitations,1,Lifestyle-Related Issue Possible,4,0,1
+Palpitations,1,Underlying Disease Progression,1,3,0
+Palpitations,4,Acute Condition Likely,2,2,1
+Palpitations,4,Possible Infection,3,1,0
+Palpitations,4,Monitor Symptoms,4,4,1
+Palpitations,4,Requires Clinical Evaluation,1,0,0
+Palpitations,4,Chronic Condition Suspected,2,3,1
+Palpitations,4,Emergency Evaluation Needed,3,2,0
+Palpitations,4,Lifestyle-Related Issue Possible,4,1,1
+Palpitations,4,Underlying Disease Progression,1,4,0
+Palpitations,0,Acute Condition Likely,2,0,1
+Palpitations,0,Possible Infection,3,3,0
+Palpitations,0,Monitor Symptoms,4,2,1
+Palpitations,0,Requires Clinical Evaluation,1,1,0
+Palpitations,0,Chronic Condition Suspected,2,4,1
+Palpitations,0,Emergency Evaluation Needed,3,0,0
+Palpitations,0,Lifestyle-Related Issue Possible,4,3,1
+Palpitations,0,Underlying Disease Progression,1,2,0
+Palpitations,3,Acute Condition Likely,2,1,1
+Palpitations,3,Possible Infection,3,4,0
+Palpitations,3,Monitor Symptoms,4,0,1
+Palpitations,3,Requires Clinical Evaluation,1,3,0
+Palpitations,3,Chronic Condition Suspected,2,2,1
+Palpitations,3,Emergency Evaluation Needed,3,1,0
+Palpitations,3,Lifestyle-Related Issue Possible,4,4,1
+Palpitations,3,Underlying Disease Progression,1,0,0
+Palpitations,2,Acute Condition Likely,2,3,1
+Palpitations,2,Possible Infection,3,2,0
+Palpitations,2,Monitor Symptoms,4,1,1
+Palpitations,2,Requires Clinical Evaluation,1,4,0
+Palpitations,2,Chronic Condition Suspected,2,0,1
+Palpitations,2,Emergency Evaluation Needed,3,3,0
+Palpitations,2,Lifestyle-Related Issue Possible,4,2,1
+Palpitations,2,Underlying Disease Progression,1,1,0
+Palpitations,6,Acute Condition Likely,2,4,1
+Palpitations,6,Possible Infection,3,0,0
+Palpitations,6,Monitor Symptoms,4,3,1
+Palpitations,6,Requires Clinical Evaluation,1,2,0
+Palpitations,6,Chronic Condition Suspected,2,1,1
+Palpitations,6,Emergency Evaluation Needed,3,4,0
+Palpitations,6,Lifestyle-Related Issue Possible,4,0,1
+Palpitations,6,Underlying Disease Progression,1,3,0
+Rash,5,Acute Condition Likely,2,2,1
+Rash,5,Possible Infection,3,1,0
+Rash,5,Monitor Symptoms,4,4,1
+Rash,5,Requires Clinical Evaluation,1,0,0
+Rash,5,Chronic Condition Suspected,2,3,1
+Rash,5,Emergency Evaluation Needed,3,2,0
+Rash,5,Lifestyle-Related Issue Possible,4,1,1
+Rash,5,Underlying Disease Progression,1,4,0
+Rash,1,Acute Condition Likely,2,0,1
+Rash,1,Possible Infection,3,3,0
+Rash,1,Monitor Symptoms,4,2,1
+Rash,1,Requires Clinical Evaluation,1,1,0
+Rash,1,Chronic Condition Suspected,2,4,1
+Rash,1,Emergency Evaluation Needed,3,0,0
+Rash,1,Lifestyle-Related Issue Possible,4,3,1
+Rash,1,Underlying Disease Progression,1,2,0
+Rash,4,Acute Condition Likely,2,1,1
+Rash,4,Possible Infection,3,4,0
+Rash,4,Monitor Symptoms,4,0,1
+Rash,4,Requires Clinical Evaluation,1,3,0
+Rash,4,Chronic Condition Suspected,2,2,1
+Rash,4,Emergency Evaluation Needed,3,1,0
+Rash,4,Lifestyle-Related Issue Possible,4,4,1
+Rash,4,Underlying Disease Progression,1,0,0
+Rash,0,Acute Condition Likely,2,3,1
+Rash,0,Possible Infection,3,2,0
+Rash,0,Monitor Symptoms,4,1,1
+Rash,0,Requires Clinical Evaluation,1,4,0
+Rash,0,Chronic Condition Suspected,2,0,1
+Rash,0,Emergency Evaluation Needed,3,3,0
+Rash,0,Lifestyle-Related Issue Possible,4,2,1
+Rash,0,Underlying Disease Progression,1,1,0
+Rash,3,Acute Condition Likely,2,4,1
+Rash,3,Possible Infection,3,0,0
+Rash,3,Monitor Symptoms,4,3,1
+Rash,3,Requires Clinical Evaluation,1,2,0
+Rash,3,Chronic Condition Suspected,2,1,1
+Rash,3,Emergency Evaluation Needed,3,4,0
+Rash,3,Lifestyle-Related Issue Possible,4,0,1
+Rash,3,Underlying Disease Progression,1,3,0
+Rash,2,Acute Condition Likely,2,2,1
+Rash,2,Possible Infection,3,1,0
+Rash,2,Monitor Symptoms,4,4,1
+Rash,2,Requires Clinical Evaluation,1,0,0
+Rash,2,Chronic Condition Suspected,2,3,1
+Rash,2,Emergency Evaluation Needed,3,2,0
+Rash,2,Lifestyle-Related Issue Possible,4,1,1
+Rash,2,Underlying Disease Progression,1,4,0
+Rash,6,Acute Condition Likely,2,0,1
+Rash,6,Possible Infection,3,3,0
+Rash,6,Monitor Symptoms,4,2,1
+Rash,6,Requires Clinical Evaluation,1,1,0
+Rash,6,Chronic Condition Suspected,2,4,1
+Rash,6,Emergency Evaluation Needed,3,0,0
+Rash,6,Lifestyle-Related Issue Possible,4,3,1
+Rash,6,Underlying Disease Progression,1,2,0
+Itching,5,Acute Condition Likely,2,1,1
+Itching,5,Possible Infection,3,4,0
+Itching,5,Monitor Symptoms,4,0,1
+Itching,5,Requires Clinical Evaluation,1,3,0
+Itching,5,Chronic Condition Suspected,2,2,1
+Itching,5,Emergency Evaluation Needed,3,1,0
+Itching,5,Lifestyle-Related Issue Possible,4,4,1
+Itching,5,Underlying Disease Progression,1,0,0
+Itching,1,Acute Condition Likely,2,3,1
+Itching,1,Possible Infection,3,2,0
+Itching,1,Monitor Symptoms,4,1,1
+Itching,1,Requires Clinical Evaluation,1,4,0
+Itching,1,Chronic Condition Suspected,2,0,1
+Itching,1,Emergency Evaluation Needed,3,3,0
+Itching,1,Lifestyle-Related Issue Possible,4,2,1
+Itching,1,Underlying Disease Progression,1,1,0
+Itching,4,Acute Condition Likely,2,4,1
+Itching,4,Possible Infection,3,0,0
+Itching,4,Monitor Symptoms,4,3,1
+Itching,4,Requires Clinical Evaluation,1,2,0
+Itching,4,Chronic Condition Suspected,2,1,1
+Itching,4,Emergency Evaluation Needed,3,4,0
+Itching,4,Lifestyle-Related Issue Possible,4,0,1
+Itching,4,Underlying Disease Progression,1,3,0
+Itching,0,Acute Condition Likely,2,2,1
+Itching,0,Possible Infection,3,1,0
+Itching,0,Monitor Symptoms,4,4,1
+Itching,0,Requires Clinical Evaluation,1,0,0
+Itching,0,Chronic Condition Suspected,2,3,1
+Itching,0,Emergency Evaluation Needed,3,2,0
+Itching,0,Lifestyle-Related Issue Possible,4,1,1
+Itching,0,Underlying Disease Progression,1,4,0
+Itching,3,Acute Condition Likely,2,0,1
+Itching,3,Possible Infection,3,3,0
+Itching,3,Monitor Symptoms,4,2,1
+Itching,3,Requires Clinical Evaluation,1,1,0
+Itching,3,Chronic Condition Suspected,2,4,1
+Itching,3,Emergency Evaluation Needed,3,0,0
+Itching,3,Lifestyle-Related Issue Possible,4,3,1
+Itching,3,Underlying Disease Progression,1,2,0
+Itching,2,Acute Condition Likely,2,1,1
+Itching,2,Possible Infection,3,4,0
+Itching,2,Monitor Symptoms,4,0,1
+Itching,2,Requires Clinical Evaluation,1,3,0
+Itching,2,Chronic Condition Suspected,2,2,1
+Itching,2,Emergency Evaluation Needed,3,1,0
+Itching,2,Lifestyle-Related Issue Possible,4,4,1
+Itching,2,Underlying Disease Progression,1,0,0
+Itching,6,Acute Condition Likely,2,3,1
+Itching,6,Possible Infection,3,2,0
+Itching,6,Monitor Symptoms,4,1,1
+Itching,6,Requires Clinical Evaluation,1,4,0
+Itching,6,Chronic Condition Suspected,2,0,1
+Itching,6,Emergency Evaluation Needed,3,3,0
+Itching,6,Lifestyle-Related Issue Possible,4,2,1
+Itching,6,Underlying Disease Progression,1,1,0
+Weight Loss,5,Acute Condition Likely,2,4,1
+Weight Loss,5,Possible Infection,3,0,0
+Weight Loss,5,Monitor Symptoms,4,3,1
+Weight Loss,5,Requires Clinical Evaluation,1,2,0
+Weight Loss,5,Chronic Condition Suspected,2,1,1
+Weight Loss,5,Emergency Evaluation Needed,3,4,0
+Weight Loss,5,Lifestyle-Related Issue Possible,4,0,1
+Weight Loss,5,Underlying Disease Progression,1,3,0
+Weight Loss,1,Acute Condition Likely,2,2,1
+Weight Loss,1,Possible Infection,3,1,0
+Weight Loss,1,Monitor Symptoms,4,4,1
+Weight Loss,1,Requires Clinical Evaluation,1,0,0
+Weight Loss,1,Chronic Condition Suspected,2,3,1
+Weight Loss,1,Emergency Evaluation Needed,3,2,0
+Weight Loss,1,Lifestyle-Related Issue Possible,4,1,1
+Weight Loss,1,Underlying Disease Progression,1,4,0
+Weight Loss,4,Acute Condition Likely,2,0,1
+Weight Loss,4,Possible Infection,3,3,0
+Weight Loss,4,Monitor Symptoms,4,2,1
+Weight Loss,4,Requires Clinical Evaluation,1,1,0
+Weight Loss,4,Chronic Condition Suspected,2,4,1
+Weight Loss,4,Emergency Evaluation Needed,3,0,0
+Weight Loss,4,Lifestyle-Related Issue Possible,4,3,1
+Weight Loss,4,Underlying Disease Progression,1,2,0
+Weight Loss,0,Acute Condition Likely,2,1,1
+Weight Loss,0,Possible Infection,3,4,0
+Weight Loss,0,Monitor Symptoms,4,0,1
+Weight Loss,0,Requires Clinical Evaluation,1,3,0
+Weight Loss,0,Chronic Condition Suspected,2,2,1
+Weight Loss,0,Emergency Evaluation Needed,3,1,0
+Weight Loss,0,Lifestyle-Related Issue Possible,4,4,1
+Weight Loss,0,Underlying Disease Progression,1,0,0
+Weight Loss,3,Acute Condition Likely,2,3,1
+Weight Loss,3,Possible Infection,3,2,0
+Weight Loss,3,Monitor Symptoms,4,1,1
+Weight Loss,3,Requires Clinical Evaluation,1,4,0
+Weight Loss,3,Chronic Condition Suspected,2,0,1
+Weight Loss,3,Emergency Evaluation Needed,3,3,0
+Weight Loss,3,Lifestyle-Related Issue Possible,4,2,1
+Weight Loss,3,Underlying Disease Progression,1,1,0
+Weight Loss,2,Acute Condition Likely,2,4,1
+Weight Loss,2,Possible Infection,3,0,0
+Weight Loss,2,Monitor Symptoms,4,3,1
+Weight Loss,2,Requires Clinical Evaluation,1,2,0
+Weight Loss,2,Chronic Condition Suspected,2,1,1
+Weight Loss,2,Emergency Evaluation Needed,3,4,0
+Weight Loss,2,Lifestyle-Related Issue Possible,4,0,1
+Weight Loss,2,Underlying Disease Progression,1,3,0
+Weight Loss,6,Acute Condition Likely,2,2,1
+Weight Loss,6,Possible Infection,3,1,0
+Weight Loss,6,Monitor Symptoms,4,4,1
+Weight Loss,6,Requires Clinical Evaluation,1,0,0
+Weight Loss,6,Chronic Condition Suspected,2,3,1
+Weight Loss,6,Emergency Evaluation Needed,3,2,0
+Weight Loss,6,Lifestyle-Related Issue Possible,4,1,1
+Weight Loss,6,Underlying Disease Progression,1,4,0
+Weight Gain,5,Acute Condition Likely,2,0,1
+Weight Gain,5,Possible Infection,3,3,0
+Weight Gain,5,Monitor Symptoms,4,2,1
+Weight Gain,5,Requires Clinical Evaluation,1,1,0
+Weight Gain,5,Chronic Condition Suspected,2,4,1
+Weight Gain,5,Emergency Evaluation Needed,3,0,0
+Weight Gain,5,Lifestyle-Related Issue Possible,4,3,1
+Weight Gain,5,Underlying Disease Progression,1,2,0
+Weight Gain,1,Acute Condition Likely,2,1,1
+Weight Gain,1,Possible Infection,3,4,0
+Weight Gain,1,Monitor Symptoms,4,0,1
+Weight Gain,1,Requires Clinical Evaluation,1,3,0
+Weight Gain,1,Chronic Condition Suspected,2,2,1
+Weight Gain,1,Emergency Evaluation Needed,3,1,0
+Weight Gain,1,Lifestyle-Related Issue Possible,4,4,1
+Weight Gain,1,Underlying Disease Progression,1,0,0
+Weight Gain,4,Acute Condition Likely,2,3,1
+Weight Gain,4,Possible Infection,3,2,0
+Weight Gain,4,Monitor Symptoms,4,1,1
+Weight Gain,4,Requires Clinical Evaluation,1,4,0
+Weight Gain,4,Chronic Condition Suspected,2,0,1
+Weight Gain,4,Emergency Evaluation Needed,3,3,0
+Weight Gain,4,Lifestyle-Related Issue Possible,4,2,1
+Weight Gain,4,Underlying Disease Progression,1,1,0
+Weight Gain,0,Acute Condition Likely,2,4,1
+Weight Gain,0,Possible Infection,3,0,0
+Weight Gain,0,Monitor Symptoms,4,3,1
+Weight Gain,0,Requires Clinical Evaluation,1,2,0
+Weight Gain,0,Chronic Condition Suspected,2,1,1
+Weight Gain,0,Emergency Evaluation Needed,3,4,0
+Weight Gain,0,Lifestyle-Related Issue Possible,4,0,1
+Weight Gain,0,Underlying Disease Progression,1,3,0
+Weight Gain,3,Acute Condition Likely,2,2,1
+Weight Gain,3,Possible Infection,3,1,0
+Weight Gain,3,Monitor Symptoms,4,4,1
+Weight Gain,3,Requires Clinical Evaluation,1,0,0
+Weight Gain,3,Chronic Condition Suspected,2,3,1
+Weight Gain,3,Emergency Evaluation Needed,3,2,0
+Weight Gain,3,Lifestyle-Related Issue Possible,4,1,1
+Weight Gain,3,Underlying Disease Progression,1,4,0
+Weight Gain,2,Acute Condition Likely,2,0,1
+Weight Gain,2,Possible Infection,3,3,0
+Weight Gain,2,Monitor Symptoms,4,2,1
+Weight Gain,2,Requires Clinical Evaluation,1,1,0
+Weight Gain,2,Chronic Condition Suspected,2,4,1
+Weight Gain,2,Emergency Evaluation Needed,3,0,0
+Weight Gain,2,Lifestyle-Related Issue Possible,4,3,1
+Weight Gain,2,Underlying Disease Progression,1,2,0
+Weight Gain,6,Acute Condition Likely,2,1,1
+Weight Gain,6,Possible Infection,3,4,0
+Weight Gain,6,Monitor Symptoms,4,0,1
+Weight Gain,6,Requires Clinical Evaluation,1,3,0
+Weight Gain,6,Chronic Condition Suspected,2,2,1
+Weight Gain,6,Emergency Evaluation Needed,3,1,0
+Weight Gain,6,Lifestyle-Related Issue Possible,4,4,1
+Weight Gain,6,Underlying Disease Progression,1,0,0
+Frequent Urination,5,Acute Condition Likely,2,3,1
+Frequent Urination,5,Possible Infection,3,2,0
+Frequent Urination,5,Monitor Symptoms,4,1,1
+Frequent Urination,5,Requires Clinical Evaluation,1,4,0
+Frequent Urination,5,Chronic Condition Suspected,2,0,1
+Frequent Urination,5,Emergency Evaluation Needed,3,3,0
+Frequent Urination,5,Lifestyle-Related Issue Possible,4,2,1
+Frequent Urination,5,Underlying Disease Progression,1,1,0
+Frequent Urination,1,Acute Condition Likely,2,4,1
+Frequent Urination,1,Possible Infection,3,0,0
+Frequent Urination,1,Monitor Symptoms,4,3,1
+Frequent Urination,1,Requires Clinical Evaluation,1,2,0
+Frequent Urination,1,Chronic Condition Suspected,2,1,1
+Frequent Urination,1,Emergency Evaluation Needed,3,4,0
+Frequent Urination,1,Lifestyle-Related Issue Possible,4,0,1
+Frequent Urination,1,Underlying Disease Progression,1,3,0
+Frequent Urination,4,Acute Condition Likely,2,2,1
+Frequent Urination,4,Possible Infection,3,1,0
+Frequent Urination,4,Monitor Symptoms,4,4,1
+Frequent Urination,4,Requires Clinical Evaluation,1,0,0
+Frequent Urination,4,Chronic Condition Suspected,2,3,1
+Frequent Urination,4,Emergency Evaluation Needed,3,2,0
+Frequent Urination,4,Lifestyle-Related Issue Possible,4,1,1
+Frequent Urination,4,Underlying Disease Progression,1,4,0
+Frequent Urination,0,Acute Condition Likely,2,0,1
+Frequent Urination,0,Possible Infection,3,3,0
+Frequent Urination,0,Monitor Symptoms,4,2,1
+Frequent Urination,0,Requires Clinical Evaluation,1,1,0
+Frequent Urination,0,Chronic Condition Suspected,2,4,1
+Frequent Urination,0,Emergency Evaluation Needed,3,0,0
+Frequent Urination,0,Lifestyle-Related Issue Possible,4,3,1
+Frequent Urination,0,Underlying Disease Progression,1,2,0
+Frequent Urination,3,Acute Condition Likely,2,1,1
+Frequent Urination,3,Possible Infection,3,4,0
+Frequent Urination,3,Monitor Symptoms,4,0,1
+Frequent Urination,3,Requires Clinical Evaluation,1,3,0
+Frequent Urination,3,Chronic Condition Suspected,2,2,1
+Frequent Urination,3,Emergency Evaluation Needed,3,1,0
+Frequent Urination,3,Lifestyle-Related Issue Possible,4,4,1
+Frequent Urination,3,Underlying Disease Progression,1,0,0
+Frequent Urination,2,Acute Condition Likely,2,3,1
+Frequent Urination,2,Possible Infection,3,2,0
+Frequent Urination,2,Monitor Symptoms,4,1,1
+Frequent Urination,2,Requires Clinical Evaluation,1,4,0
+Frequent Urination,2,Chronic Condition Suspected,2,0,1
+Frequent Urination,2,Emergency Evaluation Needed,3,3,0
+Frequent Urination,2,Lifestyle-Related Issue Possible,4,2,1
+Frequent Urination,2,Underlying Disease Progression,1,1,0
+Frequent Urination,6,Acute Condition Likely,2,4,1
+Frequent Urination,6,Possible Infection,3,0,0
+Frequent Urination,6,Monitor Symptoms,4,3,1
+Frequent Urination,6,Requires Clinical Evaluation,1,2,0
+Frequent Urination,6,Chronic Condition Suspected,2,1,1
+Frequent Urination,6,Emergency Evaluation Needed,3,4,0
+Frequent Urination,6,Lifestyle-Related Issue Possible,4,0,1
+Frequent Urination,6,Underlying Disease Progression,1,3,0
+Blurred Vision,5,Acute Condition Likely,2,2,1
+Blurred Vision,5,Possible Infection,3,1,0
+Blurred Vision,5,Monitor Symptoms,4,4,1
+Blurred Vision,5,Requires Clinical Evaluation,1,0,0
+Blurred Vision,5,Chronic Condition Suspected,2,3,1
+Blurred Vision,5,Emergency Evaluation Needed,3,2,0
+Blurred Vision,5,Lifestyle-Related Issue Possible,4,1,1
+Blurred Vision,5,Underlying Disease Progression,1,4,0
+Blurred Vision,1,Acute Condition Likely,2,0,1
+Blurred Vision,1,Possible Infection,3,3,0
+Blurred Vision,1,Monitor Symptoms,4,2,1
+Blurred Vision,1,Requires Clinical Evaluation,1,1,0
+Blurred Vision,1,Chronic Condition Suspected,2,4,1
+Blurred Vision,1,Emergency Evaluation Needed,3,0,0
+Blurred Vision,1,Lifestyle-Related Issue Possible,4,3,1
+Blurred Vision,1,Underlying Disease Progression,1,2,0
+Blurred Vision,4,Acute Condition Likely,2,1,1
+Blurred Vision,4,Possible Infection,3,4,0
+Blurred Vision,4,Monitor Symptoms,4,0,1
+Blurred Vision,4,Requires Clinical Evaluation,1,3,0
+Blurred Vision,4,Chronic Condition Suspected,2,2,1
+Blurred Vision,4,Emergency Evaluation Needed,3,1,0
+Blurred Vision,4,Lifestyle-Related Issue Possible,4,4,1
+Blurred Vision,4,Underlying Disease Progression,1,0,0
+Blurred Vision,0,Acute Condition Likely,2,3,1
+Blurred Vision,0,Possible Infection,3,2,0
+Blurred Vision,0,Monitor Symptoms,4,1,1
+Blurred Vision,0,Requires Clinical Evaluation,1,4,0
+Blurred Vision,0,Chronic Condition Suspected,2,0,1
+Blurred Vision,0,Emergency Evaluation Needed,3,3,0
+Blurred Vision,0,Lifestyle-Related Issue Possible,4,2,1
+Blurred Vision,0,Underlying Disease Progression,1,1,0
+Blurred Vision,3,Acute Condition Likely,2,4,1
+Blurred Vision,3,Possible Infection,3,0,0
+Blurred Vision,3,Monitor Symptoms,4,3,1
+Blurred Vision,3,Requires Clinical Evaluation,1,2,0
+Blurred Vision,3,Chronic Condition Suspected,2,1,1
+Blurred Vision,3,Emergency Evaluation Needed,3,4,0
+Blurred Vision,3,Lifestyle-Related Issue Possible,4,0,1
+Blurred Vision,3,Underlying Disease Progression,1,3,0
+Blurred Vision,2,Acute Condition Likely,2,2,1
+Blurred Vision,2,Possible Infection,3,1,0
+Blurred Vision,2,Monitor Symptoms,4,4,1
+Blurred Vision,2,Requires Clinical Evaluation,1,0,0
+Blurred Vision,2,Chronic Condition Suspected,2,3,1
+Blurred Vision,2,Emergency Evaluation Needed,3,2,0
+Blurred Vision,2,Lifestyle-Related Issue Possible,4,1,1
+Blurred Vision,2,Underlying Disease Progression,1,4,0
+Blurred Vision,6,Acute Condition Likely,2,0,1
+Blurred Vision,6,Possible Infection,3,3,0
+Blurred Vision,6,Monitor Symptoms,4,2,1
+Blurred Vision,6,Requires Clinical Evaluation,1,1,0
+Blurred Vision,6,Chronic Condition Suspected,2,4,1
+Blurred Vision,6,Emergency Evaluation Needed,3,0,0
+Blurred Vision,6,Lifestyle-Related Issue Possible,4,3,1
+Blurred Vision,6,Underlying Disease Progression,1,2,0
+Seizure,5,Acute Condition Likely,2,1,1
+Seizure,5,Possible Infection,3,4,0
+Seizure,5,Monitor Symptoms,4,0,1
+Seizure,5,Requires Clinical Evaluation,1,3,0
+Seizure,5,Chronic Condition Suspected,2,2,1
+Seizure,5,Emergency Evaluation Needed,3,1,0
+Seizure,5,Lifestyle-Related Issue Possible,4,4,1
+Seizure,5,Underlying Disease Progression,1,0,0
+Seizure,1,Acute Condition Likely,2,3,1
+Seizure,1,Possible Infection,3,2,0
+Seizure,1,Monitor Symptoms,4,1,1
+Seizure,1,Requires Clinical Evaluation,1,4,0
+Seizure,1,Chronic Condition Suspected,2,0,1
+Seizure,1,Emergency Evaluation Needed,3,3,0
+Seizure,1,Lifestyle-Related Issue Possible,4,2,1
+Seizure,1,Underlying Disease Progression,1,1,0
+Seizure,4,Acute Condition Likely,2,4,1
+Seizure,4,Possible Infection,3,0,0
+Seizure,4,Monitor Symptoms,4,3,1
+Seizure,4,Requires Clinical Evaluation,1,2,0
+Seizure,4,Chronic Condition Suspected,2,1,1
+Seizure,4,Emergency Evaluation Needed,3,4,0
+Seizure,4,Lifestyle-Related Issue Possible,4,0,1
+Seizure,4,Underlying Disease Progression,1,3,0
+Seizure,0,Acute Condition Likely,2,2,1
+Seizure,0,Possible Infection,3,1,0
+Seizure,0,Monitor Symptoms,4,4,1
+Seizure,0,Requires Clinical Evaluation,1,0,0
+Seizure,0,Chronic Condition Suspected,2,3,1
+Seizure,0,Emergency Evaluation Needed,3,2,0
+Seizure,0,Lifestyle-Related Issue Possible,4,1,1
+Seizure,0,Underlying Disease Progression,1,4,0
+Seizure,3,Acute Condition Likely,2,0,1
+Seizure,3,Possible Infection,3,3,0
+Seizure,3,Monitor Symptoms,4,2,1
+Seizure,3,Requires Clinical Evaluation,1,1,0
+Seizure,3,Chronic Condition Suspected,2,4,1
+Seizure,3,Emergency Evaluation Needed,3,0,0
+Seizure,3,Lifestyle-Related Issue Possible,4,3,1
+Seizure,3,Underlying Disease Progression,1,2,0
+Seizure,2,Acute Condition Likely,2,1,1
+Seizure,2,Possible Infection,3,4,0
+Seizure,2,Monitor Symptoms,4,0,1
+Seizure,2,Requires Clinical Evaluation,1,3,0
+Seizure,2,Chronic Condition Suspected,2,2,1
+Seizure,2,Emergency Evaluation Needed,3,1,0
+Seizure,2,Lifestyle-Related Issue Possible,4,4,1
+Seizure,2,Underlying Disease Progression,1,0,0
+Seizure,6,Acute Condition Likely,2,3,1
+Seizure,6,Possible Infection,3,2,0
+Seizure,6,Monitor Symptoms,4,1,1
+Seizure,6,Requires Clinical Evaluation,1,4,0
+Seizure,6,Chronic Condition Suspected,2,0,1
+Seizure,6,Emergency Evaluation Needed,3,3,0
+Seizure,6,Lifestyle-Related Issue Possible,4,2,1
+Seizure,6,Underlying Disease Progression,1,1,0
+Depression,5,Acute Condition Likely,2,4,1
+Depression,5,Possible Infection,3,0,0
+Depression,5,Monitor Symptoms,4,3,1
+Depression,5,Requires Clinical Evaluation,1,2,0
+Depression,5,Chronic Condition Suspected,2,1,1
+Depression,5,Emergency Evaluation Needed,3,4,0
+Depression,5,Lifestyle-Related Issue Possible,4,0,1
+Depression,5,Underlying Disease Progression,1,3,0
+Depression,1,Acute Condition Likely,2,2,1
+Depression,1,Possible Infection,3,1,0
+Depression,1,Monitor Symptoms,4,4,1
+Depression,1,Requires Clinical Evaluation,1,0,0
+Depression,1,Chronic Condition Suspected,2,3,1
+Depression,1,Emergency Evaluation Needed,3,2,0
+Depression,1,Lifestyle-Related Issue Possible,4,1,1
+Depression,1,Underlying Disease Progression,1,4,0
+Depression,4,Acute Condition Likely,2,0,1
+Depression,4,Possible Infection,3,3,0
+Depression,4,Monitor Symptoms,4,2,1
+Depression,4,Requires Clinical Evaluation,1,1,0
+Depression,4,Chronic Condition Suspected,2,4,1
+Depression,4,Emergency Evaluation Needed,3,0,0
+Depression,4,Lifestyle-Related Issue Possible,4,3,1
+Depression,4,Underlying Disease Progression,1,2,0
+Depression,0,Acute Condition Likely,2,1,1
+Depression,0,Possible Infection,3,4,0
+Depression,0,Monitor Symptoms,4,0,1
+Depression,0,Requires Clinical Evaluation,1,3,0
+Depression,0,Chronic Condition Suspected,2,2,1
+Depression,0,Emergency Evaluation Needed,3,1,0
+Depression,0,Lifestyle-Related Issue Possible,4,4,1
+Depression,0,Underlying Disease Progression,1,0,0
+Depression,3,Acute Condition Likely,2,3,1
+Depression,3,Possible Infection,3,2,0
+Depression,3,Monitor Symptoms,4,1,1
+Depression,3,Requires Clinical Evaluation,1,4,0
+Depression,3,Chronic Condition Suspected,2,0,1
+Depression,3,Emergency Evaluation Needed,3,3,0
+Depression,3,Lifestyle-Related Issue Possible,4,2,1
+Depression,3,Underlying Disease Progression,1,1,0
+Depression,2,Acute Condition Likely,2,4,1
+Depression,2,Possible Infection,3,0,0
+Depression,2,Monitor Symptoms,4,3,1
+Depression,2,Requires Clinical Evaluation,1,2,0
+Depression,2,Chronic Condition Suspected,2,1,1
+Depression,2,Emergency Evaluation Needed,3,4,0
+Depression,2,Lifestyle-Related Issue Possible,4,0,1
+Depression,2,Underlying Disease Progression,1,3,0
+Depression,6,Acute Condition Likely,2,2,1
+Depression,6,Possible Infection,3,1,0
+Depression,6,Monitor Symptoms,4,4,1
+Depression,6,Requires Clinical Evaluation,1,0,0
+Depression,6,Chronic Condition Suspected,2,3,1
+Depression,6,Emergency Evaluation Needed,3,2,0
+Depression,6,Lifestyle-Related Issue Possible,4,1,1
+Depression,6,Underlying Disease Progression,1,4,0
+Anxiety,5,Acute Condition Likely,2,0,1
+Anxiety,5,Possible Infection,3,3,0
+Anxiety,5,Monitor Symptoms,4,2,1
+Anxiety,5,Requires Clinical Evaluation,1,1,0
+Anxiety,5,Chronic Condition Suspected,2,4,1
+Anxiety,5,Emergency Evaluation Needed,3,0,0
+Anxiety,5,Lifestyle-Related Issue Possible,4,3,1
+Anxiety,5,Underlying Disease Progression,1,2,0
+Anxiety,1,Acute Condition Likely,2,1,1
+Anxiety,1,Possible Infection,3,4,0
+Anxiety,1,Monitor Symptoms,4,0,1
+Anxiety,1,Requires Clinical Evaluation,1,3,0
+Anxiety,1,Chronic Condition Suspected,2,2,1
+Anxiety,1,Emergency Evaluation Needed,3,1,0
+Anxiety,1,Lifestyle-Related Issue Possible,4,4,1
+Anxiety,1,Underlying Disease Progression,1,0,0
+Anxiety,4,Acute Condition Likely,2,3,1
+Anxiety,4,Possible Infection,3,2,0
+Anxiety,4,Monitor Symptoms,4,1,1
+Anxiety,4,Requires Clinical Evaluation,1,4,0
+Anxiety,4,Chronic Condition Suspected,2,0,1
+Anxiety,4,Emergency Evaluation Needed,3,3,0
+Anxiety,4,Lifestyle-Related Issue Possible,4,2,1
+Anxiety,4,Underlying Disease Progression,1,1,0
+Anxiety,0,Acute Condition Likely,2,4,1
+Anxiety,0,Possible Infection,3,0,0
+Anxiety,0,Monitor Symptoms,4,3,1
+Anxiety,0,Requires Clinical Evaluation,1,2,0
+Anxiety,0,Chronic Condition Suspected,2,1,1
+Anxiety,0,Emergency Evaluation Needed,3,4,0
+Anxiety,0,Lifestyle-Related Issue Possible,4,0,1
+Anxiety,0,Underlying Disease Progression,1,3,0
+Anxiety,3,Acute Condition Likely,2,2,1
+Anxiety,3,Possible Infection,3,1,0
+Anxiety,3,Monitor Symptoms,4,4,1
+Anxiety,3,Requires Clinical Evaluation,1,0,0
+Anxiety,3,Chronic Condition Suspected,2,3,1
+Anxiety,3,Emergency Evaluation Needed,3,2,0
+Anxiety,3,Lifestyle-Related Issue Possible,4,1,1
+Anxiety,3,Underlying Disease Progression,1,4,0
+Anxiety,2,Acute Condition Likely,2,0,1
+Anxiety,2,Possible Infection,3,3,0
+Anxiety,2,Monitor Symptoms,4,2,1
+Anxiety,2,Requires Clinical Evaluation,1,1,0
+Anxiety,2,Chronic Condition Suspected,2,4,1
+Anxiety,2,Emergency Evaluation Needed,3,0,0
+Anxiety,2,Lifestyle-Related Issue Possible,4,3,1
+Anxiety,2,Underlying Disease Progression,1,2,0
+Anxiety,6,Acute Condition Likely,2,1,1
+Anxiety,6,Possible Infection,3,4,0
+Anxiety,6,Monitor Symptoms,4,0,1
+Anxiety,6,Requires Clinical Evaluation,1,3,0
+Anxiety,6,Chronic Condition Suspected,2,2,1
+Anxiety,6,Emergency Evaluation Needed,3,1,0
+Anxiety,6,Lifestyle-Related Issue Possible,4,4,1
+Anxiety,6,Underlying Disease Progression,1,0,0
+Insomnia,5,Acute Condition Likely,2,3,1
+Insomnia,5,Possible Infection,3,2,0
+Insomnia,5,Monitor Symptoms,4,1,1
+Insomnia,5,Requires Clinical Evaluation,1,4,0
+Insomnia,5,Chronic Condition Suspected,2,0,1
+Insomnia,5,Emergency Evaluation Needed,3,3,0
+Insomnia,5,Lifestyle-Related Issue Possible,4,2,1
+Insomnia,5,Underlying Disease Progression,1,1,0
+Insomnia,1,Acute Condition Likely,2,4,1
+Insomnia,1,Possible Infection,3,0,0
+Insomnia,1,Monitor Symptoms,4,3,1
+Insomnia,1,Requires Clinical Evaluation,1,2,0
+Insomnia,1,Chronic Condition Suspected,2,1,1
+Insomnia,1,Emergency Evaluation Needed,3,4,0
+Insomnia,1,Lifestyle-Related Issue Possible,4,0,1
+Insomnia,1,Underlying Disease Progression,1,3,0
+Insomnia,4,Acute Condition Likely,2,2,1
+Insomnia,4,Possible Infection,3,1,0
+Insomnia,4,Monitor Symptoms,4,4,1
+Insomnia,4,Requires Clinical Evaluation,1,0,0
+Insomnia,4,Chronic Condition Suspected,2,3,1
+Insomnia,4,Emergency Evaluation Needed,3,2,0
+Insomnia,4,Lifestyle-Related Issue Possible,4,1,1
+Insomnia,4,Underlying Disease Progression,1,4,0
+Insomnia,0,Acute Condition Likely,2,0,1
+Insomnia,0,Possible Infection,3,3,0
+Insomnia,0,Monitor Symptoms,4,2,1
+Insomnia,0,Requires Clinical Evaluation,1,1,0
+Insomnia,0,Chronic Condition Suspected,2,4,1
+Insomnia,0,Emergency Evaluation Needed,3,0,0
+Insomnia,0,Lifestyle-Related Issue Possible,4,3,1
+Insomnia,0,Underlying Disease Progression,1,2,0
+Insomnia,3,Acute Condition Likely,2,1,1
+Insomnia,3,Possible Infection,3,4,0
+Insomnia,3,Monitor Symptoms,4,0,1
+Insomnia,3,Requires Clinical Evaluation,1,3,0
+Insomnia,3,Chronic Condition Suspected,2,2,1
+Insomnia,3,Emergency Evaluation Needed,3,1,0
+Insomnia,3,Lifestyle-Related Issue Possible,4,4,1
+Insomnia,3,Underlying Disease Progression,1,0,0
+Insomnia,2,Acute Condition Likely,2,3,1
+Insomnia,2,Possible Infection,3,2,0
+Insomnia,2,Monitor Symptoms,4,1,1
+Insomnia,2,Requires Clinical Evaluation,1,4,0
+Insomnia,2,Chronic Condition Suspected,2,0,1
+Insomnia,2,Emergency Evaluation Needed,3,3,0
+Insomnia,2,Lifestyle-Related Issue Possible,4,2,1
+Insomnia,2,Underlying Disease Progression,1,1,0
+Insomnia,6,Acute Condition Likely,2,4,1
+Insomnia,6,Possible Infection,3,0,0
+Insomnia,6,Monitor Symptoms,4,3,1
+Insomnia,6,Requires Clinical Evaluation,1,2,0
+Insomnia,6,Chronic Condition Suspected,2,1,1
+Insomnia,6,Emergency Evaluation Needed,3,4,0
+Insomnia,6,Lifestyle-Related Issue Possible,4,0,1
+Insomnia,6,Underlying Disease Progression,1,3,0
+Hair Loss,5,Acute Condition Likely,2,2,1
+Hair Loss,5,Possible Infection,3,1,0
+Hair Loss,5,Monitor Symptoms,4,4,1
+Hair Loss,5,Requires Clinical Evaluation,1,0,0
+Hair Loss,5,Chronic Condition Suspected,2,3,1
+Hair Loss,5,Emergency Evaluation Needed,3,2,0
+Hair Loss,5,Lifestyle-Related Issue Possible,4,1,1
+Hair Loss,5,Underlying Disease Progression,1,4,0
+Hair Loss,1,Acute Condition Likely,2,0,1
+Hair Loss,1,Possible Infection,3,3,0
+Hair Loss,1,Monitor Symptoms,4,2,1
+Hair Loss,1,Requires Clinical Evaluation,1,1,0
+Hair Loss,1,Chronic Condition Suspected,2,4,1
+Hair Loss,1,Emergency Evaluation Needed,3,0,0
+Hair Loss,1,Lifestyle-Related Issue Possible,4,3,1
+Hair Loss,1,Underlying Disease Progression,1,2,0
+Hair Loss,4,Acute Condition Likely,2,1,1
+Hair Loss,4,Possible Infection,3,4,0
+Hair Loss,4,Monitor Symptoms,4,0,1
+Hair Loss,4,Requires Clinical Evaluation,1,3,0
+Hair Loss,4,Chronic Condition Suspected,2,2,1
+Hair Loss,4,Emergency Evaluation Needed,3,1,0
+Hair Loss,4,Lifestyle-Related Issue Possible,4,4,1
+Hair Loss,4,Underlying Disease Progression,1,0,0
+Hair Loss,0,Acute Condition Likely,2,3,1
+Hair Loss,0,Possible Infection,3,2,0
+Hair Loss,0,Monitor Symptoms,4,1,1
+Hair Loss,0,Requires Clinical Evaluation,1,4,0
+Hair Loss,0,Chronic Condition Suspected,2,0,1
+Hair Loss,0,Emergency Evaluation Needed,3,3,0
+Hair Loss,0,Lifestyle-Related Issue Possible,4,2,1
+Hair Loss,0,Underlying Disease Progression,1,1,0
+Hair Loss,3,Acute Condition Likely,2,4,1
+Hair Loss,3,Possible Infection,3,0,0
+Hair Loss,3,Monitor Symptoms,4,3,1
+Hair Loss,3,Requires Clinical Evaluation,1,2,0
+Hair Loss,3,Chronic Condition Suspected,2,1,1
+Hair Loss,3,Emergency Evaluation Needed,3,4,0
+Hair Loss,3,Lifestyle-Related Issue Possible,4,0,1
+Hair Loss,3,Underlying Disease Progression,1,3,0
+Hair Loss,2,Acute Condition Likely,2,2,1
+Hair Loss,2,Possible Infection,3,1,0
+Hair Loss,2,Monitor Symptoms,4,4,1
+Hair Loss,2,Requires Clinical Evaluation,1,0,0
+Hair Loss,2,Chronic Condition Suspected,2,3,1
+Hair Loss,2,Emergency Evaluation Needed,3,2,0
+Hair Loss,2,Lifestyle-Related Issue Possible,4,1,1
+Hair Loss,2,Underlying Disease Progression,1,4,0
+Hair Loss,6,Acute Condition Likely,2,0,1
+Hair Loss,6,Possible Infection,3,3,0
+Hair Loss,6,Monitor Symptoms,4,2,1
+Hair Loss,6,Requires Clinical Evaluation,1,1,0
+Hair Loss,6,Chronic Condition Suspected,2,4,1
+Hair Loss,6,Emergency Evaluation Needed,3,0,0
+Hair Loss,6,Lifestyle-Related Issue Possible,4,3,1
+Hair Loss,6,Underlying Disease Progression,1,2,0
+Nausea,5,Acute Condition Likely,2,1,1
+Nausea,5,Possible Infection,3,4,0
+Nausea,5,Monitor Symptoms,4,0,1
+Nausea,5,Requires Clinical Evaluation,1,3,0
+Nausea,5,Chronic Condition Suspected,2,2,1
+Nausea,5,Emergency Evaluation Needed,3,1,0
+Nausea,5,Lifestyle-Related Issue Possible,4,4,1
+Nausea,5,Underlying Disease Progression,1,0,0
+Nausea,1,Acute Condition Likely,2,3,1
+Nausea,1,Possible Infection,3,2,0
+Nausea,1,Monitor Symptoms,4,1,1
+Nausea,1,Requires Clinical Evaluation,1,4,0
+Nausea,1,Chronic Condition Suspected,2,0,1
+Nausea,1,Emergency Evaluation Needed,3,3,0
+Nausea,1,Lifestyle-Related Issue Possible,4,2,1
+Nausea,1,Underlying Disease Progression,1,1,0
+Nausea,4,Acute Condition Likely,2,4,1
+Nausea,4,Possible Infection,3,0,0
+Nausea,4,Monitor Symptoms,4,3,1
+Nausea,4,Requires Clinical Evaluation,1,2,0
+Nausea,4,Chronic Condition Suspected,2,1,1
+Nausea,4,Emergency Evaluation Needed,3,4,0
+Nausea,4,Lifestyle-Related Issue Possible,4,0,1
+Nausea,4,Underlying Disease Progression,1,3,0
+Nausea,0,Acute Condition Likely,2,2,1
+Nausea,0,Possible Infection,3,1,0
+Nausea,0,Monitor Symptoms,4,4,1
+Nausea,0,Requires Clinical Evaluation,1,0,0
+Nausea,0,Chronic Condition Suspected,2,3,1
+Nausea,0,Emergency Evaluation Needed,3,2,0
+Nausea,0,Lifestyle-Related Issue Possible,4,1,1
+Nausea,0,Underlying Disease Progression,1,4,0
+Nausea,3,Acute Condition Likely,2,0,1
+Nausea,3,Possible Infection,3,3,0
+Nausea,3,Monitor Symptoms,4,2,1
+Nausea,3,Requires Clinical Evaluation,1,1,0
+Nausea,3,Chronic Condition Suspected,2,4,1
+Nausea,3,Emergency Evaluation Needed,3,0,0
+Nausea,3,Lifestyle-Related Issue Possible,4,3,1
+Nausea,3,Underlying Disease Progression,1,2,0
+Nausea,2,Acute Condition Likely,2,1,1
+Nausea,2,Possible Infection,3,4,0
+Nausea,2,Monitor Symptoms,4,0,1
+Nausea,2,Requires Clinical Evaluation,1,3,0
+Nausea,2,Chronic Condition Suspected,2,2,1
+Nausea,2,Emergency Evaluation Needed,3,1,0
+Nausea,2,Lifestyle-Related Issue Possible,4,4,1
+Nausea,2,Underlying Disease Progression,1,0,0
+Nausea,6,Acute Condition Likely,2,3,1
+Nausea,6,Possible Infection,3,2,0
+Nausea,6,Monitor Symptoms,4,1,1
+Nausea,6,Requires Clinical Evaluation,1,4,0
+Nausea,6,Chronic Condition Suspected,2,0,1
+Nausea,6,Emergency Evaluation Needed,3,3,0
+Nausea,6,Lifestyle-Related Issue Possible,4,2,1
+Nausea,6,Underlying Disease Progression,1,1,0
+Constipation,5,Acute Condition Likely,2,4,1
+Constipation,5,Possible Infection,3,0,0
+Constipation,5,Monitor Symptoms,4,3,1
+Constipation,5,Requires Clinical Evaluation,1,2,0
+Constipation,5,Chronic Condition Suspected,2,1,1
+Constipation,5,Emergency Evaluation Needed,3,4,0
+Constipation,5,Lifestyle-Related Issue Possible,4,0,1
+Constipation,5,Underlying Disease Progression,1,3,0
+Constipation,1,Acute Condition Likely,2,2,1
+Constipation,1,Possible Infection,3,1,0
+Constipation,1,Monitor Symptoms,4,4,1
+Constipation,1,Requires Clinical Evaluation,1,0,0
+Constipation,1,Chronic Condition Suspected,2,3,1
+Constipation,1,Emergency Evaluation Needed,3,2,0
+Constipation,1,Lifestyle-Related Issue Possible,4,1,1
+Constipation,1,Underlying Disease Progression,1,4,0
+Constipation,4,Acute Condition Likely,2,0,1
+Constipation,4,Possible Infection,3,3,0
+Constipation,4,Monitor Symptoms,4,2,1
+Constipation,4,Requires Clinical Evaluation,1,1,0
+Constipation,4,Chronic Condition Suspected,2,4,1
+Constipation,4,Emergency Evaluation Needed,3,0,0
+Constipation,4,Lifestyle-Related Issue Possible,4,3,1
+Constipation,4,Underlying Disease Progression,1,2,0
+Constipation,0,Acute Condition Likely,2,1,1
+Constipation,0,Possible Infection,3,4,0
+Constipation,0,Monitor Symptoms,4,0,1
+Constipation,0,Requires Clinical Evaluation,1,3,0
+Constipation,0,Chronic Condition Suspected,2,2,1
+Constipation,0,Emergency Evaluation Needed,3,1,0
+Constipation,0,Lifestyle-Related Issue Possible,4,4,1
+Constipation,0,Underlying Disease Progression,1,0,0
+Constipation,3,Acute Condition Likely,2,3,1
+Constipation,3,Possible Infection,3,2,0
+Constipation,3,Monitor Symptoms,4,1,1
+Constipation,3,Requires Clinical Evaluation,1,4,0
+Constipation,3,Chronic Condition Suspected,2,0,1
+Constipation,3,Emergency Evaluation Needed,3,3,0
+Constipation,3,Lifestyle-Related Issue Possible,4,2,1
+Constipation,3,Underlying Disease Progression,1,1,0
+Constipation,2,Acute Condition Likely,2,4,1
+Constipation,2,Possible Infection,3,0,0
+Constipation,2,Monitor Symptoms,4,3,1
+Constipation,2,Requires Clinical Evaluation,1,2,0
+Constipation,2,Chronic Condition Suspected,2,1,1
+Constipation,2,Emergency Evaluation Needed,3,4,0
+Constipation,2,Lifestyle-Related Issue Possible,4,0,1
+Constipation,2,Underlying Disease Progression,1,3,0
+Constipation,6,Acute Condition Likely,2,2,1
+Constipation,6,Possible Infection,3,1,0
+Constipation,6,Monitor Symptoms,4,4,1
+Constipation,6,Requires Clinical Evaluation,1,0,0
+Constipation,6,Chronic Condition Suspected,2,3,1
+Constipation,6,Emergency Evaluation Needed,3,2,0
+Constipation,6,Lifestyle-Related Issue Possible,4,1,1
+Constipation,6,Underlying Disease Progression,1,4,0
+Swelling,5,Acute Condition Likely,2,0,1
+Swelling,5,Possible Infection,3,3,0
+Swelling,5,Monitor Symptoms,4,2,1
+Swelling,5,Requires Clinical Evaluation,1,1,0
+Swelling,5,Chronic Condition Suspected,2,4,1
+Swelling,5,Emergency Evaluation Needed,3,0,0
+Swelling,5,Lifestyle-Related Issue Possible,4,3,1
+Swelling,5,Underlying Disease Progression,1,2,0
+Swelling,1,Acute Condition Likely,2,1,1
+Swelling,1,Possible Infection,3,4,0
+Swelling,1,Monitor Symptoms,4,0,1
+Swelling,1,Requires Clinical Evaluation,1,3,0
+Swelling,1,Chronic Condition Suspected,2,2,1
+Swelling,1,Emergency Evaluation Needed,3,1,0
+Swelling,1,Lifestyle-Related Issue Possible,4,4,1
+Swelling,1,Underlying Disease Progression,1,0,0
+Swelling,4,Acute Condition Likely,2,3,1
+Swelling,4,Possible Infection,3,2,0
+Swelling,4,Monitor Symptoms,4,1,1
+Swelling,4,Requires Clinical Evaluation,1,4,0
+Swelling,4,Chronic Condition Suspected,2,0,1
+Swelling,4,Emergency Evaluation Needed,3,3,0
+Swelling,4,Lifestyle-Related Issue Possible,4,2,1
+Swelling,4,Underlying Disease Progression,1,1,0
+Swelling,0,Acute Condition Likely,2,4,1
+Swelling,0,Possible Infection,3,0,0
+Swelling,0,Monitor Symptoms,4,3,1
+Swelling,0,Requires Clinical Evaluation,1,2,0
+Swelling,0,Chronic Condition Suspected,2,1,1
+Swelling,0,Emergency Evaluation Needed,3,4,0
+Swelling,0,Lifestyle-Related Issue Possible,4,0,1
+Swelling,0,Underlying Disease Progression,1,3,0
+Swelling,3,Acute Condition Likely,2,2,1
+Swelling,3,Possible Infection,3,1,0
+Swelling,3,Monitor Symptoms,4,4,1
+Swelling,3,Requires Clinical Evaluation,1,0,0
+Swelling,3,Chronic Condition Suspected,2,3,1
+Swelling,3,Emergency Evaluation Needed,3,2,0
+Swelling,3,Lifestyle-Related Issue Possible,4,1,1
+Swelling,3,Underlying Disease Progression,1,4,0
+Swelling,2,Acute Condition Likely,2,0,1
+Swelling,2,Possible Infection,3,3,0
+Swelling,2,Monitor Symptoms,4,2,1
+Swelling,2,Requires Clinical Evaluation,1,1,0
+Swelling,2,Chronic Condition Suspected,2,4,1
+Swelling,2,Emergency Evaluation Needed,3,0,0
+Swelling,2,Lifestyle-Related Issue Possible,4,3,1
+Swelling,2,Underlying Disease Progression,1,2,0
+Swelling,6,Acute Condition Likely,2,1,1
+Swelling,6,Possible Infection,3,4,0
+Swelling,6,Monitor Symptoms,4,0,1
+Swelling,6,Requires Clinical Evaluation,1,3,0
+Swelling,6,Chronic Condition Suspected,2,2,1
+Swelling,6,Emergency Evaluation Needed,3,1,0
+Swelling,6,Lifestyle-Related Issue Possible,4,4,1
+Swelling,6,Underlying Disease Progression,1,0,0
+Bleeding,5,Acute Condition Likely,2,3,1
+Bleeding,5,Possible Infection,3,2,0
+Bleeding,5,Monitor Symptoms,4,1,1
+Bleeding,5,Requires Clinical Evaluation,1,4,0
+Bleeding,5,Chronic Condition Suspected,2,0,1
+Bleeding,5,Emergency Evaluation Needed,3,3,0
+Bleeding,5,Lifestyle-Related Issue Possible,4,2,1
+Bleeding,5,Underlying Disease Progression,1,1,0
+Bleeding,1,Acute Condition Likely,2,4,1
+Bleeding,1,Possible Infection,3,0,0
+Bleeding,1,Monitor Symptoms,4,3,1
+Bleeding,1,Requires Clinical Evaluation,1,2,0
+Bleeding,1,Chronic Condition Suspected,2,1,1
+Bleeding,1,Emergency Evaluation Needed,3,4,0
+Bleeding,1,Lifestyle-Related Issue Possible,4,0,1
+Bleeding,1,Underlying Disease Progression,1,3,0
+Bleeding,4,Acute Condition Likely,2,2,1
+Bleeding,4,Possible Infection,3,1,0
+Bleeding,4,Monitor Symptoms,4,4,1
+Bleeding,4,Requires Clinical Evaluation,1,0,0
+Bleeding,4,Chronic Condition Suspected,2,3,1
+Bleeding,4,Emergency Evaluation Needed,3,2,0
+Bleeding,4,Lifestyle-Related Issue Possible,4,1,1
+Bleeding,4,Underlying Disease Progression,1,4,0
+Bleeding,0,Acute Condition Likely,2,0,1
+Bleeding,0,Possible Infection,3,3,0
+Bleeding,0,Monitor Symptoms,4,2,1
+Bleeding,0,Requires Clinical Evaluation,1,1,0
+Bleeding,0,Chronic Condition Suspected,2,4,1
+Bleeding,0,Emergency Evaluation Needed,3,0,0
+Bleeding,0,Lifestyle-Related Issue Possible,4,3,1
+Bleeding,0,Underlying Disease Progression,1,2,0
+Bleeding,3,Acute Condition Likely,2,1,1
+Bleeding,3,Possible Infection,3,4,0
+Bleeding,3,Monitor Symptoms,4,0,1
+Bleeding,3,Requires Clinical Evaluation,1,3,0
+Bleeding,3,Chronic Condition Suspected,2,2,1
+Bleeding,3,Emergency Evaluation Needed,3,1,0
+Bleeding,3,Lifestyle-Related Issue Possible,4,4,1
+Bleeding,3,Underlying Disease Progression,1,0,0
+Bleeding,2,Acute Condition Likely,2,3,1
+Bleeding,2,Possible Infection,3,2,0
+Bleeding,2,Monitor Symptoms,4,1,1
+Bleeding,2,Requires Clinical Evaluation,1,4,0
+Bleeding,2,Chronic Condition Suspected,2,0,1
+Bleeding,2,Emergency Evaluation Needed,3,3,0
+Bleeding,2,Lifestyle-Related Issue Possible,4,2,1
+Bleeding,2,Underlying Disease Progression,1,1,0
+Bleeding,6,Acute Condition Likely,2,4,1
+Bleeding,6,Possible Infection,3,0,0
+Bleeding,6,Monitor Symptoms,4,3,1
+Bleeding,6,Requires Clinical Evaluation,1,2,0
+Bleeding,6,Chronic Condition Suspected,2,1,1
+Bleeding,6,Emergency Evaluation Needed,3,4,0
+Bleeding,6,Lifestyle-Related Issue Possible,4,0,1
+Bleeding,6,Underlying Disease Progression,1,3,0
+Weakness,5,Acute Condition Likely,2,2,1
+Weakness,5,Possible Infection,3,1,0
+Weakness,5,Monitor Symptoms,4,4,1
+Weakness,5,Requires Clinical Evaluation,1,0,0
+Weakness,5,Chronic Condition Suspected,2,3,1
+Weakness,5,Emergency Evaluation Needed,3,2,0
+Weakness,5,Lifestyle-Related Issue Possible,4,1,1
+Weakness,5,Underlying Disease Progression,1,4,0
+Weakness,1,Acute Condition Likely,2,0,1
+Weakness,1,Possible Infection,3,3,0
+Weakness,1,Monitor Symptoms,4,2,1
+Weakness,1,Requires Clinical Evaluation,1,1,0
+Weakness,1,Chronic Condition Suspected,2,4,1
+Weakness,1,Emergency Evaluation Needed,3,0,0
+Weakness,1,Lifestyle-Related Issue Possible,4,3,1
+Weakness,1,Underlying Disease Progression,1,2,0
+Weakness,4,Acute Condition Likely,2,1,1
+Weakness,4,Possible Infection,3,4,0
+Weakness,4,Monitor Symptoms,4,0,1
+Weakness,4,Requires Clinical Evaluation,1,3,0
+Weakness,4,Chronic Condition Suspected,2,2,1
+Weakness,4,Emergency Evaluation Needed,3,1,0
+Weakness,4,Lifestyle-Related Issue Possible,4,4,1
+Weakness,4,Underlying Disease Progression,1,0,0
+Weakness,0,Acute Condition Likely,2,3,1
+Weakness,0,Possible Infection,3,2,0
+Weakness,0,Monitor Symptoms,4,1,1
+Weakness,0,Requires Clinical Evaluation,1,4,0
+Weakness,0,Chronic Condition Suspected,2,0,1
+Weakness,0,Emergency Evaluation Needed,3,3,0
+Weakness,0,Lifestyle-Related Issue Possible,4,2,1
+Weakness,0,Underlying Disease Progression,1,1,0
+Weakness,3,Acute Condition Likely,2,4,1
+Weakness,3,Possible Infection,3,0,0
+Weakness,3,Monitor Symptoms,4,3,1
+Weakness,3,Requires Clinical Evaluation,1,2,0
+Weakness,3,Chronic Condition Suspected,2,1,1
+Weakness,3,Emergency Evaluation Needed,3,4,0
+Weakness,3,Lifestyle-Related Issue Possible,4,0,1
+Weakness,3,Underlying Disease Progression,1,3,0
+Weakness,2,Acute Condition Likely,2,2,1
+Weakness,2,Possible Infection,3,1,0
+Weakness,2,Monitor Symptoms,4,4,1
+Weakness,2,Requires Clinical Evaluation,1,0,0
+Weakness,2,Chronic Condition Suspected,2,3,1
+Weakness,2,Emergency Evaluation Needed,3,2,0
+Weakness,2,Lifestyle-Related Issue Possible,4,1,1
+Weakness,2,Underlying Disease Progression,1,4,0
+Weakness,6,Acute Condition Likely,2,0,1
+Weakness,6,Possible Infection,3,3,0
+Weakness,6,Monitor Symptoms,4,2,1
+Weakness,6,Requires Clinical Evaluation,1,1,0
+Weakness,6,Chronic Condition Suspected,2,4,1
+Weakness,6,Emergency Evaluation Needed,3,0,0
+Weakness,6,Lifestyle-Related Issue Possible,4,3,1
+Weakness,6,Underlying Disease Progression,1,2,0
+Confusion,5,Acute Condition Likely,2,1,1
+Confusion,5,Possible Infection,3,4,0
+Confusion,5,Monitor Symptoms,4,0,1
+Confusion,5,Requires Clinical Evaluation,1,3,0
+Confusion,5,Chronic Condition Suspected,2,2,1
+Confusion,5,Emergency Evaluation Needed,3,1,0
+Confusion,5,Lifestyle-Related Issue Possible,4,4,1
+Confusion,5,Underlying Disease Progression,1,0,0
+Confusion,1,Acute Condition Likely,2,3,1
+Confusion,1,Possible Infection,3,2,0
+Confusion,1,Monitor Symptoms,4,1,1
+Confusion,1,Requires Clinical Evaluation,1,4,0
+Confusion,1,Chronic Condition Suspected,2,0,1
+Confusion,1,Emergency Evaluation Needed,3,3,0
+Confusion,1,Lifestyle-Related Issue Possible,4,2,1
+Confusion,1,Underlying Disease Progression,1,1,0
+Confusion,4,Acute Condition Likely,2,4,1
+Confusion,4,Possible Infection,3,0,0
+Confusion,4,Monitor Symptoms,4,3,1
+Confusion,4,Requires Clinical Evaluation,1,2,0
+Confusion,4,Chronic Condition Suspected,2,1,1
+Confusion,4,Emergency Evaluation Needed,3,4,0
+Confusion,4,Lifestyle-Related Issue Possible,4,0,1
+Confusion,4,Underlying Disease Progression,1,3,0
+Confusion,0,Acute Condition Likely,2,2,1
+Confusion,0,Possible Infection,3,1,0
+Confusion,0,Monitor Symptoms,4,4,1
+Confusion,0,Requires Clinical Evaluation,1,0,0
+Confusion,0,Chronic Condition Suspected,2,3,1
+Confusion,0,Emergency Evaluation Needed,3,2,0
+Confusion,0,Lifestyle-Related Issue Possible,4,1,1
+Confusion,0,Underlying Disease Progression,1,4,0
+Confusion,3,Acute Condition Likely,2,0,1
+Confusion,3,Possible Infection,3,3,0
+Confusion,3,Monitor Symptoms,4,2,1
+Confusion,3,Requires Clinical Evaluation,1,1,0
+Confusion,3,Chronic Condition Suspected,2,4,1
+Confusion,3,Emergency Evaluation Needed,3,0,0
+Confusion,3,Lifestyle-Related Issue Possible,4,3,1
+Confusion,3,Underlying Disease Progression,1,2,0
+Confusion,2,Acute Condition Likely,2,1,1
+Confusion,2,Possible Infection,3,4,0
+Confusion,2,Monitor Symptoms,4,0,1
+Confusion,2,Requires Clinical Evaluation,1,3,0
+Confusion,2,Chronic Condition Suspected,2,2,1
+Confusion,2,Emergency Evaluation Needed,3,1,0
+Confusion,2,Lifestyle-Related Issue Possible,4,4,1
+Confusion,2,Underlying Disease Progression,1,0,0
+Confusion,6,Acute Condition Likely,2,3,1
+Confusion,6,Possible Infection,3,2,0
+Confusion,6,Monitor Symptoms,4,1,1
+Confusion,6,Requires Clinical Evaluation,1,4,0
+Confusion,6,Chronic Condition Suspected,2,0,1
+Confusion,6,Emergency Evaluation Needed,3,3,0
+Confusion,6,Lifestyle-Related Issue Possible,4,2,1
+Confusion,6,Underlying Disease Progression,1,1,0
+Sore Throat,5,Acute Condition Likely,2,4,1
+Sore Throat,5,Possible Infection,3,0,0
+Sore Throat,5,Monitor Symptoms,4,3,1
+Sore Throat,5,Requires Clinical Evaluation,1,2,0
+Sore Throat,5,Chronic Condition Suspected,2,1,1
+Sore Throat,5,Emergency Evaluation Needed,3,4,0
+Sore Throat,5,Lifestyle-Related Issue Possible,4,0,1
+Sore Throat,5,Underlying Disease Progression,1,3,0
+Sore Throat,1,Acute Condition Likely,2,2,1
+Sore Throat,1,Possible Infection,3,1,0
+Sore Throat,1,Monitor Symptoms,4,4,1
+Sore Throat,1,Requires Clinical Evaluation,1,0,0
+Sore Throat,1,Chronic Condition Suspected,2,3,1
+Sore Throat,1,Emergency Evaluation Needed,3,2,0
+Sore Throat,1,Lifestyle-Related Issue Possible,4,1,1
+Sore Throat,1,Underlying Disease Progression,1,4,0
+Sore Throat,4,Acute Condition Likely,2,0,1
+Sore Throat,4,Possible Infection,3,3,0
+Sore Throat,4,Monitor Symptoms,4,2,1
+Sore Throat,4,Requires Clinical Evaluation,1,1,0
+Sore Throat,4,Chronic Condition Suspected,2,4,1
+Sore Throat,4,Emergency Evaluation Needed,3,0,0
+Sore Throat,4,Lifestyle-Related Issue Possible,4,3,1
+Sore Throat,4,Underlying Disease Progression,1,2,0
+Sore Throat,0,Acute Condition Likely,2,1,1
+Sore Throat,0,Possible Infection,3,4,0
+Sore Throat,0,Monitor Symptoms,4,0,1
+Sore Throat,0,Requires Clinical Evaluation,1,3,0
+Sore Throat,0,Chronic Condition Suspected,2,2,1
+Sore Throat,0,Emergency Evaluation Needed,3,1,0
+Sore Throat,0,Lifestyle-Related Issue Possible,4,4,1
+Sore Throat,0,Underlying Disease Progression,1,0,0
+Sore Throat,3,Acute Condition Likely,2,3,1
+Sore Throat,3,Possible Infection,3,2,0
+Sore Throat,3,Monitor Symptoms,4,1,1
+Sore Throat,3,Requires Clinical Evaluation,1,4,0
+Sore Throat,3,Chronic Condition Suspected,2,0,1
+Sore Throat,3,Emergency Evaluation Needed,3,3,0
+Sore Throat,3,Lifestyle-Related Issue Possible,4,2,1
+Sore Throat,3,Underlying Disease Progression,1,1,0
+Sore Throat,2,Acute Condition Likely,2,4,1
+Sore Throat,2,Possible Infection,3,0,0
+Sore Throat,2,Monitor Symptoms,4,3,1
+Sore Throat,2,Requires Clinical Evaluation,1,2,0
+Sore Throat,2,Chronic Condition Suspected,2,1,1
+Sore Throat,2,Emergency Evaluation Needed,3,4,0
+Sore Throat,2,Lifestyle-Related Issue Possible,4,0,1
+Sore Throat,2,Underlying Disease Progression,1,3,0
+Sore Throat,6,Acute Condition Likely,2,2,1
+Sore Throat,6,Possible Infection,3,1,0
+Sore Throat,6,Monitor Symptoms,4,4,1
+Sore Throat,6,Requires Clinical Evaluation,1,0,0
+Sore Throat,6,Chronic Condition Suspected,2,3,1
+Sore Throat,6,Emergency Evaluation Needed,3,2,0
+Sore Throat,6,Lifestyle-Related Issue Possible,4,1,1
+Sore Throat,6,Underlying Disease Progression,1,4,0
+Runny Nose,5,Acute Condition Likely,2,0,1
+Runny Nose,5,Possible Infection,3,3,0
+Runny Nose,5,Monitor Symptoms,4,2,1
+Runny Nose,5,Requires Clinical Evaluation,1,1,0
+Runny Nose,5,Chronic Condition Suspected,2,4,1
+Runny Nose,5,Emergency Evaluation Needed,3,0,0
+Runny Nose,5,Lifestyle-Related Issue Possible,4,3,1
+Runny Nose,5,Underlying Disease Progression,1,2,0
+Runny Nose,1,Acute Condition Likely,2,1,1
+Runny Nose,1,Possible Infection,3,4,0
+Runny Nose,1,Monitor Symptoms,4,0,1
+Runny Nose,1,Requires Clinical Evaluation,1,3,0
+Runny Nose,1,Chronic Condition Suspected,2,2,1
+Runny Nose,1,Emergency Evaluation Needed,3,1,0
+Runny Nose,1,Lifestyle-Related Issue Possible,4,4,1
+Runny Nose,1,Underlying Disease Progression,1,0,0
+Runny Nose,4,Acute Condition Likely,2,3,1
+Runny Nose,4,Possible Infection,3,2,0
+Runny Nose,4,Monitor Symptoms,4,1,1
+Runny Nose,4,Requires Clinical Evaluation,1,4,0
+Runny Nose,4,Chronic Condition Suspected,2,0,1
+Runny Nose,4,Emergency Evaluation Needed,3,3,0
+Runny Nose,4,Lifestyle-Related Issue Possible,4,2,1
+Runny Nose,4,Underlying Disease Progression,1,1,0
+Runny Nose,0,Acute Condition Likely,2,4,1
+Runny Nose,0,Possible Infection,3,0,0
+Runny Nose,0,Monitor Symptoms,4,3,1
+Runny Nose,0,Requires Clinical Evaluation,1,2,0
+Runny Nose,0,Chronic Condition Suspected,2,1,1
+Runny Nose,0,Emergency Evaluation Needed,3,4,0
+Runny Nose,0,Lifestyle-Related Issue Possible,4,0,1
+Runny Nose,0,Underlying Disease Progression,1,3,0
+Runny Nose,3,Acute Condition Likely,2,2,1
+Runny Nose,3,Possible Infection,3,1,0
+Runny Nose,3,Monitor Symptoms,4,4,1
+Runny Nose,3,Requires Clinical Evaluation,1,0,0
+Runny Nose,3,Chronic Condition Suspected,2,3,1
+Runny Nose,3,Emergency Evaluation Needed,3,2,0
+Runny Nose,3,Lifestyle-Related Issue Possible,4,1,1
+Runny Nose,3,Underlying Disease Progression,1,4,0
+Runny Nose,2,Acute Condition Likely,2,0,1
+Runny Nose,2,Possible Infection,3,3,0
+Runny Nose,2,Monitor Symptoms,4,2,1
+Runny Nose,2,Requires Clinical Evaluation,1,1,0
+Runny Nose,2,Chronic Condition Suspected,2,4,1
+Runny Nose,2,Emergency Evaluation Needed,3,0,0
+Runny Nose,2,Lifestyle-Related Issue Possible,4,3,1
+Runny Nose,2,Underlying Disease Progression,1,2,0
+Runny Nose,6,Acute Condition Likely,2,1,1
+Runny Nose,6,Possible Infection,3,4,0
+Runny Nose,6,Monitor Symptoms,4,0,1
+Runny Nose,6,Requires Clinical Evaluation,1,3,0
+Runny Nose,6,Chronic Condition Suspected,2,2,1
+Runny Nose,6,Emergency Evaluation Needed,3,1,0
+Runny Nose,6,Lifestyle-Related Issue Possible,4,4,1
+Runny Nose,6,Underlying Disease Progression,1,0,0
