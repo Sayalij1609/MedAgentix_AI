@@ -64,9 +64,9 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     """
     start_time = time.time()
 
-    print("\n" + "█" * 60)
+    print("\n" + "=" * 60)
     print("  MedAgentix AI — Data Processing Pipeline")
-    print("█" * 60)
+    print("=" * 60)
     print(f"\n  Mode: {'Part A only' if part_a_only else 'Full Pipeline'}")
     print(f"  EDA:  {'Skipped' if skip_eda else 'Enabled'}")
     print(f"  Output: {config.PROCESSED_DIR}")
@@ -77,9 +77,9 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     # ═══════════════════════════════════════════════════════════════
     #  PART A — Common Processing for ALL 9 Datasets
     # ═══════════════════════════════════════════════════════════════
-    print("\n\n" + "▓" * 60)
+    print("\n\n" + "=" * 60)
     print("  PART A — Common Processing (all 9 datasets)")
-    print("▓" * 60)
+    print("=" * 60)
 
     # Step 1: Load all datasets
     print("\n\n" + "=" * 60)
@@ -94,7 +94,7 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     if not skip_eda:
         run_eda(cleaned)
     else:
-        print("\n  ⏭️ Skipping EDA (--skip-eda flag)")
+        print("\n  Skipping EDA (--skip-eda flag)")
 
     # Step 4: Encode all
     encoded = encode_all(cleaned)
@@ -120,24 +120,24 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     print("\n" + "=" * 60)
     print("  PART A — Step 7: Save Processed Datasets")
     print("=" * 60)
-    print(f"  ✅ All processed datasets saved during previous steps:")
+    print(f"  [OK] All processed datasets saved during previous steps:")
     print(f"     Cleaned:    {config.CLEANED_DIR}")
     print(f"     Encoded:    {config.ENCODED_DIR}")
     print(f"     Engineered: {config.ENGINEERED_DIR}")
 
     if part_a_only:
         elapsed = time.time() - start_time
-        print(f"\n\n{'█'*60}")
+        print(f"\n\n{'='*60}")
         print(f"  Part A Complete — {elapsed:.1f}s")
-        print(f"{'█'*60}")
+        print(f"{'='*60}")
         return
 
     # ═══════════════════════════════════════════════════════════════
     #  PART B — Integration & Modeling Pipeline
     # ═══════════════════════════════════════════════════════════════
-    print("\n\n" + "▓" * 60)
+    print("\n\n" + "=" * 60)
     print("  PART B — Integration Pipeline")
-    print("▓" * 60)
+    print("=" * 60)
 
     # Step 8: Merge Group A → master_diagnostic.csv
     master = build_master_diagnostic(engineered)
@@ -158,18 +158,18 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     #  Pipeline Complete
     # ═══════════════════════════════════════════════════════════════
     elapsed = time.time() - start_time
-    print(f"\n\n{'█'*60}")
-    print(f"  ✅ PIPELINE COMPLETE — {elapsed:.1f}s")
-    print(f"{'█'*60}")
+    print(f"\n\n{'='*60}")
+    print(f"  [OK] PIPELINE COMPLETE — {elapsed:.1f}s")
+    print(f"{'='*60}")
     print(f"\n  Output Summary:")
-    print(f"  ├── Cleaned datasets:     {config.CLEANED_DIR}")
-    print(f"  ├── EDA plots:            {config.EDA_PLOTS_DIR}")
-    print(f"  ├── Encoded datasets:     {config.ENCODED_DIR}")
-    print(f"  ├── Engineered datasets:  {config.ENGINEERED_DIR}")
-    print(f"  ├── Master diagnostic:    {config.MERGED_DIR / 'master_diagnostic.csv'}")
-    print(f"  ├── Agent datasets:       {config.AGENT_DATASETS_DIR}")
-    print(f"  ├── RAG knowledge:        {config.RAG_KNOWLEDGE_DIR}")
-    print(f"  └── Feature store:        {config.FEATURE_STORE_DIR}")
+    print(f"  |-- Cleaned datasets:     {config.CLEANED_DIR}")
+    print(f"  |-- EDA plots:            {config.EDA_PLOTS_DIR}")
+    print(f"  |-- Encoded datasets:     {config.ENCODED_DIR}")
+    print(f"  |-- Engineered datasets:  {config.ENGINEERED_DIR}")
+    print(f"  |-- Master diagnostic:    {config.MERGED_DIR / 'master_diagnostic.csv'}")
+    print(f"  |-- Agent datasets:       {config.AGENT_DATASETS_DIR}")
+    print(f"  |-- RAG knowledge:        {config.RAG_KNOWLEDGE_DIR}")
+    print(f"  +-- Feature store:        {config.FEATURE_STORE_DIR}")
     print(f"\n  No model training — deferred to next phase.")
     print(f"\n  Next step: Run training on master_diagnostic.csv")
 

@@ -190,9 +190,9 @@ def preprocess_dataset(df: pd.DataFrame, name: str) -> pd.DataFrame:
     pd.DataFrame
         Cleaned dataset.
     """
-    print(f"\n{'─'*50}")
+    print(f"\n{'-'*50}")
     print(f"  PREPROCESSING: {name}")
-    print(f"{'─'*50}")
+    print(f"{'-'*50}")
 
     df = clean_column_names(df)
     df = remove_duplicates(df, name)
@@ -201,13 +201,13 @@ def preprocess_dataset(df: pd.DataFrame, name: str) -> pd.DataFrame:
     df = handle_outliers(df, name=name)
     df = standardize_symptom_names(df, name)
 
-    print(f"  ✅ [{name}] Preprocessing complete — {df.shape[0]} rows × {df.shape[1]} cols")
+    print(f"  [OK] [{name}] Preprocessing complete — {df.shape[0]} rows × {df.shape[1]} cols")
 
     # Save cleaned output
     config.ensure_dirs()
     output_path = config.CLEANED_DIR / f"clean_{name}.csv"
     df.to_csv(output_path, index=False)
-    print(f"  💾 Saved: {output_path}")
+    print(f"   Saved: {output_path}")
 
     return df
 
@@ -234,5 +234,5 @@ def preprocess_all(datasets: dict) -> dict:
     for name, df in datasets.items():
         cleaned[name] = preprocess_dataset(df, name)
 
-    print(f"\n✅ All {len(cleaned)} datasets preprocessed and saved.")
+    print(f"\n[OK] All {len(cleaned)} datasets preprocessed and saved.")
     return cleaned

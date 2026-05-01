@@ -83,7 +83,7 @@ def plot_missing_values(df: pd.DataFrame, name: str) -> None:
     fig.savefig(plot_dir / "missing_values.png")
     plt.close(fig)
     if config.VERBOSE:
-        print(f"  [{name}] 📊 Missing values plot saved")
+        print(f"  [{name}]  Missing values plot saved")
 
 
 def plot_distributions(df: pd.DataFrame, columns: list = None, name: str = "") -> None:
@@ -137,7 +137,7 @@ def plot_distributions(df: pd.DataFrame, columns: list = None, name: str = "") -
             plt.close(fig)
 
     if config.VERBOSE:
-        print(f"  [{name}] 📊 Distribution plots saved ({len(numeric_cols)} numeric, {len(cat_cols)} categorical)")
+        print(f"  [{name}]  Distribution plots saved ({len(numeric_cols)} numeric, {len(cat_cols)} categorical)")
 
 
 def plot_boxplots(df: pd.DataFrame, columns: list = None, name: str = "") -> None:
@@ -171,7 +171,7 @@ def plot_boxplots(df: pd.DataFrame, columns: list = None, name: str = "") -> Non
     plt.close(fig)
 
     if config.VERBOSE:
-        print(f"  [{name}] 📊 Boxplots saved")
+        print(f"  [{name}]  Boxplots saved")
 
 
 def heatmap(df: pd.DataFrame, name: str) -> None:
@@ -200,7 +200,7 @@ def heatmap(df: pd.DataFrame, name: str) -> None:
     plt.close(fig)
 
     if config.VERBOSE:
-        print(f"  [{name}] 📊 Correlation heatmap saved")
+        print(f"  [{name}]  Correlation heatmap saved")
 
 
 def plot_class_distribution(df: pd.DataFrame, target: str, name: str) -> None:
@@ -232,7 +232,7 @@ def plot_class_distribution(df: pd.DataFrame, target: str, name: str) -> None:
     plt.close(fig)
 
     if config.VERBOSE:
-        print(f"  [{name}] 📊 Class distribution for '{target}' saved")
+        print(f"  [{name}]  Class distribution for '{target}' saved")
 
 
 def run_eda(datasets: dict) -> None:
@@ -251,9 +251,9 @@ def run_eda(datasets: dict) -> None:
     config.ensure_dirs()
 
     for name, df in datasets.items():
-        print(f"\n{'─'*50}")
+        print(f"\n{'-'*50}")
         print(f"  EDA: {name}")
-        print(f"{'─'*50}")
+        print(f"{'-'*50}")
 
         summary_stats(df, name)
         plot_missing_values(df, name)
@@ -267,5 +267,5 @@ def run_eda(datasets: dict) -> None:
         if target and target in df.columns:
             plot_class_distribution(df, target, name)
 
-    print(f"\n✅ EDA complete for all {len(datasets)} datasets.")
+    print(f"\n[OK] EDA complete for all {len(datasets)} datasets.")
     print(f"   Plots saved to: {config.EDA_PLOTS_DIR}")

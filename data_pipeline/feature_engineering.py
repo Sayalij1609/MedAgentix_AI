@@ -115,11 +115,14 @@ def create_temporal_score(df: pd.DataFrame) -> pd.DataFrame:
 
     if 'duration' in df.columns:
         if df['duration'].dtype == 'object':
-            # Extract numeric part from duration strings like "14 days", "<1 day"
+            # Map duration text to numeric scores
             duration_map = {
-                '<1 Day': 1, '1 Day': 1, '1-3 Days': 2,
-                '3-7 Days': 3, '7 Days': 3, '7-14 Days': 4,
-                '14 Days': 4, '>14 Days': 5, '>21 Days': 6,
+                '< 1 Day': 1, '<1 Day': 1, '1 Day': 1,
+                '1-3 Days': 2, '3-7 Days': 3, '4-7 Days': 3,
+                '7 Days': 3, '7-14 Days': 4, '1-2 Weeks': 4,
+                '14 Days': 4, '2-4 Weeks': 5, '>14 Days': 5,
+                '1-3 Months': 6, '>21 Days': 6,
+                'Chronic (>3 Months)': 7, 'Chronic': 7,
             }
             df['duration_score'] = (
                 df['duration'].astype(str).str.strip().str.title()
@@ -136,14 +139,20 @@ def create_temporal_score(df: pd.DataFrame) -> pd.DataFrame:
         else:
             df['duration_score'] = df['duration']
 
-    # Severity flag score
-    if 'severity_flag' in df.columns:
-        if df['severity_flag'].dtype in ['int64', 'float64']:
-            df['temporal_severity_score'] = df['severity_flag']
+    # Risk level / Severity flag score (handle both old and new column names)
+    risk_col = None
+    for candidate in ['risk_level', 'severity_flag']:
+        if candidate in df.columns:
+            risk_col = candidate
+            break
+
+    if risk_col:
+        if df[risk_col].dtype in ['int64', 'float64']:
+            df['temporal_severity_score'] = df[risk_col]
         else:
-            flag_map = {'Low': 1, 'Moderate': 2, 'High': 3}
+            flag_map = {'Low': 1, 'Medium': 2, 'Moderate': 2, 'High': 3, 'Critical': 4}
             df['temporal_severity_score'] = (
-                df['severity_flag'].astype(str).str.strip().str.title()
+                df[risk_col].astype(str).str.strip().str.title()
                 .map(flag_map).fillna(1)
             )
 
@@ -178,9 +187,9 @@ def engineer_dataset(df: pd.DataFrame, name: str) -> pd.DataFrame:
     Apply all feature engineering steps to a single dataset.
     Only applies features that are relevant to the dataset's columns.
     """
-    print(f"\n{'─'*50}")
+    print(f"\n{'-'*50}")
     print(f"  FEATURE ENGINEERING: {name}")
-    print(f"{'─'*50}")
+    print(f"{'-'*50}")
 
     df = df.copy()
     initial_cols = set(df.columns)
@@ -197,13 +206,13 @@ def engineer_dataset(df: pd.DataFrame, name: str) -> pd.DataFrame:
     elif config.VERBOSE:
         print(f"  [{name}] No new features applicable for this dataset")
 
-    print(f"  ✅ [{name}] Feature engineering complete — {df.shape[1]} columns")
+    print(f"  [OK] [{name}] Feature engineering complete — {df.shape[1]} columns")
 
     # Save engineered output
     config.ensure_dirs()
     output_path = config.ENGINEERED_DIR / f"engineered_{name}.csv"
     df.to_csv(output_path, index=False)
-    print(f"  💾 Saved: {output_path}")
+    print(f"   Saved: {output_path}")
 
     return df
 
@@ -228,5 +237,5 @@ def engineer_all(datasets: dict) -> dict:
     for name, df in datasets.items():
         engineered[name] = engineer_dataset(df, name)
 
-    print(f"\n✅ All {len(engineered)} datasets feature-engineered and saved.")
+    print(f"\n[OK] All {len(engineered)} datasets feature-engineered and saved.")
     return engineered

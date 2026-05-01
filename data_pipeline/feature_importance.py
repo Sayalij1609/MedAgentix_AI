@@ -38,7 +38,7 @@ def xgb_feature_importance(
     try:
         from xgboost import XGBClassifier
     except ImportError:
-        print("  ⚠️ xgboost not installed. Install with: pip install xgboost")
+        print("  [WARN] xgboost not installed. Install with: pip install xgboost")
         return pd.DataFrame()
 
     print("\n  Computing XGBoost feature importance...")
@@ -59,12 +59,10 @@ def xgb_feature_importance(
         verbosity=0,
     )
 
-    # Encode target if needed
-    y_encoded = y_train.copy()
-    if y_encoded.dtype == 'object':
-        from sklearn.preprocessing import LabelEncoder
-        le = LabelEncoder()
-        y_encoded = pd.Series(le.fit_transform(y_encoded), index=y_train.index)
+    # Encode target to 0-indexed integers (required by XGBoost)
+    from sklearn.preprocessing import LabelEncoder
+    le = LabelEncoder()
+    y_encoded = pd.Series(le.fit_transform(y_train), index=y_train.index)
 
     model.fit(X_train, y_encoded)
 
@@ -85,8 +83,8 @@ def xgb_feature_importance(
     fig.savefig(config.FEATURE_STORE_DIR / "xgb_feature_importance.png")
     plt.close(fig)
 
-    print(f"  ✅ XGBoost importance computed for {len(importance)} features")
-    print(f"  📊 Top 5: {list(top.head(5)['feature'])}")
+    print(f"  [OK] XGBoost importance computed for {len(importance)} features")
+    print(f"   Top 5: {list(top.head(5)['feature'])}")
 
     return importance
 
@@ -117,19 +115,18 @@ def shap_analysis(
         import shap
         from xgboost import XGBClassifier
     except ImportError as e:
-        print(f"  ⚠️ Missing dependency: {e}")
+        print(f"  [WARN] Missing dependency: {e}")
         print("     Install with: pip install shap xgboost")
         return pd.DataFrame()
 
     print("\n  Computing SHAP feature importance...")
 
     # Train a model for SHAP
-    n_classes = y_train.nunique()
-    y_encoded = y_train.copy()
-    if y_encoded.dtype == 'object':
-        from sklearn.preprocessing import LabelEncoder
-        le = LabelEncoder()
-        y_encoded = pd.Series(le.fit_transform(y_encoded), index=y_train.index)
+    # Encode target to 0-indexed integers (required by XGBoost)
+    from sklearn.preprocessing import LabelEncoder
+    le = LabelEncoder()
+    y_encoded = pd.Series(le.fit_transform(y_train), index=y_train.index)
+    n_classes = y_encoded.nunique()
 
     model = XGBClassifier(
         n_estimators=100, max_depth=6, learning_rate=0.1,
@@ -187,10 +184,10 @@ def shap_analysis(
         fig.savefig(config.FEATURE_STORE_DIR / "shap_feature_importance.png")
         plt.close(fig)
     except Exception as e:
-        print(f"  ⚠️ SHAP plot failed: {e}")
+        print(f"  [WARN] SHAP plot failed: {e}")
 
-    print(f"  ✅ SHAP analysis complete for {len(shap_importance)} features")
-    print(f"  📊 Top 5: {list(shap_importance.head(5)['feature'])}")
+    print(f"  [OK] SHAP analysis complete for {len(shap_importance)} features")
+    print(f"   Top 5: {list(shap_importance.head(5)['feature'])}")
 
     return shap_importance
 
@@ -214,8 +211,8 @@ def correlation_ranking(X: pd.DataFrame, y: pd.Series) -> pd.DataFrame:
     }).reset_index(drop=True)
     result['rank'] = range(1, len(result) + 1)
 
-    print(f"  ✅ Correlation ranking computed for {len(result)} features")
-    print(f"  📊 Top 5: {list(result.head(5)['feature'])}")
+    print(f"  [OK] Correlation ranking computed for {len(result)} features")
+    print(f"   Top 5: {list(result.head(5)['feature'])}")
 
     return result
 
@@ -256,8 +253,8 @@ def feature_scoring(X: pd.DataFrame, y: pd.Series) -> pd.DataFrame:
     fig.savefig(config.FEATURE_STORE_DIR / "mutual_info_scores.png")
     plt.close(fig)
 
-    print(f"  ✅ MI scoring complete for {len(result)} features")
-    print(f"  📊 Top 5: {list(result.head(5)['feature'])}")
+    print(f"  [OK] MI scoring complete for {len(result)} features")
+    print(f"   Top 5: {list(result.head(5)['feature'])}")
 
     return result
 
@@ -333,12 +330,12 @@ def run_feature_importance(splits: dict) -> dict:
     top_features = combined.head(config.TOP_N_FEATURES)['feature'].tolist()
     X_train[top_features].to_csv(config.FEATURE_STORE_DIR / "engineered_features.csv", index=False)
 
-    print(f"\n  ✅ Feature importance analysis complete")
-    print(f"  📊 Top 10 features (unified):")
+    print(f"\n  [OK] Feature importance analysis complete")
+    print(f"   Top 10 features (unified):")
     for _, row in combined.head(10).iterrows():
         print(f"    {int(row['final_rank']):2d}. {row['feature']}: {row['unified_score']:.4f}")
 
-    print(f"\n  💾 Saved to {config.FEATURE_STORE_DIR}:")
+    print(f"\n   Saved to {config.FEATURE_STORE_DIR}:")
     print(f"     - selected_features.csv (all features ranked)")
     print(f"     - engineered_features.csv (top {config.TOP_N_FEATURES} features)")
     print(f"     - xgb_feature_importance.png")

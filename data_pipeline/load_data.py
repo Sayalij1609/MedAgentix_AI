@@ -107,6 +107,6 @@ def load_all() -> dict:
     for name in config.DATASET_REGISTRY:
         datasets[name] = load_dataset(name)
 
-    print(f"\n✅ All {len(datasets)} datasets loaded successfully.")
+    print(f"\n[OK] All {len(datasets)} datasets loaded successfully.")
     print(f"   Total rows across all datasets: {sum(df.shape[0] for df in datasets.values()):,}")
     return datasets

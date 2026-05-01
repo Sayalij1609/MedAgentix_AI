@@ -8,7 +8,7 @@ column type mappings, and pipeline settings.
 import os
 from pathlib import Path
 
-# ─── Base Paths ───────────────────────────────────────────────────────────────
+# --- Base Paths ---------------------------------------------------------------
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATASETS_DIR = PROJECT_ROOT / "datasets"
 RAW_DIR = DATASETS_DIR / "raw"
@@ -38,7 +38,7 @@ def ensure_dirs():
         d.mkdir(parents=True, exist_ok=True)
 
 
-# ─── Dataset Registry ────────────────────────────────────────────────────────
+# --- Dataset Registry --------------------------------------------------------
 # Short name → raw CSV filename
 DATASET_REGISTRY = {
     "core": "Core Clinical Dataset.csv",
@@ -52,7 +52,7 @@ DATASET_REGISTRY = {
     "diagnostic": "Test Diagnostic Recommendation Dataset.csv",
 }
 
-# ─── Group Assignments ───────────────────────────────────────────────────────
+# --- Group Assignments -------------------------------------------------------
 # GROUP A — Merge for Diagnostic Prediction Model
 GROUP_A_DIAGNOSTIC = ["core", "risk", "temporal"]
 GROUP_A_OPTIONAL = ["differential"]  # Optional differential features
@@ -69,7 +69,7 @@ GROUP_B_AGENTS = {
 # GROUP C — RAG Knowledge Base
 GROUP_C_RAG = ["medical_knowledge"]
 
-# ─── Column Configuration per Dataset ────────────────────────────────────────
+# --- Column Configuration per Dataset ----------------------------------------
 # Defines categorical, numeric, target, and join key columns for each dataset.
 COLUMN_CONFIG = {
     "core": {
@@ -214,7 +214,7 @@ COLUMN_CONFIG = {
     },
 }
 
-# ─── Pipeline Settings ───────────────────────────────────────────────────────
+# --- Pipeline Settings -------------------------------------------------------
 RANDOM_STATE = 42
 TEST_SIZE = 0.2
 VALIDATION_SIZE = None  # Set to 0.15 for 70/15/15 split

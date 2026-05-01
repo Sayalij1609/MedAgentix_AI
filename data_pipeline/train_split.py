@@ -58,7 +58,7 @@ def train_test_split_pipeline(
     df_clean = df.dropna(subset=[target_col]).copy()
     dropped = len(df) - len(df_clean)
     if dropped > 0:
-        print(f"  ⚠️ Dropped {dropped} rows with null target values")
+        print(f"  [WARN] Dropped {dropped} rows with null target values")
 
     # Separate features and target
     # Only keep numeric columns as features (encoded data)
@@ -68,7 +68,7 @@ def train_test_split_pipeline(
     # Fill remaining NaN in features with 0
     null_count = X.isnull().sum().sum()
     if null_count > 0:
-        print(f"  ℹ️ Filling {null_count} NaN values in features with 0")
+        print(f"  [INFO] Filling {null_count} NaN values in features with 0")
         X = X.fillna(0)
 
     print(f"\n  Features: {X.shape[1]} columns")
@@ -118,7 +118,7 @@ def train_test_split_pipeline(
             data.to_csv(output_path, index=False, header=True)
         else:
             data.to_csv(output_path, index=False)
-        print(f"  💾 {key}: {output_path}")
+        print(f"   {key}: {output_path}")
 
-    print(f"\n  ✅ Train-test split complete. Saved to: {config.FEATURE_STORE_DIR}")
+    print(f"\n  [OK] Train-test split complete. Saved to: {config.FEATURE_STORE_DIR}")
     return result

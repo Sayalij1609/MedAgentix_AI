@@ -96,9 +96,9 @@ def encode_dataset(df: pd.DataFrame, name: str) -> pd.DataFrame:
     3. Label encoding for remaining categorical columns
        (excluding text/join key columns)
     """
-    print(f"\n{'─'*50}")
+    print(f"\n{'-'*50}")
     print(f"  ENCODING: {name}")
-    print(f"{'─'*50}")
+    print(f"{'-'*50}")
 
     df = df.copy()
     col_config = config.COLUMN_CONFIG.get(name, {})
@@ -135,13 +135,13 @@ def encode_dataset(df: pd.DataFrame, name: str) -> pd.DataFrame:
         if config.VERBOSE:
             print(f"  [{name}] Label encoded: {remaining_cat}")
 
-    print(f"  ✅ [{name}] Encoding complete — {df.shape[1]} columns")
+    print(f"  [OK] [{name}] Encoding complete — {df.shape[1]} columns")
 
     # Save encoded output
     config.ensure_dirs()
     output_path = config.ENCODED_DIR / f"encoded_{name}.csv"
     df.to_csv(output_path, index=False)
-    print(f"  💾 Saved: {output_path}")
+    print(f"   Saved: {output_path}")
 
     return df
 
@@ -166,5 +166,5 @@ def encode_all(datasets: dict) -> dict:
     for name, df in datasets.items():
         encoded[name] = encode_dataset(df, name)
 
-    print(f"\n✅ All {len(encoded)} datasets encoded and saved.")
+    print(f"\n[OK] All {len(encoded)} datasets encoded and saved.")
     return encoded

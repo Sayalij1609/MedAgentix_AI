@@ -12,7 +12,7 @@ import numpy as np
 from . import config
 
 
-# ─── GROUP A: Diagnostic Merge ───────────────────────────────────────────────
+# --- GROUP A: Diagnostic Merge -----------------------------------------------
 
 def merge_core_risk(core_df: pd.DataFrame, risk_df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -30,13 +30,17 @@ def merge_core_risk(core_df: pd.DataFrame, risk_df: pd.DataFrame) -> pd.DataFram
     core = core_df.copy()
     risk = risk_df.copy()
 
-    # Ensure join key columns exist (they may be snake_cased)
+    # Ensure join key columns exist (handle both old and new column names)
     core_key = 'disease' if 'disease' in core.columns else None
-    risk_key = 'condition' if 'condition' in risk.columns else None
+    risk_key = None
+    for candidate in ['associated_condition', 'condition']:
+        if candidate in risk.columns:
+            risk_key = candidate
+            break
 
     if not core_key or not risk_key:
-        print(f"  ⚠️ Join keys not found (core has 'disease': {core_key is not None}, "
-              f"risk has 'condition': {risk_key is not None}) — skipping merge")
+        print(f"  [WARN] Join keys not found (core has 'disease': {core_key is not None}, "
+              f"risk has join key: {risk_key}) — skipping merge")
         return core
 
     # Aggregate risk by condition
@@ -47,11 +51,13 @@ def merge_core_risk(core_df: pd.DataFrame, risk_df: pd.DataFrame) -> pd.DataFram
         agg_dict['risk_factor'] = ['count', lambda x: ', '.join(x.astype(str).unique()[:5])]
     if 'weight' in risk.columns:
         agg_dict['weight'] = 'max'
+    if 'risk_type' in risk.columns:
+        agg_dict['risk_type'] = lambda x: x.mode().iloc[0] if not x.mode().empty else 'Unknown'
     if 'lifestyle_profile' in risk.columns:
         agg_dict['lifestyle_profile'] = lambda x: x.mode().iloc[0] if not x.mode().empty else 'Unknown'
 
     if not agg_dict:
-        print("  ⚠️ No aggregatable columns in risk dataset — skipping")
+        print("  [WARN] No aggregatable columns in risk dataset — skipping")
         return core
 
     risk_agg = risk.groupby(risk_key).agg(agg_dict)
@@ -72,7 +78,7 @@ def merge_core_risk(core_df: pd.DataFrame, risk_df: pd.DataFrame) -> pd.DataFram
     merged = core.merge(risk_agg, on=core_key, how='left')
     matched = merged[risk_agg.columns[1]].notna().sum()
 
-    print(f"  ✅ Core ← Risk merged: {before} rows, {matched} matched ({matched/before*100:.1f}%)")
+    print(f"  [OK] Core ← Risk merged: {before} rows, {matched} matched ({matched/before*100:.1f}%)")
     return merged
 
 
@@ -92,22 +98,33 @@ def merge_with_temporal(merged_df: pd.DataFrame, temporal_df: pd.DataFrame) -> p
     temporal = temporal_df.copy()
 
     if 'symptom' not in temporal.columns:
-        print("  ⚠️ 'symptom' column not found in temporal — skipping")
+        print("  [WARN] 'symptom' column not found in temporal — skipping")
         return merged
 
     # Create temporal summary per symptom
     temporal_agg_dict = {}
-    if 'severity_flag' in temporal.columns:
-        if temporal['severity_flag'].dtype in ['int64', 'float64']:
-            temporal_agg_dict['severity_flag'] = 'max'
-        else:
-            temporal['severity_flag_num'] = temporal['severity_flag'].astype(str).str.strip().str.title().map(
-                {'Low': 1, 'Moderate': 2, 'High': 3}
-            ).fillna(1)
-            temporal_agg_dict['severity_flag_num'] = 'max'
 
-    if 'temporal_pattern' in temporal.columns:
-        temporal_agg_dict['temporal_pattern'] = lambda x: x.mode().iloc[0] if not x.mode().empty else 'Unknown'
+    # Handle risk level column (new CSVs use 'risk_level', old used 'severity_flag')
+    risk_col = None
+    for candidate in ['risk_level', 'severity_flag']:
+        if candidate in temporal.columns:
+            risk_col = candidate
+            break
+
+    if risk_col:
+        if temporal[risk_col].dtype in ['int64', 'float64']:
+            temporal_agg_dict[risk_col] = 'max'
+        else:
+            temporal[f'{risk_col}_num'] = temporal[risk_col].astype(str).str.strip().str.title().map(
+                {'Low': 1, 'Medium': 2, 'Moderate': 2, 'High': 3, 'Critical': 4}
+            ).fillna(1)
+            temporal_agg_dict[f'{risk_col}_num'] = 'max'
+
+    # Handle pattern column (new CSVs use 'clinical_category', old used 'temporal_pattern')
+    for pattern_col in ['clinical_category', 'temporal_pattern']:
+        if pattern_col in temporal.columns:
+            temporal_agg_dict[pattern_col] = lambda x: x.mode().iloc[0] if not x.mode().empty else 'Unknown'
+            break
 
     if temporal_agg_dict:
         temporal_summary = temporal.groupby('symptom').agg(temporal_agg_dict).reset_index()
@@ -120,14 +137,19 @@ def merge_with_temporal(merged_df: pd.DataFrame, temporal_df: pd.DataFrame) -> p
         temporal_summary['symptom'] = temporal_summary['symptom'].astype(str).str.strip().str.title()
 
         # Create temporal feature for merged dataset
+        # Determine the risk numeric column name
+        risk_num_col = f'{risk_col}_num' if risk_col and f'{risk_col}_num' in temporal_summary.columns else (
+            risk_col if risk_col and risk_col in temporal_summary.columns else None
+        )
+
         # Check for binary symptom columns (fever, cough, etc.)
         symptom_cols = [c for c in merged.columns if c in ['fever', 'cough', 'fatigue', 'difficulty_breathing']]
 
-        if symptom_cols:
+        if symptom_cols and risk_num_col:
             # For each symptom column, look up temporal severity
             temporal_lookup = dict(zip(
                 temporal_summary['symptom'],
-                temporal_summary.get('severity_flag_num', temporal_summary.get('severity_flag', pd.Series([1])))
+                temporal_summary[risk_num_col]
             ))
 
             def calc_temporal_score(row):
@@ -141,13 +163,14 @@ def merge_with_temporal(merged_df: pd.DataFrame, temporal_df: pd.DataFrame) -> p
                 return score / count if count > 0 else 0
 
             merged['temporal_risk_score'] = merged.apply(calc_temporal_score, axis=1)
-            print(f"  ✅ Temporal features added: temporal_risk_score")
+            print(f"  [OK] Temporal features added: temporal_risk_score")
         else:
-            print(f"  ℹ️ No binary symptom columns found — adding temporal summary as separate features")
+            print(f"  [INFO] No binary symptom columns found — adding temporal summary as separate features")
             # Fall back to just adding overall temporal stats
-            merged['avg_temporal_severity'] = temporal_summary.get(
-                'severity_flag_num', temporal_summary.get('severity_flag', pd.Series([1]))
-            ).mean()
+            if risk_num_col and risk_num_col in temporal_summary.columns:
+                merged['avg_temporal_severity'] = temporal_summary[risk_num_col].mean()
+            else:
+                merged['avg_temporal_severity'] = 1.0
 
     return merged
 
@@ -166,7 +189,7 @@ def merge_differential_features(merged_df: pd.DataFrame, diff_df: pd.DataFrame) 
     diff = diff_df.copy()
 
     if 'disease' not in diff.columns:
-        print("  ⚠️ 'disease' column not found in differential — skipping")
+        print("  [WARN] 'disease' column not found in differential — skipping")
         return merged
 
     # Engineer features from differential
@@ -187,7 +210,7 @@ def merge_differential_features(merged_df: pd.DataFrame, diff_df: pd.DataFrame) 
         agg_cols['diff_possible_disease_count'] = 'max'
 
     if not agg_cols:
-        print("  ⚠️ No features to extract from differential — skipping")
+        print("  [WARN] No features to extract from differential — skipping")
         return merged
 
     diff_agg = diff.groupby('disease').agg(agg_cols).reset_index()
@@ -198,7 +221,7 @@ def merge_differential_features(merged_df: pd.DataFrame, diff_df: pd.DataFrame) 
         before_cols = merged.shape[1]
         merged = merged.merge(diff_agg, on='disease', how='left')
         new_cols = merged.shape[1] - before_cols
-        print(f"  ✅ Differential features added: {new_cols} new columns")
+        print(f"  [OK] Differential features added: {new_cols} new columns")
 
     return merged
 
@@ -235,19 +258,19 @@ def build_master_diagnostic(datasets: dict) -> pd.DataFrame:
     if risk is not None:
         result = merge_core_risk(result, risk)
     else:
-        print("  ⚠️ Risk dataset not available — skipping")
+        print("  [WARN] Risk dataset not available — skipping")
 
     # Merge Temporal
     if temporal is not None:
         result = merge_with_temporal(result, temporal)
     else:
-        print("  ⚠️ Temporal dataset not available — skipping")
+        print("  [WARN] Temporal dataset not available — skipping")
 
     # Merge Differential (optional)
     if differential is not None:
         result = merge_differential_features(result, differential)
     else:
-        print("  ℹ️ Differential dataset not included (optional)")
+        print("  [INFO] Differential dataset not included (optional)")
 
     # Save master diagnostic
     config.ensure_dirs()
@@ -255,14 +278,14 @@ def build_master_diagnostic(datasets: dict) -> pd.DataFrame:
     result.to_csv(output_path, index=False)
 
     print(f"\n  {'='*50}")
-    print(f"  ✅ Master Diagnostic Dataset: {result.shape[0]} rows × {result.shape[1]} cols")
-    print(f"  💾 Saved: {output_path}")
+    print(f"  [OK] Master Diagnostic Dataset: {result.shape[0]} rows × {result.shape[1]} cols")
+    print(f"   Saved: {output_path}")
     print(f"  {'='*50}")
 
     return result
 
 
-# ─── GROUP B: Agent Dataset Preparation ──────────────────────────────────────
+# --- GROUP B: Agent Dataset Preparation --------------------------------------
 
 def prepare_agent_datasets(datasets: dict) -> dict:
     """
@@ -288,7 +311,7 @@ def prepare_agent_datasets(datasets: dict) -> dict:
     for agent_name, dataset_name in config.GROUP_B_AGENTS.items():
         df = datasets.get(dataset_name)
         if df is None:
-            print(f"  ⚠️ {dataset_name} not found — skipping {agent_name}")
+            print(f"  [WARN] {dataset_name} not found — skipping {agent_name}")
             continue
 
         # Create agent directory
@@ -300,13 +323,13 @@ def prepare_agent_datasets(datasets: dict) -> dict:
         df.to_csv(output_path, index=False)
 
         agent_data[agent_name] = df
-        print(f"  ✅ {agent_name}: {df.shape[0]} rows × {df.shape[1]} cols → {output_path}")
+        print(f"  [OK] {agent_name}: {df.shape[0]} rows × {df.shape[1]} cols → {output_path}")
 
-    print(f"\n✅ {len(agent_data)} agent datasets prepared.")
+    print(f"\n[OK] {len(agent_data)} agent datasets prepared.")
     return agent_data
 
 
-# ─── GROUP C: RAG Knowledge Store ────────────────────────────────────────────
+# --- GROUP C: RAG Knowledge Store --------------------------------------------
 
 def prepare_rag_knowledge(datasets: dict) -> pd.DataFrame:
     """
@@ -325,7 +348,7 @@ def prepare_rag_knowledge(datasets: dict) -> pd.DataFrame:
 
     mk = datasets.get("medical_knowledge")
     if mk is None:
-        print("  ⚠️ Medical Knowledge dataset not found — skipping")
+        print("  [WARN] Medical Knowledge dataset not found — skipping")
         return pd.DataFrame()
 
     # Build text chunks
@@ -338,7 +361,8 @@ def prepare_rag_knowledge(datasets: dict) -> pd.DataFrame:
         severity = str(row.get('severity', '')).strip()
         progression = str(row.get('disease_progression', '')).strip()
         complications = str(row.get('common_complications', '')).strip()
-        management = str(row.get('clinical_management', '')).strip()
+        management = str(row.get('primary_management', row.get('clinical_management', ''))).strip()
+        prevalence = str(row.get('prevalence', '')).strip()
 
         # Create structured text chunk
         text = (
@@ -347,9 +371,10 @@ def prepare_rag_knowledge(datasets: dict) -> pd.DataFrame:
             f"Cause: {cause}\n"
             f"Category: {category}\n"
             f"Severity: {severity}\n"
+            f"Prevalence: {prevalence}\n"
             f"Disease Progression: {progression}\n"
             f"Common Complications: {complications}\n"
-            f"Clinical Management: {management}"
+            f"Primary Management: {management}"
         )
 
         chunks.append({
@@ -366,8 +391,8 @@ def prepare_rag_knowledge(datasets: dict) -> pd.DataFrame:
     output_path = rag_dir / "knowledge_chunks.csv"
     chunks_df.to_csv(output_path, index=False)
 
-    print(f"  ✅ Knowledge chunks: {len(chunks_df)} entries")
-    print(f"  📝 Avg chunk length: {chunks_df['chunk_length'].mean():.0f} chars")
-    print(f"  💾 Saved: {output_path}")
+    print(f"  [OK] Knowledge chunks: {len(chunks_df)} entries")
+    print(f"   Avg chunk length: {chunks_df['chunk_length'].mean():.0f} chars")
+    print(f"   Saved: {output_path}")
 
     return chunks_df
