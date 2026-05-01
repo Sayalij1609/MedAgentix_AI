@@ -74,25 +74,20 @@ GROUP_C_RAG = ["medical_knowledge"]
 COLUMN_CONFIG = {
     "core": {
         "categorical": [
-            "disease", "fever", "cough", "fatigue", "difficulty_breathing",
-            "gender", "blood_pressure", "cholesterol", "outcome",
-            "severity", "secondary_disease",
+            "disease", "gender", "blood_pressure", "outcome",
+            "duration", "severity", "secondary_disease",
         ],
-        "numeric": ["age"],
+        "numeric": ["age", "fever", "cough", "fatigue", "difficulty_breathing", "cholesterol"],
         "text": [],
         "target": "outcome",
         "join_key": "disease",
         "ordinal": {
-            "severity": {"Low": 1, "Moderate": 2, "High": 3},
-            "blood_pressure": {"Low": 1, "Normal": 2, "High": 3},
-            "cholesterol": {"Normal": 1, "High": 2},
+            "severity": {"Mild": 1, "Moderate": 2, "Severe": 3, "Critical": 4},
+            "blood_pressure": {"Low": 1, "Normal": 2, "Elevated": 3, "High": 4},
+            "outcome": {"Low Risk": 1, "Moderate": 2, "High Risk": 3, "Critical": 4},
+            "duration": {"1-3 Days": 1, "4-7 Days": 2, "1-2 Weeks": 3, "Chronic": 4},
         },
-        "binary": {
-            "fever": {"Yes": 1, "No": 0},
-            "cough": {"Yes": 1, "No": 0},
-            "fatigue": {"Yes": 1, "No": 0},
-            "difficulty_breathing": {"Yes": 1, "No": 0},
-        },
+        "binary": {},
     },
     "drug": {
         "categorical": [
@@ -105,7 +100,7 @@ COLUMN_CONFIG = {
         "target": None,
         "join_key": "disease",
         "ordinal": {
-            "risk_level": {"Low": 1, "Medium": 2, "High": 3},
+            "risk_level": {"Low": 1, "Medium": 2, "High": 3, "Critical": 4},
         },
         "binary": {},
     },
@@ -119,65 +114,74 @@ COLUMN_CONFIG = {
         "target": "urgency_level",
         "join_key": "condition",
         "ordinal": {
-            "urgency_level": {"Non-urgent": 1, "Moderate": 2, "Urgent": 3, "Critical": 4},
+            "urgency_level": {"Non-Urgent": 1, "Moderate": 2, "Urgent": 3, "Critical": 4},
         },
         "binary": {},
     },
     "medical_knowledge": {
         "categorical": [
             "disease", "cause", "category", "severity",
+            "prevalence", "primary_management",
         ],
         "numeric": [],
         "text": [
             "description", "disease_progression",
-            "common_complications", "clinical_management",
+            "common_complications",
         ],
         "target": None,
         "join_key": "disease",
         "ordinal": {
-            "severity": {"Low": 1, "Moderate": 2, "High": 3},
+            "severity": {"Low": 1, "Moderate": 2, "High": 3, "Critical": 4},
         },
         "binary": {},
     },
     "risk": {
         "categorical": [
-            "risk_factor", "condition", "weight",
-            "gender_specific_risk", "lifestyle_profile", "recommendation",
+            "risk_factor", "associated_condition", "weight",
+            "is_modifiable", "risk_type", "recommended_action",
         ],
-        "numeric": ["risk_score"],
-        "text": ["recommendation"],
+        "numeric": [],
+        "text": ["recommended_action"],
         "target": None,
-        "join_key": "condition",
+        "join_key": "associated_condition",
         "ordinal": {
-            "weight": {"Low": 1, "Medium": 2, "High": 3},
+            "weight": {"Low": 1, "Medium": 2, "High": 3, "Critical": 4},
         },
-        "binary": {},
+        "binary": {
+            "is_modifiable": {"Yes": 1, "No": 0},
+        },
     },
     "symptom_intelligence": {
         "categorical": [
             "symptom", "follow_up_question", "question_type",
-            "expected_value", "clinical_purpose",
+            "expected_values", "priority", "clinical_category", "emergency_flag",
         ],
         "numeric": [],
-        "text": ["follow_up_question", "clinical_purpose"],
+        "text": ["follow_up_question"],
         "target": None,
         "join_key": "symptom",
-        "ordinal": {},
-        "binary": {},
+        "ordinal": {
+            "priority": {"Low": 1, "Medium": 2, "High": 3},
+        },
+        "binary": {
+            "emergency_flag": {"Yes": 1, "No": 0},
+        },
     },
     "temporal": {
         "categorical": [
             "symptom", "duration", "interpretation",
-            "recommended_action", "temporal_pattern", "severity_flag",
+            "risk_level", "clinical_category", "emergency_flag",
         ],
         "numeric": [],
-        "text": ["interpretation", "recommended_action"],
+        "text": ["interpretation"],
         "target": None,
         "join_key": "symptom",
         "ordinal": {
-            "severity_flag": {"Low": 1, "Moderate": 2, "High": 3},
+            "risk_level": {"Low": 1, "Medium": 2, "High": 3, "Critical": 4},
         },
-        "binary": {},
+        "binary": {
+            "emergency_flag": {"Yes": 1, "No": 0},
+        },
     },
     "differential": {
         "categorical": ["disease", "differentiating_factor"],
@@ -185,7 +189,7 @@ COLUMN_CONFIG = {
         "text": ["symptom_set", "possible_diseases"],
         "target": None,
         "join_key": "disease",
-        "symptom_columns": [f"symptom_{i}" for i in range(1, 18)],
+        "symptom_columns": [f"symptom_{i}" for i in range(1, 7)],
         "ordinal": {},
         "binary": {},
     },
@@ -197,14 +201,14 @@ COLUMN_CONFIG = {
         ],
         "numeric": [
             "patient_id", "age", "heart_rate_bpm", "body_temperature_c",
-            "oxygen_saturation_%",
+            "oxygen_saturation",
         ],
         "text": ["treatment_plan", "why"],
         "target": "severity",
         "join_key": "diagnosis",
         "ordinal": {
             "severity": {"Mild": 1, "Moderate": 2, "Severe": 3},
-            "priority": {"Secondary": 1, "Primary": 2, "Urgent": 3},
+            "priority": {"Secondary": 1, "Primary": 2},
         },
         "binary": {},
     },
