@@ -1,11 +1,11 @@
 """
-MedAgentix AI — Notebook 02: Feature Engineering
+MedAgentix AI -- Notebook 02: Feature Engineering
 ===================================================
 Steps covered:
-  Step 4 — Data Encoding (label, ordinal, binary, one-hot)
-  Step 5 — Feature Engineering (symptom count, risk score, severity index, etc.)
-  Step 6 — Class Balancing (SMOTE/oversampling for classification datasets)
-  Step 7 — Save processed datasets
+  Step 4 -- Data Encoding (label, ordinal, binary, one-hot)
+  Step 5 -- Feature Engineering (symptom count, risk score, severity index, etc.)
+  Step 6 -- Class Balancing (SMOTE/oversampling for classification datasets)
+  Step 7 -- Save processed datasets
 
 Prerequisite: Run 01_common_cleaning_eda.py first.
 Run: python datasets/notebooks/02_feature_engineering.py
@@ -34,7 +34,7 @@ def load_cleaned_datasets() -> dict:
             datasets[name] = pd.read_csv(filepath)
             print(f"  [OK] Loaded clean_{name}.csv ({datasets[name].shape[0]} rows)")
         else:
-            print(f"  [WARN] {filepath} not found — skipping")
+            print(f"  [WARN] {filepath} not found -- skipping")
     return datasets
 
 

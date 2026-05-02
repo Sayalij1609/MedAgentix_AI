@@ -1,9 +1,9 @@
 """
-MedAgentix AI — Notebook 04: Feature Importance
+MedAgentix AI -- Notebook 04: Feature Importance
 ==================================================
 Steps covered:
-  Step 12 — Feature Importance (XGBoost, SHAP, correlation, mutual info)
-  Step 13 — Create Final Feature Store (ranked features, top selections)
+  Step 12 -- Feature Importance (XGBoost, SHAP, correlation, mutual info)
+  Step 13 -- Create Final Feature Store (ranked features, top selections)
 
 Prerequisite: Run 03_merge_and_training.py first.
 Run: python datasets/notebooks/04_feature_importance.py
@@ -63,7 +63,7 @@ def main():
     y_train = splits["y_train"]
     X_test = splits.get("X_test")
 
-    print(f"\n  Training data: {X_train.shape[0]} samples × {X_train.shape[1]} features")
+    print(f"\n  Training data: {X_train.shape[0]} samples x {X_train.shape[1]} features")
     print(f"  Features: {list(X_train.columns)}")
 
     # --- Step 12: Feature Importance ----------------------------
@@ -91,7 +91,7 @@ def main():
 
     # --- Summary ------------------------------------------------
     print("\n\n" + "=" * 60)
-    print("  [OK] Notebook 04 Complete — Feature Store Ready")
+    print("  [OK] Notebook 04 Complete -- Feature Store Ready")
     print("=" * 60)
     print(f"\n  Final Outputs in {config.FEATURE_STORE_DIR}:")
     print(f"  |-- X_train.csv / X_test.csv")

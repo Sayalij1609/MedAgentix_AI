@@ -1,10 +1,10 @@
 """
-MedAgentix AI — Notebook 01: Common Cleaning & EDA
+MedAgentix AI -- Notebook 01: Common Cleaning & EDA
 =====================================================
 Steps covered:
-  Step 1 — Data Loading (all 9 datasets)
-  Step 2 — Data Cleaning (duplicates, missing, labels, outliers)
-  Step 3 — EDA & Visualization (distributions, heatmaps, class balance)
+  Step 1 -- Data Loading (all 9 datasets)
+  Step 2 -- Data Cleaning (duplicates, missing, labels, outliers)
+  Step 3 -- EDA & Visualization (distributions, heatmaps, class balance)
 
 Run: python datasets/notebooks/01_common_cleaning_eda.py
 """

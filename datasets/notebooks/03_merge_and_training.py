@@ -1,11 +1,11 @@
 """
-MedAgentix AI — Notebook 03: Merge & Dataset Integration
+MedAgentix AI -- Notebook 03: Merge & Dataset Integration
 ===========================================================
 Steps covered:
-  Step 8  — Merge Group A datasets → master_diagnostic.csv
-  Step 9  — Prepare Group B agent datasets (separate)
-  Step 10 — Prepare Group C RAG knowledge text chunks
-  Step 11 — Train-test split
+  Step 8  -- Merge Group A datasets -> master_diagnostic.csv
+  Step 9  -- Prepare Group B agent datasets (separate)
+  Step 10 -- Prepare Group C RAG knowledge text chunks
+  Step 11 -- Train-test split
 
 Model training is deferred to the next phase.
 
@@ -45,7 +45,7 @@ def load_engineered_datasets() -> dict:
                 datasets[name] = pd.read_csv(fallback)
                 print(f"  [WARN] Using encoded_{name}.csv (no engineered version)")
             else:
-                print(f"  [WARN] {name} not found — skipping")
+                print(f"  [WARN] {name} not found -- skipping")
     return datasets
 
 
@@ -74,7 +74,7 @@ def main():
         print("\n[ERROR] No engineered datasets found! Run 02_feature_engineering.py first.")
         return
 
-    # --- Step 8: Merge Group A → Master Diagnostic -------------
+    # --- Step 8: Merge Group A -> Master Diagnostic -------------
     print("\n\n STEP 8: Building Master Diagnostic Dataset...")
     print("  Merging: Core Clinical + Risk Factor + Temporal + (opt) Differential")
     master = build_master_diagnostic(engineered)
@@ -90,7 +90,7 @@ def main():
 
     print(f"\n  Agent Datasets:")
     for agent, df in agent_data.items():
-        print(f"    {agent}: {df.shape[0]} rows × {df.shape[1]} cols")
+        print(f"    {agent}: {df.shape[0]} rows x {df.shape[1]} cols")
 
     # --- Step 10: RAG Knowledge Store ---------------------------
     print("\n\n STEP 10: Preparing RAG Knowledge Store...")
