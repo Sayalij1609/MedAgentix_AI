@@ -1,5 +1,5 @@
 """
-MedAgentix AI — Feature Importance Module
+MedAgentix AI -- Feature Importance Module
 ============================================
 Computes feature rankings using XGBoost importance, SHAP values,
 correlation analysis, and mutual information scoring.
@@ -77,7 +77,7 @@ def xgb_feature_importance(
     top = importance.head(top_n)
     fig, ax = plt.subplots(figsize=(10, max(6, top_n * 0.4)))
     sns.barplot(x='importance', y='feature', hue='feature', data=top, palette='viridis', ax=ax, legend=False)
-    ax.set_title(f'Top {top_n} Features — XGBoost Importance', fontsize=14, fontweight='bold')
+    ax.set_title(f'Top {top_n} Features -- XGBoost Importance', fontsize=14, fontweight='bold')
     ax.set_xlabel('Importance Score')
     plt.tight_layout()
     fig.savefig(config.FEATURE_STORE_DIR / "xgb_feature_importance.png")
@@ -178,7 +178,7 @@ def shap_analysis(
         fig, ax = plt.subplots(figsize=(10, max(6, top_n * 0.4)))
         top = shap_importance.head(top_n)
         sns.barplot(x='mean_abs_shap', y='feature', hue='feature', data=top, palette='magma', ax=ax, legend=False)
-        ax.set_title(f'Top {top_n} Features — SHAP Importance', fontsize=14, fontweight='bold')
+        ax.set_title(f'Top {top_n} Features -- SHAP Importance', fontsize=14, fontweight='bold')
         ax.set_xlabel('Mean |SHAP Value|')
         plt.tight_layout()
         fig.savefig(config.FEATURE_STORE_DIR / "shap_feature_importance.png")
@@ -247,7 +247,7 @@ def feature_scoring(X: pd.DataFrame, y: pd.Series) -> pd.DataFrame:
     top = result.head(top_n)
     fig, ax = plt.subplots(figsize=(10, max(6, top_n * 0.4)))
     sns.barplot(x='mutual_info_score', y='feature', hue='feature', data=top, palette='coolwarm', ax=ax, legend=False)
-    ax.set_title(f'Top {top_n} Features — Mutual Information', fontsize=14, fontweight='bold')
+    ax.set_title(f'Top {top_n} Features -- Mutual Information', fontsize=14, fontweight='bold')
     ax.set_xlabel('MI Score')
     plt.tight_layout()
     fig.savefig(config.FEATURE_STORE_DIR / "mutual_info_scores.png")
@@ -273,7 +273,7 @@ def run_feature_importance(splits: dict) -> dict:
     dict with importance DataFrames and selected features.
     """
     print("\n" + "=" * 60)
-    print("  PART B — Steps 12-13: Feature Importance & Feature Store")
+    print("  PART B -- Steps 12-13: Feature Importance & Feature Store")
     print("=" * 60)
 
     X_train = splits["X_train"]

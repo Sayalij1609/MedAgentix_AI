@@ -1,5 +1,5 @@
 """
-MedAgentix AI — Train-Test Split Module
+MedAgentix AI -- Train-Test Split Module
 =========================================
 Splits the master diagnostic dataset into train/test (and optional validation).
 Saves splits to the feature store.
@@ -40,7 +40,7 @@ def train_test_split_pipeline(
     dict with keys: X_train, X_test, y_train, y_test, and optionally X_val, y_val.
     """
     print("\n" + "=" * 60)
-    print("  PART B — Step 11: Train-Test Split")
+    print("  PART B -- Step 11: Train-Test Split")
     print("=" * 60)
 
     target_col = target_col or config.TARGET_COLUMN

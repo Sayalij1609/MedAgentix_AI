@@ -63,12 +63,34 @@ def merge_core_risk(core_df: pd.DataFrame, risk_df: pd.DataFrame) -> pd.DataFram
     risk_agg = risk.groupby(risk_key).agg(agg_dict)
     risk_agg.columns = ['_'.join(col).strip('_') if isinstance(col, tuple) else col
                         for col in risk_agg.columns]
-    # Clean column names
-    risk_agg.columns = [c.replace('<lambda>', 'list') for c in risk_agg.columns]
+    # Clean column names and fix lambda bug
+    risk_agg.columns = [c.replace('<lambda_0>', 'list').replace('<lambda>', 'list') for c in risk_agg.columns]
     risk_agg = risk_agg.reset_index()
 
     # Rename condition to disease for join
     risk_agg = risk_agg.rename(columns={risk_key: core_key})
+
+    # Expand risk_agg using config.RISK_CONDITION_TO_CORE_DISEASE
+    expanded_rows = []
+    for _, row in risk_agg.iterrows():
+        condition = str(row[core_key]).strip()
+        # Find matching core diseases
+        matched_diseases = []
+        for risk_cond, core_diseases in config.RISK_CONDITION_TO_CORE_DISEASE.items():
+            if condition.lower() == risk_cond.lower():
+                matched_diseases.extend(core_diseases)
+        
+        if not matched_diseases:
+            # If no mapping, keep the original name
+            matched_diseases = [condition]
+            
+        for disease in matched_diseases:
+            new_row = row.copy()
+            new_row[core_key] = disease
+            expanded_rows.append(new_row)
+            
+    if expanded_rows:
+        risk_agg = pd.DataFrame(expanded_rows)
 
     # Standardize join key values
     core[core_key] = core[core_key].astype(str).str.strip().str.title()
@@ -213,6 +235,16 @@ def merge_differential_features(merged_df: pd.DataFrame, diff_df: pd.DataFrame) 
         print("  [WARN] No features to extract from differential — skipping")
         return merged
 
+    # Map disease names before aggregation
+    def map_diff_disease(disease_name):
+        disease_name = str(disease_name).strip()
+        for diff_name, core_name in config.DIFF_DISEASE_TO_CORE_DISEASE.items():
+            if disease_name.lower() == diff_name.lower():
+                return core_name
+        return disease_name
+
+    diff['disease'] = diff['disease'].apply(map_diff_disease)
+
     diff_agg = diff.groupby('disease').agg(agg_cols).reset_index()
     diff_agg['disease'] = diff_agg['disease'].astype(str).str.strip().str.title()
 
@@ -239,7 +271,7 @@ def build_master_diagnostic(datasets: dict) -> pd.DataFrame:
     Output: datasets/processed/merged/master_diagnostic.csv
     """
     print("\n" + "=" * 60)
-    print("  PART B — Step 8: Build Master Diagnostic Dataset")
+    print("  PART B - Step 8: Build Master Diagnostic Dataset")
     print("=" * 60)
 
     # Get Group A datasets
@@ -252,19 +284,17 @@ def build_master_diagnostic(datasets: dict) -> pd.DataFrame:
         raise ValueError("Core Clinical dataset is required for diagnostic merge!")
 
     result = core.copy()
-    print(f"\n  Starting with Core Clinical: {result.shape[0]} rows × {result.shape[1]} cols")
+    print(f"\n  Starting with Core Clinical: {result.shape[0]} rows x {result.shape[1]} cols")
 
-    # Merge Risk
     if risk is not None:
         result = merge_core_risk(result, risk)
     else:
-        print("  [WARN] Risk dataset not available — skipping")
+        print("  [WARN] Risk dataset not available - skipping")
 
-    # Merge Temporal
     if temporal is not None:
         result = merge_with_temporal(result, temporal)
     else:
-        print("  [WARN] Temporal dataset not available — skipping")
+        print("  [WARN] Temporal dataset not available - skipping")
 
     # Merge Differential (optional)
     if differential is not None:
@@ -272,13 +302,20 @@ def build_master_diagnostic(datasets: dict) -> pd.DataFrame:
     else:
         print("  [INFO] Differential dataset not included (optional)")
 
+    # Fill remaining missing values to ensure a non-empty dataset
+    for col in result.columns:
+        if result[col].dtype == 'object':
+            result[col] = result[col].fillna("0")
+        else:
+            result[col] = result[col].fillna(0.0)
+
     # Save master diagnostic
     config.ensure_dirs()
     output_path = config.MERGED_DIR / "master_diagnostic.csv"
     result.to_csv(output_path, index=False)
 
     print(f"\n  {'='*50}")
-    print(f"  [OK] Master Diagnostic Dataset: {result.shape[0]} rows × {result.shape[1]} cols")
+    print(f"  [OK] Master Diagnostic Dataset: {result.shape[0]} rows x {result.shape[1]} cols")
     print(f"   Saved: {output_path}")
     print(f"  {'='*50}")
 

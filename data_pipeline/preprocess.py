@@ -36,7 +36,7 @@ def remove_duplicates(df: pd.DataFrame, name: str = "") -> pd.DataFrame:
     after = len(df)
     removed = before - after
     if config.VERBOSE and removed > 0:
-        print(f"  [{name}] Removed {removed} duplicate rows ({before} → {after})")
+        print(f"  [{name}] Removed {removed} duplicate rows ({before} -> {after})")
     elif config.VERBOSE:
         print(f"  [{name}] No duplicates found ({before} rows)")
     return df

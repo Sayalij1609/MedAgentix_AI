@@ -69,6 +69,40 @@ GROUP_B_AGENTS = {
 # GROUP C — RAG Knowledge Base
 GROUP_C_RAG = ["medical_knowledge"]
 
+# --- Disease Name Mappings ---------------------------------------------------
+# Map Risk condition to Core disease
+RISK_CONDITION_TO_CORE_DISEASE = {
+    "Heart Disease": ["Heart Failure"],
+    "Respiratory Disorder": ["Asthma", "COPD", "Bronchitis", "Pneumonia", "Sinusitis"],
+    "Kidney Disease": ["CKD", "UTI"],
+    "Liver Disease": ["Hepatitis", "Jaundice"],
+    "Metabolic Disorder": ["Hypothyroidism"],
+    "Autoimmune Disease": ["Lupus", "Rheumatoid Arthritis"],
+    "Infection Risk": ["Sepsis", "Meningitis", "Cholera", "Typhoid", "Malaria", "Dengue", "Measles", "Chickenpox", "COVID-19", "Flu", "Tuberculosis"],
+    "Cancer": ["Leukemia"],
+    "Hormonal Disorder": ["Epilepsy"],
+}
+
+# Map Differential disease to Core disease
+DIFF_DISEASE_TO_CORE_DISEASE = {
+    "Chicken pox": "Chickenpox",
+    "Diabetes ": "Diabetes",
+    "Hypertension ": "Hypertension",
+    "Bronchial Asthma": "Asthma",
+    "Urinary tract infection": "UTI",
+    "Peptic ulcer diseae": "Peptic Ulcer",
+    "Common Cold": "Flu",
+    "Hepatitis B": "Hepatitis",
+    "Hepatitis C": "Hepatitis",
+    "Hepatitis D": "Hepatitis",
+    "Hepatitis E": "Hepatitis",
+    "hepatitis A": "Hepatitis",
+    "Heart attack": "Heart Failure",
+    "Osteoarthristis": "Rheumatoid Arthritis",
+    "Hypoglycemia": "Diabetes",
+}
+
+
 # --- Column Configuration per Dataset ----------------------------------------
 # Defines categorical, numeric, target, and join key columns for each dataset.
 COLUMN_CONFIG = {

@@ -1,5 +1,5 @@
 """
-MedAgentix AI — Feature Engineering Module
+MedAgentix AI -- Feature Engineering Module
 ============================================
 Creates derived features: symptom counts, risk scores, severity indices,
 temporal scores, and interaction features.
@@ -162,11 +162,11 @@ def create_temporal_score(df: pd.DataFrame) -> pd.DataFrame:
 def create_interaction_features(df: pd.DataFrame) -> pd.DataFrame:
     """
     Create interaction features between existing columns.
-    Examples: age × severity, symptom_count × risk_score.
+    Examples: age x severity, symptom_count x risk_score.
     """
     df = df.copy()
 
-    # Age × Severity interaction
+    # Age x Severity interaction
     if 'age' in df.columns and 'severity' in df.columns:
         sev = df['severity']
         if sev.dtype not in ['int64', 'float64']:
@@ -175,7 +175,7 @@ def create_interaction_features(df: pd.DataFrame) -> pd.DataFrame:
             ).fillna(1)
         df['age_severity_interaction'] = df['age'] * sev
 
-    # Symptom count × Risk score
+    # Symptom count x Risk score
     if 'symptom_count' in df.columns and 'composite_risk_score' in df.columns:
         df['symptom_risk_interaction'] = df['symptom_count'] * df['composite_risk_score']
 
@@ -206,7 +206,7 @@ def engineer_dataset(df: pd.DataFrame, name: str) -> pd.DataFrame:
     elif config.VERBOSE:
         print(f"  [{name}] No new features applicable for this dataset")
 
-    print(f"  [OK] [{name}] Feature engineering complete — {df.shape[1]} columns")
+    print(f"  [OK] [{name}] Feature engineering complete -- {df.shape[1]} columns")
 
     # Save engineered output
     config.ensure_dirs()
@@ -230,7 +230,7 @@ def engineer_all(datasets: dict) -> dict:
     dict[str, pd.DataFrame]
     """
     print("\n" + "=" * 60)
-    print("  PART A — Step 5: Feature Engineering (all 9 datasets)")
+    print("  PART A -- Step 5: Feature Engineering (all 9 datasets)")
     print("=" * 60)
 
     engineered = {}

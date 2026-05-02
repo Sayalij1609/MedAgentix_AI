@@ -1,5 +1,5 @@
 """
-MedAgentix AI — EDA (Exploratory Data Analysis) Module
+MedAgentix AI -- EDA (Exploratory Data Analysis) Module
 ========================================================
 Reusable visualization functions for all datasets.
 Generates histograms, countplots, boxplots, heatmaps, and class distributions.
@@ -39,7 +39,7 @@ def summary_stats(df: pd.DataFrame, name: str) -> None:
     print(f"\n{'='*60}")
     print(f"  EDA SUMMARY: {name}")
     print(f"{'='*60}")
-    print(f"  Shape: {df.shape[0]} rows × {df.shape[1]} columns")
+    print(f"  Shape: {df.shape[0]} rows x {df.shape[1]} columns")
     print(f"\n  --- Data Types ---")
     print(f"  {df.dtypes.value_counts().to_string()}")
     print(f"\n  --- Null Counts ---")
@@ -69,13 +69,13 @@ def plot_missing_values(df: pd.DataFrame, name: str) -> None:
 
     if len(null_counts) == 0:
         if config.VERBOSE:
-            print(f"  [{name}] No missing values — skipping plot")
+            print(f"  [{name}] No missing values -- skipping plot")
         return
 
     plot_dir = _get_plot_dir(name)
     fig, ax = plt.subplots(figsize=(max(10, len(null_counts) * 0.8), 5))
     null_counts.sort_values(ascending=False).plot(kind='bar', color='coral', edgecolor='black', ax=ax)
-    ax.set_title(f"Missing Values — {name}", fontsize=14, fontweight='bold')
+    ax.set_title(f"Missing Values -- {name}", fontsize=14, fontweight='bold')
     ax.set_xlabel("Column")
     ax.set_ylabel("Null Count")
     plt.xticks(rotation=45, ha='right')
@@ -112,7 +112,7 @@ def plot_distributions(df: pd.DataFrame, columns: list = None, name: str = "") -
         for j in range(i + 1, len(axes)):
             axes[j].set_visible(False)
 
-        fig.suptitle(f"Numeric Distributions — {name}", fontsize=14, fontweight='bold')
+        fig.suptitle(f"Numeric Distributions -- {name}", fontsize=14, fontweight='bold')
         plt.tight_layout()
         fig.savefig(plot_dir / "numeric_distributions.png")
         plt.close(fig)
@@ -130,7 +130,7 @@ def plot_distributions(df: pd.DataFrame, columns: list = None, name: str = "") -
             fig, ax = plt.subplots(figsize=(10, 5))
             value_counts = df[col].value_counts().head(15)
             sns.barplot(x=value_counts.values, y=value_counts.index, palette="viridis", ax=ax)
-            ax.set_title(f"{col} — {name}", fontsize=13, fontweight='bold')
+            ax.set_title(f"{col} -- {name}", fontsize=13, fontweight='bold')
             ax.set_xlabel("Count")
             plt.tight_layout()
             fig.savefig(plot_dir / f"dist_{col}.png")
@@ -165,7 +165,7 @@ def plot_boxplots(df: pd.DataFrame, columns: list = None, name: str = "") -> Non
     for j in range(i + 1, len(axes)):
         axes[j].set_visible(False)
 
-    fig.suptitle(f"Boxplots — {name}", fontsize=14, fontweight='bold')
+    fig.suptitle(f"Boxplots -- {name}", fontsize=14, fontweight='bold')
     plt.tight_layout()
     fig.savefig(plot_dir / "boxplots.png")
     plt.close(fig)
@@ -183,7 +183,7 @@ def heatmap(df: pd.DataFrame, name: str) -> None:
 
     if numeric_df.shape[1] < 2:
         if config.VERBOSE:
-            print(f"  [{name}] Skipping heatmap — fewer than 2 numeric columns")
+            print(f"  [{name}] Skipping heatmap -- fewer than 2 numeric columns")
         return
 
     fig, ax = plt.subplots(figsize=(max(8, numeric_df.shape[1]), max(6, numeric_df.shape[1] * 0.8)))
@@ -194,7 +194,7 @@ def heatmap(df: pd.DataFrame, name: str) -> None:
         center=0, linewidths=0.5, ax=ax, square=True,
         cbar_kws={"shrink": 0.8},
     )
-    ax.set_title(f"Correlation Heatmap — {name}", fontsize=14, fontweight='bold')
+    ax.set_title(f"Correlation Heatmap -- {name}", fontsize=14, fontweight='bold')
     plt.tight_layout()
     fig.savefig(plot_dir / "correlation_heatmap.png")
     plt.close(fig)
@@ -209,7 +209,7 @@ def plot_class_distribution(df: pd.DataFrame, target: str, name: str) -> None:
     """
     if target not in df.columns:
         if config.VERBOSE:
-            print(f"  [{name}] Target '{target}' not found — skipping class distribution")
+            print(f"  [{name}] Target '{target}' not found -- skipping class distribution")
         return
 
     plot_dir = _get_plot_dir(name)
@@ -217,7 +217,7 @@ def plot_class_distribution(df: pd.DataFrame, target: str, name: str) -> None:
     value_counts = df[target].value_counts()
     colors = sns.color_palette("Set2", len(value_counts))
     value_counts.plot(kind='bar', color=colors, edgecolor='black', ax=ax)
-    ax.set_title(f"Class Distribution: {target} — {name}", fontsize=14, fontweight='bold')
+    ax.set_title(f"Class Distribution: {target} -- {name}", fontsize=14, fontweight='bold')
     ax.set_xlabel(target)
     ax.set_ylabel("Count")
 
@@ -245,7 +245,7 @@ def run_eda(datasets: dict) -> None:
         Dictionary of cleaned DataFrames.
     """
     print("\n" + "=" * 60)
-    print("  PART A — Step 3: EDA & Visualization (all 9 datasets)")
+    print("  PART A -- Step 3: EDA & Visualization (all 9 datasets)")
     print("=" * 60)
 
     config.ensure_dirs()

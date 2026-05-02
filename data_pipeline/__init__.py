@@ -1,5 +1,5 @@
 """
-MedAgentix AI — Data Pipeline Package
+MedAgentix AI -- Data Pipeline Package
 =======================================
 Public API for notebook and script imports.
 

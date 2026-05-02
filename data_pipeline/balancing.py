@@ -1,5 +1,5 @@
 """
-MedAgentix AI — Class Balancing Module
+MedAgentix AI -- Class Balancing Module
 ========================================
 Handles class imbalance using SMOTE, oversampling, or undersampling.
 Applied selectively to datasets with classification targets.
@@ -67,23 +67,23 @@ def balance_classes(
     df : pd.DataFrame
     target_col : str
     method : str
-        'smote' — SMOTE oversampling (requires numeric features)
-        'oversample' — Random oversampling of minority class
-        'undersample' — Random undersampling of majority class
+        'smote' -- SMOTE oversampling (requires numeric features)
+        'oversample' -- Random oversampling of minority class
+        'undersample' -- Random undersampling of majority class
 
     Returns
     -------
-    pd.DataFrame — Balanced dataset
+    pd.DataFrame -- Balanced dataset
     """
     if target_col not in df.columns:
-        print(f"  [WARN] Target '{target_col}' not found — skipping balancing")
+        print(f"  [WARN] Target '{target_col}' not found -- skipping balancing")
         return df
 
     print(f"\n  Balancing '{target_col}' using method: {method}")
     imbalance = check_imbalance(df, target_col)
 
     if not imbalance.get("is_imbalanced", False):
-        print(f"  [OK] Already balanced — no action needed")
+        print(f"  [OK] Already balanced -- no action needed")
         return df
 
     if method == "smote":
@@ -93,12 +93,12 @@ def balance_classes(
     elif method == "undersample":
         return _random_undersample(df, target_col)
     else:
-        print(f"  [WARN] Unknown method '{method}' — defaulting to oversample")
+        print(f"  [WARN] Unknown method '{method}' -- defaulting to oversample")
         return _random_oversample(df, target_col)
 
 
 def _smote_balance(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
-    """SMOTE oversampling — only works with numeric features."""
+    """SMOTE oversampling -- only works with numeric features."""
     try:
         from imblearn.over_sampling import SMOTE
 
@@ -107,7 +107,7 @@ def _smote_balance(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
         feature_cols = [c for c in numeric_cols if c != target_col]
 
         if len(feature_cols) < 2:
-            print(f"  [WARN] Not enough numeric features for SMOTE — falling back to oversample")
+            print(f"  [WARN] Not enough numeric features for SMOTE -- falling back to oversample")
             return _random_oversample(df, target_col)
 
         X = df[feature_cols].fillna(0)
@@ -118,7 +118,7 @@ def _smote_balance(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
         k_neighbors = min(5, min_samples - 1) if min_samples > 1 else 1
 
         if k_neighbors < 1:
-            print(f"  [WARN] Too few samples for SMOTE — falling back to oversample")
+            print(f"  [WARN] Too few samples for SMOTE -- falling back to oversample")
             return _random_oversample(df, target_col)
 
         smote = SMOTE(random_state=config.RANDOM_STATE, k_neighbors=k_neighbors)
@@ -135,13 +135,13 @@ def _smote_balance(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
             result.loc[:len(df) - 1, col] = df[col].values
 
         if config.VERBOSE:
-            print(f"  [OK] SMOTE applied: {len(df)} → {len(result)} rows")
+            print(f"  [OK] SMOTE applied: {len(df)} -> {len(result)} rows")
             check_imbalance(result, target_col)
 
         return result
 
     except ImportError:
-        print("  [WARN] imblearn not installed — falling back to random oversample")
+        print("  [WARN] imblearn not installed -- falling back to random oversample")
         print("     Install with: pip install imbalanced-learn")
         return _random_oversample(df, target_col)
 
@@ -162,7 +162,7 @@ def _random_oversample(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
     result = result.sample(frac=1, random_state=config.RANDOM_STATE).reset_index(drop=True)
 
     if config.VERBOSE:
-        print(f"  [OK] Oversampled: {len(df)} → {len(result)} rows")
+        print(f"  [OK] Oversampled: {len(df)} -> {len(result)} rows")
         check_imbalance(result, target_col)
 
     return result
@@ -184,7 +184,7 @@ def _random_undersample(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
     result = result.sample(frac=1, random_state=config.RANDOM_STATE).reset_index(drop=True)
 
     if config.VERBOSE:
-        print(f"  [OK] Undersampled: {len(df)} → {len(result)} rows")
+        print(f"  [OK] Undersampled: {len(df)} -> {len(result)} rows")
         check_imbalance(result, target_col)
 
     return result

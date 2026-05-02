@@ -1,5 +1,5 @@
 """
-MedAgentix AI — Encoding Module
+MedAgentix AI -- Encoding Module
 =================================
 All data encoding functions: label, ordinal, one-hot, binary symptom encoding.
 Strategies are driven by config.COLUMN_CONFIG per dataset.
@@ -91,8 +91,8 @@ def encode_dataset(df: pd.DataFrame, name: str) -> pd.DataFrame:
     Encode a single dataset using its config-driven strategy.
 
     Applies in order:
-    1. Binary encoding (Yes/No → 0/1)
-    2. Ordinal encoding (Low/Medium/High → 1/2/3)
+    1. Binary encoding (Yes/No -> 0/1)
+    2. Ordinal encoding (Low/Medium/High -> 1/2/3)
     3. Label encoding for remaining categorical columns
        (excluding text/join key columns)
     """
@@ -135,7 +135,7 @@ def encode_dataset(df: pd.DataFrame, name: str) -> pd.DataFrame:
         if config.VERBOSE:
             print(f"  [{name}] Label encoded: {remaining_cat}")
 
-    print(f"  [OK] [{name}] Encoding complete — {df.shape[1]} columns")
+    print(f"  [OK] [{name}] Encoding complete -- {df.shape[1]} columns")
 
     # Save encoded output
     config.ensure_dirs()
@@ -159,7 +159,7 @@ def encode_all(datasets: dict) -> dict:
     dict[str, pd.DataFrame]
     """
     print("\n" + "=" * 60)
-    print("  PART A — Step 4: Data Encoding (all 9 datasets)")
+    print("  PART A -- Step 4: Data Encoding (all 9 datasets)")
     print("=" * 60)
 
     encoded = {}

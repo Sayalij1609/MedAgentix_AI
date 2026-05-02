@@ -1,5 +1,5 @@
 """
-MedAgentix AI — Data Loading Module
+MedAgentix AI -- Data Loading Module
 =====================================
 Functions to load all 9 raw CSV datasets.
 Each loader prints inspection info: shape, dtypes, head().
@@ -15,7 +15,7 @@ def _inspect(df: pd.DataFrame, name: str) -> None:
         print(f"\n{'='*60}")
         print(f"  LOADED: {name}")
         print(f"{'='*60}")
-        print(f"  Shape : {df.shape[0]} rows × {df.shape[1]} columns")
+        print(f"  Shape : {df.shape[0]} rows x {df.shape[1]} columns")
         print(f"  Columns: {list(df.columns)}")
         print(f"  Dtypes:\n{df.dtypes.to_string()}")
         print(f"  Nulls :\n{df.isnull().sum().to_string()}")

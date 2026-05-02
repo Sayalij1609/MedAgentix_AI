@@ -1,10 +1,10 @@
 """
-MedAgentix AI — Pipeline Runner
+MedAgentix AI -- Pipeline Runner
 ==================================
 Master orchestrator for the full data processing pipeline.
 Runs the 13-step workflow:
 
-PART A — Common Processing (all 9 datasets):
+PART A -- Common Processing (all 9 datasets):
   1. Load all datasets
   2. Clean all (preprocess)
   3. EDA all (optional)
@@ -13,8 +13,8 @@ PART A — Common Processing (all 9 datasets):
   6. Balance (selective)
   7. Save processed datasets
 
-PART B — Integration Pipeline:
-  8.  Merge Group A → master_diagnostic.csv
+PART B -- Integration Pipeline:
+  8.  Merge Group A -> master_diagnostic.csv
   9.  Prepare Group B agent datasets (separate)
   10. Prepare Group C RAG knowledge store
   11. Train-test split (master_diagnostic only)
@@ -65,7 +65,7 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     start_time = time.time()
 
     print("\n" + "=" * 60)
-    print("  MedAgentix AI — Data Processing Pipeline")
+    print("  MedAgentix AI -- Data Processing Pipeline")
     print("=" * 60)
     print(f"\n  Mode: {'Part A only' if part_a_only else 'Full Pipeline'}")
     print(f"  EDA:  {'Skipped' if skip_eda else 'Enabled'}")
@@ -74,11 +74,11 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     # Ensure all output directories exist
     config.ensure_dirs()
 
-    # ═══════════════════════════════════════════════════════════════
-    #  PART A — Common Processing for ALL 9 Datasets
-    # ═══════════════════════════════════════════════════════════════
+    # ===============================================================
+    #  PART A -- Common Processing for ALL 9 Datasets
+    # ===============================================================
     print("\n\n" + "=" * 60)
-    print("  PART A — Common Processing (all 9 datasets)")
+    print("  PART A - Step 2: Data Cleaning (all 9 datasets)")
     print("=" * 60)
 
     # Step 1: Load all datasets
@@ -104,7 +104,7 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
 
     # Step 6: Balance selective datasets
     print("\n" + "=" * 60)
-    print("  PART A — Step 6: Class Balancing (selective)")
+    print("  PART A -- Step 6: Class Balancing (selective)")
     print("=" * 60)
 
     balanced = {}
@@ -118,7 +118,7 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
 
     # Step 7: Save processed datasets
     print("\n" + "=" * 60)
-    print("  PART A — Step 7: Save Processed Datasets")
+    print("  PART A -- Step 7: Save Processed Datasets")
     print("=" * 60)
     print(f"  [OK] All processed datasets saved during previous steps:")
     print(f"     Cleaned:    {config.CLEANED_DIR}")
@@ -128,18 +128,18 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     if part_a_only:
         elapsed = time.time() - start_time
         print(f"\n\n{'='*60}")
-        print(f"  Part A Complete — {elapsed:.1f}s")
+        print(f"  Part A Complete -- {elapsed:.1f}s")
         print(f"{'='*60}")
         return
 
     # ═══════════════════════════════════════════════════════════════
-    #  PART B — Integration & Modeling Pipeline
+    #  PART B -- Integration & Modeling Pipeline
     # ═══════════════════════════════════════════════════════════════
     print("\n\n" + "=" * 60)
-    print("  PART B — Integration Pipeline")
+    print("  PART B -- Integration Pipeline")
     print("=" * 60)
 
-    # Step 8: Merge Group A → master_diagnostic.csv
+    # Step 8: Merge Group A -> master_diagnostic.csv
     master = build_master_diagnostic(engineered)
 
     # Step 9: Prepare Group B agent datasets
@@ -159,7 +159,7 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     # ═══════════════════════════════════════════════════════════════
     elapsed = time.time() - start_time
     print(f"\n\n{'='*60}")
-    print(f"  [OK] PIPELINE COMPLETE — {elapsed:.1f}s")
+    print(f"  [OK] PIPELINE COMPLETE -- {elapsed:.1f}s")
     print(f"{'='*60}")
     print(f"\n  Output Summary:")
     print(f"  |-- Cleaned datasets:     {config.CLEANED_DIR}")
@@ -170,13 +170,13 @@ def run_pipeline(skip_eda: bool = False, part_a_only: bool = False):
     print(f"  |-- Agent datasets:       {config.AGENT_DATASETS_DIR}")
     print(f"  |-- RAG knowledge:        {config.RAG_KNOWLEDGE_DIR}")
     print(f"  +-- Feature store:        {config.FEATURE_STORE_DIR}")
-    print(f"\n  No model training — deferred to next phase.")
+    print(f"\n  No model training -- deferred to next phase.")
     print(f"\n  Next step: Run training on master_diagnostic.csv")
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="MedAgentix AI — Data Processing Pipeline",
+        description="MedAgentix AI -- Data Processing Pipeline",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
