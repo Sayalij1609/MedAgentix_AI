@@ -6,9 +6,7 @@ Public API for notebook and script imports.
 Usage:
     from data_pipeline import load_all, preprocess_all, run_eda
     from data_pipeline import encode_all, engineer_all
-    from data_pipeline import build_master_diagnostic
-    from data_pipeline import train_test_split_pipeline
-    from data_pipeline import run_feature_importance
+    from data_pipeline import encode_all, engineer_all
 """
 
 from .load_data import (
@@ -65,29 +63,12 @@ from .feature_engineering import (
     create_interaction_features,
 )
 
-from .balancing import (
-    balance_classes,
-    check_imbalance,
-)
-
-from .merge_datasets import (
-    build_master_diagnostic,
+from .integration import (
     prepare_agent_datasets,
     prepare_rag_knowledge,
-    merge_core_risk,
-    merge_with_temporal,
-    merge_differential_features,
 )
 
-from .train_split import train_test_split_pipeline
 
-from .feature_importance import (
-    run_feature_importance,
-    xgb_feature_importance,
-    shap_analysis,
-    correlation_ranking,
-    feature_scoring,
-)
 
 __all__ = [
     # Loading
@@ -108,14 +89,8 @@ __all__ = [
     "engineer_all", "engineer_dataset", "create_symptom_count",
     "create_risk_score", "create_severity_index", "create_temporal_score",
     "create_interaction_features",
-    # Balancing
-    "balance_classes", "check_imbalance",
-    # Merging
-    "build_master_diagnostic", "prepare_agent_datasets", "prepare_rag_knowledge",
-    "merge_core_risk", "merge_with_temporal", "merge_differential_features",
-    # Train Split
-    "train_test_split_pipeline",
-    # Feature Importance
-    "run_feature_importance", "xgb_feature_importance", "shap_analysis",
-    "correlation_ranking", "feature_scoring",
+    "create_risk_score", "create_severity_index", "create_temporal_score",
+    "create_interaction_features",
+    # Integration
+    "prepare_agent_datasets", "prepare_rag_knowledge",
 ]
