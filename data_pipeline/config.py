@@ -18,16 +18,14 @@ PROCESSED_DIR = DATASETS_DIR / "processed"
 CLEANED_DIR = PROCESSED_DIR / "cleaned"
 ENCODED_DIR = PROCESSED_DIR / "encoded"
 ENGINEERED_DIR = PROCESSED_DIR / "engineered"
-MERGED_DIR = PROCESSED_DIR / "merged"
-FEATURE_STORE_DIR = PROCESSED_DIR / "feature_store"
 AGENT_DATASETS_DIR = PROCESSED_DIR / "agent_datasets"
 RAG_KNOWLEDGE_DIR = PROCESSED_DIR / "rag_knowledge"
 EDA_PLOTS_DIR = PROCESSED_DIR / "eda_plots"
 
 # Create all output directories
 OUTPUT_DIRS = [
-    CLEANED_DIR, ENCODED_DIR, ENGINEERED_DIR, MERGED_DIR,
-    FEATURE_STORE_DIR, AGENT_DATASETS_DIR, RAG_KNOWLEDGE_DIR,
+    CLEANED_DIR, ENCODED_DIR, ENGINEERED_DIR,
+    AGENT_DATASETS_DIR, RAG_KNOWLEDGE_DIR,
     EDA_PLOTS_DIR,
 ]
 
@@ -52,11 +50,7 @@ DATASET_REGISTRY = {
     "diagnostic": "Test Diagnostic Recommendation Dataset.csv",
 }
 
-# --- Group Assignments -------------------------------------------------------
-# GROUP A — Merge for Diagnostic Prediction Model
-GROUP_A_DIAGNOSTIC = ["core", "risk", "temporal"]
-GROUP_A_OPTIONAL = ["differential"]  # Optional differential features
-
+# Group assignments for processing are handled by script order
 # GROUP B — Separate Agent Datasets (do NOT merge into master)
 GROUP_B_AGENTS = {
     "symptom_agent": "symptom_intelligence",
@@ -249,20 +243,5 @@ COLUMN_CONFIG = {
 }
 
 # --- Pipeline Settings -------------------------------------------------------
-RANDOM_STATE = 42
-TEST_SIZE = 0.2
-VALIDATION_SIZE = None  # Set to 0.15 for 70/15/15 split
-TARGET_COLUMN = "outcome"  # Configurable target for diagnostic model
-
-# Balancing configuration — only datasets with classification targets
-BALANCING_TARGETS = {
-    "core": "outcome",
-    "emergency": "urgency_level",
-    "diagnostic": "severity",
-}
-
-# Feature importance settings
-TOP_N_FEATURES = 20
-
 # Logging
 VERBOSE = True
