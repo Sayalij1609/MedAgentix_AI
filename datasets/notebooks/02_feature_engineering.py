@@ -4,8 +4,9 @@ MedAgentix AI -- Notebook 02: Feature Engineering
 Steps covered:
   Step 4 -- Data Encoding (label, ordinal, binary, one-hot)
   Step 5 -- Feature Engineering (symptom count, risk score, severity index, etc.)
-  Step 6 -- Class Balancing (SMOTE/oversampling for classification datasets)
-  Step 7 -- Save processed datasets
+  Step 6 -- Save processed datasets
+  Step 7 -- Prepare Separate Agent Datasets (Group B)
+  Step 8 -- Prepare RAG Knowledge Store (Group C)
 
 Prerequisite: Run 01_common_cleaning_eda.py first.
 Run: python datasets/notebooks/02_feature_engineering.py
@@ -22,7 +23,7 @@ import pandas as pd
 from data_pipeline import config
 from data_pipeline.encoding import encode_all
 from data_pipeline.feature_engineering import engineer_all
-from data_pipeline.balancing import balance_classes, check_imbalance
+from data_pipeline.integration import prepare_agent_datasets, prepare_rag_knowledge
 
 
 def load_cleaned_datasets() -> dict:
@@ -80,31 +81,26 @@ def main():
         new = eng_cols - enc_cols
         print(f"{name:<30} {enc_cols:>12} {eng_cols:>16} {new:>13}")
 
-    # --- Step 6: Class Balancing --------------------------------
-    print("\n\nSTEP 6: Class Balancing (selective)...")
-    balanced = {}
-
-    for name, df in engineered.items():
-        target = config.BALANCING_TARGETS.get(name)
-        if target and target in df.columns:
-            print(f"\n  --- {name} (target: {target}) ---")
-            print(f"  Before balancing:")
-            check_imbalance(df, target)
-            balanced[name] = balance_classes(df, target, method="oversample")
-        else:
-            balanced[name] = df
-
-    # --- Step 7: Save ------------------------------------------
-    print("\n\n STEP 7: All processed datasets saved:")
+    # --- Step 6: Save ------------------------------------------
+    print("\n\n STEP 6: All processed datasets saved:")
     print(f"  |-- Encoded:    {config.ENCODED_DIR}")
     print(f"  +-- Engineered: {config.ENGINEERED_DIR}")
+
+    # --- Step 7: Prepare Agent Datasets (Group B) --------------
+    print("\n\n STEP 7: Preparing Agent Datasets (Group B)...")
+    agent_data = prepare_agent_datasets(engineered)
+
+    # --- Step 8: Prepare RAG Knowledge Store (Group C) ----------
+    print("\n\n STEP 8: Preparing RAG Knowledge Store (Group C)...")
+    # Use cleaned data for RAG (needs text columns)
+    rag_chunks = prepare_rag_knowledge(cleaned)
 
     # --- Summary ------------------------------------------------
     print("\n\n" + "=" * 60)
     print("  [OK] Notebook 02 Complete")
     print("=" * 60)
-    print(f"\n  Part A processing complete for all 9 datasets.")
-    print(f"\n  Next: Run 03_merge_and_training.py")
+    print(f"\n  Processing complete for all Group B and Group C outputs.")
+    print(f"\n  Final: Run models/major_project.py to train the model.")
 
     return engineered
 
