@@ -14,6 +14,11 @@ An intelligent, multi-agent medical diagnostic system powered by machine learnin
   - [Pipeline Steps](#pipeline-steps)
   - [Running the Pipeline](#running-the-pipeline)
   - [Pipeline Outputs](#pipeline-outputs)
+- [Model Training (Phase 3)](#model-training-phase-3)
+  - [Algorithms](#algorithms)
+  - [Training the Models](#training-the-models)
+  - [Model Performance](#model-performance)
+  - [Trained Artifacts](#trained-artifacts)
 - [Agents](#agents)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
@@ -24,12 +29,12 @@ An intelligent, multi-agent medical diagnostic system powered by machine learnin
 
 ## Features
 
-- **Automated Data Pipeline** — End-to-end preprocessing, encoding, feature engineering, and dataset merging across 9 medical datasets.
+- **Automated Data Pipeline** — End-to-end preprocessing, encoding, and feature engineering across 9 medical datasets.
+- **Ensemble Diagnostic Engine** — Disease prediction using Random Forest, XGBoost, LightGBM, and a Voting Ensemble with confidence-ranked outputs.
 - **Multi-Agent Architecture** — Specialized agents for symptoms, differential diagnosis, risk factors, temporal patterns, emergencies, and treatment recommendations.
 - **Explainable AI (XAI)** — SHAP and LIME-based explanations for model predictions, ensuring transparency in clinical decision support.
 - **RAG Knowledge Base** — Retrieval-Augmented Generation using ChromaDB for context-aware medical knowledge retrieval.
 - **OCR Integration** — Medical report parsing using TrOCR and Donut pipelines for document digitization.
-- **Feature Importance Analysis** — Unified scoring from XGBoost, SHAP, correlation, and mutual information methods.
 
 ---
 
@@ -48,19 +53,20 @@ User Input
 |   Agent Orchestrator  |  (agents/orchestrator/)
 +-------------------+
     |
-    +---> Symptom Agent         (symptom_agent)
-    +---> Differential Agent    (differential_agent)
-    +---> Risk Agent            (risk_agent)
-    +---> Temporal Agent        (temporal_agent)
-    +---> Emergency Agent       (emergency_agent)
-    +---> Recommendation Agent  (recommendation_agent)
-    +---> XAI Agent             (xai_agent)
+    +--> Symptom Agent         (symptom_agent)
+    +--> Differential Agent    (differential_agent)
+    +--> Risk Agent            (risk_agent)
+    +--> Temporal Agent        (temporal_agent)
+    +--> Emergency Agent       (emergency_agent)
+    +--> Recommendation Agent  (recommendation_agent)
+    +--> XAI Agent             (xai_agent)
     |
     v
 +-------------------+       +-------------------+
 |   ML Models       |  <--> |   RAG Knowledge   |
-|   (XGBoost, etc.) |       |   (ChromaDB)      |
-+-------------------+       +-------------------+
+|   (Ensemble:      |       |   (ChromaDB)      |
+|    RF+XGB+LGBM)   |       +-------------------+
++-------------------+
     ^
     |
 +-------------------+
@@ -105,10 +111,7 @@ MedAgentix_AI/
 |   |-- eda.py                     # Exploratory data analysis and plots
 |   |-- encoding.py                # Binary, ordinal, and label encoding
 |   |-- feature_engineering.py     # Derived feature creation
-|   |-- balancing.py               # Class balancing (oversampling)
-|   |-- merge_datasets.py          # Dataset merging and agent preparation
-|   |-- train_split.py             # Train-test split
-|   |-- feature_importance.py      # XGBoost, SHAP, MI, correlation ranking
+|   |-- integration.py             # Agent dataset + RAG knowledge preparation
 |   +-- pipeline_runner.py         # Full pipeline orchestrator
 |
 |-- datasets/
@@ -117,24 +120,32 @@ MedAgentix_AI/
 |   |   |-- cleaned/               # Deduplicated, cleaned CSVs
 |   |   |-- encoded/               # Numerically encoded CSVs
 |   |   |-- engineered/            # Feature-engineered CSVs
-|   |   |-- merged/                # Master diagnostic dataset
-|   |   |-- feature_store/         # Train/test splits and rankings
+|   |   |-- merged/
+|   |   |   +-- model_ready.csv    # Final dataset for model training (2,520 x 28)
 |   |   |-- agent_datasets/        # Per-agent ready datasets
 |   |   |-- rag_knowledge/         # RAG text chunks
 |   |   +-- eda_plots/             # Visualization outputs
 |   +-- notebooks/                 # Step-by-step execution scripts
+|       |-- 01_common_cleaning_eda.py
+|       +-- 02_feature_engineering.py
 |
 |-- llm/                           # LLM integration
 |   |-- meditron_inference.py      # Meditron model inference
 |   |-- biogpt_fallback.py         # BioGPT fallback
 |   +-- prompt_templates.py        # Prompt engineering templates
 |
-|-- models/                        # Trained ML models
+|-- models/                        # ML models
+|   |-- train_model.py             # Phase 3 training script (RF + XGB + LGBM + Ensemble)
+|   |-- trained/                   # Saved model artifacts
+|   |   |-- random_forest.pkl      # Trained Random Forest
+|   |   |-- xgboost_model.pkl      # Trained XGBoost
+|   |   |-- lightgbm_model.pkl     # Trained LightGBM
+|   |   |-- disease_model.pkl      # Voting Ensemble (production model)
+|   |   +-- label_encoder.pkl      # Disease name encoder (40 classes)
 |   |-- symptom_model/
 |   |-- differential_model/
 |   |-- risk_model/
-|   |-- temporal_model/
-|   +-- trained/
+|   +-- temporal_model/
 |
 |-- ocr/                           # Medical report OCR
 |   |-- trocr_pipeline.py          # TrOCR-based extraction
@@ -175,7 +186,7 @@ MedAgentix_AI/
 
 The system processes 9 medical datasets organized into three groups:
 
-### Group A — Diagnostic Model (Merged)
+### Group A — Raw Datasets (Used for Pipeline Processing)
 
 | Dataset | File | Rows | Description |
 |---------|------|------|-------------|
@@ -197,32 +208,39 @@ The system processes 9 medical datasets organized into three groups:
 ### Group C — RAG Knowledge Base
 
 | Dataset | File | Rows | Purpose |
-|---------|------|------|---------|
+|---------|------|------|---------| 
 | Medical Knowledge | `Medical Knowledge Dataset.csv` | 5,000 | Disease descriptions, causes, and management |
+
+### Final Training Dataset
+
+The model is trained on `model_ready.csv` — a manually merged and feature-engineered dataset:
+
+| Property | Value |
+|----------|-------|
+| Rows | 2,520 |
+| Columns | 28 |
+| Target | `disease` (40 classes) |
+| Features | Symptoms, vitals, risk scores, temporal and differential features |
+| Location | `datasets/processed/merged/model_ready.csv` |
 
 ---
 
 ## Data Pipeline
 
-The pipeline transforms raw CSV files into ML-ready features through 13 automated steps.
+The pipeline transforms raw CSV files into processed datasets through automated steps.
 
 ### Pipeline Steps
 
-| Step | Phase | Description | Output |
-|------|-------|-------------|--------|
-| 1 | Part A | **Load** all 9 raw CSVs | In-memory DataFrames |
-| 2 | Part A | **Clean** — deduplicate, impute nulls, standardize columns | `cleaned/*.csv` |
-| 3 | Part A | **EDA** — generate distribution and correlation plots | `eda_plots/` |
-| 4 | Part A | **Encode** — binary, ordinal, and label encoding | `encoded/*.csv` |
-| 5 | Part A | **Feature Engineering** — symptom counts, risk scores, interactions | `engineered/*.csv` |
-| 6 | Part A | **Class Balancing** — oversample minority classes | In-place |
-| 7 | Part A | **Save** all processed datasets | All directories |
-| 8 | Part B | **Merge** Group A into master diagnostic dataset | `merged/master_diagnostic.csv` |
-| 9 | Part B | **Agent Datasets** — copy Group B to agent directories | `agent_datasets/` |
-| 10 | Part B | **RAG Knowledge** — create text chunks from medical knowledge | `rag_knowledge/` |
-| 11 | Part B | **Train-Test Split** — stratified 80/20 split | `feature_store/` |
-| 12 | Part B | **Feature Importance** — XGBoost, SHAP, MI, correlation | `feature_store/` |
-| 13 | Part B | **Feature Store** — ranked features and top-N selection | `feature_store/` |
+| Step | Description | Output |
+|------|-------------|--------|
+| 1 | **Load** all 9 raw CSVs | In-memory DataFrames |
+| 2 | **Clean** — deduplicate, impute nulls, standardize columns | `cleaned/*.csv` |
+| 3 | **EDA** — generate distribution and correlation plots | `eda_plots/` |
+| 4 | **Encode** — binary, ordinal, and label encoding | `encoded/*.csv` |
+| 5 | **Feature Engineering** — symptom counts, risk scores, interactions | `engineered/*.csv` |
+| 6 | **Save** all processed datasets | All directories |
+| 7 | **Agent Datasets** — prepare Group B datasets per agent | `agent_datasets/` |
+| 8 | **RAG Knowledge** — create text chunks from medical knowledge | `rag_knowledge/` |
 
 ### Running the Pipeline
 
@@ -244,13 +262,11 @@ python -m data_pipeline.pipeline_runner
 python -m data_pipeline.pipeline_runner --skip-eda
 ```
 
-**Step-by-step execution:**
+**Step-by-step execution (notebooks):**
 
 ```bash
 python datasets/notebooks/01_common_cleaning_eda.py
 python datasets/notebooks/02_feature_engineering.py
-python datasets/notebooks/03_merge_and_training.py
-python datasets/notebooks/04_feature_importance.py
 ```
 
 ### Pipeline Outputs
@@ -263,34 +279,64 @@ datasets/processed/
 |-- encoded/               # 9 encoded CSVs (all values numeric)
 |-- engineered/            # 9 feature-engineered CSVs
 |-- merged/
-|   +-- master_diagnostic.csv   # 2,520 rows x 26 columns
-|-- feature_store/
-|   |-- X_train.csv             # Training features (2,016 x 23)
-|   |-- X_test.csv              # Test features (504 x 23)
-|   |-- y_train.csv             # Training labels
-|   |-- y_test.csv              # Test labels
-|   |-- selected_features.csv   # All features ranked by importance
-|   +-- engineered_features.csv # Top-20 features for modeling
+|   +-- model_ready.csv    # Final training dataset (2,520 x 28)
 |-- agent_datasets/        # 5 agent-specific datasets
 |-- rag_knowledge/
-|   +-- knowledge_chunks.csv    # 3,000 RAG text chunks
+|   +-- knowledge_chunks.csv    # RAG text chunks
 +-- eda_plots/             # Visualization PNGs per dataset
 ```
 
-### Top Features (by Unified Importance Score)
+---
 
-| Rank | Feature | Score |
-|------|---------|-------|
-| 1 | blood_pressure | 1.0000 |
-| 2 | fever | 0.5870 |
-| 3 | severity | 0.5000 |
-| 4 | duration | 0.5000 |
-| 5 | duration_score | 0.5000 |
-| 6 | cough | 0.2388 |
-| 7 | temporal_risk_score | 0.2386 |
-| 8 | symptom_risk_interaction | 0.2386 |
-| 9 | difficulty_breathing | 0.2379 |
-| 10 | gender | 0.2377 |
+## Model Training (Phase 3)
+
+The Core ML Prediction Engine is trained via `models/train_model.py`. It builds a disease prediction system that takes patient features as input and outputs a **ranked list of possible diseases with confidence scores**.
+
+### Algorithms
+
+| Model | Type | Role | Why |
+|-------|------|------|-----|
+| **Random Forest** | Bagging (200 trees) | Robust baseline | Hard to overfit, highly explainable, excellent generalization |
+| **XGBoost** | Gradient Boosting | Primary model | Best tabular performance, built-in feature importance, handles missing values |
+| **LightGBM** | Gradient Boosting (leaf-wise) | Third model | Fast training, diverse error patterns complement XGBoost |
+| **Voting Ensemble** | Soft voting (RF + XGB + LGBM) | Production model | Averages probabilities from all 3 models for the most reliable confidence scores |
+
+### Training the Models
+
+```bash
+python models/train_model.py
+```
+
+This single command will:
+1. Load `model_ready.csv` and encode disease labels
+2. Split data 80/20 (stratified by disease class)
+3. Train all 3 individual models
+4. Evaluate each with Accuracy, Recall, F1, and ROC-AUC
+5. Display feature importance from XGBoost
+6. Build the Voting Ensemble and evaluate it
+7. Show top-3 disease predictions for sample patients
+8. Save all 5 `.pkl` artifacts to `models/trained/`
+
+### Model Performance
+
+| Model | Accuracy | Recall | F1-Score | ROC-AUC |
+|-------|----------|--------|----------|---------|
+| Random Forest | 0.9802 | 0.9804 | 0.9801 | 0.9998 |
+| XGBoost | 0.9742 | 0.9742 | 0.9738 | 0.9997 |
+| LightGBM | 0.9782 | 0.9784 | 0.9778 | 0.9997 |
+| **Voting Ensemble** | **0.9742** | **0.9744** | **0.9737** | **0.9998** |
+
+All metrics are macro-averaged across 40 disease classes. ROC-AUC uses One-vs-Rest (OVR) strategy.
+
+### Trained Artifacts
+
+| File | Contents | Purpose |
+|------|----------|---------|
+| `random_forest.pkl` | Trained Random Forest model | Backup / comparison |
+| `xgboost_model.pkl` | Trained XGBoost model | Feature importance / explainability |
+| `lightgbm_model.pkl` | Trained LightGBM model | Backup / comparison |
+| `disease_model.pkl` | Voting Ensemble (RF + XGB + LGBM) | **Production prediction engine** |
+| `label_encoder.pkl` | Maps encoded integers (0–39) to disease names | Required for converting predictions to readable names |
 
 ---
 
@@ -313,15 +359,16 @@ datasets/processed/
 | Category | Technologies |
 |----------|-------------|
 | **Language** | Python 3.12 |
-| **ML/DL** | XGBoost, LightGBM, scikit-learn |
+| **ML/DL** | XGBoost, LightGBM, Random Forest, scikit-learn |
 | **Explainability** | SHAP, LIME |
 | **LLM** | Meditron, BioGPT, LangChain, LangGraph |
 | **RAG** | ChromaDB, Transformers |
 | **OCR** | TrOCR, Donut |
 | **Backend** | Flask, SQLAlchemy |
 | **Database** | PostgreSQL |
-| **Data Processing** | Pandas, NumPy, imbalanced-learn |
+| **Data Processing** | Pandas, NumPy |
 | **Visualization** | Matplotlib, Seaborn |
+| **Serialization** | joblib, pickle |
 
 ---
 
@@ -352,7 +399,20 @@ pip install -r requirements.txt
 python -m data_pipeline.pipeline_runner --skip-eda
 ```
 
-### 2. Start the Application
+Or step-by-step:
+
+```bash
+python datasets/notebooks/01_common_cleaning_eda.py
+python datasets/notebooks/02_feature_engineering.py
+```
+
+### 2. Train the Diagnostic Model
+
+```bash
+python models/train_model.py
+```
+
+### 3. Start the Application
 
 ```bash
 python run.py
