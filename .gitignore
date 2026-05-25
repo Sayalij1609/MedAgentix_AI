@@ -4,3 +4,21 @@ __pycache__/
 *.egg-info/
 .env
 
+# Virtual environment
+.venv/
+
+# Trained model artifacts (too large for GitHub)
+models/symptom_model/ner/
+models/symptom_model/severity/
+models/symptom_model/normalizer/
+models/trained/
+
+# HuggingFace cache
+.cache/
+
+# Large binary files
+*.pkl
+*.safetensors
+*.bin
+*.pt
+*.pth
