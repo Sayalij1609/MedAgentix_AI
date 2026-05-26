@@ -1,0 +1,5049 @@
+{
+  "Age < 5": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Age > 60": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Air Pollution Exposure": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Alcohol Use": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Allergy History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Autoimmune History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Cancer History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Cardiac History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Chronic Stress": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Climate Exposure": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Dehydration": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Diabetes": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Drug Abuse": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Excess Screen Time": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Family History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Genetic Predisposition": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "High Caffeine Intake": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "High Cholesterol": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "High Fat Diet": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "High Salt Intake": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "High Sugar Intake": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Hormonal Imbalance": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Hypertension": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Injury History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Kidney Disease History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Liver Disease History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Low Fiber Diet": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Medication History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Menopause": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Mental Health Disorder": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Obesity": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Occupational Hazard": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Physical Inactivity": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Poor Diet": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Poor Hygiene": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Pregnancy": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Previous Infection": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Radiation Exposure": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Rural Exposure": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Seasonal Variation": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Sedentary Lifestyle": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Sleep Deprivation": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Smoking": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Travel History": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Unprotected Exposure": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Unsafe Water Intake": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Urban Lifestyle": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Vitamin Deficiency": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  },
+  "Weak Immunity": {
+    "associated_conditions": [
+      "Heart Disease",
+      "Diabetes",
+      "Hypertension",
+      "Stroke",
+      "Kidney Disease",
+      "Liver Disease",
+      "Respiratory Disorder",
+      "Cancer",
+      "Obesity",
+      "Depression",
+      "Anxiety",
+      "Infection Risk",
+      "Metabolic Disorder",
+      "Autoimmune Disease",
+      "Hormonal Disorder"
+    ],
+    "condition_details": {
+      "Heart Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Diabetes": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hypertension": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Stroke": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Kidney Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Liver Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Respiratory Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Cancer": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Obesity": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Depression": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Anxiety": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Infection Risk": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Metabolic Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Autoimmune Disease": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      },
+      "Hormonal Disorder": {
+        "weight": "Critical",
+        "risk_type": "Lifestyle",
+        "recommended_action": "Preventive"
+      }
+    },
+    "risk_types": [
+      "Environmental",
+      "Genetic",
+      "Lifestyle",
+      "Medical"
+    ],
+    "is_modifiable": true
+  }
+}

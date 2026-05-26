@@ -1,0 +1,80 @@
+{
+  "age_rules": [
+    {
+      "condition": "age > 60",
+      "risk_factor": "Age > 60"
+    },
+    {
+      "condition": "age < 5",
+      "risk_factor": "Age < 5"
+    }
+  ],
+  "bp_rules": [
+    {
+      "values": [
+        "High",
+        "Elevated"
+      ],
+      "risk_factor": "Hypertension"
+    }
+  ],
+  "cholesterol_rules": [
+    {
+      "threshold": 220,
+      "risk_factor": "High Cholesterol"
+    }
+  ],
+  "lifestyle_factors": [
+    "Smoking",
+    "Alcohol Use",
+    "Obesity",
+    "Sedentary Lifestyle",
+    "Poor Diet",
+    "High Salt Intake",
+    "High Sugar Intake",
+    "Chronic Stress",
+    "Sleep Deprivation",
+    "Drug Abuse",
+    "Physical Inactivity",
+    "Excess Screen Time",
+    "High Caffeine Intake",
+    "Low Fiber Diet",
+    "High Fat Diet"
+  ],
+  "medical_history_factors": [
+    "Diabetes",
+    "Family History",
+    "Genetic Predisposition",
+    "Previous Infection",
+    "Medication History",
+    "Hormonal Imbalance",
+    "Kidney Disease History",
+    "Liver Disease History",
+    "Cardiac History",
+    "Autoimmune History",
+    "Cancer History",
+    "Allergy History",
+    "Mental Health Disorder",
+    "Injury History"
+  ],
+  "environmental_factors": [
+    "Air Pollution Exposure",
+    "Occupational Hazard",
+    "Unsafe Water Intake",
+    "Radiation Exposure",
+    "Urban Lifestyle",
+    "Rural Exposure",
+    "Climate Exposure"
+  ],
+  "demographic_factors": [
+    "Pregnancy",
+    "Menopause",
+    "Weak Immunity",
+    "Vitamin Deficiency",
+    "Dehydration",
+    "Poor Hygiene",
+    "Travel History",
+    "Unprotected Exposure",
+    "Seasonal Variation"
+  ]
+}
