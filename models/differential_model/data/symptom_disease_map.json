@@ -1,0 +1,585 @@
+{
+  "abdominal_pain": [
+    "Alcoholic hepatitis",
+    "Chronic cholestasis",
+    "Hepatitis B",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Jaundice",
+    "Peptic ulcer diseae",
+    "Typhoid",
+    "hepatitis A"
+  ],
+  "abnormal_menstruation": [
+    "Hyperthyroidism",
+    "Hypothyroidism"
+  ],
+  "acidity": [
+    "GERD",
+    "Migraine"
+  ],
+  "acute_liver_failure": [
+    "Hepatitis E"
+  ],
+  "altered_sensorium": [
+    "Paralysis (brain hemorrhage)"
+  ],
+  "anxiety": [
+    "Hypoglycemia"
+  ],
+  "back_pain": [
+    "Cervical spondylosis",
+    "Dengue"
+  ],
+  "belly_pain": [
+    "Typhoid"
+  ],
+  "blackheads": [
+    "Acne"
+  ],
+  "bladder_discomfort": [
+    "Urinary tract infection"
+  ],
+  "blister": [
+    "Impetigo"
+  ],
+  "blood_in_sputum": [
+    "Tuberculosis"
+  ],
+  "bloody_stool": [
+    "Dimorphic hemmorhoids(piles)"
+  ],
+  "blurred_and_distorted_vision": [
+    "Diabetes",
+    "Hypoglycemia",
+    "Migraine"
+  ],
+  "breathlessness": [
+    "Bronchial Asthma",
+    "Heart attack",
+    "Pneumonia",
+    "Tuberculosis"
+  ],
+  "brittle_nails": [
+    "Hypothyroidism"
+  ],
+  "bruising": [
+    "Varicose veins"
+  ],
+  "burning_micturition": [
+    "Drug Reaction",
+    "Urinary tract infection"
+  ],
+  "chest_pain": [
+    "Common Cold",
+    "GERD",
+    "Heart attack",
+    "Hypertension",
+    "Pneumonia",
+    "Tuberculosis"
+  ],
+  "chills": [
+    "Allergy",
+    "Common Cold",
+    "Dengue",
+    "Malaria",
+    "Pneumonia",
+    "Tuberculosis",
+    "Typhoid"
+  ],
+  "cold_hands_and_feets": [
+    "Hypothyroidism"
+  ],
+  "coma": [
+    "Hepatitis E"
+  ],
+  "congestion": [
+    "Common Cold"
+  ],
+  "constipation": [
+    "Dimorphic hemmorhoids(piles)",
+    "Typhoid"
+  ],
+  "continuous_feel_of_urine": [
+    "Urinary tract infection"
+  ],
+  "continuous_sneezing": [
+    "Allergy",
+    "Common Cold"
+  ],
+  "cough": [
+    "Bronchial Asthma",
+    "Common Cold",
+    "GERD",
+    "Pneumonia",
+    "Tuberculosis"
+  ],
+  "cramps": [
+    "Varicose veins"
+  ],
+  "dark_urine": [
+    "Hepatitis B",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Jaundice",
+    "hepatitis A"
+  ],
+  "dehydration": [
+    "Gastroenteritis"
+  ],
+  "depression": [
+    "Hypothyroidism",
+    "Migraine"
+  ],
+  "diarrhoea": [
+    "Gastroenteritis",
+    "Hyperthyroidism",
+    "Malaria",
+    "Typhoid",
+    "hepatitis A"
+  ],
+  "dischromic _patches": [
+    "Fungal infection"
+  ],
+  "distention_of_abdomen": [
+    "Alcoholic hepatitis"
+  ],
+  "dizziness": [
+    "Cervical spondylosis",
+    "Hypertension",
+    "Hypothyroidism"
+  ],
+  "drying_and_tingling_lips": [
+    "Hypoglycemia"
+  ],
+  "enlarged_thyroid": [
+    "Hypothyroidism"
+  ],
+  "excessive_hunger": [
+    "Diabetes",
+    "Hyperthyroidism",
+    "Hypoglycemia",
+    "Migraine"
+  ],
+  "extra_marital_contacts": [
+    "AIDS"
+  ],
+  "family_history": [
+    "Bronchial Asthma",
+    "Hepatitis C"
+  ],
+  "fast_heart_rate": [
+    "Hyperthyroidism",
+    "Pneumonia"
+  ],
+  "fatigue": [
+    "Bronchial Asthma",
+    "Chicken pox",
+    "Common Cold",
+    "Dengue",
+    "Diabetes",
+    "Hepatitis B",
+    "Hepatitis C",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Hyperthyroidism",
+    "Hypoglycemia",
+    "Hypothyroidism",
+    "Jaundice",
+    "Pneumonia",
+    "Tuberculosis",
+    "Typhoid",
+    "Varicose veins"
+  ],
+  "fluid_overload": [
+    "Alcoholic hepatitis"
+  ],
+  "foul_smell_of urine": [
+    "Urinary tract infection"
+  ],
+  "headache": [
+    "(vertigo) Paroymsal  Positional Vertigo",
+    "Chicken pox",
+    "Common Cold",
+    "Dengue",
+    "Hypertension",
+    "Hypoglycemia",
+    "Malaria",
+    "Migraine",
+    "Paralysis (brain hemorrhage)",
+    "Typhoid"
+  ],
+  "high_fever": [
+    "AIDS",
+    "Bronchial Asthma",
+    "Chicken pox",
+    "Common Cold",
+    "Dengue",
+    "Hepatitis E",
+    "Impetigo",
+    "Jaundice",
+    "Malaria",
+    "Pneumonia",
+    "Tuberculosis",
+    "Typhoid"
+  ],
+  "hip_joint_pain": [
+    "Osteoarthristis"
+  ],
+  "history_of_alcohol_consumption": [
+    "Alcoholic hepatitis"
+  ],
+  "increased_appetite": [
+    "Diabetes"
+  ],
+  "indigestion": [
+    "Migraine",
+    "Peptic ulcer diseae"
+  ],
+  "inflammatory_nails": [
+    "Psoriasis"
+  ],
+  "internal_itching": [
+    "Peptic ulcer diseae"
+  ],
+  "irregular_sugar_level": [
+    "Diabetes"
+  ],
+  "irritability": [
+    "Hyperthyroidism",
+    "Hypoglycemia",
+    "Hypothyroidism",
+    "Migraine"
+  ],
+  "irritation_in_anus": [
+    "Dimorphic hemmorhoids(piles)"
+  ],
+  "itching": [
+    "Chicken pox",
+    "Chronic cholestasis",
+    "Drug Reaction",
+    "Fungal infection",
+    "Hepatitis B",
+    "Jaundice"
+  ],
+  "joint_pain": [
+    "Dengue",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Osteoarthristis",
+    "Psoriasis",
+    "hepatitis A"
+  ],
+  "knee_pain": [
+    "Osteoarthristis"
+  ],
+  "lack_of_concentration": [
+    "Hypertension"
+  ],
+  "lethargy": [
+    "Chicken pox",
+    "Diabetes",
+    "Hepatitis B",
+    "Hypothyroidism"
+  ],
+  "loss_of_appetite": [
+    "Chicken pox",
+    "Chronic cholestasis",
+    "Dengue",
+    "Hepatitis B",
+    "Hepatitis C",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Peptic ulcer diseae",
+    "Tuberculosis",
+    "hepatitis A"
+  ],
+  "loss_of_balance": [
+    "(vertigo) Paroymsal  Positional Vertigo",
+    "Cervical spondylosis",
+    "Hypertension"
+  ],
+  "loss_of_smell": [
+    "Common Cold"
+  ],
+  "malaise": [
+    "Chicken pox",
+    "Common Cold",
+    "Dengue",
+    "Hepatitis B",
+    "Pneumonia",
+    "Tuberculosis"
+  ],
+  "mild_fever": [
+    "Chicken pox",
+    "Tuberculosis",
+    "hepatitis A"
+  ],
+  "mood_swings": [
+    "Hyperthyroidism",
+    "Hypothyroidism"
+  ],
+  "movement_stiffness": [
+    "Arthritis"
+  ],
+  "mucoid_sputum": [
+    "Bronchial Asthma"
+  ],
+  "muscle_pain": [
+    "Common Cold",
+    "Dengue",
+    "Malaria",
+    "hepatitis A"
+  ],
+  "muscle_wasting": [
+    "AIDS"
+  ],
+  "muscle_weakness": [
+    "Arthritis",
+    "Hyperthyroidism"
+  ],
+  "nausea": [
+    "(vertigo) Paroymsal  Positional Vertigo",
+    "Chronic cholestasis",
+    "Dengue",
+    "Hepatitis C",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Hypoglycemia",
+    "Malaria",
+    "Typhoid",
+    "hepatitis A"
+  ],
+  "neck_pain": [
+    "Cervical spondylosis",
+    "Osteoarthristis"
+  ],
+  "nodal_skin_eruptions": [
+    "Fungal infection"
+  ],
+  "obesity": [
+    "Diabetes",
+    "Varicose veins"
+  ],
+  "pain_behind_the_eyes": [
+    "Dengue"
+  ],
+  "pain_during_bowel_movements": [
+    "Dimorphic hemmorhoids(piles)"
+  ],
+  "pain_in_anal_region": [
+    "Dimorphic hemmorhoids(piles)"
+  ],
+  "painful_walking": [
+    "Arthritis",
+    "Osteoarthristis"
+  ],
+  "palpitations": [
+    "Hypoglycemia"
+  ],
+  "passage_of_gases": [
+    "Peptic ulcer diseae"
+  ],
+  "patches_in_throat": [
+    "AIDS"
+  ],
+  "phlegm": [
+    "Common Cold",
+    "Pneumonia",
+    "Tuberculosis"
+  ],
+  "polyuria": [
+    "Diabetes"
+  ],
+  "prominent_veins_on_calf": [
+    "Varicose veins"
+  ],
+  "puffy_face_and_eyes": [
+    "Hypothyroidism"
+  ],
+  "pus_filled_pimples": [
+    "Acne"
+  ],
+  "receiving_blood_transfusion": [
+    "Hepatitis B"
+  ],
+  "receiving_unsterile_injections": [
+    "Hepatitis B"
+  ],
+  "red_sore_around_nose": [
+    "Impetigo"
+  ],
+  "red_spots_over_body": [
+    "Chicken pox",
+    "Dengue"
+  ],
+  "redness_of_eyes": [
+    "Common Cold"
+  ],
+  "restlessness": [
+    "Diabetes",
+    "Hyperthyroidism"
+  ],
+  "runny_nose": [
+    "Common Cold"
+  ],
+  "rusty_sputum": [
+    "Pneumonia"
+  ],
+  "scurring": [
+    "Acne"
+  ],
+  "shivering": [
+    "Allergy"
+  ],
+  "silver_like_dusting": [
+    "Psoriasis"
+  ],
+  "sinus_pressure": [
+    "Common Cold"
+  ],
+  "skin_peeling": [
+    "Psoriasis"
+  ],
+  "skin_rash": [
+    "Acne",
+    "Chicken pox",
+    "Dengue",
+    "Drug Reaction",
+    "Fungal infection",
+    "Impetigo",
+    "Psoriasis"
+  ],
+  "slurred_speech": [
+    "Hypoglycemia"
+  ],
+  "small_dents_in_nails": [
+    "Psoriasis"
+  ],
+  "spinning_movements": [
+    "(vertigo) Paroymsal  Positional Vertigo"
+  ],
+  "spotting_ urination": [
+    "Drug Reaction"
+  ],
+  "stiff_neck": [
+    "Arthritis",
+    "Migraine"
+  ],
+  "stomach_bleeding": [
+    "Hepatitis E"
+  ],
+  "stomach_pain": [
+    "Drug Reaction",
+    "GERD"
+  ],
+  "sunken_eyes": [
+    "Gastroenteritis"
+  ],
+  "sweating": [
+    "Heart attack",
+    "Hyperthyroidism",
+    "Hypoglycemia",
+    "Malaria",
+    "Pneumonia",
+    "Tuberculosis"
+  ],
+  "swelled_lymph_nodes": [
+    "Chicken pox",
+    "Common Cold",
+    "Tuberculosis"
+  ],
+  "swelling_joints": [
+    "Arthritis",
+    "Osteoarthristis"
+  ],
+  "swelling_of_stomach": [
+    "Alcoholic hepatitis"
+  ],
+  "swollen_blood_vessels": [
+    "Varicose veins"
+  ],
+  "swollen_extremeties": [
+    "Hypothyroidism"
+  ],
+  "swollen_legs": [
+    "Varicose veins"
+  ],
+  "throat_irritation": [
+    "Common Cold"
+  ],
+  "toxic_look_(typhos)": [
+    "Typhoid"
+  ],
+  "ulcers_on_tongue": [
+    "GERD"
+  ],
+  "unsteadiness": [
+    "(vertigo) Paroymsal  Positional Vertigo"
+  ],
+  "visual_disturbances": [
+    "Migraine"
+  ],
+  "vomiting": [
+    "(vertigo) Paroymsal  Positional Vertigo",
+    "Alcoholic hepatitis",
+    "Chronic cholestasis",
+    "Dengue",
+    "GERD",
+    "Gastroenteritis",
+    "Heart attack",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Hypoglycemia",
+    "Jaundice",
+    "Malaria",
+    "Paralysis (brain hemorrhage)",
+    "Peptic ulcer diseae",
+    "Tuberculosis",
+    "Typhoid",
+    "hepatitis A"
+  ],
+  "watering_from_eyes": [
+    "Allergy"
+  ],
+  "weakness_in_limbs": [
+    "Cervical spondylosis"
+  ],
+  "weakness_of_one_body_side": [
+    "Paralysis (brain hemorrhage)"
+  ],
+  "weight_gain": [
+    "Hypothyroidism"
+  ],
+  "weight_loss": [
+    "Diabetes",
+    "Hyperthyroidism",
+    "Jaundice",
+    "Tuberculosis"
+  ],
+  "yellow_crust_ooze": [
+    "Impetigo"
+  ],
+  "yellow_urine": [
+    "Hepatitis B"
+  ],
+  "yellowing_of_eyes": [
+    "Chronic cholestasis",
+    "Hepatitis B",
+    "Hepatitis C",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Tuberculosis",
+    "hepatitis A"
+  ],
+  "yellowish_skin": [
+    "Alcoholic hepatitis",
+    "Chronic cholestasis",
+    "Hepatitis B",
+    "Hepatitis C",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Jaundice",
+    "hepatitis A"
+  ]
+}
