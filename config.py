@@ -117,6 +117,30 @@ RISK_CONDITIONS = [
 
 
 # ============================================================
+# TEMPORAL AGENT -- MODEL PATHS
+# ============================================================
+TEMPORAL_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "temporal_model")
+TEMPORAL_DATA_DIR = os.path.join(TEMPORAL_MODEL_DIR, "data")
+TEMPORAL_TRAINED_DIR = os.path.join(TEMPORAL_MODEL_DIR, "trained")
+TEMPORAL_TRAINED_MODEL = os.path.join(TEMPORAL_TRAINED_DIR, "temporal_xgb.pkl")
+TEMPORAL_KNOWLEDGE_PATH = os.path.join(TEMPORAL_DATA_DIR, "temporal_knowledge.json")
+TEMPORAL_ENCODERS_PATH = os.path.join(TEMPORAL_DATA_DIR, "temporal_encoders.pkl")
+
+# Raw CSV
+TEMPORAL_CSV = os.path.join(RAW_DATA_DIR, "Temporal Dataset.csv")
+
+# Duration buckets (ordered by clinical severity)
+DURATION_BUCKETS = [
+    "< 1 day", "1-3 days", "3-7 days", "1-2 weeks",
+    "2-4 weeks", "1-3 months", "Chronic (>3 months)",
+]
+DURATION_BUCKET2ID = {d: i for i, d in enumerate(DURATION_BUCKETS)}
+
+# Temporal risk labels
+TEMPORAL_RISK_LABELS = ["Low", "Medium", "High", "Critical"]
+
+
+# ============================================================
 # CORE ML -- PATHS (existing Phase 3 ensemble)
 # ============================================================
 MODEL_READY_CSV = os.path.join(PROCESSED_DATA_DIR, "merged", "model_ready.csv")
