@@ -1,0 +1,1307 @@
+{
+  "(vertigo) Paroymsal  Positional Vertigo": {
+    "symptoms": [
+      "headache",
+      "loss_of_balance",
+      "nausea",
+      "spinning_movements",
+      "unsteadiness",
+      "vomiting"
+    ],
+    "symptom_count": 6,
+    "possible_confusions": [
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy",
+      "Arthritis"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "AIDS": {
+    "symptoms": [
+      "extra_marital_contacts",
+      "high_fever",
+      "muscle_wasting",
+      "patches_in_throat"
+    ],
+    "symptom_count": 4,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy",
+      "Arthritis"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Acne": {
+    "symptoms": [
+      "blackheads",
+      "pus_filled_pimples",
+      "scurring",
+      "skin_rash"
+    ],
+    "symptom_count": 4,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Alcoholic hepatitis",
+      "Allergy",
+      "Arthritis"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Alcoholic hepatitis": {
+    "symptoms": [
+      "abdominal_pain",
+      "distention_of_abdomen",
+      "fluid_overload",
+      "history_of_alcohol_consumption",
+      "swelling_of_stomach",
+      "vomiting",
+      "yellowish_skin"
+    ],
+    "symptom_count": 7,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Allergy",
+      "Arthritis"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Allergy": {
+    "symptoms": [
+      "chills",
+      "continuous_sneezing",
+      "shivering",
+      "watering_from_eyes"
+    ],
+    "symptom_count": 4,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Arthritis"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Arthritis": {
+    "symptoms": [
+      "movement_stiffness",
+      "muscle_weakness",
+      "painful_walking",
+      "stiff_neck",
+      "swelling_joints"
+    ],
+    "symptom_count": 5,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Bronchial Asthma": {
+    "symptoms": [
+      "breathlessness",
+      "cough",
+      "family_history",
+      "fatigue",
+      "high_fever",
+      "mucoid_sputum"
+    ],
+    "symptom_count": 6,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Cervical spondylosis": {
+    "symptoms": [
+      "back_pain",
+      "dizziness",
+      "loss_of_balance",
+      "neck_pain",
+      "weakness_in_limbs"
+    ],
+    "symptom_count": 5,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Chicken pox": {
+    "symptoms": [
+      "fatigue",
+      "headache",
+      "high_fever",
+      "itching",
+      "lethargy",
+      "loss_of_appetite",
+      "malaise",
+      "mild_fever",
+      "red_spots_over_body",
+      "skin_rash",
+      "swelled_lymph_nodes"
+    ],
+    "symptom_count": 11,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Chronic cholestasis": {
+    "symptoms": [
+      "abdominal_pain",
+      "itching",
+      "loss_of_appetite",
+      "nausea",
+      "vomiting",
+      "yellowing_of_eyes",
+      "yellowish_skin"
+    ],
+    "symptom_count": 7,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Common Cold": {
+    "symptoms": [
+      "chest_pain",
+      "chills",
+      "congestion",
+      "continuous_sneezing",
+      "cough",
+      "fatigue",
+      "headache",
+      "high_fever",
+      "loss_of_smell",
+      "malaise",
+      "muscle_pain",
+      "phlegm",
+      "redness_of_eyes",
+      "runny_nose",
+      "sinus_pressure",
+      "swelled_lymph_nodes",
+      "throat_irritation"
+    ],
+    "symptom_count": 17,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Dengue": {
+    "symptoms": [
+      "back_pain",
+      "chills",
+      "fatigue",
+      "headache",
+      "high_fever",
+      "joint_pain",
+      "loss_of_appetite",
+      "malaise",
+      "muscle_pain",
+      "nausea",
+      "pain_behind_the_eyes",
+      "red_spots_over_body",
+      "skin_rash",
+      "vomiting"
+    ],
+    "symptom_count": 14,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Diabetes": {
+    "symptoms": [
+      "blurred_and_distorted_vision",
+      "excessive_hunger",
+      "fatigue",
+      "increased_appetite",
+      "irregular_sugar_level",
+      "lethargy",
+      "obesity",
+      "polyuria",
+      "restlessness",
+      "weight_loss"
+    ],
+    "symptom_count": 10,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Dimorphic hemmorhoids(piles)": {
+    "symptoms": [
+      "bloody_stool",
+      "constipation",
+      "irritation_in_anus",
+      "pain_during_bowel_movements",
+      "pain_in_anal_region"
+    ],
+    "symptom_count": 5,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Drug Reaction": {
+    "symptoms": [
+      "burning_micturition",
+      "itching",
+      "skin_rash",
+      "spotting_ urination",
+      "stomach_pain"
+    ],
+    "symptom_count": 5,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Fungal infection": {
+    "symptoms": [
+      "dischromic _patches",
+      "itching",
+      "nodal_skin_eruptions",
+      "skin_rash"
+    ],
+    "symptom_count": 4,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "GERD": {
+    "symptoms": [
+      "acidity",
+      "chest_pain",
+      "cough",
+      "stomach_pain",
+      "ulcers_on_tongue",
+      "vomiting"
+    ],
+    "symptom_count": 6,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Gastroenteritis": {
+    "symptoms": [
+      "dehydration",
+      "diarrhoea",
+      "sunken_eyes",
+      "vomiting"
+    ],
+    "symptom_count": 4,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Heart attack": {
+    "symptoms": [
+      "breathlessness",
+      "chest_pain",
+      "sweating",
+      "vomiting"
+    ],
+    "symptom_count": 4,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Hepatitis B": {
+    "symptoms": [
+      "abdominal_pain",
+      "dark_urine",
+      "fatigue",
+      "itching",
+      "lethargy",
+      "loss_of_appetite",
+      "malaise",
+      "receiving_blood_transfusion",
+      "receiving_unsterile_injections",
+      "yellow_urine",
+      "yellowing_of_eyes",
+      "yellowish_skin"
+    ],
+    "symptom_count": 12,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Hepatitis C": {
+    "symptoms": [
+      "family_history",
+      "fatigue",
+      "loss_of_appetite",
+      "nausea",
+      "yellowing_of_eyes",
+      "yellowish_skin"
+    ],
+    "symptom_count": 6,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Hepatitis D": {
+    "symptoms": [
+      "abdominal_pain",
+      "dark_urine",
+      "fatigue",
+      "joint_pain",
+      "loss_of_appetite",
+      "nausea",
+      "vomiting",
+      "yellowing_of_eyes",
+      "yellowish_skin"
+    ],
+    "symptom_count": 9,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Hepatitis E": {
+    "symptoms": [
+      "abdominal_pain",
+      "acute_liver_failure",
+      "coma",
+      "dark_urine",
+      "fatigue",
+      "high_fever",
+      "joint_pain",
+      "loss_of_appetite",
+      "nausea",
+      "stomach_bleeding",
+      "vomiting",
+      "yellowing_of_eyes",
+      "yellowish_skin"
+    ],
+    "symptom_count": 13,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Hypertension": {
+    "symptoms": [
+      "chest_pain",
+      "dizziness",
+      "headache",
+      "lack_of_concentration",
+      "loss_of_balance"
+    ],
+    "symptom_count": 5,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Hyperthyroidism": {
+    "symptoms": [
+      "abnormal_menstruation",
+      "diarrhoea",
+      "excessive_hunger",
+      "fast_heart_rate",
+      "fatigue",
+      "irritability",
+      "mood_swings",
+      "muscle_weakness",
+      "restlessness",
+      "sweating",
+      "weight_loss"
+    ],
+    "symptom_count": 11,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Hypoglycemia": {
+    "symptoms": [
+      "anxiety",
+      "blurred_and_distorted_vision",
+      "drying_and_tingling_lips",
+      "excessive_hunger",
+      "fatigue",
+      "headache",
+      "irritability",
+      "nausea",
+      "palpitations",
+      "slurred_speech",
+      "sweating",
+      "vomiting"
+    ],
+    "symptom_count": 12,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Hypothyroidism": {
+    "symptoms": [
+      "abnormal_menstruation",
+      "brittle_nails",
+      "cold_hands_and_feets",
+      "depression",
+      "dizziness",
+      "enlarged_thyroid",
+      "fatigue",
+      "irritability",
+      "lethargy",
+      "mood_swings",
+      "puffy_face_and_eyes",
+      "swollen_extremeties",
+      "weight_gain"
+    ],
+    "symptom_count": 13,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Impetigo": {
+    "symptoms": [
+      "blister",
+      "high_fever",
+      "red_sore_around_nose",
+      "skin_rash",
+      "yellow_crust_ooze"
+    ],
+    "symptom_count": 5,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Jaundice": {
+    "symptoms": [
+      "abdominal_pain",
+      "dark_urine",
+      "fatigue",
+      "high_fever",
+      "itching",
+      "vomiting",
+      "weight_loss",
+      "yellowish_skin"
+    ],
+    "symptom_count": 8,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Malaria": {
+    "symptoms": [
+      "chills",
+      "diarrhoea",
+      "headache",
+      "high_fever",
+      "muscle_pain",
+      "nausea",
+      "sweating",
+      "vomiting"
+    ],
+    "symptom_count": 8,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Migraine": {
+    "symptoms": [
+      "acidity",
+      "blurred_and_distorted_vision",
+      "depression",
+      "excessive_hunger",
+      "headache",
+      "indigestion",
+      "irritability",
+      "stiff_neck",
+      "visual_disturbances"
+    ],
+    "symptom_count": 9,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Osteoarthristis": {
+    "symptoms": [
+      "hip_joint_pain",
+      "joint_pain",
+      "knee_pain",
+      "neck_pain",
+      "painful_walking",
+      "swelling_joints"
+    ],
+    "symptom_count": 6,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Paralysis (brain hemorrhage)": {
+    "symptoms": [
+      "altered_sensorium",
+      "headache",
+      "vomiting",
+      "weakness_of_one_body_side"
+    ],
+    "symptom_count": 4,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Peptic ulcer diseae": {
+    "symptoms": [
+      "abdominal_pain",
+      "indigestion",
+      "internal_itching",
+      "loss_of_appetite",
+      "passage_of_gases",
+      "vomiting"
+    ],
+    "symptom_count": 6,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Pneumonia": {
+    "symptoms": [
+      "breathlessness",
+      "chest_pain",
+      "chills",
+      "cough",
+      "fast_heart_rate",
+      "fatigue",
+      "high_fever",
+      "malaise",
+      "phlegm",
+      "rusty_sputum",
+      "sweating"
+    ],
+    "symptom_count": 11,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Psoriasis": {
+    "symptoms": [
+      "inflammatory_nails",
+      "joint_pain",
+      "silver_like_dusting",
+      "skin_peeling",
+      "skin_rash",
+      "small_dents_in_nails"
+    ],
+    "symptom_count": 6,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Tuberculosis": {
+    "symptoms": [
+      "blood_in_sputum",
+      "breathlessness",
+      "chest_pain",
+      "chills",
+      "cough",
+      "fatigue",
+      "high_fever",
+      "loss_of_appetite",
+      "malaise",
+      "mild_fever",
+      "phlegm",
+      "sweating",
+      "swelled_lymph_nodes",
+      "vomiting",
+      "weight_loss",
+      "yellowing_of_eyes"
+    ],
+    "symptom_count": 16,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Typhoid": {
+    "symptoms": [
+      "abdominal_pain",
+      "belly_pain",
+      "chills",
+      "constipation",
+      "diarrhoea",
+      "fatigue",
+      "headache",
+      "high_fever",
+      "nausea",
+      "toxic_look_(typhos)",
+      "vomiting"
+    ],
+    "symptom_count": 11,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Urinary tract infection": {
+    "symptoms": [
+      "bladder_discomfort",
+      "burning_micturition",
+      "continuous_feel_of_urine",
+      "foul_smell_of urine"
+    ],
+    "symptom_count": 4,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "Varicose veins": {
+    "symptoms": [
+      "bruising",
+      "cramps",
+      "fatigue",
+      "obesity",
+      "prominent_veins_on_calf",
+      "swollen_blood_vessels",
+      "swollen_legs"
+    ],
+    "symptom_count": 7,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  },
+  "hepatitis A": {
+    "symptoms": [
+      "abdominal_pain",
+      "dark_urine",
+      "diarrhoea",
+      "joint_pain",
+      "loss_of_appetite",
+      "mild_fever",
+      "muscle_pain",
+      "nausea",
+      "vomiting",
+      "yellowing_of_eyes",
+      "yellowish_skin"
+    ],
+    "symptom_count": 11,
+    "possible_confusions": [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "AIDS",
+      "Acne",
+      "Alcoholic hepatitis",
+      "Allergy"
+    ],
+    "differentiating_factors": [
+      "Breathlessness",
+      "CBC test",
+      "Chest pain pattern",
+      "Inflammatory markers",
+      "Oxygen saturation",
+      "PCR confirmation",
+      "Platelet count",
+      "Rash pattern",
+      "Symptom duration",
+      "Travel history"
+    ]
+  }
+}
