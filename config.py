@@ -141,6 +141,21 @@ TEMPORAL_RISK_LABELS = ["Low", "Medium", "High", "Critical"]
 
 
 # ============================================================
+# DIFFERENTIAL DIAGNOSIS AGENT -- MODEL PATHS
+# ============================================================
+DIFFERENTIAL_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "differential_model")
+DIFFERENTIAL_DATA_DIR = os.path.join(DIFFERENTIAL_MODEL_DIR, "data")
+DIFFERENTIAL_TRAINED_DIR = os.path.join(DIFFERENTIAL_MODEL_DIR, "trained")
+DIFFERENTIAL_TRAINED_MODEL = os.path.join(DIFFERENTIAL_TRAINED_DIR, "differential_xgb.pkl")
+DIFFERENTIAL_KNOWLEDGE_PATH = os.path.join(DIFFERENTIAL_DATA_DIR, "differential_knowledge.json")
+DIFFERENTIAL_SYMPTOM_MAP_PATH = os.path.join(DIFFERENTIAL_DATA_DIR, "symptom_disease_map.json")
+DIFFERENTIAL_ENCODERS_PATH = os.path.join(DIFFERENTIAL_DATA_DIR, "differential_encoders.pkl")
+
+# Raw CSV
+DIFFERENTIAL_CSV = os.path.join(RAW_DATA_DIR, "Differential Diagnosis Dataset.csv")
+
+
+# ============================================================
 # CORE ML -- PATHS (existing Phase 3 ensemble)
 # ============================================================
 MODEL_READY_CSV = os.path.join(PROCESSED_DATA_DIR, "merged", "model_ready.csv")
