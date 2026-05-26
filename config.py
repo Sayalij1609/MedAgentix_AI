@@ -89,6 +89,34 @@ TRAINING_CONFIG = {
 
 
 # ============================================================
+# RISK AGENT -- MODEL PATHS
+# ============================================================
+RISK_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "risk_model")
+RISK_DATA_DIR = os.path.join(RISK_MODEL_DIR, "data")
+RISK_TRAINED_DIR = os.path.join(RISK_MODEL_DIR, "trained")
+RISK_TRAINED_MODEL = os.path.join(RISK_TRAINED_DIR, "risk_xgb.pkl")
+RISK_KNOWLEDGE_PATH = os.path.join(RISK_DATA_DIR, "risk_knowledge.json")
+RISK_PATIENT_MAPPING_PATH = os.path.join(RISK_DATA_DIR, "patient_risk_mapping.json")
+RISK_ENCODERS_PATH = os.path.join(RISK_DATA_DIR, "risk_encoders.pkl")
+
+# Raw CSV
+RISK_FACTOR_CSV = os.path.join(RAW_DATA_DIR, "Risk Factor Dataset.csv")
+
+# Risk labels
+RISK_WEIGHT_LABELS = ["Low", "Medium", "High", "Critical"]
+RISK_WEIGHT_LABEL2ID = {label: idx for idx, label in enumerate(RISK_WEIGHT_LABELS)}
+RISK_WEIGHT_ID2LABEL = {idx: label for idx, label in enumerate(RISK_WEIGHT_LABELS)}
+
+# 15 associated conditions
+RISK_CONDITIONS = [
+    "Heart Disease", "Diabetes", "Hypertension", "Stroke", "Kidney Disease",
+    "Liver Disease", "Respiratory Disorder", "Cancer", "Obesity", "Depression",
+    "Anxiety", "Infection Risk", "Metabolic Disorder", "Autoimmune Disease",
+    "Hormonal Disorder",
+]
+
+
+# ============================================================
 # CORE ML -- PATHS (existing Phase 3 ensemble)
 # ============================================================
 MODEL_READY_CSV = os.path.join(PROCESSED_DATA_DIR, "merged", "model_ready.csv")
