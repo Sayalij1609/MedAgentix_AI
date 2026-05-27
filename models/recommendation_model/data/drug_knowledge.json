@@ -1,0 +1,234 @@
+{
+  "Asthma": {
+    "disease": "Asthma",
+    "drugs": [
+      {
+        "drug": "Salbutamol",
+        "dosage": "2 puffs",
+        "category": "Bronchodilator",
+        "route": "Inhalation",
+        "side_effects": "Tremor",
+        "contraindications": "Arrhythmia",
+        "precaution": "Use inhaler correctly",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "Medium"
+      }
+    ],
+    "drug_count": 1,
+    "categories": [
+      "Bronchodilator"
+    ]
+  },
+  "Bacterial Infection": {
+    "disease": "Bacterial Infection",
+    "drugs": [
+      {
+        "drug": "Amoxicillin",
+        "dosage": "500 mg",
+        "category": "Antibiotic",
+        "route": "Oral",
+        "side_effects": "Rash",
+        "contraindications": "Penicillin allergy",
+        "precaution": "Use only when medically indicated",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "High"
+      }
+    ],
+    "drug_count": 1,
+    "categories": [
+      "Antibiotic"
+    ]
+  },
+  "Diabetes": {
+    "disease": "Diabetes",
+    "drugs": [
+      {
+        "drug": "Insulin",
+        "dosage": "10 units",
+        "category": "Hormone",
+        "route": "Subcutaneous",
+        "side_effects": "Hypoglycemia",
+        "contraindications": "Dose errors",
+        "precaution": "Requires monitoring",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "Low"
+      }
+    ],
+    "drug_count": 1,
+    "categories": [
+      "Hormone"
+    ]
+  },
+  "Fever": {
+    "disease": "Fever",
+    "drugs": [
+      {
+        "drug": "Paracetamol",
+        "dosage": "500 mg",
+        "category": "Analgesic",
+        "route": "Oral",
+        "side_effects": "Nausea",
+        "contraindications": "Severe liver disease",
+        "precaution": "Use only supportive guidance",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "Low"
+      }
+    ],
+    "drug_count": 1,
+    "categories": [
+      "Analgesic"
+    ]
+  },
+  "GERD": {
+    "disease": "GERD",
+    "drugs": [
+      {
+        "drug": "Omeprazole",
+        "dosage": "20 mg",
+        "category": "PPI",
+        "route": "Oral",
+        "side_effects": "Headache",
+        "contraindications": "Hypersensitivity",
+        "precaution": "Short-term use preferred",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "High"
+      }
+    ],
+    "drug_count": 1,
+    "categories": [
+      "PPI"
+    ]
+  },
+  "Hypertension": {
+    "disease": "Hypertension",
+    "drugs": [
+      {
+        "drug": "Amlodipine",
+        "dosage": "5 mg",
+        "category": "Antihypertensive",
+        "route": "Oral",
+        "side_effects": "Edema",
+        "contraindications": "Severe hypotension",
+        "precaution": "Monitor blood pressure",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "Low"
+      },
+      {
+        "drug": "Losartan",
+        "dosage": "50 mg",
+        "category": "ARB",
+        "route": "Oral",
+        "side_effects": "Dizziness",
+        "contraindications": "Pregnancy",
+        "precaution": "Monitor potassium",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "Critical"
+      }
+    ],
+    "drug_count": 2,
+    "categories": [
+      "ARB",
+      "Antihypertensive"
+    ]
+  },
+  "Pain": {
+    "disease": "Pain",
+    "drugs": [
+      {
+        "drug": "Ibuprofen",
+        "dosage": "400 mg",
+        "category": "NSAID",
+        "route": "Oral",
+        "side_effects": "GI upset",
+        "contraindications": "Peptic ulcer",
+        "precaution": "Avoid prolonged unsupervised use",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "Medium"
+      }
+    ],
+    "drug_count": 1,
+    "categories": [
+      "NSAID"
+    ]
+  },
+  "Respiratory Infection": {
+    "disease": "Respiratory Infection",
+    "drugs": [
+      {
+        "drug": "Azithromycin",
+        "dosage": "500 mg",
+        "category": "Antibiotic",
+        "route": "Oral",
+        "side_effects": "Nausea",
+        "contraindications": "QT prolongation",
+        "precaution": "Avoid misuse",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "Medium"
+      }
+    ],
+    "drug_count": 1,
+    "categories": [
+      "Antibiotic"
+    ]
+  },
+  "Type 2 Diabetes": {
+    "disease": "Type 2 Diabetes",
+    "drugs": [
+      {
+        "drug": "Metformin",
+        "dosage": "500 mg",
+        "category": "Antidiabetic",
+        "route": "Oral",
+        "side_effects": "Diarrhea",
+        "contraindications": "Renal failure",
+        "precaution": "Monitor glucose",
+        "population_groups": [
+          "Adult",
+          "Geriatric",
+          "Pediatric"
+        ],
+        "risk_level": "Critical"
+      }
+    ],
+    "drug_count": 1,
+    "categories": [
+      "Antidiabetic"
+    ]
+  }
+}
