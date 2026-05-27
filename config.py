@@ -156,6 +156,22 @@ DIFFERENTIAL_CSV = os.path.join(RAW_DATA_DIR, "Differential Diagnosis Dataset.cs
 
 
 # ============================================================
+# RECOMMENDATION ENGINE -- PATHS
+# ============================================================
+RECOMMENDATION_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "recommendation_model")
+RECOMMENDATION_DATA_DIR = os.path.join(RECOMMENDATION_MODEL_DIR, "data")
+
+# Knowledge base JSONs (built by prepare_recommendation_data.py)
+DRUG_KNOWLEDGE_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "drug_knowledge.json")
+DIAGNOSTIC_KNOWLEDGE_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "diagnostic_knowledge.json")
+DISEASE_DRUG_MAP_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "disease_drug_map.json")
+DISEASE_TEST_MAP_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "disease_test_map.json")
+
+# Raw CSVs
+DRUG_CSV = os.path.join(RAW_DATA_DIR, "Drug Medication Dataset.csv")
+DIAGNOSTIC_CSV = os.path.join(RAW_DATA_DIR, "Test Diagnostic Recommendation Dataset.csv")
+
+# ============================================================
 # EMERGENCY AGENT -- MODEL PATHS
 # ============================================================
 EMERGENCY_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "emergency_model")
