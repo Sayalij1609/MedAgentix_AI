@@ -135,14 +135,17 @@ COLUMN_CONFIG = {
     "emergency": {
         "categorical": [
             "symptoms", "condition", "urgency_level", "emergency_threshold",
-            "alert_message", "triage_level", "immediate_action", "risk_note",
+            "alert_message",
         ],
-        "numeric": [],
-        "text": ["alert_message", "immediate_action", "risk_note"],
+        "numeric": [
+            "patient_age", "heart_rate_bpm", "oxygen_level_pct",
+            "body_temperature_f",
+        ],
+        "text": ["alert_message", "blood_pressure"],
         "target": "urgency_level",
         "join_key": "condition",
         "ordinal": {
-            "urgency_level": {"Non-Urgent": 1, "Moderate": 2, "Urgent": 3, "Critical": 4},
+            "urgency_level": {"Medium": 1, "High": 2, "Critical": 3},
         },
         "binary": {},
     },
