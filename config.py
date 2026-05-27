@@ -156,6 +156,35 @@ DIFFERENTIAL_CSV = os.path.join(RAW_DATA_DIR, "Differential Diagnosis Dataset.cs
 
 
 # ============================================================
+# EMERGENCY AGENT -- MODEL PATHS
+# ============================================================
+EMERGENCY_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "emergency_model")
+EMERGENCY_DATA_DIR = os.path.join(EMERGENCY_MODEL_DIR, "data")
+EMERGENCY_TRAINED_DIR = os.path.join(EMERGENCY_MODEL_DIR, "trained")
+EMERGENCY_TRAINED_MODEL = os.path.join(EMERGENCY_TRAINED_DIR, "emergency_logreg.pkl")
+EMERGENCY_SCALER_PATH = os.path.join(EMERGENCY_TRAINED_DIR, "emergency_scaler.pkl")
+EMERGENCY_KNOWLEDGE_PATH = os.path.join(EMERGENCY_DATA_DIR, "emergency_knowledge.json")
+EMERGENCY_CONDITION_MAP_PATH = os.path.join(EMERGENCY_DATA_DIR, "condition_symptom_map.json")
+EMERGENCY_ENCODERS_PATH = os.path.join(EMERGENCY_DATA_DIR, "emergency_encoders.pkl")
+
+# Raw CSV
+EMERGENCY_CSV = os.path.join(RAW_DATA_DIR, "Emergency Condition Dataset.csv")
+
+# Urgency labels (ordered by severity)
+URGENCY_LABELS = ["Medium", "High", "Critical"]
+URGENCY_LABEL2ID = {label: idx for idx, label in enumerate(URGENCY_LABELS)}
+URGENCY_ID2LABEL = {idx: label for idx, label in enumerate(URGENCY_LABELS)}
+
+# 15 emergency conditions
+EMERGENCY_CONDITIONS = [
+    "Heart Attack", "Anaphylaxis", "Kidney Failure", "Internal Bleeding",
+    "Diabetic Emergency", "Pneumonia", "Stroke", "Heat Stroke",
+    "Epileptic Seizure", "Poisoning", "Asthma Attack", "Cardiac Arrest",
+    "Severe Dehydration", "Sepsis", "COVID-19 Severe",
+]
+
+
+# ============================================================
 # CORE ML -- PATHS (existing Phase 3 ensemble)
 # ============================================================
 MODEL_READY_CSV = os.path.join(PROCESSED_DATA_DIR, "merged", "model_ready.csv")
