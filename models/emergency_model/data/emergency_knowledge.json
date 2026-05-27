@@ -1,0 +1,558 @@
+{
+  "Anaphylaxis": {
+    "typical_symptoms": [
+      "Hives + dizziness",
+      "Rash + throat tightness",
+      "Swelling + breathing difficulty"
+    ],
+    "symptom_count": 3,
+    "typical_urgency": "Critical",
+    "urgency_distribution": {
+      "Critical": 214
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 113.1,
+      "heart_rate_range": [
+        50,
+        180
+      ],
+      "oxygen_level_mean": 84.7,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.5,
+      "age_mean": 48.2
+    },
+    "thresholds": {
+      "Blood pressure critically low": 60,
+      "Immediate ICU attention required": 60,
+      "Oxygen level below 85%": 53,
+      "Heart rate above 140 bpm": 41
+    },
+    "alert_messages": {
+      "Call emergency services immediately": 68,
+      "Urgent life-saving intervention required": 57,
+      "Activate emergency response team": 46,
+      "Send patient to ICU": 43
+    }
+  },
+  "Asthma Attack": {
+    "typical_symptoms": [
+      "Chest tightness + coughing",
+      "Rapid breathing + anxiety",
+      "Wheezing + shortness of breath"
+    ],
+    "symptom_count": 3,
+    "typical_urgency": "High",
+    "urgency_distribution": {
+      "High": 193
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 112.6,
+      "heart_rate_range": [
+        50,
+        179
+      ],
+      "oxygen_level_mean": 84.3,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.3,
+      "age_mean": 50.1
+    },
+    "thresholds": {
+      "Heart rate above 120 bpm": 57,
+      "Oxygen level below 92%": 51,
+      "Medical attention within 15 minutes": 46,
+      "High fever above 102°F": 39
+    },
+    "alert_messages": {
+      "Doctor consultation needed urgently": 65,
+      "Prepare emergency medication": 64,
+      "Continuous monitoring required": 64
+    }
+  },
+  "COVID-19 Severe": {
+    "typical_symptoms": [
+      "High fever + oxygen drop",
+      "Persistent cough + breathlessness"
+    ],
+    "symptom_count": 2,
+    "typical_urgency": "High",
+    "urgency_distribution": {
+      "High": 180
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 106.1,
+      "heart_rate_range": [
+        50,
+        175
+      ],
+      "oxygen_level_mean": 83.9,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.8,
+      "age_mean": 49.0
+    },
+    "thresholds": {
+      "High fever above 102°F": 50,
+      "Heart rate above 120 bpm": 48,
+      "Medical attention within 15 minutes": 42,
+      "Oxygen level below 92%": 40
+    },
+    "alert_messages": {
+      "Doctor consultation needed urgently": 63,
+      "Prepare emergency medication": 60,
+      "Continuous monitoring required": 57
+    }
+  },
+  "Cardiac Arrest": {
+    "typical_symptoms": [
+      "No pulse + unconsciousness",
+      "Sudden collapse + no breathing"
+    ],
+    "symptom_count": 2,
+    "typical_urgency": "Critical",
+    "urgency_distribution": {
+      "Critical": 192
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 112.4,
+      "heart_rate_range": [
+        50,
+        178
+      ],
+      "oxygen_level_mean": 84.7,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.7,
+      "age_mean": 48.8
+    },
+    "thresholds": {
+      "Blood pressure critically low": 52,
+      "Oxygen level below 85%": 50,
+      "Immediate ICU attention required": 46,
+      "Heart rate above 140 bpm": 44
+    },
+    "alert_messages": {
+      "Send patient to ICU": 57,
+      "Urgent life-saving intervention required": 53,
+      "Activate emergency response team": 49,
+      "Call emergency services immediately": 33
+    }
+  },
+  "Diabetic Emergency": {
+    "typical_symptoms": [
+      "Confusion + shaking",
+      "High sugar + vomiting",
+      "Low sugar + sweating"
+    ],
+    "symptom_count": 3,
+    "typical_urgency": "High",
+    "urgency_distribution": {
+      "High": 209
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 114.1,
+      "heart_rate_range": [
+        50,
+        179
+      ],
+      "oxygen_level_mean": 85.4,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.2,
+      "age_mean": 50.5
+    },
+    "thresholds": {
+      "Medical attention within 15 minutes": 58,
+      "Oxygen level below 92%": 56,
+      "Heart rate above 120 bpm": 52,
+      "High fever above 102°F": 43
+    },
+    "alert_messages": {
+      "Continuous monitoring required": 81,
+      "Doctor consultation needed urgently": 66,
+      "Prepare emergency medication": 62
+    }
+  },
+  "Epileptic Seizure": {
+    "typical_symptoms": [
+      "Convulsions + unconsciousness",
+      "Muscle jerking + confusion"
+    ],
+    "symptom_count": 2,
+    "typical_urgency": "High",
+    "urgency_distribution": {
+      "High": 197
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 112.0,
+      "heart_rate_range": [
+        50,
+        180
+      ],
+      "oxygen_level_mean": 85.7,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.5,
+      "age_mean": 44.9
+    },
+    "thresholds": {
+      "Heart rate above 120 bpm": 68,
+      "Oxygen level below 92%": 48,
+      "High fever above 102°F": 44,
+      "Medical attention within 15 minutes": 37
+    },
+    "alert_messages": {
+      "Prepare emergency medication": 79,
+      "Doctor consultation needed urgently": 61,
+      "Continuous monitoring required": 57
+    }
+  },
+  "Heart Attack": {
+    "typical_symptoms": [
+      "Chest pain + breathlessness",
+      "Jaw pain + dizziness",
+      "Left arm pain + sweating",
+      "Severe chest pressure + nausea"
+    ],
+    "symptom_count": 4,
+    "typical_urgency": "Critical",
+    "urgency_distribution": {
+      "Critical": 215
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 113.9,
+      "heart_rate_range": [
+        51,
+        179
+      ],
+      "oxygen_level_mean": 85.2,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.3,
+      "age_mean": 44.8
+    },
+    "thresholds": {
+      "Oxygen level below 85%": 58,
+      "Immediate ICU attention required": 57,
+      "Blood pressure critically low": 55,
+      "Heart rate above 140 bpm": 45
+    },
+    "alert_messages": {
+      "Urgent life-saving intervention required": 56,
+      "Send patient to ICU": 53,
+      "Call emergency services immediately": 53,
+      "Activate emergency response team": 53
+    }
+  },
+  "Heat Stroke": {
+    "typical_symptoms": [
+      "High body temperature + confusion",
+      "Hot dry skin + dizziness"
+    ],
+    "symptom_count": 2,
+    "typical_urgency": "Critical",
+    "urgency_distribution": {
+      "Critical": 200
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 119.7,
+      "heart_rate_range": [
+        50,
+        180
+      ],
+      "oxygen_level_mean": 84.5,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.7,
+      "age_mean": 46.6
+    },
+    "thresholds": {
+      "Oxygen level below 85%": 56,
+      "Heart rate above 140 bpm": 50,
+      "Immediate ICU attention required": 49,
+      "Blood pressure critically low": 45
+    },
+    "alert_messages": {
+      "Activate emergency response team": 62,
+      "Send patient to ICU": 47,
+      "Urgent life-saving intervention required": 46,
+      "Call emergency services immediately": 45
+    }
+  },
+  "Internal Bleeding": {
+    "typical_symptoms": [
+      "Severe abdominal pain + fainting",
+      "Vomiting blood + weakness"
+    ],
+    "symptom_count": 2,
+    "typical_urgency": "Critical",
+    "urgency_distribution": {
+      "Critical": 209
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 115.9,
+      "heart_rate_range": [
+        50,
+        178
+      ],
+      "oxygen_level_mean": 85.3,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.6,
+      "age_mean": 45.7
+    },
+    "thresholds": {
+      "Blood pressure critically low": 62,
+      "Oxygen level below 85%": 55,
+      "Immediate ICU attention required": 48,
+      "Heart rate above 140 bpm": 44
+    },
+    "alert_messages": {
+      "Activate emergency response team": 55,
+      "Send patient to ICU": 54,
+      "Urgent life-saving intervention required": 51,
+      "Call emergency services immediately": 49
+    }
+  },
+  "Kidney Failure": {
+    "typical_symptoms": [
+      "Fatigue + confusion",
+      "Swelling + reduced urination"
+    ],
+    "symptom_count": 2,
+    "typical_urgency": "Critical",
+    "urgency_distribution": {
+      "Critical": 212
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 117.3,
+      "heart_rate_range": [
+        50,
+        179
+      ],
+      "oxygen_level_mean": 85.1,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.5,
+      "age_mean": 44.7
+    },
+    "thresholds": {
+      "Heart rate above 140 bpm": 60,
+      "Immediate ICU attention required": 54,
+      "Oxygen level below 85%": 51,
+      "Blood pressure critically low": 47
+    },
+    "alert_messages": {
+      "Activate emergency response team": 60,
+      "Send patient to ICU": 56,
+      "Call emergency services immediately": 49,
+      "Urgent life-saving intervention required": 47
+    }
+  },
+  "Pneumonia": {
+    "typical_symptoms": [
+      "Breathlessness + chills",
+      "Fever + cough + chest pain"
+    ],
+    "symptom_count": 2,
+    "typical_urgency": "High",
+    "urgency_distribution": {
+      "High": 208
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 114.9,
+      "heart_rate_range": [
+        51,
+        179
+      ],
+      "oxygen_level_mean": 84.5,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.5,
+      "age_mean": 47.2
+    },
+    "thresholds": {
+      "High fever above 102°F": 56,
+      "Oxygen level below 92%": 55,
+      "Medical attention within 15 minutes": 53,
+      "Heart rate above 120 bpm": 44
+    },
+    "alert_messages": {
+      "Doctor consultation needed urgently": 72,
+      "Continuous monitoring required": 70,
+      "Prepare emergency medication": 66
+    }
+  },
+  "Poisoning": {
+    "typical_symptoms": [
+      "Breathing trouble + seizures",
+      "Vomiting + unconsciousness"
+    ],
+    "symptom_count": 2,
+    "typical_urgency": "Critical",
+    "urgency_distribution": {
+      "Critical": 195
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 114.5,
+      "heart_rate_range": [
+        50,
+        179
+      ],
+      "oxygen_level_mean": 85.1,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.3,
+      "age_mean": 46.3
+    },
+    "thresholds": {
+      "Immediate ICU attention required": 55,
+      "Heart rate above 140 bpm": 50,
+      "Blood pressure critically low": 46,
+      "Oxygen level below 85%": 44
+    },
+    "alert_messages": {
+      "Urgent life-saving intervention required": 54,
+      "Send patient to ICU": 49,
+      "Call emergency services immediately": 48,
+      "Activate emergency response team": 44
+    }
+  },
+  "Sepsis": {
+    "typical_symptoms": [
+      "High fever + confusion",
+      "Low blood pressure + weakness",
+      "Rapid heart rate + chills"
+    ],
+    "symptom_count": 3,
+    "typical_urgency": "Critical",
+    "urgency_distribution": {
+      "Critical": 182
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 112.2,
+      "heart_rate_range": [
+        50,
+        180
+      ],
+      "oxygen_level_mean": 85.1,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.4,
+      "age_mean": 46.1
+    },
+    "thresholds": {
+      "Immediate ICU attention required": 55,
+      "Blood pressure critically low": 53,
+      "Heart rate above 140 bpm": 42,
+      "Oxygen level below 85%": 32
+    },
+    "alert_messages": {
+      "Call emergency services immediately": 51,
+      "Send patient to ICU": 50,
+      "Activate emergency response team": 44,
+      "Urgent life-saving intervention required": 37
+    }
+  },
+  "Severe Dehydration": {
+    "typical_symptoms": [
+      "Dry mouth + dizziness",
+      "Weakness + low urine output"
+    ],
+    "symptom_count": 2,
+    "typical_urgency": "Medium",
+    "urgency_distribution": {
+      "Medium": 192
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 115.6,
+      "heart_rate_range": [
+        50,
+        180
+      ],
+      "oxygen_level_mean": 84.9,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.7,
+      "age_mean": 48.8
+    },
+    "thresholds": {
+      "Monitor vitals every 30 minutes": 75,
+      "Observation required": 72,
+      "Fluid intake needed immediately": 45
+    },
+    "alert_messages": {
+      "Monitor symptoms closely": 74,
+      "Schedule medical evaluation": 66,
+      "Provide supportive care": 52
+    }
+  },
+  "Stroke": {
+    "typical_symptoms": [
+      "Blurred vision + weakness",
+      "Facial droop + speech issue",
+      "Loss of balance + severe headache",
+      "Sudden numbness + confusion"
+    ],
+    "symptom_count": 4,
+    "typical_urgency": "Critical",
+    "urgency_distribution": {
+      "Critical": 202
+    },
+    "typical_vitals": {
+      "heart_rate_mean": 112.6,
+      "heart_rate_range": [
+        50,
+        180
+      ],
+      "oxygen_level_mean": 84.6,
+      "oxygen_level_range": [
+        70,
+        100
+      ],
+      "body_temp_mean": 100.8,
+      "age_mean": 48.8
+    },
+    "thresholds": {
+      "Blood pressure critically low": 54,
+      "Oxygen level below 85%": 54,
+      "Heart rate above 140 bpm": 48,
+      "Immediate ICU attention required": 46
+    },
+    "alert_messages": {
+      "Send patient to ICU": 52,
+      "Activate emergency response team": 52,
+      "Call emergency services immediately": 51,
+      "Urgent life-saving intervention required": 47
+    }
+  }
+}

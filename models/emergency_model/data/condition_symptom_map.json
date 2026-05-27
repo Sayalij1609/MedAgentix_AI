@@ -1,0 +1,116 @@
+{
+  "Blurred vision + weakness": [
+    "Stroke"
+  ],
+  "Breathing trouble + seizures": [
+    "Poisoning"
+  ],
+  "Breathlessness + chills": [
+    "Pneumonia"
+  ],
+  "Chest pain + breathlessness": [
+    "Heart Attack"
+  ],
+  "Chest tightness + coughing": [
+    "Asthma Attack"
+  ],
+  "Confusion + shaking": [
+    "Diabetic Emergency"
+  ],
+  "Convulsions + unconsciousness": [
+    "Epileptic Seizure"
+  ],
+  "Dry mouth + dizziness": [
+    "Severe Dehydration"
+  ],
+  "Facial droop + speech issue": [
+    "Stroke"
+  ],
+  "Fatigue + confusion": [
+    "Kidney Failure"
+  ],
+  "Fever + cough + chest pain": [
+    "Pneumonia"
+  ],
+  "High body temperature + confusion": [
+    "Heat Stroke"
+  ],
+  "High fever + confusion": [
+    "Sepsis"
+  ],
+  "High fever + oxygen drop": [
+    "COVID-19 Severe"
+  ],
+  "High sugar + vomiting": [
+    "Diabetic Emergency"
+  ],
+  "Hives + dizziness": [
+    "Anaphylaxis"
+  ],
+  "Hot dry skin + dizziness": [
+    "Heat Stroke"
+  ],
+  "Jaw pain + dizziness": [
+    "Heart Attack"
+  ],
+  "Left arm pain + sweating": [
+    "Heart Attack"
+  ],
+  "Loss of balance + severe headache": [
+    "Stroke"
+  ],
+  "Low blood pressure + weakness": [
+    "Sepsis"
+  ],
+  "Low sugar + sweating": [
+    "Diabetic Emergency"
+  ],
+  "Muscle jerking + confusion": [
+    "Epileptic Seizure"
+  ],
+  "No pulse + unconsciousness": [
+    "Cardiac Arrest"
+  ],
+  "Persistent cough + breathlessness": [
+    "COVID-19 Severe"
+  ],
+  "Rapid breathing + anxiety": [
+    "Asthma Attack"
+  ],
+  "Rapid heart rate + chills": [
+    "Sepsis"
+  ],
+  "Rash + throat tightness": [
+    "Anaphylaxis"
+  ],
+  "Severe abdominal pain + fainting": [
+    "Internal Bleeding"
+  ],
+  "Severe chest pressure + nausea": [
+    "Heart Attack"
+  ],
+  "Sudden collapse + no breathing": [
+    "Cardiac Arrest"
+  ],
+  "Sudden numbness + confusion": [
+    "Stroke"
+  ],
+  "Swelling + breathing difficulty": [
+    "Anaphylaxis"
+  ],
+  "Swelling + reduced urination": [
+    "Kidney Failure"
+  ],
+  "Vomiting + unconsciousness": [
+    "Poisoning"
+  ],
+  "Vomiting blood + weakness": [
+    "Internal Bleeding"
+  ],
+  "Weakness + low urine output": [
+    "Severe Dehydration"
+  ],
+  "Wheezing + shortness of breath": [
+    "Asthma Attack"
+  ]
+}
