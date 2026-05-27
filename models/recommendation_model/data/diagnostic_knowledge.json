@@ -1,0 +1,237 @@
+{
+  "Bronchitis": {
+    "diagnosis": "Bronchitis",
+    "severity_distribution": {
+      "Severe": 334
+    },
+    "treatment_plans": {
+      "Hospitalization and medication": 334
+    },
+    "recommended_tests": [
+      {
+        "test": "X-Ray",
+        "why": "Evaluate internal abnormalities",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 79
+      },
+      {
+        "test": "Urine Analysis",
+        "why": "Screen abnormalities",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 73
+      },
+      {
+        "test": "CBC Test",
+        "why": "Support diagnosis",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 67
+      },
+      {
+        "test": "Liver Function Test",
+        "why": "Assess organ involvement",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 61
+      },
+      {
+        "test": "MRI Scan",
+        "why": "Advanced diagnostic confirmation",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 54
+      }
+    ],
+    "test_count": 5
+  },
+  "Cold": {
+    "diagnosis": "Cold",
+    "severity_distribution": {
+      "Mild": 163
+    },
+    "treatment_plans": {
+      "Rest and fluids": 163
+    },
+    "recommended_tests": [
+      {
+        "test": "MRI Scan",
+        "why": "Advanced diagnostic confirmation",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 40
+      },
+      {
+        "test": "X-Ray",
+        "why": "Evaluate internal abnormalities",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 35
+      },
+      {
+        "test": "CBC Test",
+        "why": "Support diagnosis",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 35
+      },
+      {
+        "test": "Urine Analysis",
+        "why": "Screen abnormalities",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 33
+      },
+      {
+        "test": "Liver Function Test",
+        "why": "Assess organ involvement",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 20
+      }
+    ],
+    "test_count": 5
+  },
+  "Flu": {
+    "diagnosis": "Flu",
+    "severity_distribution": {
+      "Moderate": 292
+    },
+    "treatment_plans": {
+      "Medication and rest": 292
+    },
+    "recommended_tests": [
+      {
+        "test": "Liver Function Test",
+        "why": "Assess organ involvement",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 65
+      },
+      {
+        "test": "MRI Scan",
+        "why": "Advanced diagnostic confirmation",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 61
+      },
+      {
+        "test": "Urine Analysis",
+        "why": "Screen abnormalities",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 58
+      },
+      {
+        "test": "X-Ray",
+        "why": "Evaluate internal abnormalities",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 55
+      },
+      {
+        "test": "CBC Test",
+        "why": "Support diagnosis",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 53
+      }
+    ],
+    "test_count": 5
+  },
+  "Healthy": {
+    "diagnosis": "Healthy",
+    "severity_distribution": {
+      "Mild": 1167
+    },
+    "treatment_plans": {
+      "Rest and fluids": 1167
+    },
+    "recommended_tests": [
+      {
+        "test": "Liver Function Test",
+        "why": "Assess organ involvement",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 261
+      },
+      {
+        "test": "Urine Analysis",
+        "why": "Screen abnormalities",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 230
+      },
+      {
+        "test": "MRI Scan",
+        "why": "Advanced diagnostic confirmation",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 228
+      },
+      {
+        "test": "X-Ray",
+        "why": "Evaluate internal abnormalities",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 227
+      },
+      {
+        "test": "CBC Test",
+        "why": "Support diagnosis",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 221
+      }
+    ],
+    "test_count": 5
+  },
+  "Pneumonia": {
+    "diagnosis": "Pneumonia",
+    "severity_distribution": {
+      "Severe": 44
+    },
+    "treatment_plans": {
+      "Hospitalization and medication": 44
+    },
+    "recommended_tests": [
+      {
+        "test": "Urine Analysis",
+        "why": "Screen abnormalities",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 13
+      },
+      {
+        "test": "Liver Function Test",
+        "why": "Assess organ involvement",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 12
+      },
+      {
+        "test": "MRI Scan",
+        "why": "Advanced diagnostic confirmation",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 8
+      },
+      {
+        "test": "X-Ray",
+        "why": "Evaluate internal abnormalities",
+        "category": "Hematology",
+        "priority": "Secondary",
+        "frequency": 6
+      },
+      {
+        "test": "CBC Test",
+        "why": "Support diagnosis",
+        "category": "Hematology",
+        "priority": "Primary",
+        "frequency": 5
+      }
+    ],
+    "test_count": 5
+  }
+}

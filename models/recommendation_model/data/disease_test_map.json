@@ -1,0 +1,92 @@
+{
+  "Bronchitis": {
+    "primary": [
+      "X-Ray",
+      "Urine Analysis",
+      "CBC Test",
+      "MRI Scan"
+    ],
+    "secondary": [
+      "Liver Function Test"
+    ],
+    "all": [
+      "X-Ray",
+      "Urine Analysis",
+      "CBC Test",
+      "Liver Function Test",
+      "MRI Scan"
+    ]
+  },
+  "Cold": {
+    "primary": [
+      "MRI Scan",
+      "CBC Test",
+      "Liver Function Test"
+    ],
+    "secondary": [
+      "X-Ray",
+      "Urine Analysis"
+    ],
+    "all": [
+      "MRI Scan",
+      "X-Ray",
+      "CBC Test",
+      "Urine Analysis",
+      "Liver Function Test"
+    ]
+  },
+  "Flu": {
+    "primary": [
+      "Liver Function Test",
+      "MRI Scan"
+    ],
+    "secondary": [
+      "Urine Analysis",
+      "X-Ray",
+      "CBC Test"
+    ],
+    "all": [
+      "Liver Function Test",
+      "MRI Scan",
+      "Urine Analysis",
+      "X-Ray",
+      "CBC Test"
+    ]
+  },
+  "Healthy": {
+    "primary": [
+      "X-Ray",
+      "CBC Test"
+    ],
+    "secondary": [
+      "Liver Function Test",
+      "Urine Analysis",
+      "MRI Scan"
+    ],
+    "all": [
+      "Liver Function Test",
+      "Urine Analysis",
+      "MRI Scan",
+      "X-Ray",
+      "CBC Test"
+    ]
+  },
+  "Pneumonia": {
+    "primary": [
+      "MRI Scan",
+      "CBC Test"
+    ],
+    "secondary": [
+      "Urine Analysis",
+      "Liver Function Test",
+      "X-Ray"
+    ],
+    "all": [
+      "Urine Analysis",
+      "Liver Function Test",
+      "MRI Scan",
+      "X-Ray",
+      "CBC Test"
+    ]
+  }
+}

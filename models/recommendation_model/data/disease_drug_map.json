@@ -1,0 +1,30 @@
+{
+  "Asthma": [
+    "Salbutamol"
+  ],
+  "Bacterial Infection": [
+    "Amoxicillin"
+  ],
+  "Diabetes": [
+    "Insulin"
+  ],
+  "Fever": [
+    "Paracetamol"
+  ],
+  "GERD": [
+    "Omeprazole"
+  ],
+  "Hypertension": [
+    "Amlodipine",
+    "Losartan"
+  ],
+  "Pain": [
+    "Ibuprofen"
+  ],
+  "Respiratory Infection": [
+    "Azithromycin"
+  ],
+  "Type 2 Diabetes": [
+    "Metformin"
+  ]
+}
