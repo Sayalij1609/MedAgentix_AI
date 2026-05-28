@@ -205,3 +205,25 @@ EMERGENCY_CONDITIONS = [
 # ============================================================
 MODEL_READY_CSV = os.path.join(PROCESSED_DATA_DIR, "merged", "model_ready.csv")
 TRAINED_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "trained")
+
+# Prediction engine model files
+ENSEMBLE_MODEL_PATH = os.path.join(TRAINED_MODEL_DIR, "disease_model.pkl")
+LABEL_ENCODER_PATH = os.path.join(TRAINED_MODEL_DIR, "label_encoder.pkl")
+
+# Feature columns expected by the ensemble model (order matters)
+PREDICTION_FEATURE_COLUMNS = [
+    "fever", "cough", "fatigue", "difficulty_breathing", "age", "gender",
+    "blood_pressure", "cholesterol", "outcome", "duration", "severity",
+    "secondary_disease", "symptom_count", "weight_max", "risk_type_list",
+    "temporal_risk_score", "diff_symptom_count", "diff_possible_disease_count",
+    "headache", "vomiting", "chest_pain", "body_pain", "rash",
+    "platelet_low", "wbc_abnormal", "risk_score", "severity_duration_interaction",
+]
+
+
+# ============================================================
+# ORCHESTRATOR -- CONFIDENCE ROUTING
+# ============================================================
+CONFIDENCE_HIGH_THRESHOLD = 0.85    # >85% → use ML prediction directly
+CONFIDENCE_MODERATE_THRESHOLD = 0.70  # 70-85% → weighted voting
+# <70% → flag for review
