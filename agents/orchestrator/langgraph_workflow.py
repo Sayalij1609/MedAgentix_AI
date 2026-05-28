@@ -92,7 +92,7 @@ def _load_agents():
     # ---- Symptom Agent ----
     try:
         from agents.symptom_agent import SymptomAgent
-        _agents["symptom"] = SymptomAgent()
+        _agents["symptom"] = SymptomAgent(use_fallback=False)
     except Exception as e:
         print(f"  [WARN] Symptom Agent failed to load: {e}")
         _agents["symptom"] = None

@@ -16,6 +16,8 @@ import json
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 
 from agents.orchestrator.langgraph_workflow import run_pipeline
+from services.prescription_service import PrescriptionService
+from utils.pdf_generator import PDFGenerator
 
 
 def print_final_diagnosis(result):
@@ -23,7 +25,7 @@ def print_final_diagnosis(result):
     final = result.get("final_diagnosis", {})
 
     if not final:
-        print("  ⚠ No final diagnosis produced!")
+        print("  [WARN] No final diagnosis produced!")
         return
 
     # Header
@@ -33,12 +35,12 @@ def print_final_diagnosis(result):
     source = final.get("diagnosis_source", "N/A")
     severity = final.get("severity", "N/A")
 
-    print(f"\n  ┌{'─' * 56}┐")
-    print(f"  │  FINAL DIAGNOSIS: {disease:<36} │")
-    print(f"  │  Confidence: {confidence:.1%} ({level}){' ' * (32 - len(level))}│")
-    print(f"  │  Source: {source:<43} │")
-    print(f"  │  Severity: {severity:<42} │")
-    print(f"  └{'─' * 56}┘")
+    print(f"\n  +{'-' * 56}+")
+    print(f"  |  FINAL DIAGNOSIS: {disease:<36} |")
+    print(f"  |  Confidence: {confidence:.1%} ({level}){' ' * (32 - len(level))}|")
+    print(f"  |  Source: {source:<43} |")
+    print(f"  |  Severity: {severity:<42} |")
+    print(f"  +{'-' * 56}+")
 
     # Reasoning
     print(f"\n  Reasoning: {final.get('reasoning', 'N/A')}")
@@ -54,55 +56,55 @@ def print_final_diagnosis(result):
             if isinstance(alt, dict):
                 name = alt.get("disease", alt.get("disease", "?"))
                 conf = alt.get("confidence", alt.get("weighted_score", 0))
-                print(f"    • {name}: {conf:.4f}")
+                print(f"    - {name}: {conf:.4f}")
 
     # Emergency
     emerg = final.get("emergency_status", {})
     if emerg.get("is_emergency"):
-        print(f"\n  🚨 EMERGENCY DETECTED")
+        print(f"\n  [ALERT] EMERGENCY DETECTED")
         print(f"     Triage Level: {emerg.get('triage_level', 'N/A')}")
         print(f"     Vital Flags: {emerg.get('vital_flag_count', 0)}")
     else:
-        print(f"\n  ✓ No emergency detected")
+        print(f"\n  [OK] No emergency detected")
 
     # Temporal
     temporal = final.get("temporal_summary", {})
     if temporal.get("overall_urgency"):
-        print(f"  ⏰ Temporal Urgency: {temporal['overall_urgency']}")
+        print(f"  [TIME] Temporal Urgency: {temporal['overall_urgency']}")
 
     # Risk
     risk_level = final.get("risk_level", "N/A")
     risk_factors = final.get("risk_factors", [])
-    print(f"  ⚠ Risk Level: {risk_level}")
+    print(f"  [RISK] Risk Level: {risk_level}")
     if risk_factors:
         print(f"    Factors: {', '.join(risk_factors[:5])}")
 
     # Symptoms
     symptoms = final.get("symptoms_extracted", [])
     if symptoms:
-        print(f"\n  🩺 Symptoms Extracted ({len(symptoms)}): {', '.join(symptoms[:8])}")
+        print(f"\n  [SYMPTOMS] Symptoms Extracted ({len(symptoms)}): {', '.join(symptoms[:8])}")
 
     # Treatment
     plan = final.get("treatment_plan", {})
     if plan:
-        print(f"\n  💊 Treatment: {plan.get('treatment_plan', 'N/A')}")
+        print(f"\n  [TREATMENT] Treatment: {plan.get('treatment_plan', 'N/A')}")
         print(f"     Follow-up: {plan.get('follow_up', 'N/A')}")
 
     # Tests
     tests = final.get("recommended_tests", [])
     if tests:
-        print(f"\n  🔬 Recommended Tests ({len(tests)}):")
+        print(f"\n  [TESTS] Recommended Tests ({len(tests)}):")
         for t in tests[:5]:
             name = t.get("test", t) if isinstance(t, dict) else t
-            print(f"    • {name}")
+            print(f"    - {name}")
 
     # Medications
     meds = final.get("recommended_medications", [])
     if meds:
-        print(f"\n  💉 Medications ({len(meds)}):")
+        print(f"\n  [MEDICATIONS] Medications ({len(meds)}):")
         for m in meds[:3]:
             if isinstance(m, dict):
-                print(f"    • {m.get('drug', '?')} {m.get('dosage', '')} ({m.get('route', '')})")
+                print(f"    - {m.get('drug', '?')} {m.get('dosage', '')} ({m.get('route', '')})")
 
     # Risk alerts
     alerts = final.get("risk_alerts", [])
@@ -184,7 +186,10 @@ def run_tests():
         },
     ]
 
-    for test in test_cases:
+    rx_service = PrescriptionService()
+    pdf_gen = PDFGenerator()
+
+    for idx, test in enumerate(test_cases, 1):
         print(f"\n{'=' * 60}")
         print(f"  {test['name']}")
         print(f"{'=' * 60}")
@@ -197,6 +202,22 @@ def run_tests():
 
         result = run_pipeline(test["input"])
         print_final_diagnosis(result)
+
+        # Generate aligned prescription in the backend
+        final_diag = result.get("final_diagnosis", {})
+        if final_diag:
+            text_rx = rx_service.format_prescription(final_diag, test["input"])
+            
+            # Save textual format
+            txt_path = f"test_prescription_{idx}.txt"
+            with open(txt_path, "w", encoding="utf-8") as f:
+                f.write(text_rx)
+            print(f"\n  [SAVED] Text Prescription -> {txt_path}")
+            
+            # Save high-fidelity PDF sheet
+            pdf_path = f"test_prescription_{idx}.pdf"
+            pdf_gen.generate_prescription_pdf(final_diag, test["input"], pdf_path)
+            print(f"  [SAVED] PDF Prescription  -> {pdf_path}")
 
 
 def main():
