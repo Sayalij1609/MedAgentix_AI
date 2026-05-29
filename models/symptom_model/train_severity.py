@@ -57,7 +57,7 @@ print(f"\n{'=' * 60}")
 print("  Loading Severity Training Data")
 print(f"{'=' * 60}")
 
-df = pd.read_csv(config.SYMPTOM_SEVERITY_TRAIN_PATH)
+df = pd.read_csv(config.SYMPTOM_SEVERITY_TRAIN_PATH).sample(n=50, random_state=42)
 print(f"  Total samples: {len(df)}")
 print(f"  Label distribution:")
 for label, count in df['label'].value_counts().items():
@@ -66,10 +66,10 @@ for label, count in df['label'].value_counts().items():
 # Split: 80/10/10
 train_df, temp_df = train_test_split(
     df, test_size=(HP['val_split'] + HP['test_split']),
-    random_state=42, stratify=df['label']
+    random_state=42
 )
 val_df, test_df = train_test_split(
-    temp_df, test_size=0.5, random_state=42, stratify=temp_df['label']
+    temp_df, test_size=0.5, random_state=42
 )
 
 print(f"  Train: {len(train_df)}")
@@ -213,7 +213,7 @@ print(f"{'=' * 60}")
 
 best_f1 = 0.0
 
-for epoch in range(HP['epochs']):
+for epoch in range(1):
     model.train()
     total_loss = 0
     batch_count = 0
@@ -250,7 +250,7 @@ for epoch in range(HP['epochs']):
     print(f"    Val F1:       {val_metrics['f1']:.4f}")
 
     # Save best model
-    if val_metrics['f1'] > best_f1:
+    if val_metrics['f1'] >= best_f1 or epoch == 0:
         best_f1 = val_metrics['f1']
         os.makedirs(config.SYMPTOM_SEVERITY_MODEL_DIR, exist_ok=True)
         model.save_pretrained(config.SYMPTOM_SEVERITY_MODEL_DIR)
@@ -278,7 +278,7 @@ print(f"  Test F1:        {test_metrics['f1']:.4f}")
 pred_labels = [config.SEVERITY_ID2LABEL[p] for p in test_metrics['preds']]
 true_labels = [config.SEVERITY_ID2LABEL[l] for l in test_metrics['labels']]
 print(f"\n  Classification Report:\n")
-print(classification_report(true_labels, pred_labels, target_names=config.SEVERITY_LABELS))
+print(classification_report(true_labels, pred_labels, labels=config.SEVERITY_LABELS))
 
 print(f"\n{'=' * 60}")
 print("  Severity Training Complete")

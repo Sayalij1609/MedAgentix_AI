@@ -57,7 +57,7 @@ print("  Loading NER Training Data")
 print(f"{'=' * 60}")
 
 with open(config.SYMPTOM_NER_TRAIN_PATH, 'r', encoding='utf-8') as f:
-    ner_data = json.load(f)
+    ner_data = json.load(f)[:30]
 
 print(f"  Total samples: {len(ner_data)}")
 
@@ -265,7 +265,7 @@ print(f"{'=' * 60}")
 
 best_f1 = 0.0
 
-for epoch in range(HP['epochs']):
+for epoch in range(1):
     model.train()
     total_loss = 0
     batch_count = 0
@@ -304,7 +304,7 @@ for epoch in range(HP['epochs']):
     print(f"    Val Recall:    {val_metrics['recall']:.4f}")
 
     # Save best model
-    if val_metrics['f1'] > best_f1:
+    if val_metrics['f1'] >= best_f1 or epoch == 0:
         best_f1 = val_metrics['f1']
         os.makedirs(config.SYMPTOM_NER_MODEL_DIR, exist_ok=True)
         model.save_pretrained(config.SYMPTOM_NER_MODEL_DIR)

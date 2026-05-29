@@ -153,7 +153,7 @@ for i in range(min(5, len(X_test))):
 
     pred_label = config.URGENCY_ID2LABEL[pred_class]
     true_label = config.URGENCY_ID2LABEL[true_class]
-    correct = "✓" if pred_class == true_class else "✗"
+    correct = "OK" if pred_class == true_class else "FAIL"
 
     print(f"\n  Patient {i+1}:  Predicted={pred_label}  Actual={true_label}  {correct}")
     for cls_idx, cls_label in config.URGENCY_ID2LABEL.items():
