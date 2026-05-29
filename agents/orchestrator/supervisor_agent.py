@@ -387,6 +387,9 @@ class SupervisorAgent:
             "risk_alerts": rec.get("risk_alerts", []),
             "treatment_plan": rec.get("treatment_plan", {}),
 
+            # SHAP Explanations
+            "shap_explanation": prediction.get("shap_explanation"),
+
             # Symptom summary
             "symptoms_extracted": [
                 s.get("canonical_name", s.get("raw_text", ""))

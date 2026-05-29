@@ -221,6 +221,13 @@ def run_tests():
 
 
 def main():
+    # Reconfigure stdout to UTF-8 to handle clinical unicode symbols safely on Windows
+    if sys.stdout.encoding != 'utf-8':
+        try:
+            sys.stdout.reconfigure(encoding='utf-8')
+        except Exception:
+            pass
+
     print("=" * 60)
     print("  MedAgentix AI -- Full Diagnostic Pipeline Test")
     print("=" * 60)

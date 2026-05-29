@@ -13,7 +13,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image
 
 class PDFGenerator:
     """
@@ -278,6 +278,28 @@ class PDFGenerator:
             story.append(Paragraph(f"<b>Differential Candidates Assessed:</b> &nbsp;&nbsp;{', &nbsp;&nbsp;'.join(alt_texts)}", ParagraphStyle('AltText', parent=body_style, fontSize=8)))
         
         story.append(Spacer(1, 10))
+
+        # ----------------------------------------------------
+        # 5b. AI DIAGNOSTICS & SHAP EXPLAINABILITY (XAI)
+        # ----------------------------------------------------
+        shap_explanation = final.get("shap_explanation", {})
+        if shap_explanation and isinstance(shap_explanation, dict):
+            plot_path = shap_explanation.get("plot_path")
+            if plot_path and os.path.exists(plot_path):
+                story.append(Paragraph("AI EXPLAINABILITY & BIOMARKER REASONING (SHAP)", h1_style))
+                story.append(Paragraph(
+                    "Below is the Shapley additive explanations (SHAP) feature importance chart. "
+                    "It shows which patient biomarkers and symptoms contributed to the model's primary diagnostic decision. "
+                    "<b>Blue bars (positive)</b> indicate features that supported this diagnosis, while "
+                    "<b>red bars (negative)</b> indicate factors that pushed against it.", 
+                    body_style
+                ))
+                story.append(Spacer(1, 5))
+                # Add the horizontal bar plot centered
+                shap_img = Image(plot_path, width=390, height=192)
+                shap_img.hAlign = 'CENTER'
+                story.append(shap_img)
+                story.append(Spacer(1, 10))
 
         # ----------------------------------------------------
         # 6. Rx - PHARMACEUTICAL DRUG RECOMMENDATIONS

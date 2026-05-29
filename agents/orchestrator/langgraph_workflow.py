@@ -145,6 +145,14 @@ def _load_agents():
     except Exception as e:
         print(f"  [WARN] Prediction Engine failed to load: {e}")
 
+    # ---- Explanation Engine (XAI SHAP Explainer) ----
+    try:
+        from xai.explanation_engine import ExplanationEngine
+        _agents["explanation_engine"] = ExplanationEngine()
+    except Exception as e:
+        print(f"  [WARN] Explanation Engine failed to load: {e}")
+        _agents["explanation_engine"] = None
+
     # ---- Supervisor Agent ----
     from agents.orchestrator.supervisor_agent import SupervisorAgent
     _agents["supervisor"] = SupervisorAgent()
@@ -505,6 +513,19 @@ def node_predict(state: DiagnosticState) -> dict:
             "top_diseases": top_diseases,
             "features_used": {k: v for k, v in features.items() if v != 0},
         }
+
+        # Compute dynamic SHAP explanation if available
+        explainer = _agents.get("explanation_engine")
+        if explainer:
+            try:
+                plot_filename = f"shap_explanation_{primary['disease'].replace(' ', '_').lower()}.png"
+                plot_path = os.path.join(config.PROJECT_ROOT, plot_filename)
+                
+                shap_explanation = explainer.explain_diagnosis(X, primary["disease"], plot_path)
+                result["shap_explanation"] = shap_explanation
+                log.append(f"[6/8] Prediction Engine — SHAP plot generated: {plot_filename}")
+            except Exception as ex:
+                print(f"  [WARN] SHAP generation failed inside predict node: {ex}")
 
         log.append(
             f"[6/8] Prediction Engine — {primary['disease']} "
