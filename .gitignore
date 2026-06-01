@@ -22,3 +22,14 @@ models/trained/
 *.bin
 *.pt
 *.pth
+
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Build output
+dist/
+frontend/dist/
+
+# Vite cache
+.vite/
