@@ -1,0 +1,808 @@
+##############################################################################
+  MedAgentix AI -- CLINICAL DIAGNOSTIC REPORT
+  Generated: 02-Jun-2026 21:18
+##############################################################################
+
+##############################################################################
+  CLINICAL DIAGNOSTIC REPORT
+  Patient: RAHUL SHARMA
+  Report ID: MED-202606022117
+  Generated: 02-Jun-2026 21:17:58
+##############################################################################
+
+
+  PATIENT INFORMATION
+  ~~~~~~~~~~~~~~~~~~~
+
+      Name...................................... Rahul Sharma
+      Age....................................... 35 years
+      Gender.................................... Male
+      Report Date............................... 02-Jun-2026  21:17
+      Report ID................................. MED-202606022117
+
+  PRESENTING COMPLAINTS
+  ~~~~~~~~~~~~~~~~~~~~~
+
+      [+] Fever                          Duration: 5 days
+      [+] Cough                          Duration: 5 days
+      [+] Fatigue                        Duration: -
+      [+] Body Pain                      Duration: 5 days
+      [+] Headache                       Duration: 3 days
+      [+] Difficulty Breathing           Duration: 2 days
+
+  VITALS
+  ~~~~~~
+
+      Heart Rate................................ 85 bpm  [Normal sinus]
+      SpO2...................................... 96%  [Normal]
+      Blood Pressure............................ 120/80 mmHg
+      Temperature............................... 101.5 F
+      Cholesterol............................... 190 mg/dL
+
+  MEDICAL HISTORY
+  ~~~~~~~~~~~~~~~
+
+      Past Medical History (PMH)................ None documented
+      Social / Lifestyle Factors................ None documented
+
+==============================================================================
+  SECTION 1: CLINICAL IMPRESSION
+==============================================================================
+
+      Primary Diagnosis......................... COVID-19  (ICD-10: U07.1)
+      Diagnostic Confidence..................... 70.0%  [Moderate (70-80%)]
+      Clinical Severity......................... Severe
+      Disease Category.......................... Respiratory Viral Infection
+      Diagnosis Source.......................... Meditron-7B LLM Fallback (Low-Confidence Override)
+      Agent Agreement Score..................... 0.0
+
+==============================================================================
+  SECTION 2: PATHOPHYSIOLOGY & CLINICAL CONTEXT
+==============================================================================
+
+      Disease Mechanism:
+        SARS-CoV-2 binds ACE2 receptors on type II pneumocytes,
+        triggering inflammatory cascade. Viral replication causes
+        diffuse alveolar damage, cytokine storm in severe cases.
+
+      Key Diagnostic Markers.................... CRP elevated, Lymphopenia, D-dimer may be elevated
+      Expected Prognosis........................ Self-limiting in 85% of cases; 10-15% may require supportive care
+
+==============================================================================
+  SECTION 3: CLINICAL SYMPTOM ANALYSIS
+==============================================================================
+
+      Symptom                      Severity       Duration         Match Type
+      ............................ .............. ................ ................
+      Fever                        Moderate       5 days           NLP extraction
+      Cough                        Moderate       5 days           NLP extraction
+      Fatigue                      Moderate       -                NLP extraction
+      Abdominal Pain               Moderate       -                NLP extraction
+      Headache                     Moderate       3 days           NLP extraction
+      Breathlessness               Moderate       -                NLP extraction
+
+      Total Symptoms Identified................. 6
+      Symptom-Disease Correlation............... Partial
+
+==============================================================================
+  SECTION 4: RISK STRATIFICATION
+==============================================================================
+
+      Overall Risk Level........................ Low
+      Identified Risk Factors................... 0 factors
+
+==============================================================================
+  SECTION 5: EMERGENCY TRIAGE ASSESSMENT
+==============================================================================
+
+      Emergency Classification.................. Non-Emergency
+      Triage Level (ESI)........................ Level 3
+
+      Symptom Progression....................... Stable
+      Temporal Urgency.......................... High
+      Onset Category............................ N/A
+
+==============================================================================
+  SECTION 6: PREDICTIVE MODEL OUTPUT
+==============================================================================
+
+      Ensemble Prediction....................... peptic ulcer
+      Prediction Probability.................... 0.3395  (34.0%)
+      Model Architecture........................ Voting Ensemble (XGBoost + RF + LightGBM)
+
+      Ranked Differential (ML-based):
+      Rank   Disease                            Probability    Decision
+      ----   .................................. .............. ..........
+      1      peptic ulcer                       0.3395         << Selected
+      2      flu                                0.2352         
+      3      stroke                             0.1205         
+      4      migraine                           0.0587         
+      5      pneumonia                          0.0371         
+
+      Active Feature Signals (17 features):
+        Fever                            = 1
+        Cough                            = 1
+        Fatigue                          = 1
+        Difficulty Breathing             = 1
+        Age                              = 35
+        Gender                           = 1
+        Blood Pressure                   = 1
+        Cholesterol                      = 190
+        Duration                         = 3
+        Severity                         = 2
+
+==============================================================================
+  SECTION 7: DIFFERENTIAL DIAGNOSIS & CLINICAL REASONING
+==============================================================================
+
+      Differential Diagnosis List:
+      #    Condition                            Match Score   
+      --   .................................... ..............
+      1    Bronchial Asthma                     22.7%         
+      2    Heart attack                         6.8%          
+      3    Paralysis (brain hemorrhage)         3.8%          
+      4    AIDS                                 2.9%          
+      5    GERD                                 2.4%          
+
+      LLM Fallback Invoked...................... Yes
+      LLM Model Used............................ Meditron_7B
+
+      Clinical Reasoning:
+      -------------------------------------------------------
+      [Source: Knowledge-Based Clinical Analysis]
+
+        Clinical assessment of a 35-year-old male presenting with
+        Fever, Cough, Fatigue, Abdominal Pain. Pathological basis:
+        SARS-CoV-2 binds ACE2 receptors on type II pneumocytes,
+        triggering inflammatory cascade. Viral replication causes
+        diffuse alveolar damage, cytokine storm in severe cases. The
+        symptom constellation of Fever, Cough, Fatigue is consistent
+        with the clinical presentation of COVID-19. Moderate
+        confidence (70.0%) warrants confirmatory investigations
+        before definitive diagnosis. Vital sign abnormalities noted:
+        pyrexia (101.5 F). These findings correlate with severe
+        disease severity and support the current triage
+        classification. Recommended diagnostic markers: CRP elevated,
+        Lymphopenia, D-dimer may be elevated. Correlate with clinical
+        findings for diagnostic confirmation. Expected prognosis:
+        Self-limiting in 85% of cases; 10-15% may require supportive
+        care.
+
+==============================================================================
+  SECTION 8: RECOMMENDED DIAGNOSTIC WORKUP
+==============================================================================
+
+      #    Investigation                        Priority     Department
+      --   .................................... ............ ................
+      1    RT-PCR Test (Nasal Swab)             Primary      Molecular Biology
+           Clinical Indication: Gold standard for confirming SARS-CoV-2 infection
+      2    Rapid Antigen Test                   Primary      Immunology
+           Clinical Indication: Quick screening for active COVID-19 infection
+      3    Pulse Oximetry                       Primary      Vital Signs
+           Clinical Indication: Continuous monitoring of oxygen saturation
+      4    Chest X-Ray                          Primary      Radiology
+           Clinical Indication: Detect lung involvement and pneumonia
+      5    CBC (Complete Blood Count)           Secondary    Hematology
+           Clinical Indication: Check for lymphopenia and inflammatory markers
+      6    CRP (C-Reactive Protein)             Secondary    Biochemistry
+           Clinical Indication: Assess level of inflammation in the body
+      7    D-Dimer                              Secondary    Hematology
+           Clinical Indication: Screen for blood clotting risk in severe cases
+
+==============================================================================
+  SECTION 9: PHARMACOTHERAPY RECOMMENDATIONS
+==============================================================================
+
+      1. Paracetamol  [Antipyretic / Analgesic]
+         Dosage              : 500-1000 mg every 4-6 hours
+         Route               : Oral
+         Adverse Effects      : Nausea (rare)
+         Contraindications    : Severe liver disease
+         Clinical Precaution  : First-line for fever and body ache
+
+      2. Zinc + Vitamin C  [Supplement]
+         Dosage              : Zinc 50mg + Vit C 1000mg daily
+         Route               : Oral
+         Adverse Effects      : Nausea at high doses
+         Contraindications    : Kidney stones (Vit C)
+         Clinical Precaution  : Supportive therapy; not a cure
+
+      3. Dexamethasone  [Corticosteroid]
+         Dosage              : 6 mg once daily for up to 10 days
+         Route               : Oral / IV
+         Adverse Effects      : Hyperglycemia, insomnia
+         Contraindications    : Mild cases not requiring oxygen
+         Clinical Precaution  : Only for severe cases requiring oxygen support
+
+      4. Ivermectin (if prescribed)  [Antiparasitic]
+         Dosage              : As per physician guidance
+         Route               : Oral
+         Adverse Effects      : Nausea, dizziness
+         Contraindications    : Pregnancy, liver disease
+         Clinical Precaution  : Use only under medical supervision
+
+==============================================================================
+  SECTION 10: CLINICAL MANAGEMENT PLAN
+==============================================================================
+
+      Recommended Treatment..................... Hospitalization and medication. Immediate medical attention.
+      Clinical Urgency.......................... High
+      Follow-up Schedule........................ Requires continuous monitoring and specialist consultation.
+      Risk Classification....................... Low
+      Emergency Protocol........................ Standard care pathway
+
+------------------------------------------------------------------------------
+  CLINICAL ALERTS & CONTRAINDICATION FLAGS
+------------------------------------------------------------------------------
+
+      >> [WARN] Paracetamol: Contraindicated in Severe liver disease.
+      Verify patient history before administration.
+
+      >> [WARN] Zinc + Vitamin C: Contraindicated in Kidney stones
+      (Vit C). Verify patient history before administration.
+
+      >> [WARN] Dexamethasone: Contraindicated in Mild cases not
+      requiring oxygen. Verify patient history before administration.
+
+      >> [WARN] Ivermectin (if prescribed): Contraindicated in
+      Pregnancy, liver disease. Verify patient history before
+      administration.
+
+      >> [CRITICAL] Severe/Critical condition -- hospitalization may
+      be required. Ensure immediate medical supervision.
+
+
+==============================================================================
+  AI-Assisted Clinical Report | MedAgentix AI v2.0
+  Pipeline: ClinicalBERT NER + Voting Ensemble (XGB/RF/LGBM)
+  Confidence Routing: >85% Direct | 70-85% Validated | <70% Meditron-7B
+  Framework: LangGraph Multi-Agent Orchestration
+------------------------------------------------------------------------------
+  DISCLAIMER: AI-generated diagnostic support tool. All findings
+  require clinical correlation. Verify diagnosis with laboratory
+  investigations and imaging before initiating treatment.
+  Not a substitute for clinical judgement.
+==============================================================================
+
+
+##############################################################################
+  CLINICAL DIAGNOSTIC REPORT
+  Patient: RAMESH GUPTA
+  Report ID: MED-202606022118
+  Generated: 02-Jun-2026 21:18:00
+##############################################################################
+
+
+  PATIENT INFORMATION
+  ~~~~~~~~~~~~~~~~~~~
+
+      Name...................................... Ramesh Gupta
+      Age....................................... 72 years
+      Gender.................................... Male
+      Report Date............................... 02-Jun-2026  21:18
+      Report ID................................. MED-202606022118
+
+  PRESENTING COMPLAINTS
+  ~~~~~~~~~~~~~~~~~~~~~
+
+      [+] Fatigue                        Duration: -
+      [+] Difficulty Breathing           Duration: -
+      [+] Chest Pain                     Duration: since yesterday
+      [+] Vomiting                       Duration: -
+
+  VITALS
+  ~~~~~~
+
+      Heart Rate................................ 110 bpm  [Tachycardia]
+      SpO2...................................... 91%  [Hypoxemia]
+      Blood Pressure............................ 165/100 mmHg
+      Temperature............................... 99.2 F
+      Cholesterol............................... 260 mg/dL
+
+  MEDICAL HISTORY
+  ~~~~~~~~~~~~~~~
+
+      Past Medical History (PMH)................ Cardiac History, Hypertension
+      Social / Lifestyle Factors................ Smoking, Obesity
+
+==============================================================================
+  SECTION 1: CLINICAL IMPRESSION
+==============================================================================
+
+      Primary Diagnosis......................... Heart attack  (ICD-10: I21.9)
+      Diagnostic Confidence..................... 96.4%  [High (>90%)]
+      Clinical Severity......................... Critical
+      Disease Category.......................... Cardiovascular / Acute Coronary Syndrome
+      Diagnosis Source.......................... Differential Diagnosis Engine (Knowledge-Based)
+      Agent Agreement Score..................... 0.67
+
+      Differential Considerations:
+      Rank   Condition                          Probability 
+      ----   .................................. ............
+      1      Bronchial Asthma                   0.2%         << Primary
+
+==============================================================================
+  SECTION 2: PATHOPHYSIOLOGY & CLINICAL CONTEXT
+==============================================================================
+
+      Disease Mechanism:
+        Atherosclerotic plaque rupture triggers thrombus formation in
+        coronary artery, causing myocardial ischemia and necrosis.
+        ST-elevation indicates transmural infarction (STEMI);
+        non-ST-elevation (NSTEMI) involves subendocardial injury.
+
+      Key Diagnostic Markers.................... Troponin I/T, ECG (ST-elevation), CK-MB, BNP, Echocardiography
+      Expected Prognosis........................ Time-critical; door-to-balloon <90 min for STEMI; variable based on infarct size
+
+==============================================================================
+  SECTION 3: CLINICAL SYMPTOM ANALYSIS
+==============================================================================
+
+      Symptom                      Severity       Duration         Match Type
+      ............................ .............. ................ ................
+      Chest Pain                   Moderate       since yesterday  NLP extraction
+      Breathlessness               Moderate       2 days           NLP extraction
+      Fatigue                      Moderate       -                NLP extraction
+      Vomiting                     Moderate       -                NLP extraction
+
+      Total Symptoms Identified................. 4
+      Symptom-Disease Correlation............... Consistent
+
+==============================================================================
+  SECTION 4: RISK STRATIFICATION
+==============================================================================
+
+      Overall Risk Level........................ High
+      Identified Risk Factors................... 6 factors
+
+      Risk Factor                          Weight     Category
+      .................................... .......... ................
+      Age > 60                             -          Clinical
+      Hypertension                         -          Clinical
+      High Cholesterol                     -          Clinical
+      Smoking                              -          Clinical
+      Obesity                              -          Clinical
+      Cardiac History                      -          Clinical
+
+==============================================================================
+  SECTION 5: EMERGENCY TRIAGE ASSESSMENT
+==============================================================================
+
+      Emergency Classification.................. CRITICAL -- IMMEDIATE INTERVENTION REQUIRED
+      Triage Level (ESI)........................ Level 1
+
+      Abnormal Vital Sign Flags:
+        [FLAG] Oxygen Level: 92  (Normal threshold: ?)
+
+      Symptom Progression....................... Stable
+      Temporal Urgency.......................... Critical
+      Onset Category............................ N/A
+
+==============================================================================
+  SECTION 6: PREDICTIVE MODEL OUTPUT
+==============================================================================
+
+      Ensemble Prediction....................... peptic ulcer
+      Prediction Probability.................... 0.4173  (41.7%)
+      Model Architecture........................ Voting Ensemble (XGBoost + RF + LightGBM)
+
+      Ranked Differential (ML-based):
+      Rank   Disease                            Probability    Decision
+      ----   .................................. .............. ..........
+      1      peptic ulcer                       0.4173         << Selected
+      2      stroke                             0.2216         
+      3      flu                                0.0502         
+      4      allergy                            0.0321         
+      5      appendicitis                       0.0267         
+
+      Active Feature Signals (16 features):
+        Fatigue                          = 1
+        Difficulty Breathing             = 1
+        Age                              = 72
+        Gender                           = 1
+        Blood Pressure                   = 2
+        Cholesterol                      = 260
+        Duration                         = 3
+        Severity                         = 3
+        Symptom Count                    = 4
+        Temporal Risk Score              = 1.0
+
+==============================================================================
+  SECTION 7: DIFFERENTIAL DIAGNOSIS & CLINICAL REASONING
+==============================================================================
+
+      Differential Diagnosis List:
+      #    Condition                            Match Score   
+      --   .................................... ..............
+      1    Heart attack                         96.4%         
+      2    Bronchial Asthma                     0.2%          
+
+      LLM Fallback Invoked...................... No (confidence sufficient)
+
+      Clinical Reasoning:
+      -------------------------------------------------------
+      [Source: Knowledge-Based Clinical Analysis]
+
+        Clinical assessment of a 72-year-old male presenting with
+        Chest Pain, Breathlessness, Fatigue, Vomiting. Pathological
+        basis: Atherosclerotic plaque rupture triggers thrombus
+        formation in coronary artery, causing myocardial ischemia and
+        necrosis. ST-elevation indicates transmural infarction
+        (STEMI); non-ST-elevation (NSTEMI) involves subendocardial
+        injury. The symptom constellation of Chest Pain,
+        Breathlessness, Fatigue is consistent with the clinical
+        presentation of Heart attack. High diagnostic confidence
+        (96.4%) supports this as the primary working diagnosis.
+        Identified risk factors (Age > 60, Hypertension, High
+        Cholesterol, Smoking) further support the clinical suspicion
+        and may influence disease severity and management approach.
+        Vital sign abnormalities noted: tachycardia (110 bpm),
+        hypoxemia (SpO2 91%). These findings correlate with critical
+        disease severity and support the current triage
+        classification. EMERGENCY CLASSIFICATION: Patient meets
+        criteria for immediate clinical intervention. Triage Level 1.
+        Initiate emergency protocol and stabilize before definitive
+        management. Recommended diagnostic markers: Troponin I/T, ECG
+        (ST-elevation), CK-MB, BNP, Echocardiography. Correlate with
+        clinical findings for diagnostic confirmation. Expected
+        prognosis: Time-critical; door-to-balloon <90 min for STEMI;
+        variable based on infarct size.
+
+==============================================================================
+  SECTION 8: RECOMMENDED DIAGNOSTIC WORKUP
+==============================================================================
+
+      #    Investigation                        Priority     Department
+      --   .................................... ............ ................
+      1    ECG (Electrocardiogram)              Primary      Cardiology
+           Clinical Indication: Detect ST-elevation and heart rhythm abnormalities
+      2    Troponin-I / Troponin-T              Primary      Biochemistry
+           Clinical Indication: Gold standard biomarker for heart muscle damage
+      3    Chest X-Ray                          Primary      Radiology
+           Clinical Indication: Assess heart size and rule out other causes
+      4    Echocardiography                     Primary      Cardiology
+           Clinical Indication: Evaluate heart wall motion and ejection fraction
+      5    CBC (Complete Blood Count)           Secondary    Hematology
+           Clinical Indication: Baseline blood assessment
+      6    Lipid Profile                        Secondary    Biochemistry
+           Clinical Indication: Assess cholesterol and triglyceride levels
+      7    BNP / NT-proBNP                      Secondary    Biochemistry
+           Clinical Indication: Assess for heart failure
+
+==============================================================================
+  SECTION 9: PHARMACOTHERAPY RECOMMENDATIONS
+==============================================================================
+
+      1. Atorvastatin (Lipitor)  [Statin]
+         Dosage              : 40-80 mg once daily
+         Route               : Oral
+         Adverse Effects      : Muscle pain, liver enzyme elevation
+         Contraindications    : Active liver disease, pregnancy
+         Clinical Precaution  : Monitor liver function tests
+
+      2. Aspirin  [Antiplatelet]
+         Dosage              : 325 mg stat, then 75-100 mg daily
+         Route               : Oral (chew immediately)
+         Adverse Effects      : GI bleeding, bruising
+         Contraindications    : Active bleeding, aspirin allergy
+         Clinical Precaution  : Chew first dose for rapid absorption
+
+      3. Clopidogrel (Plavix)  [Antiplatelet]
+         Dosage              : 75 mg once daily
+         Route               : Oral
+         Adverse Effects      : Bleeding, bruising
+         Contraindications    : Active pathological bleeding
+         Clinical Precaution  : Continue for at least 12 months post-event
+
+      4. Nitroglycerin (GTN)  [Nitrate]
+         Dosage              : 0.4 mg sublingual as needed
+         Route               : Sublingual
+         Adverse Effects      : Headache, dizziness, flushing
+         Contraindications    : Severe hypotension, use of PDE5 inhibitors
+         Clinical Precaution  : Sit or lie down before taking
+
+      5. Metoprolol (Lopressor)  [Beta Blocker]
+         Dosage              : 25-50 mg twice daily
+         Route               : Oral
+         Adverse Effects      : Bradycardia, fatigue
+         Contraindications    : Severe bradycardia, heart block
+         Clinical Precaution  : Do not stop abruptly
+
+==============================================================================
+  SECTION 10: CLINICAL MANAGEMENT PLAN
+==============================================================================
+
+      Recommended Treatment..................... Emergency intervention. ICU admission may be required.
+      Clinical Urgency.......................... Critical
+      Follow-up Schedule........................ Immediate specialist intervention required.
+      Risk Classification....................... High
+      Emergency Protocol........................ Activated
+
+------------------------------------------------------------------------------
+  CLINICAL ALERTS & CONTRAINDICATION FLAGS
+------------------------------------------------------------------------------
+
+      >> [WARN] Geriatric patient -- consider reduced dosage and
+      potential drug interactions. Monitor renal and hepatic
+      function.
+
+      >> [WARN] Atorvastatin (Lipitor): Contraindicated in Active
+      liver disease, pregnancy. Verify patient history before
+      administration.
+
+      >> [WARN] Aspirin: Contraindicated in Active bleeding, aspirin
+      allergy. Verify patient history before administration.
+
+      >> [WARN] Clopidogrel (Plavix): Contraindicated in Active
+      pathological bleeding. Verify patient history before
+      administration.
+
+      >> [WARN] Nitroglycerin (GTN): Contraindicated in Severe
+      hypotension, use of PDE5 inhibitors. Verify patient history
+      before administration.
+
+      >> [WARN] Metoprolol (Lopressor): Contraindicated in Severe
+      bradycardia, heart block. Verify patient history before
+      administration.
+
+      >> [CRITICAL] Severe/Critical condition -- hospitalization may
+      be required. Ensure immediate medical supervision.
+
+
+==============================================================================
+  AI-Assisted Clinical Report | MedAgentix AI v2.0
+  Pipeline: ClinicalBERT NER + Voting Ensemble (XGB/RF/LGBM)
+  Confidence Routing: >85% Direct | 70-85% Validated | <70% Meditron-7B
+  Framework: LangGraph Multi-Agent Orchestration
+------------------------------------------------------------------------------
+  DISCLAIMER: AI-generated diagnostic support tool. All findings
+  require clinical correlation. Verify diagnosis with laboratory
+  investigations and imaging before initiating treatment.
+  Not a substitute for clinical judgement.
+==============================================================================
+
+
+##############################################################################
+  CLINICAL DIAGNOSTIC REPORT
+  Patient: PRIYA MEHTA
+  Report ID: MED-202606022118
+  Generated: 02-Jun-2026 21:18:53
+##############################################################################
+
+
+  PATIENT INFORMATION
+  ~~~~~~~~~~~~~~~~~~~
+
+      Name...................................... Priya Mehta
+      Age....................................... 25 years
+      Gender.................................... Female
+      Report Date............................... 02-Jun-2026  21:18
+      Report ID................................. MED-202606022118
+
+  PRESENTING COMPLAINTS
+  ~~~~~~~~~~~~~~~~~~~~~
+
+      [+] Fatigue                        Duration: -
+      [+] Headache                       Duration: today
+      [+] Runny Nose                     Duration: 2 days
+
+  VITALS
+  ~~~~~~
+
+      Heart Rate................................ 72 bpm  [Normal sinus]
+      SpO2...................................... 99%  [Normal]
+      Blood Pressure............................ 110/70 mmHg
+      Temperature............................... 98.8 F
+      Cholesterol............................... 170 mg/dL
+
+  MEDICAL HISTORY
+  ~~~~~~~~~~~~~~~
+
+      Past Medical History (PMH)................ None documented
+      Social / Lifestyle Factors................ None documented
+
+==============================================================================
+  SECTION 1: CLINICAL IMPRESSION
+==============================================================================
+
+      Primary Diagnosis......................... Rhinitis  (ICD-10: J31.0)
+      Diagnostic Confidence..................... 90.0%  [High (>90%)]
+      Clinical Severity......................... Moderate
+      Disease Category.......................... ENT / Upper Respiratory
+      Diagnosis Source.......................... Meditron-7B LLM Fallback (Low-Confidence Override)
+      Agent Agreement Score..................... 0.0
+
+==============================================================================
+  SECTION 2: PATHOPHYSIOLOGY & CLINICAL CONTEXT
+==============================================================================
+
+      Disease Mechanism:
+        Nasal mucosal inflammation driven by allergic (IgE-mediated)
+        or non-allergic (vasomotor, infectious) mechanisms. Histamine
+        release causes vasodilation, edema, and hypersecretion of
+        nasal glands.
+
+      Key Diagnostic Markers.................... Nasal examination, Allergy skin prick test, Serum IgE
+      Expected Prognosis........................ Excellent; self-limiting or controlled with antihistamines/nasal steroids
+
+==============================================================================
+  SECTION 3: CLINICAL SYMPTOM ANALYSIS
+==============================================================================
+
+      Symptom                      Severity       Duration         Match Type
+      ............................ .............. ................ ................
+      Runny Nose                   Moderate       2 days           NLP extraction
+      Headache                     Moderate       today            NLP extraction
+      Fatigue                      Moderate       -                NLP extraction
+
+      Total Symptoms Identified................. 3
+      Symptom-Disease Correlation............... Consistent
+
+==============================================================================
+  SECTION 4: RISK STRATIFICATION
+==============================================================================
+
+      Overall Risk Level........................ Low
+      Identified Risk Factors................... 0 factors
+
+==============================================================================
+  SECTION 5: EMERGENCY TRIAGE ASSESSMENT
+==============================================================================
+
+      Emergency Classification.................. Non-Emergency
+      Triage Level (ESI)........................ Level 3
+
+      Symptom Progression....................... Stable
+      Temporal Urgency.......................... Low
+      Onset Category............................ N/A
+
+==============================================================================
+  SECTION 6: PREDICTIVE MODEL OUTPUT
+==============================================================================
+
+      Ensemble Prediction....................... peptic ulcer
+      Prediction Probability.................... 0.3440  (34.4%)
+      Model Architecture........................ Voting Ensemble (XGBoost + RF + LightGBM)
+
+      Ranked Differential (ML-based):
+      Rank   Disease                            Probability    Decision
+      ----   .................................. .............. ..........
+      1      peptic ulcer                       0.3440         << Selected
+      2      flu                                0.2340         
+      3      stroke                             0.1592         
+      4      migraine                           0.0604         
+      5      gastroenteritis                    0.0366         
+
+      Active Feature Signals (10 features):
+        Cough                            = 1
+        Fatigue                          = 1
+        Age                              = 25
+        Blood Pressure                   = 1
+        Cholesterol                      = 170
+        Duration                         = 3
+        Symptom Count                    = 3
+        Diff Symptom Count               = 3
+        Diff Possible Disease Count      = 5
+        Headache                         = 1
+
+==============================================================================
+  SECTION 7: DIFFERENTIAL DIAGNOSIS & CLINICAL REASONING
+==============================================================================
+
+      Differential Diagnosis List:
+      #    Condition                            Match Score   
+      --   .................................... ..............
+      1    Paralysis (brain hemorrhage)         5.6%          
+      2    AIDS                                 3.1%          
+      3    Acne                                 2.9%          
+      4    Alcoholic hepatitis                  2.9%          
+      5    Psoriasis                            2.8%          
+
+      LLM Fallback Invoked...................... Yes
+      LLM Model Used............................ Meditron_7B
+
+      Clinical Reasoning:
+      -------------------------------------------------------
+      [Source: Meditron_7B LLM Model]
+
+        Allergic rhinitis is a common condition that affects the nose
+        in response to an allergen. The most common allergens are
+        pollen, dust mites or animal dander. Symptoms include
+        sneezing, itchy eyes and runny nose. Viral rhinitis can be
+        caused by influenza viruses (flu), parainfluenza virus,
+        rhinovirus, coronaviruses or respiratory syncytial virus. It
+        is characterized by nasal congestion, sneezing and a watery
+        discharge from the nose. Sinusitis can occur as acute or
+        chronic inflammation of the paranasal sinus cavities
+
+==============================================================================
+  SECTION 8: RECOMMENDED DIAGNOSTIC WORKUP
+==============================================================================
+
+      #    Investigation                        Priority     Department
+      --   .................................... ............ ................
+      1    Clinical Examination                 Primary      Clinical Assessment
+           Clinical Indication: Physical examination of nasal passages
+      2    Allergy Skin Prick Test              Primary      Immunology
+           Clinical Indication: Identify specific allergens causing rhinitis
+      3    Serum IgE Level                      Secondary    Immunology
+           Clinical Indication: Measure allergic response markers
+      4    Nasal Endoscopy                      Secondary    ENT
+           Clinical Indication: Rule out polyps or structural issues
+
+==============================================================================
+  SECTION 9: PHARMACOTHERAPY RECOMMENDATIONS
+==============================================================================
+
+      1. Cetirizine (Zyrtec)  [Antihistamine]
+         Dosage              : 10 mg once daily
+         Route               : Oral
+         Adverse Effects      : Drowsiness, dry mouth
+         Contraindications    : Severe renal impairment
+         Clinical Precaution  : Non-drowsy formula available
+
+      2. Fluticasone Nasal Spray (Flonase)  [Intranasal Corticosteroid]
+         Dosage              : 2 sprays each nostril once daily
+         Route               : Nasal spray
+         Adverse Effects      : Nasal irritation, nosebleed
+         Contraindications    : Nasal surgery (recent)
+         Clinical Precaution  : Use regularly for best effect
+
+      3. Oxymetazoline (Afrin)  [Nasal Decongestant]
+         Dosage              : 2-3 sprays each nostril twice daily
+         Route               : Nasal spray
+         Adverse Effects      : Rebound congestion
+         Contraindications    : Use beyond 3 days
+         Clinical Precaution  : Do not use more than 3 consecutive days
+
+      4. Loratadine (Claritin)  [Non-sedating Antihistamine]
+         Dosage              : 10 mg once daily
+         Route               : Oral
+         Adverse Effects      : Headache, fatigue (rare)
+         Contraindications    : Hypersensitivity
+         Clinical Precaution  : Non-drowsy; safe for daytime use
+
+==============================================================================
+  SECTION 10: CLINICAL MANAGEMENT PLAN
+==============================================================================
+
+      Recommended Treatment..................... Medication and rest. Medical consultation recommended.
+      Clinical Urgency.......................... Medium
+      Follow-up Schedule........................ Schedule follow-up within 2-3 days.
+      Risk Classification....................... Low
+      Emergency Protocol........................ Standard care pathway
+
+------------------------------------------------------------------------------
+  CLINICAL ALERTS & CONTRAINDICATION FLAGS
+------------------------------------------------------------------------------
+
+      >> [WARN] Cetirizine (Zyrtec): Contraindicated in Severe renal
+      impairment. Verify patient history before administration.
+
+      >> [WARN] Fluticasone Nasal Spray (Flonase): Contraindicated in
+      Nasal surgery (recent). Verify patient history before
+      administration.
+
+      >> [WARN] Oxymetazoline (Afrin): Contraindicated in Use beyond
+      3 days. Verify patient history before administration.
+
+      >> [WARN] Loratadine (Claritin): Contraindicated in
+      Hypersensitivity. Verify patient history before administration.
+
+
+==============================================================================
+  AI-Assisted Clinical Report | MedAgentix AI v2.0
+  Pipeline: ClinicalBERT NER + Voting Ensemble (XGB/RF/LGBM)
+  Confidence Routing: >85% Direct | 70-85% Validated | <70% Meditron-7B
+  Framework: LangGraph Multi-Agent Orchestration
+------------------------------------------------------------------------------
+  DISCLAIMER: AI-generated diagnostic support tool. All findings
+  require clinical correlation. Verify diagnosis with laboratory
+  investigations and imaging before initiating treatment.
+  Not a substitute for clinical judgement.
+==============================================================================
+
+
+##############################################################################
+  End of Clinical Report
+##############################################################################
