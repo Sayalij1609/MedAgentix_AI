@@ -17,7 +17,7 @@ export const RegisterForm: React.FC = () => {
     email: '',
     password: '',
     confirmPassword: '',
-    role: 'Patient', // Default role selection
+    role: 'patient', // Default role selection
   });
 
   // Password Visibility Toggle
@@ -65,8 +65,8 @@ export const RegisterForm: React.FC = () => {
 
     if (!formData.password) {
       newErrors.password = 'Security password is required';
-    } else if (formData.password.length < 6) {
-      newErrors.password = 'Password must be at least 6 characters';
+    } else if (formData.password.length < 8) {
+      newErrors.password = 'Password must be at least 8 characters';
     }
 
     if (formData.password !== formData.confirmPassword) {
@@ -97,7 +97,7 @@ export const RegisterForm: React.FC = () => {
       login(response.access_token, response.user);
       
       // Safety redirect fallback
-      const targetRoute = response.user.role === 'Doctor' 
+      const targetRoute = response.user.role === 'doctor' 
         ? ROUTES.DOCTOR_DASHBOARD 
         : ROUTES.PATIENT_DASHBOARD;
       navigate(targetRoute);
@@ -150,16 +150,16 @@ export const RegisterForm: React.FC = () => {
             {/* Patient Option */}
             <button
               type="button"
-              onClick={() => handleRoleSelect('Patient')}
+              onClick={() => handleRoleSelect('patient')}
               disabled={isLoading}
               className={`flex flex-col items-center gap-2 p-3 text-center border-2 rounded-xl transition-all ${
-                formData.role === 'Patient'
+                formData.role === 'patient'
                   ? 'border-secondary bg-secondary/5 shadow-glow text-secondary-foreground'
                   : 'border-border bg-card hover:border-slate-300 text-muted-foreground'
               }`}
             >
-              <div className={`p-2 rounded-lg ${formData.role === 'Patient' ? 'bg-secondary/15' : 'bg-slate-100'}`}>
-                <Activity className={`w-5 h-5 ${formData.role === 'Patient' ? 'text-secondary' : 'text-slate-500'}`} />
+              <div className={`p-2 rounded-lg ${formData.role === 'patient' ? 'bg-secondary/15' : 'bg-slate-100'}`}>
+                <Activity className={`w-5 h-5 ${formData.role === 'patient' ? 'text-secondary' : 'text-slate-500'}`} />
               </div>
               <div>
                 <p className="text-xs font-bold">Patient Portal</p>
@@ -170,16 +170,16 @@ export const RegisterForm: React.FC = () => {
             {/* Doctor Option */}
             <button
               type="button"
-              onClick={() => handleRoleSelect('Doctor')}
+              onClick={() => handleRoleSelect('doctor')}
               disabled={isLoading}
               className={`flex flex-col items-center gap-2 p-3 text-center border-2 rounded-xl transition-all ${
-                formData.role === 'Doctor'
+                formData.role === 'doctor'
                   ? 'border-primary bg-primary/5 shadow-md text-primary'
                   : 'border-border bg-card hover:border-slate-300 text-muted-foreground'
               }`}
             >
-              <div className={`p-2 rounded-lg ${formData.role === 'Doctor' ? 'bg-primary/10' : 'bg-slate-100'}`}>
-                <Stethoscope className={`w-5 h-5 ${formData.role === 'Doctor' ? 'text-primary' : 'text-slate-500'}`} />
+              <div className={`p-2 rounded-lg ${formData.role === 'doctor' ? 'bg-primary/10' : 'bg-slate-100'}`}>
+                <Stethoscope className={`w-5 h-5 ${formData.role === 'doctor' ? 'text-primary' : 'text-slate-500'}`} />
               </div>
               <div>
                 <p className="text-xs font-bold">Clinical Doctor</p>

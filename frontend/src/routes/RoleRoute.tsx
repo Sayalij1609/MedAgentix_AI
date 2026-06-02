@@ -21,7 +21,7 @@ export const RoleRoute: React.FC<RoleRouteProps> = ({
   if (!allowedRoles.includes(user.role)) {
     // Redirect role exceptions to their default home dashboard
     const defaultRedirect =
-      user.role === 'Doctor' ? ROUTES.DOCTOR_DASHBOARD : ROUTES.PATIENT_DASHBOARD;
+      user.role === 'doctor' ? ROUTES.DOCTOR_DASHBOARD : ROUTES.PATIENT_DASHBOARD;
     return <Navigate to={defaultRedirect} replace />;
   }
 

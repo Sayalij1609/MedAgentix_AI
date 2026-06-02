@@ -56,7 +56,7 @@ export const AppRoutes: React.FC = () => {
              ========================================== */}
           <Route element={
             <ProtectedRoute>
-              <RoleRoute allowedRoles={['Patient']}>
+              <RoleRoute allowedRoles={['patient']}>
                 <PatientDashboardLayout />
               </RoleRoute>
             </ProtectedRoute>
@@ -71,7 +71,7 @@ export const AppRoutes: React.FC = () => {
              ========================================== */}
           <Route element={
             <ProtectedRoute>
-              <RoleRoute allowedRoles={['Doctor']}>
+              <RoleRoute allowedRoles={['doctor']}>
                 <DoctorDashboardLayout />
               </RoleRoute>
             </ProtectedRoute>
@@ -86,7 +86,7 @@ export const AppRoutes: React.FC = () => {
              ========================================== */}
           <Route element={
             <ProtectedRoute>
-              <RoleRoute allowedRoles={['Patient', 'Doctor']}>
+              <RoleRoute allowedRoles={['patient', 'doctor']}>
                 <DoctorDashboardLayout />
               </RoleRoute>
             </ProtectedRoute>

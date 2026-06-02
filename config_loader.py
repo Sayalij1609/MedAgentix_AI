@@ -87,3 +87,4 @@ class Config:
         "http://localhost:5173",  # React Dev origin
         "http://127.0.0.1:5173",
     ]
+

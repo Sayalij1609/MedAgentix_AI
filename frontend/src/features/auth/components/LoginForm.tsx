@@ -50,8 +50,8 @@ export const LoginForm: React.FC = () => {
 
     if (!formData.password) {
       newErrors.password = 'Security password is required';
-    } else if (formData.password.length < 6) {
-      newErrors.password = 'Password must be at least 6 characters';
+    } else if (formData.password.length < 8) {
+      newErrors.password = 'Password must be at least 8 characters';
     }
 
     setErrors(newErrors);
@@ -74,7 +74,7 @@ export const LoginForm: React.FC = () => {
       login(response.access_token, response.user);
       
       // Safety redirect fallback
-      const targetRoute = response.user.role === 'Doctor' 
+      const targetRoute = response.user.role === 'doctor' 
         ? ROUTES.DOCTOR_DASHBOARD 
         : ROUTES.PATIENT_DASHBOARD;
       navigate(targetRoute);

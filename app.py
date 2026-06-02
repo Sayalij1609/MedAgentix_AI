@@ -16,6 +16,9 @@ from api.doctor_routes import doctor_bp
 # Import PostgreSQL Connector Binders
 from database.postgres.db_connection import db, init_db, verify_database_connection
 
+# Import Auth Middleware
+from api.middleware import init_auth_middleware
+
 def create_app(config_class=Config):
     """
     Flask Application Factory
@@ -33,6 +36,9 @@ def create_app(config_class=Config):
 
     # Initialize PostgreSQL Database Connections & Pools
     init_db(app)
+    
+    # Initialize Authentication Middleware
+    init_auth_middleware(app)
     
     # Perform Database Connectivity verification on boot
     verify_database_connection(app)
@@ -68,4 +74,19 @@ def create_app(config_class=Config):
     app.register_blueprint(patient_bp)
     app.register_blueprint(doctor_bp)
 
+    # Register database initialization CLI command
+    @app.cli.command('db-init')
+    def db_init():
+        """Initialize PostgreSQL database tables safely and idempotently."""
+        print(" * Initializing database tables...")
+        try:
+            from database.postgres.db_connection import create_tables
+            create_tables(app)
+            print(" * Database tables initialized successfully.")
+        except Exception as e:
+            import traceback
+            print(f" * Failed to initialize database: {str(e)}")
+            traceback.print_exc()
+
     return app
+

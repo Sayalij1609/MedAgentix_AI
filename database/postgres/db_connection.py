@@ -32,3 +32,14 @@ def verify_database_connection(app):
             print(f" * Database connection failed: [disconnected] from server", file=sys.stderr)
             print(f" * Connection error details: {str(e)}", file=sys.stderr)
             return False
+
+def create_tables(app):
+    """
+    Creates all tables from registered SQLAlchemy models if they do not exist.
+    Ensure models are explicitly imported inside context to populate metadata.
+    """
+    from database.postgres.models import User
+    _ = User  # Prevent unused import lint warnings in IDEs
+    with app.app_context():
+        db.create_all()
+

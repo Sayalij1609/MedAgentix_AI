@@ -9,7 +9,7 @@ export const AuthLayout: React.FC = () => {
 
   if (isAuthenticated && user) {
     const redirectUrl =
-      user.role === 'Doctor' ? ROUTES.DOCTOR_DASHBOARD : ROUTES.PATIENT_DASHBOARD;
+      user.role === 'doctor' ? ROUTES.DOCTOR_DASHBOARD : ROUTES.PATIENT_DASHBOARD;
     return <Navigate to={redirectUrl} replace />;
   }
 
