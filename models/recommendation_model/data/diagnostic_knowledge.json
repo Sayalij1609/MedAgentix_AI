@@ -1,236 +1,254 @@
 {
-  "Bronchitis": {
-    "diagnosis": "Bronchitis",
-    "severity_distribution": {
-      "Severe": 334
-    },
-    "treatment_plans": {
-      "Hospitalization and medication": 334
-    },
+  "COVID-19": {
+    "diagnosis": "COVID-19",
     "recommended_tests": [
-      {
-        "test": "X-Ray",
-        "why": "Evaluate internal abnormalities",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 79
-      },
-      {
-        "test": "Urine Analysis",
-        "why": "Screen abnormalities",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 73
-      },
-      {
-        "test": "CBC Test",
-        "why": "Support diagnosis",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 67
-      },
-      {
-        "test": "Liver Function Test",
-        "why": "Assess organ involvement",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 61
-      },
-      {
-        "test": "MRI Scan",
-        "why": "Advanced diagnostic confirmation",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 54
-      }
+      {"test": "RT-PCR Test (Nasal Swab)", "why": "Gold standard for confirming SARS-CoV-2 infection", "category": "Molecular Biology", "priority": "Primary", "frequency": 95},
+      {"test": "Rapid Antigen Test", "why": "Quick screening for active COVID-19 infection", "category": "Immunology", "priority": "Primary", "frequency": 90},
+      {"test": "Chest X-Ray", "why": "Detect lung involvement and pneumonia", "category": "Radiology", "priority": "Primary", "frequency": 75},
+      {"test": "CBC (Complete Blood Count)", "why": "Check for lymphopenia and inflammatory markers", "category": "Hematology", "priority": "Secondary", "frequency": 70},
+      {"test": "CRP (C-Reactive Protein)", "why": "Assess level of inflammation in the body", "category": "Biochemistry", "priority": "Secondary", "frequency": 65},
+      {"test": "D-Dimer", "why": "Screen for blood clotting risk in severe cases", "category": "Hematology", "priority": "Secondary", "frequency": 50},
+      {"test": "Pulse Oximetry", "why": "Continuous monitoring of oxygen saturation", "category": "Vital Signs", "priority": "Primary", "frequency": 90}
+    ],
+    "test_count": 7
+  },
+  "Influenza": {
+    "diagnosis": "Influenza",
+    "recommended_tests": [
+      {"test": "Rapid Influenza Diagnostic Test (RIDT)", "why": "Quick detection of influenza A and B antigens", "category": "Immunology", "priority": "Primary", "frequency": 85},
+      {"test": "Influenza PCR Test", "why": "Confirm influenza type and subtype", "category": "Molecular Biology", "priority": "Primary", "frequency": 70},
+      {"test": "CBC (Complete Blood Count)", "why": "Identify viral pattern (lymphocytosis)", "category": "Hematology", "priority": "Secondary", "frequency": 60},
+      {"test": "Chest X-Ray", "why": "Rule out secondary pneumonia", "category": "Radiology", "priority": "Secondary", "frequency": 45}
+    ],
+    "test_count": 4
+  },
+  "Common Cold": {
+    "diagnosis": "Common Cold",
+    "recommended_tests": [
+      {"test": "No specific tests needed", "why": "Diagnosed clinically based on symptoms", "category": "Clinical Assessment", "priority": "Primary", "frequency": 90},
+      {"test": "Throat Swab Culture", "why": "Only if bacterial infection is suspected", "category": "Microbiology", "priority": "Secondary", "frequency": 20},
+      {"test": "CBC (Complete Blood Count)", "why": "Only if symptoms persist beyond 10 days", "category": "Hematology", "priority": "Secondary", "frequency": 15}
+    ],
+    "test_count": 3
+  },
+  "Rhinitis": {
+    "diagnosis": "Rhinitis",
+    "recommended_tests": [
+      {"test": "Clinical Examination", "why": "Physical examination of nasal passages", "category": "Clinical Assessment", "priority": "Primary", "frequency": 90},
+      {"test": "Allergy Skin Prick Test", "why": "Identify specific allergens causing rhinitis", "category": "Immunology", "priority": "Primary", "frequency": 70},
+      {"test": "Serum IgE Level", "why": "Measure allergic response markers", "category": "Immunology", "priority": "Secondary", "frequency": 55},
+      {"test": "Nasal Endoscopy", "why": "Rule out polyps or structural issues", "category": "ENT", "priority": "Secondary", "frequency": 30}
+    ],
+    "test_count": 4
+  },
+  "Heart Attack": {
+    "diagnosis": "Heart Attack",
+    "recommended_tests": [
+      {"test": "ECG (Electrocardiogram)", "why": "Detect ST-elevation and heart rhythm abnormalities", "category": "Cardiology", "priority": "Primary", "frequency": 99},
+      {"test": "Troponin-I / Troponin-T", "why": "Gold standard biomarker for heart muscle damage", "category": "Biochemistry", "priority": "Primary", "frequency": 98},
+      {"test": "Chest X-Ray", "why": "Assess heart size and rule out other causes", "category": "Radiology", "priority": "Primary", "frequency": 85},
+      {"test": "CBC (Complete Blood Count)", "why": "Baseline blood assessment", "category": "Hematology", "priority": "Secondary", "frequency": 80},
+      {"test": "Lipid Profile", "why": "Assess cholesterol and triglyceride levels", "category": "Biochemistry", "priority": "Secondary", "frequency": 75},
+      {"test": "Echocardiography", "why": "Evaluate heart wall motion and ejection fraction", "category": "Cardiology", "priority": "Primary", "frequency": 70},
+      {"test": "BNP / NT-proBNP", "why": "Assess for heart failure", "category": "Biochemistry", "priority": "Secondary", "frequency": 60}
+    ],
+    "test_count": 7
+  },
+  "Acute Coronary Syndrome": {
+    "diagnosis": "Acute Coronary Syndrome",
+    "recommended_tests": [
+      {"test": "ECG (Electrocardiogram)", "why": "Detect ischemic changes in heart", "category": "Cardiology", "priority": "Primary", "frequency": 99},
+      {"test": "Troponin-I / Troponin-T", "why": "Detect myocardial injury", "category": "Biochemistry", "priority": "Primary", "frequency": 98},
+      {"test": "Chest X-Ray", "why": "Rule out other chest pathology", "category": "Radiology", "priority": "Primary", "frequency": 85},
+      {"test": "Coronary Angiography", "why": "Visualize coronary artery blockages", "category": "Cardiology", "priority": "Primary", "frequency": 70},
+      {"test": "Lipid Profile", "why": "Evaluate cardiovascular risk factors", "category": "Biochemistry", "priority": "Secondary", "frequency": 65}
     ],
     "test_count": 5
   },
-  "Cold": {
-    "diagnosis": "Cold",
-    "severity_distribution": {
-      "Mild": 163
-    },
-    "treatment_plans": {
-      "Rest and fluids": 163
-    },
+  "Hypertension": {
+    "diagnosis": "Hypertension",
     "recommended_tests": [
-      {
-        "test": "MRI Scan",
-        "why": "Advanced diagnostic confirmation",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 40
-      },
-      {
-        "test": "X-Ray",
-        "why": "Evaluate internal abnormalities",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 35
-      },
-      {
-        "test": "CBC Test",
-        "why": "Support diagnosis",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 35
-      },
-      {
-        "test": "Urine Analysis",
-        "why": "Screen abnormalities",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 33
-      },
-      {
-        "test": "Liver Function Test",
-        "why": "Assess organ involvement",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 20
-      }
+      {"test": "Blood Pressure Monitoring (24-hour)", "why": "Confirm sustained elevated blood pressure", "category": "Vital Signs", "priority": "Primary", "frequency": 95},
+      {"test": "ECG (Electrocardiogram)", "why": "Check for left ventricular hypertrophy", "category": "Cardiology", "priority": "Primary", "frequency": 80},
+      {"test": "Serum Creatinine & BUN", "why": "Assess kidney function (end-organ damage)", "category": "Biochemistry", "priority": "Primary", "frequency": 75},
+      {"test": "Urinalysis", "why": "Screen for proteinuria (kidney involvement)", "category": "Biochemistry", "priority": "Secondary", "frequency": 65},
+      {"test": "Lipid Profile", "why": "Assess cardiovascular risk", "category": "Biochemistry", "priority": "Secondary", "frequency": 60},
+      {"test": "Fundoscopy", "why": "Check for hypertensive retinopathy", "category": "Ophthalmology", "priority": "Secondary", "frequency": 40}
+    ],
+    "test_count": 6
+  },
+  "Asthma": {
+    "diagnosis": "Asthma",
+    "recommended_tests": [
+      {"test": "Spirometry (Pulmonary Function Test)", "why": "Measure airflow obstruction and reversibility", "category": "Pulmonology", "priority": "Primary", "frequency": 90},
+      {"test": "Peak Flow Meter Reading", "why": "Assess severity of airflow limitation", "category": "Pulmonology", "priority": "Primary", "frequency": 85},
+      {"test": "Chest X-Ray", "why": "Rule out other lung conditions", "category": "Radiology", "priority": "Secondary", "frequency": 60},
+      {"test": "Allergy Testing (IgE)", "why": "Identify allergic triggers", "category": "Immunology", "priority": "Secondary", "frequency": 50},
+      {"test": "Pulse Oximetry", "why": "Monitor oxygen levels during attack", "category": "Vital Signs", "priority": "Primary", "frequency": 80}
     ],
     "test_count": 5
   },
-  "Flu": {
-    "diagnosis": "Flu",
-    "severity_distribution": {
-      "Moderate": 292
-    },
-    "treatment_plans": {
-      "Medication and rest": 292
-    },
+  "Diabetes": {
+    "diagnosis": "Diabetes",
     "recommended_tests": [
-      {
-        "test": "Liver Function Test",
-        "why": "Assess organ involvement",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 65
-      },
-      {
-        "test": "MRI Scan",
-        "why": "Advanced diagnostic confirmation",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 61
-      },
-      {
-        "test": "Urine Analysis",
-        "why": "Screen abnormalities",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 58
-      },
-      {
-        "test": "X-Ray",
-        "why": "Evaluate internal abnormalities",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 55
-      },
-      {
-        "test": "CBC Test",
-        "why": "Support diagnosis",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 53
-      }
+      {"test": "Fasting Blood Glucose", "why": "Primary test for diabetes screening", "category": "Biochemistry", "priority": "Primary", "frequency": 95},
+      {"test": "HbA1c (Glycated Hemoglobin)", "why": "Assess average blood sugar over 2-3 months", "category": "Biochemistry", "priority": "Primary", "frequency": 90},
+      {"test": "Oral Glucose Tolerance Test (OGTT)", "why": "Confirm diabetes when fasting glucose is borderline", "category": "Biochemistry", "priority": "Primary", "frequency": 70},
+      {"test": "Lipid Profile", "why": "Screen for dyslipidemia associated with diabetes", "category": "Biochemistry", "priority": "Secondary", "frequency": 65},
+      {"test": "Serum Creatinine", "why": "Monitor kidney function (diabetic nephropathy)", "category": "Biochemistry", "priority": "Secondary", "frequency": 60},
+      {"test": "Urinalysis (Microalbuminuria)", "why": "Early detection of kidney damage", "category": "Biochemistry", "priority": "Secondary", "frequency": 55}
     ],
-    "test_count": 5
+    "test_count": 6
   },
-  "Healthy": {
-    "diagnosis": "Healthy",
-    "severity_distribution": {
-      "Mild": 1167
-    },
-    "treatment_plans": {
-      "Rest and fluids": 1167
-    },
+  "Type 2 Diabetes": {
+    "diagnosis": "Type 2 Diabetes",
     "recommended_tests": [
-      {
-        "test": "Liver Function Test",
-        "why": "Assess organ involvement",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 261
-      },
-      {
-        "test": "Urine Analysis",
-        "why": "Screen abnormalities",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 230
-      },
-      {
-        "test": "MRI Scan",
-        "why": "Advanced diagnostic confirmation",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 228
-      },
-      {
-        "test": "X-Ray",
-        "why": "Evaluate internal abnormalities",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 227
-      },
-      {
-        "test": "CBC Test",
-        "why": "Support diagnosis",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 221
-      }
+      {"test": "Fasting Blood Glucose", "why": "Primary diabetes screening test", "category": "Biochemistry", "priority": "Primary", "frequency": 95},
+      {"test": "HbA1c (Glycated Hemoglobin)", "why": "Measure long-term blood sugar control", "category": "Biochemistry", "priority": "Primary", "frequency": 90},
+      {"test": "Lipid Profile", "why": "Assess cardiovascular risk factors", "category": "Biochemistry", "priority": "Primary", "frequency": 70},
+      {"test": "Serum Creatinine & eGFR", "why": "Monitor kidney function", "category": "Biochemistry", "priority": "Secondary", "frequency": 60},
+      {"test": "Urine Microalbumin", "why": "Detect early kidney damage", "category": "Biochemistry", "priority": "Secondary", "frequency": 55}
     ],
     "test_count": 5
   },
   "Pneumonia": {
     "diagnosis": "Pneumonia",
-    "severity_distribution": {
-      "Severe": 44
-    },
-    "treatment_plans": {
-      "Hospitalization and medication": 44
-    },
     "recommended_tests": [
-      {
-        "test": "Urine Analysis",
-        "why": "Screen abnormalities",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 13
-      },
-      {
-        "test": "Liver Function Test",
-        "why": "Assess organ involvement",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 12
-      },
-      {
-        "test": "MRI Scan",
-        "why": "Advanced diagnostic confirmation",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 8
-      },
-      {
-        "test": "X-Ray",
-        "why": "Evaluate internal abnormalities",
-        "category": "Hematology",
-        "priority": "Secondary",
-        "frequency": 6
-      },
-      {
-        "test": "CBC Test",
-        "why": "Support diagnosis",
-        "category": "Hematology",
-        "priority": "Primary",
-        "frequency": 5
-      }
+      {"test": "Chest X-Ray (PA view)", "why": "Detect infiltrates and consolidation in lungs", "category": "Radiology", "priority": "Primary", "frequency": 95},
+      {"test": "CBC (Complete Blood Count)", "why": "Elevated WBC suggests bacterial infection", "category": "Hematology", "priority": "Primary", "frequency": 90},
+      {"test": "Sputum Culture & Sensitivity", "why": "Identify causative organism and antibiotic sensitivity", "category": "Microbiology", "priority": "Primary", "frequency": 75},
+      {"test": "CRP (C-Reactive Protein)", "why": "Measure inflammatory response severity", "category": "Biochemistry", "priority": "Secondary", "frequency": 65},
+      {"test": "Pulse Oximetry", "why": "Monitor oxygen saturation", "category": "Vital Signs", "priority": "Primary", "frequency": 85},
+      {"test": "Blood Culture", "why": "Detect bacteremia in severe cases", "category": "Microbiology", "priority": "Secondary", "frequency": 50}
+    ],
+    "test_count": 6
+  },
+  "Tuberculosis": {
+    "diagnosis": "Tuberculosis",
+    "recommended_tests": [
+      {"test": "Chest X-Ray", "why": "Detect pulmonary TB lesions and cavities", "category": "Radiology", "priority": "Primary", "frequency": 95},
+      {"test": "Sputum AFB Smear & Culture", "why": "Detect acid-fast bacilli (Mycobacterium tuberculosis)", "category": "Microbiology", "priority": "Primary", "frequency": 90},
+      {"test": "Mantoux / Tuberculin Skin Test (TST)", "why": "Screen for TB exposure/infection", "category": "Immunology", "priority": "Primary", "frequency": 80},
+      {"test": "GeneXpert MTB/RIF", "why": "Rapid molecular test for TB and rifampicin resistance", "category": "Molecular Biology", "priority": "Primary", "frequency": 75},
+      {"test": "ESR (Erythrocyte Sedimentation Rate)", "why": "Non-specific marker for chronic infection", "category": "Hematology", "priority": "Secondary", "frequency": 55}
+    ],
+    "test_count": 5
+  },
+  "Malaria": {
+    "diagnosis": "Malaria",
+    "recommended_tests": [
+      {"test": "Peripheral Blood Smear (Thick & Thin)", "why": "Gold standard for malaria parasite identification", "category": "Hematology", "priority": "Primary", "frequency": 95},
+      {"test": "Rapid Diagnostic Test (RDT) for Malaria", "why": "Quick antigen-based test for malaria", "category": "Immunology", "priority": "Primary", "frequency": 90},
+      {"test": "CBC (Complete Blood Count)", "why": "Detect anemia and thrombocytopenia", "category": "Hematology", "priority": "Primary", "frequency": 80},
+      {"test": "Liver Function Test", "why": "Assess hepatic involvement", "category": "Biochemistry", "priority": "Secondary", "frequency": 60},
+      {"test": "Serum Bilirubin", "why": "Check for hemolysis and jaundice", "category": "Biochemistry", "priority": "Secondary", "frequency": 55}
+    ],
+    "test_count": 5
+  },
+  "Dengue": {
+    "diagnosis": "Dengue",
+    "recommended_tests": [
+      {"test": "Dengue NS1 Antigen Test", "why": "Early detection within first 5 days of fever", "category": "Immunology", "priority": "Primary", "frequency": 95},
+      {"test": "Dengue IgM / IgG Antibody Test", "why": "Confirm dengue infection after day 5", "category": "Immunology", "priority": "Primary", "frequency": 85},
+      {"test": "CBC (Complete Blood Count)", "why": "Monitor platelet count (thrombocytopenia)", "category": "Hematology", "priority": "Primary", "frequency": 90},
+      {"test": "Hematocrit", "why": "Detect hemoconcentration (plasma leakage)", "category": "Hematology", "priority": "Primary", "frequency": 80},
+      {"test": "Liver Function Test", "why": "Assess hepatic involvement", "category": "Biochemistry", "priority": "Secondary", "frequency": 55}
+    ],
+    "test_count": 5
+  },
+  "Typhoid": {
+    "diagnosis": "Typhoid",
+    "recommended_tests": [
+      {"test": "Widal Test", "why": "Detect antibodies against Salmonella typhi", "category": "Immunology", "priority": "Primary", "frequency": 85},
+      {"test": "Blood Culture", "why": "Gold standard for confirming typhoid fever", "category": "Microbiology", "priority": "Primary", "frequency": 90},
+      {"test": "CBC (Complete Blood Count)", "why": "Detect leukopenia typical of typhoid", "category": "Hematology", "priority": "Primary", "frequency": 80},
+      {"test": "Typhidot Test (IgM)", "why": "Rapid confirmation of acute typhoid", "category": "Immunology", "priority": "Primary", "frequency": 70},
+      {"test": "Liver Function Test", "why": "Assess hepatic involvement", "category": "Biochemistry", "priority": "Secondary", "frequency": 50}
+    ],
+    "test_count": 5
+  },
+  "Fever": {
+    "diagnosis": "Fever",
+    "recommended_tests": [
+      {"test": "CBC (Complete Blood Count)", "why": "Differentiate viral vs bacterial infection", "category": "Hematology", "priority": "Primary", "frequency": 90},
+      {"test": "Blood Culture", "why": "Identify bacteremia in high-grade fever", "category": "Microbiology", "priority": "Primary", "frequency": 70},
+      {"test": "CRP (C-Reactive Protein)", "why": "Assess severity of infection", "category": "Biochemistry", "priority": "Primary", "frequency": 65},
+      {"test": "Urinalysis", "why": "Rule out urinary tract infection as source", "category": "Biochemistry", "priority": "Secondary", "frequency": 55},
+      {"test": "Chest X-Ray", "why": "Rule out pneumonia if respiratory symptoms present", "category": "Radiology", "priority": "Secondary", "frequency": 45}
+    ],
+    "test_count": 5
+  },
+  "GERD": {
+    "diagnosis": "GERD",
+    "recommended_tests": [
+      {"test": "Upper GI Endoscopy (EGD)", "why": "Visualize esophageal damage and rule out Barrett's", "category": "Gastroenterology", "priority": "Primary", "frequency": 80},
+      {"test": "24-Hour Esophageal pH Monitoring", "why": "Measure acid reflux frequency and duration", "category": "Gastroenterology", "priority": "Primary", "frequency": 65},
+      {"test": "H. pylori Test (Breath/Stool)", "why": "Rule out H. pylori as contributing factor", "category": "Microbiology", "priority": "Secondary", "frequency": 55},
+      {"test": "Barium Swallow X-Ray", "why": "Assess esophageal motility and hiatal hernia", "category": "Radiology", "priority": "Secondary", "frequency": 40}
+    ],
+    "test_count": 4
+  },
+  "Gastroenteritis": {
+    "diagnosis": "Gastroenteritis",
+    "recommended_tests": [
+      {"test": "Stool Examination (Routine & Microscopy)", "why": "Detect parasites, blood, or mucus", "category": "Microbiology", "priority": "Primary", "frequency": 85},
+      {"test": "Stool Culture", "why": "Identify bacterial pathogens", "category": "Microbiology", "priority": "Primary", "frequency": 70},
+      {"test": "Serum Electrolytes", "why": "Assess dehydration and electrolyte imbalance", "category": "Biochemistry", "priority": "Primary", "frequency": 75},
+      {"test": "CBC (Complete Blood Count)", "why": "Check for infection indicators", "category": "Hematology", "priority": "Secondary", "frequency": 55}
+    ],
+    "test_count": 4
+  },
+  "Urinary Tract Infection": {
+    "diagnosis": "Urinary Tract Infection",
+    "recommended_tests": [
+      {"test": "Urinalysis (Dipstick + Microscopy)", "why": "Detect nitrites, leukocytes, and bacteria in urine", "category": "Biochemistry", "priority": "Primary", "frequency": 95},
+      {"test": "Urine Culture & Sensitivity", "why": "Identify causative organism and antibiotic sensitivity", "category": "Microbiology", "priority": "Primary", "frequency": 90},
+      {"test": "CBC (Complete Blood Count)", "why": "Assess severity of infection", "category": "Hematology", "priority": "Secondary", "frequency": 55},
+      {"test": "Serum Creatinine", "why": "Rule out kidney involvement", "category": "Biochemistry", "priority": "Secondary", "frequency": 45},
+      {"test": "Ultrasound KUB", "why": "Rule out kidney stones or structural abnormalities", "category": "Radiology", "priority": "Secondary", "frequency": 35}
+    ],
+    "test_count": 5
+  },
+  "Migraine": {
+    "diagnosis": "Migraine",
+    "recommended_tests": [
+      {"test": "Clinical Assessment (Headache Diary)", "why": "Diagnose based on ICHD criteria; no test needed for typical migraine", "category": "Clinical Assessment", "priority": "Primary", "frequency": 90},
+      {"test": "CT Scan (Head)", "why": "Rule out intracranial pathology if atypical features", "category": "Radiology", "priority": "Secondary", "frequency": 40},
+      {"test": "MRI Brain", "why": "Detailed imaging for persistent or unusual headaches", "category": "Radiology", "priority": "Secondary", "frequency": 30},
+      {"test": "ESR / CRP", "why": "Rule out temporal arteritis in older patients", "category": "Hematology", "priority": "Secondary", "frequency": 20}
+    ],
+    "test_count": 4
+  },
+  "Pain": {
+    "diagnosis": "Pain",
+    "recommended_tests": [
+      {"test": "Clinical Examination", "why": "Localize pain source and assess severity", "category": "Clinical Assessment", "priority": "Primary", "frequency": 90},
+      {"test": "X-Ray (Affected Area)", "why": "Rule out fractures or joint damage", "category": "Radiology", "priority": "Primary", "frequency": 70},
+      {"test": "CBC (Complete Blood Count)", "why": "Check for infection or inflammation", "category": "Hematology", "priority": "Secondary", "frequency": 50},
+      {"test": "ESR / CRP", "why": "Assess inflammatory markers", "category": "Hematology", "priority": "Secondary", "frequency": 45},
+      {"test": "MRI (if needed)", "why": "Detailed soft tissue assessment for chronic pain", "category": "Radiology", "priority": "Secondary", "frequency": 25}
+    ],
+    "test_count": 5
+  },
+  "Bacterial Infection": {
+    "diagnosis": "Bacterial Infection",
+    "recommended_tests": [
+      {"test": "CBC (Complete Blood Count)", "why": "Elevated WBC and neutrophils indicate bacterial infection", "category": "Hematology", "priority": "Primary", "frequency": 95},
+      {"test": "Blood Culture", "why": "Identify causative bacteria and antibiotic sensitivity", "category": "Microbiology", "priority": "Primary", "frequency": 80},
+      {"test": "CRP (C-Reactive Protein)", "why": "Assess severity of bacterial inflammation", "category": "Biochemistry", "priority": "Primary", "frequency": 75},
+      {"test": "Procalcitonin", "why": "Differentiate bacterial vs viral infection", "category": "Biochemistry", "priority": "Secondary", "frequency": 55},
+      {"test": "Wound / Throat Swab Culture", "why": "Site-specific pathogen identification", "category": "Microbiology", "priority": "Secondary", "frequency": 50}
+    ],
+    "test_count": 5
+  },
+  "Respiratory Infection": {
+    "diagnosis": "Respiratory Infection",
+    "recommended_tests": [
+      {"test": "Chest X-Ray", "why": "Detect consolidation or infiltrates in lungs", "category": "Radiology", "priority": "Primary", "frequency": 90},
+      {"test": "CBC (Complete Blood Count)", "why": "Differentiate viral vs bacterial respiratory infection", "category": "Hematology", "priority": "Primary", "frequency": 85},
+      {"test": "Sputum Culture & Sensitivity", "why": "Identify respiratory pathogen", "category": "Microbiology", "priority": "Primary", "frequency": 70},
+      {"test": "CRP (C-Reactive Protein)", "why": "Assess inflammatory severity", "category": "Biochemistry", "priority": "Secondary", "frequency": 60},
+      {"test": "Pulse Oximetry", "why": "Monitor oxygen saturation", "category": "Vital Signs", "priority": "Primary", "frequency": 85}
     ],
     "test_count": 5
   }

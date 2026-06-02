@@ -1,0 +1,484 @@
+==============================================================================
+  MedAgentix AI -- YOUR HEALTH ASSESSMENT REPORT
+  Generated: 02-Jun-2026 21:18
+==============================================================================
+
+==============================================================================
+  YOUR HEALTH ASSESSMENT REPORT
+  RAHUL SHARMA
+  Date: 02 June 2026, 09:17 PM
+==============================================================================
+
+
+  PATIENT INFORMATION
+  ~~~~~~~~~~~~~~~~~~~
+
+      Name...................................... Rahul Sharma
+      Age....................................... 35 years
+      Gender.................................... Male
+
+  YOUR SYMPTOMS
+  ~~~~~~~~~~~~~
+
+      * Fever                          (5 days)
+      * Cough                          (5 days)
+      * Fatigue                        (-)
+      * Body Pain                      (5 days)
+      * Headache                       (3 days)
+      * Difficulty Breathing           (2 days)
+
+  YOUR VITAL SIGNS
+  ~~~~~~~~~~~~~~~~
+
+      Heart Rate................................ 85 bpm
+      Oxygen Level.............................. 96%
+        (Your oxygen level is in the normal range. This is good.)
+      Blood Pressure............................ 120/80 mmHg
+      Body Temperature.......................... 101.5 F
+        (You have a fever. This means your body is fighting an
+        infection.)
+
+  YOUR HEALTH BACKGROUND
+  ~~~~~~~~~~~~~~~~~~~~~~
+
+      Past Health Conditions.................... None mentioned
+      Lifestyle Factors......................... None mentioned
+
+------------------------------------------------------------------------------
+  WHAT WE FOUND
+------------------------------------------------------------------------------
+
+      Based on the symptoms and information you shared, our
+      AI health assistant has prepared this assessment:
+
+      Possible Condition........................ Covid-19
+      Match Confidence.......................... Possible Match
+      Severity Level............................ Serious
+
+      What this means:
+      ----------------------------------------
+        Your symptoms match a pattern commonly seen with respiratory
+        viruses like COVID-19. This does NOT confirm a diagnosis --
+        only a lab test can do that.
+
+      Understanding your condition:
+      ----------------------------------------
+        A viral infection that mainly affects your lungs and airways.
+        Your body is fighting the virus, which is why you feel tired
+        and have a fever. Most people recover fully with rest.
+
+      How serious is this?
+      ----------------------------------------
+        Your condition may need urgent medical care. Please visit a
+        doctor or hospital as soon as possible.
+
+------------------------------------------------------------------------------
+  POSSIBLE MEDICATIONS
+  (Your doctor will decide what's right for you)
+------------------------------------------------------------------------------
+
+      These are medications commonly used for this condition.
+      NEVER take any medicine without your doctor's approval.
+
+      1. Paracetamol
+         What it does : For treating your condition
+         Usual dosage : 500-1000 mg every 4-6 hours
+         Things to watch: Nausea (rare)
+
+      2. Zinc + Vitamin C
+         What it does : For treating your condition
+         Usual dosage : Zinc 50mg + Vit C 1000mg daily
+         Things to watch: Nausea at high doses
+
+      3. Dexamethasone
+         What it does : To reduce inflammation
+         Usual dosage : 6 mg once daily for up to 10 days
+         Things to watch: Hyperglycemia, insomnia
+
+      4. Ivermectin (if prescribed)
+         What it does : For treating your condition
+         Usual dosage : As per physician guidance
+         Things to watch: Nausea, dizziness
+
+------------------------------------------------------------------------------
+  TESTS YOUR DOCTOR MAY ASK FOR
+------------------------------------------------------------------------------
+
+      These tests can help confirm what's going on:
+
+      1. RT-PCR Test (Nasal Swab)
+         Why: Gold standard for confirming SARS-CoV-2 infection
+      2. Rapid Antigen Test
+         Why: Quick screening for active COVID-19 infection
+      3. Pulse Oximetry
+         Why: Continuous monitoring of oxygen saturation
+      4. Chest X-Ray
+         Why: Detect lung involvement and pneumonia
+      5. CBC (Complete Blood Count)
+         Why: Check for lymphopenia and inflammatory markers
+
+        These tests help your doctor understand your condition better
+        and create the most effective treatment plan.
+
+------------------------------------------------------------------------------
+  WHAT TO DO NEXT
+------------------------------------------------------------------------------
+
+      1. Visit your doctor and share this report with them.
+      2. Complete any tests your doctor recommends.
+      3. Treatment suggestion: Hospitalization and medication. Immediate medical attention.
+      4. Follow-up: Requires continuous monitoring and specialist consultation.
+      5. Keep track of your symptoms -- note if they get better or worse.
+      6. Stay hydrated, rest, and eat healthy meals.
+
+------------------------------------------------------------------------------
+  WHEN TO GET HELP RIGHT AWAY
+------------------------------------------------------------------------------
+
+      [!] Difficulty breathing or feeling short of breath
+      [!] Severe chest pain or pressure
+      [!] High fever (above 103 F / 39.4 C) that won't come down
+      [!] Fainting, confusion, or inability to stay awake
+      [!] Any sudden worsening of your symptoms
+
+        If any of the above happen, call 112/108 or go to the nearest
+        emergency room immediately. Don't wait.
+
+______________________________________________________________________________
+  IMPORTANT NOTICE
+  This report was created by an AI health assistant. It is NOT
+  a medical diagnosis. Only a qualified doctor can diagnose your
+  condition after proper examination and lab tests. Please use
+  this report as a starting point for your doctor visit, not as
+  a replacement for professional medical advice.
+______________________________________________________________________________
+
+
+==============================================================================
+  YOUR HEALTH ASSESSMENT REPORT
+  RAMESH GUPTA
+  Date: 02 June 2026, 09:18 PM
+==============================================================================
+
+
+  PATIENT INFORMATION
+  ~~~~~~~~~~~~~~~~~~~
+
+      Name...................................... Ramesh Gupta
+      Age....................................... 72 years
+      Gender.................................... Male
+
+  YOUR SYMPTOMS
+  ~~~~~~~~~~~~~
+
+      * Fatigue                        (-)
+      * Difficulty Breathing           (-)
+      * Chest Pain                     (since yesterday)
+      * Vomiting                       (-)
+
+  YOUR VITAL SIGNS
+  ~~~~~~~~~~~~~~~~
+
+      Heart Rate................................ 110 bpm
+        (Your heart rate is a bit fast. This can happen with fever or
+        stress.)
+      Oxygen Level.............................. 91%
+        (Your oxygen is lower than normal. Please monitor this
+        closely.)
+      Blood Pressure............................ 165/100 mmHg
+      Body Temperature.......................... 99.2 F
+
+  YOUR HEALTH BACKGROUND
+  ~~~~~~~~~~~~~~~~~~~~~~
+
+      Past Health Conditions.................... Cardiac History, Hypertension
+      Lifestyle Factors......................... Smoking, Obesity
+
+------------------------------------------------------------------------------
+  WHAT WE FOUND
+------------------------------------------------------------------------------
+
+      Based on the symptoms and information you shared, our
+      AI health assistant has prepared this assessment:
+
+      Possible Condition........................ Heart Attack
+      Match Confidence.......................... Strong Match
+      Severity Level............................ Urgent
+
+      What this means:
+      ----------------------------------------
+        Your symptoms, vital signs, and medical history strongly
+        suggest a cardiac event. This is a medical emergency. Getting
+        to a hospital quickly is the most important step right now.
+
+      Understanding your condition:
+      ----------------------------------------
+        A heart attack happens when blood flow to part of your heart
+        is blocked, usually by a blood clot. The heart muscle doesn't
+        get enough oxygen and can be damaged. Quick treatment can
+        save your life and limit heart damage.
+
+      How serious is this?
+      ----------------------------------------
+        This may require immediate emergency care. Please call
+        emergency services or go to the hospital now.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  !! IMPORTANT: PLEASE SEEK MEDICAL HELP NOW !!
+  
+  Your symptoms and vital signs suggest this may need
+  immediate attention. Please do one of the following:
+  
+    * Call emergency services (112 / 108)
+    * Go to the nearest hospital emergency room
+    * Ask someone to drive you -- do NOT drive yourself
+  
+  It is better to be safe and get checked right away.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+------------------------------------------------------------------------------
+  THINGS THAT MAY INCREASE YOUR RISK
+------------------------------------------------------------------------------
+
+      These factors from your history may affect your health:
+
+      * Age > 60
+      * Hypertension
+      * High Cholesterol
+      * Smoking
+      * Obesity
+
+        Knowing your risk factors helps your doctor create the best
+        plan for you.
+
+------------------------------------------------------------------------------
+  POSSIBLE MEDICATIONS
+  (Your doctor will decide what's right for you)
+------------------------------------------------------------------------------
+
+      These are medications commonly used for this condition.
+      NEVER take any medicine without your doctor's approval.
+
+      1. Atorvastatin (Lipitor)
+         What it does : For treating your condition
+         Usual dosage : 40-80 mg once daily
+         Things to watch: Muscle pain, liver enzyme elevation
+
+      2. Aspirin
+         What it does : For treating your condition
+         Usual dosage : 325 mg stat, then 75-100 mg daily
+         Things to watch: GI bleeding, bruising
+
+      3. Clopidogrel (Plavix)
+         What it does : For treating your condition
+         Usual dosage : 75 mg once daily
+         Things to watch: Bleeding, bruising
+
+      4. Nitroglycerin (GTN)
+         What it does : For treating your condition
+         Usual dosage : 0.4 mg sublingual as needed
+         Things to watch: Headache, dizziness, flushing
+
+------------------------------------------------------------------------------
+  TESTS YOUR DOCTOR MAY ASK FOR
+------------------------------------------------------------------------------
+
+      These tests can help confirm what's going on:
+
+      1. ECG (Electrocardiogram)
+         Why: Detect ST-elevation and heart rhythm abnormalities
+      2. Troponin-I / Troponin-T
+         Why: Gold standard biomarker for heart muscle damage
+      3. Chest X-Ray
+         Why: Assess heart size and rule out other causes
+      4. Echocardiography
+         Why: Evaluate heart wall motion and ejection fraction
+      5. CBC (Complete Blood Count)
+         Why: Baseline blood assessment
+
+        These tests help your doctor understand your condition better
+        and create the most effective treatment plan.
+
+------------------------------------------------------------------------------
+  WHAT TO DO NEXT
+------------------------------------------------------------------------------
+
+      1. Visit your doctor and share this report with them.
+      2. Complete any tests your doctor recommends.
+      3. Treatment suggestion: Emergency intervention. ICU admission may be required.
+      4. Follow-up: Immediate specialist intervention required.
+      5. Keep track of your symptoms -- note if they get better or worse.
+      6. Stay hydrated, rest, and eat healthy meals.
+
+------------------------------------------------------------------------------
+  WHEN TO GET HELP RIGHT AWAY
+------------------------------------------------------------------------------
+
+      [!] Difficulty breathing or feeling short of breath
+      [!] Severe chest pain or pressure
+      [!] High fever (above 103 F / 39.4 C) that won't come down
+      [!] Fainting, confusion, or inability to stay awake
+      [!] Any sudden worsening of your symptoms
+
+        If any of the above happen, call 112/108 or go to the nearest
+        emergency room immediately. Don't wait.
+
+______________________________________________________________________________
+  IMPORTANT NOTICE
+  This report was created by an AI health assistant. It is NOT
+  a medical diagnosis. Only a qualified doctor can diagnose your
+  condition after proper examination and lab tests. Please use
+  this report as a starting point for your doctor visit, not as
+  a replacement for professional medical advice.
+______________________________________________________________________________
+
+
+==============================================================================
+  YOUR HEALTH ASSESSMENT REPORT
+  PRIYA MEHTA
+  Date: 02 June 2026, 09:18 PM
+==============================================================================
+
+
+  PATIENT INFORMATION
+  ~~~~~~~~~~~~~~~~~~~
+
+      Name...................................... Priya Mehta
+      Age....................................... 25 years
+      Gender.................................... Female
+
+  YOUR SYMPTOMS
+  ~~~~~~~~~~~~~
+
+      * Fatigue                        (-)
+      * Headache                       (today)
+      * Runny Nose                     (2 days)
+
+  YOUR VITAL SIGNS
+  ~~~~~~~~~~~~~~~~
+
+      Heart Rate................................ 72 bpm
+      Oxygen Level.............................. 99%
+        (Your oxygen level is in the normal range. This is good.)
+      Blood Pressure............................ 110/70 mmHg
+      Body Temperature.......................... 98.8 F
+
+  YOUR HEALTH BACKGROUND
+  ~~~~~~~~~~~~~~~~~~~~~~
+
+      Past Health Conditions.................... None mentioned
+      Lifestyle Factors......................... None mentioned
+
+------------------------------------------------------------------------------
+  WHAT WE FOUND
+------------------------------------------------------------------------------
+
+      Based on the symptoms and information you shared, our
+      AI health assistant has prepared this assessment:
+
+      Possible Condition........................ Rhinitis
+      Match Confidence.......................... Strong Match
+      Severity Level............................ Moderate
+
+      What this means:
+      ----------------------------------------
+        Your symptoms suggest nasal inflammation (rhinitis). This is
+        one of the most common conditions and is very treatable.
+        Avoiding triggers and using simple medications can help.
+
+      Understanding your condition:
+      ----------------------------------------
+        Rhinitis is inflammation inside your nose, causing a runny or
+        stuffy nose. It's very common and usually caused by
+        allergies, a cold, or changes in weather. It is not serious
+        and usually clears up on its own.
+
+      How serious is this?
+      ----------------------------------------
+        Your condition needs attention. Please see a doctor within
+        the next day or two for proper evaluation.
+
+------------------------------------------------------------------------------
+  POSSIBLE MEDICATIONS
+  (Your doctor will decide what's right for you)
+------------------------------------------------------------------------------
+
+      These are medications commonly used for this condition.
+      NEVER take any medicine without your doctor's approval.
+
+      1. Cetirizine (Zyrtec)
+         What it does : To reduce allergic reactions
+         Usual dosage : 10 mg once daily
+         Things to watch: Drowsiness, dry mouth
+
+      2. Fluticasone Nasal Spray (Flonase)
+         What it does : For treating your condition
+         Usual dosage : 2 sprays each nostril once daily
+         Things to watch: Nasal irritation, nosebleed
+
+      3. Oxymetazoline (Afrin)
+         What it does : For treating your condition
+         Usual dosage : 2-3 sprays each nostril twice daily
+         Things to watch: Rebound congestion
+
+      4. Loratadine (Claritin)
+         What it does : For treating your condition
+         Usual dosage : 10 mg once daily
+         Things to watch: Headache, fatigue (rare)
+
+------------------------------------------------------------------------------
+  TESTS YOUR DOCTOR MAY ASK FOR
+------------------------------------------------------------------------------
+
+      These tests can help confirm what's going on:
+
+      1. Clinical Examination
+         Why: Physical examination of nasal passages
+      2. Allergy Skin Prick Test
+         Why: Identify specific allergens causing rhinitis
+      3. Serum IgE Level
+         Why: Measure allergic response markers
+      4. Nasal Endoscopy
+         Why: Rule out polyps or structural issues
+
+        These tests help your doctor understand your condition better
+        and create the most effective treatment plan.
+
+------------------------------------------------------------------------------
+  WHAT TO DO NEXT
+------------------------------------------------------------------------------
+
+      1. Visit your doctor and share this report with them.
+      2. Complete any tests your doctor recommends.
+      3. Treatment suggestion: Medication and rest. Medical consultation recommended.
+      4. Follow-up: Schedule follow-up within 2-3 days.
+      5. Keep track of your symptoms -- note if they get better or worse.
+      6. Stay hydrated, rest, and eat healthy meals.
+
+------------------------------------------------------------------------------
+  WHEN TO GET HELP RIGHT AWAY
+------------------------------------------------------------------------------
+
+      [!] Difficulty breathing or feeling short of breath
+      [!] Severe chest pain or pressure
+      [!] High fever (above 103 F / 39.4 C) that won't come down
+      [!] Fainting, confusion, or inability to stay awake
+      [!] Any sudden worsening of your symptoms
+
+        If any of the above happen, call 112/108 or go to the nearest
+        emergency room immediately. Don't wait.
+
+______________________________________________________________________________
+  IMPORTANT NOTICE
+  This report was created by an AI health assistant. It is NOT
+  a medical diagnosis. Only a qualified doctor can diagnose your
+  condition after proper examination and lab tests. Please use
+  this report as a starting point for your doctor visit, not as
+  a replacement for professional medical advice.
+______________________________________________________________________________
+
+
+==============================================================================
+  End of Patient Report
+==============================================================================

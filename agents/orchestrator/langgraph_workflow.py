@@ -161,7 +161,7 @@ def _load_agents():
 # Maps canonical symptom names from SymptomAgent → binary feature columns
 # expected by the prediction engine.
 SYMPTOM_TO_FEATURE = {
-    # Direct matches
+    # Direct matches (underscore form — from differential agent vocabulary)
     "fever": "fever",
     "high_fever": "fever",
     "mild_fever": "fever",
@@ -181,6 +181,36 @@ SYMPTOM_TO_FEATURE = {
     "skin_rash": "rash",
     "chills": "fever",               # chills often accompanies fever
     "continuous_sneezing": "cough",   # proxy for respiratory symptoms
+
+    # Space-separated form — from Symptom Agent canonical names
+    # (SymptomAgent returns "Chest Pain" which is lowered to "chest pain")
+    "chest pain": "chest_pain",
+    "body pain": "body_pain",
+    "muscle pain": "body_pain",
+    "body ache": "body_pain",
+    "skin rash": "rash",
+    "difficulty breathing": "difficulty_breathing",
+    "shortness of breath": "difficulty_breathing",
+    "high fever": "fever",
+    "mild fever": "fever",
+    "abdominal pain": "vomiting",     # proxy for GI symptoms
+    "joint pain": "body_pain",        # proxy for musculoskeletal
+    "back pain": "body_pain",         # proxy for pain
+    "sore throat": "cough",           # proxy for respiratory
+    "runny nose": "cough",            # proxy for respiratory
+    "nasal congestion": "cough",      # proxy for respiratory
+    "diarrhea": "vomiting",           # proxy for GI
+    "constipation": "vomiting",       # proxy for GI
+    "dizziness": "headache",          # proxy for neurological
+    "blurred vision": "headache",     # proxy for neurological
+    "weight loss": "fatigue",         # proxy for systemic
+    "night sweats": "fever",          # proxy for fever-related
+    "loss of appetite": "fatigue",    # proxy for systemic
+    "wheezing": "difficulty_breathing",
+    "palpitations": "chest_pain",     # proxy for cardiac
+    "leg swelling": "chest_pain",     # proxy for cardiac
+    "seizure": "headache",            # proxy for neurological
+    "confusion": "headache",          # proxy for neurological
 }
 
 

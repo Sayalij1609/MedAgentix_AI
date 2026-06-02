@@ -1,83 +1,76 @@
 # MedAgentix AI
 
-An intelligent, multi-agent medical diagnostic system powered by machine learning, explainable AI, and retrieval-augmented generation (RAG). MedAgentix processes clinical datasets through a modular data pipeline, trains predictive models, and orchestrates specialized AI agents to assist with symptom analysis, differential diagnosis, risk assessment, and treatment recommendations.
+An intelligent, multi-agent medical diagnostic system powered by ML ensemble models, LangGraph orchestration, and Meditron-7B LLM fallback. MedAgentix processes patient symptoms through 8 specialized AI agents and generates separate **Patient-friendly** and **Doctor-clinical** diagnostic reports.
 
 ---
 
-## Table of Contents
+## Key Features
 
-- [Features](#features)
-- [Architecture](#architecture)
-- [Project Structure](#project-structure)
-- [Datasets](#datasets)
-- [Data Pipeline](#data-pipeline)
-  - [Pipeline Steps](#pipeline-steps)
-  - [Running the Pipeline](#running-the-pipeline)
-  - [Pipeline Outputs](#pipeline-outputs)
-- [Model Training (Phase 3)](#model-training-phase-3)
-  - [Algorithms](#algorithms)
-  - [Training the Models](#training-the-models)
-  - [Model Performance](#model-performance)
-  - [Trained Artifacts](#trained-artifacts)
-- [Agents](#agents)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-
----
-
-## Features
-
-- **Automated Data Pipeline** — End-to-end preprocessing, encoding, and feature engineering across 9 medical datasets.
-- **Ensemble Diagnostic Engine** — Disease prediction using Random Forest, XGBoost, LightGBM, and a Voting Ensemble with confidence-ranked outputs.
-- **Multi-Agent Architecture** — Specialized agents for symptoms, differential diagnosis, risk factors, temporal patterns, emergencies, and treatment recommendations.
-- **Explainable AI (XAI)** — SHAP and LIME-based explanations for model predictions, ensuring transparency in clinical decision support.
-- **RAG Knowledge Base** — Retrieval-Augmented Generation using ChromaDB for context-aware medical knowledge retrieval.
-- **OCR Integration** — Medical report parsing using TrOCR and Donut pipelines for document digitization.
+- **8-Agent Diagnostic Pipeline** — Symptom extraction, differential diagnosis, risk assessment, temporal analysis, emergency triage, treatment recommendations, explainability, and supervisory synthesis.
+- **LangGraph Orchestration** — State-machine workflow routes patients through all agents with confidence-based decision paths.
+- **Confidence Routing** — `>85%` direct ML output → `70-85%` cross-agent validation → `<70%` Meditron-7B LLM fallback.
+- **Dual Dashboard Reports** — Patient (simplified, no jargon) and Doctor (ICD-10, pathophysiology, pharmacotherapy).
+- **26-Disease Knowledge Base** — ICD-10 codes, pathophysiology, diagnostic markers, prognosis for each condition.
+- **Ensemble ML Engine** — Random Forest + XGBoost + LightGBM voting ensemble across 40 disease classes.
+- **ClinicalBERT NER** — Symptom extraction from free-text patient descriptions.
 
 ---
 
 ## Architecture
 
 ```
-User Input
-    |
-    v
-+-------------------+
-|   Flask API Layer  |  (api/)
-+-------------------+
-    |
-    v
-+-------------------+
-|   Agent Orchestrator  |  (agents/orchestrator/)
-+-------------------+
-    |
-    +--> Symptom Agent         (symptom_agent)
-    +--> Differential Agent    (differential_agent)
-    +--> Risk Agent            (risk_agent)
-    +--> Temporal Agent        (temporal_agent)
-    +--> Emergency Agent       (emergency_agent)
-    +--> Recommendation Agent  (recommendation_agent)
-    +--> XAI Agent             (xai_agent)
-    |
-    v
-+-------------------+       +-------------------+
-|   ML Models       |  <--> |   RAG Knowledge   |
-|   (Ensemble:      |       |   (ChromaDB)      |
-|    RF+XGB+LGBM)   |       +-------------------+
-+-------------------+
-    ^
-    |
-+-------------------+
-|   Data Pipeline   |  (data_pipeline/)
-+-------------------+
-    ^
-    |
-+-------------------+
-|   9 Raw Datasets  |  (datasets/raw/)
-+-------------------+
+Patient Input (text / form)
+        │
+        ▼
+┌─────────────────────────────────────────────────┐
+│           LangGraph Orchestrator                │
+│  ┌─────────┐  ┌──────────┐  ┌──────────┐       │
+│  │ Symptom  │→│Differenti│→│  Risk     │       │
+│  │ Agent    │  │al Agent  │  │  Agent    │       │
+│  └─────────┘  └──────────┘  └──────────┘       │
+│  ┌─────────┐  ┌──────────┐  ┌──────────┐       │
+│  │Temporal  │→│Emergency │→│  Recom.   │       │
+│  │ Agent    │  │  Agent   │  │  Agent    │       │
+│  └─────────┘  └──────────┘  └──────────┘       │
+│  ┌─────────┐  ┌──────────────────────────┐      │
+│  │  XAI    │→│  Supervisor Agent         │      │
+│  │ Agent   │  │  (Confidence Routing)     │      │
+│  └─────────┘  └──────────────────────────┘      │
+└────────────────────┬────────────────────────────┘
+                     │
+        ┌────────────┼────────────┐
+        ▼            ▼            ▼
+   >85% conf    70-85% conf   <70% conf
+   ML Direct    Validated     Meditron-7B
+                              LLM Fallback
+                     │
+        ┌────────────┴────────────┐
+        ▼                         ▼
+  Patient Report            Doctor Report
+  (Friendly)                (Clinical)
 ```
+
+---
+
+## Dual Dashboard Output
+
+### Patient Report
+- Simple language, no medical jargon
+- Confidence shown as "Strong Match" / "Possible Match"
+- Medications with "What it does" explanations
+- "When to Get Help Right Away" emergency section
+
+### Doctor Report (10 Sections)
+1. **Clinical Impression** — Diagnosis, ICD-10, confidence tier, source
+2. **Pathophysiology** — Disease mechanism, key markers, prognosis
+3. **Symptom Analysis** — Structured table with severity and match type
+4. **Risk Stratification** — Factors with weight and category
+5. **Emergency Triage** — ESI level, vital sign flags
+6. **Predictive Model Output** — Top-5 ML predictions with probabilities
+7. **Clinical Reasoning** — KB-based or LLM-generated analysis
+8. **Diagnostic Workup** — Tests with priority and department
+9. **Pharmacotherapy** — Dosage, route, ADR, contraindications
+10. **Management Plan** — Treatment, follow-up, clinical alerts
 
 ---
 
@@ -85,272 +78,51 @@ User Input
 
 ```
 MedAgentix_AI/
-|
-|-- agents/                        # AI Agent modules
-|   |-- symptom_agent.py           # Symptom analysis and follow-up
-|   |-- differential_agent.py      # Differential diagnosis
-|   |-- risk_agent.py              # Risk factor assessment
-|   |-- temporal_agent.py          # Temporal pattern analysis
-|   |-- emergency_agent.py         # Emergency triage detection
-|   |-- recommendation_agent.py    # Test/treatment recommendations
-|   |-- xai_agent.py               # Explainable AI agent
-|   +-- orchestrator/              # Multi-agent coordination
-|
-|-- api/                           # Flask API routes
-|   |-- auth_routes.py
-|   |-- chatbot_routes.py
-|   |-- doctor_routes.py
-|   |-- ocr_routes.py
-|   |-- prediction_routes.py
-|   +-- recommendation_routes.py
-|
-|-- data_pipeline/                 # Data processing pipeline
-|   |-- config.py                  # Central configuration and column mappings
-|   |-- load_data.py               # Raw CSV data loading
-|   |-- preprocess.py              # Cleaning, deduplication, imputation
-|   |-- eda.py                     # Exploratory data analysis and plots
-|   |-- encoding.py                # Binary, ordinal, and label encoding
-|   |-- feature_engineering.py     # Derived feature creation
-|   |-- integration.py             # Agent dataset + RAG knowledge preparation
-|   +-- pipeline_runner.py         # Full pipeline orchestrator
-|
-|-- datasets/
-|   |-- raw/                       # 9 original CSV datasets
-|   |-- processed/                 # Pipeline outputs
-|   |   |-- cleaned/               # Deduplicated, cleaned CSVs
-|   |   |-- encoded/               # Numerically encoded CSVs
-|   |   |-- engineered/            # Feature-engineered CSVs
-|   |   |-- merged/
-|   |   |   +-- model_ready.csv    # Final dataset for model training (2,520 x 28)
-|   |   |-- agent_datasets/        # Per-agent ready datasets
-|   |   |-- rag_knowledge/         # RAG text chunks
-|   |   +-- eda_plots/             # Visualization outputs
-|   +-- notebooks/                 # Step-by-step execution scripts
-|       |-- 01_common_cleaning_eda.py
-|       +-- 02_feature_engineering.py
-|
-|-- llm/                           # LLM integration
-|   |-- meditron_inference.py      # Meditron model inference
-|   |-- biogpt_fallback.py         # BioGPT fallback
-|   +-- prompt_templates.py        # Prompt engineering templates
-|
-|-- models/                        # ML models
-|   |-- train_model.py             # Phase 3 training script (RF + XGB + LGBM + Ensemble)
-|   |-- trained/                   # Saved model artifacts
-|   |   |-- random_forest.pkl      # Trained Random Forest
-|   |   |-- xgboost_model.pkl      # Trained XGBoost
-|   |   |-- lightgbm_model.pkl     # Trained LightGBM
-|   |   |-- disease_model.pkl      # Voting Ensemble (production model)
-|   |   +-- label_encoder.pkl      # Disease name encoder (40 classes)
-|   |-- symptom_model/
-|   |-- differential_model/
-|   |-- risk_model/
-|   +-- temporal_model/
-|
-|-- ocr/                           # Medical report OCR
-|   |-- trocr_pipeline.py          # TrOCR-based extraction
-|   |-- donut_pipeline.py          # Donut-based extraction
-|   |-- report_parser.py           # Structured report parsing
-|   +-- validation_rules.py        # OCR output validation
-|
-|-- rag/                           # RAG pipeline
-|   |-- knowledge_ingestion.py     # Document ingestion
-|   |-- retriever.py               # Similarity-based retrieval
-|   |-- generator.py               # LLM response generation
-|   |-- rag_pipeline.py            # End-to-end RAG flow
-|   |-- chromadb_store/            # Vector database storage
-|   +-- embeddings/                # Embedding cache
-|
-|-- services/                      # Business logic services
-|   |-- diagnosis_service.py
-|   |-- prediction_service.py
-|   |-- rag_service.py
-|   |-- ocr_service.py
-|   +-- feedback_service.py
-|
-|-- xai/                           # Explainable AI
-|   |-- shap_explainer.py          # SHAP explanations
-|   |-- lime_explainer.py          # LIME explanations
-|   +-- explanation_engine.py      # Unified explanation engine
-|
-|-- app.py                         # Flask application entry point
-|-- run.py                         # Application runner
-|-- config.py                      # Application configuration
-|-- requirements.txt               # Python dependencies
-+-- .gitignore
+├── agents/                           # 7 specialized AI agents
+│   ├── symptom_agent.py
+│   ├── differential_agent.py
+│   ├── risk_agent.py
+│   ├── temporal_agent.py
+│   ├── emergency_agent.py
+│   ├── recommendation_agent.py
+│   ├── xai_agent.py
+│   └── orchestrator/                 # Pipeline coordination
+│       ├── supervisor_agent.py       # Confidence routing + synthesis
+│       ├── langgraph_workflow.py     # 8-node state machine
+│       └── test_orchestrator.py      # Dual-dashboard report generator
+├── api/                              # Flask API routes
+├── data_pipeline/                    # ETL: load → clean → encode → engineer
+├── datasets/
+│   ├── raw/                          # 9 source CSVs
+│   └── processed/                    # Pipeline outputs + EDA charts
+├── llm/                              # LLM integration
+│   ├── meditron_inference.py         # Meditron-7B inference
+│   └── prompt_templates.py           # Clinical prompt engineering
+├── models/
+│   ├── train_model.py                # RF + XGB + LGBM + Ensemble training
+│   ├── trained/                      # Saved .pkl model artifacts
+│   └── recommendation_model/data/    # Drug/test/diagnostic knowledge JSONs
+├── rag/                              # ChromaDB RAG pipeline
+├── xai/                              # SHAP + LIME explainability
+├── reports/                          # Generated patient & doctor reports
+├── frontend_guide.md                 # UI design specification
+├── config.py
+├── app.py
+└── requirements.txt
 ```
 
 ---
 
-## Datasets
+## Model Performance
 
-The system processes 9 medical datasets organized into three groups:
+Trained on `model_ready.csv` (2,520 samples × 28 features × 40 disease classes):
 
-### Group A — Raw Datasets (Used for Pipeline Processing)
-
-| Dataset | File | Rows | Description |
-|---------|------|------|-------------|
-| Core Clinical | `Core Clinical Dataset.csv` | 5,000 | Patient symptoms, vitals, severity, and outcomes |
-| Risk Factor | `Risk Factor Dataset.csv` | 2,940 | Risk factors per medical condition |
-| Temporal | `Temporal Dataset.csv` | 1,792 | Symptom duration and severity patterns |
-| Differential | `Differential Diagnosis Dataset.csv` | 4,920 | Symptom sets and possible diseases |
-
-### Group B — Agent Datasets (Separate)
-
-| Dataset | File | Rows | Agent |
-|---------|------|------|-------|
-| Symptom Intelligence | `Symptom Intelligence Dataset.csv` | 5,000 | Symptom Agent |
-| Differential Diagnosis | `Differential Diagnosis Dataset.csv` | 4,920 | Differential Agent |
-| Drug Medication | `Drug Medication Dataset.csv` | 5,000 | Drug Agent |
-| Emergency Condition | `Emergency Condition Dataset.csv` | 3,000 | Emergency Agent |
-| Test Diagnostic | `Test Diagnostic Recommendation Dataset.csv` | 2,000 | Recommendation Agent |
-
-### Group C — RAG Knowledge Base
-
-| Dataset | File | Rows | Purpose |
-|---------|------|------|---------| 
-| Medical Knowledge | `Medical Knowledge Dataset.csv` | 5,000 | Disease descriptions, causes, and management |
-
-### Final Training Dataset
-
-The model is trained on `model_ready.csv` — a manually merged and feature-engineered dataset:
-
-| Property | Value |
-|----------|-------|
-| Rows | 2,520 |
-| Columns | 28 |
-| Target | `disease` (40 classes) |
-| Features | Symptoms, vitals, risk scores, temporal and differential features |
-| Location | `datasets/processed/merged/model_ready.csv` |
-
----
-
-## Data Pipeline
-
-The pipeline transforms raw CSV files into processed datasets through automated steps.
-
-### Pipeline Steps
-
-| Step | Description | Output |
-|------|-------------|--------|
-| 1 | **Load** all 9 raw CSVs | In-memory DataFrames |
-| 2 | **Clean** — deduplicate, impute nulls, standardize columns | `cleaned/*.csv` |
-| 3 | **EDA** — generate distribution and correlation plots | `eda_plots/` |
-| 4 | **Encode** — binary, ordinal, and label encoding | `encoded/*.csv` |
-| 5 | **Feature Engineering** — symptom counts, risk scores, interactions | `engineered/*.csv` |
-| 6 | **Save** all processed datasets | All directories |
-| 7 | **Agent Datasets** — prepare Group B datasets per agent | `agent_datasets/` |
-| 8 | **RAG Knowledge** — create text chunks from medical knowledge | `rag_knowledge/` |
-
-### Running the Pipeline
-
-**Prerequisites:**
-
-```bash
-pip install -r requirements.txt
-```
-
-**Full pipeline (single command):**
-
-```bash
-python -m data_pipeline.pipeline_runner
-```
-
-**Skip EDA plots (faster):**
-
-```bash
-python -m data_pipeline.pipeline_runner --skip-eda
-```
-
-**Step-by-step execution (notebooks):**
-
-```bash
-python datasets/notebooks/01_common_cleaning_eda.py
-python datasets/notebooks/02_feature_engineering.py
-```
-
-### Pipeline Outputs
-
-After a successful run, the `datasets/processed/` directory contains:
-
-```
-datasets/processed/
-|-- cleaned/               # 9 cleaned CSVs (deduplicated, imputed)
-|-- encoded/               # 9 encoded CSVs (all values numeric)
-|-- engineered/            # 9 feature-engineered CSVs
-|-- merged/
-|   +-- model_ready.csv    # Final training dataset (2,520 x 28)
-|-- agent_datasets/        # 5 agent-specific datasets
-|-- rag_knowledge/
-|   +-- knowledge_chunks.csv    # RAG text chunks
-+-- eda_plots/             # Visualization PNGs per dataset
-```
-
----
-
-## Model Training (Phase 3)
-
-The Core ML Prediction Engine is trained via `models/train_model.py`. It builds a disease prediction system that takes patient features as input and outputs a **ranked list of possible diseases with confidence scores**.
-
-### Algorithms
-
-| Model | Type | Role | Why |
-|-------|------|------|-----|
-| **Random Forest** | Bagging (200 trees) | Robust baseline | Hard to overfit, highly explainable, excellent generalization |
-| **XGBoost** | Gradient Boosting | Primary model | Best tabular performance, built-in feature importance, handles missing values |
-| **LightGBM** | Gradient Boosting (leaf-wise) | Third model | Fast training, diverse error patterns complement XGBoost |
-| **Voting Ensemble** | Soft voting (RF + XGB + LGBM) | Production model | Averages probabilities from all 3 models for the most reliable confidence scores |
-
-### Training the Models
-
-```bash
-python models/train_model.py
-```
-
-This single command will:
-1. Load `model_ready.csv` and encode disease labels
-2. Split data 80/20 (stratified by disease class)
-3. Train all 3 individual models
-4. Evaluate each with Accuracy, Recall, F1, and ROC-AUC
-5. Display feature importance from XGBoost
-6. Build the Voting Ensemble and evaluate it
-7. Show top-3 disease predictions for sample patients
-8. Save all 5 `.pkl` artifacts to `models/trained/`
-
-### Model Performance
-
-| Model | Accuracy | Recall | F1-Score | ROC-AUC |
-|-------|----------|--------|----------|---------|
-| Random Forest | 0.9802 | 0.9804 | 0.9801 | 0.9998 |
-| XGBoost | 0.9742 | 0.9742 | 0.9738 | 0.9997 |
-| LightGBM | 0.9782 | 0.9784 | 0.9778 | 0.9997 |
-| **Voting Ensemble** | **0.9742** | **0.9744** | **0.9737** | **0.9998** |
-
-All metrics are macro-averaged across 40 disease classes. ROC-AUC uses One-vs-Rest (OVR) strategy.
-
-### Trained Artifacts
-
-| File | Contents | Purpose |
-|------|----------|---------|
-| `random_forest.pkl` | Trained Random Forest model | Backup / comparison |
-| `xgboost_model.pkl` | Trained XGBoost model | Feature importance / explainability |
-| `lightgbm_model.pkl` | Trained LightGBM model | Backup / comparison |
-| `disease_model.pkl` | Voting Ensemble (RF + XGB + LGBM) | **Production prediction engine** |
-| `label_encoder.pkl` | Maps encoded integers (0–39) to disease names | Required for converting predictions to readable names |
-
----
-
-## Agents
-
-| Agent | Purpose | Data Source |
-|-------|---------|-------------|
-| **Symptom Agent** | Analyzes symptoms, generates follow-up questions | Symptom Intelligence Dataset |
-| **Differential Agent** | Narrows down possible diseases from symptom patterns | Differential Diagnosis Dataset |
-| **Risk Agent** | Assesses patient risk factors and modifiability | Risk Factor Dataset |
-| **Temporal Agent** | Evaluates symptom duration and progression patterns | Temporal Dataset |
-| **Emergency Agent** | Detects emergency conditions and triage levels | Emergency Condition Dataset |
-| **Recommendation Agent** | Suggests diagnostic tests and treatment plans | Test Diagnostic Dataset |
-| **XAI Agent** | Provides SHAP/LIME explanations for predictions | Trained Models |
+| Model | Accuracy | F1-Score | ROC-AUC |
+|-------|----------|----------|---------|
+| Random Forest | 0.9802 | 0.9801 | 0.9998 |
+| XGBoost | 0.9742 | 0.9738 | 0.9997 |
+| LightGBM | 0.9782 | 0.9778 | 0.9997 |
+| **Voting Ensemble** | **0.9742** | **0.9737** | **0.9998** |
 
 ---
 
@@ -358,65 +130,41 @@ All metrics are macro-averaged across 40 disease classes. ROC-AUC uses One-vs-Re
 
 | Category | Technologies |
 |----------|-------------|
-| **Language** | Python 3.12 |
-| **ML/DL** | XGBoost, LightGBM, Random Forest, scikit-learn |
-| **Explainability** | SHAP, LIME |
-| **LLM** | Meditron, BioGPT, LangChain, LangGraph |
-| **RAG** | ChromaDB, Transformers |
-| **OCR** | TrOCR, Donut |
-| **Backend** | Flask, SQLAlchemy |
-| **Database** | PostgreSQL |
-| **Data Processing** | Pandas, NumPy |
-| **Visualization** | Matplotlib, Seaborn |
-| **Serialization** | joblib, pickle |
+| **ML** | XGBoost, LightGBM, Random Forest, scikit-learn |
+| **Orchestration** | LangGraph, LangChain |
+| **LLM** | Meditron-7B, BioGPT |
+| **NLP** | ClinicalBERT, Transformers |
+| **XAI** | SHAP, LIME |
+| **RAG** | ChromaDB |
+| **Backend** | Flask, Python 3.12 |
+| **Data** | Pandas, NumPy, Matplotlib, Seaborn |
 
 ---
 
-## Installation
+## Quick Start
 
 ```bash
-# Clone the repository
+# Clone & setup
 git clone https://github.com/Sayalij1609/MedAgentix_AI.git
 cd MedAgentix_AI
-
-# Create virtual environment
 python -m venv .venv
-
-# Activate (Windows)
 .venv\Scripts\activate
-
-# Install dependencies
 pip install -r requirements.txt
-```
 
----
-
-## Usage
-
-### 1. Run the Data Pipeline
-
-```bash
+# Run data pipeline
 python -m data_pipeline.pipeline_runner --skip-eda
-```
 
-Or step-by-step:
-
-```bash
-python datasets/notebooks/01_common_cleaning_eda.py
-python datasets/notebooks/02_feature_engineering.py
-```
-
-### 2. Train the Diagnostic Model
-
-```bash
+# Train models
 python models/train_model.py
-```
 
-### 3. Start the Application
+# Run diagnostic pipeline (generates reports)
+python agents/orchestrator/test_orchestrator.py
 
-```bash
+# Start web application
 python run.py
 ```
+
+Reports are saved to `reports/patient_report.txt` and `reports/doctor_report.txt`.
 
 ---
 

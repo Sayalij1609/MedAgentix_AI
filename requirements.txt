@@ -6,6 +6,8 @@ langchain
 chromadb
 transformers
 torch
+accelerate
+bitsandbytes
 shap
 opencv-python
 psycopg2

@@ -491,6 +491,20 @@ class EmergencyAgent:
             urgency_level = "Critical"
             urgency_confidence = max(urgency_confidence, 0.85)
 
+        # Step 6b: Safety guard — prevent false Critical for benign presentations
+        # If the model predicts Critical/High but:
+        #   - no symptoms matched any known emergency pattern, AND
+        #   - no vital sign red flags were raised
+        # then the prediction is likely a model artifact. Cap at "Medium".
+        if urgency_level in ("Critical", "High"):
+            no_symptom_match = (symptom_confidence < 0.5)
+            no_condition_match = (detected_condition is None)
+            no_vital_flags = (len(vital_flags) == 0)
+
+            if no_symptom_match and no_condition_match and no_vital_flags:
+                urgency_level = "Medium"
+                urgency_confidence = min(urgency_confidence, 0.50)
+
         # Step 7: Triage info
         triage_info = self._get_triage_info(urgency_level, detected_condition)
 

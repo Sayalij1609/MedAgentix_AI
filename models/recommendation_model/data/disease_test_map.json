@@ -1,92 +1,416 @@
 {
-  "Bronchitis": {
+  "COVID-19": {
     "primary": [
-      "X-Ray",
-      "Urine Analysis",
-      "CBC Test",
-      "MRI Scan"
+      "RT-PCR Test (Nasal Swab)",
+      "Rapid Antigen Test",
+      "Chest X-Ray",
+      "Pulse Oximetry"
     ],
     "secondary": [
-      "Liver Function Test"
+      "CBC (Complete Blood Count)",
+      "CRP (C-Reactive Protein)",
+      "D-Dimer"
     ],
     "all": [
-      "X-Ray",
-      "Urine Analysis",
-      "CBC Test",
-      "Liver Function Test",
-      "MRI Scan"
+      "RT-PCR Test (Nasal Swab)",
+      "Rapid Antigen Test",
+      "Chest X-Ray",
+      "CBC (Complete Blood Count)",
+      "CRP (C-Reactive Protein)",
+      "D-Dimer",
+      "Pulse Oximetry"
     ]
   },
-  "Cold": {
+  "Influenza": {
     "primary": [
-      "MRI Scan",
-      "CBC Test",
-      "Liver Function Test"
+      "Rapid Influenza Diagnostic Test (RIDT)",
+      "Influenza PCR Test"
     ],
     "secondary": [
-      "X-Ray",
-      "Urine Analysis"
+      "CBC (Complete Blood Count)",
+      "Chest X-Ray"
     ],
     "all": [
-      "MRI Scan",
-      "X-Ray",
-      "CBC Test",
-      "Urine Analysis",
-      "Liver Function Test"
+      "Rapid Influenza Diagnostic Test (RIDT)",
+      "Influenza PCR Test",
+      "CBC (Complete Blood Count)",
+      "Chest X-Ray"
     ]
   },
-  "Flu": {
+  "Common Cold": {
     "primary": [
-      "Liver Function Test",
-      "MRI Scan"
+      "No specific tests needed"
     ],
     "secondary": [
-      "Urine Analysis",
-      "X-Ray",
-      "CBC Test"
+      "Throat Swab Culture",
+      "CBC (Complete Blood Count)"
     ],
     "all": [
-      "Liver Function Test",
-      "MRI Scan",
-      "Urine Analysis",
-      "X-Ray",
-      "CBC Test"
+      "No specific tests needed",
+      "Throat Swab Culture",
+      "CBC (Complete Blood Count)"
     ]
   },
-  "Healthy": {
+  "Rhinitis": {
     "primary": [
-      "X-Ray",
-      "CBC Test"
+      "Clinical Examination",
+      "Allergy Skin Prick Test"
     ],
     "secondary": [
-      "Liver Function Test",
-      "Urine Analysis",
-      "MRI Scan"
+      "Serum IgE Level",
+      "Nasal Endoscopy"
     ],
     "all": [
-      "Liver Function Test",
-      "Urine Analysis",
-      "MRI Scan",
-      "X-Ray",
-      "CBC Test"
+      "Clinical Examination",
+      "Allergy Skin Prick Test",
+      "Serum IgE Level",
+      "Nasal Endoscopy"
+    ]
+  },
+  "Heart Attack": {
+    "primary": [
+      "ECG (Electrocardiogram)",
+      "Troponin-I / Troponin-T",
+      "Chest X-Ray",
+      "Echocardiography"
+    ],
+    "secondary": [
+      "CBC (Complete Blood Count)",
+      "Lipid Profile",
+      "BNP / NT-proBNP"
+    ],
+    "all": [
+      "ECG (Electrocardiogram)",
+      "Troponin-I / Troponin-T",
+      "Chest X-Ray",
+      "CBC (Complete Blood Count)",
+      "Lipid Profile",
+      "Echocardiography",
+      "BNP / NT-proBNP"
+    ]
+  },
+  "Acute Coronary Syndrome": {
+    "primary": [
+      "ECG (Electrocardiogram)",
+      "Troponin-I / Troponin-T",
+      "Chest X-Ray",
+      "Coronary Angiography"
+    ],
+    "secondary": [
+      "Lipid Profile"
+    ],
+    "all": [
+      "ECG (Electrocardiogram)",
+      "Troponin-I / Troponin-T",
+      "Chest X-Ray",
+      "Coronary Angiography",
+      "Lipid Profile"
+    ]
+  },
+  "Hypertension": {
+    "primary": [
+      "Blood Pressure Monitoring (24-hour)",
+      "ECG (Electrocardiogram)",
+      "Serum Creatinine & BUN"
+    ],
+    "secondary": [
+      "Urinalysis",
+      "Lipid Profile",
+      "Fundoscopy"
+    ],
+    "all": [
+      "Blood Pressure Monitoring (24-hour)",
+      "ECG (Electrocardiogram)",
+      "Serum Creatinine & BUN",
+      "Urinalysis",
+      "Lipid Profile",
+      "Fundoscopy"
+    ]
+  },
+  "Asthma": {
+    "primary": [
+      "Spirometry (Pulmonary Function Test)",
+      "Peak Flow Meter Reading",
+      "Pulse Oximetry"
+    ],
+    "secondary": [
+      "Chest X-Ray",
+      "Allergy Testing (IgE)"
+    ],
+    "all": [
+      "Spirometry (Pulmonary Function Test)",
+      "Peak Flow Meter Reading",
+      "Chest X-Ray",
+      "Allergy Testing (IgE)",
+      "Pulse Oximetry"
+    ]
+  },
+  "Diabetes": {
+    "primary": [
+      "Fasting Blood Glucose",
+      "HbA1c (Glycated Hemoglobin)",
+      "Oral Glucose Tolerance Test (OGTT)"
+    ],
+    "secondary": [
+      "Lipid Profile",
+      "Serum Creatinine",
+      "Urinalysis (Microalbuminuria)"
+    ],
+    "all": [
+      "Fasting Blood Glucose",
+      "HbA1c (Glycated Hemoglobin)",
+      "Oral Glucose Tolerance Test (OGTT)",
+      "Lipid Profile",
+      "Serum Creatinine",
+      "Urinalysis (Microalbuminuria)"
+    ]
+  },
+  "Type 2 Diabetes": {
+    "primary": [
+      "Fasting Blood Glucose",
+      "HbA1c (Glycated Hemoglobin)",
+      "Lipid Profile"
+    ],
+    "secondary": [
+      "Serum Creatinine & eGFR",
+      "Urine Microalbumin"
+    ],
+    "all": [
+      "Fasting Blood Glucose",
+      "HbA1c (Glycated Hemoglobin)",
+      "Lipid Profile",
+      "Serum Creatinine & eGFR",
+      "Urine Microalbumin"
     ]
   },
   "Pneumonia": {
     "primary": [
-      "MRI Scan",
-      "CBC Test"
+      "Chest X-Ray (PA view)",
+      "CBC (Complete Blood Count)",
+      "Sputum Culture & Sensitivity",
+      "Pulse Oximetry"
     ],
     "secondary": [
-      "Urine Analysis",
-      "Liver Function Test",
-      "X-Ray"
+      "CRP (C-Reactive Protein)",
+      "Blood Culture"
     ],
     "all": [
-      "Urine Analysis",
+      "Chest X-Ray (PA view)",
+      "CBC (Complete Blood Count)",
+      "Sputum Culture & Sensitivity",
+      "CRP (C-Reactive Protein)",
+      "Pulse Oximetry",
+      "Blood Culture"
+    ]
+  },
+  "Tuberculosis": {
+    "primary": [
+      "Chest X-Ray",
+      "Sputum AFB Smear & Culture",
+      "Mantoux / Tuberculin Skin Test (TST)",
+      "GeneXpert MTB/RIF"
+    ],
+    "secondary": [
+      "ESR (Erythrocyte Sedimentation Rate)"
+    ],
+    "all": [
+      "Chest X-Ray",
+      "Sputum AFB Smear & Culture",
+      "Mantoux / Tuberculin Skin Test (TST)",
+      "GeneXpert MTB/RIF",
+      "ESR (Erythrocyte Sedimentation Rate)"
+    ]
+  },
+  "Malaria": {
+    "primary": [
+      "Peripheral Blood Smear (Thick & Thin)",
+      "Rapid Diagnostic Test (RDT) for Malaria",
+      "CBC (Complete Blood Count)"
+    ],
+    "secondary": [
       "Liver Function Test",
-      "MRI Scan",
-      "X-Ray",
-      "CBC Test"
+      "Serum Bilirubin"
+    ],
+    "all": [
+      "Peripheral Blood Smear (Thick & Thin)",
+      "Rapid Diagnostic Test (RDT) for Malaria",
+      "CBC (Complete Blood Count)",
+      "Liver Function Test",
+      "Serum Bilirubin"
+    ]
+  },
+  "Dengue": {
+    "primary": [
+      "Dengue NS1 Antigen Test",
+      "Dengue IgM / IgG Antibody Test",
+      "CBC (Complete Blood Count)",
+      "Hematocrit"
+    ],
+    "secondary": [
+      "Liver Function Test"
+    ],
+    "all": [
+      "Dengue NS1 Antigen Test",
+      "Dengue IgM / IgG Antibody Test",
+      "CBC (Complete Blood Count)",
+      "Hematocrit",
+      "Liver Function Test"
+    ]
+  },
+  "Typhoid": {
+    "primary": [
+      "Widal Test",
+      "Blood Culture",
+      "CBC (Complete Blood Count)",
+      "Typhidot Test (IgM)"
+    ],
+    "secondary": [
+      "Liver Function Test"
+    ],
+    "all": [
+      "Widal Test",
+      "Blood Culture",
+      "CBC (Complete Blood Count)",
+      "Typhidot Test (IgM)",
+      "Liver Function Test"
+    ]
+  },
+  "Fever": {
+    "primary": [
+      "CBC (Complete Blood Count)",
+      "Blood Culture",
+      "CRP (C-Reactive Protein)"
+    ],
+    "secondary": [
+      "Urinalysis",
+      "Chest X-Ray"
+    ],
+    "all": [
+      "CBC (Complete Blood Count)",
+      "Blood Culture",
+      "CRP (C-Reactive Protein)",
+      "Urinalysis",
+      "Chest X-Ray"
+    ]
+  },
+  "GERD": {
+    "primary": [
+      "Upper GI Endoscopy (EGD)",
+      "24-Hour Esophageal pH Monitoring"
+    ],
+    "secondary": [
+      "H. pylori Test (Breath/Stool)",
+      "Barium Swallow X-Ray"
+    ],
+    "all": [
+      "Upper GI Endoscopy (EGD)",
+      "24-Hour Esophageal pH Monitoring",
+      "H. pylori Test (Breath/Stool)",
+      "Barium Swallow X-Ray"
+    ]
+  },
+  "Gastroenteritis": {
+    "primary": [
+      "Stool Examination (Routine & Microscopy)",
+      "Stool Culture",
+      "Serum Electrolytes"
+    ],
+    "secondary": [
+      "CBC (Complete Blood Count)"
+    ],
+    "all": [
+      "Stool Examination (Routine & Microscopy)",
+      "Stool Culture",
+      "Serum Electrolytes",
+      "CBC (Complete Blood Count)"
+    ]
+  },
+  "Urinary Tract Infection": {
+    "primary": [
+      "Urinalysis (Dipstick + Microscopy)",
+      "Urine Culture & Sensitivity"
+    ],
+    "secondary": [
+      "CBC (Complete Blood Count)",
+      "Serum Creatinine",
+      "Ultrasound KUB"
+    ],
+    "all": [
+      "Urinalysis (Dipstick + Microscopy)",
+      "Urine Culture & Sensitivity",
+      "CBC (Complete Blood Count)",
+      "Serum Creatinine",
+      "Ultrasound KUB"
+    ]
+  },
+  "Migraine": {
+    "primary": [
+      "Clinical Assessment (Headache Diary)"
+    ],
+    "secondary": [
+      "CT Scan (Head)",
+      "MRI Brain",
+      "ESR / CRP"
+    ],
+    "all": [
+      "Clinical Assessment (Headache Diary)",
+      "CT Scan (Head)",
+      "MRI Brain",
+      "ESR / CRP"
+    ]
+  },
+  "Pain": {
+    "primary": [
+      "Clinical Examination",
+      "X-Ray (Affected Area)"
+    ],
+    "secondary": [
+      "CBC (Complete Blood Count)",
+      "ESR / CRP",
+      "MRI (if needed)"
+    ],
+    "all": [
+      "Clinical Examination",
+      "X-Ray (Affected Area)",
+      "CBC (Complete Blood Count)",
+      "ESR / CRP",
+      "MRI (if needed)"
+    ]
+  },
+  "Bacterial Infection": {
+    "primary": [
+      "CBC (Complete Blood Count)",
+      "Blood Culture",
+      "CRP (C-Reactive Protein)"
+    ],
+    "secondary": [
+      "Procalcitonin",
+      "Wound / Throat Swab Culture"
+    ],
+    "all": [
+      "CBC (Complete Blood Count)",
+      "Blood Culture",
+      "CRP (C-Reactive Protein)",
+      "Procalcitonin",
+      "Wound / Throat Swab Culture"
+    ]
+  },
+  "Respiratory Infection": {
+    "primary": [
+      "Chest X-Ray",
+      "CBC (Complete Blood Count)",
+      "Sputum Culture & Sensitivity",
+      "Pulse Oximetry"
+    ],
+    "secondary": [
+      "CRP (C-Reactive Protein)"
+    ],
+    "all": [
+      "Chest X-Ray",
+      "CBC (Complete Blood Count)",
+      "Sputum Culture & Sensitivity",
+      "CRP (C-Reactive Protein)",
+      "Pulse Oximetry"
     ]
   }
 }
