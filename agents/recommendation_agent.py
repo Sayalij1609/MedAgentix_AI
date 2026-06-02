@@ -38,80 +38,159 @@ import config
 # Maps disease names from the prediction engine (Phase 3) to the
 # drug/diagnostic datasets which use slightly different naming.
 DISEASE_ALIAS_MAP = {
-    # Prediction engine name -> Drug dataset name
-    "fungal infection": "General Disorder",
-    "allergy": "General Disorder",
+    # Prediction engine / Differential agent names -> Drug KB key
+    "fungal infection": "Bacterial Infection",
+    "allergy": "Common Cold",
     "gerd": "GERD",
-    "chronic cholestasis": "General Disorder",
-    "drug reaction": "General Disorder",
+    "chronic cholestasis": "GERD",
+    "drug reaction": "Fever",
     "peptic ulcer disease": "GERD",
-    "aids": "General Disorder",
+    "peptic ulcer diseae": "GERD",
+    "peptic ulcer": "GERD",
+    "aids": "Bacterial Infection",
     "diabetes": "Diabetes",
     "diabetes ": "Diabetes",
     "type 2 diabetes": "Type 2 Diabetes",
-    "gastroenteritis": "General Disorder",
+    "gastroenteritis": "Gastroenteritis",
     "bronchial asthma": "Asthma",
     "asthma": "Asthma",
     "hypertension": "Hypertension",
-    "migraine": "Pain",
+    "hypertension ": "Hypertension",
+    "migraine": "Migraine",
     "cervical spondylosis": "Pain",
-    "paralysis (brain hemorrhage)": "General Disorder",
-    "jaundice": "General Disorder",
-    "malaria": "Fever",
-    "chicken pox": "General Disorder",
-    "dengue": "Fever",
-    "typhoid": "Fever",
-    "hepatitis a": "General Disorder",
-    "hepatitis b": "General Disorder",
-    "hepatitis c": "General Disorder",
-    "hepatitis d": "General Disorder",
-    "hepatitis e": "General Disorder",
-    "alcoholic hepatitis": "General Disorder",
-    "tuberculosis": "Respiratory Infection",
-    "common cold": "General Disorder",
-    "pneumonia": "Respiratory Infection",
-    "dimorphic hemorrhoids (piles)": "General Disorder",
-    "heart attack": "General Disorder",
-    "varicose veins": "General Disorder",
-    "hypothyroidism": "General Disorder",
-    "hyperthyroidism": "General Disorder",
+    "paralysis (brain hemorrhage)": "Heart Attack",
+    "jaundice": "Fever",
+    "malaria": "Malaria",
+    "chicken pox": "Fever",
+    "dengue": "Dengue",
+    "typhoid": "Typhoid",
+    "hepatitis a": "Fever",
+    "hepatitis b": "Bacterial Infection",
+    "hepatitis c": "Bacterial Infection",
+    "hepatitis d": "Bacterial Infection",
+    "hepatitis e": "Fever",
+    "alcoholic hepatitis": "GERD",
+    "tuberculosis": "Tuberculosis",
+    "common cold": "Common Cold",
+    "pneumonia": "Pneumonia",
+    "dimorphic hemorrhoids (piles)": "Pain",
+    "dimorphic hemmorhoids(piles)": "Pain",
+    "heart attack": "Heart Attack",
+    "varicose veins": "Pain",
+    "hypothyroidism": "Fever",
+    "hyperthyroidism": "Fever",
     "hypoglycemia": "Diabetes",
     "osteoarthritis": "Pain",
+    "osteoarthristis": "Pain",
     "arthritis": "Pain",
-    "(vertigo) paroxysmal positional vertigo": "General Disorder",
-    "acne": "General Disorder",
-    "urinary tract infection": "Bacterial Infection",
-    "psoriasis": "General Disorder",
+    "(vertigo) paroxysmal positional vertigo": "Pain",
+    "(vertigo) paroymsal  positional vertigo": "Pain",
+    "acne": "Bacterial Infection",
+    "urinary tract infection": "Urinary Tract Infection",
+    "psoriasis": "Pain",
     "impetigo": "Bacterial Infection",
     "fever": "Fever",
     "pain": "Pain",
     "bacterial infection": "Bacterial Infection",
     "respiratory infection": "Respiratory Infection",
+    # Meditron LLM output names -> Drug KB key
+    "covid-19": "COVID-19",
+    "covid": "COVID-19",
+    "influenza": "Influenza",
+    "influenza-like illness": "Influenza",
+    "rhinitis": "Rhinitis",
+    "rhinosinusitis": "Rhinitis",
+    "rhinovirus": "Common Cold",
+    "acute coronary syndrome": "Acute Coronary Syndrome",
+    "acute myocardial infarction": "Heart Attack",
+    "myocardial infarction": "Heart Attack",
+    "acute heart failure": "Heart Attack",
+    "pulmonary embolism": "Heart Attack",
+    "mononucleosis": "Fever",
+    "allergic rhinitis": "Rhinitis",
     # Diagnostic test dataset names
-    "flu": "Flu",
-    "cold": "Cold",
-    "bronchitis": "Bronchitis",
-    "healthy": "Healthy",
+    "flu": "Influenza",
+    "cold": "Common Cold",
+    "bronchitis": "Respiratory Infection",
+    "healthy": "Common Cold",
 }
 
 # Maps prediction engine disease names -> diagnostic test dataset names
 DISEASE_TO_DIAGNOSIS_MAP = {
+    # Prediction engine diseases -> Diagnostic KB entries
     "pneumonia": "Pneumonia",
-    "bronchial asthma": "Bronchitis",
-    "tuberculosis": "Pneumonia",
-    "common cold": "Cold",
-    "dengue": "Flu",
-    "malaria": "Flu",
-    "typhoid": "Flu",
-    "chicken pox": "Flu",
-    "fungal infection": "Healthy",
-    "allergy": "Healthy",
-    "gerd": "Healthy",
-    "flu": "Flu",
-    "cold": "Cold",
-    "bronchitis": "Bronchitis",
-    "healthy": "Healthy",
-    "respiratory infection": "Pneumonia",
+    "bronchial asthma": "Asthma",
+    "asthma": "Asthma",
+    "tuberculosis": "Tuberculosis",
+    "common cold": "Common Cold",
+    "dengue": "Dengue",
+    "malaria": "Malaria",
+    "typhoid": "Typhoid",
+    "chicken pox": "Fever",
+    "fungal infection": "Bacterial Infection",
+    "allergy": "Rhinitis",
+    "gerd": "GERD",
+    "chronic cholestasis": "GERD",
+    "drug reaction": "Fever",
+    "peptic ulcer disease": "GERD",
+    "peptic ulcer": "GERD",
+    "aids": "Bacterial Infection",
+    "diabetes": "Diabetes",
+    "diabetes ": "Diabetes",
+    "type 2 diabetes": "Type 2 Diabetes",
+    "gastroenteritis": "Gastroenteritis",
+    "hypertension": "Hypertension",
+    "hypertension ": "Hypertension",
+    "migraine": "Migraine",
+    "cervical spondylosis": "Pain",
+    "paralysis (brain hemorrhage)": "Heart Attack",
+    "jaundice": "Fever",
+    "hepatitis a": "Fever",
+    "hepatitis b": "Bacterial Infection",
+    "hepatitis c": "Bacterial Infection",
+    "hepatitis d": "Bacterial Infection",
+    "hepatitis e": "Fever",
+    "alcoholic hepatitis": "GERD",
+    "heart attack": "Heart Attack",
+    "varicose veins": "Pain",
+    "hypothyroidism": "Fever",
+    "hyperthyroidism": "Fever",
+    "hypoglycemia": "Diabetes",
+    "osteoarthritis": "Pain",
+    "osteoarthristis": "Pain",
+    "arthritis": "Pain",
+    "(vertigo) paroxysmal positional vertigo": "Migraine",
+    "(vertigo) paroymsal  positional vertigo": "Migraine",
+    "acne": "Bacterial Infection",
+    "urinary tract infection": "Urinary Tract Infection",
+    "psoriasis": "Pain",
+    "impetigo": "Bacterial Infection",
+    "fever": "Fever",
+    "pain": "Pain",
+    "bacterial infection": "Bacterial Infection",
+    "respiratory infection": "Respiratory Infection",
+    "dimorphic hemorrhoids (piles)": "Pain",
+    "dimorphic hemmorhoids(piles)": "Pain",
+    # Meditron LLM output names
+    "covid-19": "COVID-19",
+    "covid": "COVID-19",
+    "influenza": "Influenza",
+    "influenza-like illness": "Influenza",
+    "rhinitis": "Rhinitis",
+    "rhinosinusitis": "Rhinitis",
+    "rhinovirus": "Common Cold",
+    "acute coronary syndrome": "Acute Coronary Syndrome",
+    "acute myocardial infarction": "Heart Attack",
+    "myocardial infarction": "Heart Attack",
+    "acute heart failure": "Heart Attack",
+    "pulmonary embolism": "Heart Attack",
+    "mononucleosis": "Fever",
+    "allergic rhinitis": "Rhinitis",
+    # Test dataset names
+    "flu": "Influenza",
+    "cold": "Common Cold",
+    "bronchitis": "Respiratory Infection",
+    "healthy": "Common Cold",
 }
 
 # Severity-based urgency mapping
@@ -140,8 +219,8 @@ SEVERITY_ACTIONS = {
 
 # Risk alerts per population group
 POPULATION_ALERTS = {
-    "Pediatric": "⚠ Pediatric patient — verify age-appropriate dosage. Some medications may not be suitable for children.",
-    "Geriatric": "⚠ Geriatric patient — consider reduced dosage and potential drug interactions. Monitor renal and hepatic function.",
+    "Pediatric": "[!] Pediatric patient -- verify age-appropriate dosage. Some medications may not be suitable for children.",
+    "Geriatric": "[!] Geriatric patient -- consider reduced dosage and potential drug interactions. Monitor renal and hepatic function.",
     "Adult": None,
 }
 
@@ -330,7 +409,7 @@ class RecommendationAgent:
         # Confidence-based recommendations
         if confidence and confidence < 0.7:
             plan["confidence_note"] = (
-                "⚠ Model confidence is below 70%. Consider additional diagnostic tests "
+                "[!] Model confidence is below 70%. Consider additional diagnostic tests "
                 "and specialist consultation before proceeding with treatment."
             )
         elif confidence and confidence < 0.85:
@@ -362,14 +441,14 @@ class RecommendationAgent:
         for drug in drug_recommendations:
             if drug.get("contraindications") and drug["contraindications"] != "See clinician":
                 alerts.append(
-                    f"⚠ {drug['drug']}: Contraindicated in {drug['contraindications']}. "
+                    f"[!] {drug['drug']}: Contraindicated in {drug['contraindications']}. "
                     f"Verify patient history before administration."
                 )
 
         # Severity-based alerts
         if severity and severity.lower() in ("severe", "critical"):
             alerts.append(
-                "🔴 Severe/Critical condition — hospitalization may be required. "
+                "[!!] Severe/Critical condition -- hospitalization may be required. "
                 "Ensure immediate medical supervision."
             )
 
@@ -378,7 +457,7 @@ class RecommendationAgent:
         if high_risk_drugs:
             drug_names = ", ".join([d["drug"] for d in high_risk_drugs[:3]])
             alerts.append(
-                f"⚠ High-risk medication(s): {drug_names}. Requires close monitoring."
+                f"[!] High-risk medication(s): {drug_names}. Requires close monitoring."
             )
 
         return alerts
@@ -453,7 +532,7 @@ class RecommendationAgent:
             },
             "risk_alerts": alerts,
             "disclaimer": (
-                "⚕ DISCLAIMER: These recommendations are AI-generated for informational "
+                "[!] DISCLAIMER: These recommendations are AI-generated for informational "
                 "purposes only. They do NOT constitute medical advice. Always consult a "
                 "qualified healthcare professional before starting any treatment."
             ),
