@@ -51,6 +51,10 @@ SYMPTOM_EMBEDDINGS_PATH = os.path.join(SYMPTOM_NORMALIZER_DIR, "symptom_embeddin
 # ============================================================
 CLINICALBERT_NAME = "emilyalsentzer/Bio_ClinicalBERT"
 BIOGPT_NAME = "microsoft/biogpt"
+MEDITRON_MODEL_NAME = "epfl-llm/meditron-7b"
+MEDITRON_MAX_NEW_TOKENS = 256
+MEDITRON_TEMPERATURE = 0.3
+MEDITRON_USE_QUANTIZATION = True  # 4-bit NF4 on CUDA, float16 on CPU
 
 # NER labels
 NER_LABELS = ["O", "B-SYMPTOM", "I-SYMPTOM"]
