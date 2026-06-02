@@ -48,10 +48,56 @@ class SupervisorAgent:
     Takes the full pipeline state (all agent results) and produces
     a unified diagnosis with confidence level, risk assessment,
     treatment recommendations, and alerts.
+
+    Confidence-based LLM fallback:
+      >85%  → ML prediction directly (no LLM)
+      70-85% → Weighted voting + LLM reasoning annotation
+      <70%  → Meditron 7B fallback → BioGPT fallback → differential only
     """
 
     def __init__(self):
+        # Lazy-init LLM fallbacks (loaded on first low-confidence call)
+        self._meditron = None
+        self._biogpt = None
         print("  [OK] Supervisor Agent ready")
+
+    # --------------------------------------------------------
+    # LLM FALLBACK CASCADE: Meditron → BioGPT
+    # --------------------------------------------------------
+    def _get_llm_fallback(self):
+        """
+        Get the best available LLM fallback.
+
+        Cascade priority:
+          1. Meditron 7B (preferred — clinical reasoning)
+          2. BioGPT (fallback — lighter, already loaded by symptom agent)
+
+        Returns:
+            tuple: (llm_instance_or_None, source_name_str)
+        """
+        # Try Meditron first
+        if self._meditron is None:
+            try:
+                from llm.meditron_inference import MeditronInference
+                self._meditron = MeditronInference()
+            except Exception:
+                self._meditron = None
+
+        if self._meditron and self._meditron.is_available():
+            return self._meditron, "Meditron_7B"
+
+        # Fallback to BioGPT
+        if self._biogpt is None:
+            try:
+                from llm.biogpt_fallback import BioGPTFallback
+                self._biogpt = BioGPTFallback()
+            except Exception:
+                self._biogpt = None
+
+        if self._biogpt:
+            return self._biogpt, "BioGPT"
+
+        return None, "none"
 
     # --------------------------------------------------------
     # CONFIDENCE ROUTING
@@ -70,27 +116,36 @@ class SupervisorAgent:
     # --------------------------------------------------------
     def _high_confidence_path(self, state):
         """
-        ML prediction is trustworthy — use it directly.
+        ML prediction is trustworthy — use the highest-confidence source.
         Enrich with agent insights but don't override.
-        If prediction engine was skipped, fall back to differential agent.
         """
         prediction = state.get("prediction_result", {})
         differential = state.get("differential_result", {})
 
-        # Use prediction engine if available, otherwise differential agent
-        if prediction.get("primary_disease"):
-            primary_disease = prediction["primary_disease"]
-            primary_confidence = prediction["primary_confidence"]
+        pred_disease = prediction.get("primary_disease")
+        pred_conf = prediction.get("primary_confidence", 0)
+        diff_disease = differential.get("primary_diagnosis")
+        diff_conf = differential.get("primary_confidence", 0)
+
+        # Use whichever source has higher confidence
+        if pred_disease and pred_conf >= diff_conf:
+            primary_disease = pred_disease
+            primary_confidence = pred_conf
             source = "prediction_engine"
             alternatives = prediction.get("top_diseases", [])[1:4]
-        else:
-            primary_disease = differential.get("primary_diagnosis", "Unknown")
-            primary_confidence = differential.get("primary_confidence", 0)
+        elif diff_disease:
+            primary_disease = diff_disease
+            primary_confidence = diff_conf
             source = "differential_agent"
             alternatives = [
                 {"disease": d["disease"], "confidence": d["confidence"]}
                 for d in differential.get("differential_diagnoses", [])[1:4]
             ]
+        else:
+            primary_disease = pred_disease or "Unknown"
+            primary_confidence = pred_conf
+            source = "prediction_engine"
+            alternatives = []
 
         return {
             "final_disease": primary_disease,
@@ -109,6 +164,7 @@ class SupervisorAgent:
     def _moderate_confidence_path(self, state):
         """
         Weighted voting across agents to boost or correct the prediction.
+        Augmented with LLM reasoning annotation when available.
         """
         prediction = state.get("prediction_result", {})
         differential = state.get("differential_result", {})
@@ -165,6 +221,27 @@ class SupervisorAgent:
             total_weight = sum(v for _, v in sorted_votes)
             final_confidence = winner[1] / total_weight if total_weight > 0 else 0
 
+            # --- LLM reasoning annotation (augment, don't override) ---
+            llm_reasoning = ""
+            llm_source = "none"
+            llm, source_name = self._get_llm_fallback()
+            if llm and hasattr(llm, 'reason_treatment'):
+                try:
+                    context = (
+                        f"Age {state.get('patient_age', 'unknown')}, "
+                        f"Gender {state.get('patient_gender', 'unknown')}"
+                    )
+                    llm_result = llm.reason_treatment(
+                        disease=winner[0],
+                        severity="Moderate",
+                        patient_context=context,
+                    )
+                    llm_reasoning = llm_result.get("reasoning", "")
+                    llm_source = source_name
+                except Exception:
+                    llm_reasoning = ""
+                    llm_source = "none"
+
             return {
                 "final_disease": winner[0],
                 "final_confidence": round(final_confidence, 4),
@@ -179,6 +256,8 @@ class SupervisorAgent:
                     f"'{winner[0]}' received highest weighted score ({winner[1]:.3f}). "
                     f"Consider diagnostic tests to confirm."
                 ),
+                "llm_reasoning": llm_reasoning,
+                "llm_source": llm_source,
             }
 
         # Fallback
@@ -188,6 +267,8 @@ class SupervisorAgent:
             "diagnosis_source": "prediction_engine_fallback",
             "alternatives": [],
             "reasoning": "Moderate confidence but no agent votes converged. Using prediction engine output.",
+            "llm_reasoning": "",
+            "llm_source": "none",
         }
 
     # --------------------------------------------------------
@@ -195,12 +276,57 @@ class SupervisorAgent:
     # --------------------------------------------------------
     def _low_confidence_path(self, state):
         """
-        Low confidence — flag for review, include all differentials.
+        Low confidence — trigger LLM fallback for generative diagnosis.
+
+        Cascade: Meditron 7B → BioGPT → differential agent only.
         """
         prediction = state.get("prediction_result", {})
         differential = state.get("differential_result", {})
+        symptom_result = state.get("symptom_result", {})
 
-        # Use differential agent's ranking since ML is uncertain
+        # Collect symptoms for LLM prompt
+        symptoms = [
+            s.get("canonical_name", s.get("raw_text", ""))
+            for s in symptom_result.get("extracted_symptoms", [])
+        ]
+        symptoms_text = ", ".join(symptoms) if symptoms else "unknown symptoms"
+
+        # Patient context string
+        context = (
+            f"Age {state.get('patient_age', 'unknown')}, "
+            f"Gender {state.get('patient_gender', 'unknown')}"
+        )
+
+        # --- Attempt LLM fallback (Meditron → BioGPT) ---
+        llm, llm_source = self._get_llm_fallback()
+        llm_result = None
+
+        if llm and hasattr(llm, 'reason_differential'):
+            try:
+                llm_result = llm.reason_differential(symptoms_text, context)
+            except Exception:
+                llm_result = None
+
+        # If LLM produced diagnoses, use them
+        if llm_result and llm_result.get("diagnoses"):
+            primary = llm_result["diagnoses"][0]
+            return {
+                "final_disease": primary.get("disease", "Unknown"),
+                "final_confidence": primary.get("confidence", 0),
+                "diagnosis_source": f"llm_fallback_{llm_source.lower()}",
+                "alternatives": llm_result["diagnoses"][1:5],
+                "llm_reasoning": llm_result.get("reasoning", ""),
+                "llm_source": llm_source,
+                "reasoning": (
+                    f"[!] Low confidence (<70%). ML prediction uncertain. "
+                    f"{llm_source} fallback generated differential diagnosis. "
+                    f"Primary suggestion: '{primary.get('disease', 'Unknown')}'. "
+                    f"Specialist consultation strongly recommended."
+                ),
+                "review_flag": True,
+            }
+
+        # --- Existing fallback: differential agent only (unchanged) ---
         diff_diagnoses = differential.get("differential_diagnoses", [])
         if diff_diagnoses:
             primary = diff_diagnoses[0]
@@ -213,10 +339,12 @@ class SupervisorAgent:
                     for d in diff_diagnoses[1:5]
                 ],
                 "reasoning": (
-                    f"⚠ Low confidence (<70%). ML prediction is uncertain. "
+                    f"[!] Low confidence (<70%). ML prediction is uncertain. "
                     f"Differential diagnosis suggests '{primary.get('disease', 'Unknown')}' "
                     f"but specialist consultation is strongly recommended."
                 ),
+                "llm_reasoning": "",
+                "llm_source": "none",
                 "review_flag": True,
             }
 
@@ -227,7 +355,9 @@ class SupervisorAgent:
             "final_confidence": prediction.get("primary_confidence", 0),
             "diagnosis_source": "flagged_for_review",
             "alternatives": [],
-            "reasoning": "⚠ Low confidence and no differential diagnoses available. Specialist consultation required.",
+            "reasoning": "[!] Low confidence and no differential diagnoses available. Specialist consultation required.",
+            "llm_reasoning": "",
+            "llm_source": "none",
             "review_flag": True,
         }
 
@@ -311,12 +441,18 @@ class SupervisorAgent:
             dict with final_disease, confidence, severity, recommendations, etc.
         """
         prediction = state.get("prediction_result", {})
-        primary_confidence = prediction.get("primary_confidence", 0)
+        differential = state.get("differential_result", {})
 
-        # Fallback: if prediction engine was skipped, use differential agent confidence
+        # Use the BEST confidence from either source for routing
+        pred_confidence = prediction.get("primary_confidence", 0)
+        diff_confidence = differential.get("primary_confidence", 0)
+        primary_confidence = max(pred_confidence, diff_confidence)
+
+        # Fallback: if both are 0, check differential diagnoses list
         if primary_confidence == 0:
-            differential = state.get("differential_result", {})
-            primary_confidence = differential.get("primary_confidence", 0)
+            diff_diagnoses = differential.get("differential_diagnoses", [])
+            if diff_diagnoses:
+                primary_confidence = diff_diagnoses[0].get("confidence", 0)
 
         # Step 1: Confidence-based routing
         confidence_level = self._determine_confidence_level(primary_confidence)
@@ -352,8 +488,31 @@ class SupervisorAgent:
             "most_urgent_symptom": temporal.get("most_urgent_symptom", None),
         }
 
-        # Step 6: Collect recommendation info
+        # Step 6: Re-run recommendations based on FINAL disease
+        # The recommendation agent ran earlier using the ML prediction disease,
+        # but the supervisor may have overridden it (e.g., with Meditron).
+        # We re-run recommendations here to match the final disease.
         rec = state.get("recommendation_result", {})
+        rec_agent = None
+
+        # Check if we need to re-run (diagnosis changed from what recommendation used)
+        rec_input_disease = rec.get("input", {}).get("disease", "").lower()
+        if final_disease.lower() != rec_input_disease.lower():
+            # Try to get the recommendation agent from the pipeline
+            try:
+                from agents.recommendation_agent import RecommendationAgent
+                rec_agent = RecommendationAgent()
+                patient_info = {"age": state.get("patient_age", 30)}
+                rec = rec_agent.recommend(
+                    disease=final_disease,
+                    severity=severity,
+                    confidence=diagnosis_result["final_confidence"],
+                    symptoms=state.get("symptom_result", {}).get("extracted_symptoms", []),
+                    patient_info=patient_info,
+                )
+            except Exception:
+                pass  # Fall back to original recommendations
+
         tests = rec.get("diagnostic_tests", {})
         meds = rec.get("medications", {})
 
@@ -368,6 +527,10 @@ class SupervisorAgent:
             "reasoning": diagnosis_result["reasoning"],
             "alternatives": diagnosis_result.get("alternatives", []),
 
+            # LLM Fallback Reasoning (Phase 5)
+            "llm_reasoning": diagnosis_result.get("llm_reasoning", ""),
+            "llm_source": diagnosis_result.get("llm_source", "none"),
+
             # Agreement
             "agent_agreement": agreement,
 
@@ -381,7 +544,7 @@ class SupervisorAgent:
             "risk_level": state.get("risk_result", {}).get("overall_risk_level", "N/A"),
             "risk_factors": state.get("risk_result", {}).get("risk_factors_identified", []),
 
-            # Recommendations
+            # Recommendations (now based on FINAL disease)
             "recommended_tests": tests.get("all_tests", []),
             "recommended_medications": meds.get("suitable", []),
             "risk_alerts": rec.get("risk_alerts", []),
@@ -407,7 +570,7 @@ class SupervisorAgent:
 
             # Disclaimer
             "disclaimer": (
-                "⚕ DISCLAIMER: This is an AI-generated diagnostic assessment for "
+                "[!] DISCLAIMER: This is an AI-generated diagnostic assessment for "
                 "informational purposes only. It does NOT constitute medical advice. "
                 "Always consult a qualified healthcare professional."
             ),
