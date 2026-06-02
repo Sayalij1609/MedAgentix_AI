@@ -2,233 +2,239 @@
   "Asthma": {
     "disease": "Asthma",
     "drugs": [
-      {
-        "drug": "Salbutamol",
-        "dosage": "2 puffs",
-        "category": "Bronchodilator",
-        "route": "Inhalation",
-        "side_effects": "Tremor",
-        "contraindications": "Arrhythmia",
-        "precaution": "Use inhaler correctly",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "Medium"
-      }
+      {"drug": "Salbutamol (Ventolin)", "dosage": "2 puffs as needed", "category": "Bronchodilator", "route": "Inhalation", "side_effects": "Tremor, palpitations", "contraindications": "Severe arrhythmia", "precaution": "Use spacer for better delivery", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Budesonide (Pulmicort)", "dosage": "200-400 mcg twice daily", "category": "Inhaled Corticosteroid", "route": "Inhalation", "side_effects": "Oral thrush, hoarseness", "contraindications": "Active TB", "precaution": "Rinse mouth after use", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Montelukast (Singulair)", "dosage": "10 mg once daily", "category": "Leukotriene Inhibitor", "route": "Oral", "side_effects": "Headache, mood changes", "contraindications": "Hypersensitivity", "precaution": "Take in evening", "population_groups": ["Adult", "Pediatric"], "risk_level": "Low"}
     ],
-    "drug_count": 1,
-    "categories": [
-      "Bronchodilator"
-    ]
+    "drug_count": 3,
+    "categories": ["Bronchodilator", "Inhaled Corticosteroid", "Leukotriene Inhibitor"]
   },
   "Bacterial Infection": {
     "disease": "Bacterial Infection",
     "drugs": [
-      {
-        "drug": "Amoxicillin",
-        "dosage": "500 mg",
-        "category": "Antibiotic",
-        "route": "Oral",
-        "side_effects": "Rash",
-        "contraindications": "Penicillin allergy",
-        "precaution": "Use only when medically indicated",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "High"
-      }
+      {"drug": "Amoxicillin", "dosage": "500 mg three times daily", "category": "Antibiotic", "route": "Oral", "side_effects": "Rash, diarrhea, nausea", "contraindications": "Penicillin allergy", "precaution": "Complete full course (7-10 days)", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Azithromycin (Zithromax)", "dosage": "500 mg Day 1, then 250 mg daily for 4 days", "category": "Macrolide Antibiotic", "route": "Oral", "side_effects": "Nausea, abdominal pain", "contraindications": "QT prolongation, liver disease", "precaution": "Take 1 hour before meals", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Ciprofloxacin", "dosage": "500 mg twice daily", "category": "Fluoroquinolone", "route": "Oral", "side_effects": "Tendon pain, GI upset", "contraindications": "Children under 18, pregnancy", "precaution": "Avoid dairy; stay hydrated", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"}
     ],
-    "drug_count": 1,
-    "categories": [
-      "Antibiotic"
-    ]
+    "drug_count": 3,
+    "categories": ["Antibiotic", "Macrolide Antibiotic", "Fluoroquinolone"]
   },
   "Diabetes": {
     "disease": "Diabetes",
     "drugs": [
-      {
-        "drug": "Insulin",
-        "dosage": "10 units",
-        "category": "Hormone",
-        "route": "Subcutaneous",
-        "side_effects": "Hypoglycemia",
-        "contraindications": "Dose errors",
-        "precaution": "Requires monitoring",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "Low"
-      }
+      {"drug": "Metformin (Glucophage)", "dosage": "500-1000 mg twice daily", "category": "Biguanide", "route": "Oral", "side_effects": "Nausea, diarrhea, metallic taste", "contraindications": "Renal failure (eGFR <30)", "precaution": "Take with meals; monitor HbA1c", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Insulin Glargine (Lantus)", "dosage": "10-20 units at bedtime", "category": "Long-acting Insulin", "route": "Subcutaneous injection", "side_effects": "Hypoglycemia, weight gain", "contraindications": "Hypoglycemia episodes", "precaution": "Monitor blood glucose regularly", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Medium"},
+      {"drug": "Glimepiride (Amaryl)", "dosage": "1-4 mg once daily", "category": "Sulfonylurea", "route": "Oral", "side_effects": "Hypoglycemia, weight gain", "contraindications": "Type 1 diabetes, ketoacidosis", "precaution": "Take with breakfast", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"}
     ],
-    "drug_count": 1,
-    "categories": [
-      "Hormone"
-    ]
+    "drug_count": 3,
+    "categories": ["Biguanide", "Long-acting Insulin", "Sulfonylurea"]
   },
   "Fever": {
     "disease": "Fever",
     "drugs": [
-      {
-        "drug": "Paracetamol",
-        "dosage": "500 mg",
-        "category": "Analgesic",
-        "route": "Oral",
-        "side_effects": "Nausea",
-        "contraindications": "Severe liver disease",
-        "precaution": "Use only supportive guidance",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "Low"
-      }
+      {"drug": "Paracetamol (Acetaminophen)", "dosage": "500-1000 mg every 4-6 hours (max 4g/day)", "category": "Antipyretic / Analgesic", "route": "Oral", "side_effects": "Nausea (rare at normal dose)", "contraindications": "Severe liver disease", "precaution": "Do not exceed maximum daily dose", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Ibuprofen", "dosage": "400 mg every 6-8 hours with food", "category": "NSAID", "route": "Oral", "side_effects": "GI upset, stomach pain", "contraindications": "Peptic ulcer, kidney disease", "precaution": "Take with food; avoid in dengue", "population_groups": ["Adult", "Pediatric"], "risk_level": "Low"}
     ],
-    "drug_count": 1,
-    "categories": [
-      "Analgesic"
-    ]
+    "drug_count": 2,
+    "categories": ["Antipyretic / Analgesic", "NSAID"]
   },
   "GERD": {
     "disease": "GERD",
     "drugs": [
-      {
-        "drug": "Omeprazole",
-        "dosage": "20 mg",
-        "category": "PPI",
-        "route": "Oral",
-        "side_effects": "Headache",
-        "contraindications": "Hypersensitivity",
-        "precaution": "Short-term use preferred",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "High"
-      }
+      {"drug": "Omeprazole (Prilosec)", "dosage": "20 mg once daily before breakfast", "category": "Proton Pump Inhibitor", "route": "Oral", "side_effects": "Headache, nausea, diarrhea", "contraindications": "Hypersensitivity", "precaution": "Short-term use (4-8 weeks); take 30 min before meal", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Pantoprazole (Protonix)", "dosage": "40 mg once daily", "category": "Proton Pump Inhibitor", "route": "Oral", "side_effects": "Headache, abdominal pain", "contraindications": "Hypersensitivity to PPIs", "precaution": "Long-term use may affect calcium absorption", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Domperidone (Motilium)", "dosage": "10 mg three times daily before meals", "category": "Prokinetic", "route": "Oral", "side_effects": "Dry mouth, headache", "contraindications": "GI bleeding, prolactinoma", "precaution": "Short-term use only", "population_groups": ["Adult"], "risk_level": "Low"}
     ],
-    "drug_count": 1,
-    "categories": [
-      "PPI"
-    ]
+    "drug_count": 3,
+    "categories": ["Proton Pump Inhibitor", "Prokinetic"]
   },
   "Hypertension": {
     "disease": "Hypertension",
     "drugs": [
-      {
-        "drug": "Amlodipine",
-        "dosage": "5 mg",
-        "category": "Antihypertensive",
-        "route": "Oral",
-        "side_effects": "Edema",
-        "contraindications": "Severe hypotension",
-        "precaution": "Monitor blood pressure",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "Low"
-      },
-      {
-        "drug": "Losartan",
-        "dosage": "50 mg",
-        "category": "ARB",
-        "route": "Oral",
-        "side_effects": "Dizziness",
-        "contraindications": "Pregnancy",
-        "precaution": "Monitor potassium",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "Critical"
-      }
+      {"drug": "Amlodipine (Norvasc)", "dosage": "5-10 mg once daily", "category": "Calcium Channel Blocker", "route": "Oral", "side_effects": "Ankle swelling, flushing, dizziness", "contraindications": "Severe aortic stenosis", "precaution": "Monitor blood pressure regularly", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Losartan (Cozaar)", "dosage": "50-100 mg once daily", "category": "ARB", "route": "Oral", "side_effects": "Dizziness, hyperkalemia", "contraindications": "Pregnancy, bilateral renal artery stenosis", "precaution": "Monitor potassium and kidney function", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Atenolol (Tenormin)", "dosage": "25-100 mg once daily", "category": "Beta Blocker", "route": "Oral", "side_effects": "Fatigue, bradycardia, cold extremities", "contraindications": "Asthma, severe bradycardia", "precaution": "Do not stop abruptly", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Hydrochlorothiazide (HCTZ)", "dosage": "12.5-25 mg once daily", "category": "Thiazide Diuretic", "route": "Oral", "side_effects": "Electrolyte imbalance, dizziness", "contraindications": "Severe renal impairment, gout", "precaution": "Monitor electrolytes; take in morning", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"}
     ],
-    "drug_count": 2,
-    "categories": [
-      "ARB",
-      "Antihypertensive"
-    ]
+    "drug_count": 4,
+    "categories": ["Calcium Channel Blocker", "ARB", "Beta Blocker", "Thiazide Diuretic"]
   },
   "Pain": {
     "disease": "Pain",
     "drugs": [
-      {
-        "drug": "Ibuprofen",
-        "dosage": "400 mg",
-        "category": "NSAID",
-        "route": "Oral",
-        "side_effects": "GI upset",
-        "contraindications": "Peptic ulcer",
-        "precaution": "Avoid prolonged unsupervised use",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "Medium"
-      }
+      {"drug": "Ibuprofen (Advil)", "dosage": "400 mg every 6-8 hours", "category": "NSAID", "route": "Oral", "side_effects": "GI upset, stomach pain", "contraindications": "Peptic ulcer, kidney disease", "precaution": "Take with food", "population_groups": ["Adult", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Paracetamol (Tylenol)", "dosage": "500-1000 mg every 4-6 hours", "category": "Analgesic", "route": "Oral", "side_effects": "Rare at therapeutic dose", "contraindications": "Severe liver disease", "precaution": "Do not exceed 4g/day", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Diclofenac (Voltaren)", "dosage": "50 mg two to three times daily", "category": "NSAID", "route": "Oral", "side_effects": "GI bleeding, headache", "contraindications": "Heart failure, active GI bleed", "precaution": "Use lowest effective dose", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"}
     ],
-    "drug_count": 1,
-    "categories": [
-      "NSAID"
-    ]
+    "drug_count": 3,
+    "categories": ["NSAID", "Analgesic"]
   },
   "Respiratory Infection": {
     "disease": "Respiratory Infection",
     "drugs": [
-      {
-        "drug": "Azithromycin",
-        "dosage": "500 mg",
-        "category": "Antibiotic",
-        "route": "Oral",
-        "side_effects": "Nausea",
-        "contraindications": "QT prolongation",
-        "precaution": "Avoid misuse",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "Medium"
-      }
+      {"drug": "Azithromycin (Zithromax)", "dosage": "500 mg Day 1, then 250 mg for 4 days", "category": "Macrolide Antibiotic", "route": "Oral", "side_effects": "Nausea, diarrhea", "contraindications": "QT prolongation, liver disease", "precaution": "Complete full antibiotic course", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Amoxicillin-Clavulanate (Augmentin)", "dosage": "625 mg three times daily", "category": "Penicillin + Inhibitor", "route": "Oral", "side_effects": "Diarrhea, rash", "contraindications": "Penicillin allergy, liver disease", "precaution": "Take with food", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Dextromethorphan (Robitussin)", "dosage": "10-20 mg every 4 hours", "category": "Antitussive", "route": "Oral", "side_effects": "Drowsiness, dizziness", "contraindications": "MAO inhibitors", "precaution": "Avoid in productive cough", "population_groups": ["Adult", "Pediatric"], "risk_level": "Low"}
     ],
-    "drug_count": 1,
-    "categories": [
-      "Antibiotic"
-    ]
+    "drug_count": 3,
+    "categories": ["Macrolide Antibiotic", "Penicillin + Inhibitor", "Antitussive"]
   },
   "Type 2 Diabetes": {
     "disease": "Type 2 Diabetes",
     "drugs": [
-      {
-        "drug": "Metformin",
-        "dosage": "500 mg",
-        "category": "Antidiabetic",
-        "route": "Oral",
-        "side_effects": "Diarrhea",
-        "contraindications": "Renal failure",
-        "precaution": "Monitor glucose",
-        "population_groups": [
-          "Adult",
-          "Geriatric",
-          "Pediatric"
-        ],
-        "risk_level": "Critical"
-      }
+      {"drug": "Metformin (Glucophage)", "dosage": "500-1000 mg twice daily with meals", "category": "Biguanide", "route": "Oral", "side_effects": "Nausea, diarrhea", "contraindications": "Renal failure", "precaution": "Monitor HbA1c every 3 months", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Sitagliptin (Januvia)", "dosage": "100 mg once daily", "category": "DPP-4 Inhibitor", "route": "Oral", "side_effects": "Headache, nasopharyngitis", "contraindications": "Pancreatitis history", "precaution": "Adjust dose in renal impairment", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Empagliflozin (Jardiance)", "dosage": "10-25 mg once daily", "category": "SGLT2 Inhibitor", "route": "Oral", "side_effects": "UTI, dehydration", "contraindications": "Severe renal impairment", "precaution": "Stay well hydrated", "population_groups": ["Adult"], "risk_level": "Low"}
     ],
-    "drug_count": 1,
-    "categories": [
-      "Antidiabetic"
-    ]
+    "drug_count": 3,
+    "categories": ["Biguanide", "DPP-4 Inhibitor", "SGLT2 Inhibitor"]
+  },
+  "Heart Attack": {
+    "disease": "Heart Attack",
+    "drugs": [
+      {"drug": "Aspirin", "dosage": "325 mg stat, then 75-100 mg daily", "category": "Antiplatelet", "route": "Oral (chew immediately)", "side_effects": "GI bleeding, bruising", "contraindications": "Active bleeding, aspirin allergy", "precaution": "Chew first dose for rapid absorption", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"},
+      {"drug": "Clopidogrel (Plavix)", "dosage": "75 mg once daily", "category": "Antiplatelet", "route": "Oral", "side_effects": "Bleeding, bruising", "contraindications": "Active pathological bleeding", "precaution": "Continue for at least 12 months post-event", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"},
+      {"drug": "Atorvastatin (Lipitor)", "dosage": "40-80 mg once daily", "category": "Statin", "route": "Oral", "side_effects": "Muscle pain, liver enzyme elevation", "contraindications": "Active liver disease, pregnancy", "precaution": "Monitor liver function tests", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Nitroglycerin (GTN)", "dosage": "0.4 mg sublingual as needed", "category": "Nitrate", "route": "Sublingual", "side_effects": "Headache, dizziness, flushing", "contraindications": "Severe hypotension, use of PDE5 inhibitors", "precaution": "Sit or lie down before taking", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"},
+      {"drug": "Metoprolol (Lopressor)", "dosage": "25-50 mg twice daily", "category": "Beta Blocker", "route": "Oral", "side_effects": "Bradycardia, fatigue", "contraindications": "Severe bradycardia, heart block", "precaution": "Do not stop abruptly", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"}
+    ],
+    "drug_count": 5,
+    "categories": ["Antiplatelet", "Statin", "Nitrate", "Beta Blocker"]
+  },
+  "Common Cold": {
+    "disease": "Common Cold",
+    "drugs": [
+      {"drug": "Paracetamol (Tylenol)", "dosage": "500 mg every 4-6 hours as needed", "category": "Analgesic / Antipyretic", "route": "Oral", "side_effects": "Rare at normal dose", "contraindications": "Severe liver disease", "precaution": "Stay hydrated; rest well", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Cetirizine (Zyrtec)", "dosage": "10 mg once daily", "category": "Antihistamine", "route": "Oral", "side_effects": "Drowsiness, dry mouth", "contraindications": "Severe renal impairment", "precaution": "May cause drowsiness", "population_groups": ["Adult", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Pseudoephedrine (Sudafed)", "dosage": "60 mg every 4-6 hours", "category": "Decongestant", "route": "Oral", "side_effects": "Insomnia, increased heart rate", "contraindications": "Uncontrolled hypertension, MAO inhibitors", "precaution": "Avoid before bedtime", "population_groups": ["Adult"], "risk_level": "Low"},
+      {"drug": "Chlorpheniramine (Piriton)", "dosage": "4 mg every 4-6 hours", "category": "Antihistamine", "route": "Oral", "side_effects": "Drowsiness, dry mouth", "contraindications": "Glaucoma, urinary retention", "precaution": "Avoid driving", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"}
+    ],
+    "drug_count": 4,
+    "categories": ["Analgesic / Antipyretic", "Antihistamine", "Decongestant"]
+  },
+  "Rhinitis": {
+    "disease": "Rhinitis",
+    "drugs": [
+      {"drug": "Cetirizine (Zyrtec)", "dosage": "10 mg once daily", "category": "Antihistamine", "route": "Oral", "side_effects": "Drowsiness, dry mouth", "contraindications": "Severe renal impairment", "precaution": "Non-drowsy formula available", "population_groups": ["Adult", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Fluticasone Nasal Spray (Flonase)", "dosage": "2 sprays each nostril once daily", "category": "Intranasal Corticosteroid", "route": "Nasal spray", "side_effects": "Nasal irritation, nosebleed", "contraindications": "Nasal surgery (recent)", "precaution": "Use regularly for best effect", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Oxymetazoline (Afrin)", "dosage": "2-3 sprays each nostril twice daily", "category": "Nasal Decongestant", "route": "Nasal spray", "side_effects": "Rebound congestion", "contraindications": "Use beyond 3 days", "precaution": "Do not use more than 3 consecutive days", "population_groups": ["Adult"], "risk_level": "Low"},
+      {"drug": "Loratadine (Claritin)", "dosage": "10 mg once daily", "category": "Non-sedating Antihistamine", "route": "Oral", "side_effects": "Headache, fatigue (rare)", "contraindications": "Hypersensitivity", "precaution": "Non-drowsy; safe for daytime use", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"}
+    ],
+    "drug_count": 4,
+    "categories": ["Antihistamine", "Intranasal Corticosteroid", "Nasal Decongestant"]
+  },
+  "COVID-19": {
+    "disease": "COVID-19",
+    "drugs": [
+      {"drug": "Paracetamol", "dosage": "500-1000 mg every 4-6 hours", "category": "Antipyretic / Analgesic", "route": "Oral", "side_effects": "Nausea (rare)", "contraindications": "Severe liver disease", "precaution": "First-line for fever and body ache", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Dexamethasone", "dosage": "6 mg once daily for up to 10 days", "category": "Corticosteroid", "route": "Oral / IV", "side_effects": "Hyperglycemia, insomnia", "contraindications": "Mild cases not requiring oxygen", "precaution": "Only for severe cases requiring oxygen support", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"},
+      {"drug": "Ivermectin (if prescribed)", "dosage": "As per physician guidance", "category": "Antiparasitic", "route": "Oral", "side_effects": "Nausea, dizziness", "contraindications": "Pregnancy, liver disease", "precaution": "Use only under medical supervision", "population_groups": ["Adult"], "risk_level": "Medium"},
+      {"drug": "Zinc + Vitamin C", "dosage": "Zinc 50mg + Vit C 1000mg daily", "category": "Supplement", "route": "Oral", "side_effects": "Nausea at high doses", "contraindications": "Kidney stones (Vit C)", "precaution": "Supportive therapy; not a cure", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"}
+    ],
+    "drug_count": 4,
+    "categories": ["Antipyretic / Analgesic", "Corticosteroid", "Supplement"]
+  },
+  "Influenza": {
+    "disease": "Influenza",
+    "drugs": [
+      {"drug": "Oseltamivir (Tamiflu)", "dosage": "75 mg twice daily for 5 days", "category": "Antiviral", "route": "Oral", "side_effects": "Nausea, vomiting, headache", "contraindications": "Severe renal impairment", "precaution": "Start within 48 hours of symptom onset", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Paracetamol", "dosage": "500-1000 mg every 4-6 hours", "category": "Antipyretic", "route": "Oral", "side_effects": "Rare", "contraindications": "Liver disease", "precaution": "For fever and body ache relief", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Dextromethorphan + Guaifenesin", "dosage": "10-20 ml every 4-6 hours", "category": "Cough syrup", "route": "Oral", "side_effects": "Drowsiness, nausea", "contraindications": "MAO inhibitors", "precaution": "Use only for dry cough", "population_groups": ["Adult", "Pediatric"], "risk_level": "Low"}
+    ],
+    "drug_count": 3,
+    "categories": ["Antiviral", "Antipyretic", "Cough syrup"]
+  },
+  "Malaria": {
+    "disease": "Malaria",
+    "drugs": [
+      {"drug": "Chloroquine", "dosage": "600 mg base stat, then 300 mg at 6h, 24h, 48h", "category": "Antimalarial", "route": "Oral", "side_effects": "Nausea, headache, visual disturbance", "contraindications": "Retinal disease, G6PD deficiency", "precaution": "Complete full course", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Medium"},
+      {"drug": "Artemether-Lumefantrine (Coartem)", "dosage": "4 tablets twice daily for 3 days", "category": "ACT (Artemisinin Combination)", "route": "Oral", "side_effects": "Headache, dizziness", "contraindications": "First trimester pregnancy", "precaution": "Take with fatty food for absorption", "population_groups": ["Adult", "Pediatric"], "risk_level": "Medium"},
+      {"drug": "Primaquine", "dosage": "15 mg daily for 14 days (P. vivax)", "category": "Antimalarial", "route": "Oral", "side_effects": "Hemolytic anemia in G6PD deficiency", "contraindications": "G6PD deficiency, pregnancy", "precaution": "Test for G6PD before starting", "population_groups": ["Adult"], "risk_level": "High"}
+    ],
+    "drug_count": 3,
+    "categories": ["Antimalarial", "ACT"]
+  },
+  "Dengue": {
+    "disease": "Dengue",
+    "drugs": [
+      {"drug": "Paracetamol", "dosage": "500 mg every 6 hours", "category": "Antipyretic", "route": "Oral", "side_effects": "Rare", "contraindications": "Liver disease", "precaution": "AVOID aspirin and ibuprofen (bleeding risk)", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "ORS (Oral Rehydration Solution)", "dosage": "Frequent small sips throughout the day", "category": "Rehydration", "route": "Oral", "side_effects": "None", "contraindications": "None", "precaution": "Maintain adequate fluid intake", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "IV Normal Saline (if severe)", "dosage": "As per clinical assessment", "category": "IV Fluid", "route": "Intravenous", "side_effects": "Fluid overload if excessive", "contraindications": "Heart failure (use with caution)", "precaution": "Hospital monitoring required", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Medium"}
+    ],
+    "drug_count": 3,
+    "categories": ["Antipyretic", "Rehydration", "IV Fluid"]
+  },
+  "Typhoid": {
+    "disease": "Typhoid",
+    "drugs": [
+      {"drug": "Ceftriaxone", "dosage": "1-2 g IV/IM once daily for 10-14 days", "category": "Cephalosporin Antibiotic", "route": "IV / IM", "side_effects": "Diarrhea, rash", "contraindications": "Cephalosporin allergy", "precaution": "Complete full course", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Medium"},
+      {"drug": "Azithromycin", "dosage": "500 mg once daily for 7 days", "category": "Macrolide Antibiotic", "route": "Oral", "side_effects": "Nausea, abdominal pain", "contraindications": "Liver disease", "precaution": "Alternative for uncomplicated typhoid", "population_groups": ["Adult", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Ciprofloxacin", "dosage": "500 mg twice daily for 7-10 days", "category": "Fluoroquinolone", "route": "Oral", "side_effects": "Tendon damage, GI upset", "contraindications": "Pregnancy, children", "precaution": "Check local resistance patterns", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"}
+    ],
+    "drug_count": 3,
+    "categories": ["Cephalosporin Antibiotic", "Macrolide Antibiotic", "Fluoroquinolone"]
+  },
+  "Pneumonia": {
+    "disease": "Pneumonia",
+    "drugs": [
+      {"drug": "Amoxicillin-Clavulanate (Augmentin)", "dosage": "625 mg three times daily for 5-7 days", "category": "Penicillin Antibiotic", "route": "Oral", "side_effects": "Diarrhea, nausea, rash", "contraindications": "Penicillin allergy", "precaution": "Take with food", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Azithromycin", "dosage": "500 mg Day 1, then 250 mg for 4 days", "category": "Macrolide Antibiotic", "route": "Oral", "side_effects": "Nausea, diarrhea", "contraindications": "QT prolongation", "precaution": "For atypical pneumonia coverage", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Ceftriaxone", "dosage": "1-2 g IV once daily (hospitalized)", "category": "Cephalosporin", "route": "Intravenous", "side_effects": "Diarrhea, injection site pain", "contraindications": "Cephalosporin allergy", "precaution": "For severe or hospitalized cases", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"}
+    ],
+    "drug_count": 3,
+    "categories": ["Penicillin Antibiotic", "Macrolide Antibiotic", "Cephalosporin"]
+  },
+  "Migraine": {
+    "disease": "Migraine",
+    "drugs": [
+      {"drug": "Sumatriptan (Imitrex)", "dosage": "50-100 mg at onset of headache", "category": "Triptan", "route": "Oral", "side_effects": "Tingling, chest tightness, drowsiness", "contraindications": "Coronary artery disease, uncontrolled hypertension", "precaution": "Take at first sign of migraine", "population_groups": ["Adult"], "risk_level": "Medium"},
+      {"drug": "Ibuprofen", "dosage": "400-600 mg at onset", "category": "NSAID", "route": "Oral", "side_effects": "GI upset", "contraindications": "Peptic ulcer, kidney disease", "precaution": "Effective for mild-moderate migraine", "population_groups": ["Adult", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Propranolol (Inderal)", "dosage": "40-80 mg twice daily (preventive)", "category": "Beta Blocker (Preventive)", "route": "Oral", "side_effects": "Fatigue, dizziness, bradycardia", "contraindications": "Asthma, heart block", "precaution": "For frequent migraines; taper to stop", "population_groups": ["Adult"], "risk_level": "Low"}
+    ],
+    "drug_count": 3,
+    "categories": ["Triptan", "NSAID", "Beta Blocker (Preventive)"]
+  },
+  "Acute Coronary Syndrome": {
+    "disease": "Acute Coronary Syndrome",
+    "drugs": [
+      {"drug": "Aspirin", "dosage": "325 mg chewed immediately", "category": "Antiplatelet", "route": "Oral (chew)", "side_effects": "GI bleeding", "contraindications": "Active GI bleed, aspirin allergy", "precaution": "Give immediately upon suspicion", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"},
+      {"drug": "Nitroglycerin (GTN)", "dosage": "0.4 mg sublingual every 5 min (max 3 doses)", "category": "Nitrate", "route": "Sublingual", "side_effects": "Headache, hypotension", "contraindications": "Hypotension, PDE5 inhibitor use", "precaution": "Patient should sit or lie down", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"},
+      {"drug": "Heparin (Enoxaparin)", "dosage": "1 mg/kg SC twice daily", "category": "Anticoagulant", "route": "Subcutaneous", "side_effects": "Bleeding, bruising", "contraindications": "Active bleeding, HIT", "precaution": "Hospital use only; monitor platelet count", "population_groups": ["Adult", "Geriatric"], "risk_level": "High"},
+      {"drug": "Atorvastatin (Lipitor)", "dosage": "80 mg once daily", "category": "Statin", "route": "Oral", "side_effects": "Muscle pain", "contraindications": "Active liver disease", "precaution": "Start high-intensity statin", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"}
+    ],
+    "drug_count": 4,
+    "categories": ["Antiplatelet", "Nitrate", "Anticoagulant", "Statin"]
+  },
+  "Tuberculosis": {
+    "disease": "Tuberculosis",
+    "drugs": [
+      {"drug": "Isoniazid (INH)", "dosage": "300 mg once daily", "category": "Anti-TB", "route": "Oral", "side_effects": "Hepatotoxicity, peripheral neuropathy", "contraindications": "Active liver disease", "precaution": "Take with Pyridoxine (Vit B6) to prevent neuropathy", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Medium"},
+      {"drug": "Rifampicin", "dosage": "450-600 mg once daily (empty stomach)", "category": "Anti-TB", "route": "Oral", "side_effects": "Orange discoloration of urine, hepatotoxicity", "contraindications": "Jaundice", "precaution": "Take 30 min before food; do not skip doses", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Medium"},
+      {"drug": "Pyrazinamide", "dosage": "1500 mg once daily", "category": "Anti-TB", "route": "Oral", "side_effects": "Joint pain, liver toxicity", "contraindications": "Severe liver disease, gout", "precaution": "Monitor liver function", "population_groups": ["Adult"], "risk_level": "Medium"},
+      {"drug": "Ethambutol", "dosage": "800-1200 mg once daily", "category": "Anti-TB", "route": "Oral", "side_effects": "Visual disturbance (optic neuritis)", "contraindications": "Optic neuritis", "precaution": "Monthly vision testing recommended", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"}
+    ],
+    "drug_count": 4,
+    "categories": ["Anti-TB"]
+  },
+  "Urinary Tract Infection": {
+    "disease": "Urinary Tract Infection",
+    "drugs": [
+      {"drug": "Nitrofurantoin (Macrobid)", "dosage": "100 mg twice daily for 5 days", "category": "Urinary Antiseptic", "route": "Oral", "side_effects": "Nausea, headache", "contraindications": "Renal impairment (eGFR <30)", "precaution": "Take with food", "population_groups": ["Adult", "Geriatric"], "risk_level": "Low"},
+      {"drug": "Trimethoprim-Sulfamethoxazole (Bactrim)", "dosage": "160/800 mg twice daily for 3 days", "category": "Antibiotic", "route": "Oral", "side_effects": "Rash, nausea", "contraindications": "Sulfa allergy, pregnancy (3rd trimester)", "precaution": "Stay hydrated", "population_groups": ["Adult"], "risk_level": "Low"},
+      {"drug": "Ciprofloxacin", "dosage": "250 mg twice daily for 3 days", "category": "Fluoroquinolone", "route": "Oral", "side_effects": "Tendon pain, GI upset", "contraindications": "Children, pregnancy", "precaution": "Reserve for resistant cases", "population_groups": ["Adult", "Geriatric"], "risk_level": "Medium"}
+    ],
+    "drug_count": 3,
+    "categories": ["Urinary Antiseptic", "Antibiotic", "Fluoroquinolone"]
+  },
+  "Gastroenteritis": {
+    "disease": "Gastroenteritis",
+    "drugs": [
+      {"drug": "ORS (Oral Rehydration Solution)", "dosage": "200 ml after each loose stool", "category": "Rehydration", "route": "Oral", "side_effects": "None", "contraindications": "None", "precaution": "Critical for preventing dehydration", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Ondansetron (Zofran)", "dosage": "4-8 mg every 8 hours as needed", "category": "Antiemetic", "route": "Oral / IV", "side_effects": "Headache, constipation", "contraindications": "QT prolongation", "precaution": "For severe vomiting only", "population_groups": ["Adult", "Geriatric", "Pediatric"], "risk_level": "Low"},
+      {"drug": "Loperamide (Imodium)", "dosage": "4 mg initially, then 2 mg after each loose stool (max 16 mg/day)", "category": "Antidiarrheal", "route": "Oral", "side_effects": "Constipation, bloating", "contraindications": "Bloody diarrhea, bacterial dysentery", "precaution": "Do not use if fever with blood in stool", "population_groups": ["Adult"], "risk_level": "Low"},
+      {"drug": "Zinc Supplement", "dosage": "20 mg daily for 10-14 days", "category": "Supplement", "route": "Oral", "side_effects": "Nausea at high doses", "contraindications": "None", "precaution": "WHO recommended for children", "population_groups": ["Pediatric"], "risk_level": "Low"}
+    ],
+    "drug_count": 4,
+    "categories": ["Rehydration", "Antiemetic", "Antidiarrheal", "Supplement"]
   }
 }

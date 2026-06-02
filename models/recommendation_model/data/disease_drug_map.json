@@ -1,30 +1,125 @@
 {
   "Asthma": [
-    "Salbutamol"
+    "Salbutamol (Ventolin)",
+    "Budesonide (Pulmicort)",
+    "Montelukast (Singulair)"
   ],
   "Bacterial Infection": [
-    "Amoxicillin"
+    "Amoxicillin",
+    "Azithromycin (Zithromax)",
+    "Ciprofloxacin"
   ],
   "Diabetes": [
-    "Insulin"
+    "Metformin (Glucophage)",
+    "Insulin Glargine (Lantus)",
+    "Glimepiride (Amaryl)"
   ],
   "Fever": [
-    "Paracetamol"
-  ],
-  "GERD": [
-    "Omeprazole"
-  ],
-  "Hypertension": [
-    "Amlodipine",
-    "Losartan"
-  ],
-  "Pain": [
+    "Paracetamol (Acetaminophen)",
     "Ibuprofen"
   ],
+  "GERD": [
+    "Omeprazole (Prilosec)",
+    "Pantoprazole (Protonix)",
+    "Domperidone (Motilium)"
+  ],
+  "Hypertension": [
+    "Amlodipine (Norvasc)",
+    "Losartan (Cozaar)",
+    "Atenolol (Tenormin)",
+    "Hydrochlorothiazide (HCTZ)"
+  ],
+  "Pain": [
+    "Ibuprofen (Advil)",
+    "Paracetamol (Tylenol)",
+    "Diclofenac (Voltaren)"
+  ],
   "Respiratory Infection": [
-    "Azithromycin"
+    "Azithromycin (Zithromax)",
+    "Amoxicillin-Clavulanate (Augmentin)",
+    "Dextromethorphan (Robitussin)"
   ],
   "Type 2 Diabetes": [
-    "Metformin"
+    "Metformin (Glucophage)",
+    "Sitagliptin (Januvia)",
+    "Empagliflozin (Jardiance)"
+  ],
+  "Heart Attack": [
+    "Aspirin",
+    "Clopidogrel (Plavix)",
+    "Atorvastatin (Lipitor)",
+    "Nitroglycerin (GTN)",
+    "Metoprolol (Lopressor)"
+  ],
+  "Common Cold": [
+    "Paracetamol (Tylenol)",
+    "Cetirizine (Zyrtec)",
+    "Pseudoephedrine (Sudafed)",
+    "Chlorpheniramine (Piriton)"
+  ],
+  "Rhinitis": [
+    "Cetirizine (Zyrtec)",
+    "Fluticasone Nasal Spray (Flonase)",
+    "Oxymetazoline (Afrin)",
+    "Loratadine (Claritin)"
+  ],
+  "COVID-19": [
+    "Paracetamol",
+    "Dexamethasone",
+    "Ivermectin (if prescribed)",
+    "Zinc + Vitamin C"
+  ],
+  "Influenza": [
+    "Oseltamivir (Tamiflu)",
+    "Paracetamol",
+    "Dextromethorphan + Guaifenesin"
+  ],
+  "Malaria": [
+    "Chloroquine",
+    "Artemether-Lumefantrine (Coartem)",
+    "Primaquine"
+  ],
+  "Dengue": [
+    "Paracetamol",
+    "ORS (Oral Rehydration Solution)",
+    "IV Normal Saline (if severe)"
+  ],
+  "Typhoid": [
+    "Ceftriaxone",
+    "Azithromycin",
+    "Ciprofloxacin"
+  ],
+  "Pneumonia": [
+    "Amoxicillin-Clavulanate (Augmentin)",
+    "Azithromycin",
+    "Ceftriaxone"
+  ],
+  "Migraine": [
+    "Sumatriptan (Imitrex)",
+    "Ibuprofen",
+    "Propranolol (Inderal)"
+  ],
+  "Acute Coronary Syndrome": [
+    "Aspirin",
+    "Nitroglycerin (GTN)",
+    "Heparin (Enoxaparin)",
+    "Atorvastatin (Lipitor)"
+  ],
+  "Tuberculosis": [
+    "Isoniazid (INH)",
+    "Rifampicin",
+    "Pyrazinamide",
+    "Ethambutol"
+  ],
+  "Urinary Tract Infection": [
+    "Nitrofurantoin (Macrobid)",
+    "Trimethoprim-Sulfamethoxazole (Bactrim)",
+    "Ciprofloxacin"
+  ],
+  "Gastroenteritis": [
+    "ORS (Oral Rehydration Solution)",
+    "Ondansetron (Zofran)",
+    "Loperamide (Imodium)",
+    "Zinc Supplement"
   ]
 }
