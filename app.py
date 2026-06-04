@@ -12,6 +12,7 @@ except ImportError:
 from api.auth_routes import auth_bp
 from api.patient_routes import patient_bp
 from api.doctor_routes import doctor_bp
+from api.case_routes import case_bp
 
 # Import PostgreSQL Connector Binders
 from database.postgres.db_connection import db, init_db, verify_database_connection
@@ -73,6 +74,7 @@ def create_app(config_class=Config):
     app.register_blueprint(auth_bp)
     app.register_blueprint(patient_bp)
     app.register_blueprint(doctor_bp)
+    app.register_blueprint(case_bp)
 
     # Register database initialization CLI command
     @app.cli.command('db-init')

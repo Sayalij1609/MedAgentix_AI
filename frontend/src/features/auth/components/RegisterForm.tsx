@@ -111,11 +111,11 @@ export const RegisterForm: React.FC = () => {
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h2 className="text-2xl font-bold tracking-tight text-foreground font-display bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h2 className="text-2xl font-bold tracking-tight text-primary font-display">
           Clinical Registration
         </h2>
-        <p className="text-muted-foreground text-sm">
-          Initialize your authorized medical practitioner or patient record dashboard.
+        <p className="text-slate-700 text-sm">
+          Create your clinical practitioner or patient portal account.
         </p>
       </div>
 
@@ -143,7 +143,7 @@ export const RegisterForm: React.FC = () => {
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Visual Role Selector */}
         <div className="space-y-2">
-          <label className="text-xs font-semibold text-slate-700 dark:text-slate-300 block">
+          <label className="text-xs font-semibold text-slate-900 block">
             Select Platform Access Role
           </label>
           <div className="grid grid-cols-2 gap-3">
@@ -154,8 +154,8 @@ export const RegisterForm: React.FC = () => {
               disabled={isLoading}
               className={`flex flex-col items-center gap-2 p-3 text-center border-2 rounded-xl transition-all ${
                 formData.role === 'patient'
-                  ? 'border-secondary bg-secondary/5 shadow-glow text-secondary-foreground'
-                  : 'border-border bg-card hover:border-slate-300 text-muted-foreground'
+                  ? 'border-secondary bg-secondary/5 shadow-md text-secondary'
+                  : 'border-border bg-card hover:border-slate-300 text-slate-700'
               }`}
             >
               <div className={`p-2 rounded-lg ${formData.role === 'patient' ? 'bg-secondary/15' : 'bg-slate-100'}`}>
@@ -175,7 +175,7 @@ export const RegisterForm: React.FC = () => {
               className={`flex flex-col items-center gap-2 p-3 text-center border-2 rounded-xl transition-all ${
                 formData.role === 'doctor'
                   ? 'border-primary bg-primary/5 shadow-md text-primary'
-                  : 'border-border bg-card hover:border-slate-300 text-muted-foreground'
+                  : 'border-border bg-card hover:border-slate-300 text-slate-700'
               }`}
             >
               <div className={`p-2 rounded-lg ${formData.role === 'doctor' ? 'bg-primary/10' : 'bg-slate-100'}`}>
@@ -194,7 +194,7 @@ export const RegisterForm: React.FC = () => {
 
         {/* Identity Name Input */}
         <div className="space-y-1.5">
-          <label htmlFor="name" className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+          <label htmlFor="name" className="text-xs font-semibold text-slate-900">
             Full Identity Name
           </label>
           <div className="relative">
@@ -231,7 +231,7 @@ export const RegisterForm: React.FC = () => {
 
         {/* Email Input */}
         <div className="space-y-1.5">
-          <label htmlFor="email" className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+          <label htmlFor="email" className="text-xs font-semibold text-slate-900">
             Clinical Email Address
           </label>
           <div className="relative">
@@ -270,7 +270,7 @@ export const RegisterForm: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
           {/* Password */}
           <div className="space-y-1.5">
-            <label htmlFor="password" className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+            <label htmlFor="password" className="text-xs font-semibold text-slate-900">
               Password
             </label>
             <div className="relative">
@@ -308,7 +308,7 @@ export const RegisterForm: React.FC = () => {
 
           {/* Confirm Password */}
           <div className="space-y-1.5">
-            <label htmlFor="confirmPassword" className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+            <label htmlFor="confirmPassword" className="text-xs font-semibold text-slate-900">
               Confirm Password
             </label>
             <div className="relative">
@@ -356,7 +356,7 @@ export const RegisterForm: React.FC = () => {
 
       {/* Footer Login Redirect */}
       <div className="text-center pt-2">
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-slate-700">
           Already registered?{' '}
           <Link to={ROUTES.LOGIN} className="text-secondary font-semibold hover:underline">
             Clinical Portal Login

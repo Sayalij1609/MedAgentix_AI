@@ -39,8 +39,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div className="flex h-16 items-center px-6 border-b border-border justify-between">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded bg-primary flex items-center justify-center font-bold text-white text-sm">M</div>
-          <span className="font-bold text-md tracking-wider bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">
-            MedAgentix AI
+          <span className="font-bold text-md tracking-wider text-primary">
+            MedAgentix Portal
           </span>
         </div>
         {/* Mobile Close Button */}

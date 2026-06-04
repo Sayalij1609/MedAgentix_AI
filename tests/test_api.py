@@ -320,3 +320,190 @@ def test_update_profile_email_conflict(app, client):
     assert response.status_code == 409
     assert response.json["error"] == "Conflict"
     assert "already exists" in response.json["message"]
+
+
+# ============================================================
+# SPRINT 6A DIAGNOSTICS & CASE ENDPOINT TESTS
+# ============================================================
+
+def test_patient_intake_success(app, client):
+    with app.app_context():
+        register_user("Patient One", "patient1@example.com", "password123", "patient")
+
+    # Login
+    login_res = client.post('/api/v1/auth/login', json={
+        "email": "patient1@example.com",
+        "password": "password123"
+    })
+    token = login_res.json["access_token"]
+    headers = {"Authorization": f"Bearer {token}"}
+
+    # Intake payload
+    payload = {
+        "chief_complaint": "I have been having fever and cough for 5 days.",
+        "selected_symptoms": [
+            {"name": "Fever", "duration_days": 5},
+            {"name": "Cough", "duration_days": 5}
+        ],
+        "vitals": {
+            "heart_rate": 85,
+            "oxygen_level": 96,
+            "systolic_bp": 120,
+            "diastolic_bp": 80,
+            "temperature": 101.5,
+            "cholesterol": 190
+        },
+        "medical_history": ["Diabetes"],
+        "lifestyle_factors": ["Smoking"]
+    }
+
+    # POST Intake
+    response = client.post('/api/v1/patient/intake', json=payload, headers=headers)
+    assert response.status_code == 201
+    data = response.json
+    assert data["success"] is True
+    assert data["case"]["status"] in ["completed", "pending"]
+    assert data["case"]["triage_level"] in [1, 2, 3]
+    assert "final_diagnosis" in data["case"]["diagnostic_output"]
+    assert data["case"]["diagnostic_output"]["pipeline_version"] == "Sprint 7A Live LangGraph Pipeline"
+    assert "generated_at" in data["case"]["diagnostic_output"]
+
+def test_patient_intake_validation_error(app, client):
+    with app.app_context():
+        register_user("Patient One", "patient1@example.com", "password123", "patient")
+
+    login_res = client.post('/api/v1/auth/login', json={
+        "email": "patient1@example.com",
+        "password": "password123"
+    })
+    token = login_res.json["access_token"]
+    headers = {"Authorization": f"Bearer {token}"}
+
+    # Intake payload with invalid heart rate
+    payload = {
+        "chief_complaint": "Valid complaint",
+        "selected_symptoms": [],
+        "vitals": {
+            "heart_rate": 10,  # Below 30
+            "oxygen_level": 96,
+            "systolic_bp": 120,
+            "diastolic_bp": 80,
+            "temperature": 98.6,
+            "cholesterol": 190
+        }
+    }
+
+    response = client.post('/api/v1/patient/intake', json=payload, headers=headers)
+    assert response.status_code == 400
+    assert "heart_rate" in response.json["message"]
+
+def test_case_retrieval_and_ownership(app, client):
+    with app.app_context():
+        u1 = register_user("Patient A", "pat_a@example.com", "password123", "patient")
+        u2 = register_user("Patient B", "pat_b@example.com", "password123", "patient")
+        d1 = register_user("Dr. John", "dr_john@example.com", "password123", "doctor")
+
+    # Logins
+    login_a = client.post('/api/v1/auth/login', json={"email": "pat_a@example.com", "password": "password123"})
+    token_a = login_a.json["access_token"]
+    
+    login_b = client.post('/api/v1/auth/login', json={"email": "pat_b@example.com", "password": "password123"})
+    token_b = login_b.json["access_token"]
+    
+    login_dr = client.post('/api/v1/auth/login', json={"email": "dr_john@example.com", "password": "password123"})
+    token_dr = login_dr.json["access_token"]
+
+    # Patient A creates a case
+    intake_res = client.post('/api/v1/patient/intake', json={
+        "chief_complaint": "My stomach hurts",
+        "vitals": {
+            "heart_rate": 72,
+            "oxygen_level": 98,
+            "systolic_bp": 115,
+            "diastolic_bp": 75,
+            "temperature": 98.4,
+            "cholesterol": 160
+        }
+    }, headers={"Authorization": f"Bearer {token_a}"})
+    case_id = intake_res.json["case"]["id"]
+
+    # 1. Patient A retrieves their own case (Allowed)
+    res = client.get(f'/api/v1/cases/{case_id}', headers={"Authorization": f"Bearer {token_a}"})
+    assert res.status_code == 200
+    assert "final_diagnosis" in res.json["case"]["diagnostic_output"]
+
+    # 2. Patient B retrieves Patient A's case (Forbidden)
+    res = client.get(f'/api/v1/cases/{case_id}', headers={"Authorization": f"Bearer {token_b}"})
+    assert res.status_code == 403
+    assert "restricted" in res.json["message"]
+
+    # 3. Doctor retrieves Patient A's case (Allowed)
+    res = client.get(f'/api/v1/cases/{case_id}', headers={"Authorization": f"Bearer {token_dr}"})
+    assert res.status_code == 200
+
+def test_patient_dashboard_summary(app, client):
+    with app.app_context():
+        register_user("Patient One", "patient1@example.com", "password123", "patient")
+
+    login_res = client.post('/api/v1/auth/login', json={
+        "email": "patient1@example.com",
+        "password": "password123"
+    })
+    token = login_res.json["access_token"]
+    headers = {"Authorization": f"Bearer {token}"}
+
+    # Empty dashboard
+    res = client.get('/api/v1/patient/dashboard', headers=headers)
+    assert res.status_code == 200
+    assert res.json["total_cases"] == 0
+    assert res.json["latest_assessment"] is None
+
+    # Submit 1 case
+    client.post('/api/v1/patient/intake', json={
+        "chief_complaint": "Headache",
+        "vitals": {
+            "heart_rate": 80,
+            "oxygen_level": 98,
+            "systolic_bp": 120,
+            "diastolic_bp": 80,
+            "temperature": 98.6,
+            "cholesterol": 180
+        }
+    }, headers=headers)
+
+    res = client.get('/api/v1/patient/dashboard', headers=headers)
+    assert res.status_code == 200
+    assert res.json["total_cases"] == 1
+    assert "final_diagnosis" in res.json["latest_assessment"]
+
+def test_doctor_queue(app, client):
+    with app.app_context():
+        register_user("Patient A", "pat_a@example.com", "password123", "patient")
+        register_user("Dr. John", "dr_john@example.com", "password123", "doctor")
+
+    login_a = client.post('/api/v1/auth/login', json={"email": "pat_a@example.com", "password": "password123"})
+    token_a = login_a.json["access_token"]
+    
+    login_dr = client.post('/api/v1/auth/login', json={"email": "dr_john@example.com", "password": "password123"})
+    token_dr = login_dr.json["access_token"]
+
+    # Submit intake
+    client.post('/api/v1/patient/intake', json={
+        "chief_complaint": "Intake for Doctor Queue test",
+        "vitals": {
+            "heart_rate": 80,
+            "oxygen_level": 98,
+            "systolic_bp": 120,
+            "diastolic_bp": 80,
+            "temperature": 98.6,
+            "cholesterol": 180
+        }
+    }, headers={"Authorization": f"Bearer {token_a}"})
+
+    # Query Doctor cases list
+    res = client.get('/api/v1/doctor/cases', headers={"Authorization": f"Bearer {token_dr}"})
+    assert res.status_code == 200
+    assert len(res.json["cases"]) == 1
+    assert res.json["cases"][0]["patient_name"] == "Patient A"
+    assert "Intake for Doctor Queue test" in res.json["cases"][0]["chief_complaint"]
+

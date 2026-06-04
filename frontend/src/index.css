@@ -43,43 +43,6 @@
 
     --radius: 0.75rem; /* Smoother card rounds for SaaS grids */
   }
-
-  .dark {
-    /* 2. Dark Theme Colors */
-    --background: 222.2 84% 4.9%;    /* Sleek clinical dark navy */
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 208 79% 28%;          /* Primary clinical blue remains authoritative */
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 174 80% 40%;        /* Clinical teal accent active */
-    --secondary-foreground: 210 40% 98%;
-
-    --success: 160 84% 39%;
-    --success-foreground: 210 40% 98%;
-
-    --warning: 38 94% 50%;
-    --warning-foreground: 210 40% 98%;
-
-    --danger: 0 84% 60%;
-    --danger-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 208 79% 28%;
-  }
 }
 
 @layer base {
@@ -105,6 +68,6 @@
   }
 
   .accent-glow-card {
-    @apply bg-card border border-border/80 shadow-glow rounded-xl hover:shadow-lg transition-all duration-300;
+    @apply bg-card border border-border/80 shadow-md rounded-xl hover:shadow-lg transition-all duration-300;
   }
 }

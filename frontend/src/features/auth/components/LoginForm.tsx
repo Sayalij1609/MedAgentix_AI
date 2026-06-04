@@ -88,11 +88,11 @@ export const LoginForm: React.FC = () => {
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h2 className="text-2xl font-bold tracking-tight text-foreground font-display bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h2 className="text-2xl font-bold tracking-tight text-primary font-display">
           Clinical Portal Sign In
         </h2>
-        <p className="text-muted-foreground text-sm">
-          Enter your authorized clinical credentials to synchronize your medical console.
+        <p className="text-slate-700 text-sm">
+          Enter your clinical credentials to access the secure decision support portal.
         </p>
       </div>
 
@@ -120,7 +120,7 @@ export const LoginForm: React.FC = () => {
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Email Input */}
         <div className="space-y-1.5">
-          <label htmlFor="email" className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+          <label htmlFor="email" className="text-xs font-semibold text-slate-900">
             Clinical Email Address
           </label>
           <div className="relative">
@@ -158,7 +158,7 @@ export const LoginForm: React.FC = () => {
         {/* Password Input */}
         <div className="space-y-1.5">
           <div className="flex justify-between items-center">
-            <label htmlFor="password" className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+            <label htmlFor="password" className="text-xs font-semibold text-slate-900">
               Security Password
             </label>
             <a 
@@ -210,14 +210,14 @@ export const LoginForm: React.FC = () => {
         </div>
 
         {/* Demo Hint Helper */}
-        <div className="p-3 bg-secondary/5 rounded-xl border border-secondary/15 space-y-1">
+        <div className="p-3 bg-secondary/5 rounded-xl border border-secondary/15 space-y-1 text-left">
           <p className="text-[11px] font-semibold text-secondary-foreground flex items-center gap-1">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
-            Developer Simulation Controls:
+            Clinical Practice Simulation Console:
           </p>
-          <div className="text-[10px] text-slate-500 leading-tight space-y-0.5">
-            <div>• Type <span className="font-mono bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded text-secondary">doctor@medagentix.ai</span> for Doctor view.</div>
-            <div>• Type <span className="font-mono bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded text-secondary">patient@medagentix.ai</span> for Patient view.</div>
+          <div className="text-[10px] text-slate-700 leading-tight space-y-0.5">
+            <div>• Use credential <span className="font-mono bg-slate-100 px-1 py-0.5 rounded text-secondary">doctor@medagentix.ai</span> for Doctor console.</div>
+            <div>• Use credential <span className="font-mono bg-slate-100 px-1 py-0.5 rounded text-secondary">patient@medagentix.ai</span> for Patient console.</div>
           </div>
         </div>
 
@@ -233,14 +233,14 @@ export const LoginForm: React.FC = () => {
               <span>Verifying clinical credentials...</span>
             </>
           ) : (
-            <span>Synchronize Console</span>
+            <span>Access Portal Console</span>
           )}
         </button>
       </form>
 
       {/* Footer Registration Redirect */}
       <div className="text-center pt-2">
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-slate-700">
           New clinical agent or patient registration?{' '}
           <Link to={ROUTES.REGISTER} className="text-secondary font-semibold hover:underline">
             Request Authorized Account

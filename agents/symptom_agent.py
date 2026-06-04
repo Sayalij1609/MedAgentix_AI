@@ -133,6 +133,7 @@ class SymptomAgent:
         """
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.confidence_threshold = config.FALLBACK_CONFIDENCE_THRESHOLD
+        self.offline_mode = False
 
         print("=" * 60)
         print("  Symptom Agent -- Initializing")
@@ -151,10 +152,10 @@ class SymptomAgent:
         self._load_knowledge_base()
 
         # Initialize fallback
-        self.use_fallback = use_fallback
-        self.fallback = BioGPTFallback() if use_fallback else None
+        self.use_fallback = use_fallback if not self.offline_mode else False
+        self.fallback = BioGPTFallback() if self.use_fallback else None
 
-        print(f"\n  [OK] Symptom Agent ready on {self.device}")
+        print(f"\n  [OK] Symptom Agent ready on {self.device} (Offline fallback: {self.offline_mode})")
         print("=" * 60)
 
     # --------------------------------------------------------
@@ -163,47 +164,82 @@ class SymptomAgent:
     def _load_ner_model(self):
         """Load the fine-tuned ClinicalBERT NER model."""
         print(f"  Loading NER model from {config.SYMPTOM_NER_MODEL_DIR}...")
-        self.ner_tokenizer = AutoTokenizer.from_pretrained(config.SYMPTOM_NER_MODEL_DIR)
-        self.ner_model = AutoModelForTokenClassification.from_pretrained(config.SYMPTOM_NER_MODEL_DIR)
-        self.ner_model.to(self.device)
-        self.ner_model.eval()
-        print(f"  [OK] NER model loaded")
+        try:
+            if not os.path.exists(config.SYMPTOM_NER_MODEL_DIR) or not os.listdir(config.SYMPTOM_NER_MODEL_DIR):
+                raise FileNotFoundError("NER model directory is empty or missing.")
+            self.ner_tokenizer = AutoTokenizer.from_pretrained(config.SYMPTOM_NER_MODEL_DIR)
+            self.ner_model = AutoModelForTokenClassification.from_pretrained(config.SYMPTOM_NER_MODEL_DIR)
+            self.ner_model.to(self.device)
+            self.ner_model.eval()
+            print(f"  [OK] NER model loaded")
+        except Exception as e:
+            print(f"  [WARN] Failed to load NER model: {e}. Switching to offline fallback mode.")
+            self.offline_mode = True
+            self.ner_tokenizer = None
+            self.ner_model = None
 
     def _load_severity_model(self):
         """Load the fine-tuned ClinicalBERT severity classifier."""
         print(f"  Loading Severity model from {config.SYMPTOM_SEVERITY_MODEL_DIR}...")
-        self.severity_tokenizer = AutoTokenizer.from_pretrained(config.SYMPTOM_SEVERITY_MODEL_DIR)
-        self.severity_model = AutoModelForSequenceClassification.from_pretrained(
-            config.SYMPTOM_SEVERITY_MODEL_DIR
-        )
-        self.severity_model.to(self.device)
-        self.severity_model.eval()
-        print(f"  [OK] Severity model loaded")
+        try:
+            if not os.path.exists(config.SYMPTOM_SEVERITY_MODEL_DIR) or not os.listdir(config.SYMPTOM_SEVERITY_MODEL_DIR):
+                raise FileNotFoundError("Severity model directory is empty or missing.")
+            self.severity_tokenizer = AutoTokenizer.from_pretrained(config.SYMPTOM_SEVERITY_MODEL_DIR)
+            self.severity_model = AutoModelForSequenceClassification.from_pretrained(
+                config.SYMPTOM_SEVERITY_MODEL_DIR
+            )
+            self.severity_model.to(self.device)
+            self.severity_model.eval()
+            print(f"  [OK] Severity model loaded")
+        except Exception as e:
+            print(f"  [WARN] Failed to load Severity model: {e}. Switching to offline fallback mode.")
+            self.offline_mode = True
+            self.severity_tokenizer = None
+            self.severity_model = None
 
     def _load_normalizer(self):
         """Load precomputed symptom embeddings for normalization."""
         print(f"  Loading Normalizer from {config.SYMPTOM_EMBEDDINGS_PATH}...")
-        normalizer_data = joblib.load(config.SYMPTOM_EMBEDDINGS_PATH)
-        self.symptom_names = normalizer_data["symptom_names"]
-        self.embedding_matrix = normalizer_data["embedding_matrix"]
+        try:
+            normalizer_data = joblib.load(config.SYMPTOM_EMBEDDINGS_PATH)
+            self.symptom_names = normalizer_data["symptom_names"]
+            self.embedding_matrix = normalizer_data["embedding_matrix"]
 
-        # Load synonym map for exact-match fallback
-        with open(config.SYMPTOM_SYNONYM_MAP_PATH, 'r', encoding='utf-8') as f:
-            self.synonym_map = json.load(f)
+            # Load synonym map for exact-match fallback
+            with open(config.SYMPTOM_SYNONYM_MAP_PATH, 'r', encoding='utf-8') as f:
+                self.synonym_map = json.load(f)
 
-        # Load the base encoder for query embeddings
-        self.norm_tokenizer = AutoTokenizer.from_pretrained(config.CLINICALBERT_NAME)
-        self.norm_model = AutoModel.from_pretrained(config.CLINICALBERT_NAME)
-        self.norm_model.to(self.device)
-        self.norm_model.eval()
-        print(f"  [OK] Normalizer loaded ({len(self.symptom_names)} symptoms)")
+            # Load the base encoder for query embeddings
+            if self.offline_mode:
+                print("  [INFO] Offline mode active: bypassing Bio_ClinicalBERT normalizer model loading")
+                self.norm_tokenizer = None
+                self.norm_model = None
+            else:
+                self.norm_tokenizer = AutoTokenizer.from_pretrained(config.CLINICALBERT_NAME)
+                self.norm_model = AutoModel.from_pretrained(config.CLINICALBERT_NAME)
+                self.norm_model.to(self.device)
+                self.norm_model.eval()
+            print(f"  [OK] Normalizer loaded ({len(self.symptom_names)} symptoms)")
+        except Exception as e:
+            print(f"  [WARN] Failed to load Normalizer model/embeddings: {e}. Normalizer set to offline mode.")
+            self.offline_mode = True
+            self.norm_tokenizer = None
+            self.norm_model = None
+            if not hasattr(self, 'symptom_names'):
+                self.symptom_names = []
+            if not hasattr(self, 'synonym_map'):
+                self.synonym_map = {}
 
     def _load_knowledge_base(self):
         """Load the symptom knowledge base for follow-up questions."""
         print(f"  Loading Knowledge Base from {config.SYMPTOM_KNOWLEDGE_PATH}...")
-        with open(config.SYMPTOM_KNOWLEDGE_PATH, 'r', encoding='utf-8') as f:
-            self.knowledge_base = json.load(f)
-        print(f"  [OK] Knowledge base loaded ({len(self.knowledge_base)} symptoms)")
+        try:
+            with open(config.SYMPTOM_KNOWLEDGE_PATH, 'r', encoding='utf-8') as f:
+                self.knowledge_base = json.load(f)
+            print(f"  [OK] Knowledge base loaded ({len(self.knowledge_base)} symptoms)")
+        except Exception as e:
+            print(f"  [WARN] Failed to load knowledge base: {e}")
+            self.knowledge_base = {}
 
     # --------------------------------------------------------
     # SUB-TASK 1: SYMPTOM EXTRACTION (NER)
@@ -468,6 +504,85 @@ class SymptomAgent:
         Returns:
             dict with extracted_symptoms, overall_priority, source
         """
+        if self.offline_mode:
+            # Step 1: Extract symptoms via simple keyword/regex matching against synonym map and canonical names
+            text_lower = patient_text.lower()
+            raw_symptoms = []
+
+            # Match synonym map keys
+            for key, canonical in self.synonym_map.items():
+                pattern = r'\b' + re.escape(key) + r'\b'
+                if re.search(pattern, text_lower):
+                    raw_symptoms.append({
+                        "raw_text": key,
+                        "confidence": 1.0,
+                        "source": "Offline_Synonym_Map"
+                    })
+
+            # Match canonical names
+            for name in self.symptom_names:
+                key = name.lower()
+                pattern = r'\b' + re.escape(key) + r'\b'
+                if re.search(pattern, text_lower):
+                    if not any(s["raw_text"].lower() == key for s in raw_symptoms):
+                        raw_symptoms.append({
+                            "raw_text": name,
+                            "confidence": 1.0,
+                            "source": "Offline_Exact_Match"
+                        })
+
+            # Step 2: Process each extracted symptom
+            processed_symptoms = []
+            for sym in raw_symptoms:
+                raw_text = sym["raw_text"]
+
+                # Normalize (exact/synonym tiers of _normalize_symptom)
+                norm_result = self._normalize_symptom(raw_text)
+                canonical_name = norm_result["canonical_name"]
+
+                # Determine severity (basic logic: if severe keywords in text, label as Severe)
+                severity = "Moderate"
+                if any(k in text_lower for k in ["severe", "terrible", "critical", "intense", "extreme"]):
+                    severity = "Severe"
+                elif any(k in text_lower for k in ["mild", "light", "slight"]):
+                    severity = "Mild"
+
+                kb_info = self._lookup_knowledge(canonical_name)
+
+                processed_symptoms.append({
+                    "raw_text": raw_text,
+                    "canonical_name": canonical_name,
+                    "normalization_confidence": norm_result["confidence"],
+                    "normalization_source": norm_result["source"],
+                    "severity": severity,
+                    "severity_confidence": 1.0,
+                    "clinical_category": kb_info["clinical_category"],
+                    "emergency_flag": kb_info["emergency_flag"],
+                    "priority": kb_info["overall_priority"],
+                    "follow_up_questions": kb_info["follow_up_questions"],
+                })
+
+            # Determine overall priority
+            priority_order = {"High": 3, "Medium": 2, "Low": 1}
+            if processed_symptoms:
+                overall_priority = max(
+                    processed_symptoms,
+                    key=lambda s: priority_order.get(s["priority"], 0)
+                )["priority"]
+            else:
+                overall_priority = "Low"
+
+            has_emergency = any(s["emergency_flag"] for s in processed_symptoms)
+
+            return {
+                "patient_text": patient_text,
+                "extracted_symptoms": processed_symptoms,
+                "symptom_count": len(processed_symptoms),
+                "overall_priority": overall_priority,
+                "emergency_detected": has_emergency,
+                "source": "Offline_Symptom_Matcher",
+            }
+
         # Step 1: Extract symptoms via NER
         raw_symptoms = self._extract_symptoms_ner(patient_text)
 
