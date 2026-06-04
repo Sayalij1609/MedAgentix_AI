@@ -107,12 +107,30 @@ export default function ClinicalReport() {
     window.print();
   };
 
-  const handlePdfDownload = () => {
-    setIsGeneratingPdf(true);
-    setTimeout(() => {
+  const handlePdfDownload = async () => {
+    try {
+      setIsGeneratingPdf(true);
+      const response = await apiClient.get(`/cases/${id}/pdf`, {
+        responseType: 'blob',
+      });
+      
+      const blob = new Blob([response.data], { type: 'application/pdf' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', `Prescription_MRN_${id}.pdf`);
+      document.body.appendChild(link);
+      link.click();
+      
+      // Cleanup
+      link.parentNode?.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (err: any) {
+      console.error('Failed to download custom PDF, falling back to print:', err);
+      window.print();
+    } finally {
       setIsGeneratingPdf(false);
-      window.print(); // client-side fallback print
-    }, 1200);
+    }
   };
 
   const getConfidenceLabel = (confidence: number) => {

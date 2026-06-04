@@ -5,6 +5,7 @@ import { queryClient } from '../services/query-client';
 import { AuthProvider } from '../context/auth-context';
 import { ThemeProvider } from '../context/theme-context';
 import { ToastProvider } from '../context/toast-context';
+import { ChatbotWidget } from '../components/common/ChatbotWidget';
 
 export const MainLayout: React.FC = () => {
   return (
@@ -14,6 +15,8 @@ export const MainLayout: React.FC = () => {
           <AuthProvider>
             <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
               <Outlet />
+              {/* Floating RAG Chatbot — available on every page */}
+              <ChatbotWidget />
             </div>
           </AuthProvider>
         </ToastProvider>

@@ -12,4 +12,7 @@ if __name__ == '__main__':
     print(f" * Synced allowed CORS origins: http://localhost:5173")
     
     # Run development WSGI server
-    app.run(host='0.0.0.0', port=port, debug=True)
+    # use_reloader=False prevents watchdog from detecting PyTorch/system
+    # library file accesses as changes and restarting mid-pipeline
+    app.run(host='0.0.0.0', port=port, debug=True, use_reloader=False)
+

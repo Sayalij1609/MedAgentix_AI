@@ -1,12 +1,12 @@
 ==============================================================================
   MedAgentix AI -- YOUR HEALTH ASSESSMENT REPORT
-  Generated: 02-Jun-2026 21:18
+  Generated: 02-Jun-2026 23:09
 ==============================================================================
 
 ==============================================================================
   YOUR HEALTH ASSESSMENT REPORT
   RAHUL SHARMA
-  Date: 02 June 2026, 09:17 PM
+  Date: 02 June 2026, 11:08 PM
 ==============================================================================
 
 
@@ -51,21 +51,20 @@
       Based on the symptoms and information you shared, our
       AI health assistant has prepared this assessment:
 
-      Possible Condition........................ Covid-19
-      Match Confidence.......................... Possible Match
+      Possible Condition........................ Malaria
+      Match Confidence.......................... Uncertain -- Doctor Visit Recommended
       Severity Level............................ Serious
 
       What this means:
       ----------------------------------------
-        Your symptoms match a pattern commonly seen with respiratory
-        viruses like COVID-19. This does NOT confirm a diagnosis --
-        only a lab test can do that.
+        Your fever pattern and symptoms may suggest malaria. A simple
+        blood test can confirm this quickly.
 
       Understanding your condition:
       ----------------------------------------
-        A viral infection that mainly affects your lungs and airways.
-        Your body is fighting the virus, which is why you feel tired
-        and have a fever. Most people recover fully with rest.
+        Malaria is an infection spread by mosquito bites. It causes
+        high fever that comes and goes, chills, and body aches. It is
+        treatable with medication and most people recover fully.
 
       How serious is this?
       ----------------------------------------
@@ -80,25 +79,20 @@
       These are medications commonly used for this condition.
       NEVER take any medicine without your doctor's approval.
 
-      1. Paracetamol
+      1. Chloroquine
          What it does : For treating your condition
-         Usual dosage : 500-1000 mg every 4-6 hours
-         Things to watch: Nausea (rare)
+         Usual dosage : 600 mg base stat, then 300 mg at 6h, 24h, 48h
+         Things to watch: Nausea, headache, visual disturbance
 
-      2. Zinc + Vitamin C
+      2. Artemether-Lumefantrine (Coartem)
          What it does : For treating your condition
-         Usual dosage : Zinc 50mg + Vit C 1000mg daily
-         Things to watch: Nausea at high doses
+         Usual dosage : 4 tablets twice daily for 3 days
+         Things to watch: Headache, dizziness
 
-      3. Dexamethasone
-         What it does : To reduce inflammation
-         Usual dosage : 6 mg once daily for up to 10 days
-         Things to watch: Hyperglycemia, insomnia
-
-      4. Ivermectin (if prescribed)
+      3. Primaquine
          What it does : For treating your condition
-         Usual dosage : As per physician guidance
-         Things to watch: Nausea, dizziness
+         Usual dosage : 15 mg daily for 14 days (P. vivax)
+         Things to watch: Hemolytic anemia in G6PD deficiency
 
 ------------------------------------------------------------------------------
   TESTS YOUR DOCTOR MAY ASK FOR
@@ -106,16 +100,16 @@
 
       These tests can help confirm what's going on:
 
-      1. RT-PCR Test (Nasal Swab)
-         Why: Gold standard for confirming SARS-CoV-2 infection
-      2. Rapid Antigen Test
-         Why: Quick screening for active COVID-19 infection
-      3. Pulse Oximetry
-         Why: Continuous monitoring of oxygen saturation
-      4. Chest X-Ray
-         Why: Detect lung involvement and pneumonia
-      5. CBC (Complete Blood Count)
-         Why: Check for lymphopenia and inflammatory markers
+      1. Peripheral Blood Smear (Thick & Thin)
+         Why: Gold standard for malaria parasite identification
+      2. Rapid Diagnostic Test (RDT) for Malaria
+         Why: Quick antigen-based test for malaria
+      3. CBC (Complete Blood Count)
+         Why: Detect anemia and thrombocytopenia
+      4. Liver Function Test
+         Why: Assess hepatic involvement
+      5. Serum Bilirubin
+         Why: Check for hemolysis and jaundice
 
         These tests help your doctor understand your condition better
         and create the most effective treatment plan.
@@ -157,7 +151,7 @@ ______________________________________________________________________________
 ==============================================================================
   YOUR HEALTH ASSESSMENT REPORT
   RAMESH GUPTA
-  Date: 02 June 2026, 09:18 PM
+  Date: 02 June 2026, 11:09 PM
 ==============================================================================
 
 
@@ -337,7 +331,7 @@ ______________________________________________________________________________
 ==============================================================================
   YOUR HEALTH ASSESSMENT REPORT
   PRIYA MEHTA
-  Date: 02 June 2026, 09:18 PM
+  Date: 02 June 2026, 11:09 PM
 ==============================================================================
 
 
@@ -377,22 +371,20 @@ ______________________________________________________________________________
       Based on the symptoms and information you shared, our
       AI health assistant has prepared this assessment:
 
-      Possible Condition........................ Rhinitis
-      Match Confidence.......................... Strong Match
+      Possible Condition........................ Allergy
+      Match Confidence.......................... Uncertain -- Doctor Visit Recommended
       Severity Level............................ Moderate
 
       What this means:
       ----------------------------------------
-        Your symptoms suggest nasal inflammation (rhinitis). This is
-        one of the most common conditions and is very treatable.
-        Avoiding triggers and using simple medications can help.
+        Your symptoms suggest an allergic reaction. Identifying what
+        triggers it can help you avoid it in the future.
 
       Understanding your condition:
       ----------------------------------------
-        Rhinitis is inflammation inside your nose, causing a runny or
-        stuffy nose. It's very common and usually caused by
-        allergies, a cold, or changes in weather. It is not serious
-        and usually clears up on its own.
+        An allergy happens when your immune system overreacts to
+        something harmless like pollen or food. This can cause
+        sneezing, itching, and sometimes skin rashes.
 
       How serious is this?
       ----------------------------------------
@@ -407,25 +399,25 @@ ______________________________________________________________________________
       These are medications commonly used for this condition.
       NEVER take any medicine without your doctor's approval.
 
-      1. Cetirizine (Zyrtec)
+      1. Paracetamol (Tylenol)
+         What it does : For treating your condition
+         Usual dosage : 500 mg every 4-6 hours as needed
+         Things to watch: Rare at normal dose
+
+      2. Cetirizine (Zyrtec)
          What it does : To reduce allergic reactions
          Usual dosage : 10 mg once daily
          Things to watch: Drowsiness, dry mouth
 
-      2. Fluticasone Nasal Spray (Flonase)
-         What it does : For treating your condition
-         Usual dosage : 2 sprays each nostril once daily
-         Things to watch: Nasal irritation, nosebleed
+      3. Pseudoephedrine (Sudafed)
+         What it does : To relieve stuffy nose
+         Usual dosage : 60 mg every 4-6 hours
+         Things to watch: Insomnia, increased heart rate
 
-      3. Oxymetazoline (Afrin)
-         What it does : For treating your condition
-         Usual dosage : 2-3 sprays each nostril twice daily
-         Things to watch: Rebound congestion
-
-      4. Loratadine (Claritin)
-         What it does : For treating your condition
-         Usual dosage : 10 mg once daily
-         Things to watch: Headache, fatigue (rare)
+      4. Chlorpheniramine (Piriton)
+         What it does : To reduce allergic reactions
+         Usual dosage : 4 mg every 4-6 hours
+         Things to watch: Drowsiness, dry mouth
 
 ------------------------------------------------------------------------------
   TESTS YOUR DOCTOR MAY ASK FOR
