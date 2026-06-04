@@ -550,6 +550,9 @@ class SupervisorAgent:
             "risk_alerts": rec.get("risk_alerts", []),
             "treatment_plan": rec.get("treatment_plan", {}),
 
+            # SHAP Explanations
+            "shap_explanation": prediction.get("shap_explanation"),
+
             # Symptom summary
             "symptoms_extracted": [
                 s.get("canonical_name", s.get("raw_text", ""))
@@ -570,7 +573,7 @@ class SupervisorAgent:
 
             # Disclaimer
             "disclaimer": (
-                "[!] DISCLAIMER: This is an AI-generated diagnostic assessment for "
+                "⚕ DISCLAIMER: This is an AI-generated diagnostic assessment for "
                 "informational purposes only. It does NOT constitute medical advice. "
                 "Always consult a qualified healthcare professional."
             ),

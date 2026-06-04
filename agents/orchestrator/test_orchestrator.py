@@ -15,6 +15,8 @@ Usage:
 import os, sys, io, contextlib, re, warnings, datetime
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
+from services.prescription_service import PrescriptionService
+from pdf.pdf_generator import PDFGenerator
 
 W = 78
 
@@ -1521,7 +1523,10 @@ def main():
     patient_buf = io.StringIO()
     doctor_buf = io.StringIO()
 
-    for test in TEST_CASES:
+    rx_service = PrescriptionService()
+    pdf_gen = PDFGenerator()
+
+    for idx, test in enumerate(TEST_CASES, 1):
         print(f"\n  >> Processing: {test['name']} ...")
 
         # Run pipeline silently
@@ -1543,6 +1548,23 @@ def main():
         # Capture doctor report
         with contextlib.redirect_stdout(doctor_buf):
             doctor_dash(test["name"], test["input"], result)
+
+        # Generate prescription text and PDF
+        if final:
+            try:
+                # Save textual format
+                text_rx = rx_service.format_prescription(final, test["input"])
+                txt_path = f"test_prescription_{idx}.txt"
+                with open(txt_path, "w", encoding="utf-8") as f:
+                    f.write(text_rx)
+                print(f"     [SAVED] Text Prescription -> {txt_path}")
+                
+                # Save high-fidelity PDF sheet
+                pdf_path = f"test_prescription_{idx}.pdf"
+                pdf_gen.generate_prescription_pdf(final, test["input"], pdf_path)
+                print(f"     [SAVED] PDF Prescription  -> {pdf_path}")
+            except Exception as ex:
+                print(f"     [WARN] Prescription generation failed: {ex}")
 
     # Write patient report
     patient_file = os.path.join(report_dir, "patient_report.txt")
