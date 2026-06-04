@@ -156,6 +156,8 @@ export default function PatientIntake() {
     setIsSubmitting(true);
     
     const payload = {
+      age: Number(age),
+      gender: gender,
       chief_complaint: chiefComplaint,
       selected_symptoms: selectedSymptoms,
       vitals: {

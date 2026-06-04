@@ -16,12 +16,12 @@ export const AuthLayout: React.FC = () => {
   return (
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-12 overflow-hidden bg-background">
       {/* Graphic Brand Column (5 cols) */}
-      <div className="hidden lg:flex lg:col-span-5 flex-col justify-between p-12 bg-gradient-to-br from-sky-850 via-blue-900 to-sky-950 border-r border-border/40 relative">
+      <div className="hidden lg:flex lg:col-span-5 flex-col justify-between p-12 bg-slate-50 border-r border-border/40 relative">
         <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
         <div className="relative z-10 flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-white text-sky-900 flex items-center justify-center font-bold text-lg">M</div>
-          <span className="font-bold text-xl tracking-wide text-white">
+          <div className="w-8 h-8 rounded-lg bg-teal-50 border border-teal-200 text-teal-600 flex items-center justify-center font-bold text-lg">M</div>
+          <span className="font-bold text-xl tracking-wide text-slate-900">
             MedAgentix Clinical Portal
           </span>
         </div>
@@ -31,7 +31,7 @@ export const AuthLayout: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl font-extrabold text-white leading-tight"
+            className="text-3xl font-extrabold text-slate-900 leading-tight"
           >
             Clinical Decision Support System
           </motion.h2>
@@ -39,13 +39,13 @@ export const AuthLayout: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-sky-200"
+            className="text-slate-600"
           >
             Providing evidence-based diagnostic suggestions, clinical risk assessments, and real-time case triage logs for professional patient care.
           </motion.p>
         </div>
 
-        <div className="relative z-10 text-sky-300/80 text-xs">
+        <div className="relative z-10 text-slate-500 text-xs">
           &copy; {new Date().getFullYear()} MedAgentix. Secure Clinical Portal Session.
         </div>
       </div>

@@ -31,7 +31,14 @@ def get_case(case_id):
             "message": "Access restricted. You are not authorized to view this case."
         }), 403
 
+    from database.postgres.models import User
+    patient_user = User.query.get(case_record.patient_id)
+    patient_name = patient_user.name if patient_user else "Unknown Patient"
+
+    case_dict = case_record.to_dict()
+    case_dict["patient_name"] = patient_name
+
     return jsonify({
         "success": True,
-        "case": case_record.to_dict()
+        "case": case_dict
     }), 200

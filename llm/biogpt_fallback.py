@@ -37,17 +37,28 @@ class BioGPTFallback:
 
     def _load_model(self):
         """Lazy-load BioGPT model and tokenizer."""
+        import config
+        if not getattr(config, 'ENABLE_BIOGPT', True):
+            print("  [BioGPT] Feature flag ENABLE_BIOGPT is False — bypassing model load")
+            return
         if self._model is None:
-            print(f"  [BioGPT] Loading {self.model_name}...")
-            self._tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-            self._model = AutoModelForCausalLM.from_pretrained(self.model_name)
-            self._model.to(self.device)
-            self._model.eval()
-            print(f"  [BioGPT] Model loaded on {self.device}")
+            try:
+                print(f"  [BioGPT] Loading {self.model_name}...")
+                self._tokenizer = AutoTokenizer.from_pretrained(self.model_name, local_files_only=True)
+                self._model = AutoModelForCausalLM.from_pretrained(self.model_name, local_files_only=True)
+                self._model.to(self.device)
+                self._model.eval()
+                print(f"  [BioGPT] Model loaded on {self.device}")
+            except Exception as e:
+                print(f"  [BioGPT] FAILED to load model: {e}")
+                self._model = None
+                self._tokenizer = None
 
     def _generate(self, prompt, max_new_tokens=100):
         """Generate text from a prompt."""
         self._load_model()
+        if self._model is None or self._tokenizer is None:
+            return ""
 
         inputs = self._tokenizer(
             prompt,

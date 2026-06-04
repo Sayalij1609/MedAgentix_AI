@@ -18,7 +18,7 @@ const DOCTOR_NAV_ITEMS: SidebarNavItem[] = [
     icon: ClipboardList,
   },
   {
-    name: 'Emergency Cases',
+    name: 'My Patients',
     path: ROUTES.DOCTOR_TRIAGE,
     icon: Users,
   },

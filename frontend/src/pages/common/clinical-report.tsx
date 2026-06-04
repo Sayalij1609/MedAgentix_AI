@@ -24,6 +24,7 @@ interface CaseDetails {
   status: string;
   triage_level: number;
   created_at: string;
+  patient_name?: string;
   vitals: {
     heart_rate: number;
     oxygen_level: number;
@@ -47,6 +48,8 @@ interface CaseDetails {
     severity: string;
     icd_code: string;
     pathophysiology: string;
+    patient_age?: number;
+    patient_gender?: string;
     differential_considerations: { rank: number; condition: string; probability: number }[];
     recommended_drugs: {
       name: string;
@@ -206,14 +209,16 @@ export default function ClinicalReport() {
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-4 border-b border-border pb-6">
           <div className="space-y-1">
             <span className="text-xs uppercase font-semibold tracking-wider text-sky-850 block">MedAgentix Clinical Portal — Patient Health Summary</span>
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900">Rahul Sharma</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+              {caseData.patient_name || 'Rahul Sharma'}
+            </h2>
             <p className="text-xs text-muted-foreground">
               Medical Record ID: MRN-{caseData.id} | Date of Assessment: {new Date(caseData.created_at).toLocaleDateString()}
             </p>
           </div>
           <div className="text-xs space-y-1 md:text-right text-muted-foreground font-semibold">
-            <p>Age: 35 years | Gender: Male</p>
-            <p>Assessment State: <span className="text-emerald-600">● Completed</span></p>
+            <p>Age: {diagnostic_output.patient_age || 35} years | Gender: {diagnostic_output.patient_gender || 'Male'}</p>
+            <p>Assessment State: <span className="text-emerald-600">● {caseData.status}</span></p>
           </div>
         </div>
 
@@ -463,9 +468,15 @@ export default function ClinicalReport() {
           </thead>
           <tbody className="divide-y divide-border font-medium">
             <tr>
-              <td className="px-4 py-3 border-r border-border">Rahul Sharma</td>
-              <td className="px-4 py-3 border-r border-border">35 years</td>
-              <td className="px-4 py-3 border-r border-border">Male</td>
+              <td className="px-4 py-3 border-r border-border">
+                {caseData.patient_name || 'Rahul Sharma'}
+              </td>
+              <td className="px-4 py-3 border-r border-border">
+                {diagnostic_output.patient_age || 35} years
+              </td>
+              <td className="px-4 py-3 border-r border-border">
+                {diagnostic_output.patient_gender || 'Male'}
+              </td>
               <td className="px-4 py-3 text-xs italic text-foreground/80">
                 {history_and_lifestyle.medical_history.join(', ') || 'None documented'}
               </td>

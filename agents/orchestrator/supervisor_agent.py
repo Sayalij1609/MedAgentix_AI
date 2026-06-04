@@ -76,26 +76,28 @@ class SupervisorAgent:
             tuple: (llm_instance_or_None, source_name_str)
         """
         # Try Meditron first
-        if self._meditron is None:
-            try:
-                from llm.meditron_inference import MeditronInference
-                self._meditron = MeditronInference()
-            except Exception:
-                self._meditron = None
+        if getattr(config, 'ENABLE_MEDITRON', True):
+            if self._meditron is None:
+                try:
+                    from llm.meditron_inference import MeditronInference
+                    self._meditron = MeditronInference()
+                except Exception:
+                    self._meditron = None
 
-        if self._meditron and self._meditron.is_available():
-            return self._meditron, "Meditron_7B"
+            if self._meditron and self._meditron.is_available():
+                return self._meditron, "Meditron_7B"
 
         # Fallback to BioGPT
-        if self._biogpt is None:
-            try:
-                from llm.biogpt_fallback import BioGPTFallback
-                self._biogpt = BioGPTFallback()
-            except Exception:
-                self._biogpt = None
+        if getattr(config, 'ENABLE_BIOGPT', True):
+            if self._biogpt is None:
+                try:
+                    from llm.biogpt_fallback import BioGPTFallback
+                    self._biogpt = BioGPTFallback()
+                except Exception:
+                    self._biogpt = None
 
-        if self._biogpt:
-            return self._biogpt, "BioGPT"
+            if self._biogpt:
+                return self._biogpt, "BioGPT"
 
         return None, "none"
 

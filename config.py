@@ -56,6 +56,10 @@ MEDITRON_MAX_NEW_TOKENS = 256
 MEDITRON_TEMPERATURE = 0.3
 MEDITRON_USE_QUANTIZATION = True  # 4-bit NF4 on CUDA, float16 on CPU
 
+# Feature flags for Sprint 7A Demo
+ENABLE_MEDITRON = False
+ENABLE_BIOGPT = False
+
 # NER labels
 NER_LABELS = ["O", "B-SYMPTOM", "I-SYMPTOM"]
 NER_LABEL2ID = {label: idx for idx, label in enumerate(NER_LABELS)}

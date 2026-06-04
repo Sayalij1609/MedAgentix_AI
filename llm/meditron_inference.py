@@ -102,6 +102,10 @@ class MeditronInference:
 
         Priority: GGUF > HF 4-bit > HF 8-bit+offload > HF CPU float16
         """
+        if not getattr(config, 'ENABLE_MEDITRON', True):
+            print("  [Meditron] Feature flag ENABLE_MEDITRON is False — bypassing model load")
+            self._load_failed = True
+            return
         if self._model is not None:
             return  # Already loaded
         if self._load_failed:
@@ -198,6 +202,7 @@ class MeditronInference:
 
         self._tokenizer = AutoTokenizer.from_pretrained(
             self.model_name, trust_remote_code=True,
+            local_files_only=True,
         )
         if self._tokenizer.pad_token is None:
             self._tokenizer.pad_token = self._tokenizer.eos_token
@@ -237,6 +242,7 @@ class MeditronInference:
             model = AutoModelForCausalLM.from_pretrained(
                 self.model_name, trust_remote_code=True,
                 quantization_config=qconfig, device_map="auto",
+                local_files_only=True,
             )
             print("  [Meditron] [OK] 4-bit NF4 loaded on CUDA")
             return model
@@ -258,6 +264,7 @@ class MeditronInference:
                 self.model_name, trust_remote_code=True,
                 quantization_config=qconfig, device_map="auto",
                 max_memory=max_memory, low_cpu_mem_usage=True,
+                local_files_only=True,
             )
             print("  [Meditron] [OK] 8-bit INT8 loaded (GPU + CPU offload)")
             return model
@@ -312,6 +319,7 @@ class MeditronInference:
                 self.model_name, trust_remote_code=True,
                 torch_dtype=torch.float16, device_map="cpu",
                 low_cpu_mem_usage=True,
+                local_files_only=True,
             )
             self.device = torch.device('cpu')
             print("  [Meditron] [OK] float16 loaded on CPU")
@@ -330,6 +338,8 @@ class MeditronInference:
         Returns:
             bool: True if model loads (or is already loaded), False otherwise.
         """
+        if not getattr(config, 'ENABLE_MEDITRON', True):
+            return False
         if self._load_failed:
             return False
         if self._model is not None:

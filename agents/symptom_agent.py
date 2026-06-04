@@ -152,7 +152,7 @@ class SymptomAgent:
         self._load_knowledge_base()
 
         # Initialize fallback
-        self.use_fallback = use_fallback if not self.offline_mode else False
+        self.use_fallback = use_fallback if (not self.offline_mode and getattr(config, 'ENABLE_BIOGPT', True)) else False
         self.fallback = BioGPTFallback() if self.use_fallback else None
 
         print(f"\n  [OK] Symptom Agent ready on {self.device} (Offline fallback: {self.offline_mode})")
@@ -215,8 +215,8 @@ class SymptomAgent:
                 self.norm_tokenizer = None
                 self.norm_model = None
             else:
-                self.norm_tokenizer = AutoTokenizer.from_pretrained(config.CLINICALBERT_NAME)
-                self.norm_model = AutoModel.from_pretrained(config.CLINICALBERT_NAME)
+                self.norm_tokenizer = AutoTokenizer.from_pretrained(config.CLINICALBERT_NAME, local_files_only=True)
+                self.norm_model = AutoModel.from_pretrained(config.CLINICALBERT_NAME, local_files_only=True)
                 self.norm_model.to(self.device)
                 self.norm_model.eval()
             print(f"  [OK] Normalizer loaded ({len(self.symptom_names)} symptoms)")

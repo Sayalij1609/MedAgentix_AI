@@ -260,6 +260,8 @@ class DiagnosisService:
                 "severity": final_diagnosis.get("severity", "Moderate"),
                 "icd_code": icd_code,
                 "pathophysiology": pathophys_text,
+                "patient_age": int(data.get("age", 40)),
+                "patient_gender": data.get("gender", "Male"),
                 "differential_considerations": differential_considerations,
                 "recommended_drugs": recommended_drugs,
                 "recommended_tests": recommended_tests,
