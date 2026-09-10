@@ -1,0 +1,316 @@
+# MedAgentixAI — OCR / Medical Report Agent Implementation Blueprint
+
+## 1 — OCR / Medical Report Agent (0% → 100%)
+
+### What Exists Now
+**Nothing.** All 4 files are empty (0 bytes):
+- [report_parser.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/ocr/report_parser.py)
+- [donut_pipeline.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/ocr/donut_pipeline.py)
+- [trocr_pipeline.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/ocr/trocr_pipeline.py)
+- [validation_rules.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/ocr/validation_rules.py)
+
+### What This Module Does
+The OCR module takes **medical documents** (images/PDFs of lab reports, prescriptions, discharge summaries) and:
+1. Extracts text from images/PDFs using multiple OCR engines
+2. Parses the raw text into **structured data** (test name, value, unit, range, flag)
+3. Validates the parsed data against **clinical reference ranges**
+4. Produces a structured JSON output that feeds into the agent pipeline
+
+### Complete Data Flow
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│                     USER UPLOADS FILE                         │
+│     (JPEG/PNG image or PDF of lab report/prescription)        │
+└──────────────────────────┬─────────────────────────────────────┘
+                           ↓
+┌────────────────────────────────────────────────────────────────┐
+│  STEP 1: PRE-PROCESSING (report_parser.py)                    │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │ • PDF → Images (pdf2image / PyMuPDF / fitz)             │  │
+│  │ • Image enhancement (OpenCV):                           │  │
+│  │   - Grayscale conversion                                │  │
+│  │   - Adaptive thresholding (for handwriting contrast)    │  │
+│  │   - Deskewing (correct rotated scans)                   │  │
+│  │   - Denoising (Gaussian blur for noisy scans)           │  │
+│  │   - Border removal                                      │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└──────────────────────────┬─────────────────────────────────────┘
+                           ↓
+┌────────────────────────────────────────────────────────────────┐
+│  STEP 2: DOCUMENT TYPE DETECTION (report_parser.py)           │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │ Classify the document type using keyword heuristics:     │  │
+│  │                                                          │  │
+│  │ "Lab Report" → if contains CBC/LFT/KFT/LIPID/etc.      │  │
+│  │ "Prescription" → if contains Rx/Tab/Cap/mg/dosage/etc.  │  │
+│  │ "Discharge Summary" → if contains Discharge/Admission   │  │
+│  │ "Imaging Report" → if contains X-ray/CT/MRI/ECG         │  │
+│  │ "Unknown" → fallback                                    │  │
+│  │                                                          │  │
+│  │ Keywords to detect:                                      │  │
+│  │  Lab: "Hemoglobin", "WBC", "Platelet", "Creatinine",   │  │
+│  │       "Bilirubin", "SGPT", "SGOT", "HbA1c", "TSH",    │  │
+│  │       "Total Cholesterol", "Reference Range"             │  │
+│  │  Rx: "Rx", "Tab.", "Cap.", "Syp.", "Inj.", "mg",       │  │
+│  │      "BD", "TDS", "OD", "HS", "SOS", "Before food",   │  │
+│  │      "After food"                                        │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└──────────────────────────┬─────────────────────────────────────┘
+                           ↓
+┌────────────────────────────────────────────────────────────────┐
+│  STEP 3: OCR TEXT EXTRACTION                                  │
+│  Route based on document type:                                │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │                                                          │  │
+│  │  Lab Reports (printed tables/forms):                     │  │
+│  │  → PRIMARY: Donut (donut_pipeline.py)                   │  │
+│  │    Model: "naver-clova-ix/donut-base-finetuned-cord-v2" │  │
+│  │    Why: Understands document STRUCTURE (tables, K:V)     │  │
+│  │    Input: PIL Image (max 2560px)                        │  │
+│  │    Output: JSON with key-value pairs                     │  │
+│  │  → FALLBACK: Tesseract OCR (pytesseract)                │  │
+│  │    Config: --psm 6 (uniform block of text)              │  │
+│  │    Output: Raw text string                               │  │
+│  │                                                          │  │
+│  │  Prescriptions (handwritten text):                       │  │
+│  │  → PRIMARY: TrOCR (trocr_pipeline.py)                   │  │
+│  │    Model: "microsoft/trocr-base-handwritten"             │  │
+│  │    Why: Trained specifically on handwritten text          │  │
+│  │    Input: PIL Image (line-level crops)                   │  │
+│  │    Output: Recognized text per line                       │  │
+│  │  → FALLBACK: Tesseract OCR                              │  │
+│  │                                                          │  │
+│  │  Imaging/Discharge (typed text):                         │  │
+│  │  → PRIMARY: Tesseract OCR (pytesseract)                 │  │
+│  │    Config: --psm 3 (fully automatic page segmentation)  │  │
+│  │    Output: Full page text                                │  │
+│  │                                                          │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└──────────────────────────┬─────────────────────────────────────┘
+                           ↓
+┌────────────────────────────────────────────────────────────────┐
+│  STEP 4: STRUCTURED PARSING (report_parser.py)                │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │                                                          │  │
+│  │  FOR LAB REPORTS — Extract test results:                 │  │
+│  │  ┌────────────────────────────────────────────────────┐  │  │
+│  │  │ Input text: "Hemoglobin  12.5 g/dL  13.0-17.0"   │  │  │
+│  │  │                                                    │  │  │
+│  │  │ Regex patterns to match:                           │  │  │
+│  │  │  r"([\w\s]+?)\s+([\d.]+)\s*(g/dL|mg/dL|mmol/L|   │  │  │
+│  │  │    IU/L|%|cells/μL|...)\s*([\d.]+-[\d.]+)?"       │  │  │
+│  │  │                                                    │  │  │
+│  │  │ Output per test:                                   │  │  │
+│  │  │  {                                                 │  │  │
+│  │  │    "test_name": "Hemoglobin",                      │  │  │
+│  │  │    "value": 12.5,                                  │  │  │
+│  │  │    "unit": "g/dL",                                 │  │  │
+│  │  │    "reference_range": "13.0-17.0",                 │  │  │
+│  │  │    "flag": "LOW",                                  │  │  │
+│  │  │    "clinical_significance": "Possible anemia"      │  │  │
+│  │  │  }                                                 │  │  │
+│  │  └────────────────────────────────────────────────────┘  │  │
+│  │                                                          │  │
+│  │  FOR PRESCRIPTIONS — Extract drug orders:                │  │
+│  │  ┌────────────────────────────────────────────────────┐  │  │
+│  │  │ Input text: "Tab Metformin 500mg BD x 30 days AF"  │  │  │
+│  │  │                                                    │  │  │
+│  │  │ Regex patterns:                                    │  │  │
+│  │  │  Form: r"(Tab|Cap|Syp|Inj|Drops|Cream|Oint)\b"   │  │  │
+│  │  │  Drug: r"(Tab|Cap|...)\s+(\w+(?:\s\w+)?)"        │  │  │
+│  │  │  Dose: r"(\d+(?:\.\d+)?)\s*(mg|g|ml|mcg|IU)"     │  │  │
+│  │  │  Freq: r"\b(OD|BD|TDS|QID|HS|SOS|PRN|STAT)\b"    │  │  │
+│  │  │  Duration: r"[×x]\s*(\d+)\s*(days?|weeks?|months)"│  │  │
+│  │  │  Timing: r"(AF|BF|Before food|After food|HS)"     │  │  │
+│  │  │                                                    │  │  │
+│  │  │ Frequency decoder:                                 │  │  │
+│  │  │  OD = Once Daily                                   │  │  │
+│  │  │  BD = Twice Daily (Bis Die)                        │  │  │
+│  │  │  TDS = Three Times Daily (Ter Die Sumendus)        │  │  │
+│  │  │  QID = Four Times Daily                            │  │  │
+│  │  │  HS = At Bedtime (Hora Somni)                      │  │  │
+│  │  │  SOS/PRN = As Needed                               │  │  │
+│  │  │  STAT = Immediately                                │  │  │
+│  │  │  AF = After Food, BF = Before Food                 │  │  │
+│  │  │                                                    │  │  │
+│  │  │ Output per drug:                                   │  │  │
+│  │  │  {                                                 │  │  │
+│  │  │    "drug_name": "Metformin",                       │  │  │
+│  │  │    "form": "Tablet",                               │  │  │
+│  │  │    "dosage": "500mg",                              │  │  │
+│  │  │    "frequency": "BD (Twice Daily)",                │  │  │
+│  │  │    "duration": "30 days",                          │  │  │
+│  │  │    "timing": "After Food",                         │  │  │
+│  │  │    "route": "Oral"                                 │  │  │
+│  │  │  }                                                 │  │  │
+│  │  └────────────────────────────────────────────────────┘  │  │
+│  │                                                          │  │
+│  │  FOR IMAGING REPORTS — Extract findings:                 │  │
+│  │  ┌────────────────────────────────────────────────────┐  │  │
+│  │  │ Look for sections: "FINDINGS:", "IMPRESSION:",      │  │  │
+│  │  │ "CONCLUSION:", "RECOMMENDATION:"                    │  │  │
+│  │  │                                                    │  │  │
+│  │  │ Output:                                            │  │  │
+│  │  │  {                                                 │  │  │
+│  │  │    "modality": "Chest X-ray",                      │  │  │
+│  │  │    "findings": "Bilateral patchy consolidation...", │  │  │
+│  │  │    "impression": "Suggestive of Pneumonia",        │  │  │
+│  │  │    "recommendations": "CT thorax recommended"      │  │  │
+│  │  │  }                                                 │  │  │
+│  │  └────────────────────────────────────────────────────┘  │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└──────────────────────────┬─────────────────────────────────────┘
+                           ↓
+┌────────────────────────────────────────────────────────────────┐
+│  STEP 5: CLINICAL VALIDATION (validation_rules.py)            │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │                                                          │  │
+│  │  REFERENCE RANGES DATABASE (built into the code):        │  │
+│  │  ┌────────────────────────────────────────────────────┐  │  │
+│  │  │ "Hemoglobin":                                      │  │  │
+│  │  │   Male:   13.0 – 17.0 g/dL                        │  │  │
+│  │  │   Female: 12.0 – 15.5 g/dL                        │  │  │
+│  │  │   Critical Low: < 7.0, Critical High: > 20.0      │  │  │
+│  │  │                                                    │  │  │
+│  │  │ "WBC Count":                                       │  │  │
+│  │  │   Normal: 4,500 – 11,000 cells/μL                 │  │  │
+│  │  │   Critical Low: < 2,000, Critical High: > 30,000  │  │  │
+│  │  │                                                    │  │  │
+│  │  │ "Platelet Count":                                  │  │  │
+│  │  │   Normal: 150,000 – 400,000 /μL                   │  │  │
+│  │  │   Critical Low: < 50,000 (bleeding risk)          │  │  │
+│  │  │   Critical High: > 1,000,000                      │  │  │
+│  │  │                                                    │  │  │
+│  │  │ "Fasting Blood Sugar":                             │  │  │
+│  │  │   Normal: 70 – 100 mg/dL                          │  │  │
+│  │  │   Pre-diabetic: 100 – 125 mg/dL                   │  │  │
+│  │  │   Diabetic: ≥ 126 mg/dL                           │  │  │
+│  │  │   Critical Low: < 54 (hypoglycemia emergency)     │  │  │
+│  │  │   Critical High: > 500 (DKA risk)                 │  │  │
+│  │  │                                                    │  │  │
+│  │  │ "HbA1c":                                           │  │  │
+│  │  │   Normal: < 5.7%                                   │  │  │
+│  │  │   Pre-diabetic: 5.7 – 6.4%                        │  │  │
+│  │  │   Diabetic: ≥ 6.5%                                │  │  │
+│  │  │                                                    │  │  │
+│  │  │ "Creatinine":                                      │  │  │
+│  │  │   Male: 0.7 – 1.3 mg/dL                           │  │  │
+│  │  │   Female: 0.6 – 1.1 mg/dL                         │  │  │
+│  │  │   Critical High: > 10.0 (renal failure)           │  │  │
+│  │  │                                                    │  │  │
+│  │  │ "SGPT (ALT)":                                      │  │  │
+│  │  │   Normal: 7 – 56 U/L                              │  │  │
+│  │  │   Critical High: > 1000 (acute liver injury)      │  │  │
+│  │  │                                                    │  │  │
+│  │  │ "TSH":                                             │  │  │
+│  │  │   Normal: 0.4 – 4.0 mIU/L                         │  │  │
+│  │  │   Low → Hyperthyroidism, High → Hypothyroidism    │  │  │
+│  │  │                                                    │  │  │
+│  │  │ "Total Cholesterol":                               │  │  │
+│  │  │   Desirable: < 200 mg/dL                          │  │  │
+│  │  │   Borderline: 200 – 239 mg/dL                     │  │  │
+│  │  │   High: ≥ 240 mg/dL                               │  │  │
+│  │  │                                                    │  │  │
+│  │  │ "Troponin I":                                      │  │  │
+│  │  │   Normal: < 0.04 ng/mL                            │  │  │
+│  │  │   Critical: > 0.4 (acute MI likely)               │  │  │
+│  │  │                                                    │  │  │
+│  │  │ + 20 more tests (Bilirubin, Uric Acid, BUN,      │  │  │
+│  │  │   RBC, ESR, CRP, Calcium, Sodium, Potassium,     │  │  │
+│  │  │   Urine pH, Albumin, etc.)                        │  │  │
+│  │  └────────────────────────────────────────────────────┘  │  │
+│  │                                                          │  │
+│  │  VALIDATION ACTIONS:                                     │  │
+│  │  • Compare each value against reference range            │  │
+│  │  • Flag as NORMAL / LOW / HIGH / CRITICAL_LOW / CRIT_HI │  │
+│  │  • Generate clinical significance text                   │  │
+│  │  • Trigger CRITICAL ALERTS for life-threatening values   │  │
+│  │                                                          │  │
+│  │  DRUG INTERACTION CHECK (for prescriptions):             │  │
+│  │  • Cross-reference extracted drugs with drug_knowledge   │  │
+│  │    from recommendation_agent's drug KB                   │  │
+│  │  • Flag contraindications (e.g., Metformin + renal      │  │
+│  │    failure, Warfarin + Aspirin)                          │  │
+│  │  • Alert on duplicate therapeutic classes                │  │
+│  │                                                          │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└──────────────────────────┬─────────────────────────────────────┘
+                           ↓
+                  STRUCTURED JSON OUTPUT
+```
+
+### Final OCR Output Schema
+
+```json
+{
+  "document_type": "lab_report | prescription | imaging_report | discharge_summary",
+  "extraction_method": "donut | trocr | tesseract",
+  "confidence": 0.87,
+  "raw_text": "Full extracted text...",
+
+  "lab_results": [
+    {
+      "test_name": "Hemoglobin",
+      "value": 10.2,
+      "unit": "g/dL",
+      "reference_range": "13.0-17.0",
+      "flag": "LOW",
+      "is_critical": false,
+      "clinical_significance": "Below normal - may indicate anemia"
+    }
+  ],
+
+  "prescriptions": [
+    {
+      "drug_name": "Metformin",
+      "form": "Tablet",
+      "dosage": "500mg",
+      "frequency": "BD (Twice Daily)",
+      "duration": "30 days",
+      "timing": "After Food",
+      "route": "Oral"
+    }
+  ],
+
+  "imaging_findings": {
+    "modality": "Chest X-ray",
+    "findings": "...",
+    "impression": "...",
+    "recommendations": "..."
+  },
+
+  "critical_alerts": [
+    "⚠ Platelet Count: 45,000/μL — CRITICAL LOW (bleeding risk)"
+  ],
+
+  "drug_interactions": [
+    "⚠ Warfarin + Aspirin — increased bleeding risk"
+  ],
+
+  "agent_feed": {
+    "abnormal_flags": ["Hemoglobin_LOW", "Platelet_CRITICAL_LOW"],
+    "suggested_conditions": ["Anemia", "Dengue", "Thrombocytopenia"],
+    "vitals_update": {"platelet_low": 1, "wbc_abnormal": 0}
+  }
+}
+```
+
+### Libraries Required
+```
+pytesseract          # Tesseract OCR wrapper
+Pillow               # Image processing
+opencv-python        # Image pre-processing (deskew, denoise)
+pdf2image            # PDF → image conversion
+pymupdf (fitz)       # Alternative PDF handling
+transformers         # For Donut + TrOCR models
+torch                # PyTorch backend
+```
+
+### How OCR Feeds Into the Pipeline
+The `agent_feed` field from OCR output can be injected into the LangGraph `DiagnosticState`:
+- `vitals_update` → merges with `features` in `node_predict()` (updates `platelet_low`, `wbc_abnormal`)
+- `suggested_conditions` → boosted in `node_differential()` voting
+- `abnormal_flags` → added to `node_emergency()` red-flag detection
+
+---

@@ -1,0 +1,79 @@
+# MedAgentixAI — Testing & Evaluation Framework Blueprint
+
+## 8 — Testing & Evaluation Framework
+
+### Current Test Files
+
+| File | Size | Status |
+|------|------|--------|
+| [test_api.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/tests/test_api.py) | 19.7KB | ✅ Substantial |
+| [test_auth_foundation.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/tests/test_auth_foundation.py) | 9.3KB | ✅ Substantial |
+| [test_agents.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/tests/test_agents.py) | 0 bytes | 🔴 Empty |
+| [test_prediction.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/tests/test_prediction.py) | 0 bytes | 🔴 Empty |
+| [test_rag.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/tests/test_rag.py) | 0 bytes | 🔴 Empty |
+
+### What to Build
+
+#### `test_agents.py` — Agent Unit Tests
+```
+Test cases per agent:
+
+Symptom Agent:
+  - "I have severe headache and fever" → extracts [Headache, Fever]
+  - "chest tightness with breathing difficulty" → extracts [Chest Pain, Breathlessness]
+  - "" (empty input) → returns empty list, no crash
+  - "asdfgh" (gibberish) → returns empty list, no crash
+
+Differential Agent:
+  - ["itching", "skin_rash"] → top-1 should be "Fungal infection"
+  - ["high_fever", "chills", "sweating"] → should include "Malaria" in top-3
+  - [] (empty symptoms) → returns message, no crash
+  - ["unknown_symptom_xyz"] → returns unmatched, no crash
+
+Emergency Agent:
+  - HR=180, SpO2=85, Temp=104 → should return "Critical"
+  - HR=72, SpO2=98, Temp=98.6 → should return "Medium" (not Critical)
+  - Normal vitals with "chest pain" → should detect but not false-alarm
+
+Risk Agent:
+  - Age=70, BP=High, Cholesterol=280, Smoking → should flag Heart Disease
+  - Age=25, no risk factors → should return Low risk
+
+Temporal Agent:
+  - ("Chest Pain", "3 days") → should parse to "1-3 days" bucket
+  - ("Fever", "chronic") → should parse to "Chronic (>3 months)"
+  - ("Headache", "since yesterday") → should parse to "1-3 days"
+```
+
+#### `test_prediction.py` — Prediction Engine Tests
+```
+Test the end-to-end prediction pipeline:
+  - Known disease feature vectors → correct prediction
+  - Edge cases: all symptoms=0, all symptoms=1
+  - Feature column order matches config.PREDICTION_FEATURE_COLUMNS
+  - Probabilities sum to ~1.0
+  - SHAP explanation doesn't crash
+```
+
+#### `test_rag.py` — RAG System Tests
+```
+Test knowledge base loading, retrieval, and generation:
+  - Knowledge base loads without error
+  - retrieve("cardiac") returns cardiac-related chunks
+  - retrieve("xyz nonsense") returns empty or low-score results
+  - generate_answer works with Gemini (or falls back to template)
+  - Category/severity filters work correctly
+```
+
+#### `evaluation/run_evaluation.py` — Full Evaluation Pipeline
+```
+Reads a test dataset (50-100 medical cases), runs the full 
+pipeline on each, and computes:
+  - Overall accuracy
+  - Per-agent metrics (see section 3 above)
+  - Latency profiling
+  - Memory footprint
+  - Generates evaluation_report.md with all results
+```
+
+---

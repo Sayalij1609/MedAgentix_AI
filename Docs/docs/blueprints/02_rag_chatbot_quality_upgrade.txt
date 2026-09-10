@@ -1,0 +1,704 @@
+# MedAgentixAI — RAG Chatbot Quality Upgrade Blueprint
+
+> Comprehensive blueprint covering 2A (PubMedBERT Embeddings), 2B (FAISS Vector Store), 2C (Conversation Memory), 2D (Knowledge Base Regeneration), 2E (Evidence Passage Citations), and 2F (RAG + Diagnostic Pipeline Integration).
+
+## 2 — RAG Chatbot Quality Upgrade (65% → 100%)
+
+### What Exists Now
+
+| Component | Current State | Quality |
+|-----------|--------------|---------|
+| Retrieval | TF-IDF + cosine similarity ([rag_system.py L247-252](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/rag_system.py#L247-L252)) | ⭐⭐ Basic keyword matching, misses semantic similarity |
+| Generator | Google Gemini API ([rag_system.py L197](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/rag_system.py#L197)) | ⭐⭐⭐ Works but depends on external API |
+| Knowledge base | [knowledge_base.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/knowledge_base.py) (580 lines) | ⭐⭐⭐ Good ingestion pipeline from CSV |
+| Embedding module | [pubmedbert_embed.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/embeddings/pubmedbert_embed.py) | 🔴 Empty |
+| Retriever | [retriever.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/retriever.py) | 🔴 Empty |
+| Generator module | [generator.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/generator.py) | 🔴 Empty |
+| Pipeline | [rag_pipeline.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/rag_pipeline.py) | 🔴 Empty |
+| Knowledge ingestion | [knowledge_ingestion.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/knowledge_ingestion.py) | 🔴 Empty |
+| Conversation memory | None | 🔴 Missing |
+| `knowledge_base.pkl` | Deleted during cleanup | 🔴 Missing |
+
+### Problem With Current RAG
+
+The current [rag_system.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/rag_system.py) has fundamental quality issues:
+
+1. **TF-IDF is keyword-based, not semantic.** If user asks "What causes chest tightness?" but chunks use "cardiac syndrome", TF-IDF won't match because the WORDS don't overlap. Semantic models understand that "chest tightness" ≈ "cardiac syndrome."
+
+2. **No conversation memory.** Each query is independent. If user asks "What about treatment?" after "Tell me about Pneumonia", the RAG has no idea "treatment" refers to Pneumonia.
+
+3. **Full dependence on Gemini API.** If API is down or key expires, the fallback ([_template_answer()](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/rag_system.py#L372)) just dumps raw chunks.
+
+4. **No evidence passages.** The `sources` returned to frontend only contain disease/category — not the actual text that supports the answer.
+
+### What to Build
+
+#### A. PubMedBERT Embeddings (`embeddings/pubmedbert_embed.py`)
+
+```
+Purpose: Convert medical text into 768-dimensional vectors that 
+understand medical semantics.
+
+Model: "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract"
+  - Trained on 16.5M PubMed abstracts
+  - Understands medical terminology relationships
+  - "chest tightness" and "cardiac symptoms" → similar vectors
+
+How it works:
+  1. Load PubMedBERT model + tokenizer from HuggingFace
+  2. encode(text) → tokenize → forward pass → mean pool → 768-dim vector
+  3. encode_batch(texts) → same but for lists (faster for KB building)
+
+Input:  "Pneumonia causes fever, cough, and breathlessness"
+Output: numpy array of shape (768,) — a dense vector
+
+This replaces TF-IDF vectorization in knowledge_base.py
+```
+
+#### B. FAISS Vector Store (`retriever.py`)
+
+```
+Purpose: Ultra-fast similarity search over 6,700+ medical chunks.
+
+What is FAISS?
+  Facebook AI Similarity Search — a library that indexes vectors
+  and finds nearest neighbors in milliseconds, even over millions
+  of vectors.
+
+How it works:
+  1. BUILDING (one-time, during knowledge_base.py):
+     - Take all 6,700 chunks
+     - Convert each to 768-dim vector using PubMedBERT
+     - Build a FAISS IndexFlatIP index (Inner Product = cosine sim)
+     - Save index to disk as faiss_index.bin
+
+  2. RETRIEVAL (every query):
+     - Convert user question to 768-dim vector using same PubMedBERT
+     - Search FAISS index: faiss_index.search(query_vector, top_k=5)
+     - Returns top-5 chunk indices + similarity scores
+     - Look up chunk text + metadata from stored arrays
+
+Why better than TF-IDF:
+  TF-IDF: "heart attack symptoms" → matches "heart", "attack", "symptoms"
+  FAISS+PubMedBERT: "heart attack symptoms" → matches "acute MI 
+  presentation", "cardiac event signs", "myocardial infarction clinical 
+  features" (semantic understanding)
+
+Performance: 
+  TF-IDF search over 6,700 chunks: ~50ms
+  FAISS search over 6,700 chunks: ~2ms (25x faster + smarter)
+```
+
+#### C. Conversation Memory (using MongoDB)
+
+```
+Purpose: Remember previous messages in a chat session so multi-turn
+conversations work.
+
+How it works:
+  1. Each chat session gets a session_id (UUID)
+  2. Every message (user + assistant) is stored in MongoDB:
+     Collection: "chat_sessions"
+     Document: {
+       session_id: "abc-123",
+       messages: [
+         {role: "user", content: "Tell me about Pneumonia", timestamp: ...},
+         {role: "assistant", content: "Pneumonia is...", timestamp: ...},
+         {role: "user", content: "What about treatment?", timestamp: ...}
+       ],
+       created_at: ...,
+       last_active: ...
+     }
+
+  3. Before each query, the system loads the last N messages (context window)
+  4. These are prepended to the Gemini/LLM prompt:
+
+     Previous conversation:
+       User: Tell me about Pneumonia
+       Assistant: Pneumonia is an infection of the lungs...
+       User: What about treatment?
+     
+     → Now the RAG knows "treatment" refers to "Pneumonia"
+
+  5. Context window: Last 5-10 messages (to avoid token overflow)
+```
+
+#### D. Regenerate Knowledge Base
+
+The `knowledge_base.pkl` was deleted during cleanup. It needs to be regenerated:
+
+```
+1. The CSV source files are referenced in knowledge_base.py:
+   - "Medical Knowledge Dataset.csv" (5,001 diseases)
+   - "knowledge_chunks.csv" (~3,000 chunks)
+   - "medical_dataset_1000_rows.csv" (1,000 rows)
+   
+   These were in the rag/ directory and were deleted.
+   You need to either:
+   a) Restore them from git history / backup
+   b) Regenerate them from the raw datasets in models/*/data/
+
+2. Run: python rag/knowledge_base.py
+   This builds the .pkl file with TF-IDF vectors
+
+3. After PubMedBERT upgrade: run new build script that:
+   - Reads same CSVs
+   - Generates PubMedBERT embeddings instead of TF-IDF
+   - Builds FAISS index
+   - Saves: knowledge_base_v2.pkl + faiss_index.bin
+```
+
+#### E. Evidence Passage Citations
+
+Currently the `sources` in chatbot response are:
+```json
+{"disease": "Pneumonia", "category": "Respiratory", "severity": "High", "relevance": 0.82}
+```
+
+After upgrade, each source should include the **actual evidence text**:
+```json
+{
+  "disease": "Pneumonia",
+  "category": "Respiratory",
+  "severity": "High",
+  "relevance": 0.92,
+  "evidence_passage": "Pneumonia is commonly caused by Streptococcus pneumoniae. 
+    Treatment includes empiric antibiotics (Amoxicillin for mild cases, 
+    Ceftriaxone + Azithromycin for hospitalized patients)...",
+  "chunk_id": 2847
+}
+```
+
+### Libraries Required
+```
+faiss-cpu            # FAISS vector similarity search (CPU version)
+transformers         # PubMedBERT model loading
+sentence-transformers  # Alternative: easier embedding API
+pymongo              # MongoDB for conversation memory
+```
+
+---
+
+### F. RAG + Diagnostic Pipeline Integration (The Core Upgrade)
+
+This is the most impactful change to the RAG system — **connecting the chatbot to your full LangGraph orchestration pipeline** so that when a user describes symptoms, the chatbot doesn't just search the knowledge base — it runs all 8 agents and returns an actual personalized diagnosis.
+
+#### The Problem (Current Architecture — Disconnected)
+
+```
+Current: Two separate systems that NEVER talk to each other
+
+  Chatbot (/api/v1/chatbot)              Case (/api/v1/cases)
+        ↓                                      ↓
+   RAG System                            LangGraph Pipeline
+   (TF-IDF + Gemini)                     (Symptom → Differential →
+        ↓                                 Risk → Temporal → Emergency
+   Generic medical info:                   → Predict → Recommend
+   "Pneumonia is a lung                    → Supervisor)
+    infection caused by..."                     ↓
+                                          {"final_disease": "Pneumonia",
+   ❌ No diagnosis                         "severity": "Severe",
+   ❌ No personalization                   "medications": [...],
+   ❌ No test/drug recs                    "shap_explanation": {...}}
+```
+
+The chatbot gives GENERIC medical encyclopedia answers. The powerful diagnostic pipeline is only accessible through the intake form API. This wastes the pipeline's capabilities.
+
+#### The Solution (Integrated Architecture)
+
+```
+User: "I have severe headache and fever for 5 days"
+                    ↓
+          ┌─── Intent Detection ───────────────────────┐
+          │  Classify the user message:                 │
+          │                                             │
+          │  "hello"              → greeting            │
+          │  "what is pneumonia"  → knowledge_query     │
+          │  "how does this work" → platform_help       │
+          │  "i have fever"       → symptom_report  ✓  │
+          └────────────┬────────────────────────────────┘
+                       ↓
+        If symptom_report detected:
+                       ↓
+     ┌─────────────────┴───────────────────┐
+     ↓                                     ↓
+  RAG Retrieval                      LangGraph Pipeline
+  (FAISS + PubMedBERT)               (Full 8-agent flow)
+     ↓                                     ↓
+  Top-5 knowledge chunks             Complete diagnosis:
+  about headache, fever,             • Disease: Migraine (87%)
+  causes, complications              • Severity: Moderate
+                                     • Tests: CT Head, CBC
+                                     • Drugs: Ibuprofen 400mg
+                                     • Risk: Medium
+                                     • SHAP: Temp (+0.3)
+     └─────────────────┬───────────────────┘
+                       ↓
+          ┌─── Gemini Synthesis ───────────────────────┐
+          │  Combine BOTH sources into one unified      │
+          │  clinical response with:                    │
+          │  • Personalized diagnosis from pipeline     │
+          │  • Medical context from knowledge base      │
+          │  • Recommended tests & medications          │
+          │  • SHAP explanation (why this diagnosis)    │
+          │  • Evidence-backed citations                │
+          └────────────┬────────────────────────────────┘
+                       ↓
+          Rich unified response to user
+```
+
+#### Step-by-Step Implementation
+
+##### Step 1: Intent Detection (add to `rag_system.py`)
+
+A lightweight keyword classifier that determines what type of message the user sent:
+
+```python
+# Symptom-indicating keywords and phrases
+SYMPTOM_TRIGGER_KEYWORDS = [
+    # Direct symptom words
+    "fever", "cough", "pain", "headache", "vomiting", "nausea",
+    "breathing", "breathless", "rash", "fatigue", "tired",
+    "dizzy", "dizziness", "bleeding", "swelling", "weakness",
+    "chest", "stomach", "joint", "back pain", "sore throat",
+    "diarrhea", "constipation", "itching", "weight loss",
+    "palpitations", "seizure", "confusion", "blurred vision",
+    
+    # Symptom-reporting phrases
+    "i have", "i feel", "i am having", "i've been",
+    "suffering from", "experiencing", "diagnosed with",
+    "my symptoms", "symptoms include", "started feeling",
+    "woke up with", "been having", "getting worse",
+]
+
+GREETING_KEYWORDS = ["hello", "hi", "hey", "greetings", 
+                     "good morning", "good afternoon", "good evening"]
+
+PLATFORM_KEYWORDS = ["medagentix", "how does", "how to use", "pdf",
+                     "prescription", "shap", "explainability", 
+                     "agent", "pipeline", "what is this"]
+
+def _detect_intent(self, question):
+    """
+    Classify user message intent to determine processing path.
+    
+    Returns:
+        "greeting"        → Template greeting response
+        "platform_help"   → Template platform explanation
+        "symptom_report"  → Trigger RAG + Pipeline (THE KEY PATH)
+        "knowledge_query" → RAG retrieval only
+    """
+    q = question.lower().strip()
+    
+    # Check greetings first (shortest messages)
+    if any(greet in q for greet in GREETING_KEYWORDS) and len(q.split()) < 5:
+        return "greeting"
+    
+    # Check platform help queries
+    if any(kw in q for kw in PLATFORM_KEYWORDS):
+        return "platform_help"
+    
+    # Check for symptom reporting (the important one)
+    symptom_score = sum(1 for kw in SYMPTOM_TRIGGER_KEYWORDS if kw in q)
+    if symptom_score >= 1:  # At least 1 symptom keyword found
+        return "symptom_report"
+    
+    # Default: general medical knowledge query
+    return "knowledge_query"
+```
+
+##### Step 2: Pipeline Runner (add to `rag_system.py`)
+
+A method that calls the existing LangGraph pipeline from within the RAG system:
+
+```python
+def _run_diagnostic_pipeline(self, question, age=40, gender="Male"):
+    """
+    Run the full LangGraph diagnostic pipeline on symptom text.
+    
+    This calls the SAME pipeline that the case/intake API uses,
+    but triggered from the chatbot instead of the form.
+    
+    Args:
+        question: User's symptom description text
+        age: Patient age (default 40 if not provided)
+        gender: Patient gender (default "Male" if not provided)
+    
+    Returns:
+        dict: Full pipeline state including final_diagnosis
+    """
+    try:
+        from agents.orchestrator.langgraph_workflow import run_pipeline
+        
+        state = run_pipeline({
+            "patient_text": question,
+            "patient_age": age,
+            "patient_gender": gender,
+            # Default vitals (since chatbot doesn't collect them)
+            "blood_pressure": "Normal",
+            "blood_pressure_reading": "120/80",
+            "cholesterol": 180,
+            "heart_rate": 80,
+            "oxygen_level": 98,
+            "body_temperature": 98.6,
+            "lifestyle_factors": [],
+            "medical_history": [],
+            "symptom_durations": [],
+        })
+        
+        return state.get("final_diagnosis", {})
+    
+    except Exception as e:
+        print(f"[RAG] Pipeline execution failed: {e}")
+        return {}  # Graceful fallback — RAG still works without pipeline
+```
+
+##### Step 3: Combined Gemini Prompt (add to `rag_system.py`)
+
+A new prompt template that synthesizes BOTH the pipeline output AND the RAG knowledge chunks into one response:
+
+```python
+def _build_integrated_prompt(self, question, pipeline_result, rag_chunks):
+    """
+    Build a Gemini prompt that combines pipeline diagnosis + KB knowledge.
+    
+    This is the KEY innovation — the LLM synthesizes the structured
+    diagnostic output with retrieved medical context into a natural,
+    comprehensive clinical response.
+    """
+    
+    # Format pipeline results
+    pipeline_section = ""
+    if pipeline_result:
+        disease = pipeline_result.get('final_disease', 'Unknown')
+        confidence = pipeline_result.get('final_confidence', 0)
+        severity = pipeline_result.get('severity', 'N/A')
+        source = pipeline_result.get('diagnosis_source', 'N/A')
+        reasoning = pipeline_result.get('reasoning', '')
+        
+        # Tests
+        tests = pipeline_result.get('recommended_tests', [])
+        test_names = [t.get('test', t) if isinstance(t, dict) else str(t) 
+                      for t in tests[:5]]
+        
+        # Medications  
+        meds = pipeline_result.get('recommended_medications', [])
+        med_info = []
+        for m in meds[:3]:
+            if isinstance(m, dict):
+                med_info.append(f"{m.get('drug', 'N/A')} {m.get('dosage', '')}")
+            else:
+                med_info.append(str(m))
+        
+        # Risk
+        risk_level = pipeline_result.get('risk_level', 'N/A')
+        risk_factors = pipeline_result.get('risk_factors', [])
+        
+        # SHAP
+        shap = pipeline_result.get('shap_explanation', {})
+        top_drivers = []
+        if shap and shap.get('top_positive_factors'):
+            for f in shap['top_positive_factors'][:3]:
+                top_drivers.append(
+                    f"{f.get('display_name', f.get('feature', '?'))}: "
+                    f"{f.get('shap_value', 0):+.3f}"
+                )
+        
+        # Emergency
+        emergency = pipeline_result.get('emergency_status', {})
+        is_emergency = emergency.get('is_emergency', False)
+        
+        pipeline_section = f"""
+=== AI DIAGNOSTIC PIPELINE RESULTS ===
+(Generated by MedAgentix multi-agent system: Symptom Agent → 
+Differential Agent → Risk Agent → Temporal Agent → Emergency Agent → 
+Prediction Engine → Recommendation Agent → Supervisor)
+
+Primary Diagnosis: {disease}
+Confidence: {confidence:.1%} [{pipeline_result.get('confidence_level', 'N/A').upper()}]
+Severity: {severity}
+Diagnosis Source: {source}
+Reasoning: {reasoning}
+{'🚨 EMERGENCY DETECTED — Immediate medical attention required' if is_emergency else ''}
+
+Risk Level: {risk_level}
+Risk Factors: {', '.join(risk_factors[:5]) if risk_factors else 'None identified'}
+
+Recommended Tests: {', '.join(test_names) if test_names else 'General workup'}
+Suggested Medications: {', '.join(med_info) if med_info else 'Consult physician'}
+
+Key Diagnostic Drivers (SHAP): {'; '.join(top_drivers) if top_drivers else 'N/A'}
+"""
+    
+    # Format RAG knowledge chunks
+    rag_section = ""
+    for i, chunk in enumerate(rag_chunks[:3]):
+        rag_section += f"\n--- Knowledge Source {i+1} "
+        rag_section += f"(Relevance: {chunk.get('similarity_score', 0):.2f}) ---\n"
+        rag_section += chunk.get('chunk', '') + "\n"
+    
+    # Build the unified prompt
+    prompt = f"""You are the MedAgentix AI Clinical Assistant.
+
+You have TWO sources of information:
+1. DIAGNOSTIC PIPELINE RESULTS — Our multi-agent AI system has analyzed the 
+   patient's symptoms through 8 specialized agents and produced a diagnosis.
+2. MEDICAL KNOWLEDGE BASE — Relevant medical knowledge retrieved from our 
+   database of 6,700+ disease records.
+
+Your job is to synthesize BOTH sources into one clear, professional, 
+compassionate clinical response.
+
+IMPORTANT RULES:
+- Lead with the pipeline diagnosis (the personalized assessment)
+- Support it with medical knowledge from the KB
+- Include recommended tests and medications
+- Explain WHY the AI reached this conclusion (SHAP drivers)
+- If confidence is below 70%, emphasize the need for specialist consultation
+- If emergency is detected, LEAD with emergency instructions
+- Always end with the medical disclaimer
+- Use clear headings and bullet points for readability
+{pipeline_section}
+=== RETRIEVED MEDICAL KNOWLEDGE ===
+{rag_section if rag_section else 'No specific knowledge chunks retrieved.'}
+
+=== PATIENT MESSAGE ===
+{question}
+
+=== YOUR RESPONSE ===
+Provide a comprehensive, structured clinical response:"""
+    
+    return prompt
+```
+
+##### Step 4: Updated `query()` Method (modify in `rag_system.py`)
+
+The main entry point now routes based on intent:
+
+```python
+def query(self, question, top_k=5, category_filter=None, 
+          severity_filter=None, patient_age=40, patient_gender="Male"):
+    """
+    Main RAG pipeline — now with diagnostic pipeline integration.
+    
+    Flow:
+      1. Detect intent
+      2. If symptom_report → run BOTH RAG retrieval AND diagnostic pipeline
+      3. If knowledge_query → run RAG retrieval only
+      4. Generate unified answer via Gemini
+    """
+    intent = self._detect_intent(question)
+    
+    # Always retrieve from knowledge base (for all intents except greetings)
+    retrieved_chunks = []
+    if intent not in ("greeting", "platform_help"):
+        retrieved_chunks = self.retrieve(
+            question, top_k=top_k,
+            category_filter=category_filter,
+            severity_filter=severity_filter
+        )
+    
+    # ── SYMPTOM REPORT → Run diagnostic pipeline ──
+    pipeline_result = {}
+    if intent == "symptom_report":
+        pipeline_result = self._run_diagnostic_pipeline(
+            question, age=patient_age, gender=patient_gender
+        )
+    
+    # ── Generate answer ──
+    if intent == "symptom_report" and pipeline_result:
+        # INTEGRATED MODE: Pipeline + RAG + Gemini
+        prompt = self._build_integrated_prompt(
+            question, pipeline_result, retrieved_chunks
+        )
+        if self.gemini_model:
+            try:
+                response = self.gemini_model.generate_content(prompt)
+                answer = response.text
+            except Exception:
+                answer = self._format_pipeline_fallback(pipeline_result)
+        else:
+            answer = self._format_pipeline_fallback(pipeline_result)
+    else:
+        # STANDARD MODE: RAG only (knowledge queries, greetings, etc.)
+        answer = self.generate_answer(question, retrieved_chunks)
+    
+    return answer, retrieved_chunks, pipeline_result
+```
+
+> **Note:** The return signature changes from `(answer, chunks)` to `(answer, chunks, pipeline_result)`. Update [chatbot_routes.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/api/chatbot_routes.py) accordingly.
+
+##### Step 5: Pipeline-Only Fallback (add to `rag_system.py`)
+
+When Gemini is unavailable, format the pipeline result directly as readable text:
+
+```python
+def _format_pipeline_fallback(self, pipeline_result):
+    """Format pipeline output as readable text when Gemini is unavailable."""
+    disease = pipeline_result.get('final_disease', 'Unknown')
+    confidence = pipeline_result.get('final_confidence', 0)
+    severity = pipeline_result.get('severity', 'N/A')
+    
+    tests = pipeline_result.get('recommended_tests', [])
+    test_names = [t.get('test', str(t)) if isinstance(t, dict) else str(t)
+                  for t in tests[:5]]
+    
+    meds = pipeline_result.get('recommended_medications', [])
+    med_lines = []
+    for m in meds[:3]:
+        if isinstance(m, dict):
+            med_lines.append(f"• {m.get('drug', '?')} — {m.get('dosage', '?')}")
+    
+    answer = f"""🏥 **MedAgentix AI Diagnostic Assessment**
+
+**Primary Diagnosis:** {disease}
+**Confidence:** {confidence:.1%}
+**Severity:** {severity}
+**Risk Level:** {pipeline_result.get('risk_level', 'N/A')}
+
+**Recommended Diagnostic Tests:**
+{chr(10).join('• ' + t for t in test_names) if test_names else '• General medical workup'}
+
+**Suggested Medications:**
+{chr(10).join(med_lines) if med_lines else '• Consult physician for prescription'}
+
+**Reasoning:** {pipeline_result.get('reasoning', 'N/A')}
+
+---
+⚠️ *Disclaimer: This is an AI-generated diagnostic assessment for 
+informational purposes only. Always consult a qualified healthcare 
+professional before starting any treatment.*"""
+    
+    return answer
+```
+
+##### Step 6: Update Chatbot Routes (modify `chatbot_routes.py`)
+
+The API endpoint needs to handle the new pipeline result in the response:
+
+```python
+# In chatbot_routes.py — updated chatbot_query() function
+
+@chatbot_bp.route('', methods=['POST'])
+def chatbot_query():
+    data = request.get_json(silent=True) or {}
+    user_message = (data.get('message') or '').strip()
+    patient_age = data.get('age', 40)        # NEW: optional age
+    patient_gender = data.get('gender', 'Male')  # NEW: optional gender
+    
+    # ... existing validation ...
+    
+    # Run integrated RAG + Pipeline query
+    answer, retrieved_chunks, pipeline_result = rag.query(
+        user_message, top_k=5,
+        patient_age=patient_age,
+        patient_gender=patient_gender
+    )
+    
+    # Build response
+    response = {
+        "success": True,
+        "answer": answer,
+        "sources": sources,  # existing KB sources
+    }
+    
+    # Include pipeline diagnosis if it was triggered
+    if pipeline_result:
+        response["diagnosis"] = {
+            "disease": pipeline_result.get('final_disease'),
+            "confidence": pipeline_result.get('final_confidence'),
+            "severity": pipeline_result.get('severity'),
+            "confidence_level": pipeline_result.get('confidence_level'),
+            "tests": pipeline_result.get('recommended_tests', []),
+            "medications": pipeline_result.get('recommended_medications', []),
+            "risk_level": pipeline_result.get('risk_level'),
+            "shap": pipeline_result.get('shap_explanation'),
+        }
+        response["pipeline_triggered"] = True
+    else:
+        response["pipeline_triggered"] = False
+    
+    return jsonify(response), 200
+```
+
+#### What the User Experience Looks Like
+
+**Before (current — RAG only):**
+```
+User: "I have severe headache and fever for 5 days"
+
+Bot: "Based on our medical knowledge base, headaches can be caused 
+     by various conditions including Migraine, Tension headache, 
+     Sinusitis. Fever may indicate infection...
+     [generic encyclopedia-style response]"
+```
+
+**After (integrated — RAG + Pipeline):**
+```
+User: "I have severe headache and fever for 5 days"
+
+Bot: "🏥 Based on our AI diagnostic analysis, your symptoms most 
+     likely indicate **Migraine** (87% confidence, Moderate severity).
+     
+     **Why this diagnosis:**
+     Our system analyzed your symptoms through 8 specialized agents. 
+     The duration of 5 days and the combination of headache + fever 
+     were the primary diagnostic drivers (SHAP: Temperature +0.32, 
+     Headache duration +0.28).
+     
+     **Recommended Tests:**
+     • Neurological Exam (Primary)
+     • CT/MRI Head (to rule out other causes)
+     
+     **Suggested Medication:**
+     • Ibuprofen 400mg as needed for pain relief
+     
+     **Medical Context:**
+     Migraine is a neurological condition characterized by recurrent 
+     moderate-to-severe headaches, often accompanied by nausea, 
+     vomiting, and sensitivity to light. When fever accompanies 
+     migraine, it may indicate a secondary infection that should 
+     be evaluated...
+     
+     **Risk Level:** Medium
+     
+     ⚠️ Disclaimer: This is AI-generated..."
+```
+
+#### Conversational Intake Flow (Advanced — Future Enhancement)
+
+Once conversation memory is added (Section 2C), the chatbot can collect vitals across multiple turns:
+
+```
+User: "I have chest pain and difficulty breathing"
+Bot:  [Pipeline runs with defaults] → "Initial assessment suggests 
+      possible cardiac/respiratory condition. To improve accuracy:
+      Could you share your age and any vital readings?"
+
+User: "I'm 65, BP is 150/95, heart rate 110"
+Bot:  [Pipeline RE-RUNS with updated vitals] → "Updated assessment:
+      With your elevated BP (150/95) and heart rate (110), the 
+      system now flags this as HIGH URGENCY. Primary concern: 
+      Acute Coronary Syndrome (76%). 
+      ⚠️ Please seek immediate medical attention."
+```
+
+This conversational intake replaces the form-based intake for chatbot users, making the system accessible to patients who find forms intimidating.
+
+#### Files to Modify
+
+| File | Change |
+|------|--------|
+| [rag_system.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/rag/rag_system.py) | Add `_detect_intent()`, `_run_diagnostic_pipeline()`, `_build_integrated_prompt()`, `_format_pipeline_fallback()`, update `query()` |
+| [chatbot_routes.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/api/chatbot_routes.py) | Update `chatbot_query()` to accept age/gender, handle `pipeline_result` in response |
+| [config.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/config.py) | Add `ENABLE_PIPELINE_IN_RAG = True` feature flag |
+
+#### Design Decision: Auto-trigger vs Confirm-first
+
+| Approach | How it works | Pros | Cons |
+|----------|-------------|------|------|
+| **Auto-trigger** | Detect symptoms → run pipeline immediately | Seamless UX, instant results | Pipeline takes 3-10s, may false-trigger |
+| **Confirm-first** | Detect symptoms → ask "Run diagnostic?" → then run | User controls processing, fewer false triggers | Extra interaction step |
+| **Hybrid (recommended)** | Auto-trigger for clear symptom reports (score ≥ 2 keywords), confirm for ambiguous (score = 1) | Best of both worlds | Slightly more logic |
+
+---

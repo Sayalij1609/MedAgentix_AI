@@ -1,0 +1,168 @@
+# MedAgentixAI — Agent Output Quality & Evaluation Blueprint
+
+## 3 — Agent Output Quality & Evaluation
+
+### Current Quality Issues
+
+After reading every agent file, here are the specific quality issues found:
+
+#### Issue 1: No Confidence Calibration
+The agents output raw model probabilities, but these are NOT calibrated. A model saying "85% confidence" doesn't actually mean 85% of those predictions are correct.
+
+**What to build — Platt Scaling:**
+```
+How Platt Scaling works:
+  1. Run the model on a validation set (held-out test data)
+  2. Collect (predicted_probability, actual_correct) pairs
+  3. Fit a logistic regression on those pairs
+  4. At inference time, pass raw probabilities through this 
+     calibration function
+
+Example:
+  Raw model output: 85% → Calibrated: 72% (the model was overconfident)
+  Raw model output: 60% → Calibrated: 65% (the model was underconfident)
+
+Files to create:
+  evaluation/calibration.py
+    - CalibrationModule class
+    - calibrate(raw_probabilities) → calibrated_probabilities
+    - plot_calibration_curve() → reliability diagram
+
+Integration point:
+  langgraph_workflow.py → node_predict() line 526:
+    probas = ensemble.predict_proba(X)[0]
+    probas = calibrator.calibrate(probas)  # ← ADD THIS
+```
+
+#### Issue 2: No Output Validation Layer
+Currently, agents can return nonsensical outputs with no sanity checks.
+
+**What to build — OutputValidator:**
+```
+Checks to add:
+  1. Confidence should sum to ≤1.0 across top predictions
+  2. Risk score should correlate with number of risk factors
+     (if 0 risk factors but risk_score > 0.7 → flag)
+  3. Emergency should never be "Critical" if all vitals are normal
+  4. Temporal urgency should increase with duration for chronic conditions
+  5. Differential agent should return at least 2 diagnoses if 
+     symptoms are ambiguous
+  6. Recommendation should not suggest drugs contraindicated for 
+     the patient's age group
+  7. Disease name spelling should match known disease list
+
+File: evaluation/output_validator.py
+Integration: Add as a validation step in supervisor_agent.py 
+             before building final output
+```
+
+#### Issue 3: No Cross-Agent Consistency Checks
+The supervisor does weighted voting but doesn't check if agents CONTRADICT each other.
+
+**What to build:**
+```
+Contradiction detection:
+  1. Emergency says "Critical" but Risk says "Low" → FLAG
+  2. Differential says "Dengue" but Prediction says "Common Cold" 
+     with similar confidence → FLAG as uncertain
+  3. Temporal says "Chronic" but Emergency says "Acute" → FLAG
+
+Consistency score: 
+  agreement_score = (agents agreeing / total agents)
+  If < 0.5 → add warning to final output: 
+    "Agents show low agreement (40%). Specialist review recommended."
+
+This already partially exists in supervisor_agent.py 
+_calculate_agreement() but only checks disease name match.
+Need to expand to check urgency/severity/risk agreement too.
+```
+
+#### Issue 4: No Natural Language Summaries
+All agent outputs are JSON — not readable by patients/doctors.
+
+**What to build — NarrativeGenerator:**
+```
+File: services/narrative_generator.py
+
+Converts JSON output to readable text:
+
+Input (from supervisor):
+  {
+    "final_disease": "Pneumonia",
+    "severity": "Severe",
+    "confidence_level": "high",
+    "risk_factors": ["Smoking", "Age > 60"],
+    "recommended_tests": [{"test": "Chest X-ray"}, {"test": "CBC"}],
+    "recommended_medications": [{"drug": "Amoxicillin", "dosage": "500mg TDS"}]
+  }
+
+Output (for patient):
+  "Based on your symptoms, our AI system has identified Pneumonia 
+   as the most likely condition with high confidence. Given your 
+   age and smoking history, this is classified as Severe.
+   
+   We recommend the following diagnostic tests:
+   • Chest X-ray (Primary)
+   • Complete Blood Count (CBC)
+   
+   Suggested medications (pending doctor confirmation):
+   • Amoxicillin 500mg, three times daily
+   
+   ⚠ Please seek immediate medical attention given the severity."
+
+Output (for doctor — clinical format):
+  "Dx: Pneumonia (ICD-10: J18.9) — Confidence: 92.3% [HIGH]
+   Severity: Severe | Triage: Level 2
+   Risk: Smoking, Age 67 (Geriatric)
+   DDx: COVID-19 (7.1%), Bronchitis (3.4%)
+   Rx: Amoxicillin 500mg TDS × 7d | CBC, CXR recommended
+   SHAP: Temperature (+0.32), Cough (+0.28) primary drivers"
+```
+
+#### Issue 5: No Evaluation Metrics
+There are no scripts to measure how well the agents actually perform.
+
+**What to build:**
+```
+File: evaluation/agent_evaluator.py
+
+Test cases structure:
+  [
+    {
+      "input": "I have had fever and cough for 5 days",
+      "expected_disease": "Common Cold",
+      "expected_severity": "Mild",
+      "expected_urgency": "Low",
+      "expected_symptoms": ["Fever", "Cough"]
+    },
+    ...
+  ]
+
+Metrics to compute:
+  • Symptom Agent:
+    - Symptom extraction precision/recall/F1
+    - Severity classification accuracy
+    
+  • Differential Agent:
+    - Top-1 accuracy (correct disease is rank 1)
+    - Top-3 accuracy (correct disease is in top 3)
+    - Top-5 accuracy (correct disease is in top 5)
+    - Mean Reciprocal Rank (MRR)
+    
+  • Emergency Agent:
+    - False positive rate for Critical triage
+    - True positive rate for actual emergencies
+    - Confusion matrix
+    
+  • Prediction Engine:
+    - Overall accuracy, precision, recall, F1 (macro/weighted)
+    - ROC-AUC per disease class
+    - Calibration error (ECE — Expected Calibration Error)
+    
+  • End-to-end pipeline:
+    - Full pipeline accuracy (input text → correct final disease)
+    - Latency per step
+    - Memory usage per agent
+```
+
+---

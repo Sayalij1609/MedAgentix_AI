@@ -1,0 +1,100 @@
+# MedAgentixAI — Frontend & Deployment Blueprint
+
+## 9 — Frontend & Deployment
+
+### Frontend Status
+The React + Vite + TypeScript frontend is **scaffolded** with directories for:
+- Pages: auth, patient, doctor, common
+- Features: auth, dashboard, reports, symptom-analysis, workflow, doctor, shared
+- Components: common
+
+**What to verify/build:**
+```
+1. Run `npm install` in frontend/ (node_modules likely missing)
+2. Run `npm run dev` to see what renders
+3. Key pages needed:
+   - Login/Register (auth)
+   - Patient intake form (symptom-analysis)
+   - Diagnostic results view (reports) with SHAP chart
+   - RAG chatbot widget (shared)
+   - Report upload (OCR) — NEW
+   - Doctor review dashboard (doctor)
+   - Case history (patient)
+```
+
+### Deployment
+
+```
+What exists:
+  - Dockerfile ✅
+  - docker-compose.yml ✅
+  - gunicorn_config.py ✅
+
+What's missing:
+  - .github/workflows/ci.yml (GitHub Actions CI/CD)
+  - Nginx reverse proxy config
+  - Environment variable management (.env.production)
+  - Cloud deployment (AWS/GCP/Azure/Railway)
+  - SSL certificate setup
+  - Health check endpoint (/api/v1/health)
+```
+
+---
+
+## 📋 Dependencies Summary
+
+```
+# ===== OCR =====
+pytesseract
+Pillow
+opencv-python
+pdf2image
+pymupdf
+
+# ===== RAG Upgrade =====
+faiss-cpu
+sentence-transformers    # PubMedBERT embeddings
+pymongo                  # Conversation memory
+
+# ===== XAI =====
+lime                     # LIME explainer
+shap                     # Already used
+
+# ===== Evaluation =====
+scikit-learn             # Already used (metrics)
+matplotlib               # Already used (plots)
+
+# ===== Already in project =====
+transformers, torch, flask, sqlalchemy, joblib, 
+numpy, pandas, xgboost, langgraph, google-generativeai
+```
+
+---
+
+## 🎯 Recommended Build Order
+
+```
+WEEK 1-2:  OCR Module (donut_pipeline → trocr_pipeline → 
+           report_parser → validation_rules → ocr_routes)
+           
+WEEK 3:    RAG Upgrade (pubmedbert_embed → retriever with FAISS → 
+           regenerate knowledge_base.pkl → conversation memory)
+
+WEEK 4:    XAI + Agent Quality (lime_explainer → xai_agent → 
+           output_validator → narrative_generator)
+
+WEEK 5:    API Routes + Database (prediction_routes → 
+           recommendation_routes → doctor_feedback model → 
+           MongoDB wiring)
+
+WEEK 6:    Testing + Evaluation (test_agents → test_prediction → 
+           test_rag → run_evaluation → calibration)
+
+WEEK 7:    Human-in-Loop + Frontend (doctor review workflow → 
+           frontend verification → chatbot UI → OCR upload UI)
+
+WEEK 8:    Deployment (CI/CD → Docker → cloud deployment → 
+           monitoring)
+```
+
+Tell me which module you want to start building and I'll write the code!

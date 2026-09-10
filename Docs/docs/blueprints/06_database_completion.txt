@@ -1,0 +1,61 @@
+# MedAgentixAI — Database Completion Blueprint
+
+## 6 — Database Completion
+
+### A. MongoDB Chat Persistence
+
+```
+What exists: database/mongodb/ directory with connection module
+What's missing: Wiring to chatbot_routes.py
+
+How to wire:
+  1. In chatbot_routes.py, after generating answer:
+     - Save {session_id, user_message, answer, sources, timestamp} 
+       to MongoDB "chat_logs" collection
+  2. Add GET /api/v1/chatbot/history?session_id=xxx 
+     to retrieve previous messages
+  3. Pass history to RAG system for conversation memory
+```
+
+### B. Doctor Feedback Model
+
+```
+New SQLAlchemy model in database/postgres/models.py:
+
+class DoctorFeedback(db.Model):
+    __tablename__ = 'doctor_feedback'
+    
+    id = Integer, primary_key
+    case_id = Integer, ForeignKey('cases.id')
+    doctor_id = Integer, ForeignKey('users.id')
+    
+    # Feedback on AI diagnosis
+    ai_diagnosis_correct = Boolean  (did AI get it right?)
+    corrected_diagnosis = String    (if wrong, what's the right one?)
+    severity_correct = Boolean
+    corrected_severity = String
+    
+    # Feedback on recommendations
+    medications_appropriate = Boolean
+    medication_notes = Text
+    tests_appropriate = Boolean
+    test_notes = Text
+    
+    # Overall
+    overall_rating = Integer (1-5)
+    clinical_notes = Text
+    
+    created_at = DateTime
+```
+
+### C. FAISS Integration
+
+```
+Currently ChromaDB directory exists but is minimal.
+After building FAISS for RAG, also use it for:
+  - Symptom embedding search (replace current cosine sim in symptom_agent.py)
+  - Drug name fuzzy matching in recommendation_agent.py
+  - Patient history similarity search (find similar past cases)
+```
+
+---

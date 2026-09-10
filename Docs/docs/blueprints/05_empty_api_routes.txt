@@ -1,0 +1,74 @@
+# MedAgentixAI — Empty API Routes Implementation Blueprint
+
+## 5 — Empty API Routes
+
+### A. `api/prediction_routes.py`
+```
+Purpose: Direct access to the prediction engine without running 
+the full pipeline. Useful for quick predictions from structured data.
+
+Endpoints:
+  POST /api/v1/predict
+    Body: {
+      "symptoms": ["fever", "cough", "fatigue"],
+      "age": 45,
+      "gender": "Male",
+      "blood_pressure": "Normal",
+      "cholesterol": 180,
+      "vitals": {
+        "heart_rate": 88,
+        "oxygen_level": 96,
+        "temperature": 100.4
+      }
+    }
+    Response: {
+      "success": true,
+      "primary_disease": "Influenza",
+      "confidence": 0.87,
+      "top_5": [...],
+      "shap_explanation": {...}
+    }
+```
+
+### B. `api/recommendation_routes.py`
+```
+Purpose: Get drug/test recommendations for a specific disease.
+
+Endpoints:
+  POST /api/v1/recommend
+    Body: {
+      "disease": "Pneumonia",
+      "severity": "Severe",
+      "patient_age": 65
+    }
+    Response: {
+      "success": true,
+      "medications": [...],
+      "diagnostic_tests": [...],
+      "risk_alerts": [...],
+      "treatment_plan": {...}
+    }
+```
+
+### C. `api/ocr_routes.py`
+```
+Purpose: Upload medical documents for OCR processing.
+
+Endpoints:
+  POST /api/v1/ocr/upload
+    Content-Type: multipart/form-data
+    Body: file (image/PDF)
+    Response: {
+      "success": true,
+      "document_type": "lab_report",
+      "lab_results": [...],
+      "critical_alerts": [...],
+      "agent_feed": {...}
+    }
+
+  POST /api/v1/ocr/upload-and-diagnose
+    Upload + automatically feed results into diagnostic pipeline.
+    Returns both OCR results AND diagnostic results.
+```
+
+---

@@ -1,0 +1,47 @@
+# MedAgentixAI — Human-in-the-Loop & Doctor Review Blueprint
+
+## 7 — Human-in-Loop / Doctor Review
+
+### Case Lifecycle
+
+```
+Status transitions in the Case model:
+
+  pending → processing → completed → [doctor_review] → reviewed → closed
+                                    → flagged (if low confidence)
+
+Current: Case model has status field but only goes 
+         pending → processing → completed
+
+What to add:
+  1. When confidence < 70%, auto-set status = "flagged_for_review"
+  2. Doctor dashboard shows flagged cases
+  3. Doctor can:
+     - Confirm AI diagnosis (mark as "reviewed")
+     - Override diagnosis (provide corrected_diagnosis)
+     - Add clinical notes
+     - Rate AI performance (1-5)
+  4. Feedback is stored in DoctorFeedback table
+```
+
+### API Endpoints to Build
+
+```
+POST /api/v1/doctor/cases/<case_id>/review
+  Body: {
+    "diagnosis_correct": true/false,
+    "corrected_diagnosis": "...",
+    "severity_correct": true/false,
+    "corrected_severity": "...",
+    "overall_rating": 4,
+    "clinical_notes": "..."
+  }
+
+GET /api/v1/doctor/cases/flagged
+  Returns all cases with status = "flagged_for_review"
+
+GET /api/v1/doctor/cases/<case_id>/full
+  Returns complete case with all agent outputs for review
+```
+
+---

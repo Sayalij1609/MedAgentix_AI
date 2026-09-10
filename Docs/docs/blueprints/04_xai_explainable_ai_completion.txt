@@ -1,0 +1,93 @@
+# MedAgentixAI — XAI (Explainable AI) Completion Blueprint
+
+## 4 — XAI (Explainable AI) Completion (50% → 100%)
+
+### What Exists
+
+| File | Status | Details |
+|------|--------|---------|
+| [shap_explainer.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/xai/shap_explainer.py) | ✅ 164 lines | TreeExplainer on XGBoost, generates bar chart PNGs |
+| [explanation_engine.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/xai/explanation_engine.py) | ✅ 69 lines | Wrapper portal, calls SHAP explainer |
+| [lime_explainer.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/xai/lime_explainer.py) | 🔴 Empty | Not implemented |
+| [xai_agent.py](file:///c:/docs/Downloads/My_Projects/MedAgentixAI_New_Version/MedAgentix_AI/agents/xai_agent.py) | 🔴 Empty | Not implemented |
+
+### What to Build
+
+#### A. LIME Explainer (`xai/lime_explainer.py`)
+
+```
+What is LIME?
+  Local Interpretable Model-agnostic Explanations.
+  Unlike SHAP (which is specific to tree models), LIME works 
+  with ANY model — it perturbs the input and observes how 
+  predictions change.
+
+How LIME works:
+  1. Take the patient's feature vector X
+  2. Create N perturbed versions (randomly flip features on/off)
+  3. Run all perturbed versions through the model
+  4. Fit a simple linear model (Ridge regression) on the 
+     (perturbation, prediction) pairs
+  5. The linear model's coefficients = feature importance
+
+Why both SHAP and LIME?
+  SHAP: Theoretically exact, but only works with tree models
+  LIME: Approximate, but works with ANY model (ensemble, neural net)
+  Having both gives cross-validated explanations — if SHAP and 
+  LIME agree on top features, the explanation is reliable.
+
+Class: LIMEExplainer
+  Methods:
+    __init__(): Load ensemble model + label encoder
+    explain(feature_df, predicted_disease) → dict with:
+      - feature_importances (sorted list)
+      - positive_drivers (features supporting the diagnosis)
+      - negative_drivers (features contradicting)
+      - plot_path (bar chart PNG)
+      - agreement_with_shap (if SHAP result available)
+
+Library: lime (pip install lime)
+  from lime.lime_tabular import LimeTabularExplainer
+```
+
+#### B. XAI Agent (`agents/xai_agent.py`)
+
+```
+Purpose: Unified agent that combines SHAP + LIME + natural 
+language explanation generation. Integrates into the LangGraph 
+workflow as an additional node.
+
+Class: XAIAgent
+  Methods:
+    __init__(): Initialize both SHAP and LIME explainers
+    
+    explain(feature_df, predicted_disease, state) → dict:
+      1. Run SHAP explainer → get SHAP feature importances
+      2. Run LIME explainer → get LIME feature importances
+      3. Cross-validate: check if top-3 features agree
+      4. Generate natural language explanation:
+         
+         "The AI predicted Pneumonia primarily because:
+          1. Your body temperature is elevated (38.5°C) — this 
+             was the strongest factor (SHAP: +0.32)
+          2. Cough symptoms were detected — second strongest 
+             factor (SHAP: +0.28)
+          3. Your oxygen level (94%) is below optimal — 
+             contributing factor (SHAP: +0.15)
+          
+          Factors that argued AGAINST this diagnosis:
+          • Your blood pressure is normal (contradicts -0.05)
+          
+          Reliability: SHAP and LIME agree on 3/3 top factors ✓"
+
+Integration into LangGraph:
+  Currently the workflow is 8 nodes. Add XAI as node 6.5 
+  (after prediction, before recommendation):
+  
+  ... → predict → xai_explain → recommend → supervisor → END
+  
+  Or keep it inside node_predict() as currently done (lines 547-558)
+  but expand it to include LIME + narrative.
+```
+
+---
