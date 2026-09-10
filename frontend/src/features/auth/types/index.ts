@@ -11,6 +11,8 @@ export interface RegisterPayload {
   password?: string;
   confirmPassword?: string;
   role: UserRole;
+  date_of_birth?: string;
+  gender?: string;
 }
 
 export interface AuthResponse {
@@ -20,6 +22,8 @@ export interface AuthResponse {
     email: string;
     role: UserRole;
     name: string;
+    date_of_birth?: string;
+    gender?: string;
     profile_id?: number;
   };
 }

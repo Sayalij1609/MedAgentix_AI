@@ -6,6 +6,9 @@ export interface UserSession {
   user_id: string;
   email: string;
   role: UserRole;
+  name?: string;
+  date_of_birth?: string;
+  gender?: string;
   profile_id?: number; // Links to patients.id or doctors.id
 }
 

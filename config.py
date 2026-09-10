@@ -56,9 +56,13 @@ MEDITRON_MAX_NEW_TOKENS = 256
 MEDITRON_TEMPERATURE = 0.3
 MEDITRON_USE_QUANTIZATION = True  # 4-bit NF4 on CUDA, float16 on CPU
 
-# Feature flags for Sprint 7A Demo
+# Feature flags
 ENABLE_MEDITRON = False
 ENABLE_BIOGPT = False
+ENABLE_RAG = True
+
+# RAG Knowledge Base
+RAG_KNOWLEDGE_BASE_PATH = os.path.join(PROJECT_ROOT, "rag", "knowledge_base.pkl")
 
 # NER labels
 NER_LABELS = ["O", "B-SYMPTOM", "I-SYMPTOM"]

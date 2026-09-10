@@ -12,10 +12,23 @@ export default function PatientIntake() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loadingStage, setLoadingStage] = useState(0);
   const [errorMsg, setErrorMsg] = useState('');
+  // Helper to calculate age from DOB
+  const calculateAge = (dob: string): number | null => {
+    if (!dob) return null;
+    const birthDate = new Date(dob);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age >= 0 ? age : null;
+  };
 
-  // Form State
-  const [age, setAge] = useState(35);
-  const [gender, setGender] = useState('Male');
+  // Pre-fill from user profile (from registration)
+  const [name, setName] = useState(user?.name || '');
+  const [dateOfBirth, setDateOfBirth] = useState(user?.date_of_birth || '');
+  const [gender, setGender] = useState(user?.gender || '');
   const [chiefComplaint, setChiefComplaint] = useState('');
   
   // Quick symptom selector list
@@ -29,18 +42,23 @@ export default function PatientIntake() {
     { name: 'Nausea', emoji: '🤢' },
     { name: 'Vomiting', emoji: '🤮' },
     { name: 'Body Pain', emoji: '💪' },
-    { name: 'Joint Pain', emoji: '🦴' }
+    { name: 'Joint Pain', emoji: '🦴' },
+    { name: 'Sore Throat', emoji: '🗣️' },
+    { name: 'Runny Nose', emoji: '🤧' },
+    { name: 'Dizziness', emoji: '😵' },
+    { name: 'Rash', emoji: '🔴' },
   ];
 
   const [selectedSymptoms, setSelectedSymptoms] = useState<{name: string, duration_days: number}[]>([]);
   
-  // Vitals State
+  // Vitals State — ALL OPTIONAL
   const [heartRate, setHeartRate] = useState<number | ''>('');
   const [oxygenLevel, setOxygenLevel] = useState<number | ''>('');
   const [systolicBp, setSystolicBp] = useState<number | ''>('');
   const [diastolicBp, setDiastolicBp] = useState<number | ''>('');
   const [temperature, setTemperature] = useState<number | ''>('');
   const [cholesterol, setCholesterol] = useState<number | ''>('');
+  const [showAdvancedVitals, setShowAdvancedVitals] = useState(false);
 
   // History & Lifestyle Checkboxes
   const [medicalHistory, setMedicalHistory] = useState<string[]>([]);
@@ -51,7 +69,7 @@ export default function PatientIntake() {
     if (exists) {
       setSelectedSymptoms(selectedSymptoms.filter(s => s.name !== name));
     } else {
-      setSelectedSymptoms([...selectedSymptoms, { name, duration_days: 3 }]);
+      setSelectedSymptoms([...selectedSymptoms, { name, duration_days: 1 }]);
     }
   };
 
@@ -78,13 +96,26 @@ export default function PatientIntake() {
   const handleNext = () => {
     setErrorMsg('');
     if (currentStep === 1) {
-      if (!age || age < 1 || age > 120) {
-        setErrorMsg('Please enter a valid age between 1 and 120.');
+      if (!name.trim()) {
+        setErrorMsg('Please enter your name.');
+        return;
+      }
+      if (!dateOfBirth) {
+        setErrorMsg('Please select your date of birth.');
+        return;
+      }
+      const computedAge = calculateAge(dateOfBirth);
+      if (computedAge === null || computedAge < 0 || computedAge > 120) {
+        setErrorMsg('Please enter a valid date of birth.');
+        return;
+      }
+      if (!gender) {
+        setErrorMsg('Please select your gender.');
         return;
       }
     } else if (currentStep === 2) {
       if (!chiefComplaint.trim()) {
-        setErrorMsg('Please describe your chief complaint in your own words.');
+        setErrorMsg('Please describe what you are feeling in your own words.');
         return;
       }
     }
@@ -97,98 +128,94 @@ export default function PatientIntake() {
   };
 
   const loadingStages = [
-    'Initializing Patient Intake workup...',
-    'Running Symptom Analysis & synonym mapping...',
-    'Calculating Differential Diagnosis probabilities...',
-    'Performing clinical Risk Assessment scoring...',
-    'Executing Temporal Analysis chronology checks...',
-    'Analyzing Emergency Evaluation ESI urgency levels...',
-    'Processing Prediction Engine voting ensemble...',
-    'Compiling Recommendation Engine pharmacotherapy classes...',
-    'Auditing Supervisor Review consensus parameters...',
-    'Generating final secure Clinical Report. Redirecting...'
+    'Starting your health assessment...',
+    'Extracting symptoms with ClinicalBERT...',
+    'Running differential diagnosis engine...',
+    'Evaluating risk factors...',
+    'Analyzing symptom timeline...',
+    'Checking for emergency indicators...',
+    'Running AI prediction models...',
+    'Invoking Meditron-7B clinical reasoning...',
+    'Generating differential analysis...',
+    'Finding recommended treatments...',
+    'Cross-referencing drug database...',
+    'Compiling your health report...',
+    'Running final quality checks...',
+    'Almost done — preparing your results...',
   ];
 
-  const triggerLoaderCycle = (callback: () => void) => {
-    setLoadingStage(0);
-    const interval = setInterval(() => {
-      setLoadingStage(prev => {
-        if (prev >= loadingStages.length - 1) {
-          clearInterval(interval);
-          callback();
-          return prev;
-        }
-        return prev + 1;
-      });
-    }, 900);
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     setErrorMsg('');
     
-    // Final Validations
-    if (!heartRate || heartRate < 30 || heartRate > 220) {
+    // Only validate vitals IF they have values (all optional)
+    if (heartRate !== '' && (Number(heartRate) < 30 || Number(heartRate) > 220)) {
       setErrorMsg('Heart rate must be between 30 and 220 bpm.');
       return;
     }
-    if (!oxygenLevel || oxygenLevel < 50 || oxygenLevel > 100) {
-      setErrorMsg('Oxygen level (SpO2) must be between 50 and 100%.');
+    if (oxygenLevel !== '' && (Number(oxygenLevel) < 50 || Number(oxygenLevel) > 100)) {
+      setErrorMsg('Oxygen level must be between 50 and 100%.');
       return;
     }
-    if (!systolicBp || systolicBp < 50 || systolicBp > 250) {
-      setErrorMsg('Systolic BP must be between 50 and 250 mmHg.');
+    if (systolicBp !== '' && (Number(systolicBp) < 60 || Number(systolicBp) > 250)) {
+      setErrorMsg('Systolic blood pressure must be between 60 and 250 mmHg.');
       return;
     }
-    if (!diastolicBp || diastolicBp < 30 || diastolicBp > 150) {
-      setErrorMsg('Diastolic BP must be between 30 and 150 mmHg.');
+    if (diastolicBp !== '' && (Number(diastolicBp) < 30 || Number(diastolicBp) > 150)) {
+      setErrorMsg('Diastolic blood pressure must be between 30 and 150 mmHg.');
       return;
     }
-    if (!temperature || temperature < 80.0 || temperature > 115.0) {
-      setErrorMsg('Body temperature must be between 80.0°F and 115.0°F.');
-      return;
-    }
-    if (!cholesterol || cholesterol < 50 || cholesterol > 600) {
-      setErrorMsg('Cholesterol must be between 50 and 600 mg/dL.');
+    if (temperature !== '' && (Number(temperature) < 90 || Number(temperature) > 110)) {
+      setErrorMsg('Temperature must be between 90 and 110 °F.');
       return;
     }
 
     setIsSubmitting(true);
+    setLoadingStage(0);
+
+    // Start loading animation — loops continuously until API responds
+    const loaderInterval = setInterval(() => {
+      setLoadingStage(prev => (prev + 1) % loadingStages.length);
+    }, 2500);
     
+    // Build vitals — only include fields that the user filled in
+    const vitals: Record<string, number> = {};
+    if (heartRate !== '') vitals.heart_rate = Number(heartRate);
+    if (oxygenLevel !== '') vitals.oxygen_level = Number(oxygenLevel);
+    if (systolicBp !== '') vitals.systolic_bp = Number(systolicBp);
+    if (diastolicBp !== '') vitals.diastolic_bp = Number(diastolicBp);
+    if (temperature !== '') vitals.temperature = Number(temperature);
+    if (cholesterol !== '') vitals.cholesterol = Number(cholesterol);
+
     const payload = {
-      age: Number(age),
+      age: calculateAge(dateOfBirth) || 0,
       gender: gender,
       chief_complaint: chiefComplaint,
       selected_symptoms: selectedSymptoms,
-      vitals: {
-        heart_rate: Number(heartRate),
-        oxygen_level: Number(oxygenLevel),
-        systolic_bp: Number(systolicBp),
-        diastolic_bp: Number(diastolicBp),
-        temperature: Number(temperature),
-        cholesterol: Number(cholesterol)
-      },
+      vitals: vitals,
       medical_history: medicalHistory,
       lifestyle_factors: lifestyleFactors
     };
 
-    triggerLoaderCycle(async () => {
-      try {
-        const response = await apiClient.post('/patient/intake', payload);
-        if (response.data && response.data.success) {
-          const caseId = response.data.case.id;
-          navigate(`/reports/${caseId}`);
-        } else {
-          setErrorMsg(response.data.message || 'An unexpected error occurred.');
-          setIsSubmitting(false);
-        }
-      } catch (err: any) {
-        console.error(err);
-        const backendError = err.response?.data?.message || 'Failed to submit intake form. Please try again.';
-        setErrorMsg(backendError);
+    // Fire API call IMMEDIATELY (runs in parallel with animation)
+    try {
+      const response = await apiClient.post('/patient/intake', payload, {
+        timeout: 300000, // 5 minutes — Meditron LLM inference can take time
+      });
+      clearInterval(loaderInterval);
+      if (response.data && response.data.success) {
+        const caseId = response.data.case.id;
+        navigate(`/reports/${caseId}`);
+      } else {
+        setErrorMsg(response.data.message || 'An unexpected error occurred.');
         setIsSubmitting(false);
       }
-    });
+    } catch (err: any) {
+      clearInterval(loaderInterval);
+      console.error(err);
+      const backendError = err.response?.data?.message || 'Failed to submit. Please try again.';
+      setErrorMsg(backendError);
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitting) {
@@ -196,10 +223,10 @@ export default function PatientIntake() {
       <div className="flex flex-col items-center justify-center min-h-[70vh] p-4 max-w-2xl mx-auto text-center space-y-8">
         <div className="space-y-2">
           <h2 className="text-2xl font-bold tracking-tight text-slate-900">
-            Executing Clinical Diagnostic Pipeline
+            Analyzing Your Health Data
           </h2>
           <p className="text-xs text-muted-foreground max-w-md mx-auto">
-            Processing patient metrics across all clinical analysis engines. Do not close this browser window.
+            Our AI is processing your symptoms through 8 specialist agents and Meditron-7B clinical reasoning. This may take 1-3 minutes.
           </p>
         </div>
 
@@ -222,23 +249,36 @@ export default function PatientIntake() {
     );
   }
 
+  const stepLabels = ['Your Info', 'Symptoms', 'Vitals & History'];
+
   return (
     <div className="max-w-2xl mx-auto bg-card border border-border rounded-2xl shadow-xl p-6 md:p-8 space-y-6">
       {/* Page Header */}
       <div>
-        <h1 className="text-3xl font-extrabold text-foreground tracking-tight">Symptom Assessment</h1>
+        <h1 className="text-3xl font-extrabold text-foreground tracking-tight">Health Assessment</h1>
         <p className="text-muted-foreground text-sm mt-1">
-          Provide your symptoms and vital signs to request a clinical diagnostic workup suggestion.
+          Tell us about your symptoms and our AI will help you understand what might be going on.
         </p>
       </div>
 
-      {/* Stepper Header */}
+      {/* Stepper Header with Labels */}
       <div className="flex items-center justify-center space-x-2">
-        <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs border ${currentStep >= 1 ? 'bg-primary text-white border-primary' : 'bg-transparent text-muted-foreground border-border'}`}>1</div>
-        <div className={`h-0.5 w-12 ${currentStep >= 2 ? 'bg-primary' : 'bg-border'}`}></div>
-        <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs border ${currentStep >= 2 ? 'bg-primary text-white border-primary' : 'bg-transparent text-muted-foreground border-border'}`}>2</div>
-        <div className={`h-0.5 w-12 ${currentStep >= 3 ? 'bg-primary' : 'bg-border'}`}></div>
-        <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs border ${currentStep >= 3 ? 'bg-primary text-white border-primary' : 'bg-transparent text-muted-foreground border-border'}`}>3</div>
+        {stepLabels.map((label, idx) => {
+          const stepNum = idx + 1;
+          return (
+            <React.Fragment key={stepNum}>
+              {idx > 0 && (
+                <div className={`h-0.5 w-10 ${currentStep >= stepNum ? 'bg-primary' : 'bg-border'}`}></div>
+              )}
+              <div className="flex flex-col items-center gap-1">
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs border ${currentStep >= stepNum ? 'bg-primary text-white border-primary' : 'bg-transparent text-muted-foreground border-border'}`}>
+                  {stepNum}
+                </div>
+                <span className={`text-[9px] font-semibold ${currentStep >= stepNum ? 'text-primary' : 'text-muted-foreground'}`}>{label}</span>
+              </div>
+            </React.Fragment>
+          );
+        })}
       </div>
 
       {/* Error Alert Box */}
@@ -249,54 +289,52 @@ export default function PatientIntake() {
       )}
 
       {/* Step Contents */}
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="space-y-6">
         {currentStep === 1 && (
           <div className="space-y-4">
-            <h2 className="text-lg font-bold">Step 1: Patient Information</h2>
+            <h2 className="text-lg font-bold">About You</h2>
+            <p className="text-xs text-muted-foreground -mt-2">Let us know who you are so we can personalize your assessment.</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium mb-1">Full Name</label>
+              <div className="md:col-span-2">
+                <label className="block text-sm font-medium mb-1">Full Name <span className="text-red-500">*</span></label>
                 <input 
                   type="text" 
-                  value={user?.email.split('@')[0] || ''} 
-                  disabled 
-                  className="w-full bg-slate-100 border border-border rounded-xl px-4 py-2.5 text-sm cursor-not-allowed opacity-75"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium mb-1">Email Address</label>
-                <input 
-                  type="email" 
-                  value={user?.email || ''} 
-                  disabled 
-                  className="w-full bg-slate-100 border border-border rounded-xl px-4 py-2.5 text-sm cursor-not-allowed opacity-75"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium mb-1">Age (Years)</label>
-                <input 
-                  type="number" 
-                  value={age} 
-                  onChange={e => setAge(Number(e.target.value))}
-                  min="1" 
-                  max="120"
+                  value={name}
+                  onChange={e => setName(e.target.value)}
+                  placeholder="Enter your full name"
                   required
-                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm"
+                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary transition"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium mb-1">Gender</label>
+                <label className="block text-sm font-medium mb-1">Date of Birth <span className="text-red-500">*</span></label>
+                <input 
+                  type="date" 
+                  value={dateOfBirth}
+                  onChange={e => setDateOfBirth(e.target.value)}
+                  max={new Date().toISOString().split('T')[0]}
+                  required
+                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary transition"
+                />
+                {dateOfBirth && calculateAge(dateOfBirth) !== null && (
+                  <p className="text-xs text-secondary font-semibold mt-1">Age: {calculateAge(dateOfBirth)} years</p>
+                )}
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium mb-1">Gender <span className="text-red-500">*</span></label>
                 <select 
                   value={gender} 
                   onChange={e => setGender(e.target.value)}
-                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm"
+                  required
+                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary transition"
                 >
+                  <option value="">Select gender</option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
             </div>
@@ -305,22 +343,23 @@ export default function PatientIntake() {
 
         {currentStep === 2 && (
           <div className="space-y-4">
-            <h2 className="text-lg font-bold">Step 2: Describe Your Symptoms</h2>
+            <h2 className="text-lg font-bold">What Are You Feeling?</h2>
+            <p className="text-xs text-muted-foreground -mt-2">Describe your symptoms in your own words, then select any that apply below.</p>
             
             <div>
-              <label className="block text-sm font-medium mb-1.5">What are you feeling? (Free-text description)</label>
+              <label className="block text-sm font-medium mb-1.5">Describe in your own words <span className="text-red-500">*</span></label>
               <textarea 
                 value={chiefComplaint}
                 onChange={e => setChiefComplaint(e.target.value)}
-                placeholder="I have had fever, cough, and body aches for the last 5 days..."
+                placeholder="Example: I've been having fever and a bad cough for the last 3 days. I also feel very tired and have body aches..."
                 required
                 rows={4}
-                className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm"
+                className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary transition"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-2">Quick Symptoms Selector (Click to add)</label>
+              <label className="block text-sm font-medium mb-2">Select common symptoms (tap to add)</label>
               <div className="flex flex-wrap gap-2">
                 {quickSymptoms.map(s => {
                   const isSelected = !!selectedSymptoms.find(item => item.name === s.name);
@@ -345,13 +384,13 @@ export default function PatientIntake() {
 
             {selectedSymptoms.length > 0 && (
               <div className="space-y-2 border-t border-border pt-4">
-                <label className="block text-sm font-medium mb-2">Symptom Durations</label>
+                <label className="block text-sm font-medium mb-2">How long have you had each symptom?</label>
                 <div className="space-y-2">
                   {selectedSymptoms.map(s => (
                     <div key={s.name} className="flex items-center justify-between p-2.5 bg-slate-50 border border-border rounded-xl">
                       <span className="text-sm font-medium text-foreground">{s.name}</span>
                       <div className="flex items-center space-x-2">
-                        <span className="text-xs text-muted-foreground">Duration (days):</span>
+                        <span className="text-xs text-muted-foreground">Days:</span>
                         <input
                           type="number"
                           min="1"
@@ -372,91 +411,112 @@ export default function PatientIntake() {
         {currentStep === 3 && (
           <div className="space-y-6">
             <div>
-              <h2 className="text-lg font-bold">Step 3: Vital Signs & History</h2>
-              <p className="text-xs text-muted-foreground mt-0.5">Please provide clinical vital measurements.</p>
+              <h2 className="text-lg font-bold">Additional Information</h2>
+              <p className="text-xs text-muted-foreground mt-0.5">
+                This section is <strong>completely optional</strong>. If you know any of your vital signs, entering them helps our AI give more accurate results. If not, just skip ahead.
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider mb-1">Heart Rate (bpm)</label>
-                <input 
-                  type="number" 
-                  value={heartRate}
-                  onChange={e => setHeartRate(e.target.value === '' ? '' : Number(e.target.value))}
-                  placeholder="Normal: 60 - 100"
-                  required
-                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm"
-                />
+            {/* Common Vitals */}
+            <div className="bg-sky-50/50 border border-sky-100 rounded-xl p-4 space-y-3">
+              <h3 className="text-xs font-bold text-sky-800 uppercase tracking-wider">Vital Signs (Optional)</h3>
+              <p className="text-[10px] text-sky-700">If you have a thermometer, BP monitor, or pulse oximeter at home, enter the readings. Otherwise, skip this.</p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Heart Rate (bpm)</label>
+                  <input 
+                    type="number" 
+                    value={heartRate}
+                    onChange={e => setHeartRate(e.target.value === '' ? '' : Number(e.target.value))}
+                    placeholder="e.g. 72"
+                    className="w-full bg-white border border-border rounded-xl px-3 py-2 text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Oxygen Level (%)</label>
+                  <input 
+                    type="number" 
+                    value={oxygenLevel}
+                    onChange={e => setOxygenLevel(e.target.value === '' ? '' : Number(e.target.value))}
+                    placeholder="e.g. 98"
+                    className="w-full bg-white border border-border rounded-xl px-3 py-2 text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Temperature (°F)</label>
+                  <input 
+                    type="number" 
+                    step="0.1"
+                    value={temperature}
+                    onChange={e => setTemperature(e.target.value === '' ? '' : Number(e.target.value))}
+                    placeholder="e.g. 98.6"
+                    className="w-full bg-white border border-border rounded-xl px-3 py-2 text-sm"
+                  />
+                </div>
               </div>
 
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider mb-1">SpO2 / Oxygen (%)</label>
-                <input 
-                  type="number" 
-                  value={oxygenLevel}
-                  onChange={e => setOxygenLevel(e.target.value === '' ? '' : Number(e.target.value))}
-                  placeholder="Normal: 95 - 100"
-                  required
-                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm"
-                />
-              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Systolic BP (mmHg)</label>
+                  <input 
+                    type="number" 
+                    value={systolicBp}
+                    onChange={e => setSystolicBp(e.target.value === '' ? '' : Number(e.target.value))}
+                    placeholder="e.g. 120"
+                    className="w-full bg-white border border-border rounded-xl px-3 py-2 text-sm"
+                  />
+                </div>
 
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider mb-1">Temperature (°F)</label>
-                <input 
-                  type="number" 
-                  step="0.1"
-                  value={temperature}
-                  onChange={e => setTemperature(e.target.value === '' ? '' : Number(e.target.value))}
-                  placeholder="Normal: 97 - 99"
-                  required
-                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm"
-                />
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Diastolic BP (mmHg)</label>
+                  <input 
+                    type="number" 
+                    value={diastolicBp}
+                    onChange={e => setDiastolicBp(e.target.value === '' ? '' : Number(e.target.value))}
+                    placeholder="e.g. 80"
+                    className="w-full bg-white border border-border rounded-xl px-3 py-2 text-sm"
+                  />
+                </div>
               </div>
+            </div>
 
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider mb-1">Systolic BP (mmHg)</label>
-                <input 
-                  type="number" 
-                  value={systolicBp}
-                  onChange={e => setSystolicBp(e.target.value === '' ? '' : Number(e.target.value))}
-                  placeholder="e.g. 120"
-                  required
-                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider mb-1">Diastolic BP (mmHg)</label>
-                <input 
-                  type="number" 
-                  value={diastolicBp}
-                  onChange={e => setDiastolicBp(e.target.value === '' ? '' : Number(e.target.value))}
-                  placeholder="e.g. 80"
-                  required
-                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider mb-1">Cholesterol (mg/dL)</label>
-                <input 
-                  type="number" 
-                  value={cholesterol}
-                  onChange={e => setCholesterol(e.target.value === '' ? '' : Number(e.target.value))}
-                  placeholder="Normal: < 200"
-                  required
-                  className="w-full bg-transparent border border-border rounded-xl px-4 py-2.5 text-sm"
-                />
-              </div>
+            {/* Advanced Vitals (Cholesterol) — Collapsible */}
+            <div className="border border-border rounded-xl overflow-hidden">
+              <button
+                type="button"
+                onClick={() => setShowAdvancedVitals(!showAdvancedVitals)}
+                className="w-full flex items-center justify-between px-4 py-3 bg-slate-50 text-left text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+              >
+                <span>Additional Measurements (if you have lab results)</span>
+                <span className="text-muted-foreground">{showAdvancedVitals ? '▲' : '▼'}</span>
+              </button>
+              {showAdvancedVitals && (
+                <div className="px-4 py-3 space-y-3">
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-700 mb-1">Cholesterol (mg/dL)</label>
+                    <input 
+                      type="number" 
+                      value={cholesterol}
+                      onChange={e => setCholesterol(e.target.value === '' ? '' : Number(e.target.value))}
+                      placeholder="e.g. 180"
+                      className="w-full bg-transparent border border-border rounded-xl px-3 py-2 text-sm"
+                    />
+                    <p className="text-[10px] text-muted-foreground mt-1">Usually from a recent blood test report.</p>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Medical History Section */}
             <div className="border-t border-border pt-4">
-              <label className="block text-sm font-bold mb-2">Medical History (Check all that apply)</label>
+              <label className="block text-sm font-bold mb-2">Do you have any of these conditions?</label>
+              <p className="text-[10px] text-muted-foreground mb-3">Select any conditions you've been diagnosed with before.</p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                {['Diabetes', 'Hypertension', 'Asthma', 'Heart Disease', 'Kidney Disease', 'Thyroid'].map(item => (
-                  <label key={item} className="flex items-center space-x-2 text-sm text-foreground/80 cursor-pointer">
+                {['Diabetes', 'Hypertension', 'Asthma', 'Heart Disease', 'Kidney Disease', 'Thyroid', 'Cancer', 'Liver Disease', 'Arthritis'].map(item => (
+                  <label key={item} className="flex items-center space-x-2 text-sm text-foreground/80 cursor-pointer p-1.5 rounded-lg hover:bg-slate-50 transition">
                     <input 
                       type="checkbox" 
                       checked={medicalHistory.includes(item)}
@@ -471,10 +531,11 @@ export default function PatientIntake() {
 
             {/* Lifestyle Factors Section */}
             <div className="border-t border-border pt-4">
-              <label className="block text-sm font-bold mb-2">Lifestyle Risks (Check all that apply)</label>
+              <label className="block text-sm font-bold mb-2">Lifestyle factors</label>
+              <p className="text-[10px] text-muted-foreground mb-3">These help us better understand your overall health profile.</p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                {['Smoking', 'Alcohol', 'Obesity', 'Sedentary Lifestyle', 'High Stress'].map(item => (
-                  <label key={item} className="flex items-center space-x-2 text-sm text-foreground/80 cursor-pointer">
+                {['Smoking', 'Alcohol', 'Obesity', 'Sedentary Lifestyle', 'High Stress', 'Poor Diet'].map(item => (
+                  <label key={item} className="flex items-center space-x-2 text-sm text-foreground/80 cursor-pointer p-1.5 rounded-lg hover:bg-slate-50 transition">
                     <input 
                       type="checkbox" 
                       checked={lifestyleFactors.includes(item)}
@@ -509,18 +570,19 @@ export default function PatientIntake() {
               onClick={handleNext}
               className="px-6 py-2.5 bg-primary text-primary-foreground hover:opacity-90 rounded-xl text-sm font-medium transition ml-auto"
             >
-              Next Step →
+              Continue →
             </button>
           ) : (
             <button
-              type="submit"
+              type="button"
+              onClick={handleSubmit}
               className="px-6 py-2.5 bg-primary text-primary-foreground hover:opacity-90 rounded-xl text-sm font-semibold shadow-lg shadow-primary/20 transition ml-auto"
             >
-              🔍 Run Diagnostics
+              🔍 Analyze My Symptoms
             </button>
           )}
         </div>
-      </form>
+      </div>
     </div>
   );
 }

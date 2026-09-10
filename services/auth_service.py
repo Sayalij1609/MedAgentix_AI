@@ -2,8 +2,10 @@ from database.postgres.db_connection import db
 from database.postgres.models import User
 from services.password_service import hash_password, verify_password
 from services.jwt_service import generate_access_token
+from datetime import date
 
-def register_user(name: str, email: str, password: str, role: str = 'patient') -> User:
+def register_user(name: str, email: str, password: str, role: str = 'patient',
+                   date_of_birth: str = None, gender: str = None) -> User:
     """
     Registers a new user in the database.
     Performs email uniqueness and role validation, hashes the password, and persists the record.
@@ -24,6 +26,27 @@ def register_user(name: str, email: str, password: str, role: str = 'patient') -
     if existing_user:
         raise ValueError("An account with this email address already exists.")
         
+    # Parse and validate date_of_birth if provided
+    dob_parsed = None
+    if date_of_birth:
+        try:
+            dob_parsed = date.fromisoformat(str(date_of_birth))
+            if dob_parsed > date.today():
+                raise ValueError("Date of birth cannot be in the future.")
+            # Check reasonable age range (0-120 years)
+            age_years = (date.today() - dob_parsed).days // 365
+            if age_years > 120:
+                raise ValueError("Please enter a valid date of birth.")
+        except (ValueError, TypeError) as e:
+            if "Date of birth" in str(e) or "valid date" in str(e):
+                raise
+            raise ValueError("Invalid date of birth format. Use YYYY-MM-DD.")
+
+    # Validate gender if provided
+    valid_genders = {'Male', 'Female', 'Other'}
+    if gender and gender not in valid_genders:
+        gender = 'Other'
+
     # Hash password
     pwd_hash = hash_password(password)
     
@@ -32,7 +55,9 @@ def register_user(name: str, email: str, password: str, role: str = 'patient') -
         name=name.strip(),
         email=email_clean,
         password_hash=pwd_hash,
-        role=role
+        role=role,
+        date_of_birth=dob_parsed,
+        gender=gender
     )
     
     db.session.add(new_user)

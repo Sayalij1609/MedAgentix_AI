@@ -733,6 +733,94 @@ class MeditronInference:
                 "source": "Meditron_Error",
             }
 
+    def reason_differential_with_rag(self, symptoms, context="",
+                                      ml_diagnosis="", ml_confidence=0,
+                                      rag_context=""):
+        """
+        RAG-augmented differential diagnosis reasoning.
+
+        Uses retrieved medical knowledge chunks + Meditron clinical reasoning
+        to produce a more accurate and evidence-based diagnosis.
+
+        Args:
+            symptoms: Comma-separated symptom string
+            context: Patient demographics
+            ml_diagnosis: The ML model's predicted disease
+            ml_confidence: ML confidence percentage
+            rag_context: Retrieved medical knowledge text
+
+        Returns:
+            dict with diagnoses list, reasoning, and source
+        """
+        try:
+            if isinstance(symptoms, list):
+                symptoms = ", ".join(symptoms)
+
+            from llm.prompt_templates import MEDITRON_RAG_DIFFERENTIAL_PROMPT
+            prompt = MEDITRON_RAG_DIFFERENTIAL_PROMPT.format(
+                symptoms=symptoms,
+                context=context or "not provided",
+                ml_diagnosis=ml_diagnosis or "Unknown",
+                ml_confidence=ml_confidence,
+                rag_context=rag_context[:2000],  # Limit context to avoid exceeding token limit
+            )
+            response = self._generate(prompt, max_new_tokens=512)
+
+            diagnoses = self._parse_differential_response(response)
+
+            return {
+                "diagnoses": diagnoses[:5],
+                "reasoning": response,
+                "source": "RAG+Meditron_7B",
+            }
+        except Exception as e:
+            print(f"  [Meditron] reason_differential_with_rag error: {e}")
+            return {
+                "diagnoses": [],
+                "reasoning": f"RAG+Meditron inference failed: {str(e)}",
+                "source": "Meditron_Error",
+            }
+
+    def reason_treatment_with_rag(self, disease, severity="Moderate",
+                                   patient_context="", rag_context=""):
+        """
+        RAG-augmented treatment reasoning.
+
+        Uses retrieved medical knowledge + Meditron to generate
+        evidence-based treatment recommendations.
+
+        Args:
+            disease: Disease name
+            severity: Severity level
+            patient_context: Patient context string
+            rag_context: Retrieved medical knowledge text
+
+        Returns:
+            dict with tests, medications, reasoning, source
+        """
+        try:
+            from llm.prompt_templates import MEDITRON_RAG_TREATMENT_PROMPT
+            prompt = MEDITRON_RAG_TREATMENT_PROMPT.format(
+                disease=disease,
+                severity=severity,
+                context=patient_context or "not provided",
+                rag_context=rag_context[:2000],
+            )
+            response = self._generate(prompt, max_new_tokens=512)
+
+            result = self._parse_treatment_response(response)
+            result["source"] = "RAG+Meditron_7B"
+            return result
+
+        except Exception as e:
+            print(f"  [Meditron] reason_treatment_with_rag error: {e}")
+            return {
+                "tests": [],
+                "medications": [],
+                "reasoning": f"RAG+Meditron inference failed: {str(e)}",
+                "source": "Meditron_Error",
+            }
+
     def __repr__(self):
         status = "loaded" if self._model else ("failed" if self._load_failed else "not loaded")
         backend = self._backend or "none"

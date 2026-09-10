@@ -112,7 +112,8 @@ def get_dashboard():
             "chief_complaint": c.symptoms.get("chief_complaint", "") if c.symptoms else "",
             "final_diagnosis": diag.get("final_diagnosis", "Awaiting Diagnosis"),
             "severity": diag.get("severity", "Unknown"),
-            "triage_level": c.triage_level
+            "triage_level": c.triage_level,
+            "vitals": c.vitals if c.vitals else None
         }
 
     return jsonify({

@@ -1,12 +1,12 @@
 ==============================================================================
   MedAgentix AI -- YOUR HEALTH ASSESSMENT REPORT
-  Generated: 02-Jun-2026 23:09
+  Generated: 04-Jun-2026 23:17
 ==============================================================================
 
 ==============================================================================
   YOUR HEALTH ASSESSMENT REPORT
   RAHUL SHARMA
-  Date: 02 June 2026, 11:08 PM
+  Date: 04 June 2026, 11:17 PM
 ==============================================================================
 
 
@@ -51,20 +51,22 @@
       Based on the symptoms and information you shared, our
       AI health assistant has prepared this assessment:
 
-      Possible Condition........................ Malaria
+      Possible Condition........................ Bronchial Asthma
       Match Confidence.......................... Uncertain -- Doctor Visit Recommended
       Severity Level............................ Serious
 
       What this means:
       ----------------------------------------
-        Your fever pattern and symptoms may suggest malaria. A simple
-        blood test can confirm this quickly.
+        Your breathing symptoms may be related to asthma. A breathing
+        test (spirometry) can confirm this. It is a very manageable
+        condition.
 
       Understanding your condition:
       ----------------------------------------
-        Malaria is an infection spread by mosquito bites. It causes
-        high fever that comes and goes, chills, and body aches. It is
-        treatable with medication and most people recover fully.
+        Bronchial asthma makes your airways narrow and swell, causing
+        wheezing, coughing, and shortness of breath. It can be
+        triggered by dust, cold air, or exercise. Inhalers provide
+        effective relief.
 
       How serious is this?
       ----------------------------------------
@@ -79,20 +81,20 @@
       These are medications commonly used for this condition.
       NEVER take any medicine without your doctor's approval.
 
-      1. Chloroquine
-         What it does : For treating your condition
-         Usual dosage : 600 mg base stat, then 300 mg at 6h, 24h, 48h
-         Things to watch: Nausea, headache, visual disturbance
+      1. Salbutamol (Ventolin)
+         What it does : To open up airways for easier breathing
+         Usual dosage : 2 puffs as needed
+         Things to watch: Tremor, palpitations
 
-      2. Artemether-Lumefantrine (Coartem)
+      2. Budesonide (Pulmicort)
          What it does : For treating your condition
-         Usual dosage : 4 tablets twice daily for 3 days
-         Things to watch: Headache, dizziness
+         Usual dosage : 200-400 mcg twice daily
+         Things to watch: Oral thrush, hoarseness
 
-      3. Primaquine
+      3. Montelukast (Singulair)
          What it does : For treating your condition
-         Usual dosage : 15 mg daily for 14 days (P. vivax)
-         Things to watch: Hemolytic anemia in G6PD deficiency
+         Usual dosage : 10 mg once daily
+         Things to watch: Headache, mood changes
 
 ------------------------------------------------------------------------------
   TESTS YOUR DOCTOR MAY ASK FOR
@@ -100,16 +102,16 @@
 
       These tests can help confirm what's going on:
 
-      1. Peripheral Blood Smear (Thick & Thin)
-         Why: Gold standard for malaria parasite identification
-      2. Rapid Diagnostic Test (RDT) for Malaria
-         Why: Quick antigen-based test for malaria
-      3. CBC (Complete Blood Count)
-         Why: Detect anemia and thrombocytopenia
-      4. Liver Function Test
-         Why: Assess hepatic involvement
-      5. Serum Bilirubin
-         Why: Check for hemolysis and jaundice
+      1. Spirometry (Pulmonary Function Test)
+         Why: Measure airflow obstruction and reversibility
+      2. Peak Flow Meter Reading
+         Why: Assess severity of airflow limitation
+      3. Pulse Oximetry
+         Why: Monitor oxygen levels during attack
+      4. Chest X-Ray
+         Why: Rule out other lung conditions
+      5. Allergy Testing (IgE)
+         Why: Identify allergic triggers
 
         These tests help your doctor understand your condition better
         and create the most effective treatment plan.
@@ -151,7 +153,7 @@ ______________________________________________________________________________
 ==============================================================================
   YOUR HEALTH ASSESSMENT REPORT
   RAMESH GUPTA
-  Date: 02 June 2026, 11:09 PM
+  Date: 04 June 2026, 11:17 PM
 ==============================================================================
 
 
@@ -331,7 +333,7 @@ ______________________________________________________________________________
 ==============================================================================
   YOUR HEALTH ASSESSMENT REPORT
   PRIYA MEHTA
-  Date: 02 June 2026, 11:09 PM
+  Date: 04 June 2026, 11:17 PM
 ==============================================================================
 
 
@@ -371,20 +373,21 @@ ______________________________________________________________________________
       Based on the symptoms and information you shared, our
       AI health assistant has prepared this assessment:
 
-      Possible Condition........................ Allergy
+      Possible Condition........................ Paralysis (Brain Hemorrhage)
       Match Confidence.......................... Uncertain -- Doctor Visit Recommended
       Severity Level............................ Moderate
 
       What this means:
       ----------------------------------------
-        Your symptoms suggest an allergic reaction. Identifying what
-        triggers it can help you avoid it in the future.
+        Your symptoms match a pattern that may need medical
+        attention. Please see a doctor for proper evaluation and
+        testing.
 
       Understanding your condition:
       ----------------------------------------
-        An allergy happens when your immune system overreacts to
-        something harmless like pollen or food. This can cause
-        sneezing, itching, and sometimes skin rashes.
+        Based on your symptoms, our AI system has identified a
+        possible health condition. This is a starting point for your
+        doctor to investigate further.
 
       How serious is this?
       ----------------------------------------
@@ -399,25 +402,25 @@ ______________________________________________________________________________
       These are medications commonly used for this condition.
       NEVER take any medicine without your doctor's approval.
 
-      1. Paracetamol (Tylenol)
+      1. Atorvastatin (Lipitor)
          What it does : For treating your condition
-         Usual dosage : 500 mg every 4-6 hours as needed
-         Things to watch: Rare at normal dose
+         Usual dosage : 40-80 mg once daily
+         Things to watch: Muscle pain, liver enzyme elevation
 
-      2. Cetirizine (Zyrtec)
-         What it does : To reduce allergic reactions
-         Usual dosage : 10 mg once daily
-         Things to watch: Drowsiness, dry mouth
+      2. Aspirin
+         What it does : For treating your condition
+         Usual dosage : 325 mg stat, then 75-100 mg daily
+         Things to watch: GI bleeding, bruising
 
-      3. Pseudoephedrine (Sudafed)
-         What it does : To relieve stuffy nose
-         Usual dosage : 60 mg every 4-6 hours
-         Things to watch: Insomnia, increased heart rate
+      3. Clopidogrel (Plavix)
+         What it does : For treating your condition
+         Usual dosage : 75 mg once daily
+         Things to watch: Bleeding, bruising
 
-      4. Chlorpheniramine (Piriton)
-         What it does : To reduce allergic reactions
-         Usual dosage : 4 mg every 4-6 hours
-         Things to watch: Drowsiness, dry mouth
+      4. Nitroglycerin (GTN)
+         What it does : For treating your condition
+         Usual dosage : 0.4 mg sublingual as needed
+         Things to watch: Headache, dizziness, flushing
 
 ------------------------------------------------------------------------------
   TESTS YOUR DOCTOR MAY ASK FOR
@@ -425,14 +428,16 @@ ______________________________________________________________________________
 
       These tests can help confirm what's going on:
 
-      1. Clinical Examination
-         Why: Physical examination of nasal passages
-      2. Allergy Skin Prick Test
-         Why: Identify specific allergens causing rhinitis
-      3. Serum IgE Level
-         Why: Measure allergic response markers
-      4. Nasal Endoscopy
-         Why: Rule out polyps or structural issues
+      1. ECG (Electrocardiogram)
+         Why: Detect ST-elevation and heart rhythm abnormalities
+      2. Troponin-I / Troponin-T
+         Why: Gold standard biomarker for heart muscle damage
+      3. Chest X-Ray
+         Why: Assess heart size and rule out other causes
+      4. Echocardiography
+         Why: Evaluate heart wall motion and ejection fraction
+      5. CBC (Complete Blood Count)
+         Why: Baseline blood assessment
 
         These tests help your doctor understand your condition better
         and create the most effective treatment plan.

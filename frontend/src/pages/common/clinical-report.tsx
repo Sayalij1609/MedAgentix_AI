@@ -193,6 +193,22 @@ export default function ClinicalReport() {
   // -------------------------------------------------------------
   if (!isDoctor) {
     const conf = getConfidenceLabel(diagnostic_output.confidence);
+
+    const getSeverityExplanation = (severity: string) => {
+      switch (severity.toLowerCase()) {
+        case 'mild':
+          return 'Your condition appears mild and manageable. Follow the suggested care steps and monitor your symptoms at home.';
+        case 'moderate':
+          return 'Your condition needs attention. Please see a doctor within the next day or two for proper evaluation.';
+        case 'serious':
+          return 'This is a serious condition that requires prompt medical attention. Please visit a doctor or clinic as soon as possible.';
+        case 'urgent':
+          return 'This is an urgent condition. Please seek immediate medical care at a hospital or emergency room.';
+        default:
+          return 'Please consult a healthcare professional for proper evaluation and treatment.';
+      }
+    };
+
     return (
       <div className="max-w-3xl mx-auto bg-card border border-border rounded-2xl shadow-xl p-6 md:p-8 space-y-8 print:border-none print:shadow-none print:p-0">
         
@@ -223,29 +239,28 @@ export default function ClinicalReport() {
           </div>
         </div>
 
-        {/* Patient Header Block */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-4 border-b border-border pb-6">
-          <div className="space-y-1">
-            <span className="text-xs uppercase font-semibold tracking-wider text-sky-850 block">MedAgentix Clinical Portal — Patient Health Summary</span>
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900">
-              {caseData.patient_name || 'Rahul Sharma'}
-            </h2>
-            <p className="text-xs text-muted-foreground">
-              Medical Record ID: MRN-{caseData.id} | Date of Assessment: {new Date(caseData.created_at).toLocaleDateString()}
-            </p>
-          </div>
-          <div className="text-xs space-y-1 md:text-right text-muted-foreground font-semibold">
-            <p>Age: {diagnostic_output.patient_age || 35} years | Gender: {diagnostic_output.patient_gender || 'Male'}</p>
-            <p>Assessment State: <span className="text-emerald-600">● {caseData.status}</span></p>
+        {/* ── SECTION: Patient Header ── */}
+        <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-6 space-y-1">
+          <span className="text-[10px] uppercase font-bold tracking-widest text-sky-700 block">Your Health Assessment Report</span>
+          <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">
+            {caseData.patient_name || 'Patient'}
+          </h2>
+          <p className="text-xs text-muted-foreground">
+            Date: {new Date(caseData.created_at).toLocaleDateString('en-IN', { day: '2-digit', month: 'long', year: 'numeric' })} | Medical Record ID: MRN-{caseData.id}
+          </p>
+          <div className="flex flex-wrap gap-4 pt-2 text-xs font-semibold text-slate-700">
+            <span>👤 Age: {diagnostic_output.patient_age || 35} years</span>
+            <span>⚧ Gender: {diagnostic_output.patient_gender || 'Male'}</span>
+            <span>📋 Status: <span className="text-emerald-600">● {caseData.status}</span></span>
           </div>
         </div>
 
-        {/* Emergency Pulsing Warning Card */}
+        {/* ── SECTION: Emergency Alert ── */}
         {diagnostic_output.emergency_status.is_emergency && (
           <div className="bg-red-50 border-2 border-red-500 text-red-800 p-5 rounded-2xl animate-pulse space-y-2 flex items-start gap-3">
             <AlertTriangle className="w-6 h-6 text-red-600 shrink-0 mt-0.5" />
             <div>
-              <h3 className="text-base font-extrabold uppercase">EMERGENCY ALERT — SEEK IMMEDIATE MEDICAL CARE</h3>
+              <h3 className="text-base font-extrabold uppercase">🚨 EMERGENCY ALERT — SEEK IMMEDIATE MEDICAL CARE</h3>
               <p className="text-xs leading-relaxed mt-1">
                 Based on your clinical readings, please go to the nearest Emergency Room (ER) or call ambulance services (112 / 108) immediately. Do not drive yourself.
               </p>
@@ -253,148 +268,320 @@ export default function ClinicalReport() {
           </div>
         )}
 
-        {/* Vitals Grid */}
+        {/* ── SECTION: Your Symptoms ── */}
         <div className="space-y-3">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground">My Vitals</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2">
+            <span className="w-1 h-5 bg-sky-500 rounded-full"></span>
+            Your Symptoms
+          </h3>
+          <div className="bg-slate-50 border border-border rounded-xl p-4">
+            {symptoms.selected_symptoms.length > 0 ? (
+              <div className="space-y-2">
+                {symptoms.selected_symptoms.map(s => (
+                  <div key={s.name} className="flex items-center justify-between py-1.5 border-b border-border last:border-0">
+                    <span className="text-sm font-medium text-foreground flex items-center gap-2">
+                      <span className="w-2 h-2 bg-sky-400 rounded-full shrink-0"></span>
+                      {s.name}
+                    </span>
+                    <span className="text-xs text-muted-foreground font-semibold bg-slate-100 px-2 py-0.5 rounded">
+                      {s.duration_days === 0 ? 'Today' : s.duration_days === 1 ? '1 day' : `${s.duration_days} days`}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-sm text-muted-foreground italic">No specific symptoms selected.</p>
+            )}
+            {symptoms.chief_complaint && (
+              <div className="mt-3 pt-3 border-t border-border">
+                <span className="text-[10px] font-bold text-muted-foreground uppercase block mb-1">In Your Words</span>
+                <p className="text-sm text-foreground/90 italic">"{symptoms.chief_complaint}"</p>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* ── SECTION: Your Vital Signs ── */}
+        <div className="space-y-3">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2">
+            <span className="w-1 h-5 bg-emerald-500 rounded-full"></span>
+            Your Vital Signs
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <div className="bg-slate-50 p-4 border border-border rounded-xl">
               <div className="flex items-center gap-1.5 mb-1.5">
-                <Thermometer className="w-4 h-4 text-sky-600 shrink-0" />
-                <span className="text-[10px] font-bold text-muted-foreground block uppercase">Temperature</span>
+                <Heart className="w-4 h-4 text-rose-500 shrink-0" />
+                <span className="text-[10px] font-bold text-muted-foreground uppercase">Heart Rate</span>
               </div>
-              <span className="text-lg font-bold block text-foreground">{vitals.temperature}°F</span>
-              <span className={`text-[10px] font-semibold flex items-center gap-1 ${vitals.temperature >= 100.4 ? 'text-amber-600' : 'text-green-600'}`}>
-                {vitals.temperature >= 100.4 ? <AlertTriangle className="w-3 h-3 text-amber-500 shrink-0" /> : <CheckCircle className="w-3 h-3 text-green-500 shrink-0" />}
-                {vitals.temperature >= 100.4 ? 'Fever detected' : 'Normal range'}
-              </span>
-            </div>
-            
-            <div className="bg-slate-50 p-4 border border-border rounded-xl">
-              <div className="flex items-center gap-1.5 mb-1.5">
-                <Wind className="w-4 h-4 text-sky-600 shrink-0" />
-                <span className="text-[10px] font-bold text-muted-foreground block uppercase">Oxygen Level</span>
-              </div>
-              <span className="text-lg font-bold block text-foreground">{vitals.oxygen_level}%</span>
-              <span className={`text-[10px] font-semibold flex items-center gap-1 ${vitals.oxygen_level < 95 ? 'text-red-650' : 'text-green-600'}`}>
-                {vitals.oxygen_level < 95 ? <AlertTriangle className="w-3 h-3 text-red-500 shrink-0" /> : <CheckCircle className="w-3 h-3 text-green-500 shrink-0" />}
-                {vitals.oxygen_level < 95 ? 'Below normal' : 'Healthy level'}
+              <span className="text-xl font-bold block text-foreground">{vitals.heart_rate} <span className="text-xs font-normal text-muted-foreground">bpm</span></span>
+              <span className={`text-[10px] font-semibold flex items-center gap-1 mt-1 ${vitals.heart_rate > 100 ? 'text-amber-600' : vitals.heart_rate < 60 ? 'text-amber-600' : 'text-green-600'}`}>
+                {vitals.heart_rate > 100 || vitals.heart_rate < 60 ? <AlertTriangle className="w-3 h-3 shrink-0" /> : <CheckCircle className="w-3 h-3 shrink-0" />}
+                {vitals.heart_rate > 100 ? 'Elevated' : vitals.heart_rate < 60 ? 'Low' : 'Normal'}
               </span>
             </div>
 
             <div className="bg-slate-50 p-4 border border-border rounded-xl">
               <div className="flex items-center gap-1.5 mb-1.5">
-                <Heart className="w-4 h-4 text-sky-600 shrink-0" />
-                <span className="text-[10px] font-bold text-muted-foreground block uppercase">Heart Rate</span>
+                <Wind className="w-4 h-4 text-blue-500 shrink-0" />
+                <span className="text-[10px] font-bold text-muted-foreground uppercase">Oxygen Level</span>
               </div>
-              <span className="text-lg font-bold block text-foreground">{vitals.heart_rate} bpm</span>
-              <span className={`text-[10px] font-semibold flex items-center gap-1 ${vitals.heart_rate > 100 ? 'text-amber-600' : 'text-green-600'}`}>
-                {vitals.heart_rate > 100 ? <AlertTriangle className="w-3 h-3 text-amber-500 shrink-0" /> : <CheckCircle className="w-3 h-3 text-green-500 shrink-0" />}
-                {vitals.heart_rate > 100 ? 'High resting' : 'Normal sinus'}
+              <span className="text-xl font-bold block text-foreground">{vitals.oxygen_level}<span className="text-xs font-normal text-muted-foreground">%</span></span>
+              <span className={`text-[10px] font-semibold flex items-center gap-1 mt-1 ${vitals.oxygen_level < 95 ? 'text-red-600' : 'text-green-600'}`}>
+                {vitals.oxygen_level < 95 ? <AlertTriangle className="w-3 h-3 shrink-0" /> : <CheckCircle className="w-3 h-3 shrink-0" />}
+                {vitals.oxygen_level < 95 ? 'Below normal' : 'Normal range'}
+              </span>
+              {vitals.oxygen_level >= 95 && (
+                <p className="text-[9px] text-muted-foreground mt-0.5">Your oxygen level is in the normal range. This is good.</p>
+              )}
+            </div>
+
+            <div className="bg-slate-50 p-4 border border-border rounded-xl">
+              <div className="flex items-center gap-1.5 mb-1.5">
+                <Activity className="w-4 h-4 text-purple-500 shrink-0" />
+                <span className="text-[10px] font-bold text-muted-foreground uppercase">Blood Pressure</span>
+              </div>
+              <span className="text-xl font-bold block text-foreground">{vitals.bp_reading} <span className="text-xs font-normal text-muted-foreground">mmHg</span></span>
+              <span className="text-[10px] font-semibold text-green-600 flex items-center gap-1 mt-1">
+                <CheckCircle className="w-3 h-3 shrink-0" />
+                Normal
               </span>
             </div>
 
             <div className="bg-slate-50 p-4 border border-border rounded-xl">
               <div className="flex items-center gap-1.5 mb-1.5">
-                <Activity className="w-4 h-4 text-sky-600 shrink-0" />
-                <span className="text-[10px] font-bold text-muted-foreground block uppercase">Blood Pressure</span>
+                <Thermometer className="w-4 h-4 text-orange-500 shrink-0" />
+                <span className="text-[10px] font-bold text-muted-foreground uppercase">Temperature</span>
               </div>
-              <span className="text-lg font-bold block text-foreground">{vitals.bp_reading}</span>
-              <span className="text-[10px] font-semibold text-green-650 flex items-center gap-1">
-                <CheckCircle className="w-3 h-3 text-green-500 shrink-0" />
-                Normotensive
+              <span className="text-xl font-bold block text-foreground">{vitals.temperature}<span className="text-xs font-normal text-muted-foreground">°F</span></span>
+              <span className={`text-[10px] font-semibold flex items-center gap-1 mt-1 ${vitals.temperature >= 100.4 ? 'text-amber-600' : 'text-green-600'}`}>
+                {vitals.temperature >= 100.4 ? <AlertTriangle className="w-3 h-3 shrink-0" /> : <CheckCircle className="w-3 h-3 shrink-0" />}
+                {vitals.temperature >= 100.4 ? 'Fever detected' : 'Normal'}
               </span>
             </div>
           </div>
         </div>
 
-        {/* Symptoms Chips */}
-        <div className="space-y-2">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Reported Symptoms</h3>
-          <div className="flex flex-wrap gap-2">
-            {symptoms.selected_symptoms.map(s => (
-              <span key={s.name} className="bg-slate-150/80 border border-border rounded-full px-3 py-1 text-xs font-semibold text-foreground">
-                ● {s.name} ({s.duration_days} days)
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* What We Found Section */}
-        <div className="space-y-4 border-t border-border pt-6">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground">What We Found</h3>
-          
-          <div className="bg-slate-50 border border-border rounded-2xl p-5 space-y-4">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <div className="space-y-0.5">
-                <span className="text-[10px] font-bold text-muted-foreground uppercase">Possible Condition Match</span>
-                <h4 className="text-2xl font-extrabold text-foreground">{diagnostic_output.final_diagnosis}</h4>
-              </div>
-              <div className="flex gap-2">
-                <span className={`px-3 py-1 rounded-lg text-xs font-bold ${conf.color}`}>{conf.text} ({diagnostic_output.confidence}%)</span>
-                <span className={`px-3 py-1 rounded-lg text-xs font-bold border ${getSeverityBadgeClass(diagnostic_output.severity)}`}>
-                  {diagnostic_output.severity}
-                </span>
-              </div>
+        {/* ── SECTION: Your Health Background ── */}
+        <div className="space-y-3">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2">
+            <span className="w-1 h-5 bg-violet-500 rounded-full"></span>
+            Your Health Background
+          </h3>
+          <div className="bg-slate-50 border border-border rounded-xl p-4 space-y-3">
+            <div>
+              <span className="text-[10px] font-bold text-muted-foreground uppercase block mb-1">Past Health Conditions</span>
+              <p className="text-sm text-foreground">
+                {history_and_lifestyle.medical_history.length > 0 
+                  ? history_and_lifestyle.medical_history.join(', ') 
+                  : 'None mentioned'}
+              </p>
             </div>
-
-            <div className="space-y-2 border-t border-border pt-4">
-              <div className="flex items-center gap-1.5">
-                <Lightbulb className="w-4 h-4 text-sky-600 shrink-0" />
-                <h5 className="text-xs font-bold text-muted-foreground uppercase">What this means in plain language:</h5>
-              </div>
-              <p className="text-sm text-foreground/90 leading-relaxed text-left">
-                Your signs and reported conditions match the typical progression patterns seen with **{diagnostic_output.final_diagnosis}**. 
-                This assessment is generated by a clinical decision support system engine. It is not an official prescription or laboratory confirmation.
+            <div className="border-t border-border pt-3">
+              <span className="text-[10px] font-bold text-muted-foreground uppercase block mb-1">Lifestyle Factors</span>
+              <p className="text-sm text-foreground">
+                {history_and_lifestyle.lifestyle_factors.length > 0 
+                  ? history_and_lifestyle.lifestyle_factors.join(', ') 
+                  : 'None mentioned'}
               </p>
             </div>
           </div>
         </div>
 
-        {/* Recommended Drugs */}
-        <div className="space-y-3">
-          <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Suggested Home Medications</h3>
-          <p className="text-xs text-muted-foreground italic">Always verify dosage and consult a clinician before ingestion.</p>
+        {/* ── SECTION: What We Found ── */}
+        <div className="space-y-4 border-t-2 border-sky-200 pt-6">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2">
+            <span className="w-1 h-5 bg-sky-500 rounded-full"></span>
+            What We Found
+          </h3>
           
-          <div className="space-y-2">
-            {diagnostic_output.recommended_drugs.map(d => (
-              <div key={d.name} className="border border-border p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div className="space-y-1">
-                  <h4 className="font-bold text-base text-foreground">{d.name}</h4>
-                  <p className="text-xs text-muted-foreground">Purpose: {d.purpose}</p>
-                </div>
-                <span className="bg-primary/10 text-primary border border-primary/20 rounded-xl px-4 py-1.5 text-xs font-bold self-start sm:self-auto">
-                  {d.dosage}
+          <div className="bg-gradient-to-br from-slate-50 to-sky-50/30 border border-sky-200 rounded-2xl p-5 space-y-5">
+            {/* Diagnosis + Badges */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div className="space-y-0.5">
+                <span className="text-[10px] font-bold text-muted-foreground uppercase">Possible Condition</span>
+                <h4 className="text-2xl font-extrabold text-foreground">{diagnostic_output.final_diagnosis}</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className={`px-3 py-1.5 rounded-lg text-xs font-bold ${conf.color}`}>{conf.text} ({diagnostic_output.confidence}%)</span>
+                <span className={`px-3 py-1.5 rounded-lg text-xs font-bold border ${getSeverityBadgeClass(diagnostic_output.severity)}`}>
+                  {diagnostic_output.severity}
                 </span>
+              </div>
+            </div>
+
+            {/* What this means */}
+            <div className="space-y-2 border-t border-border pt-4">
+              <div className="flex items-center gap-1.5">
+                <Lightbulb className="w-4 h-4 text-amber-500 shrink-0" />
+                <h5 className="text-xs font-bold text-slate-700 uppercase">What this means:</h5>
+              </div>
+              <p className="text-sm text-foreground/90 leading-relaxed">
+                Your symptoms match a pattern that may need medical attention. Please see a doctor for proper evaluation and testing.
+              </p>
+            </div>
+
+            {/* Understanding your condition (Pathophysiology) */}
+            <div className="space-y-2 border-t border-border pt-4">
+              <div className="flex items-center gap-1.5">
+                <HelpCircle className="w-4 h-4 text-sky-500 shrink-0" />
+                <h5 className="text-xs font-bold text-slate-700 uppercase">Understanding your condition:</h5>
+              </div>
+              <p className="text-sm text-foreground/90 leading-relaxed">
+                {diagnostic_output.pathophysiology || `Based on your symptoms, our AI system has identified a possible health condition. This is a starting point for your doctor to investigate further.`}
+              </p>
+            </div>
+
+            {/* How serious is this */}
+            <div className="space-y-2 border-t border-border pt-4">
+              <div className="flex items-center gap-1.5">
+                <AlertTriangle className="w-4 h-4 text-orange-500 shrink-0" />
+                <h5 className="text-xs font-bold text-slate-700 uppercase">How serious is this?</h5>
+              </div>
+              <p className="text-sm text-foreground/90 leading-relaxed">
+                {getSeverityExplanation(diagnostic_output.severity)}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ── SECTION: Possible Medications ── */}
+        <div className="space-y-3">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2">
+            <span className="w-1 h-5 bg-teal-500 rounded-full"></span>
+            Possible Medications
+          </h3>
+          <p className="text-xs text-muted-foreground italic">
+            Your doctor will decide what's right for you. NEVER take any medicine without your doctor's approval.
+          </p>
+          
+          <div className="space-y-3">
+            {diagnostic_output.recommended_drugs.map((d, idx) => (
+              <div key={d.name} className="border border-border rounded-xl overflow-hidden">
+                <div className="bg-slate-50 px-4 py-3 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="w-6 h-6 bg-sky-100 text-sky-700 rounded-full flex items-center justify-center text-xs font-bold shrink-0">{idx + 1}</span>
+                    <h4 className="font-bold text-base text-foreground">{d.name}</h4>
+                  </div>
+                  <span className="bg-primary/10 text-primary border border-primary/20 rounded-lg px-3 py-1 text-[10px] font-bold">
+                    {d.route || 'Oral'}
+                  </span>
+                </div>
+                <div className="p-4 space-y-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <span className="text-[10px] font-bold text-muted-foreground uppercase block">What it does</span>
+                      <p className="text-sm text-foreground">{d.purpose}</p>
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-bold text-muted-foreground uppercase block">Usual dosage</span>
+                      <p className="text-sm text-foreground font-semibold">{d.dosage}</p>
+                    </div>
+                  </div>
+                  <div className="border-t border-border pt-2">
+                    <span className="text-[10px] font-bold text-amber-600 uppercase block">⚠ Things to watch</span>
+                    <p className="text-xs text-foreground/80">{d.adr || 'No specific warnings reported'}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Recommended Diagnostics Tests */}
+        {/* ── SECTION: Tests Your Doctor May Ask For ── */}
         <div className="space-y-3">
-          <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Clinical Investigations Your Doctor May Order</h3>
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2">
+            <span className="w-1 h-5 bg-indigo-500 rounded-full"></span>
+            Tests Your Doctor May Ask For
+          </h3>
+          <p className="text-xs text-muted-foreground">These tests can help confirm what's going on:</p>
           <div className="space-y-2">
-            {diagnostic_output.recommended_tests.map(t => (
-              <div key={t.name} className="border border-border p-3 rounded-xl flex items-center justify-between bg-slate-50/50">
-                <div className="space-y-0.5">
+            {diagnostic_output.recommended_tests.map((t, idx) => (
+              <div key={t.name} className="border border-border p-4 rounded-xl flex items-start gap-3 bg-slate-50/50">
+                <span className="w-6 h-6 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">{idx + 1}</span>
+                <div className="space-y-0.5 flex-1">
                   <h5 className="text-sm font-bold text-foreground">{t.name}</h5>
-                  <p className="text-[10px] text-muted-foreground">Rationale: {t.indication}</p>
+                  <p className="text-xs text-muted-foreground">Why: {t.indication}</p>
                 </div>
-                <span className="text-[10px] font-semibold text-primary uppercase bg-primary/5 px-2 py-1 rounded">
+                <span className="text-[10px] font-semibold text-primary uppercase bg-primary/5 px-2 py-1 rounded shrink-0">
                   {t.priority}
                 </span>
               </div>
             ))}
           </div>
+          <p className="text-xs text-muted-foreground italic pt-1">
+            These tests help your doctor understand your condition better and create the most effective treatment plan.
+          </p>
         </div>
 
-        {/* Metadata Footer */}
-        <div className="border-t border-border pt-6 flex flex-col sm:flex-row justify-between items-center text-[10px] text-muted-foreground gap-2">
-          <p>CDSS Pipeline: {diagnostic_output.pipeline_version} | Engine Timestamp: {new Date(diagnostic_output.generated_at).toLocaleString()}</p>
-          <p className="font-semibold flex items-center gap-1">
-            <AlertTriangle className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
-            Disclaimer: Not a substitute for professional clinical judgment.
+        {/* ── SECTION: What to Do Next ── */}
+        <div className="space-y-3 border-t-2 border-emerald-200 pt-6">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2">
+            <span className="w-1 h-5 bg-emerald-500 rounded-full"></span>
+            What to Do Next
+          </h3>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <ol className="space-y-3">
+              {[
+                'Visit your doctor and share this report with them.',
+                'Complete any tests your doctor recommends.',
+                'Take medications only as prescribed by your doctor.',
+                diagnostic_output.severity === 'Mild' 
+                  ? 'Follow up if symptoms persist for more than a week.' 
+                  : 'Schedule a follow-up within 2-3 days.',
+                'Keep track of your symptoms — note if they get better or worse.',
+                'Stay hydrated, rest, and eat healthy meals.'
+              ].map((step, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="w-6 h-6 bg-emerald-200 text-emerald-800 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">{i + 1}</span>
+                  <span className="text-sm text-foreground leading-relaxed">{step}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+
+        {/* ── SECTION: When to Get Help Right Away ── */}
+        <div className="space-y-3">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-red-700 flex items-center gap-2">
+            <span className="w-1 h-5 bg-red-500 rounded-full"></span>
+            When to Get Help Right Away
+          </h3>
+          <div className="bg-red-50 border border-red-200 rounded-xl p-5 space-y-3">
+            {[
+              'Difficulty breathing or feeling short of breath',
+              'Severe chest pain or pressure',
+              'High fever (above 103°F / 39.4°C) that won\'t come down',
+              'Fainting, confusion, or inability to stay awake',
+              'Any sudden worsening of your symptoms'
+            ].map((warning, i) => (
+              <div key={i} className="flex items-center gap-2">
+                <AlertTriangle className="w-4 h-4 text-red-500 shrink-0" />
+                <span className="text-sm text-red-800 font-medium">{warning}</span>
+              </div>
+            ))}
+            <div className="border-t border-red-200 pt-3 mt-2">
+              <p className="text-xs text-red-700 font-semibold">
+                If any of the above happen, call 112/108 or go to the nearest emergency room immediately. Don't wait.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ── SECTION: Important Notice / Disclaimer ── */}
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 space-y-2">
+          <h4 className="text-xs font-extrabold text-amber-800 uppercase flex items-center gap-1.5">
+            <FileText className="w-4 h-4 shrink-0" />
+            Important Notice
+          </h4>
+          <p className="text-xs text-amber-800/90 leading-relaxed">
+            This report was created by an AI health assistant. It is <strong>NOT</strong> a medical diagnosis. Only a qualified doctor can diagnose your condition after proper examination and lab tests. Please use this report as a starting point for your doctor visit, not as a replacement for professional medical advice.
           </p>
+        </div>
+
+        {/* Pipeline Metadata Footer */}
+        <div className="border-t border-border pt-4 flex flex-col sm:flex-row justify-between items-center text-[10px] text-muted-foreground gap-2">
+          <p>CDSS Pipeline: {diagnostic_output.pipeline_version} | Generated: {new Date(diagnostic_output.generated_at).toLocaleString()}</p>
+          <p className="font-semibold">MedAgentix AI Clinical Decision Support System</p>
         </div>
 
       </div>

@@ -42,7 +42,10 @@ from sklearn.metrics.pairwise import cosine_similarity    # Step 2.1b: For calcu
 
 import numpy as np                                        # Step 2.1c: For numerical operations on arrays/matrices
 
-import google.generativeai as genai                       # Step 2.1d: Google's Gemini AI SDK for generating answers
+try:                                                          # Step 2.1d: Google's Gemini AI SDK for generating answers
+    import google.generativeai as genai                       #            Optional: falls back to template answers if missing
+except ImportError:
+    genai = None
 
 from dotenv import load_dotenv                            # Step 2.1e: For loading the API key from .env file securely
 
@@ -180,7 +183,13 @@ class MedRAG:
         # Step 2.3c-i: Get the API key from environment variables
         api_key = os.getenv("GEMINI_API_KEY")
         
-        # Step 2.3c-ii: Check if the API key was found
+        # Step 2.3c-ii: Check if Gemini SDK is available
+        if genai is None:
+            print("   ℹ️  google-generativeai not installed — using template-based answers")
+            self.gemini_model = None
+            return
+        
+        # Step 2.3c-iii: Check if the API key was found
         if not api_key or api_key == "paste_your_gemini_api_key_here":
             print("   ⚠️  WARNING: Gemini API key not found!")
             print("   ⚠️  Add your key to the .env file: GEMINI_API_KEY=your_key_here")
@@ -189,7 +198,7 @@ class MedRAG:
             self.gemini_model = None
             return
         
-        # Step 2.3c-iii: Configure the Gemini SDK with our API key
+        # Step 2.3c-iv: Configure the Gemini SDK with our API key
         genai.configure(api_key=api_key)
         
         # Step 2.3c-iv: Create a Gemini model instance

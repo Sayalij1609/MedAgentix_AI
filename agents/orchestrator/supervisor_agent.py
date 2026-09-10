@@ -59,7 +59,77 @@ class SupervisorAgent:
         # Lazy-init LLM fallbacks (loaded on first low-confidence call)
         self._meditron = None
         self._biogpt = None
+        self._rag = None  # Lazy-loaded RAG system
         print("  [OK] Supervisor Agent ready")
+
+    # --------------------------------------------------------
+    # RAG KNOWLEDGE RETRIEVAL
+    # --------------------------------------------------------
+    def _get_rag_context(self, disease, symptoms_text, top_k=3):
+        """
+        Retrieve relevant medical knowledge from the RAG knowledge base.
+
+        Lazy-loads the MedRAG system on first call. Returns a formatted
+        string of medical reference text for injection into LLM prompts.
+
+        Args:
+            disease: The diagnosed disease name
+            symptoms_text: Comma-separated symptom names
+            top_k: Number of knowledge chunks to retrieve
+
+        Returns:
+            str: Formatted RAG context text, or empty string if unavailable
+        """
+        if not getattr(config, 'ENABLE_RAG', False):
+            return ""
+
+        # Lazy-load the RAG system
+        if self._rag is None:
+            try:
+                import sys, os
+                rag_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'rag')
+                sys.path.insert(0, rag_dir)
+                kb_path = getattr(config, 'RAG_KNOWLEDGE_BASE_PATH', None)
+                if kb_path and os.path.exists(kb_path):
+                    from rag_system import MedRAG
+                    self._rag = MedRAG(knowledge_base_path=kb_path)
+                    print(f"  [Supervisor] RAG system loaded ({self._rag.get_stats()['total_chunks']} chunks)")
+                else:
+                    print(f"  [Supervisor] RAG KB not found at: {kb_path}")
+                    self._rag = False  # Mark as unavailable
+            except Exception as e:
+                print(f"  [Supervisor] RAG load error: {e}")
+                self._rag = False  # Mark as unavailable
+
+        if self._rag is False:
+            return ""
+
+        try:
+            # Build a combined query from disease + symptoms
+            query = f"{disease} {symptoms_text}"
+            results = self._rag.retrieve(query, top_k=top_k)
+
+            if not results:
+                return ""
+
+            # Format the retrieved chunks into a reference block
+            context_parts = []
+            for i, r in enumerate(results):
+                meta = r.get('metadata', {})
+                score = r.get('similarity_score', 0)
+                chunk = r.get('chunk', '')
+                disease_name = meta.get('disease', 'Unknown')
+                category = meta.get('category', '')
+                context_parts.append(
+                    f"[Reference {i+1}] {disease_name} ({category}) "
+                    f"[relevance: {score:.2f}]\n{chunk[:500]}"
+                )
+
+            return "\n\n".join(context_parts)
+
+        except Exception as e:
+            print(f"  [Supervisor] RAG retrieval error: {e}")
+            return ""
 
     # --------------------------------------------------------
     # LLM FALLBACK CASCADE: Meditron → BioGPT
@@ -119,7 +189,9 @@ class SupervisorAgent:
     def _high_confidence_path(self, state):
         """
         ML prediction is trustworthy — use the highest-confidence source.
-        Enrich with agent insights but don't override.
+        BUT: if ML and differential agent disagree, and ML had poor symptom
+        coverage (<=2 symptom features activated), prefer the differential
+        agent since it uses a richer symptom vocabulary.
         """
         prediction = state.get("prediction_result", {})
         differential = state.get("differential_result", {})
@@ -129,12 +201,42 @@ class SupervisorAgent:
         diff_disease = differential.get("primary_diagnosis")
         diff_conf = differential.get("primary_confidence", 0)
 
-        # Use whichever source has higher confidence
-        if pred_disease and pred_conf >= diff_conf:
+        # Count how many symptom features the ML model actually used
+        features_used = prediction.get("features_used", {})
+        symptom_features = {"fever", "cough", "fatigue", "difficulty_breathing",
+                           "headache", "vomiting", "chest_pain", "body_pain", "rash"}
+        ml_symptom_count = sum(1 for f in features_used if f in symptom_features and features_used[f] == 1)
+
+        # If ML and differential DISAGREE, and ML had poor symptom coverage,
+        # trust the differential agent (it uses a richer 130+ symptom vocabulary)
+        agents_disagree = (
+            pred_disease and diff_disease and
+            pred_disease.lower() != diff_disease.lower()
+        )
+
+        if agents_disagree and ml_symptom_count <= 2 and diff_conf > 0.3:
+            primary_disease = diff_disease
+            primary_confidence = diff_conf
+            source = "differential_agent"
+            alternatives = [
+                {"disease": d["disease"], "confidence": d["confidence"]}
+                for d in differential.get("differential_diagnoses", [])[1:4]
+            ]
+            reasoning = (
+                f"ML prediction '{pred_disease}' ({pred_conf:.1%}) overridden by "
+                f"differential agent '{diff_disease}' ({diff_conf:.1%}) — ML only "
+                f"matched {ml_symptom_count} symptom feature(s), indicating poor "
+                f"feature coverage for this symptom set."
+            )
+        elif pred_disease and pred_conf >= diff_conf:
             primary_disease = pred_disease
             primary_confidence = pred_conf
             source = "prediction_engine"
             alternatives = prediction.get("top_diseases", [])[1:4]
+            reasoning = (
+                f"High confidence ({primary_confidence:.1%}) from {source.replace('_', ' ')}. "
+                f"Disease '{primary_disease}' predicted with strong agreement."
+            )
         elif diff_disease:
             primary_disease = diff_disease
             primary_confidence = diff_conf
@@ -143,21 +245,26 @@ class SupervisorAgent:
                 {"disease": d["disease"], "confidence": d["confidence"]}
                 for d in differential.get("differential_diagnoses", [])[1:4]
             ]
+            reasoning = (
+                f"High confidence ({primary_confidence:.1%}) from {source.replace('_', ' ')}. "
+                f"Disease '{primary_disease}' predicted with strong agreement."
+            )
         else:
             primary_disease = pred_disease or "Unknown"
             primary_confidence = pred_conf
             source = "prediction_engine"
             alternatives = []
+            reasoning = (
+                f"High confidence ({primary_confidence:.1%}) from {source.replace('_', ' ')}. "
+                f"Disease '{primary_disease}' predicted with strong agreement."
+            )
 
         return {
             "final_disease": primary_disease,
             "final_confidence": primary_confidence,
             "diagnosis_source": source,
             "alternatives": alternatives,
-            "reasoning": (
-                f"High confidence ({primary_confidence:.1%}) from {source.replace('_', ' ')}. "
-                f"Disease '{primary_disease}' predicted with strong agreement."
-            ),
+            "reasoning": reasoning,
         }
 
     # --------------------------------------------------------
@@ -433,6 +540,9 @@ class SupervisorAgent:
         """
         Merge all agent outputs into a final diagnosis.
 
+        ALWAYS invokes Meditron LLM for clinical reasoning enrichment,
+        regardless of ML confidence level.
+
         Args:
             state: dict containing all agent outputs:
                 - symptom_result, differential_result, risk_result,
@@ -456,7 +566,7 @@ class SupervisorAgent:
             if diff_diagnoses:
                 primary_confidence = diff_diagnoses[0].get("confidence", 0)
 
-        # Step 1: Confidence-based routing
+        # Step 1: Confidence-based routing (ML path selection)
         confidence_level = self._determine_confidence_level(primary_confidence)
 
         if confidence_level == "high":
@@ -466,14 +576,18 @@ class SupervisorAgent:
         else:
             diagnosis_result = self._low_confidence_path(state)
 
-        # Step 2: Calculate agreement
+        # Step 2: ALWAYS invoke Meditron LLM for clinical reasoning
+        # This enriches every diagnosis — not just low-confidence ones
+        diagnosis_result = self._enrich_with_llm(state, diagnosis_result, confidence_level)
+
+        # Step 3: Calculate agreement
         final_disease = diagnosis_result["final_disease"]
         agreement = self._calculate_agreement(state, final_disease)
 
-        # Step 3: Determine severity
+        # Step 4: Determine severity
         severity = self._determine_severity(state)
 
-        # Step 4: Collect emergency info
+        # Step 5: Collect emergency info
         emerg = state.get("emergency_result", {})
         emergency_status = {
             "is_emergency": emerg.get("urgency_level", "") == "Critical",
@@ -482,7 +596,7 @@ class SupervisorAgent:
             "vital_flag_count": emerg.get("vital_flag_count", 0),
         }
 
-        # Step 5: Collect temporal info
+        # Step 6: Collect temporal info
         temporal = state.get("temporal_result", {})
         temporal_summary = {
             "overall_urgency": temporal.get("overall_urgency", "N/A"),
@@ -490,7 +604,7 @@ class SupervisorAgent:
             "most_urgent_symptom": temporal.get("most_urgent_symptom", None),
         }
 
-        # Step 6: Re-run recommendations based on FINAL disease
+        # Step 7: Re-run recommendations based on FINAL disease
         # The recommendation agent ran earlier using the ML prediction disease,
         # but the supervisor may have overridden it (e.g., with Meditron).
         # We re-run recommendations here to match the final disease.
@@ -518,7 +632,7 @@ class SupervisorAgent:
         tests = rec.get("diagnostic_tests", {})
         meds = rec.get("medications", {})
 
-        # Step 7: Build final output
+        # Step 8: Build final output
         return {
             # Core diagnosis
             "final_disease": final_disease,
@@ -529,7 +643,7 @@ class SupervisorAgent:
             "reasoning": diagnosis_result["reasoning"],
             "alternatives": diagnosis_result.get("alternatives", []),
 
-            # LLM Fallback Reasoning (Phase 5)
+            # LLM Clinical Reasoning (ALWAYS present when Meditron is available)
             "llm_reasoning": diagnosis_result.get("llm_reasoning", ""),
             "llm_source": diagnosis_result.get("llm_source", "none"),
 
@@ -575,11 +689,318 @@ class SupervisorAgent:
 
             # Disclaimer
             "disclaimer": (
-                "⚕ DISCLAIMER: This is an AI-generated diagnostic assessment for "
+                "\u2695 DISCLAIMER: This is an AI-generated diagnostic assessment for "
                 "informational purposes only. It does NOT constitute medical advice. "
                 "Always consult a qualified healthcare professional."
             ),
         }
+
+    # --------------------------------------------------------
+    # RAG CLINICAL SUMMARY BUILDER (no LLM needed)
+    # --------------------------------------------------------
+    def _build_rag_clinical_summary(self, disease, confidence, symptoms_text,
+                                     context, rag_context, state):
+        """
+        Build a structured clinical reasoning report from RAG knowledge chunks.
+
+        This is used when no LLM (Meditron/BioGPT) is available. It transforms
+        the raw retrieved knowledge chunks into a professional clinical summary.
+
+        Args:
+            disease: Primary diagnosis
+            confidence: Confidence score (0-1)
+            symptoms_text: Comma-separated symptoms
+            context: Patient demographics
+            rag_context: Raw RAG context string
+            state: Full pipeline state
+
+        Returns:
+            str: Structured clinical reasoning text
+        """
+        # Get additional context from pipeline state
+        risk_result = state.get("risk_result", {})
+        emergency_result = state.get("emergency_result", {})
+        recommendation_result = state.get("recommendation_result", {})
+        temporal_result = state.get("temporal_result", {})
+        differential_result = state.get("differential_result", {})
+
+        # Build confidence descriptor
+        if confidence >= 0.85:
+            conf_desc = "HIGH confidence"
+        elif confidence >= 0.70:
+            conf_desc = "MODERATE confidence"
+        else:
+            conf_desc = "requires further evaluation"
+
+        # Build the clinical summary
+        sections = []
+
+        # 1. Clinical Assessment Header
+        sections.append(
+            f"CLINICAL ASSESSMENT — {disease}\n"
+            f"{'=' * 50}\n"
+            f"Diagnosis: {disease} ({conf_desc}, {confidence:.1%})\n"
+            f"Patient: {context}\n"
+            f"Presenting symptoms: {symptoms_text}"
+        )
+
+        # 2. Differential Diagnosis
+        diff_diagnoses = differential_result.get("ranked_diagnoses", [])
+        if diff_diagnoses:
+            diff_lines = ["", "DIFFERENTIAL DIAGNOSIS:", "-" * 30]
+            for i, d in enumerate(diff_diagnoses[:5]):
+                name = d.get("disease", "Unknown")
+                score = d.get("confidence", 0)
+                diff_lines.append(f"  {i+1}. {name} — {score:.1%} probability")
+            sections.append("\n".join(diff_lines))
+
+        # 3. Risk Assessment
+        risk_level = risk_result.get("overall_risk", "Not assessed")
+        risk_factors = risk_result.get("identified_factors", [])
+        risk_section = f"\nRISK ASSESSMENT: {risk_level}"
+        if risk_factors:
+            risk_section += "\n  Risk factors: " + ", ".join(
+                f.get("name", str(f)) if isinstance(f, dict) else str(f)
+                for f in risk_factors[:5]
+            )
+        sections.append(risk_section)
+
+        # 4. Urgency Assessment
+        urgency = temporal_result.get("overall_urgency", "")
+        emergency_urgency = emergency_result.get("urgency_level", "")
+        triage = emergency_result.get("triage_level", "")
+        if urgency or emergency_urgency:
+            sections.append(
+                f"\nURGENCY: {urgency or emergency_urgency}"
+                + (f" (Triage Level: {triage})" if triage else "")
+            )
+
+        # 5. Treatment Recommendations
+        rec = recommendation_result
+
+        # Extract flat lists of test/med names from the nested recommendation structure
+        # The recommendation agent returns: {total: N, primary: [{test:..., reason:...}], secondary: [...]}
+        flat_tests = []
+        raw_tests = rec.get("diagnostic_tests", {})
+        if isinstance(raw_tests, dict):
+            for key in ["primary", "secondary", "tertiary"]:
+                group = raw_tests.get(key, [])
+                if isinstance(group, list):
+                    for t in group:
+                        if isinstance(t, dict):
+                            flat_tests.append(t.get("test", t.get("test_name", t.get("name", str(t)))))
+                        else:
+                            flat_tests.append(str(t))
+        elif isinstance(raw_tests, list):
+            for t in raw_tests:
+                flat_tests.append(t.get("test", str(t)) if isinstance(t, dict) else str(t))
+
+        flat_meds = []
+        raw_meds = rec.get("medications", {})
+        if isinstance(raw_meds, dict):
+            for key in ["primary", "secondary", "adjunctive", "supportive"]:
+                group = raw_meds.get(key, [])
+                if isinstance(group, list):
+                    for m in group:
+                        if isinstance(m, dict):
+                            name = m.get("drug", m.get("drug_name", m.get("name", "Unknown")))
+                            dosage = m.get("dosage", m.get("dose", ""))
+                            flat_meds.append((name, dosage))
+                        else:
+                            flat_meds.append((str(m), ""))
+        elif isinstance(raw_meds, list):
+            for m in raw_meds:
+                if isinstance(m, dict):
+                    flat_meds.append((m.get("drug", m.get("name", "Unknown")), m.get("dosage", "")))
+                else:
+                    flat_meds.append((str(m), ""))
+
+        if flat_tests or flat_meds:
+            treat_lines = ["\nTREATMENT RECOMMENDATIONS:", "-" * 30]
+            if flat_tests:
+                treat_lines.append("  Diagnostic Tests:")
+                for name in flat_tests[:6]:
+                    treat_lines.append(f"    \u2022 {name}")
+            if flat_meds:
+                treat_lines.append("  Medications:")
+                for name, dosage in flat_meds[:6]:
+                    treat_lines.append(f"    \u2022 {name}" + (f" \u2014 {dosage}" if dosage else ""))
+            sections.append("\n".join(treat_lines))
+
+        # 6. Medical Knowledge Base References
+        sections.append(
+            f"\nMEDICAL KNOWLEDGE BASE REFERENCES:\n"
+            f"{'-' * 30}\n"
+            f"{rag_context}"
+        )
+
+        # 7. Clinical Notes
+        sections.append(
+            f"\nCLINICAL NOTES:\n"
+            f"This assessment was generated using the MedAgentix AI multi-agent\n"
+            f"pipeline with RAG knowledge retrieval from 6,715 medical records.\n"
+            f"Source: RAG Knowledge Base (TF-IDF similarity retrieval)"
+        )
+
+        return "\n\n".join(sections)
+
+    # --------------------------------------------------------
+    # LLM ENRICHMENT (always invoked)
+    # --------------------------------------------------------
+    def _enrich_with_llm(self, state, diagnosis_result, confidence_level):
+        """
+        Always invoke Meditron/BioGPT with RAG context to provide clinical reasoning.
+
+        Pipeline:
+          1. Retrieve relevant medical knowledge from RAG (6,715 chunks)
+          2. Inject RAG context into Meditron prompt
+          3. Meditron reasons with factual data → richer, more accurate output
+
+        For high/moderate confidence: LLM validates + explains the ML diagnosis.
+        For low confidence: LLM may override with a better differential.
+        """
+        # Skip if LLM already provided reasoning (low-confidence path already did it)
+        if diagnosis_result.get("llm_reasoning") and diagnosis_result.get("llm_source", "none") != "none":
+            return diagnosis_result
+
+        final_disease = diagnosis_result["final_disease"]
+        final_confidence = diagnosis_result["final_confidence"]
+
+        # Collect symptoms for LLM prompt
+        symptom_result = state.get("symptom_result", {})
+        symptoms = [
+            s.get("canonical_name", s.get("raw_text", ""))
+            for s in symptom_result.get("extracted_symptoms", [])
+        ]
+        symptoms_text = ", ".join(symptoms) if symptoms else "unknown symptoms"
+
+        # Patient context
+        context = (
+            f"Age {state.get('patient_age', 'unknown')}, "
+            f"Gender {state.get('patient_gender', 'unknown')}"
+        )
+
+        # --- Step 1: Retrieve RAG context ---
+        rag_context = self._get_rag_context(final_disease, symptoms_text, top_k=3)
+        if rag_context:
+            print(f"  [Supervisor] RAG retrieved {rag_context.count('[Reference')} knowledge chunks for '{final_disease}'")
+            diagnosis_result["rag_context_available"] = True
+        else:
+            diagnosis_result["rag_context_available"] = False
+
+        # --- Step 2: Get LLM ---
+        llm, llm_source = self._get_llm_fallback()
+
+        if not llm:
+            # No LLM available — generate structured clinical reasoning from RAG alone
+            if rag_context:
+                rag_reasoning = self._build_rag_clinical_summary(
+                    disease=final_disease,
+                    confidence=final_confidence,
+                    symptoms_text=symptoms_text,
+                    context=context,
+                    rag_context=rag_context,
+                    state=state,
+                )
+                diagnosis_result["llm_reasoning"] = rag_reasoning
+                diagnosis_result["llm_source"] = "RAG_Knowledge_Base"
+            else:
+                diagnosis_result["llm_reasoning"] = ""
+                diagnosis_result["llm_source"] = "none"
+            return diagnosis_result
+
+        # --- Step 3: Invoke LLM with RAG context ---
+        llm_reasoning = ""
+
+        try:
+            # 1. RAG-augmented differential reasoning (if RAG context available)
+            if rag_context and hasattr(llm, 'reason_differential_with_rag'):
+                diff_result = llm.reason_differential_with_rag(
+                    symptoms=symptoms_text,
+                    context=context,
+                    ml_diagnosis=final_disease,
+                    ml_confidence=round(final_confidence * 100, 1),
+                    rag_context=rag_context,
+                )
+                diff_text = diff_result.get("reasoning", "")
+
+                # If LLM suggests a better diagnosis for low confidence
+                if diff_result.get("diagnoses") and confidence_level == "low":
+                    llm_primary = diff_result["diagnoses"][0]
+                    llm_disease = llm_primary.get("disease", "")
+                    llm_conf = llm_primary.get("confidence", 0)
+
+                    if llm_disease and llm_conf > final_confidence:
+                        diagnosis_result["final_disease"] = llm_disease
+                        diagnosis_result["final_confidence"] = llm_conf
+                        diagnosis_result["diagnosis_source"] = f"rag_llm_{llm_source.lower()}"
+                        diagnosis_result["alternatives"] = diff_result["diagnoses"][1:5]
+
+                if diff_text and len(diff_text.strip()) > 20:
+                    llm_reasoning = diff_text
+
+            # 2. Fallback: standard differential (no RAG)
+            elif hasattr(llm, 'reason_differential'):
+                diff_result = llm.reason_differential(symptoms_text, context)
+                diff_text = diff_result.get("reasoning", "")
+
+                if diff_result.get("diagnoses") and confidence_level == "low":
+                    llm_primary = diff_result["diagnoses"][0]
+                    llm_disease = llm_primary.get("disease", "")
+                    llm_conf = llm_primary.get("confidence", 0)
+                    if llm_disease and llm_conf > final_confidence:
+                        diagnosis_result["final_disease"] = llm_disease
+                        diagnosis_result["final_confidence"] = llm_conf
+                        diagnosis_result["diagnosis_source"] = f"llm_{llm_source.lower()}"
+                        diagnosis_result["alternatives"] = diff_result["diagnoses"][1:5]
+
+                if diff_text and len(diff_text.strip()) > 20:
+                    llm_reasoning = diff_text
+
+            # 3. RAG-augmented treatment reasoning
+            if rag_context and hasattr(llm, 'reason_treatment_with_rag'):
+                severity = self._determine_severity(state)
+                treat_result = llm.reason_treatment_with_rag(
+                    disease=diagnosis_result.get("final_disease", final_disease),
+                    severity=severity,
+                    patient_context=context,
+                    rag_context=rag_context,
+                )
+                treat_text = treat_result.get("reasoning", "")
+                if treat_text and len(treat_text.strip()) > 20:
+                    if llm_reasoning:
+                        llm_reasoning = f"{llm_reasoning}\n\n--- Treatment Plan ---\n{treat_text}"
+                    else:
+                        llm_reasoning = treat_text
+
+            # 4. Fallback: standard treatment (no RAG)
+            elif hasattr(llm, 'reason_treatment'):
+                severity = self._determine_severity(state)
+                treat_result = llm.reason_treatment(
+                    disease=diagnosis_result.get("final_disease", final_disease),
+                    severity=severity,
+                    patient_context=context,
+                )
+                treat_text = treat_result.get("reasoning", "")
+                if treat_text and len(treat_text.strip()) > 20:
+                    if llm_reasoning:
+                        llm_reasoning = f"{llm_reasoning}\n\n--- Treatment Plan ---\n{treat_text}"
+                    else:
+                        llm_reasoning = treat_text
+
+        except Exception as e:
+            print(f"  [Supervisor] LLM+RAG enrichment error (non-fatal): {e}")
+            import traceback
+            traceback.print_exc()
+            llm_reasoning = ""
+
+        diagnosis_result["llm_reasoning"] = llm_reasoning
+        diagnosis_result["llm_source"] = (
+            f"RAG+{llm_source}" if (llm_reasoning and rag_context)
+            else (llm_source if llm_reasoning else "none")
+        )
+
+        return diagnosis_result
 
     def __repr__(self):
         return "SupervisorAgent()"

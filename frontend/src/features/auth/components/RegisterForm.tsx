@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { User, Mail, Lock, Eye, EyeOff, Loader2, AlertCircle, Activity, Stethoscope } from 'lucide-react';
+import { User, Mail, Lock, Eye, EyeOff, Loader2, AlertCircle, Activity, Stethoscope, Calendar, Users } from 'lucide-react';
 import { useAuth, UserRole } from '../../../context/auth-context';
 import { AuthService } from '../services/auth-service';
 import { RegisterPayload, FormErrors } from '../types';
@@ -17,7 +17,9 @@ export const RegisterForm: React.FC = () => {
     email: '',
     password: '',
     confirmPassword: '',
-    role: 'patient', // Default role selection
+    role: 'patient',
+    date_of_birth: '',
+    gender: '',
   });
 
   // Password Visibility Toggle
@@ -29,7 +31,7 @@ export const RegisterForm: React.FC = () => {
   const [apiError, setApiError] = useState<string | null>(null);
 
   // Field change handler
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     
@@ -46,6 +48,19 @@ export const RegisterForm: React.FC = () => {
     if (errors.role) {
       setErrors((prev) => ({ ...prev, role: undefined }));
     }
+  };
+
+  // Calculate age from DOB for display
+  const getAgeFromDob = (dob: string): number | null => {
+    if (!dob) return null;
+    const birthDate = new Date(dob);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age >= 0 ? age : null;
   };
 
   // Basic Form Validation
@@ -77,6 +92,14 @@ export const RegisterForm: React.FC = () => {
       newErrors.role = 'Please specify your platform role';
     }
 
+    // DOB validation (optional but if provided must be valid)
+    if (formData.role === 'patient' && formData.date_of_birth) {
+      const age = getAgeFromDob(formData.date_of_birth);
+      if (age === null || age < 0 || age > 120) {
+        newErrors.date_of_birth = 'Please enter a valid date of birth';
+      }
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -90,8 +113,10 @@ export const RegisterForm: React.FC = () => {
 
     setIsLoading(true);
     try {
-      // Simulate API registration
-      const response = await AuthService.register(formData);
+      const response = await AuthService.register({
+        ...formData,
+        date_of_birth: formData.date_of_birth || undefined,
+      });
       
       // Auto-login after registration
       login(response.access_token, response.user);
@@ -107,6 +132,9 @@ export const RegisterForm: React.FC = () => {
       setIsLoading(false);
     }
   };
+
+  const isPatientRole = formData.role === 'patient';
+  const calculatedAge = formData.date_of_birth ? getAgeFromDob(formData.date_of_birth) : null;
 
   return (
     <div className="space-y-6">
@@ -228,6 +256,66 @@ export const RegisterForm: React.FC = () => {
             </motion.p>
           )}
         </div>
+
+        {/* Date of Birth & Gender Row — only for patients */}
+        {isPatientRole && (
+          <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-1.5">
+              <label htmlFor="date_of_birth" className="text-xs font-semibold text-slate-900">
+                Date of Birth
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                  <Calendar className="w-4 h-4" />
+                </div>
+                <input
+                  id="date_of_birth"
+                  name="date_of_birth"
+                  type="date"
+                  max={new Date().toISOString().split('T')[0]}
+                  value={formData.date_of_birth ?? ''}
+                  onChange={handleChange}
+                  disabled={isLoading}
+                  className={`w-full pl-10 pr-4 py-2.5 bg-card border rounded-xl text-sm transition-all focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary ${
+                    errors.date_of_birth 
+                      ? 'border-danger focus:ring-danger/20 focus:border-danger' 
+                      : 'border-border'
+                  }`}
+                />
+              </div>
+              {calculatedAge !== null && (
+                <p className="text-[10px] text-secondary font-semibold">Age: {calculatedAge} years</p>
+              )}
+              {errors.date_of_birth && (
+                <p className="text-xs font-medium text-danger">{errors.date_of_birth}</p>
+              )}
+            </div>
+
+            <div className="space-y-1.5">
+              <label htmlFor="gender" className="text-xs font-semibold text-slate-900">
+                Gender
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                  <Users className="w-4 h-4" />
+                </div>
+                <select
+                  id="gender"
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleChange}
+                  disabled={isLoading}
+                  className="w-full pl-10 pr-4 py-2.5 bg-card border border-border rounded-xl text-sm transition-all focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary"
+                >
+                  <option value="">Select</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Email Input */}
         <div className="space-y-1.5">

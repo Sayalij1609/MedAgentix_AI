@@ -25,38 +25,39 @@ class DiagnosisService:
 
         vitals = data.get("vitals")
         if not vitals or not isinstance(vitals, dict):
-            raise ValueError("vitals is required and must be a dictionary.")
+            # Vitals are optional — patients may not have measurement devices
+            return
 
-        # Heart Rate check
+        # Heart Rate check (optional)
         hr = vitals.get("heart_rate")
-        if hr is not None and (not isinstance(hr, int) or not (30 <= hr <= 220)):
-            raise ValueError("vitals.heart_rate must be an integer between 30 and 220 bpm.")
+        if hr is not None and hr != '' and (not isinstance(hr, (int, float)) or not (30 <= int(hr) <= 220)):
+            raise ValueError("vitals.heart_rate must be between 30 and 220 bpm.")
 
-        # Oxygen Level check
+        # Oxygen Level check (optional)
         spo2 = vitals.get("oxygen_level")
-        if spo2 is not None and (not isinstance(spo2, int) or not (50 <= spo2 <= 100)):
-            raise ValueError("vitals.oxygen_level must be an integer between 50 and 100%.")
+        if spo2 is not None and spo2 != '' and (not isinstance(spo2, (int, float)) or not (50 <= int(spo2) <= 100)):
+            raise ValueError("vitals.oxygen_level must be between 50 and 100%.")
 
-        # Systolic BP check
+        # Systolic BP check (optional)
         sys_bp = vitals.get("systolic_bp")
-        if sys_bp is not None and (not isinstance(sys_bp, int) or not (50 <= sys_bp <= 250)):
-            raise ValueError("vitals.systolic_bp must be an integer between 50 and 250 mmHg.")
+        if sys_bp is not None and sys_bp != '' and (not isinstance(sys_bp, (int, float)) or not (50 <= int(sys_bp) <= 250)):
+            raise ValueError("vitals.systolic_bp must be between 50 and 250 mmHg.")
 
-        # Diastolic BP check
+        # Diastolic BP check (optional)
         dia_bp = vitals.get("diastolic_bp")
-        if dia_bp is not None and (not isinstance(dia_bp, int) or not (30 <= dia_bp <= 150)):
-            raise ValueError("vitals.diastolic_bp must be an integer between 30 and 150 mmHg.")
+        if dia_bp is not None and dia_bp != '' and (not isinstance(dia_bp, (int, float)) or not (30 <= int(dia_bp) <= 150)):
+            raise ValueError("vitals.diastolic_bp must be between 30 and 150 mmHg.")
 
-        # Temperature check
+        # Temperature check (optional)
         temp = vitals.get("temperature")
-        if temp is not None:
+        if temp is not None and temp != '':
             if not isinstance(temp, (int, float)) or not (80.0 <= float(temp) <= 115.0):
-                raise ValueError("vitals.temperature must be a float between 80.0 and 115.0 F.")
+                raise ValueError("vitals.temperature must be between 80.0 and 115.0 F.")
 
-        # Cholesterol check
+        # Cholesterol check (optional)
         chol = vitals.get("cholesterol")
-        if chol is not None and (not isinstance(chol, int) or not (50 <= chol <= 600)):
-            raise ValueError("vitals.cholesterol must be an integer between 50 and 600 mg/dL.")
+        if chol is not None and chol != '' and (not isinstance(chol, (int, float)) or not (50 <= int(chol) <= 600)):
+            raise ValueError("vitals.cholesterol must be between 50 and 600 mg/dL.")
 
     @classmethod
     def run_diagnostics(cls, patient_id: int, data: dict) -> dict:
@@ -75,7 +76,10 @@ class DiagnosisService:
             cls.validate_intake_payload(data)
 
             # 2. Extract inputs & build translation adapter
-            vitals_input = data["vitals"]
+            vitals_input = data.get("vitals") or {}
+            # Filter out empty string values from frontend (optional fields left blank)
+            vitals_input = {k: v for k, v in vitals_input.items() if v is not None and v != ''}
+            
             # Convert split systolic/diastolic to reading string for compatibility
             sys_bp = vitals_input.get("systolic_bp", 120)
             dia_bp = vitals_input.get("diastolic_bp", 80)
@@ -91,12 +95,14 @@ class DiagnosisService:
             else:
                 bp_category = "Normal"
 
+            # vitals_store: ONLY store what the patient actually entered (no defaults)
+            # This is what gets saved to the DB and shown on the dashboard
             vitals_store = {
-                "heart_rate": vitals_input.get("heart_rate", 80),
-                "oxygen_level": vitals_input.get("oxygen_level", 98),
-                "bp_reading": bp_reading,
-                "temperature": float(vitals_input.get("temperature", 98.6)),
-                "cholesterol": vitals_input.get("cholesterol", 180)
+                "heart_rate": vitals_input.get("heart_rate") if "heart_rate" in vitals_input else None,
+                "oxygen_level": vitals_input.get("oxygen_level") if "oxygen_level" in vitals_input else None,
+                "bp_reading": bp_reading if ("systolic_bp" in vitals_input or "diastolic_bp" in vitals_input) else None,
+                "temperature": float(vitals_input["temperature"]) if "temperature" in vitals_input else None,
+                "cholesterol": vitals_input.get("cholesterol") if "cholesterol" in vitals_input else None
             }
 
             symptoms_store = {
@@ -119,6 +125,7 @@ class DiagnosisService:
 
             pipeline_inputs = {
                 "patient_text": data["chief_complaint"],
+                "selected_symptoms": data.get("selected_symptoms", []),
                 "patient_age": int(data.get("age", 40)),
                 "patient_gender": data.get("gender", "Male"),
                 "blood_pressure": bp_category,
@@ -185,14 +192,14 @@ class DiagnosisService:
                 }]
             for drug in drugs_list:
                 recommended_drugs.append({
-                    "name": drug.get("name", "Prescribed drug"),
+                    "name": drug.get("drug", drug.get("name", "Prescribed drug")),
                     "dosage": drug.get("dosage", "As directed by physician"),
-                    "purpose": drug.get("purpose", "Treatment"),
+                    "purpose": drug.get("purpose", f"For treating {disease_name}"),
                     "route": drug.get("route", "Oral"),
-                    "class": drug.get("class", "Therapeutic"),
+                    "class": drug.get("category", drug.get("class", "Therapeutic")),
                     "adr": drug.get("side_effects", drug.get("adr", "None reported")),
                     "ci": drug.get("contraindications", drug.get("ci", "None reported")),
-                    "precaution": drug.get("precautions", drug.get("precaution", "None reported"))
+                    "precaution": drug.get("precaution", drug.get("precautions", "None reported"))
                 })
 
             # Mapped tests
@@ -208,10 +215,10 @@ class DiagnosisService:
                 }]
             for test in tests_list:
                 recommended_tests.append({
-                    "name": test.get("name", "Clinical Test"),
+                    "name": test.get("test", test.get("name", "Clinical Test")),
                     "priority": test.get("priority", "Primary"),
-                    "department": test.get("department", "Diagnostics"),
-                    "indication": test.get("indication", "Further assessment")
+                    "department": test.get("category", test.get("department", "Diagnostics")),
+                    "indication": test.get("reason", test.get("why", test.get("indication", "Further assessment")))
                 })
 
             # Format emergency status block

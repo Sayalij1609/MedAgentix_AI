@@ -20,9 +20,10 @@ export const AuthService = {
         user: {
           user_id: String(user.id),
           email: user.email,
-          role: user.role, // matches lowercase standardized role ('patient' | 'doctor' | 'admin')
+          role: user.role,
           name: user.name,
-          // Assign mock profile IDs if profile relation data is not returned yet
+          date_of_birth: user.date_of_birth || undefined,
+          gender: user.gender || undefined,
           profile_id: user.role === 'doctor' ? 101 : 202,
         },
       };
@@ -45,6 +46,8 @@ export const AuthService = {
         email: payload.email,
         password: payload.password,
         role: payload.role,
+        date_of_birth: payload.date_of_birth || undefined,
+        gender: payload.gender || undefined,
       });
 
       // 2. Perform automatic login to fetch session token and payload

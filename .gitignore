@@ -12,7 +12,7 @@ models/symptom_model/ner/
 models/symptom_model/severity/
 models/symptom_model/normalizer/
 models/trained/
-
+models/llm
 # HuggingFace cache
 .cache/
 

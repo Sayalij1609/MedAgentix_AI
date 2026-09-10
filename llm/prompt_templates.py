@@ -53,6 +53,51 @@ DIAGNOSIS: <disease name> | CONFIDENCE: <number>% | REASONING: <one-line explana
 ### Response:
 """
 
+MEDITRON_RAG_DIFFERENTIAL_PROMPT = """### Instruction:
+You are a senior physician with access to a medical knowledge base.
+A patient presents with: {symptoms}
+Patient context: {context}
+Preliminary ML diagnosis: {ml_diagnosis} (confidence: {ml_confidence}%)
+
+=== MEDICAL KNOWLEDGE BASE REFERENCES ===
+{rag_context}
+=== END REFERENCES ===
+
+Using the medical references above AND your clinical knowledge:
+1. Evaluate whether the ML diagnosis is correct given the symptoms
+2. Provide a ranked differential diagnosis (top 5 most likely conditions)
+3. Include specific treatment recommendations and diagnostic tests
+
+Format each diagnosis EXACTLY as:
+DIAGNOSIS: <disease name> | CONFIDENCE: <number>% | REASONING: <one-line explanation>
+
+After the diagnoses, provide a brief CLINICAL SUMMARY paragraph.
+
+### Response:
+"""
+
+MEDITRON_RAG_TREATMENT_PROMPT = """### Instruction:
+You are a treatment planning specialist with access to a medical knowledge base.
+Diagnosis: {disease}
+Severity: {severity}
+Patient context: {context}
+
+=== MEDICAL KNOWLEDGE BASE REFERENCES ===
+{rag_context}
+=== END REFERENCES ===
+
+Using the medical references above, recommend:
+1. Diagnostic tests (to confirm diagnosis)
+2. Medications (with dosage guidance if available)
+3. Lifestyle/dietary advice
+4. Warning signs that require emergency care
+
+Format your response EXACTLY as:
+TESTS: <comma-separated> | MEDICATIONS: <comma-separated> | REASONING: <detailed clinical explanation>
+
+### Response:
+TESTS:"""
+
 MEDITRON_RISK_PROMPT = """### Instruction:
 You are a clinical risk assessment specialist.
 Candidate diagnosis: {disease}

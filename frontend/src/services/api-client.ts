@@ -5,7 +5,7 @@ const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 30000, // 30 seconds default
+  timeout: 180000, // 3 minutes default (Meditron LLM needs time)
 });
 
 // Request Interceptor: Attach JWT Bearer Tokens automatically

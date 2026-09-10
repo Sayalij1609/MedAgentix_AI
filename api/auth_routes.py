@@ -33,6 +33,9 @@ def register():
     email = data.get('email')
     password = data.get('password')
     role = data.get('role', 'patient')
+    age = data.get('age')  # Optional: patient age
+    date_of_birth = data.get('date_of_birth')  # Optional: YYYY-MM-DD
+    gender = data.get('gender')  # Optional: Male / Female / Other
 
     # 1. Presence Validation
     if not name or not email or not password:
@@ -63,7 +66,8 @@ def register():
         }), 403
 
     try:
-        user = register_user(name=name, email=email, password=password, role=role)
+        user = register_user(name=name, email=email, password=password, role=role,
+                             date_of_birth=date_of_birth, gender=gender)
         return jsonify({
             "success": True,
             "message": "User registered successfully",

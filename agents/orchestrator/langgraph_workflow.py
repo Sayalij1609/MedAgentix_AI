@@ -201,14 +201,11 @@ SYMPTOM_TO_FEATURE = {
     "shortness of breath": "difficulty_breathing",
     "high fever": "fever",
     "mild fever": "fever",
-    "abdominal pain": "vomiting",     # proxy for GI symptoms
     "joint pain": "body_pain",        # proxy for musculoskeletal
     "back pain": "body_pain",         # proxy for pain
     "sore throat": "cough",           # proxy for respiratory
     "runny nose": "cough",            # proxy for respiratory
     "nasal congestion": "cough",      # proxy for respiratory
-    "diarrhea": "vomiting",           # proxy for GI
-    "constipation": "vomiting",       # proxy for GI
     "dizziness": "headache",          # proxy for neurological
     "blurred vision": "headache",     # proxy for neurological
     "weight loss": "fatigue",         # proxy for systemic
@@ -219,6 +216,34 @@ SYMPTOM_TO_FEATURE = {
     "leg swelling": "chest_pain",     # proxy for cardiac
     "seizure": "headache",            # proxy for neurological
     "confusion": "headache",          # proxy for neurological
+
+    # ---- GI SYMPTOMS (expanded) ----
+    "abdominal pain": "vomiting",     # proxy for GI
+    "stomach pain": "vomiting",       # proxy for GI
+    "stomach cramps": "vomiting",     # proxy for GI
+    "stomach cramp": "vomiting",      # proxy for GI
+    "belly pain": "vomiting",         # proxy for GI
+    "diarrhea": "vomiting",           # proxy for GI
+    "diarrhoea": "vomiting",          # proxy for GI
+    "loose motions": "vomiting",      # proxy for GI
+    "loose stools": "vomiting",       # proxy for GI
+    "loose motion": "vomiting",       # proxy for GI
+    "watery stool": "vomiting",       # proxy for GI
+    "constipation": "vomiting",       # proxy for GI
+    "bloating": "vomiting",           # proxy for GI
+    "indigestion": "vomiting",        # proxy for GI
+    "acid reflux": "vomiting",        # proxy for GI
+    "heartburn": "vomiting",          # proxy for GI
+
+    # ---- WEAKNESS / FATIGUE (expanded) ----
+    "weakness": "fatigue",            # proxy for systemic
+    "weak": "fatigue",                # proxy for systemic
+    "dehydrated": "fatigue",          # proxy for systemic
+    "dehydration": "fatigue",         # proxy for systemic
+    "lethargy": "fatigue",            # proxy for systemic
+    "malaise": "fatigue",             # proxy for systemic
+    "tiredness": "fatigue",           # proxy for systemic
+    "exhaustion": "fatigue",          # proxy for systemic
 }
 
 
@@ -226,24 +251,126 @@ SYMPTOM_TO_FEATURE = {
 # NODE FUNCTIONS
 # ============================================================
 def node_symptom(state: DiagnosticState) -> dict:
-    """Node 1: Extract symptoms from patient text."""
+    """
+    Node 1: Extract symptoms using 3-tier strategy:
+      1. UI-selected symptoms (highest trust — user explicitly selected)
+      2. Keyword text parser (reliable — exact phrase matching on chief complaint)
+      3. ClinicalBERT NLP (supplement only — can hallucinate)
+    """
     agent = _agents.get("symptom")
     log = state.get("pipeline_log", [])
     errors = state.get("errors", [])
 
-    if not agent:
-        errors.append("Symptom Agent not loaded — skipping")
-        log.append("[1/8] Symptom Agent — SKIPPED (not loaded)")
-        return {"symptom_result": {}, "errors": errors, "pipeline_log": log}
+    merged_symptoms = []
+    seen_names = set()
 
-    try:
-        result = agent.analyze(state.get("patient_text", ""))
-        log.append(f"[1/8] Symptom Agent — {result.get('symptom_count', 0)} symptoms extracted")
-        return {"symptom_result": result, "pipeline_log": log}
-    except Exception as e:
-        errors.append(f"Symptom Agent error: {str(e)}")
-        log.append(f"[1/8] Symptom Agent — ERROR: {str(e)}")
-        return {"symptom_result": {}, "errors": errors, "pipeline_log": log}
+    def _add_symptom(name, source, confidence=1.0):
+        """Helper to add a symptom if not already seen."""
+        if name and name.lower() not in seen_names:
+            seen_names.add(name.lower())
+            merged_symptoms.append({
+                "raw_text": name,
+                "canonical_name": name,
+                "confidence": confidence,
+                "source": source,
+            })
+
+    # --- TIER 1: UI-selected symptoms (highest trust) ---
+    ui_symptoms = state.get("selected_symptoms", [])
+    for s in ui_symptoms:
+        name = s.get("name", "")
+        _add_symptom(name, "user_selected", 1.0)
+
+    ui_count = len(merged_symptoms)
+
+    # --- TIER 2: Keyword text parser (reliable) ---
+    text = state.get("patient_text", "").lower()
+    TEXT_KEYWORDS = {
+        "fever": "Fever", "high fever": "Fever", "mild fever": "Fever",
+        "cough": "Cough", "coughing": "Cough",
+        "fatigue": "Fatigue", "tired": "Fatigue", "exhausted": "Fatigue",
+        "headache": "Headache", "head pain": "Headache",
+        "vomiting": "Vomiting", "vomited": "Vomiting", "vomit": "Vomiting",
+        "nausea": "Nausea", "nauseous": "Nausea", "nauseated": "Nausea",
+        "chest pain": "Chest Pain", "chest tightness": "Chest Pain",
+        "body pain": "Body Pain", "body ache": "Body Pain",
+        "muscle pain": "Muscle Pain",
+        "joint pain": "Joint Pain",
+        "rash": "Rash", "skin rash": "Rash",
+        "itching": "Itching", "itchy": "Itching",
+        "breathlessness": "Difficulty Breathing",
+        "difficulty breathing": "Difficulty Breathing",
+        "shortness of breath": "Difficulty Breathing",
+        "chills": "Chills",
+        "sweating": "Sweating",
+        "weight loss": "Weight Loss",
+        "dizziness": "Dizziness", "dizzy": "Dizziness",
+        "back pain": "Back Pain",
+        "stomach pain": "Stomach Pain", "stomach cramps": "Stomach Cramps",
+        "stomach cramp": "Stomach Cramps",
+        "abdominal pain": "Abdominal Pain",
+        "belly pain": "Abdominal Pain",
+        "constipation": "Constipation",
+        "diarrhea": "Diarrhea", "diarrhoea": "Diarrhea",
+        "loose motions": "Diarrhea", "loose motion": "Diarrhea",
+        "loose stools": "Diarrhea", "watery stool": "Diarrhea",
+        "bloating": "Bloating",
+        "indigestion": "Indigestion",
+        "acid reflux": "Acid Reflux", "heartburn": "Acid Reflux",
+        "runny nose": "Runny Nose",
+        "sneezing": "Sneezing",
+        "blurred vision": "Blurred Vision",
+        "dark urine": "Dark Urine",
+        "yellowing": "Yellowing of Eyes",
+        "swelling": "Swelling",
+        "neck pain": "Neck Pain",
+        "knee pain": "Knee Pain",
+        "weakness": "Weakness", "weak": "Weakness",
+        "dehydrated": "Dehydration", "dehydration": "Dehydration",
+        "loss of appetite": "Loss of Appetite", "no appetite": "Loss of Appetite",
+        "sore throat": "Sore Throat",
+        "palpitations": "Palpitations",
+        "wheezing": "Wheezing",
+        "seizure": "Seizure", "seizures": "Seizure",
+        "confusion": "Confusion",
+    }
+    # Match longer phrases first to avoid partial matches
+    sorted_keywords = sorted(TEXT_KEYWORDS.keys(), key=len, reverse=True)
+    for phrase in sorted_keywords:
+        if phrase in text:
+            _add_symptom(TEXT_KEYWORDS[phrase], "text_parser", 0.95)
+
+    text_count = len(merged_symptoms) - ui_count
+
+    # --- TIER 3: ClinicalBERT NLP (supplement only) ---
+    nlp_count = 0
+    if agent:
+        try:
+            nlp_result = agent.analyze(state.get("patient_text", ""))
+            for sym in nlp_result.get("extracted_symptoms", []):
+                canonical = sym.get("canonical_name", sym.get("raw_text", ""))
+                conf = sym.get("confidence", 0)
+                # Only add NLP symptoms with decent confidence that aren't already captured
+                if canonical and conf >= 0.7:
+                    _add_symptom(canonical, "nlp", conf)
+                    nlp_count += 1
+        except Exception as e:
+            errors.append(f"Symptom Agent NLP error: {str(e)}")
+
+    # Build merged result
+    result = {
+        "extracted_symptoms": merged_symptoms,
+        "symptom_count": len(merged_symptoms),
+        "nlp_symptom_count": nlp_count,
+        "ui_symptom_count": ui_count,
+        "text_symptom_count": text_count,
+    }
+
+    log.append(
+        f"[1/8] Symptom Agent — {result['symptom_count']} symptoms "
+        f"({ui_count} UI + {text_count} text + {nlp_count} NLP)"
+    )
+    return {"symptom_result": result, "pipeline_log": log, "errors": errors}
 
 
 def node_differential(state: DiagnosticState) -> dict:
@@ -307,11 +434,21 @@ def node_differential(state: DiagnosticState) -> dict:
                 "dizzy": "dizziness",
                 "back pain": "back_pain",
                 "stomach pain": "stomach_pain",
+                "stomach cramps": "stomach_pain",
+                "stomach cramp": "stomach_pain",
                 "abdominal pain": "abdominal_pain",
                 "belly pain": "belly_pain",
                 "constipation": "constipation",
                 "diarrhoea": "diarrhoea",
                 "diarrhea": "diarrhoea",
+                "loose motions": "diarrhoea",
+                "loose motion": "diarrhoea",
+                "loose stools": "diarrhoea",
+                "watery stool": "diarrhoea",
+                "bloating": "stomach_pain",
+                "indigestion": "stomach_pain",
+                "acid reflux": "acidity",
+                "heartburn": "acidity",
                 "runny nose": "continuous_sneezing",
                 "sneezing": "continuous_sneezing",
                 "blurred vision": "blurred_and_distorted_vision",
@@ -321,6 +458,11 @@ def node_differential(state: DiagnosticState) -> dict:
                 "neck pain": "neck_pain",
                 "knee pain": "knee_pain",
                 "weakness": "weakness_in_limbs",
+                "weak": "weakness_in_limbs",
+                "dehydrated": "dehydration",
+                "dehydration": "dehydration",
+                "loss of appetite": "loss_of_appetite",
+                "no appetite": "loss_of_appetite",
             }
 
             matched = set()
@@ -708,6 +850,7 @@ def run_pipeline(patient_input: dict) -> dict:
         "lifestyle_factors": [],
         "medical_history": [],
         "symptom_durations": [],
+        "selected_symptoms": [],
         "errors": [],
         "pipeline_log": [],
     }
