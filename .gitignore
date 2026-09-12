@@ -13,6 +13,10 @@ models/symptom_model/severity/
 models/symptom_model/normalizer/
 models/trained/
 models/llm
+models/prediction_engine/ensemble_model.pkl
+models/prediction_engine/label_encoder.pkl
+models/prediction_engine/scaler.pkl
+
 # HuggingFace cache
 .cache/
 
