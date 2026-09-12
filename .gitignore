@@ -12,20 +12,24 @@ models/symptom_model/ner/
 models/symptom_model/severity/
 models/symptom_model/normalizer/
 models/trained/
-models/llm
-models/prediction_engine/ensemble_model.pkl
-models/prediction_engine/label_encoder.pkl
-models/prediction_engine/scaler.pkl
+models/llm/
 
-# HuggingFace cache
-.cache/
-
-# Large binary files
+# Large binary + model files (GitHub 100MB limit)
 *.pkl
 *.safetensors
 *.bin
 *.pt
 *.pth
+*.onnx
+
+# Large model JSON/data files (>50MB)
+models/differential_model/xgboost_model.json
+models/differential_model/data/
+models/prediction_engine/
+models/recommendation_model/data/disease_drug_map.json
+
+# HuggingFace cache
+.cache/
 
 # Node dependencies
 node_modules/
@@ -38,6 +42,7 @@ frontend/dist/
 # Vite cache
 .vite/
 
+# Large data folders
 data/
 datasets/
 dataset/
