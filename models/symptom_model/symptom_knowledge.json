@@ -1,0 +1,4464 @@
+{
+  "abdominal distention": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: abdominal distention",
+    "associated_diseases": [
+      "cirrhosis"
+    ]
+  },
+  "abnormal appearing skin": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: abnormal appearing skin",
+    "associated_diseases": [
+      "fungal infection of the hair",
+      "eczema",
+      "pyogenic skin infection",
+      "seborrheic keratosis",
+      "skin polyp",
+      "skin disorder",
+      "actinic keratosis",
+      "allergy",
+      "stye",
+      "skin pigmentation disorder"
+    ]
+  },
+  "abnormal appearing tongue": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: abnormal appearing tongue",
+    "associated_diseases": []
+  },
+  "abnormal breathing sounds": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: abnormal breathing sounds",
+    "associated_diseases": [
+      "obstructive sleep apnea (osa)",
+      "eustachian tube dysfunction (ear disorder)",
+      "croup",
+      "deviated nasal septum",
+      "interstitial lung disease",
+      "tonsillitis",
+      "tonsillar hypertrophy",
+      "primary insomnia"
+    ]
+  },
+  "abnormal involuntary movements": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: abnormal involuntary movements",
+    "associated_diseases": [
+      "multiple sclerosis",
+      "hypoglycemia",
+      "obstructive sleep apnea (osa)",
+      "anxiety",
+      "peripheral nerve disorder",
+      "acute stress reaction",
+      "complex regional pain syndrome",
+      "panic disorder",
+      "bell palsy",
+      "alcohol withdrawal"
+    ]
+  },
+  "abnormal movement of eyelid": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: abnormal movement of eyelid",
+    "associated_diseases": [
+      "macular degeneration",
+      "dry eye of unknown cause",
+      "diabetic retinopathy",
+      "cataract",
+      "cranial nerve palsy",
+      "presbyopia",
+      "stenosis of the tear duct",
+      "tic (movement) disorder",
+      "cyst of the eyelid",
+      "blepharospasm"
+    ]
+  },
+  "abnormal size or shape of ear": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: abnormal size or shape of ear",
+    "associated_diseases": []
+  },
+  "absence of menstruation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: absence of menstruation",
+    "associated_diseases": [
+      "idiopathic absence of menstruation",
+      "polycystic ovarian syndrome (pcos)",
+      "endometrial cancer",
+      "menopause",
+      "premature ovarian failure"
+    ]
+  },
+  "abusing alcohol": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: abusing alcohol",
+    "associated_diseases": [
+      "marijuana abuse",
+      "acute pancreatitis",
+      "depression",
+      "smoking or tobacco addiction",
+      "conduct disorder",
+      "psychotic disorder",
+      "bipolar disorder",
+      "eating disorder",
+      "alcohol withdrawal",
+      "social phobia"
+    ]
+  },
+  "ache all over": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: ache all over",
+    "associated_diseases": [
+      "spondylosis",
+      "arthritis of the hip",
+      "strep throat",
+      "complex regional pain syndrome",
+      "sickle cell crisis",
+      "fracture of the rib",
+      "chronic pain disorder",
+      "rheumatoid arthritis",
+      "flu",
+      "fibromyalgia"
+    ]
+  },
+  "acne or pimples": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: acne or pimples",
+    "associated_diseases": [
+      "eczema",
+      "fungal infection of the hair",
+      "seborrheic dermatitis",
+      "skin polyp",
+      "fungal infection of the skin",
+      "contact dermatitis",
+      "sebaceous cyst",
+      "skin pigmentation disorder",
+      "seborrheic keratosis",
+      "molluscum contagiosum"
+    ]
+  },
+  "allergic reaction": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: allergic reaction",
+    "associated_diseases": [
+      "conjunctivitis due to allergy",
+      "eczema",
+      "contact dermatitis",
+      "drug reaction",
+      "allergy",
+      "asthma",
+      "seasonal allergies (hay fever)",
+      "eustachian tube dysfunction (ear disorder)",
+      "chronic otitis media",
+      "deviated nasal septum"
+    ]
+  },
+  "ankle pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: ankle pain",
+    "associated_diseases": [
+      "gout",
+      "injury to the leg",
+      "sprain or strain",
+      "osteoarthritis",
+      "tendinitis",
+      "mononeuritis",
+      "fracture of the leg",
+      "joint effusion",
+      "injury of the ankle",
+      "plantar fasciitis"
+    ]
+  },
+  "ankle stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: ankle stiffness or tightness",
+    "associated_diseases": []
+  },
+  "ankle swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: ankle swelling",
+    "associated_diseases": [
+      "injury to the leg",
+      "gout",
+      "fracture of the leg",
+      "joint effusion",
+      "plantar fasciitis",
+      "injury of the ankle",
+      "anemia due to chronic kidney disease",
+      "fracture of the ankle",
+      "dislocation of the ankle",
+      "fracture of the foot"
+    ]
+  },
+  "ankle weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: ankle weakness",
+    "associated_diseases": [
+      "fracture of the ankle"
+    ]
+  },
+  "antisocial behavior": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: antisocial behavior",
+    "associated_diseases": [
+      "developmental disability",
+      "alcohol withdrawal",
+      "drug abuse",
+      "attention deficit hyperactivity disorder (adhd)",
+      "autism",
+      "oppositional disorder",
+      "asperger syndrome"
+    ]
+  },
+  "anxiety and nervousness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: anxiety and nervousness",
+    "associated_diseases": [
+      "anxiety",
+      "marijuana abuse",
+      "acute stress reaction",
+      "panic disorder",
+      "depression",
+      "personality disorder",
+      "neurosis",
+      "schizophrenia",
+      "psychotic disorder",
+      "bipolar disorder"
+    ]
+  },
+  "apnea": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: apnea",
+    "associated_diseases": [
+      "obstructive sleep apnea (osa)",
+      "deviated nasal septum",
+      "pulmonary hypertension",
+      "tonsillar hypertrophy",
+      "restless leg syndrome",
+      "narcolepsy",
+      "hirsutism"
+    ]
+  },
+  "arm cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: arm cramps or spasms",
+    "associated_diseases": []
+  },
+  "arm lump or mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: arm lump or mass",
+    "associated_diseases": [
+      "sebaceous cyst",
+      "lipoma"
+    ]
+  },
+  "arm pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: arm pain",
+    "associated_diseases": [
+      "peripheral nerve disorder",
+      "spondylosis",
+      "sprain or strain",
+      "spinal stenosis",
+      "bursitis",
+      "complex regional pain syndrome",
+      "injury to the arm",
+      "herniated disk",
+      "sickle cell crisis",
+      "heart attack"
+    ]
+  },
+  "arm stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: arm stiffness or tightness",
+    "associated_diseases": [
+      "injury to the arm",
+      "bursitis",
+      "hemiplegia",
+      "injury to the shoulder",
+      "fracture of the arm",
+      "fracture of the shoulder",
+      "rotator cuff injury",
+      "fracture of the hand",
+      "dislocation of the elbow",
+      "extrapyramidal effect of drugs"
+    ]
+  },
+  "arm swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: arm swelling",
+    "associated_diseases": [
+      "bursitis",
+      "injury to the arm",
+      "envenomation from spider or animal bite",
+      "thrombophlebitis",
+      "cardiac arrest",
+      "fracture of the arm",
+      "deep vein thrombosis (dvt)",
+      "pancreatic cancer",
+      "kidney failure",
+      "osteomyelitis"
+    ]
+  },
+  "arm weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: arm weakness",
+    "associated_diseases": [
+      "peripheral nerve disorder",
+      "carpal tunnel syndrome",
+      "herniated disk"
+    ]
+  },
+  "back cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: back cramps or spasms",
+    "associated_diseases": [
+      "chronic back pain",
+      "sciatica",
+      "tension headache",
+      "uterine atony"
+    ]
+  },
+  "back mass or lump": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: back mass or lump",
+    "associated_diseases": [
+      "fracture of the rib",
+      "sebaceous cyst",
+      "lipoma",
+      "spondylitis"
+    ]
+  },
+  "back pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: back pain",
+    "associated_diseases": [
+      "complex regional pain syndrome",
+      "vulvodynia",
+      "spinal stenosis",
+      "spondylosis",
+      "cholecystitis",
+      "sprain or strain",
+      "peripheral nerve disorder",
+      "acute pancreatitis",
+      "concussion",
+      "arthritis of the hip"
+    ]
+  },
+  "back stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: back stiffness or tightness",
+    "associated_diseases": [
+      "chronic back pain"
+    ]
+  },
+  "back swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: back swelling",
+    "associated_diseases": []
+  },
+  "back weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: back weakness",
+    "associated_diseases": [
+      "thyroid nodule",
+      "dissociative disorder",
+      "endometrial hyperplasia",
+      "adrenal adenoma"
+    ]
+  },
+  "bedwetting": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bedwetting",
+    "associated_diseases": [
+      "bladder obstruction"
+    ]
+  },
+  "bladder mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bladder mass",
+    "associated_diseases": [
+      "bladder cancer"
+    ]
+  },
+  "bleeding from ear": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bleeding from ear",
+    "associated_diseases": [
+      "ear drum damage",
+      "injury to the face",
+      "open wound of the ear",
+      "foreign body in the ear"
+    ]
+  },
+  "bleeding from eye": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bleeding from eye",
+    "associated_diseases": [
+      "macular degeneration",
+      "subconjunctival hemorrhage"
+    ]
+  },
+  "bleeding gums": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bleeding gums",
+    "associated_diseases": [
+      "gum disease",
+      "tooth disorder",
+      "broken tooth",
+      "thrombocytopenia",
+      "hemophilia"
+    ]
+  },
+  "bleeding in mouth": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bleeding in mouth",
+    "associated_diseases": []
+  },
+  "bleeding or discharge from nipple": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bleeding or discharge from nipple",
+    "associated_diseases": [
+      "breast infection (mastitis)",
+      "fibroadenoma",
+      "fibrocystic breast disease",
+      "galactorrhea of unknown cause",
+      "breast cancer"
+    ]
+  },
+  "blindness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: blindness",
+    "associated_diseases": [
+      "macular degeneration",
+      "cataract",
+      "intracerebral hemorrhage",
+      "myopia",
+      "migraine",
+      "retinal detachment",
+      "cerebral palsy",
+      "acute glaucoma",
+      "central retinal artery or vein occlusion",
+      "vitreous hemorrhage"
+    ]
+  },
+  "blood clots during menstrual periods": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: blood clots during menstrual periods",
+    "associated_diseases": [
+      "vaginal cyst",
+      "spontaneous abortion",
+      "idiopathic excessive menstruation",
+      "idiopathic painful menstruation",
+      "threatened pregnancy",
+      "missed abortion"
+    ]
+  },
+  "blood in stool": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: blood in stool",
+    "associated_diseases": [
+      "gastrointestinal hemorrhage",
+      "liver disease",
+      "noninfectious gastroenteritis",
+      "infectious gastroenteritis",
+      "diverticulitis",
+      "chronic constipation",
+      "hemorrhoids",
+      "diaper rash",
+      "rectal disorder",
+      "gastroduodenal ulcer"
+    ]
+  },
+  "blood in urine": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: blood in urine",
+    "associated_diseases": [
+      "benign prostatic hyperplasia (bph)",
+      "cystitis",
+      "urinary tract infection",
+      "temporary or benign blood in urine",
+      "pyelonephritis",
+      "kidney stone",
+      "urinary tract obstruction",
+      "prostatitis",
+      "urge incontinence",
+      "pelvic organ prolapse"
+    ]
+  },
+  "bones are painful": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bones are painful",
+    "associated_diseases": [
+      "injury to the arm",
+      "lipoma",
+      "fracture of the rib",
+      "injury to the trunk",
+      "injury to the shoulder",
+      "pilonidal cyst",
+      "fracture of the vertebra",
+      "osteoporosis",
+      "osteomyelitis",
+      "bone disorder"
+    ]
+  },
+  "bowlegged or knock-kneed": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bowlegged or knock-kneed",
+    "associated_diseases": [
+      "osteochondrosis"
+    ]
+  },
+  "breathing fast": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: breathing fast",
+    "associated_diseases": [
+      "panic disorder"
+    ]
+  },
+  "bumps on penis": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: bumps on penis",
+    "associated_diseases": [
+      "viral warts",
+      "male genitalia infection",
+      "atrophy of the corpus cavernosum"
+    ]
+  },
+  "burning abdominal pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: burning abdominal pain",
+    "associated_diseases": [
+      "spontaneous abortion",
+      "acute pancreatitis",
+      "cholecystitis",
+      "infectious gastroenteritis",
+      "pelvic inflammatory disease",
+      "vulvodynia",
+      "noninfectious gastroenteritis",
+      "esophagitis",
+      "diverticulitis",
+      "appendicitis"
+    ]
+  },
+  "burning chest pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: burning chest pain",
+    "associated_diseases": [
+      "heart attack",
+      "venous insufficiency",
+      "coronary atherosclerosis"
+    ]
+  },
+  "change in skin mole size or color": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: change in skin mole size or color",
+    "associated_diseases": []
+  },
+  "changes in stool appearance": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: changes in stool appearance",
+    "associated_diseases": [
+      "gastrointestinal hemorrhage",
+      "gastroduodenal ulcer",
+      "chronic constipation",
+      "hemorrhoids",
+      "anemia",
+      "anal fissure",
+      "neonatal jaundice"
+    ]
+  },
+  "chest tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: chest tightness",
+    "associated_diseases": [
+      "esophagitis",
+      "sinus bradycardia",
+      "ischemic heart disease",
+      "panic disorder",
+      "angina",
+      "heart failure",
+      "hypertensive heart disease",
+      "acute bronchospasm",
+      "asthma",
+      "heart attack"
+    ]
+  },
+  "chills": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: chills",
+    "associated_diseases": [
+      "strep throat",
+      "diverticulitis",
+      "infectious gastroenteritis",
+      "common cold",
+      "noninfectious gastroenteritis",
+      "pneumonia",
+      "sepsis",
+      "prostatitis",
+      "flu",
+      "white blood cell disease"
+    ]
+  },
+  "cloudy eye": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: cloudy eye",
+    "associated_diseases": [
+      "cataract",
+      "iridocyclitis"
+    ]
+  },
+  "congestion in chest": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: congestion in chest",
+    "associated_diseases": [
+      "acute bronchitis",
+      "chronic obstructive pulmonary disease (copd)",
+      "chronic sinusitis",
+      "tuberculosis"
+    ]
+  },
+  "constipation": {
+    "severity_weight": 4,
+    "description": "Clinical symptom: constipation",
+    "associated_diseases": [
+      "diverticulitis",
+      "hemorrhoids",
+      "rectal disorder",
+      "chronic constipation",
+      "oral thrush (yeast infection)",
+      "urge incontinence",
+      "autism",
+      "ileus",
+      "intestinal obstruction",
+      "ischemia of the bowel"
+    ]
+  },
+  "coryza": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: coryza",
+    "associated_diseases": [
+      "acute bronchitis",
+      "pneumonia",
+      "nose disorder",
+      "acute bronchiolitis",
+      "chronic obstructive pulmonary disease (copd)",
+      "otitis media",
+      "acute sinusitis",
+      "conjunctivitis",
+      "asthma",
+      "common cold"
+    ]
+  },
+  "cough": {
+    "severity_weight": 4,
+    "description": "Clinical symptom: cough",
+    "associated_diseases": [
+      "pneumonia",
+      "heart failure",
+      "acute bronchitis",
+      "acute bronchiolitis",
+      "nose disorder",
+      "esophagitis",
+      "eczema",
+      "strep throat",
+      "conjunctivitis due to allergy",
+      "acute bronchospasm"
+    ]
+  },
+  "coughing up sputum": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: coughing up sputum",
+    "associated_diseases": [
+      "acute bronchitis",
+      "asthma",
+      "chronic obstructive pulmonary disease (copd)",
+      "smoking or tobacco addiction",
+      "acute sinusitis",
+      "myasthenia gravis"
+    ]
+  },
+  "cramps and spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: cramps and spasms",
+    "associated_diseases": [
+      "idiopathic irregular menstrual cycle",
+      "vaginal cyst",
+      "spontaneous abortion",
+      "vulvodynia",
+      "idiopathic painful menstruation",
+      "idiopathic excessive menstruation",
+      "threatened pregnancy",
+      "problem during pregnancy",
+      "rectal disorder",
+      "uterine fibroids"
+    ]
+  },
+  "cross-eyed": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: cross-eyed",
+    "associated_diseases": [
+      "eye alignment disorder",
+      "amblyopia",
+      "allergy to animals",
+      "cryptococcosis",
+      "edward syndrome"
+    ]
+  },
+  "decreased appetite": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: decreased appetite",
+    "associated_diseases": [
+      "infectious gastroenteritis",
+      "noninfectious gastroenteritis",
+      "acute bronchiolitis",
+      "strep throat",
+      "appendicitis",
+      "hypoglycemia",
+      "diabetic ketoacidosis",
+      "sepsis",
+      "choledocholithiasis",
+      "viral exanthem"
+    ]
+  },
+  "decreased heart rate": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: decreased heart rate",
+    "associated_diseases": [
+      "sinus bradycardia",
+      "hyperkalemia",
+      "paroxysmal ventricular tachycardia",
+      "pulmonary congestion",
+      "cardiac arrest",
+      "cardiomyopathy",
+      "sick sinus syndrome",
+      "atrial fibrillation"
+    ]
+  },
+  "delusions or hallucinations": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: delusions or hallucinations",
+    "associated_diseases": [
+      "marijuana abuse",
+      "personality disorder",
+      "depression",
+      "developmental disability",
+      "psychotic disorder",
+      "schizophrenia",
+      "neurosis",
+      "adjustment reaction",
+      "bipolar disorder",
+      "alcohol withdrawal"
+    ]
+  },
+  "depression": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: depression",
+    "associated_diseases": [
+      "anxiety",
+      "marijuana abuse",
+      "schizophrenia",
+      "psychotic disorder",
+      "acute stress reaction",
+      "panic disorder",
+      "personality disorder",
+      "neurosis",
+      "depression",
+      "bipolar disorder"
+    ]
+  },
+  "depressive or psychotic symptoms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: depressive or psychotic symptoms",
+    "associated_diseases": [
+      "anxiety",
+      "marijuana abuse",
+      "panic disorder",
+      "hypoglycemia",
+      "schizophrenia",
+      "hyperkalemia",
+      "psychotic disorder",
+      "depression",
+      "acute stress reaction",
+      "developmental disability"
+    ]
+  },
+  "diaper rash": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: diaper rash",
+    "associated_diseases": [
+      "diaper rash",
+      "yeast infection",
+      "balanitis"
+    ]
+  },
+  "diarrhea": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: diarrhea",
+    "associated_diseases": [
+      "noninfectious gastroenteritis",
+      "diverticulitis",
+      "infectious gastroenteritis",
+      "acute pancreatitis",
+      "gastrointestinal hemorrhage",
+      "liver disease",
+      "diaper rash",
+      "hyperemesis gravidarum",
+      "appendicitis",
+      "gastritis"
+    ]
+  },
+  "difficulty breathing": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: difficulty breathing",
+    "associated_diseases": [
+      "nose disorder",
+      "obstructive sleep apnea (osa)",
+      "acute bronchitis",
+      "acute bronchiolitis",
+      "pneumonia",
+      "asthma",
+      "hypertensive heart disease",
+      "acute bronchospasm",
+      "heart failure",
+      "sepsis"
+    ]
+  },
+  "difficulty eating": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: difficulty eating",
+    "associated_diseases": [
+      "eating disorder",
+      "broken tooth"
+    ]
+  },
+  "difficulty in swallowing": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: difficulty in swallowing",
+    "associated_diseases": [
+      "esophagitis",
+      "hiatal hernia",
+      "obstructive sleep apnea (osa)",
+      "strep throat",
+      "laryngitis",
+      "hyperkalemia",
+      "gastroesophageal reflux disease (gerd)",
+      "tonsillar hypertrophy",
+      "jaw disorder",
+      "mucositis"
+    ]
+  },
+  "difficulty speaking": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: difficulty speaking",
+    "associated_diseases": [
+      "marijuana abuse",
+      "concussion",
+      "developmental disability",
+      "laryngitis",
+      "transient ischemic attack",
+      "hemiplegia",
+      "stroke",
+      "conductive hearing loss",
+      "autism",
+      "delirium"
+    ]
+  },
+  "diminished hearing": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: diminished hearing",
+    "associated_diseases": [
+      "otitis media",
+      "acute otitis media",
+      "eustachian tube dysfunction (ear disorder)",
+      "otitis externa (swimmer's ear)",
+      "ear drum damage",
+      "labyrinthitis",
+      "injury to the face",
+      "sensorineural hearing loss",
+      "ear wax impaction",
+      "conductive hearing loss"
+    ]
+  },
+  "diminished vision": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: diminished vision",
+    "associated_diseases": [
+      "conjunctivitis due to allergy",
+      "cornea infection",
+      "blepharitis",
+      "intracerebral hemorrhage",
+      "chalazion",
+      "macular degeneration",
+      "dry eye of unknown cause",
+      "conjunctivitis due to virus",
+      "bell palsy",
+      "corneal disorder"
+    ]
+  },
+  "discharge in stools": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: discharge in stools",
+    "associated_diseases": []
+  },
+  "disturbance of memory": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: disturbance of memory",
+    "associated_diseases": [
+      "concussion",
+      "depression",
+      "peripheral nerve disorder",
+      "multiple sclerosis",
+      "transient ischemic attack",
+      "stroke",
+      "delirium",
+      "dysthymic disorder",
+      "parkinson disease",
+      "osteoporosis"
+    ]
+  },
+  "disturbance of smell or taste": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: disturbance of smell or taste",
+    "associated_diseases": []
+  },
+  "dizziness": {
+    "severity_weight": 4,
+    "description": "Clinical symptom: dizziness",
+    "associated_diseases": [
+      "hypoglycemia",
+      "concussion",
+      "peripheral nerve disorder",
+      "gastrointestinal hemorrhage",
+      "panic disorder",
+      "acute stress reaction",
+      "drug reaction",
+      "hiatal hernia",
+      "paroxysmal ventricular tachycardia",
+      "ischemic heart disease"
+    ]
+  },
+  "double vision": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: double vision",
+    "associated_diseases": [
+      "macular degeneration",
+      "concussion",
+      "corneal disorder",
+      "dry eye of unknown cause",
+      "cataract",
+      "vitreous degeneration",
+      "eye alignment disorder",
+      "retinal detachment",
+      "diabetic retinopathy",
+      "fracture of the facial bones"
+    ]
+  },
+  "drainage in throat": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: drainage in throat",
+    "associated_diseases": [
+      "poisoning due to gas",
+      "colorectal cancer"
+    ]
+  },
+  "drug abuse": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: drug abuse",
+    "associated_diseases": [
+      "marijuana abuse",
+      "depression",
+      "smoking or tobacco addiction",
+      "neurosis",
+      "personality disorder",
+      "postpartum depression",
+      "drug abuse (opioids)",
+      "drug abuse",
+      "attention deficit hyperactivity disorder (adhd)",
+      "post-traumatic stress disorder (ptsd)"
+    ]
+  },
+  "dry lips": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: dry lips",
+    "associated_diseases": [
+      "sickle cell anemia",
+      "broken tooth",
+      "open wound of the ear",
+      "open wound of the lip"
+    ]
+  },
+  "dry or flaky scalp": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: dry or flaky scalp",
+    "associated_diseases": [
+      "seborrheic dermatitis"
+    ]
+  },
+  "ear pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: ear pain",
+    "associated_diseases": [
+      "strep throat",
+      "nose disorder",
+      "dental caries",
+      "seasonal allergies (hay fever)",
+      "otitis externa (swimmer's ear)",
+      "otitis media",
+      "acute sinusitis",
+      "common cold",
+      "gum disease",
+      "eustachian tube dysfunction (ear disorder)"
+    ]
+  },
+  "early or late onset of menopause": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: early or late onset of menopause",
+    "associated_diseases": [
+      "osteoporosis"
+    ]
+  },
+  "elbow cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: elbow cramps or spasms",
+    "associated_diseases": []
+  },
+  "elbow lump or mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: elbow lump or mass",
+    "associated_diseases": []
+  },
+  "elbow pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: elbow pain",
+    "associated_diseases": [
+      "brachial neuritis",
+      "injury to the arm",
+      "bursitis",
+      "carpal tunnel syndrome",
+      "osteoarthritis",
+      "mononeuritis",
+      "ankylosing spondylitis",
+      "injury to the shoulder",
+      "fracture of the arm",
+      "joint effusion"
+    ]
+  },
+  "elbow stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: elbow stiffness or tightness",
+    "associated_diseases": []
+  },
+  "elbow swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: elbow swelling",
+    "associated_diseases": [
+      "bursitis",
+      "injury to the arm",
+      "rheumatoid arthritis",
+      "fracture of the arm",
+      "dislocation of the elbow"
+    ]
+  },
+  "elbow weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: elbow weakness",
+    "associated_diseases": [
+      "spermatocele",
+      "dislocation of the wrist",
+      "cysticercosis",
+      "dislocation of the vertebra",
+      "urethral valves",
+      "uveitis",
+      "dislocation of the foot",
+      "zenker diverticulum",
+      "frostbite",
+      "moyamoya disease"
+    ]
+  },
+  "emotional symptoms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: emotional symptoms",
+    "associated_diseases": [
+      "testicular torsion",
+      "carbon monoxide poisoning",
+      "atonic bladder",
+      "presbyacusis",
+      "acariasis",
+      "anemia of chronic disease",
+      "emphysema",
+      "trichiasis",
+      "dislocation of the ankle",
+      "foreign body in the vagina"
+    ]
+  },
+  "excessive anger": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: excessive anger",
+    "associated_diseases": [
+      "marijuana abuse",
+      "smoking or tobacco addiction",
+      "schizophrenia",
+      "depression",
+      "neurosis",
+      "personality disorder",
+      "psychotic disorder",
+      "social phobia",
+      "conduct disorder",
+      "dysthymic disorder"
+    ]
+  },
+  "excessive appetite": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: excessive appetite",
+    "associated_diseases": [
+      "social phobia",
+      "impulse control disorder"
+    ]
+  },
+  "excessive growth": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: excessive growth",
+    "associated_diseases": [
+      "hormone disorder"
+    ]
+  },
+  "excessive urination at night": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: excessive urination at night",
+    "associated_diseases": [
+      "benign prostatic hyperplasia (bph)",
+      "urinary tract obstruction",
+      "erectile dysfunction",
+      "urge incontinence",
+      "prostate cancer",
+      "bladder cancer",
+      "hypercholesterolemia"
+    ]
+  },
+  "eye burns or stings": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: eye burns or stings",
+    "associated_diseases": [
+      "blepharitis",
+      "conjunctivitis due to allergy",
+      "stye",
+      "cornea infection",
+      "chronic glaucoma",
+      "alzheimer disease",
+      "iridocyclitis",
+      "foreign body in the eye",
+      "aphakia"
+    ]
+  },
+  "eye deviation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: eye deviation",
+    "associated_diseases": [
+      "myopia",
+      "eye alignment disorder",
+      "astigmatism",
+      "hyperopia",
+      "amblyopia"
+    ]
+  },
+  "eye moves abnormally": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: eye moves abnormally",
+    "associated_diseases": [
+      "eye alignment disorder",
+      "myopia",
+      "spina bifida"
+    ]
+  },
+  "eye redness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: eye redness",
+    "associated_diseases": [
+      "conjunctivitis due to allergy",
+      "conjunctivitis",
+      "blepharitis",
+      "stye",
+      "dry eye of unknown cause",
+      "cornea infection",
+      "conjunctivitis due to virus",
+      "chalazion",
+      "corneal disorder",
+      "iridocyclitis"
+    ]
+  },
+  "eye strain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: eye strain",
+    "associated_diseases": []
+  },
+  "eyelid lesion or rash": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: eyelid lesion or rash",
+    "associated_diseases": [
+      "stye",
+      "trichiasis"
+    ]
+  },
+  "eyelid retracted": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: eyelid retracted",
+    "associated_diseases": []
+  },
+  "eyelid swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: eyelid swelling",
+    "associated_diseases": [
+      "stye",
+      "blepharitis",
+      "chalazion",
+      "corneal abrasion"
+    ]
+  },
+  "facial pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: facial pain",
+    "associated_diseases": [
+      "dental caries",
+      "nose disorder",
+      "concussion",
+      "acute sinusitis",
+      "deviated nasal septum",
+      "gum disease",
+      "otitis externa (swimmer's ear)",
+      "bell palsy",
+      "tooth disorder",
+      "chronic sinusitis"
+    ]
+  },
+  "fainting": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: fainting",
+    "associated_diseases": [
+      "hypoglycemia",
+      "gastrointestinal hemorrhage",
+      "heart attack",
+      "sinus bradycardia",
+      "paroxysmal ventricular tachycardia",
+      "alcohol withdrawal",
+      "hypovolemia",
+      "heart block",
+      "conduct disorder",
+      "benign paroxysmal positional vertical (bppv)"
+    ]
+  },
+  "fatigue": {
+    "severity_weight": 4,
+    "description": "Clinical symptom: fatigue",
+    "associated_diseases": [
+      "obstructive sleep apnea (osa)",
+      "multiple sclerosis",
+      "ischemic heart disease",
+      "acute stress reaction",
+      "hypertensive heart disease",
+      "iron deficiency anemia",
+      "paroxysmal ventricular tachycardia",
+      "white blood cell disease",
+      "mitral valve disease",
+      "pulmonary hypertension"
+    ]
+  },
+  "fears and phobias": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: fears and phobias",
+    "associated_diseases": [
+      "marijuana abuse",
+      "anxiety",
+      "developmental disability",
+      "psychotic disorder",
+      "schizophrenia",
+      "personality disorder",
+      "bipolar disorder",
+      "adjustment reaction",
+      "social phobia",
+      "drug abuse (cocaine)"
+    ]
+  },
+  "feeling cold": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: feeling cold",
+    "associated_diseases": [
+      "peripheral arterial disease",
+      "kidney disease due to longstanding hypertension",
+      "muscular dystrophy",
+      "chronic kidney disease"
+    ]
+  },
+  "feeling hot": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: feeling hot",
+    "associated_diseases": []
+  },
+  "feeling hot and cold": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: feeling hot and cold",
+    "associated_diseases": []
+  },
+  "feeling ill": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: feeling ill",
+    "associated_diseases": [
+      "hypoglycemia",
+      "sepsis",
+      "sinus bradycardia",
+      "obsessive compulsive disorder (ocd)",
+      "hyperkalemia",
+      "pulmonary hypertension",
+      "scleroderma",
+      "hepatitis due to a toxin",
+      "mononucleosis",
+      "hypovolemia"
+    ]
+  },
+  "feet turned in": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: feet turned in",
+    "associated_diseases": []
+  },
+  "fever": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: fever",
+    "associated_diseases": [
+      "acute bronchitis",
+      "acute bronchiolitis",
+      "strep throat",
+      "nose disorder",
+      "noninfectious gastroenteritis",
+      "diverticulitis",
+      "pneumonia",
+      "infectious gastroenteritis",
+      "otitis externa (swimmer's ear)",
+      "sepsis"
+    ]
+  },
+  "flatulence": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: flatulence",
+    "associated_diseases": [
+      "irritable bowel syndrome",
+      "colonic polyp",
+      "intestinal malabsorption",
+      "lactose intolerance",
+      "anemia due to malignancy",
+      "omphalitis",
+      "open wound from surgical incision"
+    ]
+  },
+  "flu-like syndrome": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: flu-like syndrome",
+    "associated_diseases": [
+      "infectious gastroenteritis",
+      "common cold"
+    ]
+  },
+  "fluid in ear": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: fluid in ear",
+    "associated_diseases": [
+      "ear wax impaction",
+      "otitis externa (swimmer's ear)",
+      "otitis media",
+      "ear drum damage",
+      "acute otitis media",
+      "sensorineural hearing loss",
+      "chronic otitis media",
+      "conductive hearing loss",
+      "open wound of the ear",
+      "foreign body in the ear"
+    ]
+  },
+  "fluid retention": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: fluid retention",
+    "associated_diseases": [
+      "allergy",
+      "infectious gastroenteritis",
+      "noninfectious gastroenteritis",
+      "heart failure",
+      "diabetic ketoacidosis",
+      "insect bite",
+      "itching of unknown cause",
+      "lymphedema",
+      "envenomation from spider or animal bite",
+      "fluid overload"
+    ]
+  },
+  "flushing": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: flushing",
+    "associated_diseases": [
+      "prostate cancer"
+    ]
+  },
+  "focal weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: focal weakness",
+    "associated_diseases": [
+      "transient ischemic attack",
+      "multiple sclerosis",
+      "parkinson disease",
+      "bell palsy",
+      "stroke",
+      "intracerebral hemorrhage",
+      "delirium",
+      "dementia",
+      "brain cancer",
+      "cerebral edema"
+    ]
+  },
+  "foot or toe cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: foot or toe cramps or spasms",
+    "associated_diseases": []
+  },
+  "foot or toe lump or mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: foot or toe lump or mass",
+    "associated_diseases": [
+      "bunion",
+      "open wound of the foot"
+    ]
+  },
+  "foot or toe pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: foot or toe pain",
+    "associated_diseases": [
+      "gout",
+      "complex regional pain syndrome",
+      "peripheral nerve disorder",
+      "sprain or strain",
+      "injury to the leg",
+      "pyogenic skin infection",
+      "ganglion cyst",
+      "mononeuritis",
+      "tendinitis",
+      "ingrown toe nail"
+    ]
+  },
+  "foot or toe stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: foot or toe stiffness or tightness",
+    "associated_diseases": [
+      "diabetic peripheral neuropathy",
+      "fracture of the foot"
+    ]
+  },
+  "foot or toe swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: foot or toe swelling",
+    "associated_diseases": [
+      "gout",
+      "injury to the leg",
+      "pyogenic skin infection",
+      "lymphedema",
+      "callus",
+      "ingrown toe nail",
+      "vasculitis",
+      "paronychia",
+      "envenomation from spider or animal bite",
+      "diabetic peripheral neuropathy"
+    ]
+  },
+  "foot or toe weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: foot or toe weakness",
+    "associated_diseases": [
+      "injury of the ankle",
+      "fracture of the foot"
+    ]
+  },
+  "foreign body sensation in eye": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: foreign body sensation in eye",
+    "associated_diseases": [
+      "dry eye of unknown cause",
+      "macular degeneration",
+      "cornea infection",
+      "chalazion",
+      "myopia",
+      "corneal disorder",
+      "glaucoma",
+      "iridocyclitis",
+      "chronic glaucoma",
+      "diabetic retinopathy"
+    ]
+  },
+  "frequent menstruation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: frequent menstruation",
+    "associated_diseases": [
+      "idiopathic excessive menstruation",
+      "idiopathic irregular menstrual cycle"
+    ]
+  },
+  "frequent urination": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: frequent urination",
+    "associated_diseases": [
+      "benign prostatic hyperplasia (bph)",
+      "cystitis",
+      "temporary or benign blood in urine",
+      "pyelonephritis",
+      "kidney stone",
+      "diabetic ketoacidosis",
+      "urinary tract infection",
+      "prostatitis",
+      "benign vaginal discharge (leukorrhea)",
+      "urinary tract obstruction"
+    ]
+  },
+  "frontal headache": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: frontal headache",
+    "associated_diseases": [
+      "seasonal allergies (hay fever)",
+      "acute sinusitis",
+      "chronic sinusitis",
+      "nasal polyp",
+      "benign paroxysmal positional vertical (bppv)",
+      "primary immunodeficiency",
+      "hemophilia"
+    ]
+  },
+  "groin mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: groin mass",
+    "associated_diseases": [
+      "lipoma",
+      "abdominal hernia",
+      "inguinal hernia",
+      "peritonitis",
+      "aortic valve disease",
+      "soft tissue sarcoma",
+      "hidradenitis suppurativa",
+      "hydrocele of the testicle",
+      "lymphoma",
+      "bladder cancer"
+    ]
+  },
+  "groin pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: groin pain",
+    "associated_diseases": [
+      "arthritis of the hip",
+      "chronic back pain",
+      "varicocele of the testicles",
+      "epididymitis",
+      "inguinal hernia",
+      "induced abortion",
+      "hydrocele of the testicle",
+      "female genitalia infection",
+      "fracture of the pelvis"
+    ]
+  },
+  "gum pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: gum pain",
+    "associated_diseases": [
+      "dental caries",
+      "gum disease",
+      "tooth abscess",
+      "tooth disorder",
+      "oral mucosal lesion",
+      "broken tooth",
+      "congenital malformation syndrome"
+    ]
+  },
+  "hand or finger cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hand or finger cramps or spasms",
+    "associated_diseases": [
+      "trigger finger (finger disorder)"
+    ]
+  },
+  "hand or finger lump or mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hand or finger lump or mass",
+    "associated_diseases": [
+      "sebaceous cyst",
+      "ganglion cyst",
+      "paronychia"
+    ]
+  },
+  "hand or finger pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hand or finger pain",
+    "associated_diseases": [
+      "complex regional pain syndrome",
+      "gout",
+      "sprain or strain",
+      "injury to the arm",
+      "brachial neuritis",
+      "carpal tunnel syndrome",
+      "mononeuritis",
+      "pyogenic skin infection",
+      "osteoarthritis",
+      "ganglion cyst"
+    ]
+  },
+  "hand or finger stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hand or finger stiffness or tightness",
+    "associated_diseases": [
+      "carpal tunnel syndrome",
+      "lateral epicondylitis (tennis elbow)",
+      "nerve impingement near the shoulder",
+      "fracture of the vertebra",
+      "overflow incontinence",
+      "systemic lupus erythematosis (sle)",
+      "rotator cuff injury",
+      "injury to the hand",
+      "fracture of the hand",
+      "trigger finger (finger disorder)"
+    ]
+  },
+  "hand or finger swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hand or finger swelling",
+    "associated_diseases": [
+      "gout",
+      "injury to the arm",
+      "tendinitis",
+      "pyogenic skin infection",
+      "insect bite",
+      "carpal tunnel syndrome",
+      "rheumatoid arthritis",
+      "paronychia",
+      "envenomation from spider or animal bite",
+      "food allergy"
+    ]
+  },
+  "hand or finger weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hand or finger weakness",
+    "associated_diseases": [
+      "brachial neuritis",
+      "mononeuritis"
+    ]
+  },
+  "headache": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: headache",
+    "associated_diseases": [
+      "strep throat",
+      "acute bronchitis",
+      "infectious gastroenteritis",
+      "nose disorder",
+      "sprain or strain",
+      "anxiety",
+      "concussion",
+      "noninfectious gastroenteritis",
+      "spinal stenosis",
+      "acute stress reaction"
+    ]
+  },
+  "heartburn": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: heartburn",
+    "associated_diseases": [
+      "hemorrhoids",
+      "esophagitis",
+      "heart attack",
+      "rectal disorder",
+      "liver disease",
+      "hiatal hernia",
+      "iron deficiency anemia",
+      "gallstone",
+      "hypertensive heart disease",
+      "gastroduodenal ulcer"
+    ]
+  },
+  "heavy menstrual flow": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: heavy menstrual flow",
+    "associated_diseases": [
+      "vaginal cyst",
+      "spontaneous abortion",
+      "idiopathic painful menstruation",
+      "idiopathic irregular menstrual cycle",
+      "idiopathic excessive menstruation",
+      "iron deficiency anemia",
+      "uterine fibroids",
+      "endometriosis",
+      "cervical cancer",
+      "endometrial hyperplasia"
+    ]
+  },
+  "hemoptysis": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hemoptysis",
+    "associated_diseases": [
+      "acute pancreatitis",
+      "smoking or tobacco addiction",
+      "pulmonary embolism",
+      "head and neck cancer",
+      "pulmonary hypertension",
+      "graves disease",
+      "lung cancer"
+    ]
+  },
+  "hesitancy": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hesitancy",
+    "associated_diseases": [
+      "benign prostatic hyperplasia (bph)",
+      "bladder obstruction"
+    ]
+  },
+  "hip lump or mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hip lump or mass",
+    "associated_diseases": []
+  },
+  "hip pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hip pain",
+    "associated_diseases": [
+      "osteoarthritis",
+      "spinal stenosis",
+      "bursitis",
+      "arthritis of the hip",
+      "spondylosis",
+      "chronic back pain",
+      "spondylolisthesis",
+      "herniated disk",
+      "neuralgia",
+      "degenerative disc disease"
+    ]
+  },
+  "hip stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hip stiffness or tightness",
+    "associated_diseases": [
+      "arthritis of the hip"
+    ]
+  },
+  "hip swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hip swelling",
+    "associated_diseases": []
+  },
+  "hip weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hip weakness",
+    "associated_diseases": []
+  },
+  "hoarse voice": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hoarse voice",
+    "associated_diseases": [
+      "sensorineural hearing loss",
+      "croup",
+      "conductive hearing loss",
+      "laryngitis",
+      "nasal polyp",
+      "head and neck cancer",
+      "gastroesophageal reflux disease (gerd)",
+      "tinnitus of unknown cause",
+      "thyroid nodule",
+      "essential tremor"
+    ]
+  },
+  "hostile behavior": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hostile behavior",
+    "associated_diseases": [
+      "marijuana abuse",
+      "personality disorder",
+      "psychotic disorder",
+      "neurosis",
+      "depression",
+      "post-traumatic stress disorder (ptsd)",
+      "developmental disability",
+      "schizophrenia",
+      "conduct disorder",
+      "attention deficit hyperactivity disorder (adhd)"
+    ]
+  },
+  "hot flashes": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hot flashes",
+    "associated_diseases": [
+      "angina",
+      "endometriosis",
+      "polycystic ovarian syndrome (pcos)",
+      "stress incontinence",
+      "fibroadenoma",
+      "endometrial cancer",
+      "goiter",
+      "vitamin b12 deficiency",
+      "menopause",
+      "hypothyroidism"
+    ]
+  },
+  "hurts to breath": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hurts to breath",
+    "associated_diseases": [
+      "acute bronchiolitis",
+      "smoking or tobacco addiction",
+      "heart failure",
+      "fracture of the rib",
+      "pleural effusion",
+      "pneumothorax"
+    ]
+  },
+  "hysterical behavior": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: hysterical behavior",
+    "associated_diseases": [
+      "schizophrenia",
+      "psychotic disorder",
+      "conduct disorder"
+    ]
+  },
+  "impotence": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: impotence",
+    "associated_diseases": [
+      "benign prostatic hyperplasia (bph)",
+      "prostatitis",
+      "erectile dysfunction",
+      "premature ventricular contractions (pvcs)",
+      "bladder obstruction",
+      "overflow incontinence",
+      "benign kidney cyst",
+      "lactose intolerance",
+      "psychosexual disorder",
+      "prostate cancer"
+    ]
+  },
+  "incontinence of stool": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: incontinence of stool",
+    "associated_diseases": [
+      "decubitus ulcer"
+    ]
+  },
+  "increased heart rate": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: increased heart rate",
+    "associated_diseases": [
+      "anxiety",
+      "heart attack",
+      "sinus bradycardia",
+      "angina",
+      "paroxysmal ventricular tachycardia",
+      "mitral valve disease",
+      "paroxysmal supraventricular tachycardia",
+      "atrial flutter",
+      "sick sinus syndrome",
+      "chronic rheumatic fever"
+    ]
+  },
+  "infant feeding problem": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: infant feeding problem",
+    "associated_diseases": [
+      "injury to the leg",
+      "cerebral palsy",
+      "neonatal jaundice"
+    ]
+  },
+  "infant spitting up": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: infant spitting up",
+    "associated_diseases": [
+      "foreign body in the throat"
+    ]
+  },
+  "infertility": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: infertility",
+    "associated_diseases": [
+      "idiopathic irregular menstrual cycle",
+      "varicocele of the testicles",
+      "endometriosis",
+      "polycystic ovarian syndrome (pcos)",
+      "premature ovarian failure",
+      "female infertility of unknown cause"
+    ]
+  },
+  "infrequent menstruation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: infrequent menstruation",
+    "associated_diseases": []
+  },
+  "insomnia": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: insomnia",
+    "associated_diseases": [
+      "psychotic disorder",
+      "anxiety",
+      "obstructive sleep apnea (osa)",
+      "schizophrenia",
+      "panic disorder",
+      "personality disorder",
+      "hypertensive heart disease",
+      "acute stress reaction",
+      "depression",
+      "neurosis"
+    ]
+  },
+  "intermenstrual bleeding": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: intermenstrual bleeding",
+    "associated_diseases": [
+      "vaginal cyst",
+      "spontaneous abortion",
+      "pelvic inflammatory disease",
+      "idiopathic excessive menstruation",
+      "threatened pregnancy",
+      "iron deficiency anemia",
+      "idiopathic irregular menstrual cycle",
+      "ovarian cyst",
+      "uterine fibroids",
+      "pelvic organ prolapse"
+    ]
+  },
+  "involuntary urination": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: involuntary urination",
+    "associated_diseases": [
+      "cystitis",
+      "benign prostatic hyperplasia (bph)",
+      "erectile dysfunction",
+      "idiopathic excessive menstruation",
+      "varicocele of the testicles",
+      "temporary or benign blood in urine",
+      "uterine fibroids",
+      "paroxysmal supraventricular tachycardia",
+      "bladder obstruction",
+      "urge incontinence"
+    ]
+  },
+  "irregular appearing nails": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: irregular appearing nails",
+    "associated_diseases": [
+      "injury to the leg",
+      "hemangioma",
+      "ingrown toe nail",
+      "athlete's foot",
+      "onychomycosis",
+      "callus",
+      "open wound of the foot"
+    ]
+  },
+  "irregular appearing scalp": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: irregular appearing scalp",
+    "associated_diseases": [
+      "skin pigmentation disorder",
+      "eczema",
+      "fungal infection of the hair",
+      "psoriasis",
+      "skin polyp",
+      "sebaceous cyst",
+      "actinic keratosis",
+      "hemangioma",
+      "seborrheic dermatitis",
+      "skin cancer"
+    ]
+  },
+  "irregular belly button": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: irregular belly button",
+    "associated_diseases": [
+      "abdominal hernia",
+      "omphalitis"
+    ]
+  },
+  "irregular heartbeat": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: irregular heartbeat",
+    "associated_diseases": [
+      "anxiety",
+      "sinus bradycardia",
+      "angina",
+      "panic disorder",
+      "heart attack",
+      "aortic valve disease",
+      "benign paroxysmal positional vertical (bppv)",
+      "mitral valve disease",
+      "heart block",
+      "paroxysmal ventricular tachycardia"
+    ]
+  },
+  "irritable infant": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: irritable infant",
+    "associated_diseases": [
+      "acute bronchiolitis",
+      "oral thrush (yeast infection)",
+      "diaper rash",
+      "abscess of nose",
+      "mucositis",
+      "male genitalia infection",
+      "subdural hemorrhage",
+      "dislocation of the elbow",
+      "neonatal jaundice"
+    ]
+  },
+  "itchiness of eye": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: itchiness of eye",
+    "associated_diseases": [
+      "conjunctivitis due to allergy",
+      "chronic glaucoma",
+      "conjunctivitis",
+      "blepharitis",
+      "stye",
+      "cornea infection",
+      "seasonal allergies (hay fever)",
+      "macular degeneration",
+      "allergy",
+      "dry eye of unknown cause"
+    ]
+  },
+  "itching of scrotum": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: itching of scrotum",
+    "associated_diseases": [
+      "pinguecula"
+    ]
+  },
+  "itching of skin": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: itching of skin",
+    "associated_diseases": [
+      "eczema",
+      "fungal infection of the hair",
+      "seborrheic keratosis",
+      "allergy",
+      "contact dermatitis",
+      "psoriasis",
+      "actinic keratosis",
+      "seborrheic dermatitis",
+      "drug reaction",
+      "skin polyp"
+    ]
+  },
+  "itching of the anus": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: itching of the anus",
+    "associated_diseases": [
+      "hemorrhoids",
+      "rectal disorder",
+      "pinworm infection"
+    ]
+  },
+  "itchy ear(s)": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: itchy ear(s)",
+    "associated_diseases": [
+      "otitis externa (swimmer's ear)",
+      "sensorineural hearing loss",
+      "tinnitus of unknown cause",
+      "lymphoma"
+    ]
+  },
+  "itchy eyelid": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: itchy eyelid",
+    "associated_diseases": [
+      "glaucoma",
+      "melanoma",
+      "abscess of the lung"
+    ]
+  },
+  "itchy scalp": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: itchy scalp",
+    "associated_diseases": [
+      "fungal infection of the hair",
+      "psoriasis",
+      "fungal infection of the skin",
+      "itching of unknown cause",
+      "lice"
+    ]
+  },
+  "jaundice": {
+    "severity_weight": 3,
+    "description": "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it",
+    "associated_diseases": [
+      "liver disease",
+      "choledocholithiasis",
+      "hepatitis due to a toxin",
+      "thoracic aortic aneurysm",
+      "pancreatic cancer",
+      "cervical cancer",
+      "ascending cholangitis",
+      "metabolic disorder",
+      "neonatal jaundice"
+    ]
+  },
+  "jaw pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: jaw pain",
+    "associated_diseases": []
+  },
+  "jaw swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: jaw swelling",
+    "associated_diseases": [
+      "dental caries",
+      "gum disease",
+      "tooth disorder",
+      "tooth abscess",
+      "sialoadenitis",
+      "jaw disorder",
+      "postoperative infection",
+      "fracture of the jaw"
+    ]
+  },
+  "joint pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: joint pain",
+    "associated_diseases": [
+      "injury to the arm",
+      "gout",
+      "arthritis of the hip",
+      "degenerative disc disease",
+      "psoriasis",
+      "osteoarthritis",
+      "rheumatoid arthritis",
+      "lateral epicondylitis (tennis elbow)",
+      "osteoporosis",
+      "sickle cell anemia"
+    ]
+  },
+  "joint stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: joint stiffness or tightness",
+    "associated_diseases": []
+  },
+  "joint swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: joint swelling",
+    "associated_diseases": [
+      "rheumatoid arthritis"
+    ]
+  },
+  "kidney mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: kidney mass",
+    "associated_diseases": [
+      "acute kidney injury",
+      "polycystic kidney disease",
+      "kidney cancer"
+    ]
+  },
+  "knee cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: knee cramps or spasms",
+    "associated_diseases": []
+  },
+  "knee lump or mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: knee lump or mass",
+    "associated_diseases": [
+      "ganglion cyst",
+      "molluscum contagiosum",
+      "knee ligament or meniscus tear",
+      "lymphogranuloma venereum",
+      "malaria",
+      "trichinosis",
+      "reactive arthritis",
+      "aspergillosis",
+      "granuloma inguinale",
+      "friedrich ataxia"
+    ]
+  },
+  "knee pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: knee pain",
+    "associated_diseases": [
+      "gout",
+      "injury to the leg",
+      "bursitis",
+      "arthritis of the hip",
+      "sprain or strain",
+      "spondylosis",
+      "sickle cell crisis",
+      "osteoarthritis",
+      "tendinitis",
+      "rheumatoid arthritis"
+    ]
+  },
+  "knee stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: knee stiffness or tightness",
+    "associated_diseases": [
+      "injury to the leg",
+      "joint effusion",
+      "scoliosis",
+      "chronic knee pain",
+      "vitamin b12 deficiency",
+      "knee ligament or meniscus tear"
+    ]
+  },
+  "knee swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: knee swelling",
+    "associated_diseases": [
+      "injury to the leg",
+      "gout",
+      "bursitis",
+      "osteoarthritis",
+      "fracture of the leg",
+      "ganglion cyst",
+      "joint effusion",
+      "scoliosis",
+      "peripheral arterial embolism",
+      "chronic knee pain"
+    ]
+  },
+  "knee weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: knee weakness",
+    "associated_diseases": [
+      "osteoarthritis",
+      "fracture of the leg",
+      "chronic knee pain",
+      "knee ligament or meniscus tear",
+      "chondromalacia of the patella",
+      "injury to the knee",
+      "fracture of the ankle",
+      "open wound of the arm"
+    ]
+  },
+  "lack of growth": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lack of growth",
+    "associated_diseases": [
+      "conduct disorder",
+      "developmental disability",
+      "eye alignment disorder",
+      "attention deficit hyperactivity disorder (adhd)",
+      "dermatitis due to sun exposure",
+      "obsessive compulsive disorder (ocd)",
+      "autism",
+      "asperger syndrome",
+      "cerebral palsy",
+      "hydrocephalus"
+    ]
+  },
+  "lacrimation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lacrimation",
+    "associated_diseases": [
+      "conjunctivitis due to allergy",
+      "seasonal allergies (hay fever)",
+      "blepharitis",
+      "macular degeneration",
+      "conjunctivitis due to virus",
+      "dry eye of unknown cause",
+      "cornea infection",
+      "conjunctivitis",
+      "chalazion",
+      "corneal disorder"
+    ]
+  },
+  "leg cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: leg cramps or spasms",
+    "associated_diseases": [
+      "spondylolisthesis",
+      "sciatica",
+      "osteoporosis",
+      "bone disorder",
+      "deep vein thrombosis (dvt)",
+      "venous insufficiency",
+      "arrhythmia",
+      "varicose veins",
+      "peripheral arterial disease",
+      "coronary atherosclerosis"
+    ]
+  },
+  "leg lump or mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: leg lump or mass",
+    "associated_diseases": [
+      "varicose veins",
+      "lice"
+    ]
+  },
+  "leg pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: leg pain",
+    "associated_diseases": [
+      "complex regional pain syndrome",
+      "pain after an operation",
+      "peripheral nerve disorder",
+      "pulmonary embolism",
+      "spinal stenosis",
+      "injury to the leg",
+      "bursitis",
+      "arthritis of the hip",
+      "spondylosis",
+      "sprain or strain"
+    ]
+  },
+  "leg stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: leg stiffness or tightness",
+    "associated_diseases": [
+      "fracture of the leg",
+      "parkinson disease",
+      "vasculitis",
+      "deep vein thrombosis (dvt)",
+      "fracture of the vertebra",
+      "knee ligament or meniscus tear"
+    ]
+  },
+  "leg swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: leg swelling",
+    "associated_diseases": [
+      "injury to the leg",
+      "hypertensive heart disease",
+      "bursitis",
+      "gout",
+      "pyogenic skin infection",
+      "heart failure",
+      "pulmonary embolism",
+      "insect bite",
+      "fracture of the leg",
+      "pulmonary congestion"
+    ]
+  },
+  "leg weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: leg weakness",
+    "associated_diseases": [
+      "peripheral nerve disorder",
+      "multiple sclerosis",
+      "herniated disk",
+      "sciatica",
+      "spondylolisthesis",
+      "knee ligament or meniscus tear",
+      "fracture of the patella",
+      "lung cancer",
+      "hypocalcemia"
+    ]
+  },
+  "lip sore": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lip sore",
+    "associated_diseases": [
+      "cold sore"
+    ]
+  },
+  "lip swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lip swelling",
+    "associated_diseases": [
+      "cornea infection",
+      "hemangioma",
+      "skin cancer",
+      "allergy",
+      "gum disease",
+      "fracture of the facial bones",
+      "food allergy",
+      "tooth abscess",
+      "viral warts",
+      "insect bite"
+    ]
+  },
+  "long menstrual periods": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: long menstrual periods",
+    "associated_diseases": [
+      "idiopathic irregular menstrual cycle",
+      "idiopathic painful menstruation",
+      "idiopathic excessive menstruation",
+      "acne",
+      "autism",
+      "idiopathic absence of menstruation",
+      "polycystic ovarian syndrome (pcos)",
+      "idiopathic nonmenstrual bleeding",
+      "female infertility of unknown cause"
+    ]
+  },
+  "loss of sensation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: loss of sensation",
+    "associated_diseases": [
+      "peripheral nerve disorder",
+      "injury to the arm",
+      "spondylosis",
+      "spinal stenosis",
+      "complex regional pain syndrome",
+      "multiple sclerosis",
+      "degenerative disc disease",
+      "carpal tunnel syndrome",
+      "herniated disk",
+      "chronic back pain"
+    ]
+  },
+  "loss of sex drive": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: loss of sex drive",
+    "associated_diseases": [
+      "dysthymic disorder",
+      "erectile dysfunction",
+      "psychosexual disorder",
+      "testicular disorder"
+    ]
+  },
+  "low back cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: low back cramps or spasms",
+    "associated_diseases": [
+      "lumbago"
+    ]
+  },
+  "low back pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: low back pain",
+    "associated_diseases": [
+      "spondylosis",
+      "spinal stenosis",
+      "sprain or strain",
+      "complex regional pain syndrome",
+      "arthritis of the hip",
+      "pain after an operation",
+      "degenerative disc disease",
+      "herniated disk",
+      "pyelonephritis",
+      "brachial neuritis"
+    ]
+  },
+  "low back stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: low back stiffness or tightness",
+    "associated_diseases": []
+  },
+  "low back swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: low back swelling",
+    "associated_diseases": []
+  },
+  "low back weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: low back weakness",
+    "associated_diseases": [
+      "blepharospasm"
+    ]
+  },
+  "low self-esteem": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: low self-esteem",
+    "associated_diseases": [
+      "marijuana abuse",
+      "personality disorder",
+      "schizophrenia",
+      "conductive hearing loss",
+      "oppositional disorder",
+      "alcohol abuse",
+      "obsessive compulsive disorder (ocd)"
+    ]
+  },
+  "low urine output": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: low urine output",
+    "associated_diseases": [
+      "benign prostatic hyperplasia (bph)",
+      "oppositional disorder"
+    ]
+  },
+  "lower abdominal pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lower abdominal pain",
+    "associated_diseases": [
+      "vaginal cyst",
+      "cystitis",
+      "diverticulitis",
+      "vulvodynia",
+      "spontaneous abortion",
+      "vaginitis",
+      "chronic constipation",
+      "problem during pregnancy",
+      "pyelonephritis",
+      "threatened pregnancy"
+    ]
+  },
+  "lower body pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lower body pain",
+    "associated_diseases": [
+      "spinal stenosis",
+      "spondylosis",
+      "arthritis of the hip",
+      "cholecystitis",
+      "acute pancreatitis",
+      "hemorrhoids",
+      "angina",
+      "degenerative disc disease",
+      "chronic back pain",
+      "gallstone"
+    ]
+  },
+  "lump in throat": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lump in throat",
+    "associated_diseases": [
+      "tonsillitis",
+      "foreign body in the gastrointestinal tract",
+      "goiter",
+      "thyroid disease"
+    ]
+  },
+  "lump or mass of breast": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lump or mass of breast",
+    "associated_diseases": [
+      "breast infection (mastitis)",
+      "gynecomastia",
+      "fibroadenoma",
+      "breast cyst",
+      "fibrocystic breast disease",
+      "breast cancer"
+    ]
+  },
+  "lump over jaw": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lump over jaw",
+    "associated_diseases": []
+  },
+  "lymphedema": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: lymphedema",
+    "associated_diseases": [
+      "ischemic heart disease",
+      "diabetic peripheral neuropathy",
+      "lymphedema",
+      "hemangioma",
+      "rosacea",
+      "aortic valve disease",
+      "thrombophlebitis",
+      "venous insufficiency",
+      "vasculitis",
+      "peripheral arterial disease"
+    ]
+  },
+  "mass in scrotum": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: mass in scrotum",
+    "associated_diseases": [
+      "epididymitis",
+      "varicocele of the testicles",
+      "inguinal hernia",
+      "hydrocele of the testicle",
+      "bladder cancer",
+      "male genitalia infection",
+      "spermatocele",
+      "peyronie disease",
+      "anal fistula",
+      "testicular cancer"
+    ]
+  },
+  "mass on ear": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: mass on ear",
+    "associated_diseases": []
+  },
+  "mass on eyelid": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: mass on eyelid",
+    "associated_diseases": [
+      "stye",
+      "chalazion",
+      "chronic glaucoma",
+      "cyst of the eyelid"
+    ]
+  },
+  "mass on vulva": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: mass on vulva",
+    "associated_diseases": []
+  },
+  "mass or swelling around the anus": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: mass or swelling around the anus",
+    "associated_diseases": [
+      "hemorrhoids",
+      "colorectal cancer"
+    ]
+  },
+  "melena": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: melena",
+    "associated_diseases": [
+      "gastrointestinal hemorrhage",
+      "hemorrhoids",
+      "rectal disorder",
+      "diverticulosis",
+      "anemia",
+      "coagulation (bleeding) disorder",
+      "viral hepatitis"
+    ]
+  },
+  "mouth dryness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: mouth dryness",
+    "associated_diseases": [
+      "obstructive sleep apnea (osa)",
+      "breast infection (mastitis)"
+    ]
+  },
+  "mouth pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: mouth pain",
+    "associated_diseases": [
+      "dental caries",
+      "tooth abscess",
+      "oral thrush (yeast infection)",
+      "oral mucosal lesion",
+      "injury to the face",
+      "jaw disorder",
+      "head and neck cancer",
+      "mucositis",
+      "aphthous ulcer",
+      "fracture of the jaw"
+    ]
+  },
+  "mouth ulcer": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: mouth ulcer",
+    "associated_diseases": [
+      "gum disease",
+      "impetigo",
+      "tooth disorder",
+      "oral thrush (yeast infection)",
+      "oral mucosal lesion",
+      "herpangina",
+      "mucositis",
+      "aphthous ulcer",
+      "cold sore",
+      "open wound of the mouth"
+    ]
+  },
+  "muscle cramps, contractures, or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: muscle cramps, contractures, or spasms",
+    "associated_diseases": [
+      "injury to the shoulder",
+      "muscle spasm",
+      "osteoporosis"
+    ]
+  },
+  "muscle pain": {
+    "severity_weight": 2,
+    "description": "Clinical symptom: muscle pain",
+    "associated_diseases": [
+      "ischemic heart disease",
+      "osteoarthritis",
+      "fibromyalgia",
+      "plantar fasciitis",
+      "lumbago",
+      "essential tremor",
+      "adhesive capsulitis of the shoulder",
+      "hypothyroidism",
+      "syphilis"
+    ]
+  },
+  "muscle stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: muscle stiffness or tightness",
+    "associated_diseases": [
+      "bone disorder",
+      "leukemia"
+    ]
+  },
+  "muscle swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: muscle swelling",
+    "associated_diseases": [
+      "premature atrial contractions (pacs)",
+      "chorioretinitis",
+      "pituitary adenoma",
+      "cholesteatoma",
+      "cyst of the eyelid",
+      "myoclonus",
+      "von willebrand disease"
+    ]
+  },
+  "muscle weakness": {
+    "severity_weight": 2,
+    "description": "Clinical symptom: muscle weakness",
+    "associated_diseases": [
+      "epilepsy"
+    ]
+  },
+  "nailbiting": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: nailbiting",
+    "associated_diseases": []
+  },
+  "nasal congestion": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: nasal congestion",
+    "associated_diseases": [
+      "croup",
+      "acute bronchiolitis",
+      "acute bronchitis",
+      "conjunctivitis due to allergy",
+      "strep throat",
+      "pneumonia",
+      "nose disorder",
+      "asthma",
+      "acute bronchospasm",
+      "chronic obstructive pulmonary disease (copd)"
+    ]
+  },
+  "nausea": {
+    "severity_weight": 5,
+    "description": "Clinical symptom: nausea",
+    "associated_diseases": [
+      "infectious gastroenteritis",
+      "vulvodynia",
+      "gastrointestinal hemorrhage",
+      "liver disease",
+      "hypoglycemia",
+      "acute pancreatitis",
+      "noninfectious gastroenteritis",
+      "drug reaction",
+      "diverticulitis",
+      "concussion"
+    ]
+  },
+  "neck cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: neck cramps or spasms",
+    "associated_diseases": [
+      "torticollis"
+    ]
+  },
+  "neck mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: neck mass",
+    "associated_diseases": [
+      "sebaceous cyst",
+      "lipoma",
+      "sialoadenitis",
+      "jaw disorder",
+      "lymphadenitis",
+      "head and neck cancer",
+      "thyroid nodule",
+      "lymphoma",
+      "dislocation of the shoulder",
+      "intestinal cancer"
+    ]
+  },
+  "neck pain": {
+    "severity_weight": 5,
+    "description": "Clinical symptom: neck pain",
+    "associated_diseases": [
+      "spondylosis",
+      "complex regional pain syndrome",
+      "spinal stenosis",
+      "sprain or strain",
+      "concussion",
+      "injury to the trunk",
+      "brachial neuritis",
+      "degenerative disc disease",
+      "carpal tunnel syndrome",
+      "pain after an operation"
+    ]
+  },
+  "neck stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: neck stiffness or tightness",
+    "associated_diseases": [
+      "injury to the face",
+      "pain disorder affecting the neck",
+      "tension headache",
+      "torticollis",
+      "meningitis"
+    ]
+  },
+  "neck swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: neck swelling",
+    "associated_diseases": [
+      "dental caries",
+      "tooth abscess",
+      "ingrown toe nail",
+      "sialoadenitis",
+      "lymphadenitis",
+      "fracture of the shoulder",
+      "crushing injury"
+    ]
+  },
+  "neck weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: neck weakness",
+    "associated_diseases": []
+  },
+  "nightmares": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: nightmares",
+    "associated_diseases": [
+      "mitral valve disease",
+      "adjustment reaction"
+    ]
+  },
+  "nose deformity": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: nose deformity",
+    "associated_diseases": []
+  },
+  "nosebleed": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: nosebleed",
+    "associated_diseases": [
+      "nose disorder",
+      "deviated nasal septum",
+      "injury to the face",
+      "anemia",
+      "thrombocytopenia",
+      "open wound of the nose",
+      "von willebrand disease"
+    ]
+  },
+  "obsessions and compulsions": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: obsessions and compulsions",
+    "associated_diseases": [
+      "developmental disability",
+      "neurosis",
+      "bipolar disorder",
+      "obsessive compulsive disorder (ocd)",
+      "oppositional disorder"
+    ]
+  },
+  "pain during intercourse": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pain during intercourse",
+    "associated_diseases": [
+      "vaginitis",
+      "erectile dysfunction",
+      "atrophic vaginitis",
+      "vulvar disorder",
+      "psychosexual disorder",
+      "prostate cancer",
+      "vaginismus",
+      "cervical disorder",
+      "female infertility of unknown cause"
+    ]
+  },
+  "pain during pregnancy": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pain during pregnancy",
+    "associated_diseases": [
+      "vaginal cyst",
+      "spontaneous abortion",
+      "vulvodynia",
+      "problem during pregnancy",
+      "hyperemesis gravidarum",
+      "vaginitis",
+      "benign vaginal discharge (leukorrhea)",
+      "postpartum depression",
+      "cervicitis",
+      "trichomonas infection"
+    ]
+  },
+  "pain in eye": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pain in eye",
+    "associated_diseases": [
+      "conjunctivitis due to allergy",
+      "conjunctivitis",
+      "cornea infection",
+      "dry eye of unknown cause",
+      "macular degeneration",
+      "stye",
+      "blepharitis",
+      "chalazion",
+      "corneal disorder",
+      "chronic glaucoma"
+    ]
+  },
+  "pain in gums": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pain in gums",
+    "associated_diseases": [
+      "dental caries",
+      "gum disease",
+      "tooth abscess",
+      "tooth disorder"
+    ]
+  },
+  "pain in testicles": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pain in testicles",
+    "associated_diseases": [
+      "benign prostatic hyperplasia (bph)",
+      "varicocele of the testicles",
+      "erectile dysfunction",
+      "epididymitis",
+      "hydronephrosis",
+      "inguinal hernia",
+      "hydrocele of the testicle",
+      "perirectal infection",
+      "chickenpox",
+      "male genitalia infection"
+    ]
+  },
+  "pain of the anus": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pain of the anus",
+    "associated_diseases": [
+      "rectal disorder",
+      "chronic constipation",
+      "varicocele of the testicles",
+      "hemorrhoids",
+      "crohn disease",
+      "colonic polyp",
+      "intestinal obstruction",
+      "ileus",
+      "pilonidal cyst",
+      "anal fissure"
+    ]
+  },
+  "pain or soreness of breast": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pain or soreness of breast",
+    "associated_diseases": [
+      "breast infection (mastitis)",
+      "idiopathic absence of menstruation",
+      "fibroadenoma",
+      "gynecomastia",
+      "mastectomy",
+      "breast cyst",
+      "fibrocystic breast disease",
+      "breast cancer",
+      "galactorrhea of unknown cause"
+    ]
+  },
+  "painful menstruation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: painful menstruation",
+    "associated_diseases": [
+      "idiopathic excessive menstruation",
+      "idiopathic irregular menstrual cycle",
+      "idiopathic painful menstruation",
+      "ovarian cyst",
+      "uterine fibroids",
+      "endometriosis",
+      "mittelschmerz"
+    ]
+  },
+  "painful sinuses": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: painful sinuses",
+    "associated_diseases": [
+      "nose disorder",
+      "chronic otitis media",
+      "acute sinusitis",
+      "chronic sinusitis",
+      "deviated nasal septum",
+      "nasal polyp"
+    ]
+  },
+  "painful urination": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: painful urination",
+    "associated_diseases": [
+      "temporary or benign blood in urine",
+      "vulvodynia",
+      "cystitis",
+      "urinary tract infection",
+      "urinary tract obstruction",
+      "vaginitis",
+      "benign vaginal discharge (leukorrhea)",
+      "kidney stone",
+      "pelvic inflammatory disease",
+      "pyelonephritis"
+    ]
+  },
+  "pallor": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pallor",
+    "associated_diseases": []
+  },
+  "palpitations": {
+    "severity_weight": 4,
+    "description": "Clinical symptom: palpitations",
+    "associated_diseases": [
+      "anxiety",
+      "hypertensive heart disease",
+      "angina",
+      "heart failure",
+      "panic disorder",
+      "sinus bradycardia",
+      "ischemic heart disease",
+      "heart block",
+      "cardiac arrest",
+      "aortic valve disease"
+    ]
+  },
+  "paresthesia": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: paresthesia",
+    "associated_diseases": [
+      "complex regional pain syndrome",
+      "peripheral nerve disorder",
+      "spinal stenosis",
+      "spondylosis",
+      "herniated disk",
+      "brachial neuritis",
+      "carpal tunnel syndrome",
+      "multiple sclerosis",
+      "degenerative disc disease",
+      "ankylosing spondylitis"
+    ]
+  },
+  "pelvic pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pelvic pain",
+    "associated_diseases": [
+      "arthritis of the hip",
+      "vaginal cyst",
+      "fungal infection of the hair",
+      "problem during pregnancy",
+      "vulvodynia",
+      "spontaneous abortion",
+      "cystitis",
+      "threatened pregnancy",
+      "idiopathic painful menstruation",
+      "pelvic inflammatory disease"
+    ]
+  },
+  "pelvic pressure": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pelvic pressure",
+    "associated_diseases": [
+      "gestational diabetes",
+      "pregnancy"
+    ]
+  },
+  "penile discharge": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: penile discharge",
+    "associated_diseases": [
+      "urethritis",
+      "gonorrhea"
+    ]
+  },
+  "penis pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: penis pain",
+    "associated_diseases": [
+      "urethritis",
+      "balanitis",
+      "phimosis",
+      "peyronie disease",
+      "priapism"
+    ]
+  },
+  "penis redness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: penis redness",
+    "associated_diseases": [
+      "balanitis",
+      "phimosis"
+    ]
+  },
+  "peripheral edema": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: peripheral edema",
+    "associated_diseases": [
+      "liver disease",
+      "dental caries",
+      "ischemic heart disease",
+      "allergy",
+      "pyogenic skin infection",
+      "drug reaction",
+      "gum disease",
+      "tooth disorder",
+      "acute kidney injury",
+      "bell palsy"
+    ]
+  },
+  "plugged feeling in ear": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: plugged feeling in ear",
+    "associated_diseases": [
+      "otitis externa (swimmer's ear)",
+      "otitis media",
+      "ear drum damage",
+      "eustachian tube dysfunction (ear disorder)",
+      "acute otitis media",
+      "ear wax impaction",
+      "sensorineural hearing loss",
+      "chronic otitis media",
+      "conductive hearing loss",
+      "labyrinthitis"
+    ]
+  },
+  "polyuria": {
+    "severity_weight": 4,
+    "description": "Clinical symptom: polyuria",
+    "associated_diseases": []
+  },
+  "poor circulation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: poor circulation",
+    "associated_diseases": [
+      "peripheral arterial disease"
+    ]
+  },
+  "postpartum problems of the breast": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: postpartum problems of the breast",
+    "associated_diseases": [
+      "breast infection (mastitis)"
+    ]
+  },
+  "posture problems": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: posture problems",
+    "associated_diseases": []
+  },
+  "premature ejaculation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: premature ejaculation",
+    "associated_diseases": [
+      "psychosexual disorder"
+    ]
+  },
+  "premenstrual tension or irritability": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: premenstrual tension or irritability",
+    "associated_diseases": [
+      "premenstrual tension syndrome"
+    ]
+  },
+  "problems during pregnancy": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: problems during pregnancy",
+    "associated_diseases": [
+      "vaginal cyst",
+      "spontaneous abortion",
+      "problem during pregnancy",
+      "threatened pregnancy",
+      "hyperemesis gravidarum",
+      "itching of unknown cause",
+      "benign vaginal discharge (leukorrhea)",
+      "postpartum depression",
+      "missed abortion",
+      "preeclampsia"
+    ]
+  },
+  "problems with movement": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: problems with movement",
+    "associated_diseases": [
+      "injury to the leg",
+      "arthritis of the hip",
+      "hypoglycemia",
+      "spinal stenosis",
+      "peripheral nerve disorder",
+      "complex regional pain syndrome",
+      "multiple sclerosis",
+      "stroke",
+      "sciatica",
+      "fracture of the leg"
+    ]
+  },
+  "problems with orgasm": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: problems with orgasm",
+    "associated_diseases": []
+  },
+  "problems with shape or size of breast": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: problems with shape or size of breast",
+    "associated_diseases": [
+      "gynecomastia"
+    ]
+  },
+  "pulling at ears": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pulling at ears",
+    "associated_diseases": [
+      "acute bronchiolitis",
+      "croup",
+      "ear drum damage",
+      "diaper rash",
+      "otitis media",
+      "chronic otitis media",
+      "ear wax impaction",
+      "viral exanthem",
+      "sickle cell anemia"
+    ]
+  },
+  "pupils unequal": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pupils unequal",
+    "associated_diseases": []
+  },
+  "pus draining from ear": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pus draining from ear",
+    "associated_diseases": [
+      "ear drum damage",
+      "retinopathy due to high blood pressure",
+      "amblyopia",
+      "cholesteatoma"
+    ]
+  },
+  "pus in sputum": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pus in sputum",
+    "associated_diseases": []
+  },
+  "pus in urine": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: pus in urine",
+    "associated_diseases": []
+  },
+  "recent pregnancy": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: recent pregnancy",
+    "associated_diseases": [
+      "hypertensive heart disease",
+      "genital herpes",
+      "preeclampsia"
+    ]
+  },
+  "recent weight loss": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: recent weight loss",
+    "associated_diseases": [
+      "foreign body in the gastrointestinal tract",
+      "anemia due to chronic kidney disease"
+    ]
+  },
+  "rectal bleeding": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: rectal bleeding",
+    "associated_diseases": [
+      "gastrointestinal hemorrhage",
+      "noninfectious gastroenteritis",
+      "hemorrhoids",
+      "rectal disorder",
+      "chronic constipation",
+      "diverticulosis",
+      "iron deficiency anemia",
+      "hepatitis due to a toxin",
+      "colonic polyp",
+      "ulcerative colitis"
+    ]
+  },
+  "redness in ear": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: redness in ear",
+    "associated_diseases": [
+      "ear drum damage",
+      "otitis externa (swimmer's ear)",
+      "eustachian tube dysfunction (ear disorder)",
+      "acute otitis media",
+      "chronic otitis media",
+      "conductive hearing loss",
+      "teething syndrome",
+      "tonsillitis",
+      "tonsillar hypertrophy"
+    ]
+  },
+  "redness in or around nose": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: redness in or around nose",
+    "associated_diseases": [
+      "fracture of the facial bones",
+      "open wound of the arm"
+    ]
+  },
+  "regurgitation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: regurgitation",
+    "associated_diseases": [
+      "temporary or benign blood in urine",
+      "hiatal hernia",
+      "iron deficiency anemia",
+      "intestinal disease",
+      "gastroesophageal reflux disease (gerd)",
+      "abdominal hernia",
+      "crohn disease",
+      "cirrhosis",
+      "gastroparesis",
+      "lymphoma"
+    ]
+  },
+  "regurgitation.1": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: regurgitation.1",
+    "associated_diseases": [
+      "gallstone",
+      "cholecystitis",
+      "temporary or benign blood in urine",
+      "hiatal hernia",
+      "iron deficiency anemia",
+      "gastritis",
+      "intestinal disease",
+      "gastroesophageal reflux disease (gerd)",
+      "abdominal hernia",
+      "crohn disease"
+    ]
+  },
+  "restlessness": {
+    "severity_weight": 5,
+    "description": "Clinical symptom: restlessness",
+    "associated_diseases": [
+      "developmental disability",
+      "dental caries",
+      "drug abuse (opioids)",
+      "attention deficit hyperactivity disorder (adhd)",
+      "adjustment reaction",
+      "oppositional disorder",
+      "extrapyramidal effect of drugs"
+    ]
+  },
+  "retention of urine": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: retention of urine",
+    "associated_diseases": [
+      "acute kidney injury",
+      "benign prostatic hyperplasia (bph)",
+      "chronic constipation",
+      "cystitis",
+      "prostatitis",
+      "temporary or benign blood in urine",
+      "kidney stone",
+      "urinary tract infection",
+      "urge incontinence",
+      "epididymitis"
+    ]
+  },
+  "rib pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: rib pain",
+    "associated_diseases": [
+      "concussion",
+      "fracture of the rib",
+      "injury to the trunk",
+      "pleural effusion",
+      "tietze syndrome"
+    ]
+  },
+  "ringing in ear": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: ringing in ear",
+    "associated_diseases": [
+      "ear drum damage",
+      "eustachian tube dysfunction (ear disorder)",
+      "otitis externa (swimmer's ear)",
+      "ear wax impaction",
+      "sensorineural hearing loss",
+      "conductive hearing loss",
+      "tinnitus of unknown cause",
+      "meniere disease",
+      "presbyacusis"
+    ]
+  },
+  "scanty menstrual flow": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: scanty menstrual flow",
+    "associated_diseases": [
+      "female infertility of unknown cause"
+    ]
+  },
+  "seizures": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: seizures",
+    "associated_diseases": [
+      "hypoglycemia",
+      "developmental disability",
+      "alcohol withdrawal",
+      "conduct disorder",
+      "stroke",
+      "intracerebral hemorrhage",
+      "hemiplegia",
+      "hyponatremia",
+      "autism",
+      "intracranial hemorrhage"
+    ]
+  },
+  "sharp abdominal pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: sharp abdominal pain",
+    "associated_diseases": [
+      "noninfectious gastroenteritis",
+      "cholecystitis",
+      "pyelonephritis",
+      "gastrointestinal hemorrhage",
+      "liver disease",
+      "diverticulitis",
+      "cystitis",
+      "acute pancreatitis",
+      "threatened pregnancy",
+      "esophagitis"
+    ]
+  },
+  "sharp chest pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: sharp chest pain",
+    "associated_diseases": [
+      "anxiety",
+      "acute bronchitis",
+      "chronic obstructive pulmonary disease (copd)",
+      "esophagitis",
+      "pneumonia",
+      "cholecystitis",
+      "acute pancreatitis",
+      "acute stress reaction",
+      "angina",
+      "pulmonary embolism"
+    ]
+  },
+  "shortness of breath": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: shortness of breath",
+    "associated_diseases": [
+      "sepsis",
+      "anxiety",
+      "esophagitis",
+      "fracture of the rib",
+      "pneumonia",
+      "obstructive sleep apnea (osa)",
+      "liver disease",
+      "acute bronchiolitis",
+      "acute bronchitis",
+      "drug reaction"
+    ]
+  },
+  "shoulder cramps or spasms": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: shoulder cramps or spasms",
+    "associated_diseases": []
+  },
+  "shoulder lump or mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: shoulder lump or mass",
+    "associated_diseases": [
+      "lipoma"
+    ]
+  },
+  "shoulder pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: shoulder pain",
+    "associated_diseases": [
+      "sprain or strain",
+      "degenerative disc disease",
+      "spondylosis",
+      "bursitis",
+      "spinal stenosis",
+      "brachial neuritis",
+      "injury to the trunk",
+      "herniated disk",
+      "fracture of the rib",
+      "tendinitis"
+    ]
+  },
+  "shoulder stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: shoulder stiffness or tightness",
+    "associated_diseases": [
+      "bursitis",
+      "injury to the shoulder",
+      "fracture of the arm",
+      "nerve impingement near the shoulder",
+      "fracture of the shoulder",
+      "rotator cuff injury",
+      "adhesive capsulitis of the shoulder"
+    ]
+  },
+  "shoulder swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: shoulder swelling",
+    "associated_diseases": [
+      "fracture of the shoulder",
+      "mumps",
+      "valley fever"
+    ]
+  },
+  "shoulder weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: shoulder weakness",
+    "associated_diseases": [
+      "nerve impingement near the shoulder",
+      "rotator cuff injury"
+    ]
+  },
+  "side pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: side pain",
+    "associated_diseases": [
+      "cholecystitis",
+      "cystitis",
+      "diverticulitis",
+      "liver disease",
+      "acute pancreatitis",
+      "vulvodynia",
+      "kidney stone",
+      "urinary tract infection",
+      "pyelonephritis",
+      "chronic back pain"
+    ]
+  },
+  "sinus congestion": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: sinus congestion",
+    "associated_diseases": [
+      "nose disorder",
+      "acute sinusitis",
+      "ear wax impaction",
+      "chronic sinusitis",
+      "paronychia",
+      "abscess of nose"
+    ]
+  },
+  "skin dryness, peeling, scaliness, or roughness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin dryness, peeling, scaliness, or roughness",
+    "associated_diseases": [
+      "eczema",
+      "fungal infection of the hair",
+      "actinic keratosis",
+      "seborrheic dermatitis",
+      "contact dermatitis",
+      "skin pigmentation disorder",
+      "psoriasis",
+      "skin polyp",
+      "skin disorder",
+      "rosacea"
+    ]
+  },
+  "skin growth": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin growth",
+    "associated_diseases": [
+      "fungal infection of the hair",
+      "sebaceous cyst",
+      "skin pigmentation disorder",
+      "seborrheic keratosis",
+      "psoriasis",
+      "skin polyp",
+      "actinic keratosis",
+      "seborrheic dermatitis",
+      "skin disorder",
+      "varicocele of the testicles"
+    ]
+  },
+  "skin irritation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin irritation",
+    "associated_diseases": [
+      "eczema",
+      "fungal infection of the hair",
+      "dental caries",
+      "seborrheic keratosis",
+      "contact dermatitis",
+      "skin disorder",
+      "actinic keratosis",
+      "skin polyp",
+      "skin cancer",
+      "atrophic skin condition"
+    ]
+  },
+  "skin lesion": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin lesion",
+    "associated_diseases": [
+      "eczema",
+      "fungal infection of the hair",
+      "psoriasis",
+      "pyogenic skin infection",
+      "seborrheic keratosis",
+      "seborrheic dermatitis",
+      "actinic keratosis",
+      "skin pigmentation disorder",
+      "sebaceous cyst",
+      "contact dermatitis"
+    ]
+  },
+  "skin moles": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin moles",
+    "associated_diseases": [
+      "contact dermatitis",
+      "sebaceous cyst",
+      "skin polyp",
+      "skin pigmentation disorder",
+      "seborrheic keratosis",
+      "actinic keratosis",
+      "psoriasis",
+      "hemangioma",
+      "skin disorder",
+      "rosacea"
+    ]
+  },
+  "skin oiliness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin oiliness",
+    "associated_diseases": []
+  },
+  "skin on arm or hand looks infected": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin on arm or hand looks infected",
+    "associated_diseases": [
+      "ingrown toe nail",
+      "paronychia"
+    ]
+  },
+  "skin on head or neck looks infected": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin on head or neck looks infected",
+    "associated_diseases": []
+  },
+  "skin on leg or foot looks infected": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin on leg or foot looks infected",
+    "associated_diseases": [
+      "ingrown toe nail",
+      "onychomycosis",
+      "thrombophlebitis",
+      "venous insufficiency",
+      "paronychia",
+      "osteomyelitis",
+      "postoperative infection",
+      "open wound of the foot",
+      "decubitus ulcer"
+    ]
+  },
+  "skin pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin pain",
+    "associated_diseases": []
+  },
+  "skin rash": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin rash",
+    "associated_diseases": [
+      "strep throat",
+      "eczema",
+      "fungal infection of the hair",
+      "psoriasis",
+      "drug reaction",
+      "diaper rash",
+      "skin pigmentation disorder",
+      "pyogenic skin infection",
+      "seborrheic dermatitis",
+      "seborrheic keratosis"
+    ]
+  },
+  "skin swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: skin swelling",
+    "associated_diseases": [
+      "eczema",
+      "skin polyp",
+      "psoriasis",
+      "stye",
+      "fungal infection of the hair",
+      "dental caries",
+      "allergy",
+      "actinic keratosis",
+      "impetigo",
+      "viral exanthem"
+    ]
+  },
+  "sleepiness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: sleepiness",
+    "associated_diseases": [
+      "hypoglycemia",
+      "concussion",
+      "obstructive sleep apnea (osa)",
+      "interstitial lung disease",
+      "premature ventricular contractions (pvcs)",
+      "primary insomnia",
+      "restless leg syndrome",
+      "narcolepsy",
+      "drug poisoning due to medication",
+      "poisoning due to sedatives"
+    ]
+  },
+  "sleepwalking": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: sleepwalking",
+    "associated_diseases": []
+  },
+  "slurring words": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: slurring words",
+    "associated_diseases": [
+      "delirium",
+      "stroke",
+      "hemiplegia",
+      "dysthymic disorder",
+      "drug poisoning due to medication",
+      "brain cancer",
+      "myasthenia gravis",
+      "aplastic anemia"
+    ]
+  },
+  "smoking problems": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: smoking problems",
+    "associated_diseases": [
+      "neurosis",
+      "smoking or tobacco addiction",
+      "drug abuse",
+      "alcohol abuse",
+      "protein deficiency",
+      "lung cancer",
+      "metabolic disorder"
+    ]
+  },
+  "sneezing": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: sneezing",
+    "associated_diseases": [
+      "conjunctivitis due to allergy",
+      "seasonal allergies (hay fever)",
+      "tracheitis"
+    ]
+  },
+  "sore in nose": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: sore in nose",
+    "associated_diseases": [
+      "impetigo"
+    ]
+  },
+  "sore throat": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: sore throat",
+    "associated_diseases": [
+      "acute bronchitis",
+      "esophagitis",
+      "pneumonia",
+      "conjunctivitis",
+      "eustachian tube dysfunction (ear disorder)",
+      "strep throat",
+      "nose disorder",
+      "acute sinusitis",
+      "acute bronchospasm",
+      "common cold"
+    ]
+  },
+  "spots or clouds in vision": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: spots or clouds in vision",
+    "associated_diseases": [
+      "cornea infection",
+      "blepharitis",
+      "macular degeneration",
+      "dry eye of unknown cause",
+      "corneal disorder",
+      "chronic glaucoma",
+      "labyrinthitis",
+      "cataract",
+      "glaucoma",
+      "diabetic retinopathy"
+    ]
+  },
+  "spotting or bleeding during pregnancy": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: spotting or bleeding during pregnancy",
+    "associated_diseases": [
+      "spontaneous abortion",
+      "vaginal cyst",
+      "problem during pregnancy",
+      "threatened pregnancy",
+      "missed abortion",
+      "induced abortion",
+      "uterine atony",
+      "hydatidiform mole",
+      "hypertension of pregnancy",
+      "placental abruption"
+    ]
+  },
+  "stiffness all over": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: stiffness all over",
+    "associated_diseases": [
+      "parkinson disease",
+      "spondylitis",
+      "ankylosing spondylitis"
+    ]
+  },
+  "stomach bloating": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: stomach bloating",
+    "associated_diseases": [
+      "cholecystitis",
+      "appendicitis",
+      "indigestion",
+      "intestinal obstruction",
+      "osteoporosis",
+      "alcoholic liver disease",
+      "pancreatic cancer",
+      "esophageal cancer",
+      "liver cancer",
+      "viral hepatitis"
+    ]
+  },
+  "stuttering or stammering": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: stuttering or stammering",
+    "associated_diseases": []
+  },
+  "suprapubic pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: suprapubic pain",
+    "associated_diseases": [
+      "cystitis",
+      "urinary tract infection",
+      "kidney stone",
+      "temporary or benign blood in urine",
+      "sepsis",
+      "vaginitis",
+      "benign vaginal discharge (leukorrhea)",
+      "pelvic inflammatory disease",
+      "vaginal yeast infection",
+      "pyelonephritis"
+    ]
+  },
+  "sweating": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: sweating",
+    "associated_diseases": [
+      "hypoglycemia",
+      "obstructive sleep apnea (osa)",
+      "angina",
+      "pulmonary embolism",
+      "heart attack",
+      "labyrinthitis",
+      "mitral valve disease",
+      "drug abuse",
+      "graves disease",
+      "menopause"
+    ]
+  },
+  "swelling of scrotum": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: swelling of scrotum",
+    "associated_diseases": [
+      "benign prostatic hyperplasia (bph)",
+      "varicocele of the testicles",
+      "epididymitis",
+      "inguinal hernia",
+      "hydrocele of the testicle",
+      "male genitalia infection",
+      "perirectal infection",
+      "testicular torsion",
+      "hematoma",
+      "acariasis"
+    ]
+  },
+  "swollen abdomen": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: swollen abdomen",
+    "associated_diseases": [
+      "kidney failure",
+      "inguinal hernia",
+      "abdominal hernia"
+    ]
+  },
+  "swollen eye": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: swollen eye",
+    "associated_diseases": [
+      "conjunctivitis due to allergy",
+      "stye",
+      "conjunctivitis",
+      "blepharitis",
+      "contact dermatitis",
+      "allergy",
+      "cornea infection",
+      "chalazion",
+      "conjunctivitis due to virus",
+      "ingrown toe nail"
+    ]
+  },
+  "swollen lymph nodes": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: swollen lymph nodes",
+    "associated_diseases": [
+      "sialoadenitis",
+      "herpangina",
+      "ulcerative colitis",
+      "mononucleosis",
+      "melanoma",
+      "peritonsillar abscess",
+      "atrial flutter",
+      "salivary gland disorder",
+      "mumps",
+      "thyroid cancer"
+    ]
+  },
+  "swollen or red tonsils": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: swollen or red tonsils",
+    "associated_diseases": [
+      "eustachian tube dysfunction (ear disorder)",
+      "tonsillitis"
+    ]
+  },
+  "swollen tongue": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: swollen tongue",
+    "associated_diseases": []
+  },
+  "symptoms of bladder": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: symptoms of bladder",
+    "associated_diseases": [
+      "cystitis",
+      "benign prostatic hyperplasia (bph)",
+      "temporary or benign blood in urine",
+      "urge incontinence",
+      "bladder disorder",
+      "pelvic organ prolapse",
+      "bladder obstruction",
+      "urethral stricture",
+      "overflow incontinence",
+      "bladder cancer"
+    ]
+  },
+  "symptoms of eye": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: symptoms of eye",
+    "associated_diseases": [
+      "conjunctivitis due to allergy",
+      "cornea infection",
+      "rosacea",
+      "stye",
+      "dry eye of unknown cause",
+      "macular degeneration",
+      "blepharitis",
+      "bell palsy",
+      "chalazion",
+      "chronic glaucoma"
+    ]
+  },
+  "symptoms of infants": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: symptoms of infants",
+    "associated_diseases": [
+      "teething syndrome"
+    ]
+  },
+  "symptoms of prostate": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: symptoms of prostate",
+    "associated_diseases": [
+      "benign prostatic hyperplasia (bph)",
+      "urinary tract obstruction",
+      "erectile dysfunction",
+      "urethral stricture",
+      "prostate cancer",
+      "peyronie disease"
+    ]
+  },
+  "symptoms of the face": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: symptoms of the face",
+    "associated_diseases": [
+      "actinic keratosis",
+      "seborrheic dermatitis",
+      "bell palsy",
+      "transient ischemic attack",
+      "cranial nerve palsy",
+      "trigeminal neuralgia",
+      "migraine",
+      "lyme disease"
+    ]
+  },
+  "symptoms of the kidneys": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: symptoms of the kidneys",
+    "associated_diseases": [
+      "cholecystitis",
+      "acute kidney injury",
+      "kidney failure",
+      "peripheral arterial disease",
+      "primary kidney disease",
+      "kidney disease due to longstanding hypertension",
+      "chronic kidney disease"
+    ]
+  },
+  "symptoms of the scrotum and testes": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: symptoms of the scrotum and testes",
+    "associated_diseases": [
+      "injury to the trunk",
+      "varicocele of the testicles",
+      "abdominal hernia",
+      "inguinal hernia",
+      "urethral stricture",
+      "hydrocele of the testicle",
+      "testicular disorder",
+      "phimosis",
+      "testicular torsion",
+      "cryptorchidism"
+    ]
+  },
+  "temper problems": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: temper problems",
+    "associated_diseases": [
+      "diaper rash",
+      "personality disorder",
+      "marijuana abuse",
+      "depression",
+      "developmental disability",
+      "psychotic disorder",
+      "schizophrenia",
+      "conduct disorder",
+      "post-traumatic stress disorder (ptsd)",
+      "dysthymic disorder"
+    ]
+  },
+  "thirst": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: thirst",
+    "associated_diseases": []
+  },
+  "throat feels tight": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: throat feels tight",
+    "associated_diseases": [
+      "laryngitis",
+      "ischemic heart disease",
+      "sensorineural hearing loss",
+      "tonsillitis",
+      "head and neck cancer",
+      "chronic rheumatic fever",
+      "peritonsillar abscess",
+      "thyroid nodule",
+      "vocal cord polyp",
+      "achalasia"
+    ]
+  },
+  "throat irritation": {
+    "severity_weight": 4,
+    "description": "Clinical symptom: throat irritation",
+    "associated_diseases": []
+  },
+  "throat redness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: throat redness",
+    "associated_diseases": [
+      "tonsillitis"
+    ]
+  },
+  "throat swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: throat swelling",
+    "associated_diseases": [
+      "drug reaction",
+      "lymphedema",
+      "abscess of the pharynx",
+      "torticollis",
+      "peritonsillar abscess",
+      "foreign body in the throat",
+      "cellulitis or abscess of mouth",
+      "scarlet fever",
+      "vocal cord polyp"
+    ]
+  },
+  "tongue bleeding": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: tongue bleeding",
+    "associated_diseases": []
+  },
+  "tongue lesions": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: tongue lesions",
+    "associated_diseases": [
+      "oral thrush (yeast infection)",
+      "oral mucosal lesion",
+      "mucositis",
+      "aphthous ulcer",
+      "open wound of the mouth"
+    ]
+  },
+  "tongue pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: tongue pain",
+    "associated_diseases": []
+  },
+  "too little hair": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: too little hair",
+    "associated_diseases": [
+      "seborrheic dermatitis",
+      "fungal infection of the skin",
+      "onychomycosis",
+      "alopecia",
+      "hypothyroidism"
+    ]
+  },
+  "toothache": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: toothache",
+    "associated_diseases": [
+      "dental caries",
+      "gum disease",
+      "tooth disorder",
+      "tooth abscess",
+      "oral mucosal lesion",
+      "jaw disorder",
+      "aphthous ulcer",
+      "trigeminal neuralgia",
+      "broken tooth",
+      "cellulitis or abscess of mouth"
+    ]
+  },
+  "underweight": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: underweight",
+    "associated_diseases": []
+  },
+  "unpredictable menstruation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: unpredictable menstruation",
+    "associated_diseases": [
+      "idiopathic excessive menstruation",
+      "idiopathic irregular menstrual cycle",
+      "idiopathic painful menstruation",
+      "uterine fibroids",
+      "trichomonas infection",
+      "scabies",
+      "polycystic ovarian syndrome (pcos)",
+      "premenstrual tension syndrome",
+      "idiopathic nonmenstrual bleeding",
+      "menopause"
+    ]
+  },
+  "unusual color or odor to urine": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: unusual color or odor to urine",
+    "associated_diseases": [
+      "liver disease",
+      "sciatica"
+    ]
+  },
+  "unwanted hair": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: unwanted hair",
+    "associated_diseases": [
+      "hirsutism"
+    ]
+  },
+  "upper abdominal pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: upper abdominal pain",
+    "associated_diseases": [
+      "esophagitis",
+      "liver disease",
+      "acute pancreatitis",
+      "cholecystitis",
+      "diverticulitis",
+      "hiatal hernia",
+      "gallstone",
+      "appendicitis",
+      "gastroduodenal ulcer",
+      "diverticulosis"
+    ]
+  },
+  "uterine contractions": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: uterine contractions",
+    "associated_diseases": [
+      "spontaneous abortion",
+      "threatened pregnancy",
+      "preeclampsia",
+      "uterine atony",
+      "hypertension of pregnancy",
+      "subacute thyroiditis",
+      "gestational diabetes",
+      "premature rupture of amniotic membrane",
+      "pregnancy",
+      "placental abruption"
+    ]
+  },
+  "vaginal bleeding after menopause": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: vaginal bleeding after menopause",
+    "associated_diseases": [
+      "endometrial cancer",
+      "endometrial hyperplasia",
+      "uterine cancer"
+    ]
+  },
+  "vaginal discharge": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: vaginal discharge",
+    "associated_diseases": [
+      "vulvodynia",
+      "vaginal cyst",
+      "idiopathic painful menstruation",
+      "vaginitis",
+      "pelvic inflammatory disease",
+      "idiopathic excessive menstruation",
+      "threatened pregnancy",
+      "benign vaginal discharge (leukorrhea)",
+      "ovarian cyst",
+      "vaginal yeast infection"
+    ]
+  },
+  "vaginal dryness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: vaginal dryness",
+    "associated_diseases": [
+      "anal fissure",
+      "fibroadenoma",
+      "metastatic cancer",
+      "breast cyst"
+    ]
+  },
+  "vaginal itching": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: vaginal itching",
+    "associated_diseases": [
+      "vaginitis",
+      "idiopathic painful menstruation",
+      "benign vaginal discharge (leukorrhea)",
+      "itching of unknown cause",
+      "urge incontinence",
+      "idiopathic absence of menstruation",
+      "intestinal obstruction",
+      "urethritis",
+      "vaginal yeast infection",
+      "cervicitis"
+    ]
+  },
+  "vaginal pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: vaginal pain",
+    "associated_diseases": [
+      "vaginal cyst",
+      "vulvodynia",
+      "vaginitis",
+      "vaginal yeast infection",
+      "yeast infection",
+      "pelvic organ prolapse",
+      "vulvar disorder",
+      "female genitalia infection",
+      "gonorrhea",
+      "chlamydia"
+    ]
+  },
+  "vaginal redness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: vaginal redness",
+    "associated_diseases": [
+      "vaginitis",
+      "benign vaginal discharge (leukorrhea)",
+      "vaginal yeast infection",
+      "preeclampsia",
+      "gestational diabetes"
+    ]
+  },
+  "vomiting": {
+    "severity_weight": 5,
+    "description": "Clinical symptom: vomiting",
+    "associated_diseases": [
+      "kidney stone",
+      "gastrointestinal hemorrhage",
+      "esophagitis",
+      "cholecystitis",
+      "acute bronchospasm",
+      "strep throat",
+      "pneumonia",
+      "sickle cell crisis",
+      "otitis media",
+      "acute bronchiolitis"
+    ]
+  },
+  "vomiting blood": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: vomiting blood",
+    "associated_diseases": [
+      "gastrointestinal hemorrhage",
+      "hyperemesis gravidarum",
+      "hiatal hernia",
+      "gastroduodenal ulcer",
+      "alcohol abuse",
+      "gastritis",
+      "cirrhosis",
+      "anemia",
+      "foreign body in the gastrointestinal tract",
+      "folate deficiency"
+    ]
+  },
+  "vulvar irritation": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: vulvar irritation",
+    "associated_diseases": [
+      "vaginal yeast infection",
+      "female genitalia infection",
+      "vulvar disorder",
+      "cervical cancer"
+    ]
+  },
+  "vulvar sore": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: vulvar sore",
+    "associated_diseases": [
+      "female genitalia infection"
+    ]
+  },
+  "warts": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: warts",
+    "associated_diseases": [
+      "eczema",
+      "skin pigmentation disorder",
+      "skin polyp",
+      "seborrheic keratosis",
+      "skin cancer",
+      "molluscum contagiosum",
+      "viral warts",
+      "pityriasis rosea",
+      "hyperhidrosis",
+      "hpv"
+    ]
+  },
+  "weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: weakness",
+    "associated_diseases": [
+      "pneumonia",
+      "hypoglycemia",
+      "liver disease",
+      "gastrointestinal hemorrhage",
+      "acute kidney injury",
+      "multiple sclerosis",
+      "sepsis",
+      "sinus bradycardia",
+      "hyperemesis gravidarum",
+      "heart failure"
+    ]
+  },
+  "weight gain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: weight gain",
+    "associated_diseases": [
+      "obstructive sleep apnea (osa)",
+      "heart failure",
+      "heart block",
+      "iron deficiency anemia",
+      "paroxysmal ventricular tachycardia",
+      "eating disorder",
+      "alcoholic liver disease",
+      "polycystic ovarian syndrome (pcos)",
+      "polycythemia vera",
+      "hypothyroidism"
+    ]
+  },
+  "wheezing": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: wheezing",
+    "associated_diseases": [
+      "acute bronchiolitis",
+      "pneumonia",
+      "acute bronchitis",
+      "chronic obstructive pulmonary disease (copd)",
+      "acute bronchospasm",
+      "asthma",
+      "common cold",
+      "croup",
+      "interstitial lung disease",
+      "acute respiratory distress syndrome (ards)"
+    ]
+  },
+  "white discharge from eye": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: white discharge from eye",
+    "associated_diseases": [
+      "conjunctivitis",
+      "blepharitis",
+      "corneal disorder",
+      "chronic glaucoma",
+      "dry eye of unknown cause",
+      "conjunctivitis due to virus",
+      "corneal abrasion",
+      "foreign body in the eye",
+      "stenosis of the tear duct",
+      "ectropion"
+    ]
+  },
+  "wrinkles on skin": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: wrinkles on skin",
+    "associated_diseases": [
+      "atrophic skin condition"
+    ]
+  },
+  "wrist lump or mass": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: wrist lump or mass",
+    "associated_diseases": [
+      "ganglion cyst"
+    ]
+  },
+  "wrist pain": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: wrist pain",
+    "associated_diseases": [
+      "sprain or strain",
+      "injury to the arm",
+      "gout",
+      "carpal tunnel syndrome",
+      "injury to the trunk",
+      "mononeuritis",
+      "rheumatoid arthritis",
+      "joint effusion",
+      "tendinitis",
+      "fracture of the arm"
+    ]
+  },
+  "wrist stiffness or tightness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: wrist stiffness or tightness",
+    "associated_diseases": [
+      "fracture of the arm",
+      "fracture of the hand"
+    ]
+  },
+  "wrist swelling": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: wrist swelling",
+    "associated_diseases": [
+      "injury to the arm",
+      "gout",
+      "carpal tunnel syndrome",
+      "rheumatoid arthritis",
+      "ganglion cyst",
+      "fracture of the arm",
+      "joint effusion",
+      "injury of the ankle",
+      "injury to the hand",
+      "hypothyroidism"
+    ]
+  },
+  "wrist weakness": {
+    "severity_weight": 3,
+    "description": "Clinical symptom: wrist weakness",
+    "associated_diseases": []
+  }
+}

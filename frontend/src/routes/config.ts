@@ -15,8 +15,12 @@ export const ROUTES = {
   DOCTOR_DASHBOARD: '/doctor/dashboard',
   DOCTOR_QUEUE: '/doctor/queue',
   DOCTOR_TRIAGE: '/doctor/triage',
+  DOCTOR_ASSESSMENT: '/doctor/assessment',
+  DOCTOR_PATIENT_INTAKE: '/doctor/patient-intake',
 
-  // Common Locked Views
+  // Shared Views
+  REPORT_ANALYSIS: '/reports/analyze',
   CONSULTATION_DETAIL: '/consultations/:id',
   CLINICAL_REPORT: '/reports/:id',
 } as const;
+

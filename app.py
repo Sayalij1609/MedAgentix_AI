@@ -14,6 +14,7 @@ from api.patient_routes import patient_bp
 from api.doctor_routes import doctor_bp
 from api.case_routes import case_bp
 from api.chatbot_routes import chatbot_bp
+from api.ocr_routes import ocr_bp
 
 # Import PostgreSQL Connector Binders
 from database.postgres.db_connection import db, init_db, verify_database_connection
@@ -77,6 +78,37 @@ def create_app(config_class=Config):
     app.register_blueprint(doctor_bp)
     app.register_blueprint(case_bp)
     app.register_blueprint(chatbot_bp)
+    app.register_blueprint(ocr_bp)
+
+    # ----------------------------------------------------------
+    # PRELOAD DIAGNOSTIC PIPELINE (background thread)
+    # ----------------------------------------------------------
+    # Loads all ML models (ClinicalBERT, XGBoost, SHAP, RAG KB)
+    # at startup so the first patient request is fast.
+    # Runs in a background thread so Flask can start serving
+    # health-check and dashboard requests immediately.
+    # ----------------------------------------------------------
+    import threading
+
+    def _preload_pipeline():
+        """Preload the diagnostic pipeline in a background thread."""
+        import sys
+        try:
+            from agents.orchestrator.langgraph_workflow import _load_agents
+            _load_agents()
+            sys.stdout.flush()
+        except Exception as e:
+            print(f" * [WARN] Pipeline preload failed: {e}")
+            import traceback
+            traceback.print_exc()
+            sys.stdout.flush()
+
+    preload_thread = threading.Thread(
+        target=_preload_pipeline,
+        name="pipeline-preload",
+        daemon=True,
+    )
+    preload_thread.start()
 
     # Register database initialization CLI command
     @app.cli.command('db-init')

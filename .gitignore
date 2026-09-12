@@ -33,3 +33,7 @@ frontend/dist/
 
 # Vite cache
 .vite/
+
+data/
+datasets/
+dataset/

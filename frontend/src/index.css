@@ -57,7 +57,7 @@
   /* Strict typography hierarchy definitions */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', 'Inter', sans-serif;
-    @apply font-semibold tracking-tight text-foreground;
+    @apply font-semibold tracking-tight;
   }
 }
 

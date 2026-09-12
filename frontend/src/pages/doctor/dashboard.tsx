@@ -4,7 +4,7 @@ import apiClient from '../../services/api-client';
 import { useToast } from '../../context/toast-context';
 import { 
   Users, Activity, UserCheck, Clock, Search, ShieldAlert,
-  Calendar, FileText, ChevronRight, RefreshCw, Layers, TrendingUp
+  Calendar, FileText, ChevronRight, RefreshCw, Layers, TrendingUp, PlusCircle, FileSearch, Stethoscope
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -181,25 +181,69 @@ export default function DoctorDashboard() {
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto">
-      
-      {/* Title Header */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-border pb-4 text-left">
-        <div>
-          <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">Clinic Overview</h1>
-          <p className="text-xs text-muted-foreground mt-0.5">
-            Operational dashboard tracking triage metrics, case severities, and clinical verification queues.
-          </p>
+
+      {/* ── HERO BANNER ── */}
+      <div className="relative overflow-hidden rounded-2xl p-7 text-white"
+        style={{ background: 'linear-gradient(135deg, #0f172a 0%, #0d2e4a 50%, #0a3d62 100%)' }}>
+        {/* Grid overlay */}
+        <div className="absolute inset-0 pointer-events-none opacity-[0.07]"
+          style={{ backgroundImage: `linear-gradient(to right, #38bdf8 1px, transparent 1px), linear-gradient(to bottom, #38bdf8 1px, transparent 1px)`, backgroundSize: '28px 28px' }} />
+        <div className="absolute -top-16 -right-16 w-56 h-56 bg-teal-400/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-sky-500/10 rounded-full blur-2xl pointer-events-none" />
+
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-teal-400 rounded-full animate-pulse" />
+              <span className="text-teal-400 text-[10px] font-bold uppercase tracking-widest">Clinic Operations Centre</span>
+            </div>
+            <h1 className="text-2xl md:text-3xl font-extrabold leading-tight text-white">Clinic Overview</h1>
+            <p className="text-slate-400 text-sm max-w-md leading-relaxed">
+              {totalRoster} patients on roster · {criticalCases} critical · {awaitingSignoff} awaiting sign-off
+            </p>
+            {lastUpdated && (
+              <span className="text-[10px] text-slate-500 bg-white/5 border border-white/10 rounded-full px-3 py-1 inline-block">
+                Last synced: {lastUpdated}
+              </span>
+            )}
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+            <button
+              onClick={() => navigate('/doctor/patient-intake')}
+              className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-teal-500 to-sky-600 text-white font-bold rounded-xl shadow-lg shadow-teal-500/25 text-sm hover:opacity-90 transition"
+            >
+              <PlusCircle className="w-4 h-4" /> New Patient Assessment
+            </button>
+            <button
+              onClick={handleRefresh}
+              className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 hover:bg-white/15 text-white font-semibold rounded-xl text-sm backdrop-blur-sm transition"
+            >
+              <RefreshCw className="w-4 h-4 text-teal-300" /> Sync EMR
+            </button>
+          </div>
         </div>
-        <div className="flex items-center gap-3 self-end sm:self-auto text-xs text-slate-500 font-semibold">
-          <span>Last Synced: {lastUpdated}</span>
-          <button 
-            onClick={handleRefresh}
-            className="p-2 rounded-xl bg-card border border-border hover:bg-slate-50 text-slate-650 transition flex items-center gap-1.5"
-          >
-            <RefreshCw className="w-3.5 h-3.5" />
-            <span>Sync EMR</span>
+      </div>
+
+      {/* ── QUICK ACTIONS ── */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+        {[
+          { icon: PlusCircle, label: 'New Patient Assessment', sub: 'Run AI diagnostics for a patient', color: 'bg-teal-50 text-teal-600', path: '/doctor/patient-intake' },
+          { icon: FileSearch, label: 'Medical Report Analysis', sub: 'Upload & analyse reports with OCR', color: 'bg-indigo-50 text-indigo-600', path: '/reports/analyze' },
+          { icon: Stethoscope, label: 'Patient Assessments', sub: 'Browse & review case queue', color: 'bg-sky-50 text-sky-600', path: '/doctor/assessment' },
+        ].map(({ icon: Icon, label, sub, color, path }) => (
+          <button key={label} onClick={() => navigate(path)}
+            className="flex items-center gap-3 p-4 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-teal-200 hover:shadow-md transition-all group text-left">
+            <div className={`w-10 h-10 rounded-xl ${color} flex items-center justify-center shrink-0`}>
+              <Icon className="w-5 h-5" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-sm font-bold text-slate-800 group-hover:text-teal-700 transition-colors">{label}</p>
+              <p className="text-[10px] text-slate-400 mt-0.5">{sub}</p>
+            </div>
+            <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-teal-400 ml-auto shrink-0 transition-colors" />
           </button>
-        </div>
+        ))}
       </div>
 
       {/* Critical Alert Panel Banner */}

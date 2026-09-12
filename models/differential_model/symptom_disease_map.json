@@ -1,0 +1,4199 @@
+{
+  "anxiety_and_nervousness": {
+    "canonical_name": "anxiety and nervousness",
+    "diseases": {
+      "anxiety": 476,
+      "marijuana abuse": 464,
+      "acute stress reaction": 363,
+      "panic disorder": 362,
+      "depression": 357,
+      "personality disorder": 357,
+      "neurosis": 356,
+      "schizophrenia": 351,
+      "psychotic disorder": 347,
+      "bipolar disorder": 261
+    },
+    "total_occurrences": 7758
+  },
+  "depression": {
+    "canonical_name": "depression",
+    "diseases": {
+      "anxiety": 500,
+      "marijuana abuse": 473,
+      "schizophrenia": 385,
+      "psychotic disorder": 374,
+      "acute stress reaction": 372,
+      "panic disorder": 370,
+      "personality disorder": 369,
+      "neurosis": 368,
+      "depression": 368,
+      "bipolar disorder": 274
+    },
+    "total_occurrences": 8469
+  },
+  "shortness_of_breath": {
+    "canonical_name": "shortness of breath",
+    "diseases": {
+      "sepsis": 487,
+      "anxiety": 480,
+      "esophagitis": 473,
+      "fracture of the rib": 472,
+      "pneumonia": 467,
+      "obstructive sleep apnea (osa)": 463,
+      "liver disease": 457,
+      "acute bronchiolitis": 457,
+      "acute bronchitis": 456,
+      "drug reaction": 363
+    },
+    "total_occurrences": 17088
+  },
+  "depressive_or_psychotic_symptoms": {
+    "canonical_name": "depressive or psychotic symptoms",
+    "diseases": {
+      "anxiety": 497,
+      "marijuana abuse": 489,
+      "panic disorder": 489,
+      "hypoglycemia": 471,
+      "schizophrenia": 372,
+      "hyperkalemia": 362,
+      "psychotic disorder": 359,
+      "depression": 358,
+      "acute stress reaction": 355,
+      "developmental disability": 354
+    },
+    "total_occurrences": 12029
+  },
+  "sharp_chest_pain": {
+    "canonical_name": "sharp chest pain",
+    "diseases": {
+      "anxiety": 503,
+      "acute bronchitis": 497,
+      "chronic obstructive pulmonary disease (copd)": 496,
+      "esophagitis": 493,
+      "pneumonia": 486,
+      "cholecystitis": 468,
+      "acute pancreatitis": 465,
+      "acute stress reaction": 387,
+      "angina": 377,
+      "pulmonary embolism": 375
+    },
+    "total_occurrences": 19211
+  },
+  "dizziness": {
+    "canonical_name": "dizziness",
+    "diseases": {
+      "hypoglycemia": 496,
+      "concussion": 478,
+      "peripheral nerve disorder": 470,
+      "gastrointestinal hemorrhage": 466,
+      "panic disorder": 386,
+      "acute stress reaction": 374,
+      "drug reaction": 369,
+      "hiatal hernia": 368,
+      "paroxysmal ventricular tachycardia": 366,
+      "ischemic heart disease": 362
+    },
+    "total_occurrences": 13793
+  },
+  "insomnia": {
+    "canonical_name": "insomnia",
+    "diseases": {
+      "psychotic disorder": 497,
+      "anxiety": 487,
+      "obstructive sleep apnea (osa)": 478,
+      "schizophrenia": 472,
+      "panic disorder": 375,
+      "personality disorder": 373,
+      "hypertensive heart disease": 368,
+      "acute stress reaction": 367,
+      "depression": 362,
+      "neurosis": 362
+    },
+    "total_occurrences": 7802
+  },
+  "abnormal_involuntary_movements": {
+    "canonical_name": "abnormal involuntary movements",
+    "diseases": {
+      "multiple sclerosis": 502,
+      "hypoglycemia": 490,
+      "obstructive sleep apnea (osa)": 488,
+      "anxiety": 486,
+      "peripheral nerve disorder": 486,
+      "acute stress reaction": 484,
+      "complex regional pain syndrome": 472,
+      "panic disorder": 374,
+      "bell palsy": 355,
+      "alcohol withdrawal": 275
+    },
+    "total_occurrences": 8033
+  },
+  "chest_tightness": {
+    "canonical_name": "chest tightness",
+    "diseases": {
+      "esophagitis": 496,
+      "sinus bradycardia": 489,
+      "ischemic heart disease": 377,
+      "panic disorder": 372,
+      "angina": 364,
+      "heart failure": 360,
+      "hypertensive heart disease": 357,
+      "acute bronchospasm": 354,
+      "asthma": 353,
+      "heart attack": 352
+    },
+    "total_occurrences": 7483
+  },
+  "palpitations": {
+    "canonical_name": "palpitations",
+    "diseases": {
+      "anxiety": 479,
+      "hypertensive heart disease": 394,
+      "angina": 382,
+      "heart failure": 380,
+      "panic disorder": 365,
+      "sinus bradycardia": 361,
+      "ischemic heart disease": 361,
+      "heart block": 253,
+      "cardiac arrest": 203,
+      "aortic valve disease": 188
+    },
+    "total_occurrences": 4932
+  },
+  "irregular_heartbeat": {
+    "canonical_name": "irregular heartbeat",
+    "diseases": {
+      "anxiety": 488,
+      "sinus bradycardia": 391,
+      "angina": 364,
+      "panic disorder": 363,
+      "heart attack": 361,
+      "aortic valve disease": 278,
+      "benign paroxysmal positional vertical (bppv)": 268,
+      "mitral valve disease": 266,
+      "heart block": 260,
+      "paroxysmal ventricular tachycardia": 249
+    },
+    "total_occurrences": 4959
+  },
+  "breathing_fast": {
+    "canonical_name": "breathing fast",
+    "diseases": {
+      "panic disorder": 370
+    },
+    "total_occurrences": 370
+  },
+  "hoarse_voice": {
+    "canonical_name": "hoarse voice",
+    "diseases": {
+      "sensorineural hearing loss": 364,
+      "croup": 355,
+      "conductive hearing loss": 352,
+      "laryngitis": 259,
+      "nasal polyp": 193,
+      "head and neck cancer": 183,
+      "gastroesophageal reflux disease (gerd)": 183,
+      "tinnitus of unknown cause": 181,
+      "thyroid nodule": 140,
+      "essential tremor": 132
+    },
+    "total_occurrences": 2671
+  },
+  "sore_throat": {
+    "canonical_name": "sore throat",
+    "diseases": {
+      "acute bronchitis": 499,
+      "esophagitis": 499,
+      "pneumonia": 489,
+      "conjunctivitis": 482,
+      "eustachian tube dysfunction (ear disorder)": 482,
+      "strep throat": 481,
+      "nose disorder": 480,
+      "acute sinusitis": 476,
+      "acute bronchospasm": 382,
+      "common cold": 358
+    },
+    "total_occurrences": 11240
+  },
+  "difficulty_speaking": {
+    "canonical_name": "difficulty speaking",
+    "diseases": {
+      "marijuana abuse": 481,
+      "concussion": 470,
+      "developmental disability": 365,
+      "laryngitis": 355,
+      "transient ischemic attack": 275,
+      "hemiplegia": 263,
+      "stroke": 250,
+      "conductive hearing loss": 245,
+      "autism": 242,
+      "delirium": 234
+    },
+    "total_occurrences": 4920
+  },
+  "cough": {
+    "canonical_name": "cough",
+    "diseases": {
+      "pneumonia": 503,
+      "heart failure": 502,
+      "acute bronchitis": 501,
+      "acute bronchiolitis": 501,
+      "nose disorder": 500,
+      "esophagitis": 491,
+      "eczema": 482,
+      "strep throat": 472,
+      "conjunctivitis due to allergy": 462,
+      "acute bronchospasm": 390
+    },
+    "total_occurrences": 19493
+  },
+  "nasal_congestion": {
+    "canonical_name": "nasal congestion",
+    "diseases": {
+      "croup": 511,
+      "acute bronchiolitis": 511,
+      "acute bronchitis": 507,
+      "conjunctivitis due to allergy": 503,
+      "strep throat": 496,
+      "pneumonia": 495,
+      "nose disorder": 487,
+      "asthma": 381,
+      "acute bronchospasm": 380,
+      "chronic obstructive pulmonary disease (copd)": 377
+    },
+    "total_occurrences": 13021
+  },
+  "throat_swelling": {
+    "canonical_name": "throat swelling",
+    "diseases": {
+      "drug reaction": 352,
+      "lymphedema": 268,
+      "abscess of the pharynx": 190,
+      "torticollis": 174,
+      "peritonsillar abscess": 129,
+      "foreign body in the throat": 109,
+      "cellulitis or abscess of mouth": 99,
+      "scarlet fever": 64,
+      "vocal cord polyp": 59
+    },
+    "total_occurrences": 1444
+  },
+  "diminished_hearing": {
+    "canonical_name": "diminished hearing",
+    "diseases": {
+      "otitis media": 369,
+      "acute otitis media": 357,
+      "eustachian tube dysfunction (ear disorder)": 357,
+      "otitis externa (swimmer's ear)": 355,
+      "ear drum damage": 352,
+      "labyrinthitis": 351,
+      "injury to the face": 287,
+      "sensorineural hearing loss": 274,
+      "ear wax impaction": 268,
+      "conductive hearing loss": 247
+    },
+    "total_occurrences": 4332
+  },
+  "lump_in_throat": {
+    "canonical_name": "lump in throat",
+    "diseases": {
+      "tonsillitis": 277,
+      "foreign body in the gastrointestinal tract": 80,
+      "goiter": 49,
+      "thyroid disease": 13
+    },
+    "total_occurrences": 419
+  },
+  "throat_feels_tight": {
+    "canonical_name": "throat feels tight",
+    "diseases": {
+      "laryngitis": 379,
+      "ischemic heart disease": 353,
+      "sensorineural hearing loss": 351,
+      "tonsillitis": 191,
+      "head and neck cancer": 138,
+      "chronic rheumatic fever": 120,
+      "peritonsillar abscess": 92,
+      "thyroid nodule": 86,
+      "vocal cord polyp": 56,
+      "achalasia": 46
+    },
+    "total_occurrences": 1928
+  },
+  "difficulty_in_swallowing": {
+    "canonical_name": "difficulty in swallowing",
+    "diseases": {
+      "esophagitis": 508,
+      "hiatal hernia": 486,
+      "obstructive sleep apnea (osa)": 485,
+      "strep throat": 469,
+      "laryngitis": 271,
+      "hyperkalemia": 260,
+      "gastroesophageal reflux disease (gerd)": 224,
+      "tonsillar hypertrophy": 202,
+      "jaw disorder": 199,
+      "mucositis": 177
+    },
+    "total_occurrences": 4441
+  },
+  "skin_swelling": {
+    "canonical_name": "skin swelling",
+    "diseases": {
+      "eczema": 494,
+      "skin polyp": 484,
+      "psoriasis": 480,
+      "stye": 478,
+      "fungal infection of the hair": 477,
+      "dental caries": 462,
+      "allergy": 372,
+      "actinic keratosis": 364,
+      "impetigo": 363,
+      "viral exanthem": 357
+    },
+    "total_occurrences": 12113
+  },
+  "retention_of_urine": {
+    "canonical_name": "retention of urine",
+    "diseases": {
+      "acute kidney injury": 490,
+      "benign prostatic hyperplasia (bph)": 475,
+      "chronic constipation": 471,
+      "cystitis": 468,
+      "prostatitis": 361,
+      "temporary or benign blood in urine": 351,
+      "kidney stone": 349,
+      "urinary tract infection": 345,
+      "urge incontinence": 274,
+      "epididymitis": 267
+    },
+    "total_occurrences": 6617
+  },
+  "groin_mass": {
+    "canonical_name": "groin mass",
+    "diseases": {
+      "lipoma": 363,
+      "abdominal hernia": 175,
+      "inguinal hernia": 174,
+      "peritonitis": 166,
+      "aortic valve disease": 158,
+      "soft tissue sarcoma": 105,
+      "hidradenitis suppurativa": 96,
+      "hydrocele of the testicle": 90,
+      "lymphoma": 89,
+      "bladder cancer": 53
+    },
+    "total_occurrences": 1622
+  },
+  "leg_pain": {
+    "canonical_name": "leg pain",
+    "diseases": {
+      "complex regional pain syndrome": 497,
+      "pain after an operation": 493,
+      "peripheral nerve disorder": 490,
+      "pulmonary embolism": 485,
+      "spinal stenosis": 481,
+      "injury to the leg": 478,
+      "bursitis": 472,
+      "arthritis of the hip": 471,
+      "spondylosis": 471,
+      "sprain or strain": 462
+    },
+    "total_occurrences": 12900
+  },
+  "hip_pain": {
+    "canonical_name": "hip pain",
+    "diseases": {
+      "osteoarthritis": 501,
+      "spinal stenosis": 497,
+      "bursitis": 495,
+      "arthritis of the hip": 475,
+      "spondylosis": 475,
+      "chronic back pain": 373,
+      "spondylolisthesis": 373,
+      "herniated disk": 368,
+      "neuralgia": 360,
+      "degenerative disc disease": 360
+    },
+    "total_occurrences": 7707
+  },
+  "suprapubic_pain": {
+    "canonical_name": "suprapubic pain",
+    "diseases": {
+      "cystitis": 494,
+      "urinary tract infection": 489,
+      "kidney stone": 377,
+      "temporary or benign blood in urine": 372,
+      "sepsis": 366,
+      "vaginitis": 361,
+      "benign vaginal discharge (leukorrhea)": 361,
+      "pelvic inflammatory disease": 352,
+      "vaginal yeast infection": 348,
+      "pyelonephritis": 346
+    },
+    "total_occurrences": 6688
+  },
+  "blood_in_stool": {
+    "canonical_name": "blood in stool",
+    "diseases": {
+      "gastrointestinal hemorrhage": 519,
+      "liver disease": 491,
+      "noninfectious gastroenteritis": 463,
+      "infectious gastroenteritis": 460,
+      "diverticulitis": 448,
+      "chronic constipation": 369,
+      "hemorrhoids": 363,
+      "diaper rash": 360,
+      "rectal disorder": 354,
+      "gastroduodenal ulcer": 344
+    },
+    "total_occurrences": 5921
+  },
+  "lack_of_growth": {
+    "canonical_name": "lack of growth",
+    "diseases": {
+      "conduct disorder": 371,
+      "developmental disability": 356,
+      "eye alignment disorder": 273,
+      "attention deficit hyperactivity disorder (adhd)": 272,
+      "dermatitis due to sun exposure": 270,
+      "obsessive compulsive disorder (ocd)": 239,
+      "autism": 183,
+      "asperger syndrome": 180,
+      "cerebral palsy": 82,
+      "hydrocephalus": 81
+    },
+    "total_occurrences": 2648
+  },
+  "emotional_symptoms": {
+    "canonical_name": "emotional symptoms",
+    "diseases": {
+      "testicular torsion": 60,
+      "carbon monoxide poisoning": 47,
+      "atonic bladder": 45,
+      "presbyacusis": 38,
+      "acariasis": 26,
+      "anemia of chronic disease": 21,
+      "emphysema": 20,
+      "trichiasis": 19,
+      "dislocation of the ankle": 17,
+      "foreign body in the vagina": 16
+    },
+    "total_occurrences": 493
+  },
+  "elbow_weakness": {
+    "canonical_name": "elbow weakness",
+    "diseases": {
+      "spermatocele": 43,
+      "dislocation of the wrist": 29,
+      "cysticercosis": 26,
+      "dislocation of the vertebra": 26,
+      "urethral valves": 22,
+      "uveitis": 14,
+      "dislocation of the foot": 14,
+      "zenker diverticulum": 9,
+      "frostbite": 9,
+      "moyamoya disease": 9
+    },
+    "total_occurrences": 258
+  },
+  "back_weakness": {
+    "canonical_name": "back weakness",
+    "diseases": {
+      "thyroid nodule": 115,
+      "dissociative disorder": 63,
+      "endometrial hyperplasia": 31,
+      "adrenal adenoma": 23
+    },
+    "total_occurrences": 232
+  },
+  "symptoms_of_the_scrotum_and_testes": {
+    "canonical_name": "symptoms of the scrotum and testes",
+    "diseases": {
+      "injury to the trunk": 503,
+      "varicocele of the testicles": 269,
+      "abdominal hernia": 244,
+      "inguinal hernia": 206,
+      "urethral stricture": 182,
+      "hydrocele of the testicle": 155,
+      "testicular disorder": 45,
+      "phimosis": 41,
+      "testicular torsion": 35,
+      "cryptorchidism": 3
+    },
+    "total_occurrences": 1683
+  },
+  "swelling_of_scrotum": {
+    "canonical_name": "swelling of scrotum",
+    "diseases": {
+      "benign prostatic hyperplasia (bph)": 483,
+      "varicocele of the testicles": 273,
+      "epididymitis": 205,
+      "inguinal hernia": 163,
+      "hydrocele of the testicle": 98,
+      "male genitalia infection": 85,
+      "perirectal infection": 62,
+      "testicular torsion": 40,
+      "hematoma": 35,
+      "acariasis": 21
+    },
+    "total_occurrences": 1473
+  },
+  "pain_in_testicles": {
+    "canonical_name": "pain in testicles",
+    "diseases": {
+      "benign prostatic hyperplasia (bph)": 486,
+      "varicocele of the testicles": 280,
+      "erectile dysfunction": 233,
+      "epididymitis": 215,
+      "hydronephrosis": 209,
+      "inguinal hernia": 168,
+      "hydrocele of the testicle": 96,
+      "perirectal infection": 78,
+      "chickenpox": 70,
+      "male genitalia infection": 68
+    },
+    "total_occurrences": 1974
+  },
+  "flatulence": {
+    "canonical_name": "flatulence",
+    "diseases": {
+      "irritable bowel syndrome": 283,
+      "colonic polyp": 218,
+      "intestinal malabsorption": 111,
+      "lactose intolerance": 82,
+      "anemia due to malignancy": 9,
+      "omphalitis": 6,
+      "open wound from surgical incision": 5
+    },
+    "total_occurrences": 714
+  },
+  "pus_draining_from_ear": {
+    "canonical_name": "pus draining from ear",
+    "diseases": {
+      "ear drum damage": 491,
+      "retinopathy due to high blood pressure": 91,
+      "amblyopia": 32,
+      "cholesteatoma": 18
+    },
+    "total_occurrences": 632
+  },
+  "jaundice": {
+    "canonical_name": "jaundice",
+    "diseases": {
+      "liver disease": 499,
+      "choledocholithiasis": 275,
+      "hepatitis due to a toxin": 151,
+      "thoracic aortic aneurysm": 114,
+      "pancreatic cancer": 88,
+      "cervical cancer": 66,
+      "ascending cholangitis": 44,
+      "metabolic disorder": 27,
+      "neonatal jaundice": 16
+    },
+    "total_occurrences": 1280
+  },
+  "mass_in_scrotum": {
+    "canonical_name": "mass in scrotum",
+    "diseases": {
+      "epididymitis": 288,
+      "varicocele of the testicles": 269,
+      "inguinal hernia": 172,
+      "hydrocele of the testicle": 96,
+      "bladder cancer": 91,
+      "male genitalia infection": 62,
+      "spermatocele": 38,
+      "peyronie disease": 17,
+      "anal fistula": 15,
+      "testicular cancer": 4
+    },
+    "total_occurrences": 1052
+  },
+  "white_discharge_from_eye": {
+    "canonical_name": "white discharge from eye",
+    "diseases": {
+      "conjunctivitis": 365,
+      "blepharitis": 354,
+      "corneal disorder": 350,
+      "chronic glaucoma": 350,
+      "dry eye of unknown cause": 337,
+      "conjunctivitis due to virus": 271,
+      "corneal abrasion": 263,
+      "foreign body in the eye": 183,
+      "stenosis of the tear duct": 66,
+      "ectropion": 29
+    },
+    "total_occurrences": 2592
+  },
+  "irritable_infant": {
+    "canonical_name": "irritable infant",
+    "diseases": {
+      "acute bronchiolitis": 477,
+      "oral thrush (yeast infection)": 371,
+      "diaper rash": 352,
+      "abscess of nose": 175,
+      "mucositis": 172,
+      "male genitalia infection": 95,
+      "subdural hemorrhage": 87,
+      "dislocation of the elbow": 46,
+      "neonatal jaundice": 14
+    },
+    "total_occurrences": 1789
+  },
+  "abusing_alcohol": {
+    "canonical_name": "abusing alcohol",
+    "diseases": {
+      "marijuana abuse": 504,
+      "acute pancreatitis": 497,
+      "depression": 379,
+      "smoking or tobacco addiction": 371,
+      "conduct disorder": 367,
+      "psychotic disorder": 366,
+      "bipolar disorder": 340,
+      "eating disorder": 282,
+      "alcohol withdrawal": 278,
+      "social phobia": 273
+    },
+    "total_occurrences": 5784
+  },
+  "fainting": {
+    "canonical_name": "fainting",
+    "diseases": {
+      "hypoglycemia": 502,
+      "gastrointestinal hemorrhage": 486,
+      "heart attack": 401,
+      "sinus bradycardia": 381,
+      "paroxysmal ventricular tachycardia": 298,
+      "alcohol withdrawal": 270,
+      "hypovolemia": 254,
+      "heart block": 246,
+      "conduct disorder": 242,
+      "benign paroxysmal positional vertical (bppv)": 242
+    },
+    "total_occurrences": 5575
+  },
+  "hostile_behavior": {
+    "canonical_name": "hostile behavior",
+    "diseases": {
+      "marijuana abuse": 494,
+      "personality disorder": 393,
+      "psychotic disorder": 390,
+      "neurosis": 378,
+      "depression": 375,
+      "post-traumatic stress disorder (ptsd)": 371,
+      "developmental disability": 367,
+      "schizophrenia": 344,
+      "conduct disorder": 291,
+      "attention deficit hyperactivity disorder (adhd)": 273
+    },
+    "total_occurrences": 6361
+  },
+  "drug_abuse": {
+    "canonical_name": "drug abuse",
+    "diseases": {
+      "marijuana abuse": 488,
+      "depression": 380,
+      "smoking or tobacco addiction": 375,
+      "neurosis": 368,
+      "personality disorder": 360,
+      "postpartum depression": 271,
+      "drug abuse (opioids)": 263,
+      "drug abuse": 259,
+      "attention deficit hyperactivity disorder (adhd)": 258,
+      "post-traumatic stress disorder (ptsd)": 254
+    },
+    "total_occurrences": 4287
+  },
+  "sharp_abdominal_pain": {
+    "canonical_name": "sharp abdominal pain",
+    "diseases": {
+      "noninfectious gastroenteritis": 504,
+      "cholecystitis": 500,
+      "pyelonephritis": 497,
+      "gastrointestinal hemorrhage": 496,
+      "liver disease": 494,
+      "diverticulitis": 494,
+      "cystitis": 492,
+      "acute pancreatitis": 485,
+      "threatened pregnancy": 477,
+      "esophagitis": 477
+    },
+    "total_occurrences": 25857
+  },
+  "feeling_ill": {
+    "canonical_name": "feeling ill",
+    "diseases": {
+      "hypoglycemia": 512,
+      "sepsis": 389,
+      "sinus bradycardia": 367,
+      "obsessive compulsive disorder (ocd)": 284,
+      "hyperkalemia": 281,
+      "pulmonary hypertension": 266,
+      "scleroderma": 206,
+      "hepatitis due to a toxin": 199,
+      "mononucleosis": 183,
+      "hypovolemia": 181
+    },
+    "total_occurrences": 3471
+  },
+  "vomiting": {
+    "canonical_name": "vomiting",
+    "diseases": {
+      "kidney stone": 515,
+      "gastrointestinal hemorrhage": 513,
+      "esophagitis": 512,
+      "cholecystitis": 512,
+      "acute bronchospasm": 509,
+      "strep throat": 509,
+      "pneumonia": 501,
+      "sickle cell crisis": 501,
+      "otitis media": 500,
+      "acute bronchiolitis": 495
+    },
+    "total_occurrences": 22364
+  },
+  "headache": {
+    "canonical_name": "headache",
+    "diseases": {
+      "strep throat": 507,
+      "acute bronchitis": 499,
+      "infectious gastroenteritis": 498,
+      "nose disorder": 498,
+      "sprain or strain": 497,
+      "anxiety": 486,
+      "concussion": 485,
+      "noninfectious gastroenteritis": 481,
+      "spinal stenosis": 473,
+      "acute stress reaction": 392
+    },
+    "total_occurrences": 19799
+  },
+  "nausea": {
+    "canonical_name": "nausea",
+    "diseases": {
+      "infectious gastroenteritis": 510,
+      "vulvodynia": 507,
+      "gastrointestinal hemorrhage": 502,
+      "liver disease": 501,
+      "hypoglycemia": 501,
+      "acute pancreatitis": 500,
+      "noninfectious gastroenteritis": 500,
+      "drug reaction": 499,
+      "diverticulitis": 497,
+      "concussion": 488
+    },
+    "total_occurrences": 18931
+  },
+  "diarrhea": {
+    "canonical_name": "diarrhea",
+    "diseases": {
+      "noninfectious gastroenteritis": 512,
+      "diverticulitis": 505,
+      "infectious gastroenteritis": 497,
+      "acute pancreatitis": 485,
+      "gastrointestinal hemorrhage": 482,
+      "liver disease": 481,
+      "diaper rash": 381,
+      "hyperemesis gravidarum": 371,
+      "appendicitis": 369,
+      "gastritis": 363
+    },
+    "total_occurrences": 8415
+  },
+  "vaginal_itching": {
+    "canonical_name": "vaginal itching",
+    "diseases": {
+      "vaginitis": 367,
+      "idiopathic painful menstruation": 367,
+      "benign vaginal discharge (leukorrhea)": 282,
+      "itching of unknown cause": 275,
+      "urge incontinence": 273,
+      "idiopathic absence of menstruation": 273,
+      "intestinal obstruction": 272,
+      "urethritis": 267,
+      "vaginal yeast infection": 248,
+      "cervicitis": 207
+    },
+    "total_occurrences": 4208
+  },
+  "vaginal_dryness": {
+    "canonical_name": "vaginal dryness",
+    "diseases": {
+      "anal fissure": 147,
+      "fibroadenoma": 65,
+      "metastatic cancer": 19,
+      "breast cyst": 18
+    },
+    "total_occurrences": 249
+  },
+  "painful_urination": {
+    "canonical_name": "painful urination",
+    "diseases": {
+      "temporary or benign blood in urine": 494,
+      "vulvodynia": 491,
+      "cystitis": 478,
+      "urinary tract infection": 402,
+      "urinary tract obstruction": 367,
+      "vaginitis": 366,
+      "benign vaginal discharge (leukorrhea)": 366,
+      "kidney stone": 364,
+      "pelvic inflammatory disease": 362,
+      "pyelonephritis": 359
+    },
+    "total_occurrences": 6895
+  },
+  "involuntary_urination": {
+    "canonical_name": "involuntary urination",
+    "diseases": {
+      "cystitis": 515,
+      "benign prostatic hyperplasia (bph)": 480,
+      "erectile dysfunction": 373,
+      "idiopathic excessive menstruation": 370,
+      "varicocele of the testicles": 369,
+      "temporary or benign blood in urine": 363,
+      "uterine fibroids": 274,
+      "paroxysmal supraventricular tachycardia": 242,
+      "bladder obstruction": 214,
+      "urge incontinence": 200
+    },
+    "total_occurrences": 5029
+  },
+  "pain_during_intercourse": {
+    "canonical_name": "pain during intercourse",
+    "diseases": {
+      "vaginitis": 478,
+      "erectile dysfunction": 247,
+      "atrophic vaginitis": 142,
+      "vulvar disorder": 101,
+      "psychosexual disorder": 71,
+      "prostate cancer": 56,
+      "vaginismus": 34,
+      "cervical disorder": 26,
+      "female infertility of unknown cause": 19
+    },
+    "total_occurrences": 1174
+  },
+  "frequent_urination": {
+    "canonical_name": "frequent urination",
+    "diseases": {
+      "benign prostatic hyperplasia (bph)": 493,
+      "cystitis": 492,
+      "temporary or benign blood in urine": 382,
+      "pyelonephritis": 380,
+      "kidney stone": 375,
+      "diabetic ketoacidosis": 366,
+      "urinary tract infection": 362,
+      "prostatitis": 287,
+      "benign vaginal discharge (leukorrhea)": 273,
+      "urinary tract obstruction": 271
+    },
+    "total_occurrences": 5742
+  },
+  "lower_abdominal_pain": {
+    "canonical_name": "lower abdominal pain",
+    "diseases": {
+      "vaginal cyst": 506,
+      "cystitis": 502,
+      "diverticulitis": 498,
+      "vulvodynia": 482,
+      "spontaneous abortion": 474,
+      "vaginitis": 400,
+      "chronic constipation": 395,
+      "problem during pregnancy": 389,
+      "pyelonephritis": 371,
+      "threatened pregnancy": 370
+    },
+    "total_occurrences": 11936
+  },
+  "vaginal_discharge": {
+    "canonical_name": "vaginal discharge",
+    "diseases": {
+      "vulvodynia": 510,
+      "vaginal cyst": 486,
+      "idiopathic painful menstruation": 480,
+      "vaginitis": 375,
+      "pelvic inflammatory disease": 361,
+      "idiopathic excessive menstruation": 338,
+      "threatened pregnancy": 334,
+      "benign vaginal discharge (leukorrhea)": 282,
+      "ovarian cyst": 275,
+      "vaginal yeast infection": 242
+    },
+    "total_occurrences": 5364
+  },
+  "blood_in_urine": {
+    "canonical_name": "blood in urine",
+    "diseases": {
+      "benign prostatic hyperplasia (bph)": 507,
+      "cystitis": 493,
+      "urinary tract infection": 371,
+      "temporary or benign blood in urine": 361,
+      "pyelonephritis": 355,
+      "kidney stone": 348,
+      "urinary tract obstruction": 303,
+      "prostatitis": 295,
+      "urge incontinence": 272,
+      "pelvic organ prolapse": 263
+    },
+    "total_occurrences": 5310
+  },
+  "hot_flashes": {
+    "canonical_name": "hot flashes",
+    "diseases": {
+      "angina": 498,
+      "endometriosis": 244,
+      "polycystic ovarian syndrome (pcos)": 178,
+      "stress incontinence": 166,
+      "fibroadenoma": 57,
+      "endometrial cancer": 53,
+      "goiter": 49,
+      "vitamin b12 deficiency": 49,
+      "menopause": 44,
+      "hypothyroidism": 41
+    },
+    "total_occurrences": 1453
+  },
+  "intermenstrual_bleeding": {
+    "canonical_name": "intermenstrual bleeding",
+    "diseases": {
+      "vaginal cyst": 502,
+      "spontaneous abortion": 484,
+      "pelvic inflammatory disease": 382,
+      "idiopathic excessive menstruation": 371,
+      "threatened pregnancy": 366,
+      "iron deficiency anemia": 366,
+      "idiopathic irregular menstrual cycle": 358,
+      "ovarian cyst": 266,
+      "uterine fibroids": 241,
+      "pelvic organ prolapse": 218
+    },
+    "total_occurrences": 5128
+  },
+  "hand_or_finger_pain": {
+    "canonical_name": "hand or finger pain",
+    "diseases": {
+      "complex regional pain syndrome": 490,
+      "gout": 476,
+      "sprain or strain": 476,
+      "injury to the arm": 475,
+      "brachial neuritis": 368,
+      "carpal tunnel syndrome": 365,
+      "mononeuritis": 357,
+      "pyogenic skin infection": 356,
+      "osteoarthritis": 351,
+      "ganglion cyst": 279
+    },
+    "total_occurrences": 5484
+  },
+  "wrist_pain": {
+    "canonical_name": "wrist pain",
+    "diseases": {
+      "sprain or strain": 495,
+      "injury to the arm": 484,
+      "gout": 480,
+      "carpal tunnel syndrome": 381,
+      "injury to the trunk": 361,
+      "mononeuritis": 290,
+      "rheumatoid arthritis": 276,
+      "joint effusion": 275,
+      "tendinitis": 270,
+      "fracture of the arm": 171
+    },
+    "total_occurrences": 3914
+  },
+  "hand_or_finger_swelling": {
+    "canonical_name": "hand or finger swelling",
+    "diseases": {
+      "gout": 486,
+      "injury to the arm": 472,
+      "tendinitis": 369,
+      "pyogenic skin infection": 366,
+      "insect bite": 362,
+      "carpal tunnel syndrome": 346,
+      "rheumatoid arthritis": 269,
+      "paronychia": 238,
+      "envenomation from spider or animal bite": 186,
+      "food allergy": 179
+    },
+    "total_occurrences": 3811
+  },
+  "arm_pain": {
+    "canonical_name": "arm pain",
+    "diseases": {
+      "peripheral nerve disorder": 505,
+      "spondylosis": 501,
+      "sprain or strain": 496,
+      "spinal stenosis": 493,
+      "bursitis": 492,
+      "complex regional pain syndrome": 492,
+      "injury to the arm": 483,
+      "herniated disk": 481,
+      "sickle cell crisis": 399,
+      "heart attack": 371
+    },
+    "total_occurrences": 9281
+  },
+  "wrist_swelling": {
+    "canonical_name": "wrist swelling",
+    "diseases": {
+      "injury to the arm": 511,
+      "gout": 491,
+      "carpal tunnel syndrome": 379,
+      "rheumatoid arthritis": 365,
+      "ganglion cyst": 272,
+      "fracture of the arm": 200,
+      "joint effusion": 175,
+      "injury of the ankle": 115,
+      "injury to the hand": 88,
+      "hypothyroidism": 55
+    },
+    "total_occurrences": 2808
+  },
+  "arm_stiffness_or_tightness": {
+    "canonical_name": "arm stiffness or tightness",
+    "diseases": {
+      "injury to the arm": 492,
+      "bursitis": 489,
+      "hemiplegia": 220,
+      "injury to the shoulder": 217,
+      "fracture of the arm": 174,
+      "fracture of the shoulder": 71,
+      "rotator cuff injury": 66,
+      "fracture of the hand": 54,
+      "dislocation of the elbow": 41,
+      "extrapyramidal effect of drugs": 39
+    },
+    "total_occurrences": 1988
+  },
+  "arm_swelling": {
+    "canonical_name": "arm swelling",
+    "diseases": {
+      "bursitis": 498,
+      "injury to the arm": 482,
+      "envenomation from spider or animal bite": 271,
+      "thrombophlebitis": 233,
+      "cardiac arrest": 192,
+      "fracture of the arm": 178,
+      "deep vein thrombosis (dvt)": 135,
+      "pancreatic cancer": 126,
+      "kidney failure": 117,
+      "osteomyelitis": 99
+    },
+    "total_occurrences": 2513
+  },
+  "hand_or_finger_stiffness_or_tightness": {
+    "canonical_name": "hand or finger stiffness or tightness",
+    "diseases": {
+      "carpal tunnel syndrome": 359,
+      "lateral epicondylitis (tennis elbow)": 186,
+      "nerve impingement near the shoulder": 184,
+      "fracture of the vertebra": 173,
+      "overflow incontinence": 137,
+      "systemic lupus erythematosis (sle)": 98,
+      "rotator cuff injury": 77,
+      "injury to the hand": 54,
+      "fracture of the hand": 42,
+      "trigger finger (finger disorder)": 37
+    },
+    "total_occurrences": 1443
+  },
+  "wrist_stiffness_or_tightness": {
+    "canonical_name": "wrist stiffness or tightness",
+    "diseases": {
+      "fracture of the arm": 157,
+      "fracture of the hand": 47
+    },
+    "total_occurrences": 204
+  },
+  "lip_swelling": {
+    "canonical_name": "lip swelling",
+    "diseases": {
+      "cornea infection": 471,
+      "hemangioma": 364,
+      "skin cancer": 362,
+      "allergy": 355,
+      "gum disease": 346,
+      "fracture of the facial bones": 273,
+      "food allergy": 269,
+      "tooth abscess": 269,
+      "viral warts": 268,
+      "insect bite": 259
+    },
+    "total_occurrences": 4695
+  },
+  "toothache": {
+    "canonical_name": "toothache",
+    "diseases": {
+      "dental caries": 484,
+      "gum disease": 386,
+      "tooth disorder": 270,
+      "tooth abscess": 268,
+      "oral mucosal lesion": 241,
+      "jaw disorder": 141,
+      "aphthous ulcer": 98,
+      "trigeminal neuralgia": 77,
+      "broken tooth": 77,
+      "cellulitis or abscess of mouth": 56
+    },
+    "total_occurrences": 2143
+  },
+  "abnormal_appearing_skin": {
+    "canonical_name": "abnormal appearing skin",
+    "diseases": {
+      "fungal infection of the hair": 479,
+      "eczema": 476,
+      "pyogenic skin infection": 388,
+      "seborrheic keratosis": 378,
+      "skin polyp": 375,
+      "skin disorder": 374,
+      "actinic keratosis": 372,
+      "allergy": 369,
+      "stye": 366,
+      "skin pigmentation disorder": 366
+    },
+    "total_occurrences": 13136
+  },
+  "skin_lesion": {
+    "canonical_name": "skin lesion",
+    "diseases": {
+      "eczema": 498,
+      "fungal infection of the hair": 487,
+      "psoriasis": 365,
+      "pyogenic skin infection": 365,
+      "seborrheic keratosis": 364,
+      "seborrheic dermatitis": 358,
+      "actinic keratosis": 354,
+      "skin pigmentation disorder": 354,
+      "sebaceous cyst": 351,
+      "contact dermatitis": 349
+    },
+    "total_occurrences": 9881
+  },
+  "acne_or_pimples": {
+    "canonical_name": "acne or pimples",
+    "diseases": {
+      "eczema": 502,
+      "fungal infection of the hair": 497,
+      "seborrheic dermatitis": 468,
+      "skin polyp": 378,
+      "fungal infection of the skin": 362,
+      "contact dermatitis": 361,
+      "sebaceous cyst": 357,
+      "skin pigmentation disorder": 356,
+      "seborrheic keratosis": 350,
+      "molluscum contagiosum": 292
+    },
+    "total_occurrences": 6433
+  },
+  "dry_lips": {
+    "canonical_name": "dry lips",
+    "diseases": {
+      "sickle cell anemia": 159,
+      "broken tooth": 97,
+      "open wound of the ear": 24,
+      "open wound of the lip": 8
+    },
+    "total_occurrences": 288
+  },
+  "facial_pain": {
+    "canonical_name": "facial pain",
+    "diseases": {
+      "dental caries": 518,
+      "nose disorder": 499,
+      "concussion": 480,
+      "acute sinusitis": 375,
+      "deviated nasal septum": 360,
+      "gum disease": 358,
+      "otitis externa (swimmer's ear)": 352,
+      "bell palsy": 269,
+      "tooth disorder": 265,
+      "chronic sinusitis": 262
+    },
+    "total_occurrences": 6476
+  },
+  "mouth_ulcer": {
+    "canonical_name": "mouth ulcer",
+    "diseases": {
+      "gum disease": 497,
+      "impetigo": 369,
+      "tooth disorder": 356,
+      "oral thrush (yeast infection)": 261,
+      "oral mucosal lesion": 226,
+      "herpangina": 181,
+      "mucositis": 130,
+      "aphthous ulcer": 111,
+      "cold sore": 106,
+      "open wound of the mouth": 66
+    },
+    "total_occurrences": 2382
+  },
+  "skin_growth": {
+    "canonical_name": "skin growth",
+    "diseases": {
+      "fungal infection of the hair": 493,
+      "sebaceous cyst": 387,
+      "skin pigmentation disorder": 380,
+      "seborrheic keratosis": 375,
+      "psoriasis": 373,
+      "skin polyp": 370,
+      "actinic keratosis": 365,
+      "seborrheic dermatitis": 362,
+      "skin disorder": 289,
+      "varicocele of the testicles": 284
+    },
+    "total_occurrences": 8259
+  },
+  "eye_deviation": {
+    "canonical_name": "eye deviation",
+    "diseases": {
+      "myopia": 228,
+      "eye alignment disorder": 178,
+      "astigmatism": 172,
+      "hyperopia": 75,
+      "amblyopia": 25
+    },
+    "total_occurrences": 678
+  },
+  "diminished_vision": {
+    "canonical_name": "diminished vision",
+    "diseases": {
+      "conjunctivitis due to allergy": 482,
+      "cornea infection": 387,
+      "blepharitis": 381,
+      "intracerebral hemorrhage": 374,
+      "chalazion": 372,
+      "macular degeneration": 371,
+      "dry eye of unknown cause": 369,
+      "conjunctivitis due to virus": 365,
+      "bell palsy": 363,
+      "corneal disorder": 285
+    },
+    "total_occurrences": 7033
+  },
+  "double_vision": {
+    "canonical_name": "double vision",
+    "diseases": {
+      "macular degeneration": 494,
+      "concussion": 489,
+      "corneal disorder": 370,
+      "dry eye of unknown cause": 346,
+      "cataract": 341,
+      "vitreous degeneration": 208,
+      "eye alignment disorder": 194,
+      "retinal detachment": 188,
+      "diabetic retinopathy": 186,
+      "fracture of the facial bones": 185
+    },
+    "total_occurrences": 3682
+  },
+  "cross-eyed": {
+    "canonical_name": "cross-eyed",
+    "diseases": {
+      "eye alignment disorder": 175,
+      "amblyopia": 28,
+      "allergy to animals": 23,
+      "cryptococcosis": 9,
+      "edward syndrome": 4
+    },
+    "total_occurrences": 239
+  },
+  "symptoms_of_eye": {
+    "canonical_name": "symptoms of eye",
+    "diseases": {
+      "conjunctivitis due to allergy": 494,
+      "cornea infection": 363,
+      "rosacea": 361,
+      "stye": 361,
+      "dry eye of unknown cause": 354,
+      "macular degeneration": 352,
+      "blepharitis": 338,
+      "bell palsy": 282,
+      "chalazion": 271,
+      "chronic glaucoma": 267
+    },
+    "total_occurrences": 6679
+  },
+  "pain_in_eye": {
+    "canonical_name": "pain in eye",
+    "diseases": {
+      "conjunctivitis due to allergy": 488,
+      "conjunctivitis": 400,
+      "cornea infection": 380,
+      "dry eye of unknown cause": 379,
+      "macular degeneration": 362,
+      "stye": 358,
+      "blepharitis": 357,
+      "chalazion": 276,
+      "corneal disorder": 274,
+      "chronic glaucoma": 273
+    },
+    "total_occurrences": 7548
+  },
+  "eye_moves_abnormally": {
+    "canonical_name": "eye moves abnormally",
+    "diseases": {
+      "eye alignment disorder": 192,
+      "myopia": 186,
+      "spina bifida": 60
+    },
+    "total_occurrences": 438
+  },
+  "abnormal_movement_of_eyelid": {
+    "canonical_name": "abnormal movement of eyelid",
+    "diseases": {
+      "macular degeneration": 378,
+      "dry eye of unknown cause": 359,
+      "diabetic retinopathy": 266,
+      "cataract": 232,
+      "cranial nerve palsy": 185,
+      "presbyopia": 126,
+      "stenosis of the tear duct": 65,
+      "tic (movement) disorder": 42,
+      "cyst of the eyelid": 13,
+      "blepharospasm": 4
+    },
+    "total_occurrences": 1670
+  },
+  "foreign_body_sensation_in_eye": {
+    "canonical_name": "foreign body sensation in eye",
+    "diseases": {
+      "dry eye of unknown cause": 469,
+      "macular degeneration": 393,
+      "cornea infection": 356,
+      "chalazion": 284,
+      "myopia": 277,
+      "corneal disorder": 268,
+      "glaucoma": 263,
+      "iridocyclitis": 263,
+      "chronic glaucoma": 256,
+      "diabetic retinopathy": 252
+    },
+    "total_occurrences": 4365
+  },
+  "irregular_appearing_scalp": {
+    "canonical_name": "irregular appearing scalp",
+    "diseases": {
+      "skin pigmentation disorder": 513,
+      "eczema": 498,
+      "fungal infection of the hair": 486,
+      "psoriasis": 388,
+      "skin polyp": 387,
+      "sebaceous cyst": 381,
+      "actinic keratosis": 376,
+      "hemangioma": 368,
+      "seborrheic dermatitis": 365,
+      "skin cancer": 363
+    },
+    "total_occurrences": 6467
+  },
+  "swollen_lymph_nodes": {
+    "canonical_name": "swollen lymph nodes",
+    "diseases": {
+      "sialoadenitis": 284,
+      "herpangina": 272,
+      "ulcerative colitis": 243,
+      "mononucleosis": 187,
+      "melanoma": 171,
+      "peritonsillar abscess": 147,
+      "atrial flutter": 134,
+      "salivary gland disorder": 36,
+      "mumps": 32,
+      "thyroid cancer": 7
+    },
+    "total_occurrences": 1513
+  },
+  "back_pain": {
+    "canonical_name": "back pain",
+    "diseases": {
+      "complex regional pain syndrome": 512,
+      "vulvodynia": 504,
+      "spinal stenosis": 501,
+      "spondylosis": 499,
+      "cholecystitis": 499,
+      "sprain or strain": 499,
+      "peripheral nerve disorder": 494,
+      "acute pancreatitis": 486,
+      "concussion": 484,
+      "arthritis of the hip": 482
+    },
+    "total_occurrences": 17390
+  },
+  "neck_pain": {
+    "canonical_name": "neck pain",
+    "diseases": {
+      "spondylosis": 503,
+      "complex regional pain syndrome": 496,
+      "spinal stenosis": 492,
+      "sprain or strain": 481,
+      "concussion": 480,
+      "injury to the trunk": 386,
+      "brachial neuritis": 383,
+      "degenerative disc disease": 381,
+      "carpal tunnel syndrome": 372,
+      "pain after an operation": 370
+    },
+    "total_occurrences": 8119
+  },
+  "low_back_pain": {
+    "canonical_name": "low back pain",
+    "diseases": {
+      "spondylosis": 503,
+      "spinal stenosis": 495,
+      "sprain or strain": 490,
+      "complex regional pain syndrome": 475,
+      "arthritis of the hip": 462,
+      "pain after an operation": 388,
+      "degenerative disc disease": 388,
+      "herniated disk": 384,
+      "pyelonephritis": 373,
+      "brachial neuritis": 373
+    },
+    "total_occurrences": 8844
+  },
+  "pain_of_the_anus": {
+    "canonical_name": "pain of the anus",
+    "diseases": {
+      "rectal disorder": 389,
+      "chronic constipation": 379,
+      "varicocele of the testicles": 365,
+      "hemorrhoids": 350,
+      "crohn disease": 240,
+      "colonic polyp": 188,
+      "intestinal obstruction": 181,
+      "ileus": 180,
+      "pilonidal cyst": 144,
+      "anal fissure": 92
+    },
+    "total_occurrences": 2635
+  },
+  "pain_during_pregnancy": {
+    "canonical_name": "pain during pregnancy",
+    "diseases": {
+      "vaginal cyst": 501,
+      "spontaneous abortion": 501,
+      "vulvodynia": 490,
+      "problem during pregnancy": 382,
+      "hyperemesis gravidarum": 379,
+      "vaginitis": 364,
+      "benign vaginal discharge (leukorrhea)": 282,
+      "postpartum depression": 219,
+      "cervicitis": 199,
+      "trichomonas infection": 177
+    },
+    "total_occurrences": 4172
+  },
+  "pelvic_pain": {
+    "canonical_name": "pelvic pain",
+    "diseases": {
+      "arthritis of the hip": 513,
+      "vaginal cyst": 505,
+      "fungal infection of the hair": 493,
+      "problem during pregnancy": 486,
+      "vulvodynia": 481,
+      "spontaneous abortion": 478,
+      "cystitis": 456,
+      "threatened pregnancy": 382,
+      "idiopathic painful menstruation": 376,
+      "pelvic inflammatory disease": 370
+    },
+    "total_occurrences": 7560
+  },
+  "impotence": {
+    "canonical_name": "impotence",
+    "diseases": {
+      "benign prostatic hyperplasia (bph)": 476,
+      "prostatitis": 297,
+      "erectile dysfunction": 257,
+      "premature ventricular contractions (pvcs)": 177,
+      "bladder obstruction": 149,
+      "overflow incontinence": 130,
+      "benign kidney cyst": 125,
+      "lactose intolerance": 85,
+      "psychosexual disorder": 66,
+      "prostate cancer": 64
+    },
+    "total_occurrences": 1944
+  },
+  "infant_spitting_up": {
+    "canonical_name": "infant spitting up",
+    "diseases": {
+      "foreign body in the throat": 65
+    },
+    "total_occurrences": 65
+  },
+  "vomiting_blood": {
+    "canonical_name": "vomiting blood",
+    "diseases": {
+      "gastrointestinal hemorrhage": 494,
+      "hyperemesis gravidarum": 493,
+      "hiatal hernia": 365,
+      "gastroduodenal ulcer": 293,
+      "alcohol abuse": 279,
+      "gastritis": 271,
+      "cirrhosis": 201,
+      "anemia": 181,
+      "foreign body in the gastrointestinal tract": 66,
+      "folate deficiency": 30
+    },
+    "total_occurrences": 2673
+  },
+  "regurgitation": {
+    "canonical_name": "regurgitation",
+    "diseases": {
+      "temporary or benign blood in urine": 370,
+      "hiatal hernia": 367,
+      "iron deficiency anemia": 280,
+      "intestinal disease": 204,
+      "gastroesophageal reflux disease (gerd)": 177,
+      "abdominal hernia": 169,
+      "crohn disease": 144,
+      "cirrhosis": 137,
+      "gastroparesis": 84,
+      "lymphoma": 61
+    },
+    "total_occurrences": 1993
+  },
+  "burning_abdominal_pain": {
+    "canonical_name": "burning abdominal pain",
+    "diseases": {
+      "spontaneous abortion": 517,
+      "acute pancreatitis": 502,
+      "cholecystitis": 501,
+      "infectious gastroenteritis": 490,
+      "pelvic inflammatory disease": 484,
+      "vulvodynia": 483,
+      "noninfectious gastroenteritis": 474,
+      "esophagitis": 470,
+      "diverticulitis": 463,
+      "appendicitis": 389
+    },
+    "total_occurrences": 10406
+  },
+  "restlessness": {
+    "canonical_name": "restlessness",
+    "diseases": {
+      "developmental disability": 495,
+      "dental caries": 485,
+      "drug abuse (opioids)": 351,
+      "attention deficit hyperactivity disorder (adhd)": 200,
+      "adjustment reaction": 193,
+      "oppositional disorder": 188,
+      "extrapyramidal effect of drugs": 55
+    },
+    "total_occurrences": 1967
+  },
+  "symptoms_of_infants": {
+    "canonical_name": "symptoms of infants",
+    "diseases": {
+      "teething syndrome": 186
+    },
+    "total_occurrences": 186
+  },
+  "wheezing": {
+    "canonical_name": "wheezing",
+    "diseases": {
+      "acute bronchiolitis": 505,
+      "pneumonia": 484,
+      "acute bronchitis": 481,
+      "chronic obstructive pulmonary disease (copd)": 386,
+      "acute bronchospasm": 372,
+      "asthma": 372,
+      "common cold": 370,
+      "croup": 362,
+      "interstitial lung disease": 261,
+      "acute respiratory distress syndrome (ards)": 183
+    },
+    "total_occurrences": 3891
+  },
+  "peripheral_edema": {
+    "canonical_name": "peripheral edema",
+    "diseases": {
+      "liver disease": 490,
+      "dental caries": 480,
+      "ischemic heart disease": 383,
+      "allergy": 383,
+      "pyogenic skin infection": 379,
+      "drug reaction": 379,
+      "gum disease": 363,
+      "tooth disorder": 363,
+      "acute kidney injury": 359,
+      "bell palsy": 290
+    },
+    "total_occurrences": 6957
+  },
+  "neck_mass": {
+    "canonical_name": "neck mass",
+    "diseases": {
+      "sebaceous cyst": 372,
+      "lipoma": 280,
+      "sialoadenitis": 202,
+      "jaw disorder": 185,
+      "lymphadenitis": 176,
+      "head and neck cancer": 144,
+      "thyroid nodule": 90,
+      "lymphoma": 61,
+      "dislocation of the shoulder": 39,
+      "intestinal cancer": 29
+    },
+    "total_occurrences": 1605
+  },
+  "ear_pain": {
+    "canonical_name": "ear pain",
+    "diseases": {
+      "strep throat": 506,
+      "nose disorder": 501,
+      "dental caries": 493,
+      "seasonal allergies (hay fever)": 396,
+      "otitis externa (swimmer's ear)": 388,
+      "otitis media": 385,
+      "acute sinusitis": 384,
+      "common cold": 377,
+      "gum disease": 376,
+      "eustachian tube dysfunction (ear disorder)": 375
+    },
+    "total_occurrences": 8446
+  },
+  "jaw_swelling": {
+    "canonical_name": "jaw swelling",
+    "diseases": {
+      "dental caries": 467,
+      "gum disease": 363,
+      "tooth disorder": 270,
+      "tooth abscess": 269,
+      "sialoadenitis": 204,
+      "jaw disorder": 183,
+      "postoperative infection": 77,
+      "fracture of the jaw": 32
+    },
+    "total_occurrences": 1865
+  },
+  "mouth_dryness": {
+    "canonical_name": "mouth dryness",
+    "diseases": {
+      "obstructive sleep apnea (osa)": 508,
+      "breast infection (mastitis)": 266
+    },
+    "total_occurrences": 774
+  },
+  "neck_swelling": {
+    "canonical_name": "neck swelling",
+    "diseases": {
+      "dental caries": 465,
+      "tooth abscess": 361,
+      "ingrown toe nail": 360,
+      "sialoadenitis": 200,
+      "lymphadenitis": 182,
+      "fracture of the shoulder": 109,
+      "crushing injury": 38
+    },
+    "total_occurrences": 1715
+  },
+  "knee_pain": {
+    "canonical_name": "knee pain",
+    "diseases": {
+      "gout": 510,
+      "injury to the leg": 495,
+      "bursitis": 494,
+      "arthritis of the hip": 488,
+      "sprain or strain": 485,
+      "spondylosis": 481,
+      "sickle cell crisis": 381,
+      "osteoarthritis": 371,
+      "tendinitis": 274,
+      "rheumatoid arthritis": 272
+    },
+    "total_occurrences": 6378
+  },
+  "foot_or_toe_pain": {
+    "canonical_name": "foot or toe pain",
+    "diseases": {
+      "gout": 506,
+      "complex regional pain syndrome": 499,
+      "peripheral nerve disorder": 495,
+      "sprain or strain": 493,
+      "injury to the leg": 485,
+      "pyogenic skin infection": 475,
+      "ganglion cyst": 286,
+      "mononeuritis": 276,
+      "tendinitis": 274,
+      "ingrown toe nail": 234
+    },
+    "total_occurrences": 5650
+  },
+  "bowlegged_or_knock-kneed": {
+    "canonical_name": "bowlegged or knock-kneed",
+    "diseases": {
+      "osteochondrosis": 47
+    },
+    "total_occurrences": 47
+  },
+  "ankle_pain": {
+    "canonical_name": "ankle pain",
+    "diseases": {
+      "gout": 494,
+      "injury to the leg": 481,
+      "sprain or strain": 480,
+      "osteoarthritis": 377,
+      "tendinitis": 354,
+      "mononeuritis": 275,
+      "fracture of the leg": 263,
+      "joint effusion": 194,
+      "injury of the ankle": 81,
+      "plantar fasciitis": 78
+    },
+    "total_occurrences": 3184
+  },
+  "bones_are_painful": {
+    "canonical_name": "bones are painful",
+    "diseases": {
+      "injury to the arm": 500,
+      "lipoma": 371,
+      "fracture of the rib": 359,
+      "injury to the trunk": 341,
+      "injury to the shoulder": 286,
+      "pilonidal cyst": 183,
+      "fracture of the vertebra": 153,
+      "osteoporosis": 152,
+      "osteomyelitis": 132,
+      "bone disorder": 108
+    },
+    "total_occurrences": 3130
+  },
+  "knee_weakness": {
+    "canonical_name": "knee weakness",
+    "diseases": {
+      "osteoarthritis": 377,
+      "fracture of the leg": 357,
+      "chronic knee pain": 65,
+      "knee ligament or meniscus tear": 50,
+      "chondromalacia of the patella": 33,
+      "injury to the knee": 28,
+      "fracture of the ankle": 15,
+      "open wound of the arm": 7
+    },
+    "total_occurrences": 932
+  },
+  "elbow_pain": {
+    "canonical_name": "elbow pain",
+    "diseases": {
+      "brachial neuritis": 502,
+      "injury to the arm": 496,
+      "bursitis": 487,
+      "carpal tunnel syndrome": 482,
+      "osteoarthritis": 358,
+      "mononeuritis": 270,
+      "ankylosing spondylitis": 257,
+      "injury to the shoulder": 205,
+      "fracture of the arm": 191,
+      "joint effusion": 174
+    },
+    "total_occurrences": 3826
+  },
+  "knee_swelling": {
+    "canonical_name": "knee swelling",
+    "diseases": {
+      "injury to the leg": 499,
+      "gout": 488,
+      "bursitis": 484,
+      "osteoarthritis": 367,
+      "fracture of the leg": 284,
+      "ganglion cyst": 270,
+      "joint effusion": 189,
+      "scoliosis": 96,
+      "peripheral arterial embolism": 77,
+      "chronic knee pain": 63
+    },
+    "total_occurrences": 3037
+  },
+  "skin_moles": {
+    "canonical_name": "skin moles",
+    "diseases": {
+      "contact dermatitis": 487,
+      "sebaceous cyst": 484,
+      "skin polyp": 395,
+      "skin pigmentation disorder": 391,
+      "seborrheic keratosis": 384,
+      "actinic keratosis": 377,
+      "psoriasis": 365,
+      "hemangioma": 284,
+      "skin disorder": 284,
+      "rosacea": 274
+    },
+    "total_occurrences": 5102
+  },
+  "knee_lump_or_mass": {
+    "canonical_name": "knee lump or mass",
+    "diseases": {
+      "ganglion cyst": 358,
+      "molluscum contagiosum": 278,
+      "knee ligament or meniscus tear": 74,
+      "lymphogranuloma venereum": 14,
+      "malaria": 10,
+      "trichinosis": 8,
+      "reactive arthritis": 8,
+      "aspergillosis": 8,
+      "granuloma inguinale": 7,
+      "friedrich ataxia": 4
+    },
+    "total_occurrences": 773
+  },
+  "weight_gain": {
+    "canonical_name": "weight gain",
+    "diseases": {
+      "obstructive sleep apnea (osa)": 492,
+      "heart failure": 372,
+      "heart block": 366,
+      "iron deficiency anemia": 270,
+      "paroxysmal ventricular tachycardia": 250,
+      "eating disorder": 193,
+      "alcoholic liver disease": 132,
+      "polycystic ovarian syndrome (pcos)": 118,
+      "polycythemia vera": 34,
+      "hypothyroidism": 33
+    },
+    "total_occurrences": 2378
+  },
+  "problems_with_movement": {
+    "canonical_name": "problems with movement",
+    "diseases": {
+      "injury to the leg": 507,
+      "arthritis of the hip": 498,
+      "hypoglycemia": 485,
+      "spinal stenosis": 485,
+      "peripheral nerve disorder": 479,
+      "complex regional pain syndrome": 471,
+      "multiple sclerosis": 365,
+      "stroke": 362,
+      "sciatica": 355,
+      "fracture of the leg": 275
+    },
+    "total_occurrences": 7111
+  },
+  "knee_stiffness_or_tightness": {
+    "canonical_name": "knee stiffness or tightness",
+    "diseases": {
+      "injury to the leg": 478,
+      "joint effusion": 257,
+      "scoliosis": 113,
+      "chronic knee pain": 64,
+      "vitamin b12 deficiency": 49,
+      "knee ligament or meniscus tear": 47
+    },
+    "total_occurrences": 1008
+  },
+  "leg_swelling": {
+    "canonical_name": "leg swelling",
+    "diseases": {
+      "injury to the leg": 502,
+      "hypertensive heart disease": 495,
+      "bursitis": 476,
+      "gout": 460,
+      "pyogenic skin infection": 375,
+      "heart failure": 368,
+      "pulmonary embolism": 364,
+      "insect bite": 362,
+      "fracture of the leg": 272,
+      "pulmonary congestion": 267
+    },
+    "total_occurrences": 4782
+  },
+  "foot_or_toe_swelling": {
+    "canonical_name": "foot or toe swelling",
+    "diseases": {
+      "gout": 493,
+      "injury to the leg": 491,
+      "pyogenic skin infection": 366,
+      "lymphedema": 268,
+      "callus": 262,
+      "ingrown toe nail": 243,
+      "vasculitis": 186,
+      "paronychia": 183,
+      "envenomation from spider or animal bite": 176,
+      "diabetic peripheral neuropathy": 172
+    },
+    "total_occurrences": 3378
+  },
+  "heartburn": {
+    "canonical_name": "heartburn",
+    "diseases": {
+      "hemorrhoids": 509,
+      "esophagitis": 485,
+      "heart attack": 483,
+      "rectal disorder": 482,
+      "liver disease": 479,
+      "hiatal hernia": 363,
+      "iron deficiency anemia": 363,
+      "gallstone": 362,
+      "hypertensive heart disease": 353,
+      "gastroduodenal ulcer": 276
+    },
+    "total_occurrences": 5552
+  },
+  "smoking_problems": {
+    "canonical_name": "smoking problems",
+    "diseases": {
+      "neurosis": 474,
+      "smoking or tobacco addiction": 374,
+      "drug abuse": 358,
+      "alcohol abuse": 278,
+      "protein deficiency": 37,
+      "lung cancer": 21,
+      "metabolic disorder": 12
+    },
+    "total_occurrences": 1554
+  },
+  "muscle_pain": {
+    "canonical_name": "muscle pain",
+    "diseases": {
+      "ischemic heart disease": 454,
+      "osteoarthritis": 361,
+      "fibromyalgia": 265,
+      "plantar fasciitis": 125,
+      "lumbago": 86,
+      "essential tremor": 78,
+      "adhesive capsulitis of the shoulder": 53,
+      "hypothyroidism": 28,
+      "syphilis": 23
+    },
+    "total_occurrences": 1473
+  },
+  "infant_feeding_problem": {
+    "canonical_name": "infant feeding problem",
+    "diseases": {
+      "injury to the leg": 477,
+      "cerebral palsy": 91,
+      "neonatal jaundice": 16
+    },
+    "total_occurrences": 584
+  },
+  "recent_weight_loss": {
+    "canonical_name": "recent weight loss",
+    "diseases": {
+      "foreign body in the gastrointestinal tract": 83,
+      "anemia due to chronic kidney disease": 34
+    },
+    "total_occurrences": 117
+  },
+  "problems_with_shape_or_size_of_breast": {
+    "canonical_name": "problems with shape or size of breast",
+    "diseases": {
+      "gynecomastia": 36
+    },
+    "total_occurrences": 36
+  },
+  "difficulty_eating": {
+    "canonical_name": "difficulty eating",
+    "diseases": {
+      "eating disorder": 210,
+      "broken tooth": 68
+    },
+    "total_occurrences": 278
+  },
+  "scanty_menstrual_flow": {
+    "canonical_name": "scanty menstrual flow",
+    "diseases": {
+      "female infertility of unknown cause": 11
+    },
+    "total_occurrences": 11
+  },
+  "vaginal_pain": {
+    "canonical_name": "vaginal pain",
+    "diseases": {
+      "vaginal cyst": 497,
+      "vulvodynia": 464,
+      "vaginitis": 399,
+      "vaginal yeast infection": 246,
+      "yeast infection": 204,
+      "pelvic organ prolapse": 181,
+      "vulvar disorder": 92,
+      "female genitalia infection": 82,
+      "gonorrhea": 78,
+      "chlamydia": 70
+    },
+    "total_occurrences": 2348
+  },
+  "vaginal_redness": {
+    "canonical_name": "vaginal redness",
+    "diseases": {
+      "vaginitis": 373,
+      "benign vaginal discharge (leukorrhea)": 285,
+      "vaginal yeast infection": 236,
+      "preeclampsia": 117,
+      "gestational diabetes": 16
+    },
+    "total_occurrences": 1027
+  },
+  "vulvar_irritation": {
+    "canonical_name": "vulvar irritation",
+    "diseases": {
+      "vaginal yeast infection": 245,
+      "female genitalia infection": 88,
+      "vulvar disorder": 61,
+      "cervical cancer": 37
+    },
+    "total_occurrences": 431
+  },
+  "weakness": {
+    "canonical_name": "weakness",
+    "diseases": {
+      "pneumonia": 502,
+      "hypoglycemia": 477,
+      "liver disease": 470,
+      "gastrointestinal hemorrhage": 466,
+      "acute kidney injury": 389,
+      "multiple sclerosis": 371,
+      "sepsis": 367,
+      "sinus bradycardia": 363,
+      "hyperemesis gravidarum": 360,
+      "heart failure": 359
+    },
+    "total_occurrences": 9231
+  },
+  "decreased_heart_rate": {
+    "canonical_name": "decreased heart rate",
+    "diseases": {
+      "sinus bradycardia": 380,
+      "hyperkalemia": 374,
+      "paroxysmal ventricular tachycardia": 363,
+      "pulmonary congestion": 192,
+      "cardiac arrest": 186,
+      "cardiomyopathy": 181,
+      "sick sinus syndrome": 62,
+      "atrial fibrillation": 28
+    },
+    "total_occurrences": 1766
+  },
+  "increased_heart_rate": {
+    "canonical_name": "increased heart rate",
+    "diseases": {
+      "anxiety": 468,
+      "heart attack": 383,
+      "sinus bradycardia": 373,
+      "angina": 370,
+      "paroxysmal ventricular tachycardia": 280,
+      "mitral valve disease": 194,
+      "paroxysmal supraventricular tachycardia": 153,
+      "atrial flutter": 112,
+      "sick sinus syndrome": 81,
+      "chronic rheumatic fever": 65
+    },
+    "total_occurrences": 2542
+  },
+  "bleeding_or_discharge_from_nipple": {
+    "canonical_name": "bleeding or discharge from nipple",
+    "diseases": {
+      "breast infection (mastitis)": 203,
+      "fibroadenoma": 45,
+      "fibrocystic breast disease": 7,
+      "galactorrhea of unknown cause": 5,
+      "breast cancer": 3
+    },
+    "total_occurrences": 263
+  },
+  "ringing_in_ear": {
+    "canonical_name": "ringing in ear",
+    "diseases": {
+      "ear drum damage": 387,
+      "eustachian tube dysfunction (ear disorder)": 380,
+      "otitis externa (swimmer's ear)": 363,
+      "ear wax impaction": 279,
+      "sensorineural hearing loss": 265,
+      "conductive hearing loss": 236,
+      "tinnitus of unknown cause": 118,
+      "meniere disease": 116,
+      "presbyacusis": 20
+    },
+    "total_occurrences": 2164
+  },
+  "plugged_feeling_in_ear": {
+    "canonical_name": "plugged feeling in ear",
+    "diseases": {
+      "otitis externa (swimmer's ear)": 379,
+      "otitis media": 367,
+      "ear drum damage": 363,
+      "eustachian tube dysfunction (ear disorder)": 362,
+      "acute otitis media": 285,
+      "ear wax impaction": 279,
+      "sensorineural hearing loss": 274,
+      "chronic otitis media": 268,
+      "conductive hearing loss": 258,
+      "labyrinthitis": 253
+    },
+    "total_occurrences": 3384
+  },
+  "itchy_ear(s)": {
+    "canonical_name": "itchy ear(s)",
+    "diseases": {
+      "otitis externa (swimmer's ear)": 479,
+      "sensorineural hearing loss": 283,
+      "tinnitus of unknown cause": 147,
+      "lymphoma": 78
+    },
+    "total_occurrences": 987
+  },
+  "frontal_headache": {
+    "canonical_name": "frontal headache",
+    "diseases": {
+      "seasonal allergies (hay fever)": 386,
+      "acute sinusitis": 362,
+      "chronic sinusitis": 265,
+      "nasal polyp": 197,
+      "benign paroxysmal positional vertical (bppv)": 178,
+      "primary immunodeficiency": 21,
+      "hemophilia": 16
+    },
+    "total_occurrences": 1425
+  },
+  "fluid_in_ear": {
+    "canonical_name": "fluid in ear",
+    "diseases": {
+      "ear wax impaction": 377,
+      "otitis externa (swimmer's ear)": 364,
+      "otitis media": 364,
+      "ear drum damage": 359,
+      "acute otitis media": 266,
+      "sensorineural hearing loss": 265,
+      "chronic otitis media": 265,
+      "conductive hearing loss": 235,
+      "open wound of the ear": 11,
+      "foreign body in the ear": 6
+    },
+    "total_occurrences": 2512
+  },
+  "neck_stiffness_or_tightness": {
+    "canonical_name": "neck stiffness or tightness",
+    "diseases": {
+      "injury to the face": 254,
+      "pain disorder affecting the neck": 241,
+      "tension headache": 173,
+      "torticollis": 119,
+      "meningitis": 108
+    },
+    "total_occurrences": 895
+  },
+  "spots_or_clouds_in_vision": {
+    "canonical_name": "spots or clouds in vision",
+    "diseases": {
+      "cornea infection": 394,
+      "blepharitis": 373,
+      "macular degeneration": 358,
+      "dry eye of unknown cause": 352,
+      "corneal disorder": 287,
+      "chronic glaucoma": 274,
+      "labyrinthitis": 255,
+      "cataract": 233,
+      "glaucoma": 208,
+      "diabetic retinopathy": 185
+    },
+    "total_occurrences": 4147
+  },
+  "eye_redness": {
+    "canonical_name": "eye redness",
+    "diseases": {
+      "conjunctivitis due to allergy": 503,
+      "conjunctivitis": 379,
+      "blepharitis": 367,
+      "stye": 363,
+      "dry eye of unknown cause": 361,
+      "cornea infection": 357,
+      "conjunctivitis due to virus": 278,
+      "chalazion": 274,
+      "corneal disorder": 268,
+      "iridocyclitis": 215
+    },
+    "total_occurrences": 4841
+  },
+  "lacrimation": {
+    "canonical_name": "lacrimation",
+    "diseases": {
+      "conjunctivitis due to allergy": 499,
+      "seasonal allergies (hay fever)": 497,
+      "blepharitis": 382,
+      "macular degeneration": 381,
+      "conjunctivitis due to virus": 378,
+      "dry eye of unknown cause": 367,
+      "cornea infection": 360,
+      "conjunctivitis": 359,
+      "chalazion": 283,
+      "corneal disorder": 267
+    },
+    "total_occurrences": 5851
+  },
+  "itchiness_of_eye": {
+    "canonical_name": "itchiness of eye",
+    "diseases": {
+      "conjunctivitis due to allergy": 500,
+      "chronic glaucoma": 380,
+      "conjunctivitis": 372,
+      "blepharitis": 369,
+      "stye": 360,
+      "cornea infection": 356,
+      "seasonal allergies (hay fever)": 355,
+      "macular degeneration": 354,
+      "allergy": 351,
+      "dry eye of unknown cause": 342
+    },
+    "total_occurrences": 5506
+  },
+  "blindness": {
+    "canonical_name": "blindness",
+    "diseases": {
+      "macular degeneration": 377,
+      "cataract": 256,
+      "intracerebral hemorrhage": 237,
+      "myopia": 180,
+      "migraine": 116,
+      "retinal detachment": 115,
+      "cerebral palsy": 84,
+      "acute glaucoma": 82,
+      "central retinal artery or vein occlusion": 31,
+      "vitreous hemorrhage": 7
+    },
+    "total_occurrences": 1490
+  },
+  "eye_burns_or_stings": {
+    "canonical_name": "eye burns or stings",
+    "diseases": {
+      "blepharitis": 494,
+      "conjunctivitis due to allergy": 466,
+      "stye": 369,
+      "cornea infection": 365,
+      "chronic glaucoma": 258,
+      "alzheimer disease": 207,
+      "iridocyclitis": 198,
+      "foreign body in the eye": 117,
+      "aphakia": 6
+    },
+    "total_occurrences": 2480
+  },
+  "itchy_eyelid": {
+    "canonical_name": "itchy eyelid",
+    "diseases": {
+      "glaucoma": 258,
+      "melanoma": 141,
+      "abscess of the lung": 12
+    },
+    "total_occurrences": 411
+  },
+  "feeling_cold": {
+    "canonical_name": "feeling cold",
+    "diseases": {
+      "peripheral arterial disease": 50,
+      "kidney disease due to longstanding hypertension": 14,
+      "muscular dystrophy": 12,
+      "chronic kidney disease": 5
+    },
+    "total_occurrences": 81
+  },
+  "decreased_appetite": {
+    "canonical_name": "decreased appetite",
+    "diseases": {
+      "infectious gastroenteritis": 500,
+      "noninfectious gastroenteritis": 498,
+      "acute bronchiolitis": 495,
+      "strep throat": 489,
+      "appendicitis": 476,
+      "hypoglycemia": 469,
+      "diabetic ketoacidosis": 372,
+      "sepsis": 360,
+      "choledocholithiasis": 240,
+      "viral exanthem": 238
+    },
+    "total_occurrences": 5584
+  },
+  "excessive_appetite": {
+    "canonical_name": "excessive appetite",
+    "diseases": {
+      "social phobia": 275,
+      "impulse control disorder": 196
+    },
+    "total_occurrences": 471
+  },
+  "excessive_anger": {
+    "canonical_name": "excessive anger",
+    "diseases": {
+      "marijuana abuse": 503,
+      "smoking or tobacco addiction": 459,
+      "schizophrenia": 383,
+      "depression": 369,
+      "neurosis": 367,
+      "personality disorder": 365,
+      "psychotic disorder": 360,
+      "social phobia": 285,
+      "conduct disorder": 282,
+      "dysthymic disorder": 281
+    },
+    "total_occurrences": 5514
+  },
+  "loss_of_sensation": {
+    "canonical_name": "loss of sensation",
+    "diseases": {
+      "peripheral nerve disorder": 508,
+      "injury to the arm": 501,
+      "spondylosis": 493,
+      "spinal stenosis": 471,
+      "complex regional pain syndrome": 467,
+      "multiple sclerosis": 392,
+      "degenerative disc disease": 379,
+      "carpal tunnel syndrome": 377,
+      "herniated disk": 364,
+      "chronic back pain": 362
+    },
+    "total_occurrences": 8342
+  },
+  "focal_weakness": {
+    "canonical_name": "focal weakness",
+    "diseases": {
+      "transient ischemic attack": 354,
+      "multiple sclerosis": 352,
+      "parkinson disease": 287,
+      "bell palsy": 281,
+      "stroke": 272,
+      "intracerebral hemorrhage": 253,
+      "delirium": 234,
+      "dementia": 144,
+      "brain cancer": 109,
+      "cerebral edema": 43
+    },
+    "total_occurrences": 2341
+  },
+  "slurring_words": {
+    "canonical_name": "slurring words",
+    "diseases": {
+      "delirium": 363,
+      "stroke": 280,
+      "hemiplegia": 273,
+      "dysthymic disorder": 200,
+      "drug poisoning due to medication": 107,
+      "brain cancer": 102,
+      "myasthenia gravis": 60,
+      "aplastic anemia": 35
+    },
+    "total_occurrences": 1420
+  },
+  "symptoms_of_the_face": {
+    "canonical_name": "symptoms of the face",
+    "diseases": {
+      "actinic keratosis": 503,
+      "seborrheic dermatitis": 359,
+      "bell palsy": 287,
+      "transient ischemic attack": 262,
+      "cranial nerve palsy": 136,
+      "trigeminal neuralgia": 115,
+      "migraine": 84,
+      "lyme disease": 82
+    },
+    "total_occurrences": 1828
+  },
+  "disturbance_of_memory": {
+    "canonical_name": "disturbance of memory",
+    "diseases": {
+      "concussion": 490,
+      "depression": 482,
+      "peripheral nerve disorder": 465,
+      "multiple sclerosis": 367,
+      "transient ischemic attack": 255,
+      "stroke": 254,
+      "delirium": 232,
+      "dysthymic disorder": 206,
+      "parkinson disease": 193,
+      "osteoporosis": 166
+    },
+    "total_occurrences": 4216
+  },
+  "paresthesia": {
+    "canonical_name": "paresthesia",
+    "diseases": {
+      "complex regional pain syndrome": 490,
+      "peripheral nerve disorder": 490,
+      "spinal stenosis": 472,
+      "spondylosis": 463,
+      "herniated disk": 377,
+      "brachial neuritis": 375,
+      "carpal tunnel syndrome": 371,
+      "multiple sclerosis": 362,
+      "degenerative disc disease": 362,
+      "ankylosing spondylitis": 357
+    },
+    "total_occurrences": 5225
+  },
+  "side_pain": {
+    "canonical_name": "side pain",
+    "diseases": {
+      "cholecystitis": 505,
+      "cystitis": 504,
+      "diverticulitis": 496,
+      "liver disease": 484,
+      "acute pancreatitis": 483,
+      "vulvodynia": 480,
+      "kidney stone": 387,
+      "urinary tract infection": 385,
+      "pyelonephritis": 380,
+      "chronic back pain": 376
+    },
+    "total_occurrences": 8447
+  },
+  "fever": {
+    "canonical_name": "fever",
+    "diseases": {
+      "acute bronchitis": 504,
+      "acute bronchiolitis": 502,
+      "strep throat": 493,
+      "nose disorder": 482,
+      "noninfectious gastroenteritis": 478,
+      "diverticulitis": 473,
+      "pneumonia": 473,
+      "infectious gastroenteritis": 471,
+      "otitis externa (swimmer's ear)": 393,
+      "sepsis": 390
+    },
+    "total_occurrences": 16255
+  },
+  "shoulder_pain": {
+    "canonical_name": "shoulder pain",
+    "diseases": {
+      "sprain or strain": 494,
+      "degenerative disc disease": 488,
+      "spondylosis": 474,
+      "bursitis": 466,
+      "spinal stenosis": 463,
+      "brachial neuritis": 369,
+      "injury to the trunk": 364,
+      "herniated disk": 356,
+      "fracture of the rib": 354,
+      "tendinitis": 284
+    },
+    "total_occurrences": 6229
+  },
+  "shoulder_stiffness_or_tightness": {
+    "canonical_name": "shoulder stiffness or tightness",
+    "diseases": {
+      "bursitis": 477,
+      "injury to the shoulder": 276,
+      "fracture of the arm": 246,
+      "nerve impingement near the shoulder": 112,
+      "fracture of the shoulder": 58,
+      "rotator cuff injury": 46,
+      "adhesive capsulitis of the shoulder": 32
+    },
+    "total_occurrences": 1247
+  },
+  "shoulder_weakness": {
+    "canonical_name": "shoulder weakness",
+    "diseases": {
+      "nerve impingement near the shoulder": 107,
+      "rotator cuff injury": 49
+    },
+    "total_occurrences": 156
+  },
+  "shoulder_swelling": {
+    "canonical_name": "shoulder swelling",
+    "diseases": {
+      "fracture of the shoulder": 89,
+      "mumps": 31,
+      "valley fever": 4
+    },
+    "total_occurrences": 124
+  },
+  "tongue_lesions": {
+    "canonical_name": "tongue lesions",
+    "diseases": {
+      "oral thrush (yeast infection)": 285,
+      "oral mucosal lesion": 247,
+      "mucositis": 123,
+      "aphthous ulcer": 106,
+      "open wound of the mouth": 43
+    },
+    "total_occurrences": 804
+  },
+  "leg_cramps_or_spasms": {
+    "canonical_name": "leg cramps or spasms",
+    "diseases": {
+      "spondylolisthesis": 359,
+      "sciatica": 255,
+      "osteoporosis": 240,
+      "bone disorder": 148,
+      "deep vein thrombosis (dvt)": 146,
+      "venous insufficiency": 125,
+      "arrhythmia": 97,
+      "varicose veins": 67,
+      "peripheral arterial disease": 54,
+      "coronary atherosclerosis": 44
+    },
+    "total_occurrences": 1572
+  },
+  "ache_all_over": {
+    "canonical_name": "ache all over",
+    "diseases": {
+      "spondylosis": 509,
+      "arthritis of the hip": 485,
+      "strep throat": 481,
+      "complex regional pain syndrome": 470,
+      "sickle cell crisis": 363,
+      "fracture of the rib": 342,
+      "chronic pain disorder": 285,
+      "rheumatoid arthritis": 284,
+      "flu": 275,
+      "fibromyalgia": 267
+    },
+    "total_occurrences": 5799
+  },
+  "lower_body_pain": {
+    "canonical_name": "lower body pain",
+    "diseases": {
+      "spinal stenosis": 496,
+      "spondylosis": 494,
+      "arthritis of the hip": 476,
+      "cholecystitis": 474,
+      "acute pancreatitis": 461,
+      "hemorrhoids": 384,
+      "angina": 373,
+      "degenerative disc disease": 372,
+      "chronic back pain": 365,
+      "gallstone": 361
+    },
+    "total_occurrences": 6014
+  },
+  "problems_during_pregnancy": {
+    "canonical_name": "problems during pregnancy",
+    "diseases": {
+      "vaginal cyst": 488,
+      "spontaneous abortion": 471,
+      "problem during pregnancy": 380,
+      "threatened pregnancy": 369,
+      "hyperemesis gravidarum": 360,
+      "itching of unknown cause": 277,
+      "benign vaginal discharge (leukorrhea)": 275,
+      "postpartum depression": 270,
+      "missed abortion": 162,
+      "preeclampsia": 98
+    },
+    "total_occurrences": 3402
+  },
+  "spotting_or_bleeding_during_pregnancy": {
+    "canonical_name": "spotting or bleeding during pregnancy",
+    "diseases": {
+      "spontaneous abortion": 486,
+      "vaginal cyst": 468,
+      "problem during pregnancy": 372,
+      "threatened pregnancy": 365,
+      "missed abortion": 162,
+      "induced abortion": 129,
+      "uterine atony": 96,
+      "hydatidiform mole": 27,
+      "hypertension of pregnancy": 24,
+      "placental abruption": 9
+    },
+    "total_occurrences": 2150
+  },
+  "cramps_and_spasms": {
+    "canonical_name": "cramps and spasms",
+    "diseases": {
+      "idiopathic irregular menstrual cycle": 494,
+      "vaginal cyst": 489,
+      "spontaneous abortion": 482,
+      "vulvodynia": 474,
+      "idiopathic painful menstruation": 393,
+      "idiopathic excessive menstruation": 385,
+      "threatened pregnancy": 383,
+      "problem during pregnancy": 374,
+      "rectal disorder": 367,
+      "uterine fibroids": 185
+    },
+    "total_occurrences": 4358
+  },
+  "upper_abdominal_pain": {
+    "canonical_name": "upper abdominal pain",
+    "diseases": {
+      "esophagitis": 514,
+      "liver disease": 505,
+      "acute pancreatitis": 483,
+      "cholecystitis": 476,
+      "diverticulitis": 461,
+      "hiatal hernia": 389,
+      "gallstone": 376,
+      "appendicitis": 371,
+      "gastroduodenal ulcer": 286,
+      "diverticulosis": 279
+    },
+    "total_occurrences": 5129
+  },
+  "stomach_bloating": {
+    "canonical_name": "stomach bloating",
+    "diseases": {
+      "cholecystitis": 469,
+      "appendicitis": 368,
+      "indigestion": 265,
+      "intestinal obstruction": 185,
+      "osteoporosis": 137,
+      "alcoholic liver disease": 132,
+      "pancreatic cancer": 104,
+      "esophageal cancer": 46,
+      "liver cancer": 20,
+      "viral hepatitis": 13
+    },
+    "total_occurrences": 1749
+  },
+  "changes_in_stool_appearance": {
+    "canonical_name": "changes in stool appearance",
+    "diseases": {
+      "gastrointestinal hemorrhage": 468,
+      "gastroduodenal ulcer": 377,
+      "chronic constipation": 371,
+      "hemorrhoids": 370,
+      "anemia": 201,
+      "anal fissure": 100,
+      "neonatal jaundice": 12
+    },
+    "total_occurrences": 1899
+  },
+  "unusual_color_or_odor_to_urine": {
+    "canonical_name": "unusual color or odor to urine",
+    "diseases": {
+      "liver disease": 499,
+      "sciatica": 255
+    },
+    "total_occurrences": 754
+  },
+  "kidney_mass": {
+    "canonical_name": "kidney mass",
+    "diseases": {
+      "acute kidney injury": 363,
+      "polycystic kidney disease": 78,
+      "kidney cancer": 32
+    },
+    "total_occurrences": 473
+  },
+  "swollen_abdomen": {
+    "canonical_name": "swollen abdomen",
+    "diseases": {
+      "kidney failure": 181,
+      "inguinal hernia": 177,
+      "abdominal hernia": 172
+    },
+    "total_occurrences": 530
+  },
+  "symptoms_of_prostate": {
+    "canonical_name": "symptoms of prostate",
+    "diseases": {
+      "benign prostatic hyperplasia (bph)": 496,
+      "urinary tract obstruction": 268,
+      "erectile dysfunction": 250,
+      "urethral stricture": 107,
+      "prostate cancer": 56,
+      "peyronie disease": 7
+    },
+    "total_occurrences": 1184
+  },
+  "leg_stiffness_or_tightness": {
+    "canonical_name": "leg stiffness or tightness",
+    "diseases": {
+      "fracture of the leg": 348,
+      "parkinson disease": 280,
+      "vasculitis": 174,
+      "deep vein thrombosis (dvt)": 131,
+      "fracture of the vertebra": 100,
+      "knee ligament or meniscus tear": 42
+    },
+    "total_occurrences": 1075
+  },
+  "difficulty_breathing": {
+    "canonical_name": "difficulty breathing",
+    "diseases": {
+      "nose disorder": 503,
+      "obstructive sleep apnea (osa)": 490,
+      "acute bronchitis": 480,
+      "acute bronchiolitis": 477,
+      "pneumonia": 471,
+      "asthma": 376,
+      "hypertensive heart disease": 371,
+      "acute bronchospasm": 370,
+      "heart failure": 368,
+      "sepsis": 366
+    },
+    "total_occurrences": 6478
+  },
+  "rib_pain": {
+    "canonical_name": "rib pain",
+    "diseases": {
+      "concussion": 487,
+      "fracture of the rib": 371,
+      "injury to the trunk": 364,
+      "pleural effusion": 259,
+      "tietze syndrome": 136
+    },
+    "total_occurrences": 1617
+  },
+  "joint_pain": {
+    "canonical_name": "joint pain",
+    "diseases": {
+      "injury to the arm": 481,
+      "gout": 477,
+      "arthritis of the hip": 468,
+      "degenerative disc disease": 372,
+      "psoriasis": 357,
+      "osteoarthritis": 354,
+      "rheumatoid arthritis": 272,
+      "lateral epicondylitis (tennis elbow)": 206,
+      "osteoporosis": 145,
+      "sickle cell anemia": 92
+    },
+    "total_occurrences": 3458
+  },
+  "muscle_stiffness_or_tightness": {
+    "canonical_name": "muscle stiffness or tightness",
+    "diseases": {
+      "bone disorder": 135,
+      "leukemia": 8
+    },
+    "total_occurrences": 143
+  },
+  "hand_or_finger_lump_or_mass": {
+    "canonical_name": "hand or finger lump or mass",
+    "diseases": {
+      "sebaceous cyst": 371,
+      "ganglion cyst": 267,
+      "paronychia": 172
+    },
+    "total_occurrences": 810
+  },
+  "chills": {
+    "canonical_name": "chills",
+    "diseases": {
+      "strep throat": 495,
+      "diverticulitis": 489,
+      "infectious gastroenteritis": 484,
+      "common cold": 481,
+      "noninfectious gastroenteritis": 480,
+      "pneumonia": 475,
+      "sepsis": 360,
+      "prostatitis": 287,
+      "flu": 286,
+      "white blood cell disease": 270
+    },
+    "total_occurrences": 5041
+  },
+  "groin_pain": {
+    "canonical_name": "groin pain",
+    "diseases": {
+      "arthritis of the hip": 493,
+      "chronic back pain": 353,
+      "varicocele of the testicles": 287,
+      "epididymitis": 214,
+      "inguinal hernia": 182,
+      "induced abortion": 180,
+      "hydrocele of the testicle": 85,
+      "female genitalia infection": 74,
+      "fracture of the pelvis": 70
+    },
+    "total_occurrences": 1938
+  },
+  "fatigue": {
+    "canonical_name": "fatigue",
+    "diseases": {
+      "obstructive sleep apnea (osa)": 503,
+      "multiple sclerosis": 386,
+      "ischemic heart disease": 376,
+      "acute stress reaction": 373,
+      "hypertensive heart disease": 370,
+      "iron deficiency anemia": 276,
+      "paroxysmal ventricular tachycardia": 270,
+      "white blood cell disease": 200,
+      "mitral valve disease": 198,
+      "pulmonary hypertension": 189
+    },
+    "total_occurrences": 4978
+  },
+  "abdominal_distention": {
+    "canonical_name": "abdominal distention",
+    "diseases": {
+      "cirrhosis": 147
+    },
+    "total_occurrences": 147
+  },
+  "regurgitation.1": {
+    "canonical_name": "regurgitation.1",
+    "diseases": {
+      "gallstone": 482,
+      "cholecystitis": 480,
+      "temporary or benign blood in urine": 370,
+      "hiatal hernia": 367,
+      "iron deficiency anemia": 280,
+      "gastritis": 274,
+      "intestinal disease": 204,
+      "gastroesophageal reflux disease (gerd)": 177,
+      "abdominal hernia": 169,
+      "crohn disease": 144
+    },
+    "total_occurrences": 3326
+  },
+  "symptoms_of_the_kidneys": {
+    "canonical_name": "symptoms of the kidneys",
+    "diseases": {
+      "cholecystitis": 493,
+      "acute kidney injury": 347,
+      "kidney failure": 109,
+      "peripheral arterial disease": 61,
+      "primary kidney disease": 14,
+      "kidney disease due to longstanding hypertension": 9,
+      "chronic kidney disease": 4
+    },
+    "total_occurrences": 1037
+  },
+  "melena": {
+    "canonical_name": "melena",
+    "diseases": {
+      "gastrointestinal hemorrhage": 484,
+      "hemorrhoids": 368,
+      "rectal disorder": 345,
+      "diverticulosis": 271,
+      "anemia": 147,
+      "coagulation (bleeding) disorder": 50,
+      "viral hepatitis": 17
+    },
+    "total_occurrences": 1682
+  },
+  "flushing": {
+    "canonical_name": "flushing",
+    "diseases": {
+      "prostate cancer": 76
+    },
+    "total_occurrences": 76
+  },
+  "coughing_up_sputum": {
+    "canonical_name": "coughing up sputum",
+    "diseases": {
+      "acute bronchitis": 486,
+      "asthma": 477,
+      "chronic obstructive pulmonary disease (copd)": 375,
+      "smoking or tobacco addiction": 367,
+      "acute sinusitis": 360,
+      "myasthenia gravis": 74
+    },
+    "total_occurrences": 2139
+  },
+  "seizures": {
+    "canonical_name": "seizures",
+    "diseases": {
+      "hypoglycemia": 491,
+      "developmental disability": 378,
+      "alcohol withdrawal": 280,
+      "conduct disorder": 275,
+      "stroke": 262,
+      "intracerebral hemorrhage": 240,
+      "hemiplegia": 210,
+      "hyponatremia": 205,
+      "autism": 179,
+      "intracranial hemorrhage": 132
+    },
+    "total_occurrences": 3076
+  },
+  "delusions_or_hallucinations": {
+    "canonical_name": "delusions or hallucinations",
+    "diseases": {
+      "marijuana abuse": 473,
+      "personality disorder": 379,
+      "depression": 376,
+      "developmental disability": 372,
+      "psychotic disorder": 367,
+      "schizophrenia": 359,
+      "neurosis": 355,
+      "adjustment reaction": 289,
+      "bipolar disorder": 268,
+      "alcohol withdrawal": 261
+    },
+    "total_occurrences": 5762
+  },
+  "pain_or_soreness_of_breast": {
+    "canonical_name": "pain or soreness of breast",
+    "diseases": {
+      "breast infection (mastitis)": 210,
+      "idiopathic absence of menstruation": 194,
+      "fibroadenoma": 49,
+      "gynecomastia": 25,
+      "mastectomy": 13,
+      "breast cyst": 10,
+      "fibrocystic breast disease": 9,
+      "breast cancer": 4,
+      "galactorrhea of unknown cause": 4
+    },
+    "total_occurrences": 518
+  },
+  "excessive_urination_at_night": {
+    "canonical_name": "excessive urination at night",
+    "diseases": {
+      "benign prostatic hyperplasia (bph)": 473,
+      "urinary tract obstruction": 368,
+      "erectile dysfunction": 248,
+      "urge incontinence": 205,
+      "prostate cancer": 56,
+      "bladder cancer": 52,
+      "hypercholesterolemia": 2
+    },
+    "total_occurrences": 1404
+  },
+  "bleeding_from_eye": {
+    "canonical_name": "bleeding from eye",
+    "diseases": {
+      "macular degeneration": 365,
+      "subconjunctival hemorrhage": 109
+    },
+    "total_occurrences": 474
+  },
+  "rectal_bleeding": {
+    "canonical_name": "rectal bleeding",
+    "diseases": {
+      "gastrointestinal hemorrhage": 493,
+      "noninfectious gastroenteritis": 484,
+      "hemorrhoids": 383,
+      "rectal disorder": 370,
+      "chronic constipation": 365,
+      "diverticulosis": 363,
+      "iron deficiency anemia": 281,
+      "hepatitis due to a toxin": 197,
+      "colonic polyp": 141,
+      "ulcerative colitis": 139
+    },
+    "total_occurrences": 3461
+  },
+  "constipation": {
+    "canonical_name": "constipation",
+    "diseases": {
+      "diverticulitis": 500,
+      "hemorrhoids": 384,
+      "rectal disorder": 373,
+      "chronic constipation": 369,
+      "oral thrush (yeast infection)": 362,
+      "urge incontinence": 190,
+      "autism": 176,
+      "ileus": 175,
+      "intestinal obstruction": 174,
+      "ischemia of the bowel": 108
+    },
+    "total_occurrences": 2985
+  },
+  "temper_problems": {
+    "canonical_name": "temper problems",
+    "diseases": {
+      "diaper rash": 485,
+      "personality disorder": 481,
+      "marijuana abuse": 480,
+      "depression": 382,
+      "developmental disability": 380,
+      "psychotic disorder": 364,
+      "schizophrenia": 359,
+      "conduct disorder": 279,
+      "post-traumatic stress disorder (ptsd)": 262,
+      "dysthymic disorder": 262
+    },
+    "total_occurrences": 5386
+  },
+  "coryza": {
+    "canonical_name": "coryza",
+    "diseases": {
+      "acute bronchitis": 502,
+      "pneumonia": 478,
+      "nose disorder": 472,
+      "acute bronchiolitis": 445,
+      "chronic obstructive pulmonary disease (copd)": 399,
+      "otitis media": 389,
+      "acute sinusitis": 386,
+      "conjunctivitis": 384,
+      "asthma": 376,
+      "common cold": 368
+    },
+    "total_occurrences": 6294
+  },
+  "hemoptysis": {
+    "canonical_name": "hemoptysis",
+    "diseases": {
+      "acute pancreatitis": 498,
+      "smoking or tobacco addiction": 357,
+      "pulmonary embolism": 353,
+      "head and neck cancer": 192,
+      "pulmonary hypertension": 173,
+      "graves disease": 126,
+      "lung cancer": 26
+    },
+    "total_occurrences": 1725
+  },
+  "lymphedema": {
+    "canonical_name": "lymphedema",
+    "diseases": {
+      "ischemic heart disease": 360,
+      "diabetic peripheral neuropathy": 285,
+      "lymphedema": 270,
+      "hemangioma": 265,
+      "rosacea": 256,
+      "aortic valve disease": 195,
+      "thrombophlebitis": 178,
+      "venous insufficiency": 146,
+      "vasculitis": 117,
+      "peripheral arterial disease": 45
+    },
+    "total_occurrences": 2156
+  },
+  "skin_on_leg_or_foot_looks_infected": {
+    "canonical_name": "skin on leg or foot looks infected",
+    "diseases": {
+      "ingrown toe nail": 236,
+      "onychomycosis": 215,
+      "thrombophlebitis": 190,
+      "venous insufficiency": 189,
+      "paronychia": 172,
+      "osteomyelitis": 84,
+      "postoperative infection": 49,
+      "open wound of the foot": 12,
+      "decubitus ulcer": 5
+    },
+    "total_occurrences": 1152
+  },
+  "allergic_reaction": {
+    "canonical_name": "allergic reaction",
+    "diseases": {
+      "conjunctivitis due to allergy": 493,
+      "eczema": 478,
+      "contact dermatitis": 395,
+      "drug reaction": 387,
+      "allergy": 382,
+      "asthma": 381,
+      "seasonal allergies (hay fever)": 373,
+      "eustachian tube dysfunction (ear disorder)": 370,
+      "chronic otitis media": 270,
+      "deviated nasal septum": 236
+    },
+    "total_occurrences": 4762
+  },
+  "congestion_in_chest": {
+    "canonical_name": "congestion in chest",
+    "diseases": {
+      "acute bronchitis": 488,
+      "chronic obstructive pulmonary disease (copd)": 355,
+      "chronic sinusitis": 277,
+      "tuberculosis": 11
+    },
+    "total_occurrences": 1131
+  },
+  "muscle_swelling": {
+    "canonical_name": "muscle swelling",
+    "diseases": {
+      "premature atrial contractions (pacs)": 120,
+      "chorioretinitis": 48,
+      "pituitary adenoma": 14,
+      "cholesteatoma": 13,
+      "cyst of the eyelid": 10,
+      "myoclonus": 6,
+      "von willebrand disease": 4
+    },
+    "total_occurrences": 215
+  },
+  "low_back_weakness": {
+    "canonical_name": "low back weakness",
+    "diseases": {
+      "blepharospasm": 4
+    },
+    "total_occurrences": 4
+  },
+  "sleepiness": {
+    "canonical_name": "sleepiness",
+    "diseases": {
+      "hypoglycemia": 488,
+      "concussion": 488,
+      "obstructive sleep apnea (osa)": 481,
+      "interstitial lung disease": 203,
+      "premature ventricular contractions (pvcs)": 173,
+      "primary insomnia": 111,
+      "restless leg syndrome": 110,
+      "narcolepsy": 97,
+      "drug poisoning due to medication": 87,
+      "poisoning due to sedatives": 49
+    },
+    "total_occurrences": 2295
+  },
+  "apnea": {
+    "canonical_name": "apnea",
+    "diseases": {
+      "obstructive sleep apnea (osa)": 499,
+      "deviated nasal septum": 245,
+      "pulmonary hypertension": 230,
+      "tonsillar hypertrophy": 127,
+      "restless leg syndrome": 105,
+      "narcolepsy": 77,
+      "hirsutism": 20
+    },
+    "total_occurrences": 1303
+  },
+  "abnormal_breathing_sounds": {
+    "canonical_name": "abnormal breathing sounds",
+    "diseases": {
+      "obstructive sleep apnea (osa)": 485,
+      "eustachian tube dysfunction (ear disorder)": 390,
+      "croup": 368,
+      "deviated nasal septum": 243,
+      "interstitial lung disease": 204,
+      "tonsillitis": 196,
+      "tonsillar hypertrophy": 183,
+      "primary insomnia": 84
+    },
+    "total_occurrences": 2153
+  },
+  "excessive_growth": {
+    "canonical_name": "excessive growth",
+    "diseases": {
+      "hormone disorder": 28
+    },
+    "total_occurrences": 28
+  },
+  "blood_clots_during_menstrual_periods": {
+    "canonical_name": "blood clots during menstrual periods",
+    "diseases": {
+      "vaginal cyst": 477,
+      "spontaneous abortion": 466,
+      "idiopathic excessive menstruation": 371,
+      "idiopathic painful menstruation": 370,
+      "threatened pregnancy": 341,
+      "missed abortion": 144
+    },
+    "total_occurrences": 2169
+  },
+  "absence_of_menstruation": {
+    "canonical_name": "absence of menstruation",
+    "diseases": {
+      "idiopathic absence of menstruation": 214,
+      "polycystic ovarian syndrome (pcos)": 150,
+      "endometrial cancer": 56,
+      "menopause": 27,
+      "premature ovarian failure": 26
+    },
+    "total_occurrences": 473
+  },
+  "pulling_at_ears": {
+    "canonical_name": "pulling at ears",
+    "diseases": {
+      "acute bronchiolitis": 467,
+      "croup": 372,
+      "ear drum damage": 371,
+      "diaper rash": 369,
+      "otitis media": 360,
+      "chronic otitis media": 277,
+      "ear wax impaction": 270,
+      "viral exanthem": 239,
+      "sickle cell anemia": 91
+    },
+    "total_occurrences": 2816
+  },
+  "gum_pain": {
+    "canonical_name": "gum pain",
+    "diseases": {
+      "dental caries": 485,
+      "gum disease": 374,
+      "tooth abscess": 279,
+      "tooth disorder": 259,
+      "oral mucosal lesion": 250,
+      "broken tooth": 66,
+      "congenital malformation syndrome": 4
+    },
+    "total_occurrences": 1717
+  },
+  "redness_in_ear": {
+    "canonical_name": "redness in ear",
+    "diseases": {
+      "ear drum damage": 384,
+      "otitis externa (swimmer's ear)": 381,
+      "eustachian tube dysfunction (ear disorder)": 375,
+      "acute otitis media": 280,
+      "chronic otitis media": 272,
+      "conductive hearing loss": 240,
+      "teething syndrome": 186,
+      "tonsillitis": 177,
+      "tonsillar hypertrophy": 142
+    },
+    "total_occurrences": 2437
+  },
+  "fluid_retention": {
+    "canonical_name": "fluid retention",
+    "diseases": {
+      "allergy": 488,
+      "infectious gastroenteritis": 477,
+      "noninfectious gastroenteritis": 462,
+      "heart failure": 364,
+      "diabetic ketoacidosis": 268,
+      "insect bite": 268,
+      "itching of unknown cause": 267,
+      "lymphedema": 218,
+      "envenomation from spider or animal bite": 188,
+      "fluid overload": 131
+    },
+    "total_occurrences": 3377
+  },
+  "flu-like_syndrome": {
+    "canonical_name": "flu-like syndrome",
+    "diseases": {
+      "infectious gastroenteritis": 470,
+      "common cold": 371
+    },
+    "total_occurrences": 841
+  },
+  "sinus_congestion": {
+    "canonical_name": "sinus congestion",
+    "diseases": {
+      "nose disorder": 478,
+      "acute sinusitis": 381,
+      "ear wax impaction": 353,
+      "chronic sinusitis": 272,
+      "paronychia": 268,
+      "abscess of nose": 112
+    },
+    "total_occurrences": 1864
+  },
+  "painful_sinuses": {
+    "canonical_name": "painful sinuses",
+    "diseases": {
+      "nose disorder": 482,
+      "chronic otitis media": 349,
+      "acute sinusitis": 340,
+      "chronic sinusitis": 278,
+      "deviated nasal septum": 259,
+      "nasal polyp": 201
+    },
+    "total_occurrences": 1909
+  },
+  "fears_and_phobias": {
+    "canonical_name": "fears and phobias",
+    "diseases": {
+      "marijuana abuse": 502,
+      "anxiety": 484,
+      "developmental disability": 383,
+      "psychotic disorder": 380,
+      "schizophrenia": 378,
+      "personality disorder": 370,
+      "bipolar disorder": 277,
+      "adjustment reaction": 211,
+      "social phobia": 206,
+      "drug abuse (cocaine)": 181
+    },
+    "total_occurrences": 3372
+  },
+  "recent_pregnancy": {
+    "canonical_name": "recent pregnancy",
+    "diseases": {
+      "hypertensive heart disease": 357,
+      "genital herpes": 136,
+      "preeclampsia": 82
+    },
+    "total_occurrences": 575
+  },
+  "uterine_contractions": {
+    "canonical_name": "uterine contractions",
+    "diseases": {
+      "spontaneous abortion": 493,
+      "threatened pregnancy": 356,
+      "preeclampsia": 98,
+      "uterine atony": 87,
+      "hypertension of pregnancy": 25,
+      "subacute thyroiditis": 12,
+      "gestational diabetes": 12,
+      "premature rupture of amniotic membrane": 7,
+      "pregnancy": 5,
+      "placental abruption": 5
+    },
+    "total_occurrences": 1100
+  },
+  "burning_chest_pain": {
+    "canonical_name": "burning chest pain",
+    "diseases": {
+      "heart attack": 373,
+      "venous insufficiency": 185,
+      "coronary atherosclerosis": 50
+    },
+    "total_occurrences": 608
+  },
+  "back_cramps_or_spasms": {
+    "canonical_name": "back cramps or spasms",
+    "diseases": {
+      "chronic back pain": 495,
+      "sciatica": 267,
+      "tension headache": 151,
+      "uterine atony": 121
+    },
+    "total_occurrences": 1034
+  },
+  "stiffness_all_over": {
+    "canonical_name": "stiffness all over",
+    "diseases": {
+      "parkinson disease": 278,
+      "spondylitis": 269,
+      "ankylosing spondylitis": 242
+    },
+    "total_occurrences": 789
+  },
+  "muscle_cramps,_contractures,_or_spasms": {
+    "canonical_name": "muscle cramps, contractures, or spasms",
+    "diseases": {
+      "injury to the shoulder": 279,
+      "muscle spasm": 270,
+      "osteoporosis": 146
+    },
+    "total_occurrences": 695
+  },
+  "low_back_cramps_or_spasms": {
+    "canonical_name": "low back cramps or spasms",
+    "diseases": {
+      "lumbago": 79
+    },
+    "total_occurrences": 79
+  },
+  "back_mass_or_lump": {
+    "canonical_name": "back mass or lump",
+    "diseases": {
+      "fracture of the rib": 373,
+      "sebaceous cyst": 357,
+      "lipoma": 264,
+      "spondylitis": 184
+    },
+    "total_occurrences": 1178
+  },
+  "nosebleed": {
+    "canonical_name": "nosebleed",
+    "diseases": {
+      "nose disorder": 510,
+      "deviated nasal septum": 248,
+      "injury to the face": 193,
+      "anemia": 177,
+      "thrombocytopenia": 55,
+      "open wound of the nose": 6,
+      "von willebrand disease": 1
+    },
+    "total_occurrences": 1190
+  },
+  "long_menstrual_periods": {
+    "canonical_name": "long menstrual periods",
+    "diseases": {
+      "idiopathic irregular menstrual cycle": 378,
+      "idiopathic painful menstruation": 372,
+      "idiopathic excessive menstruation": 361,
+      "acne": 275,
+      "autism": 265,
+      "idiopathic absence of menstruation": 203,
+      "polycystic ovarian syndrome (pcos)": 117,
+      "idiopathic nonmenstrual bleeding": 53,
+      "female infertility of unknown cause": 15
+    },
+    "total_occurrences": 2039
+  },
+  "heavy_menstrual_flow": {
+    "canonical_name": "heavy menstrual flow",
+    "diseases": {
+      "vaginal cyst": 513,
+      "spontaneous abortion": 493,
+      "idiopathic painful menstruation": 388,
+      "idiopathic irregular menstrual cycle": 385,
+      "idiopathic excessive menstruation": 366,
+      "iron deficiency anemia": 279,
+      "uterine fibroids": 178,
+      "endometriosis": 150,
+      "cervical cancer": 44,
+      "endometrial hyperplasia": 23
+    },
+    "total_occurrences": 2819
+  },
+  "unpredictable_menstruation": {
+    "canonical_name": "unpredictable menstruation",
+    "diseases": {
+      "idiopathic excessive menstruation": 382,
+      "idiopathic irregular menstrual cycle": 378,
+      "idiopathic painful menstruation": 350,
+      "uterine fibroids": 186,
+      "trichomonas infection": 136,
+      "scabies": 123,
+      "polycystic ovarian syndrome (pcos)": 119,
+      "premenstrual tension syndrome": 55,
+      "idiopathic nonmenstrual bleeding": 44,
+      "menopause": 26
+    },
+    "total_occurrences": 1844
+  },
+  "painful_menstruation": {
+    "canonical_name": "painful menstruation",
+    "diseases": {
+      "idiopathic excessive menstruation": 378,
+      "idiopathic irregular menstrual cycle": 373,
+      "idiopathic painful menstruation": 369,
+      "ovarian cyst": 203,
+      "uterine fibroids": 189,
+      "endometriosis": 151,
+      "mittelschmerz": 27
+    },
+    "total_occurrences": 1690
+  },
+  "infertility": {
+    "canonical_name": "infertility",
+    "diseases": {
+      "idiopathic irregular menstrual cycle": 358,
+      "varicocele of the testicles": 301,
+      "endometriosis": 153,
+      "polycystic ovarian syndrome (pcos)": 110,
+      "premature ovarian failure": 22,
+      "female infertility of unknown cause": 14
+    },
+    "total_occurrences": 958
+  },
+  "frequent_menstruation": {
+    "canonical_name": "frequent menstruation",
+    "diseases": {
+      "idiopathic excessive menstruation": 395,
+      "idiopathic irregular menstrual cycle": 358
+    },
+    "total_occurrences": 753
+  },
+  "sweating": {
+    "canonical_name": "sweating",
+    "diseases": {
+      "hypoglycemia": 487,
+      "obstructive sleep apnea (osa)": 487,
+      "angina": 373,
+      "pulmonary embolism": 352,
+      "heart attack": 349,
+      "labyrinthitis": 282,
+      "mitral valve disease": 279,
+      "drug abuse": 246,
+      "graves disease": 105,
+      "menopause": 37
+    },
+    "total_occurrences": 3007
+  },
+  "mass_on_eyelid": {
+    "canonical_name": "mass on eyelid",
+    "diseases": {
+      "stye": 374,
+      "chalazion": 285,
+      "chronic glaucoma": 265,
+      "cyst of the eyelid": 11
+    },
+    "total_occurrences": 935
+  },
+  "swollen_eye": {
+    "canonical_name": "swollen eye",
+    "diseases": {
+      "conjunctivitis due to allergy": 482,
+      "stye": 385,
+      "conjunctivitis": 375,
+      "blepharitis": 362,
+      "contact dermatitis": 359,
+      "allergy": 348,
+      "cornea infection": 338,
+      "chalazion": 280,
+      "conjunctivitis due to virus": 263,
+      "ingrown toe nail": 241
+    },
+    "total_occurrences": 3702
+  },
+  "eyelid_swelling": {
+    "canonical_name": "eyelid swelling",
+    "diseases": {
+      "stye": 376,
+      "blepharitis": 370,
+      "chalazion": 366,
+      "corneal abrasion": 187
+    },
+    "total_occurrences": 1299
+  },
+  "eyelid_lesion_or_rash": {
+    "canonical_name": "eyelid lesion or rash",
+    "diseases": {
+      "stye": 388,
+      "trichiasis": 17
+    },
+    "total_occurrences": 405
+  },
+  "unwanted_hair": {
+    "canonical_name": "unwanted hair",
+    "diseases": {
+      "hirsutism": 17
+    },
+    "total_occurrences": 17
+  },
+  "symptoms_of_bladder": {
+    "canonical_name": "symptoms of bladder",
+    "diseases": {
+      "cystitis": 503,
+      "benign prostatic hyperplasia (bph)": 481,
+      "temporary or benign blood in urine": 354,
+      "urge incontinence": 199,
+      "bladder disorder": 182,
+      "pelvic organ prolapse": 181,
+      "bladder obstruction": 146,
+      "urethral stricture": 113,
+      "overflow incontinence": 85,
+      "bladder cancer": 52
+    },
+    "total_occurrences": 2328
+  },
+  "irregular_appearing_nails": {
+    "canonical_name": "irregular appearing nails",
+    "diseases": {
+      "injury to the leg": 492,
+      "hemangioma": 261,
+      "ingrown toe nail": 255,
+      "athlete's foot": 208,
+      "onychomycosis": 207,
+      "callus": 207,
+      "open wound of the foot": 14
+    },
+    "total_occurrences": 1644
+  },
+  "itching_of_skin": {
+    "canonical_name": "itching of skin",
+    "diseases": {
+      "eczema": 510,
+      "fungal infection of the hair": 477,
+      "seborrheic keratosis": 463,
+      "allergy": 378,
+      "contact dermatitis": 375,
+      "psoriasis": 368,
+      "actinic keratosis": 367,
+      "seborrheic dermatitis": 366,
+      "drug reaction": 364,
+      "skin polyp": 360
+    },
+    "total_occurrences": 8347
+  },
+  "hurts_to_breath": {
+    "canonical_name": "hurts to breath",
+    "diseases": {
+      "acute bronchiolitis": 505,
+      "smoking or tobacco addiction": 373,
+      "heart failure": 370,
+      "fracture of the rib": 368,
+      "pleural effusion": 258,
+      "pneumothorax": 126
+    },
+    "total_occurrences": 2000
+  },
+  "skin_dryness,_peeling,_scaliness,_or_roughness": {
+    "canonical_name": "skin dryness, peeling, scaliness, or roughness",
+    "diseases": {
+      "eczema": 478,
+      "fungal infection of the hair": 464,
+      "actinic keratosis": 384,
+      "seborrheic dermatitis": 374,
+      "contact dermatitis": 373,
+      "skin pigmentation disorder": 373,
+      "psoriasis": 361,
+      "skin polyp": 358,
+      "skin disorder": 283,
+      "rosacea": 272
+    },
+    "total_occurrences": 6295
+  },
+  "skin_on_arm_or_hand_looks_infected": {
+    "canonical_name": "skin on arm or hand looks infected",
+    "diseases": {
+      "ingrown toe nail": 234,
+      "paronychia": 158
+    },
+    "total_occurrences": 392
+  },
+  "skin_irritation": {
+    "canonical_name": "skin irritation",
+    "diseases": {
+      "eczema": 486,
+      "fungal infection of the hair": 474,
+      "dental caries": 473,
+      "seborrheic keratosis": 375,
+      "contact dermatitis": 372,
+      "skin disorder": 358,
+      "actinic keratosis": 354,
+      "skin polyp": 352,
+      "skin cancer": 263,
+      "atrophic skin condition": 185
+    },
+    "total_occurrences": 3891
+  },
+  "itchy_scalp": {
+    "canonical_name": "itchy scalp",
+    "diseases": {
+      "fungal infection of the hair": 487,
+      "psoriasis": 378,
+      "fungal infection of the skin": 353,
+      "itching of unknown cause": 204,
+      "lice": 44
+    },
+    "total_occurrences": 1466
+  },
+  "incontinence_of_stool": {
+    "canonical_name": "incontinence of stool",
+    "diseases": {
+      "decubitus ulcer": 7
+    },
+    "total_occurrences": 7
+  },
+  "warts": {
+    "canonical_name": "warts",
+    "diseases": {
+      "eczema": 494,
+      "skin pigmentation disorder": 405,
+      "skin polyp": 383,
+      "seborrheic keratosis": 356,
+      "skin cancer": 266,
+      "molluscum contagiosum": 207,
+      "viral warts": 189,
+      "pityriasis rosea": 30,
+      "hyperhidrosis": 15,
+      "hpv": 4
+    },
+    "total_occurrences": 2349
+  },
+  "bumps_on_penis": {
+    "canonical_name": "bumps on penis",
+    "diseases": {
+      "viral warts": 166,
+      "male genitalia infection": 68,
+      "atrophy of the corpus cavernosum": 33
+    },
+    "total_occurrences": 267
+  },
+  "too_little_hair": {
+    "canonical_name": "too little hair",
+    "diseases": {
+      "seborrheic dermatitis": 352,
+      "fungal infection of the skin": 271,
+      "onychomycosis": 215,
+      "alopecia": 120,
+      "hypothyroidism": 33
+    },
+    "total_occurrences": 991
+  },
+  "foot_or_toe_lump_or_mass": {
+    "canonical_name": "foot or toe lump or mass",
+    "diseases": {
+      "bunion": 17,
+      "open wound of the foot": 12
+    },
+    "total_occurrences": 29
+  },
+  "skin_rash": {
+    "canonical_name": "skin rash",
+    "diseases": {
+      "strep throat": 505,
+      "eczema": 495,
+      "fungal infection of the hair": 494,
+      "psoriasis": 413,
+      "drug reaction": 398,
+      "diaper rash": 386,
+      "skin pigmentation disorder": 366,
+      "pyogenic skin infection": 365,
+      "seborrheic dermatitis": 361,
+      "seborrheic keratosis": 360
+    },
+    "total_occurrences": 9903
+  },
+  "mass_or_swelling_around_the_anus": {
+    "canonical_name": "mass or swelling around the anus",
+    "diseases": {
+      "hemorrhoids": 367,
+      "colorectal cancer": 5
+    },
+    "total_occurrences": 372
+  },
+  "ankle_swelling": {
+    "canonical_name": "ankle swelling",
+    "diseases": {
+      "injury to the leg": 494,
+      "gout": 492,
+      "fracture of the leg": 279,
+      "joint effusion": 199,
+      "plantar fasciitis": 77,
+      "injury of the ankle": 76,
+      "anemia due to chronic kidney disease": 20,
+      "fracture of the ankle": 16,
+      "dislocation of the ankle": 10,
+      "fracture of the foot": 7
+    },
+    "total_occurrences": 1670
+  },
+  "drainage_in_throat": {
+    "canonical_name": "drainage in throat",
+    "diseases": {
+      "poisoning due to gas": 80,
+      "colorectal cancer": 3
+    },
+    "total_occurrences": 83
+  },
+  "dry_or_flaky_scalp": {
+    "canonical_name": "dry or flaky scalp",
+    "diseases": {
+      "seborrheic dermatitis": 365
+    },
+    "total_occurrences": 365
+  },
+  "premenstrual_tension_or_irritability": {
+    "canonical_name": "premenstrual tension or irritability",
+    "diseases": {
+      "premenstrual tension syndrome": 51
+    },
+    "total_occurrences": 51
+  },
+  "foot_or_toe_stiffness_or_tightness": {
+    "canonical_name": "foot or toe stiffness or tightness",
+    "diseases": {
+      "diabetic peripheral neuropathy": 241,
+      "fracture of the foot": 7
+    },
+    "total_occurrences": 248
+  },
+  "pelvic_pressure": {
+    "canonical_name": "pelvic pressure",
+    "diseases": {
+      "gestational diabetes": 11,
+      "pregnancy": 4
+    },
+    "total_occurrences": 15
+  },
+  "elbow_swelling": {
+    "canonical_name": "elbow swelling",
+    "diseases": {
+      "bursitis": 511,
+      "injury to the arm": 489,
+      "rheumatoid arthritis": 360,
+      "fracture of the arm": 181,
+      "dislocation of the elbow": 43
+    },
+    "total_occurrences": 1584
+  },
+  "early_or_late_onset_of_menopause": {
+    "canonical_name": "early or late onset of menopause",
+    "diseases": {
+      "osteoporosis": 169
+    },
+    "total_occurrences": 169
+  },
+  "bleeding_from_ear": {
+    "canonical_name": "bleeding from ear",
+    "diseases": {
+      "ear drum damage": 350,
+      "injury to the face": 180,
+      "open wound of the ear": 14,
+      "foreign body in the ear": 12
+    },
+    "total_occurrences": 556
+  },
+  "hand_or_finger_weakness": {
+    "canonical_name": "hand or finger weakness",
+    "diseases": {
+      "brachial neuritis": 371,
+      "mononeuritis": 287
+    },
+    "total_occurrences": 658
+  },
+  "low_self-esteem": {
+    "canonical_name": "low self-esteem",
+    "diseases": {
+      "marijuana abuse": 504,
+      "personality disorder": 378,
+      "schizophrenia": 360,
+      "conductive hearing loss": 256,
+      "oppositional disorder": 239,
+      "alcohol abuse": 210,
+      "obsessive compulsive disorder (ocd)": 180
+    },
+    "total_occurrences": 2127
+  },
+  "itching_of_the_anus": {
+    "canonical_name": "itching of the anus",
+    "diseases": {
+      "hemorrhoids": 357,
+      "rectal disorder": 340,
+      "pinworm infection": 40
+    },
+    "total_occurrences": 737
+  },
+  "swollen_or_red_tonsils": {
+    "canonical_name": "swollen or red tonsils",
+    "diseases": {
+      "eustachian tube dysfunction (ear disorder)": 365,
+      "tonsillitis": 183
+    },
+    "total_occurrences": 548
+  },
+  "irregular_belly_button": {
+    "canonical_name": "irregular belly button",
+    "diseases": {
+      "abdominal hernia": 186,
+      "omphalitis": 6
+    },
+    "total_occurrences": 192
+  },
+  "lip_sore": {
+    "canonical_name": "lip sore",
+    "diseases": {
+      "cold sore": 80
+    },
+    "total_occurrences": 80
+  },
+  "vulvar_sore": {
+    "canonical_name": "vulvar sore",
+    "diseases": {
+      "female genitalia infection": 79
+    },
+    "total_occurrences": 79
+  },
+  "hip_stiffness_or_tightness": {
+    "canonical_name": "hip stiffness or tightness",
+    "diseases": {
+      "arthritis of the hip": 497
+    },
+    "total_occurrences": 497
+  },
+  "mouth_pain": {
+    "canonical_name": "mouth pain",
+    "diseases": {
+      "dental caries": 485,
+      "tooth abscess": 279,
+      "oral thrush (yeast infection)": 276,
+      "oral mucosal lesion": 245,
+      "injury to the face": 183,
+      "jaw disorder": 135,
+      "head and neck cancer": 130,
+      "mucositis": 127,
+      "aphthous ulcer": 113,
+      "fracture of the jaw": 26
+    },
+    "total_occurrences": 2014
+  },
+  "arm_weakness": {
+    "canonical_name": "arm weakness",
+    "diseases": {
+      "peripheral nerve disorder": 490,
+      "carpal tunnel syndrome": 372,
+      "herniated disk": 339
+    },
+    "total_occurrences": 1201
+  },
+  "leg_lump_or_mass": {
+    "canonical_name": "leg lump or mass",
+    "diseases": {
+      "varicose veins": 49,
+      "lice": 44
+    },
+    "total_occurrences": 93
+  },
+  "penis_pain": {
+    "canonical_name": "penis pain",
+    "diseases": {
+      "urethritis": 178,
+      "balanitis": 164,
+      "phimosis": 23,
+      "peyronie disease": 10,
+      "priapism": 4
+    },
+    "total_occurrences": 379
+  },
+  "loss_of_sex_drive": {
+    "canonical_name": "loss of sex drive",
+    "diseases": {
+      "dysthymic disorder": 267,
+      "erectile dysfunction": 258,
+      "psychosexual disorder": 64,
+      "testicular disorder": 32
+    },
+    "total_occurrences": 621
+  },
+  "obsessions_and_compulsions": {
+    "canonical_name": "obsessions and compulsions",
+    "diseases": {
+      "developmental disability": 379,
+      "neurosis": 365,
+      "bipolar disorder": 261,
+      "obsessive compulsive disorder (ocd)": 174,
+      "oppositional disorder": 167
+    },
+    "total_occurrences": 1346
+  },
+  "antisocial_behavior": {
+    "canonical_name": "antisocial behavior",
+    "diseases": {
+      "developmental disability": 355,
+      "alcohol withdrawal": 275,
+      "drug abuse": 266,
+      "attention deficit hyperactivity disorder (adhd)": 208,
+      "autism": 177,
+      "oppositional disorder": 174,
+      "asperger syndrome": 142
+    },
+    "total_occurrences": 1597
+  },
+  "neck_cramps_or_spasms": {
+    "canonical_name": "neck cramps or spasms",
+    "diseases": {
+      "torticollis": 111
+    },
+    "total_occurrences": 111
+  },
+  "poor_circulation": {
+    "canonical_name": "poor circulation",
+    "diseases": {
+      "peripheral arterial disease": 41
+    },
+    "total_occurrences": 41
+  },
+  "sneezing": {
+    "canonical_name": "sneezing",
+    "diseases": {
+      "conjunctivitis due to allergy": 507,
+      "seasonal allergies (hay fever)": 361,
+      "tracheitis": 80
+    },
+    "total_occurrences": 948
+  },
+  "bladder_mass": {
+    "canonical_name": "bladder mass",
+    "diseases": {
+      "bladder cancer": 49
+    },
+    "total_occurrences": 49
+  },
+  "premature_ejaculation": {
+    "canonical_name": "premature ejaculation",
+    "diseases": {
+      "psychosexual disorder": 68
+    },
+    "total_occurrences": 68
+  },
+  "leg_weakness": {
+    "canonical_name": "leg weakness",
+    "diseases": {
+      "peripheral nerve disorder": 520,
+      "multiple sclerosis": 385,
+      "herniated disk": 355,
+      "sciatica": 279,
+      "spondylolisthesis": 257,
+      "knee ligament or meniscus tear": 50,
+      "fracture of the patella": 37,
+      "lung cancer": 21,
+      "hypocalcemia": 19
+    },
+    "total_occurrences": 1923
+  },
+  "penis_redness": {
+    "canonical_name": "penis redness",
+    "diseases": {
+      "balanitis": 178,
+      "phimosis": 22
+    },
+    "total_occurrences": 200
+  },
+  "penile_discharge": {
+    "canonical_name": "penile discharge",
+    "diseases": {
+      "urethritis": 187,
+      "gonorrhea": 61
+    },
+    "total_occurrences": 248
+  },
+  "shoulder_lump_or_mass": {
+    "canonical_name": "shoulder lump or mass",
+    "diseases": {
+      "lipoma": 278
+    },
+    "total_occurrences": 278
+  },
+  "cloudy_eye": {
+    "canonical_name": "cloudy eye",
+    "diseases": {
+      "cataract": 245,
+      "iridocyclitis": 194
+    },
+    "total_occurrences": 439
+  },
+  "hysterical_behavior": {
+    "canonical_name": "hysterical behavior",
+    "diseases": {
+      "schizophrenia": 365,
+      "psychotic disorder": 359,
+      "conduct disorder": 261
+    },
+    "total_occurrences": 985
+  },
+  "arm_lump_or_mass": {
+    "canonical_name": "arm lump or mass",
+    "diseases": {
+      "sebaceous cyst": 347,
+      "lipoma": 294
+    },
+    "total_occurrences": 641
+  },
+  "nightmares": {
+    "canonical_name": "nightmares",
+    "diseases": {
+      "mitral valve disease": 217,
+      "adjustment reaction": 199
+    },
+    "total_occurrences": 416
+  },
+  "bleeding_gums": {
+    "canonical_name": "bleeding gums",
+    "diseases": {
+      "gum disease": 358,
+      "tooth disorder": 272,
+      "broken tooth": 67,
+      "thrombocytopenia": 50,
+      "hemophilia": 11
+    },
+    "total_occurrences": 758
+  },
+  "pain_in_gums": {
+    "canonical_name": "pain in gums",
+    "diseases": {
+      "dental caries": 475,
+      "gum disease": 350,
+      "tooth abscess": 283,
+      "tooth disorder": 243
+    },
+    "total_occurrences": 1351
+  },
+  "bedwetting": {
+    "canonical_name": "bedwetting",
+    "diseases": {
+      "bladder obstruction": 129
+    },
+    "total_occurrences": 129
+  },
+  "diaper_rash": {
+    "canonical_name": "diaper rash",
+    "diseases": {
+      "diaper rash": 370,
+      "yeast infection": 195,
+      "balanitis": 183
+    },
+    "total_occurrences": 748
+  },
+  "lump_or_mass_of_breast": {
+    "canonical_name": "lump or mass of breast",
+    "diseases": {
+      "breast infection (mastitis)": 208,
+      "gynecomastia": 40,
+      "fibroadenoma": 38,
+      "breast cyst": 9,
+      "fibrocystic breast disease": 7,
+      "breast cancer": 4
+    },
+    "total_occurrences": 306
+  },
+  "vaginal_bleeding_after_menopause": {
+    "canonical_name": "vaginal bleeding after menopause",
+    "diseases": {
+      "endometrial cancer": 44,
+      "endometrial hyperplasia": 28,
+      "uterine cancer": 4
+    },
+    "total_occurrences": 76
+  },
+  "itching_of_scrotum": {
+    "canonical_name": "itching of scrotum",
+    "diseases": {
+      "pinguecula": 3
+    },
+    "total_occurrences": 3
+  },
+  "postpartum_problems_of_the_breast": {
+    "canonical_name": "postpartum problems of the breast",
+    "diseases": {
+      "breast infection (mastitis)": 204
+    },
+    "total_occurrences": 204
+  },
+  "hesitancy": {
+    "canonical_name": "hesitancy",
+    "diseases": {
+      "benign prostatic hyperplasia (bph)": 486,
+      "bladder obstruction": 137
+    },
+    "total_occurrences": 623
+  },
+  "muscle_weakness": {
+    "canonical_name": "muscle weakness",
+    "diseases": {
+      "epilepsy": 27
+    },
+    "total_occurrences": 27
+  },
+  "throat_redness": {
+    "canonical_name": "throat redness",
+    "diseases": {
+      "tonsillitis": 181
+    },
+    "total_occurrences": 181
+  },
+  "joint_swelling": {
+    "canonical_name": "joint swelling",
+    "diseases": {
+      "rheumatoid arthritis": 270
+    },
+    "total_occurrences": 270
+  },
+  "redness_in_or_around_nose": {
+    "canonical_name": "redness in or around nose",
+    "diseases": {
+      "fracture of the facial bones": 186,
+      "open wound of the arm": 4
+    },
+    "total_occurrences": 190
+  },
+  "wrinkles_on_skin": {
+    "canonical_name": "wrinkles on skin",
+    "diseases": {
+      "atrophic skin condition": 165
+    },
+    "total_occurrences": 165
+  },
+  "foot_or_toe_weakness": {
+    "canonical_name": "foot or toe weakness",
+    "diseases": {
+      "injury of the ankle": 78,
+      "fracture of the foot": 7
+    },
+    "total_occurrences": 85
+  },
+  "hand_or_finger_cramps_or_spasms": {
+    "canonical_name": "hand or finger cramps or spasms",
+    "diseases": {
+      "trigger finger (finger disorder)": 38
+    },
+    "total_occurrences": 38
+  },
+  "back_stiffness_or_tightness": {
+    "canonical_name": "back stiffness or tightness",
+    "diseases": {
+      "chronic back pain": 366
+    },
+    "total_occurrences": 366
+  },
+  "wrist_lump_or_mass": {
+    "canonical_name": "wrist lump or mass",
+    "diseases": {
+      "ganglion cyst": 277
+    },
+    "total_occurrences": 277
+  },
+  "low_urine_output": {
+    "canonical_name": "low urine output",
+    "diseases": {
+      "benign prostatic hyperplasia (bph)": 485,
+      "oppositional disorder": 179
+    },
+    "total_occurrences": 664
+  },
+  "sore_in_nose": {
+    "canonical_name": "sore in nose",
+    "diseases": {
+      "impetigo": 272
+    },
+    "total_occurrences": 272
+  },
+  "ankle_weakness": {
+    "canonical_name": "ankle weakness",
+    "diseases": {
+      "fracture of the ankle": 16
+    },
+    "total_occurrences": 16
+  }
+}

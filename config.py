@@ -61,7 +61,7 @@ ENABLE_MEDITRON = False
 ENABLE_BIOGPT = False
 ENABLE_RAG = True
 
-# RAG Knowledge Base
+# RAG Knowledge Base (legacy pickle — now superseded by RAG_CHUNKS_PATH below)
 RAG_KNOWLEDGE_BASE_PATH = os.path.join(PROJECT_ROOT, "rag", "knowledge_base.pkl")
 
 # NER labels
@@ -156,12 +156,16 @@ TEMPORAL_RISK_LABELS = ["Low", "Medium", "High", "Critical"]
 # DIFFERENTIAL DIAGNOSIS AGENT -- MODEL PATHS
 # ============================================================
 DIFFERENTIAL_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "differential_model")
-DIFFERENTIAL_DATA_DIR = os.path.join(DIFFERENTIAL_MODEL_DIR, "data")
-DIFFERENTIAL_TRAINED_DIR = os.path.join(DIFFERENTIAL_MODEL_DIR, "trained")
-DIFFERENTIAL_TRAINED_MODEL = os.path.join(DIFFERENTIAL_TRAINED_DIR, "differential_xgb.pkl")
-DIFFERENTIAL_KNOWLEDGE_PATH = os.path.join(DIFFERENTIAL_DATA_DIR, "differential_knowledge.json")
-DIFFERENTIAL_SYMPTOM_MAP_PATH = os.path.join(DIFFERENTIAL_DATA_DIR, "symptom_disease_map.json")
-DIFFERENTIAL_ENCODERS_PATH = os.path.join(DIFFERENTIAL_DATA_DIR, "differential_encoders.pkl")
+DIFFERENTIAL_DATA_DIR = os.path.join(DIFFERENTIAL_MODEL_DIR)  # flat dir
+DIFFERENTIAL_TRAINED_DIR = os.path.join(DIFFERENTIAL_MODEL_DIR)
+# NEW retrained model (XGBoost native format + sklearn label encoder)
+DIFFERENTIAL_TRAINED_MODEL = os.path.join(DIFFERENTIAL_MODEL_DIR, "xgboost_model.json")
+DIFFERENTIAL_LABEL_ENCODER_PATH = os.path.join(DIFFERENTIAL_MODEL_DIR, "label_encoder.pkl")
+DIFFERENTIAL_SYMPTOM_COLS_PATH = os.path.join(DIFFERENTIAL_MODEL_DIR, "symptom_columns.json")
+DIFFERENTIAL_KNOWLEDGE_PATH = os.path.join(DIFFERENTIAL_MODEL_DIR, "disease_knowledge.json")
+DIFFERENTIAL_SYMPTOM_MAP_PATH = os.path.join(DIFFERENTIAL_MODEL_DIR, "symptom_disease_map.json")
+# Legacy aliases kept for backward compat
+DIFFERENTIAL_ENCODERS_PATH = os.path.join(DIFFERENTIAL_MODEL_DIR, "label_encoder.pkl")
 
 # Raw CSV
 DIFFERENTIAL_CSV = os.path.join(RAW_DATA_DIR, "Differential Diagnosis Dataset.csv")
@@ -173,10 +177,15 @@ DIFFERENTIAL_CSV = os.path.join(RAW_DATA_DIR, "Differential Diagnosis Dataset.cs
 RECOMMENDATION_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "recommendation_model")
 RECOMMENDATION_DATA_DIR = os.path.join(RECOMMENDATION_MODEL_DIR, "data")
 
-# Knowledge base JSONs (built by prepare_recommendation_data.py)
+# NEW retrained KB (built by step6_recommendation_kb.py)
+RECOMMENDATION_KB_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "recommendation_knowledge.json")
+DISEASE_DRUG_MAP_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "disease_drug_map.json")
+DISEASE_DIET_MAP_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "disease_diet_map.json")
+DISEASE_WORKOUT_MAP_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "disease_workout_map.json")
+DISEASE_DESCRIPTIONS_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "disease_descriptions.json")
+# Legacy aliases
 DRUG_KNOWLEDGE_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "drug_knowledge.json")
 DIAGNOSTIC_KNOWLEDGE_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "diagnostic_knowledge.json")
-DISEASE_DRUG_MAP_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "disease_drug_map.json")
 DISEASE_TEST_MAP_PATH = os.path.join(RECOMMENDATION_DATA_DIR, "disease_test_map.json")
 
 # Raw CSVs
@@ -213,24 +222,24 @@ EMERGENCY_CONDITIONS = [
 
 
 # ============================================================
-# CORE ML -- PATHS (existing Phase 3 ensemble)
+# CORE ML -- PATHS (NEW retrained prediction engine)
 # ============================================================
 MODEL_READY_CSV = os.path.join(PROCESSED_DATA_DIR, "merged", "model_ready.csv")
 TRAINED_MODEL_DIR = os.path.join(PROJECT_ROOT, "models", "trained")
 
-# Prediction engine model files
-ENSEMBLE_MODEL_PATH = os.path.join(TRAINED_MODEL_DIR, "disease_model.pkl")
-LABEL_ENCODER_PATH = os.path.join(TRAINED_MODEL_DIR, "label_encoder.pkl")
+# NEW Prediction engine (Step 3 retrained)
+PREDICTION_ENGINE_DIR = os.path.join(PROJECT_ROOT, "models", "prediction_engine")
+ENSEMBLE_MODEL_PATH = os.path.join(PREDICTION_ENGINE_DIR, "ensemble_model.pkl")
+LABEL_ENCODER_PATH = os.path.join(PREDICTION_ENGINE_DIR, "label_encoder.pkl")
+PREDICTION_SCALER_PATH = os.path.join(PREDICTION_ENGINE_DIR, "scaler.pkl")
+PREDICTION_FEATURE_COLUMNS_PATH = os.path.join(PREDICTION_ENGINE_DIR, "feature_columns.json")
 
-# Feature columns expected by the ensemble model (order matters)
-PREDICTION_FEATURE_COLUMNS = [
-    "fever", "cough", "fatigue", "difficulty_breathing", "age", "gender",
-    "blood_pressure", "cholesterol", "outcome", "duration", "severity",
-    "secondary_disease", "symptom_count", "weight_max", "risk_type_list",
-    "temporal_risk_score", "diff_symptom_count", "diff_possible_disease_count",
-    "headache", "vomiting", "chest_pain", "body_pain", "rash",
-    "platelet_low", "wbc_abnormal", "risk_score", "severity_duration_interaction",
-]
+# RAG Knowledge Base (Step 7 retrained)
+RAG_CHUNKS_PATH = os.path.join(PROJECT_ROOT, "data", "knowledge_base", "knowledge_chunks.json")
+
+# Symptom agent new KB
+SYMPTOM_KB_PATH = os.path.join(PROJECT_ROOT, "models", "symptom_model", "symptom_knowledge.json")
+SEVERITY_WEIGHTS_PATH = os.path.join(PROJECT_ROOT, "models", "symptom_model", "severity_weights.json")
 
 
 # ============================================================

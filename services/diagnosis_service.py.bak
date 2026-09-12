@@ -257,66 +257,10 @@ class DiagnosisService:
             if confidence_status == "uncertain":
                 pathophys_text += " Due to the low confidence score, this assessment is highly uncertain and requires clinical validation."
 
-            # Extract triage, Groq explanation, and lifestyle from supervisor
-            triage_info = final_diagnosis.get("triage", {})
-            triage_tier = triage_info.get("tier", "YELLOW")
-            common_illness_type = triage_info.get("common_illness_type") or disease_name
-            display_disease = final_diagnosis.get("display_disease", disease_name)
-            groq_explanation = final_diagnosis.get("friendly_explanation", {})
-            friendly_summary = final_diagnosis.get("friendly_summary", "")
-            lifestyle_info = final_diagnosis.get("lifestyle", {})
-
-            # Pathophysiology: use Groq summary if available, else static map
-            if friendly_summary:
-                pathophys_text = friendly_summary
-            else:
-                pathophys_text = PATIENT_FRIENDLY_PATHOPHYSIOLOGY.get(
-                    disease_name,
-                    f"Our AI analysis suggests a possible case of {disease_name}. "
-                    "Your symptoms are consistent with this condition. We recommend "
-                    "consulting a healthcare provider to review this assessment."
-                )
-            if confidence_status == "uncertain" and triage_tier != "GREEN":
-                pathophys_text += (" Due to the low confidence score, this assessment "
-                                   "is highly uncertain and requires clinical validation.")
-
-            # GREEN tier: replace drugs with OTC self-care items from Groq
-            if triage_tier == "GREEN" and groq_explanation.get("what_helps"):
-                recommended_drugs = [
-                    {
-                        "name": item.split("(")[0].split("--")[0].split("—")[0].strip(),
-                        "dosage": "As directed on packaging or by pharmacist",
-                        "purpose": item,
-                        "route": "Oral / Topical",
-                        "class": "OTC Remedy",
-                        "adr": "Generally well tolerated. Stop if you develop an allergic reaction.",
-                        "ci": "Consult your pharmacist if pregnant, breastfeeding, or on other medicines.",
-                        "precaution": "Not a substitute for medical advice. See a doctor if symptoms worsen."
-                    }
-                    for item in groq_explanation.get("what_helps", [])[:4]
-                ]
-
-            # GREEN tier: replace tests with Groq precautions/when-to-see-doctor steps
-            if triage_tier == "GREEN":
-                groq_steps = (
-                    groq_explanation.get("precautions", []) +
-                    groq_explanation.get("when_to_see_doctor", [])
-                )
-                if groq_steps:
-                    recommended_tests = [
-                        {
-                            "name": step,
-                            "priority": "Self-Care",
-                            "department": "General",
-                            "indication": "Recommended for faster recovery from mild illness."
-                        }
-                        for step in groq_steps[:5]
-                    ]
-
             diagnostic_output = {
-                "pipeline_version": "Sprint 8 — Triage + Groq",
+                "pipeline_version": "Sprint 7A Live LangGraph Pipeline",
                 "generated_at": datetime.now(timezone.utc).isoformat(),
-                "final_diagnosis": display_disease,
+                "final_diagnosis": disease_name,
                 "confidence": confidence_pct,
                 "status": confidence_status,
                 "clinical_review_recommended": clinical_review_recommended,
@@ -333,25 +277,7 @@ class DiagnosisService:
                     "triage_level": triage_level,
                     "urgency": "High" if is_emergency else "Standard",
                     "progression": state.get("temporal_result", {}).get("overall_urgency", "Stable")
-                },
-                "triage": {
-                    "tier": triage_tier,
-                    "severity_score": triage_info.get("severity_score", 50),
-                    "common_illness_type": common_illness_type,
-                    "red_flags": triage_info.get("red_flags", []),
-                    "triage_reason": triage_info.get("triage_reason", ""),
-                    "show_disease_alert": final_diagnosis.get("show_disease_alert", True),
-                    "display_confidence_label": final_diagnosis.get("display_confidence_label", ""),
-                },
-                "friendly_explanation": groq_explanation,
-                "lifestyle": {
-                    "diet": (lifestyle_info.get("diet_recommendations", []) or
-                             groq_explanation.get("diet", [])),
-                    "workout": lifestyle_info.get("workout_recommendations", []),
-                    "precautions": (lifestyle_info.get("precautions", []) or
-                                    groq_explanation.get("precautions", [])),
-                    "when_to_see_doctor": groq_explanation.get("when_to_see_doctor", []),
-                },
+                }
             }
 
             # Set case status (flagged for doctor review if supervisor triggers review_flag or confidence is low)

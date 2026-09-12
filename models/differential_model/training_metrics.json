@@ -1,0 +1,32 @@
+{
+  "accuracy": 0.8297781829231237,
+  "top3_accuracy": 0.940139775144333,
+  "top5_accuracy": 0.9652790438569837,
+  "macro_f1": 0.6611659235611829,
+  "weighted_f1": 0.8264623145815517,
+  "n_classes": 721,
+  "n_features": 377,
+  "n_train": 197458,
+  "n_test": 49365,
+  "training_time_s": 3203.234174966812,
+  "params": {
+    "objective": "multi:softprob",
+    "num_class": 721,
+    "eval_metric": [
+      "mlogloss",
+      "merror"
+    ],
+    "max_depth": 8,
+    "learning_rate": 0.1,
+    "n_estimators": 300,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "verbosity": 1,
+    "tree_method": "hist",
+    "device": "cuda"
+  }
+}

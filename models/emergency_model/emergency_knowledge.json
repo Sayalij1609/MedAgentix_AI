@@ -1,0 +1,5541 @@
+{
+  "abdominal aortic aneurysm": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "abdominal hernia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "abscess of nose": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "abscess of the lung": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "abscess of the pharynx": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "acanthosis nigricans": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "acariasis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "achalasia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "acne": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "actinic keratosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "acute bronchiolitis": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "difficulty breathing",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "acute bronchitis": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "difficulty breathing",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "acute bronchospasm": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "difficulty breathing",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "acute fatty liver of pregnancy (aflp)": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "acute glaucoma": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "acute kidney injury": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "acute otitis media": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "acute pancreatitis": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "acute respiratory distress syndrome (ards)": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "difficulty breathing",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "acute sinusitis": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "acute stress reaction": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "adhesive capsulitis of the shoulder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "adjustment reaction": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "adrenal adenoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "alcohol abuse": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "alcohol intoxication": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "alcohol withdrawal": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "alcoholic liver disease": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "allergy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "allergy to animals": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "alopecia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "alzheimer disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "amblyopia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "amyotrophic lateral sclerosis (als)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "anal fissure": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "anal fistula": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "anemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "anemia due to chronic kidney disease": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "anemia due to malignancy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "anemia of chronic disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "angina": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "increased heart rate",
+      "irregular heartbeat",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "ankylosing spondylitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "anxiety": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "irregular heartbeat",
+      "shortness of breath",
+      "increased heart rate"
+    ],
+    "is_contagious": false
+  },
+  "aortic valve disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat",
+      "sharp chest pain",
+      "difficulty breathing",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "aphakia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "aphthous ulcer": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "aplastic anemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "appendicitis": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "arrhythmia": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "arthritis of the hip": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ascending cholangitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "asperger syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "aspergillosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "asthma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "difficulty breathing",
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "astigmatism": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "atelectasis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "athlete's foot": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "atonic bladder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "atrial fibrillation": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "increased heart rate",
+      "decreased heart rate",
+      "irregular heartbeat",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "atrial flutter": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "irregular heartbeat",
+      "increased heart rate",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "atrophic skin condition": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "atrophic vaginitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "atrophy of the corpus cavernosum": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "attention deficit hyperactivity disorder (adhd)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "autism": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "autonomic nervous system disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "avascular necrosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "balanitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bell palsy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "benign kidney cyst": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "benign paroxysmal positional vertical (bppv)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "benign prostatic hyperplasia (bph)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "benign vaginal discharge (leukorrhea)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bipolar disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "birth trauma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bladder cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bladder disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bladder obstruction": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "blepharitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "blepharospasm": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bone cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bone disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bone spur of the calcaneous": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "brachial neuritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "brain cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "breast cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "breast cyst": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "breast infection (mastitis)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "broken tooth": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bunion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "burn": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "bursitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "callus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "carbon monoxide poisoning": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cardiac arrest": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "irregular heartbeat",
+      "decreased heart rate",
+      "shortness of breath",
+      "sharp chest pain",
+      "difficulty breathing"
+    ],
+    "is_contagious": false
+  },
+  "cardiomyopathy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "decreased heart rate",
+      "irregular heartbeat",
+      "sharp chest pain",
+      "shortness of breath",
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "carpal tunnel syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cataract": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "celiac disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "cellulitis or abscess of mouth": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "central atherosclerosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "central retinal artery or vein occlusion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "cerebral edema": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cerebral palsy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "cervical cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cervical disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cervicitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chalazion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chickenpox": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chlamydia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cholecystitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "choledocholithiasis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "cholesteatoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chondromalacia of the patella": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chorioretinitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chronic back pain": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chronic constipation": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chronic glaucoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chronic inflammatory demyelinating polyneuropathy (cidp)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chronic kidney disease": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "chronic knee pain": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chronic obstructive pulmonary disease (copd)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "chronic otitis media": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chronic pain disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chronic pancreatitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "chronic rheumatic fever": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "increased heart rate",
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "chronic sinusitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cirrhosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "coagulation (bleeding) disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cold sore": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "colonic polyp": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "colorectal cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "common cold": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "complex regional pain syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "concussion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "conduct disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "conductive hearing loss": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "congenital heart defect": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "congenital malformation syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "conjunctivitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "conjunctivitis due to allergy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "conjunctivitis due to bacteria": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "conjunctivitis due to virus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "contact dermatitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "conversion disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "cornea infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "corneal abrasion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "corneal disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "coronary atherosclerosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat",
+      "burning chest pain",
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "cranial nerve palsy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "crohn disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "croup": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "crushing injury": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cryptococcosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cryptorchidism": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cushing syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cyst of the eyelid": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cystic fibrosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "cysticercosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "cystitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "de quervain disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "decubitus ulcer": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "deep vein thrombosis (dvt)": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "degenerative disc disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "delirium": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dementia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dental caries": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "depression": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dermatitis due to sun exposure": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "developmental disability": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "deviated nasal septum": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "difficulty breathing"
+    ],
+    "is_contagious": false
+  },
+  "diabetes insipidus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "diabetic ketoacidosis": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "diabetic peripheral neuropathy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "diabetic retinopathy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "diaper rash": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dislocation of the ankle": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dislocation of the elbow": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dislocation of the finger": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dislocation of the foot": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dislocation of the hip": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dislocation of the shoulder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dislocation of the vertebra": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dislocation of the wrist": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dissociative disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "diverticulitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "diverticulosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "down syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "drug abuse": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "drug abuse (barbiturates)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "drug abuse (cocaine)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "drug abuse (methamphetamine)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "drug abuse (opioids)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "drug poisoning due to medication": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "drug reaction": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "drug withdrawal": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dry eye of unknown cause": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dyshidrosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "dysthymic disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ear drum damage": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ear wax impaction": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "eating disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ectopic pregnancy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ectropion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "eczema": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "edward syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "emphysema": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "empyema": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "encephalitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "endocarditis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat",
+      "shortness of breath",
+      "sharp chest pain",
+      "increased heart rate"
+    ],
+    "is_contagious": false
+  },
+  "endometrial cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "endometrial hyperplasia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "endometriosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "endophthalmitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "envenomation from spider or animal bite": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ependymoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "epididymitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "epidural hemorrhage": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "epilepsy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "erectile dysfunction": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "erythema multiforme": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "esophageal cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "esophagitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "heartburn",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "essential tremor": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "eustachian tube dysfunction (ear disorder)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "extrapyramidal effect of drugs": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "eye alignment disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "factitious disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "female genitalia infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "female infertility of unknown cause": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fetal alcohol syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fibroadenoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fibrocystic breast disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fibromyalgia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "flat feet": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "floaters": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "flu": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fluid overload": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "folate deficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "difficulty breathing",
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "food allergy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "foreign body in the ear": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "foreign body in the eye": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "foreign body in the gastrointestinal tract": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "foreign body in the throat": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "foreign body in the vagina": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the ankle": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the arm": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the facial bones": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the finger": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the foot": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the hand": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the jaw": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the leg": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the neck": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the patella": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the pelvis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the rib": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "fracture of the shoulder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the skull": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fracture of the vertebra": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "friedrich ataxia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "frostbite": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "fungal infection of the hair": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "fungal infection of the skin": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "g6pd enzyme deficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "galactorrhea of unknown cause": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "gallstone": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "ganglion cyst": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "gastritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "gastroduodenal ulcer": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "gastroesophageal reflux disease (gerd)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "gastrointestinal hemorrhage": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "gastroparesis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "genital herpes": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "gestational diabetes": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "glaucoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "glucocorticoid deficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "goiter": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "gonorrhea": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "gout": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "granuloma inguinale": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "graves disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "guillain barre syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "gum disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "gynecomastia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hammer toe": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "head and neck cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "head injury": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "headache after lumbar puncture": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "heart attack": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "heartburn",
+      "increased heart rate",
+      "burning chest pain",
+      "shortness of breath",
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "heart block": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat",
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "heart contusion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "heart failure": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "difficulty breathing",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "heat exhaustion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "hemangioma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hemarthrosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hematoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hemiplegia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "hemolytic anemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hemophilia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hemorrhoids": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "hepatic encephalopathy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "hepatitis due to a toxin": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": true
+  },
+  "herniated disk": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "herpangina": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hiatal hernia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "hidradenitis suppurativa": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hirschsprung disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hirsutism": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "histoplasmosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hormone disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hpv": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hydatidiform mole": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hydrocele of the testicle": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hydrocephalus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "hydronephrosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hypercalcemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hypercholesterolemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "hyperemesis gravidarum": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hyperhidrosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hyperkalemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "decreased heart rate",
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "hypernatremia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "difficulty breathing"
+    ],
+    "is_contagious": false
+  },
+  "hyperopia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hyperosmotic hyperketotic state": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hypertension of pregnancy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "hypertensive heart disease": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "difficulty breathing",
+      "sharp chest pain",
+      "shortness of breath",
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "hypertrophic obstructive cardiomyopathy (hocm)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "hypocalcemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "hypoglycemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "hypokalemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "hyponatremia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain",
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "hypothermia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hypothyroidism": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "hypovolemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "idiopathic absence of menstruation": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "idiopathic excessive menstruation": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "idiopathic infrequent menstruation": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "idiopathic irregular menstrual cycle": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "idiopathic nonmenstrual bleeding": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "idiopathic painful menstruation": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ileus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "impetigo": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "impulse control disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "indigestion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "induced abortion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "infection of open wound": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "infectious gastroenteritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ingrown toe nail": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "inguinal hernia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury of the ankle": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to internal organ": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "injury to the abdomen": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "injury to the arm": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to the face": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to the finger": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to the hand": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to the hip": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to the knee": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to the leg": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to the shoulder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to the spinal cord": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "injury to the trunk": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "insect bite": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "insulin overdose": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "interstitial lung disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "intertrigo (skin condition)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "intestinal cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "intestinal disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "intestinal malabsorption": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "intestinal obstruction": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "intracerebral hemorrhage": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "intracranial abscess": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "intracranial hemorrhage": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "iridocyclitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "iron deficiency anemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "irritable bowel syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ischemia of the bowel": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ischemic heart disease": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "difficulty breathing",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "itching of unknown cause": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "jaw disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "joint effusion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "juvenile rheumatoid arthritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "kidney cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "kidney disease due to longstanding hypertension": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "kidney failure": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "kidney stone": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "knee ligament or meniscus tear": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "labyrinthitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lactose intolerance": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "laryngitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lateral epicondylitis (tennis elbow)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "leukemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lewy body dementia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lice": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lichen planus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lichen simplex": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lipoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "liver cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "liver disease": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "heartburn",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "lumbago": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lung cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "lung contusion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "lyme disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lymphadenitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lymphedema": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lymphogranuloma venereum": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "lymphoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "macular degeneration": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "magnesium deficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "malaria": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": true
+  },
+  "male genitalia infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "malignant hypertension": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "marijuana abuse": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "mastectomy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "mastoiditis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "melanoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "meniere disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "meningioma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "meningitis": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "menopause": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "metabolic disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "metastatic cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "migraine": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "missed abortion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "mitral valve disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "irregular heartbeat",
+      "sharp chest pain",
+      "increased heart rate"
+    ],
+    "is_contagious": false
+  },
+  "mittelschmerz": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "molluscum contagiosum": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "mononeuritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "mononucleosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "moyamoya disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "mucositis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "multiple myeloma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "multiple sclerosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "mumps": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": true
+  },
+  "muscle spasm": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "muscular dystrophy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "myasthenia gravis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "myoclonus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "myopia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "myositis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "narcolepsy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "nasal polyp": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "neonatal jaundice": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "nerve impingement near the shoulder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "neuralgia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "neurofibromatosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "neuropathy due to drugs": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "neurosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "nonalcoholic liver disease (nash)": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "noninfectious gastroenteritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "normal pressure hydrocephalus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "nose disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "difficulty breathing"
+    ],
+    "is_contagious": false
+  },
+  "obsessive compulsive disorder (ocd)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "obstructive sleep apnea (osa)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "difficulty breathing",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "omphalitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "onychomycosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "open wound from surgical incision": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "open wound of the arm": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "open wound of the back": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "open wound of the ear": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "open wound of the eye": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "open wound of the foot": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "open wound of the lip": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "open wound of the mouth": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "open wound of the neck": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "open wound of the nose": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "oppositional disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "optic neuritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "oral mucosal lesion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "oral thrush (yeast infection)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "orbital cellulitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "orthostatic hypotension": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "osteoarthritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "osteochondroma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "osteochondrosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "osteomyelitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "osteoporosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "otitis externa (swimmer's ear)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "otitis media": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "otosclerosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ovarian cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ovarian cyst": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "ovarian torsion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "overflow incontinence": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pain after an operation": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "pain disorder affecting the neck": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pancreatic cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "panic attack": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "irregular heartbeat",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "panic disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "parasitic disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "parathyroid adenoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "parkinson disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "paronychia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "paroxysmal supraventricular tachycardia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "increased heart rate",
+      "irregular heartbeat",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "paroxysmal ventricular tachycardia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "decreased heart rate",
+      "increased heart rate",
+      "sharp chest pain",
+      "shortness of breath",
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "pelvic fistula": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pelvic inflammatory disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pelvic organ prolapse": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pemphigus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pericarditis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "peripheral arterial disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "peripheral arterial embolism": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "peripheral nerve disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "perirectal infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "peritonitis": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "peritonsillar abscess": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "persistent vomiting of unknown cause": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "personality disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "peyronie disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pharyngitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "phimosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pilonidal cyst": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pinguecula": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pinworm infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pituitary adenoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pituitary disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pityriasis rosea": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "placenta previa": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "placental abruption": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "plantar fasciitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pleural effusion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "difficulty breathing",
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "pneumoconiosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "pneumonia": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "difficulty breathing",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "pneumothorax": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "poisoning due to analgesics": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "poisoning due to anticonvulsants": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "poisoning due to antidepressants": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "poisoning due to antihypertensives": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "poisoning due to antimicrobial drugs": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "poisoning due to antipsychotics": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "poisoning due to ethylene glycol": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "poisoning due to gas": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "poisoning due to opioids": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "poisoning due to sedatives": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "polycystic kidney disease": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "polycystic ovarian syndrome (pcos)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "polycythemia vera": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "polymyalgia rheumatica": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "post-traumatic stress disorder (ptsd)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "postoperative infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "postpartum depression": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "preeclampsia": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pregnancy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "premature atrial contractions (pacs)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "premature ovarian failure": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "premature rupture of amniotic membrane": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "premature ventricular contractions (pvcs)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain",
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "premenstrual tension syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "presbyacusis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "presbyopia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "priapism": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "primary immunodeficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "primary insomnia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "primary kidney disease": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "problem during pregnancy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "prostate cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "prostatitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "protein deficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pseudohypoparathyroidism": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pseudotumor cerebri": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "psoriasis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "psychosexual disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "psychotic disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pterygium": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pulmonary congestion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath",
+      "decreased heart rate"
+    ],
+    "is_contagious": false
+  },
+  "pulmonary embolism": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath",
+      "difficulty breathing"
+    ],
+    "is_contagious": false
+  },
+  "pulmonary eosinophilia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "pulmonary fibrosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath",
+      "difficulty breathing"
+    ],
+    "is_contagious": false
+  },
+  "pulmonary hypertension": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "difficulty breathing",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "pulmonic valve disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "pyelonephritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pyloric stenosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "pyogenic skin infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "raynaud disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "reactive arthritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "rectal disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "restless leg syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "retinal detachment": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "retinopathy due to high blood pressure": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "rhabdomyolysis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "rheumatoid arthritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "rosacea": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "rotator cuff injury": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "salivary gland disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "sarcoidosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "scabies": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "scar": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "scarlet fever": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "schizophrenia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "sciatica": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "scleritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "scleroderma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "scoliosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "seasonal allergies (hay fever)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "sebaceous cyst": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "seborrheic dermatitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "seborrheic keratosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "sensorineural hearing loss": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "sepsis": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "difficulty breathing"
+    ],
+    "is_contagious": false
+  },
+  "septic arthritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "shingles (herpes zoster)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "sialoadenitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "sick sinus syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "increased heart rate",
+      "irregular heartbeat",
+      "decreased heart rate"
+    ],
+    "is_contagious": false
+  },
+  "sickle cell anemia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "sickle cell crisis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "sinus bradycardia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat",
+      "decreased heart rate",
+      "sharp chest pain",
+      "increased heart rate",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "sjogren syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "skin cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "skin disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "skin pigmentation disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "skin polyp": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "smoking or tobacco addiction": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "social phobia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "soft tissue sarcoma": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "somatization disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "spermatocele": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "spherocytosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "spina bifida": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "spinal stenosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "spinocerebellar ataxia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "spondylitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "spondylolisthesis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "spondylosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "spontaneous abortion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "sprain or strain": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "stenosis of the tear duct": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "stomach cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "strep throat": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "stress incontinence": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "stricture of the esophagus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "stroke": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "stye": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "subacute thyroiditis": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "subarachnoid hemorrhage": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "subconjunctival hemorrhage": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "subdural hemorrhage": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "substance-related mental disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "syphilis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "syringomyelia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "systemic lupus erythematosis (sle)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "teething syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "temporary or benign blood in urine": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "temporomandibular joint disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tendinitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tension headache": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "testicular cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "testicular disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "testicular torsion": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "thoracic aortic aneurysm": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "thoracic outlet syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "threatened pregnancy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "thrombocytopenia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "thrombophlebitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "thyroid cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "thyroid disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "thyroid nodule": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tic (movement) disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tietze syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "difficulty breathing",
+      "sharp chest pain",
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "tinnitus of unknown cause": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tonsillar hypertrophy": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tonsillitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tooth abscess": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tooth disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "torticollis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tourette syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "toxic multinodular goiter": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "irregular heartbeat"
+    ],
+    "is_contagious": false
+  },
+  "toxoplasmosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tracheitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "transient ischemic attack": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "trichiasis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "trichinosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "trichomonas infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tricuspid valve disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "trigeminal neuralgia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "trigger finger (finger disorder)": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "tuberculosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": true
+  },
+  "tuberous sclerosis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "seizures"
+    ],
+    "is_contagious": false
+  },
+  "ulcerative colitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "urethral disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "urethral stricture": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "urethral valves": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "urethritis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "urge incontinence": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "urinary tract infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "urinary tract obstruction": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "uterine atony": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "uterine cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "uterine fibroids": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "uveitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vacterl syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vaginal cyst": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vaginal yeast infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vaginismus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vaginitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "valley fever": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": false
+  },
+  "varicocele of the testicles": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "varicose veins": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vasculitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "venous insufficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "burning chest pain"
+    ],
+    "is_contagious": false
+  },
+  "vertebrobasilar insufficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  },
+  "vesicoureteral reflux": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "viral exanthem": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "viral hepatitis": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": true
+  },
+  "viral warts": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vitamin a deficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vitamin b12 deficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vitamin d deficiency": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vitreous degeneration": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vitreous hemorrhage": {
+    "urgency": 10,
+    "requires_emergency": true,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vocal cord polyp": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "volvulus": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "von willebrand disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vulvar cancer": {
+    "urgency": 7,
+    "requires_emergency": false,
+    "requires_urgent_care": true,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vulvar disorder": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "vulvodynia": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "wernicke korsakoff syndrome": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "white blood cell disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "heartburn"
+    ],
+    "is_contagious": false
+  },
+  "whooping cough": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "shortness of breath"
+    ],
+    "is_contagious": true
+  },
+  "wilson disease": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "yeast infection": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [],
+    "is_contagious": false
+  },
+  "zenker diverticulum": {
+    "urgency": 4,
+    "requires_emergency": false,
+    "requires_urgent_care": false,
+    "emergency_symptoms": [
+      "sharp chest pain"
+    ],
+    "is_contagious": false
+  }
+}

@@ -4,24 +4,13 @@ import { motion } from 'framer-motion';
 import { Sidebar, SidebarNavItem } from '../components/common/Sidebar';
 import { Navbar } from '../components/common/Navbar';
 import { ROUTES } from '../routes/config';
-import { LayoutDashboard, Stethoscope, LineChart } from 'lucide-react';
+import { LayoutDashboard, Stethoscope, LineChart, FileSearch } from 'lucide-react';
 
 const PATIENT_NAV_ITEMS: SidebarNavItem[] = [
-  {
-    name: 'Dashboard',
-    path: ROUTES.PATIENT_DASHBOARD,
-    icon: LayoutDashboard,
-  },
-  {
-    name: 'Symptom Intake',
-    path: ROUTES.PATIENT_INTAKE,
-    icon: Stethoscope,
-  },
-  {
-    name: 'Health Insights',
-    path: ROUTES.PATIENT_INSIGHTS,
-    icon: LineChart,
-  },
+  { name: 'Dashboard', path: ROUTES.PATIENT_DASHBOARD, icon: LayoutDashboard },
+  { name: 'Symptom Intake', path: ROUTES.PATIENT_INTAKE, icon: Stethoscope },
+  { name: 'Medical Reports', path: ROUTES.REPORT_ANALYSIS, icon: FileSearch },
+  { name: 'Health Insights', path: ROUTES.PATIENT_INSIGHTS, icon: LineChart },
 ];
 
 export const PatientDashboardLayout: React.FC = () => {

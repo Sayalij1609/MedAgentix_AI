@@ -52,21 +52,33 @@ interface CaseDetails {
     patient_gender?: string;
     differential_considerations: { rank: number; condition: string; probability: number }[];
     recommended_drugs: {
-      name: string;
-      dosage: string;
-      purpose: string;
-      route: string;
-      class: string;
-      adr: string;
-      ci: string;
-      precaution: string;
+      name: string; dosage: string; purpose: string; route: string;
+      class: string; adr: string; ci: string; precaution: string;
     }[];
     recommended_tests: { name: string; priority: string; department: string; indication: string }[];
-    emergency_status: {
-      is_emergency: boolean;
-      triage_level: number;
-      urgency: string;
-      progression: string;
+    emergency_status: { is_emergency: boolean; triage_level: number; urgency: string; progression: string; };
+    // New fields from Sprint 8
+    triage?: {
+      tier: 'GREEN' | 'YELLOW' | 'RED';
+      severity_score: number;
+      common_illness_type: string;
+      red_flags: string[];
+      triage_reason: string;
+      show_disease_alert: boolean;
+      display_confidence_label: string;
+    };
+    friendly_explanation?: {
+      summary: string;
+      what_helps: string[];
+      diet: string[];
+      precautions: string[];
+      when_to_see_doctor: string[];
+    };
+    lifestyle?: {
+      diet: string[];
+      workout: string[];
+      precautions: string[];
+      when_to_see_doctor: string[];
     };
   };
 }
@@ -80,6 +92,10 @@ export default function ClinicalReport() {
   const [caseData, setCaseData] = useState<CaseDetails | null>(null);
   const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
   const [isPipelineExpanded, setIsPipelineExpanded] = useState(false);
+  const [isSigningOff, setIsSigningOff] = useState(false);
+  const [doctorNote, setDoctorNote] = useState('');
+  const [isReviewed, setIsReviewed] = useState(false);
+  const [reviewedBy, setReviewedBy] = useState('');
 
   const fetchCaseDetails = async () => {
     try {
@@ -102,6 +118,34 @@ export default function ClinicalReport() {
       fetchCaseDetails();
     }
   }, [id]);
+
+  // Set initial review state from loaded case
+  useEffect(() => {
+    if (caseData) {
+      setIsReviewed(caseData.status === 'reviewed');
+      const note = (caseData.diagnostic_output as any)?.doctor_note || '';
+      setDoctorNote(note);
+      setReviewedBy((caseData.diagnostic_output as any)?.reviewed_by || '');
+    }
+  }, [caseData]);
+
+  const handleSignOff = async () => {
+    if (!id) return;
+    setIsSigningOff(true);
+    try {
+      const res = await apiClient.put(`/cases/${id}/review`, { doctor_note: doctorNote });
+      if (res.data?.success) {
+        setIsReviewed(true);
+        setReviewedBy(res.data.reviewed_by || '');
+        // Refresh case data
+        fetchCaseDetails();
+      }
+    } catch (err) {
+      console.error('Sign-off failed:', err);
+    } finally {
+      setIsSigningOff(false);
+    }
+  };
 
   const handlePrint = () => {
     window.print();
@@ -395,14 +439,45 @@ export default function ClinicalReport() {
           </h3>
           
           <div className="bg-gradient-to-br from-slate-50 to-sky-50/30 border border-sky-200 rounded-2xl p-5 space-y-5">
+            {/* GREEN tier — friendly banner */}
+            {diagnostic_output.triage?.tier === 'GREEN' && (
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex items-start gap-3">
+                <span className="text-2xl">✅</span>
+                <div>
+                  <p className="text-xs font-bold text-emerald-700 uppercase tracking-wide mb-0.5">Likely Mild Illness — No Immediate Concern</p>
+                  <p className="text-sm text-emerald-900 font-semibold">{diagnostic_output.triage.common_illness_type}</p>
+                  <p className="text-xs text-emerald-700 mt-1">{diagnostic_output.triage.triage_reason}</p>
+                </div>
+              </div>
+            )}
+
+            {/* RED tier — urgent alert */}
+            {diagnostic_output.triage?.tier === 'RED' && (
+              <div className="bg-red-50 border border-red-300 rounded-xl p-4 flex items-start gap-3">
+                <span className="text-2xl">🚨</span>
+                <div>
+                  <p className="text-xs font-bold text-red-700 uppercase tracking-wide mb-0.5">Urgent — Please Seek Medical Care</p>
+                  {diagnostic_output.triage.red_flags.length > 0 && (
+                    <p className="text-xs text-red-600 mt-1">⚠ Red flags: {diagnostic_output.triage.red_flags.slice(0,3).join(', ')}</p>
+                  )}
+                </div>
+              </div>
+            )}
+
             {/* Diagnosis + Badges */}
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div className="space-y-0.5">
-                <span className="text-[10px] font-bold text-muted-foreground uppercase">Possible Condition</span>
+                <span className="text-[10px] font-bold text-muted-foreground uppercase">
+                  {diagnostic_output.triage?.tier === 'GREEN' ? 'What This Looks Like' : 'Possible Condition'}
+                </span>
                 <h4 className="text-2xl font-extrabold text-foreground">{diagnostic_output.final_diagnosis}</h4>
               </div>
               <div className="flex flex-wrap gap-2">
-                <span className={`px-3 py-1.5 rounded-lg text-xs font-bold ${conf.color}`}>{conf.text} ({diagnostic_output.confidence}%)</span>
+                <span className={`px-3 py-1.5 rounded-lg text-xs font-bold ${
+                  diagnostic_output.triage?.tier === 'GREEN' ? 'bg-emerald-100 text-emerald-800' : conf.color
+                }`}>
+                  {diagnostic_output.triage?.display_confidence_label || `${conf.text} (${diagnostic_output.confidence}%)`}
+                </span>
                 <span className={`px-3 py-1.5 rounded-lg text-xs font-bold border ${getSeverityBadgeClass(diagnostic_output.severity)}`}>
                   {diagnostic_output.severity}
                 </span>
@@ -416,18 +491,24 @@ export default function ClinicalReport() {
                 <h5 className="text-xs font-bold text-slate-700 uppercase">What this means:</h5>
               </div>
               <p className="text-sm text-foreground/90 leading-relaxed">
-                Your symptoms match a pattern that may need medical attention. Please see a doctor for proper evaluation and testing.
+                {diagnostic_output.triage?.tier === 'GREEN'
+                  ? "Your symptoms appear mild and are most likely caused by a common illness. There is no immediate cause for concern. With proper rest and self-care, you should feel better within a few days."
+                  : diagnostic_output.triage?.tier === 'RED'
+                  ? "Your symptoms include one or more warning signs that need prompt medical evaluation. Please see a doctor or visit an emergency room as soon as possible."
+                  : "Your symptoms match a pattern that may benefit from medical evaluation. Please see a doctor within the next day or two for a proper assessment."}
               </p>
             </div>
 
-            {/* Understanding your condition (Pathophysiology) */}
+            {/* Understanding your condition */}
             <div className="space-y-2 border-t border-border pt-4">
               <div className="flex items-center gap-1.5">
                 <HelpCircle className="w-4 h-4 text-sky-500 shrink-0" />
-                <h5 className="text-xs font-bold text-slate-700 uppercase">Understanding your condition:</h5>
+                <h5 className="text-xs font-bold text-slate-700 uppercase">
+                  {diagnostic_output.triage?.tier === 'GREEN' ? "What\'s happening?" : "Understanding your condition:"}
+                </h5>
               </div>
               <p className="text-sm text-foreground/90 leading-relaxed">
-                {diagnostic_output.pathophysiology || `Based on your symptoms, our AI system has identified a possible health condition. This is a starting point for your doctor to investigate further.`}
+                {diagnostic_output.pathophysiology || "Based on your symptoms, our AI system has identified a possible health condition."}
               </p>
             </div>
 
@@ -441,6 +522,40 @@ export default function ClinicalReport() {
                 {getSeverityExplanation(diagnostic_output.severity)}
               </p>
             </div>
+
+            {/* Diet & Lifestyle (GREEN tier bonus) */}
+            {(diagnostic_output.lifestyle?.diet?.length || 0) > 0 && (
+              <div className="space-y-2 border-t border-border pt-4">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-base">🥗</span>
+                  <h5 className="text-xs font-bold text-slate-700 uppercase">Diet Tips for Recovery:</h5>
+                </div>
+                <ul className="space-y-1.5">
+                  {diagnostic_output.lifestyle!.diet.slice(0,5).map((tip, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-foreground/90">
+                      <span className="text-emerald-500 mt-0.5 shrink-0">•</span>{tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* When to see a doctor (GREEN tier) */}
+            {(diagnostic_output.lifestyle?.when_to_see_doctor?.length || 0) > 0 && (
+              <div className="space-y-2 border-t border-border pt-4">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-base">⚠️</span>
+                  <h5 className="text-xs font-bold text-amber-700 uppercase">See a Doctor If:</h5>
+                </div>
+                <ul className="space-y-1.5">
+                  {diagnostic_output.lifestyle!.when_to_see_doctor.slice(0,4).map((tip, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-amber-800">
+                      <span className="text-amber-500 mt-0.5 shrink-0">•</span>{tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
 
@@ -602,7 +717,23 @@ export default function ClinicalReport() {
         >
           ← Return to Doctor Queue
         </button>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap justify-end">
+          {/* Sign Off button */}
+          {isReviewed ? (
+            <span className="flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-2 rounded-xl text-xs font-bold">
+              <CheckCircle className="w-3.5 h-3.5 shrink-0" />
+              Signed Off{reviewedBy ? ` by Dr. ${reviewedBy}` : ''}
+            </span>
+          ) : (
+            <button
+              onClick={handleSignOff}
+              disabled={isSigningOff}
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-sm transition disabled:opacity-60"
+            >
+              <CheckCircle className="w-3.5 h-3.5 shrink-0" />
+              <span>{isSigningOff ? 'Signing Off...' : 'Sign Off Case'}</span>
+            </button>
+          )}
           <button
             onClick={handlePdfDownload}
             disabled={isGeneratingPdf}
@@ -739,7 +870,115 @@ export default function ClinicalReport() {
         </table>
       </div>
 
-      {/* Section 1: Clinical Impression */}
+      {/* § 0: AI Triage Assessment (mirrors Patient view) */}
+      <div className="space-y-3">
+        <h3 className="text-sm font-bold text-foreground border-b border-border pb-1 flex items-center gap-2">
+          <span className="w-1 h-5 bg-violet-500 rounded-full"></span>
+          § 0 AI Triage Assessment
+        </h3>
+        <div className="space-y-3">
+          {/* Tier Banner */}
+          {diagnostic_output.triage?.tier === 'GREEN' && (
+            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex items-start gap-3">
+              <span className="text-xl">✅</span>
+              <div>
+                <p className="text-xs font-extrabold text-emerald-700 uppercase tracking-wide">Triage: GREEN — Likely Mild / No Red Flags</p>
+                <p className="text-sm font-semibold text-emerald-900 mt-0.5">{diagnostic_output.triage.common_illness_type}</p>
+                <p className="text-xs text-emerald-700 mt-1">{diagnostic_output.triage.triage_reason}</p>
+              </div>
+            </div>
+          )}
+          {diagnostic_output.triage?.tier === 'YELLOW' && (
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-start gap-3">
+              <span className="text-xl">⚠️</span>
+              <div>
+                <p className="text-xs font-extrabold text-amber-700 uppercase tracking-wide">Triage: YELLOW — Clinical Evaluation Recommended</p>
+                <p className="text-xs text-amber-700 mt-1">{diagnostic_output.triage?.triage_reason}</p>
+              </div>
+            </div>
+          )}
+          {diagnostic_output.triage?.tier === 'RED' && (
+            <div className="bg-red-50 border-2 border-red-300 rounded-xl p-4 flex items-start gap-3 animate-pulse">
+              <span className="text-xl">🚨</span>
+              <div>
+                <p className="text-xs font-extrabold text-red-700 uppercase tracking-wide">Triage: RED — Urgent Medical Attention Required</p>
+                {(diagnostic_output.triage?.red_flags?.length || 0) > 0 && (
+                  <p className="text-xs text-red-600 mt-1">Red flags: {diagnostic_output.triage!.red_flags.join(', ')}</p>
+                )}
+              </div>
+            </div>
+          )}
+          {/* No triage data (legacy case) */}
+          {!diagnostic_output.triage && (
+            <div className="bg-slate-50 border border-border rounded-xl p-4 text-xs text-muted-foreground italic">
+              Triage classification not available for this case (pre-Sprint 8 record).
+            </div>
+          )}
+
+          {/* AI Triage Details grid */}
+          {diagnostic_output.triage && (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="bg-slate-50 border border-border rounded-xl p-3 text-center">
+                <p className="text-[10px] font-bold text-muted-foreground uppercase mb-1">Severity Score</p>
+                <p className="text-2xl font-black text-foreground">{diagnostic_output.triage.severity_score}<span className="text-xs font-normal">/100</span></p>
+              </div>
+              <div className="bg-slate-50 border border-border rounded-xl p-3 text-center">
+                <p className="text-[10px] font-bold text-muted-foreground uppercase mb-1">AI Confidence</p>
+                <p className="text-2xl font-black text-foreground">{diagnostic_output.confidence}<span className="text-xs font-normal">%</span></p>
+              </div>
+              <div className="bg-slate-50 border border-border rounded-xl p-3 text-center">
+                <p className="text-[10px] font-bold text-muted-foreground uppercase mb-1">Tier</p>
+                <p className={`text-lg font-black ${
+                  diagnostic_output.triage.tier === 'GREEN' ? 'text-emerald-600' :
+                  diagnostic_output.triage.tier === 'RED' ? 'text-red-600' : 'text-amber-600'
+                }`}>{diagnostic_output.triage.tier}</p>
+              </div>
+              <div className="bg-slate-50 border border-border rounded-xl p-3 text-center">
+                <p className="text-[10px] font-bold text-muted-foreground uppercase mb-1">ESI Level</p>
+                <p className="text-2xl font-black text-foreground">{caseData.triage_level || 'N/A'}</p>
+              </div>
+            </div>
+          )}
+
+          {/* Groq AI Plain-Language Summary */}
+          {diagnostic_output.pathophysiology && (
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 space-y-1">
+              <p className="text-[10px] font-bold text-blue-700 uppercase tracking-wide">🤖 AI Plain-Language Summary (Groq)</p>
+              <p className="text-sm text-slate-800 leading-relaxed">{diagnostic_output.pathophysiology}</p>
+            </div>
+          )}
+
+          {/* Diet & Lifestyle from Groq */}
+          {(diagnostic_output.lifestyle?.diet?.length || 0) > 0 && (
+            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 space-y-2">
+              <p className="text-[10px] font-bold text-emerald-700 uppercase tracking-wide">🥗 Diet & Recovery Recommendations</p>
+              <ul className="space-y-1">
+                {diagnostic_output.lifestyle!.diet.map((tip, i) => (
+                  <li key={i} className="text-xs text-slate-700 flex items-start gap-1.5">
+                    <span className="text-emerald-500 mt-0.5">•</span>{tip}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* When to see doctor */}
+          {(diagnostic_output.lifestyle?.when_to_see_doctor?.length || 0) > 0 && (
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 space-y-2">
+              <p className="text-[10px] font-bold text-amber-700 uppercase tracking-wide">⚠️ Escalation Triggers — Refer if:</p>
+              <ul className="space-y-1">
+                {diagnostic_output.lifestyle!.when_to_see_doctor.map((tip, i) => (
+                  <li key={i} className="text-xs text-slate-700 flex items-start gap-1.5">
+                    <span className="text-amber-500 mt-0.5">•</span>{tip}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* § 1 Clinical Impression */}
       <div className="space-y-4">
         <h3 className="text-sm font-bold text-foreground border-b border-border pb-1">§ 1 Clinical Impression</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50 border border-border p-4 rounded-xl">
@@ -880,6 +1119,42 @@ export default function ClinicalReport() {
             ))}
             <li>Ensure active clinical correlation of other differential matches (such as Bronchial Asthma or Gastritis).</li>
           </ul>
+        </div>
+      </div>
+
+      {/* § 7: Doctor Notes */}
+      <div className="space-y-3 border-t-2 border-violet-200 pt-6 print:hidden">
+        <h3 className="text-sm font-bold text-foreground border-b border-border pb-1 flex items-center gap-2">
+          <span className="w-1 h-5 bg-violet-500 rounded-full"></span>
+          § 7 Doctor Notes & Clinical Observations
+        </h3>
+        {isReviewed && reviewedBy && (
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-2 text-xs text-emerald-700 font-semibold flex items-center gap-2">
+            <CheckCircle className="w-4 h-4 shrink-0" />
+            Case signed off by Dr. {reviewedBy}
+          </div>
+        )}
+        <div className="space-y-2">
+          <textarea
+            value={doctorNote}
+            onChange={e => setDoctorNote(e.target.value)}
+            disabled={isReviewed}
+            rows={5}
+            placeholder={isReviewed ? 'Notes saved. Case is reviewed.' : 'Add your clinical observations, differential notes, or follow-up instructions here...'}
+            className="w-full border border-border rounded-xl p-4 text-sm text-foreground bg-slate-50 focus:outline-none focus:ring-2 focus:ring-violet-400 resize-none placeholder-slate-400 disabled:opacity-60 disabled:cursor-not-allowed"
+          />
+          {!isReviewed && (
+            <div className="flex justify-end gap-2">
+              <button
+                onClick={handleSignOff}
+                disabled={isSigningOff}
+                className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-sm transition disabled:opacity-60"
+              >
+                <CheckCircle className="w-4 h-4 shrink-0" />
+                {isSigningOff ? 'Saving & Signing Off...' : 'Save Notes & Sign Off Case'}
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import apiClient from '../../services/api-client';
 import { useAuth } from '../../context/auth-context';
 import { useToast } from '../../context/toast-context';
-import { 
-  FileText, Activity, Clock, 
-  Heart, Wind, RefreshCw,
-  Calendar, ChevronRight, Stethoscope, ClipboardList, Plus, Sparkles
+import {
+  FileText, Activity, Clock, Heart, Wind, RefreshCw,
+  Calendar, ChevronRight, Stethoscope, ClipboardList,
+  Plus, Sparkles, FileSearch, Upload, TrendingUp, Shield
 } from 'lucide-react';
 
 interface CaseSummary {
@@ -18,563 +19,419 @@ interface CaseSummary {
   severity: string;
   triage_level?: number;
   vitals?: {
-    heart_rate: number;
-    oxygen_level: number;
-    bp_reading?: string;
-    systolic_bp?: number;
-    diastolic_bp?: number;
-    temperature: number;
-    cholesterol: number;
+    heart_rate: number; oxygen_level: number;
+    bp_reading?: string; temperature: number; cholesterol: number;
   };
 }
+
+const calculateAge = (dob: string): number | null => {
+  if (!dob) return null;
+  const birth = new Date(dob);
+  const today = new Date();
+  let age = today.getFullYear() - birth.getFullYear();
+  if (today.getMonth() < birth.getMonth() ||
+    (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) age--;
+  return age >= 0 ? age : null;
+};
+
+const severityBadge = (s: string) => {
+  switch (s?.toLowerCase()) {
+    case 'mild': return 'bg-emerald-50 text-emerald-700 border-emerald-200';
+    case 'moderate': return 'bg-amber-50 text-amber-700 border-amber-200';
+    case 'severe': case 'serious': return 'bg-orange-50 text-orange-700 border-orange-200';
+    case 'critical': case 'urgent': return 'bg-red-50 text-red-700 border-red-200';
+    default: return 'bg-slate-50 text-slate-600 border-slate-200';
+  }
+};
+
+const statusBadge = (s: string) => {
+  switch (s?.toLowerCase()) {
+    case 'completed': return 'bg-emerald-50 text-emerald-700 border-emerald-200';
+    case 'reviewed': return 'bg-sky-50 text-sky-700 border-sky-200';
+    case 'processing': return 'bg-amber-50 text-amber-700 border-amber-200 animate-pulse';
+    default: return 'bg-slate-50 text-slate-600 border-slate-200';
+  }
+};
+
+// Metric card component
+const MetricCard: React.FC<{
+  label: string; value: string | number | null; unit?: string;
+  icon: React.ComponentType<{ className?: string }>; iconBg: string; iconColor: string; delay?: number;
+}> = ({ label, value, unit, icon: Icon, iconBg, iconColor, delay = 0 }) => (
+  <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}
+    transition={{ delay, duration: 0.4 }}
+    className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all group cursor-default">
+    <div className="flex items-center justify-between mb-3">
+      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{label}</p>
+      <div className={`w-9 h-9 rounded-xl ${iconBg} flex items-center justify-center`}>
+        <Icon className={`w-4 h-4 ${iconColor}`} />
+      </div>
+    </div>
+    {value != null ? (
+      <div className="flex items-baseline gap-1.5">
+        <span className="text-3xl font-black text-slate-900 leading-none">{value}</span>
+        {unit && <span className="text-sm font-semibold text-slate-400">{unit}</span>}
+      </div>
+    ) : (
+      <span className="text-sm text-slate-400 italic">No data</span>
+    )}
+  </motion.div>
+);
 
 export default function PatientDashboard() {
   const navigate = useNavigate();
   const { user } = useAuth();
   const { toast } = useToast();
   const [loading, setLoading] = useState(true);
-  const [errorMsg, setErrorMsg] = useState('');
-  
   const [totalCases, setTotalCases] = useState(0);
   const [pendingReviews, setPendingReviews] = useState(0);
   const [recentCases, setRecentCases] = useState<CaseSummary[]>([]);
   const [latestAssessment, setLatestAssessment] = useState<CaseSummary | null>(null);
-  
-  const [lastUpdated, setLastUpdated] = useState<string>('');
+  const [lastUpdated, setLastUpdated] = useState('');
 
   const displayName = user?.name || user?.email?.split('@')[0] || 'there';
-
-  // Calculate age from DOB
-  const calculateAge = (dob: string): number | null => {
-    if (!dob) return null;
-    const birthDate = new Date(dob);
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const monthDiff = today.getMonth() - birthDate.getMonth();
-    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-    }
-    return age >= 0 ? age : null;
-  };
   const userAge = user?.date_of_birth ? calculateAge(user.date_of_birth) : null;
 
   const fetchDashboardData = async () => {
     try {
       setLoading(true);
       const response = await apiClient.get('/patient/dashboard');
-      if (response.data && response.data.success) {
+      if (response.data?.success) {
         setTotalCases(response.data.total_cases);
         setPendingReviews(response.data.pending_reviews);
         setRecentCases(response.data.recent_cases);
         setLatestAssessment(response.data.latest_assessment || null);
-        
         setLastUpdated(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
       }
-    } catch (err: any) {
-      console.error(err);
-      setErrorMsg('Failed to load dashboard.');
+    } catch {
       toast('Failed to load your dashboard.', 'error');
-    } finally {
-      setLoading(false);
-    }
+    } finally { setLoading(false); }
   };
 
-  useEffect(() => {
-    fetchDashboardData();
-  }, []);
+  useEffect(() => { fetchDashboardData(); }, []);
 
-  const handleRefresh = () => {
-    fetchDashboardData();
-    toast('Dashboard refreshed.', 'success');
-  };
-
-  // Only extract vitals from actual data — no hardcoded defaults
   const hrVal = latestAssessment?.vitals?.heart_rate ?? null;
   const spo2Val = latestAssessment?.vitals?.oxygen_level ?? null;
   const tempVal = latestAssessment?.vitals?.temperature ?? null;
   const bpVal = latestAssessment?.vitals?.bp_reading ?? null;
-  // Only show vitals section if the patient actually provided at least one value
-  const hasVitals = hrVal != null || spo2Val != null || tempVal != null || bpVal != null;
+  const isNewPatient = totalCases === 0;
 
-  const getSeverityBadgeClass = (severity: string) => {
-    switch (severity?.toLowerCase()) {
-      case 'mild':
-        return 'bg-green-50 text-green-700 border-green-200';
-      case 'moderate':
-        return 'bg-amber-50 text-amber-700 border-amber-200';
-      case 'severe': case 'serious':
-        return 'bg-orange-50 text-orange-700 border-orange-200';
-      case 'critical': case 'urgent':
-        return 'bg-red-50 text-red-700 border-red-200';
-      default:
-        return 'bg-slate-50 text-slate-700 border-slate-200';
-    }
-  };
-
-  const getStatusBadgeClass = (status: string) => {
-    switch (status?.toLowerCase()) {
-      case 'completed':
-        return 'bg-emerald-50 border border-emerald-250 text-emerald-700';
-      case 'reviewed':
-        return 'bg-sky-50 border border-sky-250 text-sky-700';
-      case 'processing':
-        return 'bg-amber-50 border border-amber-250 text-amber-700 animate-pulse';
-      default:
-        return 'bg-slate-50 border border-slate-200 text-slate-655';
-    }
-  };
-
-  // Skeletons during initial load
   if (loading && recentCases.length === 0) {
     return (
-      <div className="space-y-8 max-w-5xl mx-auto animate-pulse">
-        <div className="h-32 bg-slate-100 rounded-2xl"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="h-28 bg-slate-100 rounded-2xl"></div>
-          <div className="h-28 bg-slate-100 rounded-2xl"></div>
-          <div className="h-28 bg-slate-100 rounded-2xl"></div>
+      <div className="space-y-6 max-w-6xl mx-auto animate-pulse">
+        <div className="h-36 bg-slate-100 rounded-2xl" />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          {[...Array(4)].map((_, i) => <div key={i} className="h-28 bg-slate-100 rounded-2xl" />)}
         </div>
-        <div className="h-64 bg-slate-100 rounded-2xl"></div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-2 h-72 bg-slate-100 rounded-2xl" />
+          <div className="h-72 bg-slate-100 rounded-2xl" />
+        </div>
       </div>
     );
   }
 
-  const isNewPatient = totalCases === 0;
-
   return (
-    <div className="space-y-6 max-w-5xl mx-auto">
-      
-      {/* Header bar */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-border pb-4 text-left">
-        <div>
-          <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">My Health Dashboard</h1>
-          <p className="text-xs text-muted-foreground mt-0.5">
-            View your assessments, track your health, and start new consultations.
-          </p>
+    <div className="space-y-7 max-w-6xl mx-auto">
+
+      {/* ── HERO WELCOME BANNER ── */}
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
+        className="relative overflow-hidden rounded-2xl p-7 text-white"
+        style={{ background: 'linear-gradient(135deg, #0f172a 0%, #0d2e4a 50%, #0a3d62 100%)' }}>
+        {/* Grid */}
+        <div className="absolute inset-0 pointer-events-none opacity-[0.08]"
+          style={{ backgroundImage: `linear-gradient(to right, #38bdf8 1px, transparent 1px), linear-gradient(to bottom, #38bdf8 1px, transparent 1px)`, backgroundSize: '28px 28px' }} />
+        {/* Glow blobs */}
+        <div className="absolute -top-16 -right-16 w-56 h-56 bg-teal-400/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-sky-500/10 rounded-full blur-2xl pointer-events-none" />
+
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <motion.span className="w-2 h-2 bg-teal-400 rounded-full"
+                animate={{ scale: [1, 1.4, 1], opacity: [1, 0.5, 1] }} transition={{ duration: 1.5, repeat: Infinity }} />
+              <span className="text-teal-400 text-[10px] font-bold uppercase tracking-widest">Patient Portal</span>
+            </div>
+            <h1 className="text-2xl md:text-3xl font-extrabold leading-tight text-white">
+              {isNewPatient ? `Welcome, ${displayName}! 👋` : `Good to see you, ${displayName}!`}
+            </h1>
+            <p className="text-slate-400 text-sm max-w-md leading-relaxed">
+              {isNewPatient
+                ? 'Your AI-powered health assistant is ready. Start your first assessment to get personalized diagnostics.'
+                : `You have ${totalCases} assessment${totalCases !== 1 ? 's' : ''} on record.${pendingReviews > 0 ? ` ${pendingReviews} awaiting doctor review.` : ' All up to date!'}`}
+            </p>
+            {userAge && (
+              <div className="flex items-center gap-3 mt-1">
+                <span className="text-[10px] text-slate-400 bg-white/10 border border-white/10 rounded-full px-3 py-1">
+                  Age: {userAge} yrs
+                </span>
+                {user?.gender && (
+                  <span className="text-[10px] text-slate-400 bg-white/10 border border-white/10 rounded-full px-3 py-1">
+                    {user.gender}
+                  </span>
+                )}
+              </div>
+            )}
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+            <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
+              onClick={() => navigate('/patient/intake')}
+              className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-teal-500 to-sky-600 text-white font-bold rounded-xl shadow-lg shadow-teal-500/25 text-sm">
+              <Plus className="w-4 h-4" /> New Assessment
+            </motion.button>
+            <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
+              onClick={() => navigate('/reports/analyze')}
+              className="inline-flex items-center gap-2 px-5 py-3 bg-white/10 border border-white/20 hover:bg-white/15 text-white font-semibold rounded-xl text-sm backdrop-blur-sm">
+              <FileSearch className="w-4 h-4 text-teal-300" /> Upload Report
+            </motion.button>
+          </div>
         </div>
-        <div className="flex items-center gap-3 self-end sm:self-auto text-xs text-slate-500 font-semibold">
-          {lastUpdated && <span>Updated: {lastUpdated}</span>}
-          <button 
-            onClick={handleRefresh}
-            className="p-2 rounded-xl bg-card border border-border hover:bg-slate-50 text-slate-600 transition flex items-center gap-1.5"
-          >
-            <RefreshCw className="w-3.5 h-3.5" />
-            <span>Refresh</span>
-          </button>
-        </div>
+      </motion.div>
+
+      {/* ── KPI CARDS ── */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <MetricCard label="Total Assessments" value={totalCases} icon={FileText}
+          iconBg="bg-sky-50" iconColor="text-sky-600" delay={0.05} />
+        <MetricCard label="Pending Reviews" value={pendingReviews} icon={Clock}
+          iconBg="bg-amber-50" iconColor="text-amber-600" delay={0.1} />
+        <MetricCard label="Heart Rate" value={hrVal} unit="bpm" icon={Heart}
+          iconBg="bg-rose-50" iconColor="text-rose-500" delay={0.15} />
+        <MetricCard label="SpO2" value={spo2Val} unit="%" icon={Wind}
+          iconBg="bg-emerald-50" iconColor="text-emerald-600" delay={0.2} />
       </div>
 
-      {/* ============================================================ */}
-      {/* NEW PATIENT: Welcome Onboarding */}
-      {/* ============================================================ */}
-      {isNewPatient ? (
-        <div className="space-y-6">
-          {/* Welcome Hero */}
-          <div className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-indigo-50 to-purple-50 border border-sky-150 p-8 md:p-10 rounded-2xl shadow-xs text-left">
-            <div className="absolute top-0 right-0 -translate-y-16 translate-x-16 w-72 h-72 bg-sky-200/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 translate-y-8 -translate-x-8 w-48 h-48 bg-indigo-200/20 rounded-full blur-3xl pointer-events-none"></div>
-            
-            <div className="relative z-10 space-y-4 max-w-xl">
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-indigo-500" />
-                <span className="bg-indigo-100 text-indigo-700 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider">
-                  Welcome
-                </span>
+      {/* ── QUICK ACTIONS (new patient) ── */}
+      {isNewPatient && (
+        <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { icon: ClipboardList, bg: 'bg-sky-50', color: 'text-sky-600', title: '1. Describe Symptoms', desc: 'Tell us what you\'re feeling. Select symptoms or type freely in your own words.' },
+            { icon: Activity, bg: 'bg-indigo-50', color: 'text-indigo-600', title: '2. AI Analyzes', desc: '10-stage AI pipeline runs differential analysis through specialist agents.' },
+            { icon: FileText, bg: 'bg-teal-50', color: 'text-teal-600', title: '3. Get Your Report', desc: 'Receive a detailed clinical report with diagnoses, medications, and next steps.' },
+          ].map((s, i) => (
+            <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6 space-y-3 shadow-sm">
+              <div className={`w-11 h-11 rounded-xl ${s.bg} flex items-center justify-center`}>
+                <s.icon className={`w-5 h-5 ${s.color}`} />
               </div>
-              <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-900">
-                Hello, {displayName}! 👋
-              </h2>
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-                Welcome to <strong>MedAgentix AI</strong> — your personal AI health assessment assistant. 
-                Describe your symptoms and our AI will analyze them to help you understand what might be going on. 
-                This is <strong>not</strong> a substitute for a doctor, but a helpful starting point.
-              </p>
+              <h3 className="font-bold text-slate-800 text-sm">{s.title}</h3>
+              <p className="text-xs text-slate-500 leading-relaxed">{s.desc}</p>
             </div>
-          </div>
-
-          {/* How it works cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-card border border-border rounded-2xl p-5 text-left space-y-2.5 hover:shadow-sm transition">
-              <div className="w-10 h-10 rounded-xl bg-sky-50 flex items-center justify-center">
-                <ClipboardList className="w-5 h-5 text-sky-600" />
-              </div>
-              <h3 className="text-sm font-bold text-slate-800">1. Describe Symptoms</h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Tell us what you're feeling in your own words. Select common symptoms or type freely.
-              </p>
-            </div>
-
-            <div className="bg-card border border-border rounded-2xl p-5 text-left space-y-2.5 hover:shadow-sm transition">
-              <div className="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center">
-                <Activity className="w-5 h-5 text-indigo-600" />
-              </div>
-              <h3 className="text-sm font-bold text-slate-800">2. AI Analyzes</h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Our 8-stage AI pipeline processes your symptoms through multiple specialist agents.
-              </p>
-            </div>
-
-            <div className="bg-card border border-border rounded-2xl p-5 text-left space-y-2.5 hover:shadow-sm transition">
-              <div className="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center">
-                <FileText className="w-5 h-5 text-emerald-600" />
-              </div>
-              <h3 className="text-sm font-bold text-slate-800">3. Get Your Report</h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Receive a detailed health report with possible conditions, medications, and next steps.
-              </p>
-            </div>
-          </div>
-
-          {/* CTA button */}
-          <div className="flex justify-center">
-            <button
-              onClick={() => navigate('/patient/intake')}
-              className="bg-primary text-primary-foreground hover:opacity-95 active:scale-[0.98] transition px-8 py-4 rounded-xl font-bold text-sm shadow-lg shadow-primary/20 flex items-center gap-2"
-            >
-              <Plus className="w-4.5 h-4.5" />
-              <span>Start Your First Health Assessment</span>
-            </button>
-          </div>
-
-          {/* Disclaimer */}
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-left">
-            <p className="text-xs text-amber-800 leading-relaxed">
-              <strong>⚕ Important:</strong> MedAgentix AI provides informational health assessments only. 
-              It is NOT a medical diagnosis. Always consult a qualified doctor for proper examination 
-              and treatment.
-            </p>
-          </div>
-        </div>
-      ) : (
-        /* ============================================================ */
-        /* RETURNING PATIENT: Full Dashboard */
-        /* ============================================================ */
-        <>
-          {/* Welcome Banner */}
-          <div className="relative overflow-hidden flex flex-col md:flex-row md:items-center justify-between gap-6 bg-gradient-to-r from-sky-50 to-indigo-50 border border-sky-150 p-6 md:p-8 rounded-2xl shadow-xs text-left">
-            <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-64 h-64 bg-sky-200/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div className="relative z-10 space-y-1.5 max-w-xl">
-              <h2 className="text-xl md:text-2xl font-extrabold tracking-tight text-slate-900">
-                Welcome back, {displayName}!
-              </h2>
-              <p className="text-slate-600 text-xs md:text-sm leading-relaxed">
-                You have <strong>{totalCases}</strong> health assessment{totalCases !== 1 ? 's' : ''} on record
-                {pendingReviews > 0 && <>, including <strong className="text-amber-600">{pendingReviews} pending</strong> review{pendingReviews !== 1 ? 's' : ''}</>}.
-                {pendingReviews === 0 && <>.  Everything looks up to date!</>}
-              </p>
-            </div>
-            <button
-              onClick={() => navigate('/patient/intake')}
-              className="relative z-10 shrink-0 bg-primary text-primary-foreground hover:opacity-95 active:scale-[0.98] transition px-5 py-3 rounded-xl font-extrabold text-xs shadow-md flex items-center gap-1.5 self-start md:self-auto"
-            >
-              <Plus className="w-4 h-4" />
-              <span>New Assessment</span>
-            </button>
-          </div>
-
-          {/* Summary Metric Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {/* Total Assessments */}
-            <div className="bg-card border border-border rounded-2xl p-4 shadow-xs text-left hover:shadow-sm transition">
-              <div className="flex justify-between items-center">
-                <span className="text-[10px] font-extrabold text-muted-foreground uppercase tracking-wider">Assessments</span>
-                <div className="p-1.5 rounded-lg bg-sky-50 text-sky-600">
-                  <FileText className="w-4 h-4" />
-                </div>
-              </div>
-              <div className="mt-2.5">
-                <span className="text-2xl font-black text-slate-900 tracking-tight">{totalCases}</span>
-                <span className="text-xs text-muted-foreground font-bold ml-1">total</span>
-              </div>
-            </div>
-
-            {/* Pending Reviews */}
-            <div className="bg-card border border-border rounded-2xl p-4 shadow-xs text-left hover:shadow-sm transition">
-              <div className="flex justify-between items-center">
-                <span className="text-[10px] font-extrabold text-muted-foreground uppercase tracking-wider">Pending</span>
-                <div className="p-1.5 rounded-lg bg-amber-50 text-amber-600">
-                  <Clock className="w-4 h-4" />
-                </div>
-              </div>
-              <div className="mt-2.5">
-                <span className="text-2xl font-black text-slate-900 tracking-tight">{pendingReviews}</span>
-                <span className="text-xs text-muted-foreground font-bold ml-1">pending</span>
-              </div>
-            </div>
-
-            {/* Latest Vitals — Heart Rate */}
-            <div className="bg-card border border-border rounded-2xl p-4 shadow-xs text-left hover:shadow-sm transition">
-              <div className="flex justify-between items-center">
-                <span className="text-[10px] font-extrabold text-muted-foreground uppercase tracking-wider">Heart Rate</span>
-                <div className="p-1.5 rounded-lg bg-red-50 text-red-600">
-                  <Heart className="w-4 h-4" />
-                </div>
-              </div>
-              <div className="mt-2.5">
-                {hrVal != null ? (
-                  <>
-                    <span className="text-2xl font-black text-slate-900 tracking-tight">{hrVal}</span>
-                    <span className="text-xs text-muted-foreground font-bold ml-1">bpm</span>
-                  </>
-                ) : (
-                  <span className="text-sm text-muted-foreground italic">No data yet</span>
-                )}
-              </div>
-            </div>
-
-            {/* Latest Vitals — SpO2 */}
-            <div className="bg-card border border-border rounded-2xl p-4 shadow-xs text-left hover:shadow-sm transition">
-              <div className="flex justify-between items-center">
-                <span className="text-[10px] font-extrabold text-muted-foreground uppercase tracking-wider">Oxygen</span>
-                <div className="p-1.5 rounded-lg bg-emerald-50 text-emerald-600">
-                  <Wind className="w-4 h-4" />
-                </div>
-              </div>
-              <div className="mt-2.5">
-                {spo2Val != null ? (
-                  <>
-                    <span className="text-2xl font-black text-slate-900 tracking-tight">{spo2Val}</span>
-                    <span className="text-xs text-muted-foreground font-bold ml-1">%</span>
-                  </>
-                ) : (
-                  <span className="text-sm text-muted-foreground italic">No data yet</span>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Main Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-            {/* Left Column — Assessments List */}
-            <div className="lg:col-span-2 space-y-6">
-
-              {/* Latest Assessment Quick Card */}
-              {latestAssessment && (
-                <div className="bg-card border border-border rounded-2xl p-5 shadow-xs text-left">
-                  <div className="flex justify-between items-center mb-3">
-                    <div className="flex items-center gap-1.5">
-                      <Stethoscope className="w-4 h-4 text-indigo-600" />
-                      <h3 className="text-sm font-extrabold text-slate-800 uppercase tracking-wide">Latest Assessment</h3>
-                    </div>
-                    <span className="text-[10px] text-muted-foreground font-semibold">
-                      {new Date(latestAssessment.created_at).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row justify-between gap-3 p-4 bg-slate-50 rounded-xl border border-border">
-                    <div className="space-y-1">
-                      <p className="text-base font-bold text-slate-900">{latestAssessment.final_diagnosis || 'Awaiting Diagnosis'}</p>
-                      <p className="text-xs text-muted-foreground">
-                        Chief complaint: {latestAssessment.chief_complaint || 'Not specified'}
-                      </p>
-                      <div className="flex items-center gap-2 mt-1.5">
-                        <span className={`px-2 py-0.5 text-[9px] rounded-lg border uppercase font-bold ${getSeverityBadgeClass(latestAssessment.severity)}`}>
-                          {latestAssessment.severity || 'N/A'}
-                        </span>
-                        <span className={`px-2 py-0.5 text-[9px] rounded uppercase font-bold ${getStatusBadgeClass(latestAssessment.status)}`}>
-                          {latestAssessment.status}
-                        </span>
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => navigate(`/reports/${latestAssessment.id}`)}
-                      className="shrink-0 self-start text-xs text-primary font-bold hover:underline flex items-center gap-0.5"
-                    >
-                      View Full Report
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                </div>
-              )}
-
-              {/* Assessment History Table */}
-              <div className="bg-card border border-border rounded-2xl p-5 shadow-xs text-left space-y-4">
-                <div className="flex justify-between items-center">
-                  <h3 className="text-sm font-extrabold text-slate-800 uppercase tracking-wide">Assessment History</h3>
-                  <button 
-                    onClick={() => navigate('/patient/intake')}
-                    className="text-xs text-primary font-bold hover:underline flex items-center"
-                  >
-                    <span>New Assessment</span>
-                    <ChevronRight className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-
-                <div className="border border-border rounded-xl overflow-hidden bg-card">
-                  {recentCases.length > 0 ? (
-                    <div className="overflow-x-auto">
-                      <table className="min-w-full divide-y divide-border text-left">
-                        <thead className="bg-slate-50 text-[10px] font-bold text-muted-foreground uppercase">
-                          <tr>
-                            <th className="px-4 py-2.5">#</th>
-                            <th className="px-4 py-2.5">Diagnosis</th>
-                            <th className="px-4 py-2.5">Severity</th>
-                            <th className="px-4 py-2.5">Status</th>
-                            <th className="px-4 py-2.5">Date</th>
-                            <th className="px-4 py-2.5 text-right">Action</th>
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-border text-xs font-semibold text-foreground">
-                          {recentCases.map((c) => (
-                            <tr key={c.id} className="hover:bg-slate-50/50 transition">
-                              <td className="px-4 py-3 text-muted-foreground">{c.id}</td>
-                              <td className="px-4 py-3 font-bold text-slate-900 max-w-[150px] truncate">
-                                {c.final_diagnosis || 'Awaiting'}
-                              </td>
-                              <td className="px-4 py-3">
-                                <span className={`px-2 py-0.5 text-[9px] rounded-lg border uppercase ${getSeverityBadgeClass(c.severity)}`}>
-                                  {c.severity || 'N/A'}
-                                </span>
-                              </td>
-                              <td className="px-4 py-3">
-                                <span className={`px-2 py-0.5 text-[9px] rounded uppercase ${getStatusBadgeClass(c.status)}`}>
-                                  {c.status}
-                                </span>
-                              </td>
-                              <td className="px-4 py-3 text-[10px] text-muted-foreground">
-                                {new Date(c.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
-                              </td>
-                              <td className="px-4 py-3 text-right">
-                                <button
-                                  onClick={() => navigate(`/reports/${c.id}`)}
-                                  className="text-xs text-primary font-bold hover:underline"
-                                >
-                                  View Report
-                                </button>
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  ) : (
-                    <div className="p-8 text-center text-xs text-muted-foreground italic">
-                      No assessments yet. Start your first health assessment above.
-                    </div>
-                  )}
-                </div>
-              </div>
-
-            </div>
-
-            {/* Right Column — Quick Info & Triage Alert */}
-            <div className="space-y-6 text-left">
-              
-              {/* Patient Profile Card */}
-              <div className="bg-card border border-border rounded-2xl p-5 shadow-xs space-y-3.5">
-                <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-bold uppercase tracking-wider">
-                  <Activity className="w-4 h-4 text-indigo-600 shrink-0" />
-                  <span>Your Profile</span>
-                </div>
-
-                <div className="space-y-2.5">
-                  <div className="flex justify-between items-center border-b border-border pb-2.5">
-                    <span className="text-xs font-semibold text-slate-600">Name</span>
-                    <span className="text-xs font-bold text-slate-800">{displayName}</span>
-                  </div>
-                  {userAge !== null && (
-                    <div className="flex justify-between items-center border-b border-border pb-2.5">
-                      <span className="text-xs font-semibold text-slate-600">Age</span>
-                      <span className="text-xs font-bold text-slate-800">{userAge} years</span>
-                    </div>
-                  )}
-                  {user?.gender && (
-                    <div className="flex justify-between items-center border-b border-border pb-2.5">
-                      <span className="text-xs font-semibold text-slate-600">Gender</span>
-                      <span className="text-xs font-bold text-slate-800">{user.gender}</span>
-                    </div>
-                  )}
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs font-semibold text-slate-600">Total Assessments</span>
-                    <span className="text-xs font-bold text-slate-800">{totalCases}</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Active Triage Alert */}
-              {latestAssessment && latestAssessment.triage_level != null && latestAssessment.triage_level <= 2 && (
-                <div className="bg-red-50 border border-red-200 text-red-800 p-5 rounded-2xl space-y-2.5">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2.5 h-2.5 bg-red-600 rounded-full animate-ping shrink-0"></span>
-                    <h4 className="text-xs font-extrabold uppercase tracking-wide">⚠ Emergency Alert</h4>
-                  </div>
-                  <p className="text-[11px] leading-relaxed font-medium">
-                    Your last assessment indicates readings that may need urgent attention. 
-                    Please consult a doctor or visit the nearest hospital immediately.
-                  </p>
-                </div>
-              )}
-
-              {/* Latest Vitals Summary */}
-              {hasVitals && (
-                <div className="bg-card border border-border rounded-2xl p-5 shadow-xs space-y-4">
-                  <div className="flex items-center gap-1.5 border-b border-border pb-3">
-                    <Heart className="w-4 h-4 text-rose-500 shrink-0" />
-                    <h3 className="text-sm font-extrabold text-slate-800 uppercase tracking-wide">Latest Vitals</h3>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-3">
-                    {hrVal != null && (
-                      <div className="text-center p-2.5 bg-rose-50 rounded-xl">
-                        <p className="text-lg font-black text-slate-800">{hrVal}</p>
-                        <p className="text-[9px] font-bold text-muted-foreground uppercase">Heart Rate</p>
-                      </div>
-                    )}
-                    {spo2Val != null && (
-                      <div className="text-center p-2.5 bg-emerald-50 rounded-xl">
-                        <p className="text-lg font-black text-slate-800">{spo2Val}%</p>
-                        <p className="text-[9px] font-bold text-muted-foreground uppercase">Oxygen</p>
-                      </div>
-                    )}
-                    {bpVal && (
-                      <div className="text-center p-2.5 bg-sky-50 rounded-xl">
-                        <p className="text-lg font-black text-slate-800">{bpVal}</p>
-                        <p className="text-[9px] font-bold text-muted-foreground uppercase">Blood Pressure</p>
-                      </div>
-                    )}
-                    {tempVal != null && (
-                      <div className="text-center p-2.5 bg-amber-50 rounded-xl">
-                        <p className="text-lg font-black text-slate-800">{tempVal}°F</p>
-                        <p className="text-[9px] font-bold text-muted-foreground uppercase">Temperature</p>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )}
-
-              {/* Recent Activity — derived from real cases */}
-              {recentCases.length > 0 && (
-                <div className="bg-card border border-border rounded-2xl p-5 shadow-xs space-y-4">
-                  <div className="flex items-center gap-1.5 border-b border-border pb-3">
-                    <Calendar className="w-4 h-4 text-sky-600 shrink-0" />
-                    <h3 className="text-sm font-extrabold text-slate-800 uppercase tracking-wide">Recent Activity</h3>
-                  </div>
-
-                  <div className="relative border-l border-slate-200 pl-4 ml-2.5 space-y-4 text-xs">
-                    {recentCases.slice(0, 3).map((c) => (
-                      <div key={c.id} className="relative">
-                        <span className={`absolute -left-[21.5px] top-1 w-2.5 h-2.5 rounded-full border-2 border-white ring-4 ${
-                          c.status === 'completed' ? 'bg-emerald-600 ring-emerald-50' : 
-                          c.status === 'reviewed' ? 'bg-sky-600 ring-sky-50' : 
-                          'bg-slate-400 ring-slate-50'
-                        }`}></span>
-                        <p className="font-bold text-slate-900">{c.final_diagnosis || 'Assessment'}</p>
-                        <p className="text-[10px] text-muted-foreground">{c.chief_complaint || 'Health assessment completed'}</p>
-                        <span className="text-[9px] text-slate-400 font-semibold block mt-0.5">
-                          {new Date(c.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-          </div>
-        </>
+          ))}
+        </motion.div>
       )}
 
+      {/* ── MAIN CONTENT GRID ── */}
+      {!isNewPatient && (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+          {/* Left — Assessment History */}
+          <div className="lg:col-span-2 space-y-5">
+
+            {/* Latest Assessment */}
+            {latestAssessment && (
+              <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }}
+                className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 bg-indigo-50 rounded-xl flex items-center justify-center">
+                      <Stethoscope className="w-4 h-4 text-indigo-600" />
+                    </div>
+                    <h3 className="font-bold text-slate-800 text-sm">Latest Assessment</h3>
+                  </div>
+                  <span className="text-[10px] text-slate-400 font-semibold">
+                    {new Date(latestAssessment.created_at).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}
+                  </span>
+                </div>
+
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col sm:flex-row justify-between gap-4">
+                  <div className="space-y-2">
+                    <p className="font-bold text-slate-900">{latestAssessment.final_diagnosis || 'Awaiting Diagnosis'}</p>
+                    <p className="text-xs text-slate-500">Chief complaint: {latestAssessment.chief_complaint || 'Not specified'}</p>
+                    <div className="flex items-center gap-2">
+                      <span className={`px-2.5 py-0.5 text-[9px] rounded-lg border font-bold uppercase ${severityBadge(latestAssessment.severity)}`}>
+                        {latestAssessment.severity || 'N/A'}
+                      </span>
+                      <span className={`px-2.5 py-0.5 text-[9px] rounded-lg border font-bold uppercase ${statusBadge(latestAssessment.status)}`}>
+                        {latestAssessment.status}
+                      </span>
+                    </div>
+                  </div>
+                  <motion.button whileHover={{ x: 2 }}
+                    onClick={() => navigate(`/reports/${latestAssessment.id}`)}
+                    className="shrink-0 self-start flex items-center gap-1 text-xs font-bold text-teal-600 hover:text-teal-700">
+                    View Report <ChevronRight className="w-3.5 h-3.5" />
+                  </motion.button>
+                </div>
+              </motion.div>
+            )}
+
+            {/* Assessment History Table */}
+            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
+              className="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+              <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200">
+                <h3 className="font-bold text-slate-800 text-sm">Assessment History</h3>
+                <button onClick={() => navigate('/patient/intake')}
+                  className="text-xs font-bold text-teal-600 hover:text-teal-700 flex items-center gap-0.5">
+                  New <ChevronRight className="w-3.5 h-3.5" />
+                </button>
+              </div>
+              {recentCases.length > 0 ? (
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left text-sm">
+                    <thead>
+                      <tr className="bg-slate-50 border-b border-slate-200">
+                        {['#', 'Diagnosis', 'Severity', 'Status', 'Date', ''].map(h => (
+                          <th key={h} className="px-5 py-3 text-[10px] font-bold text-slate-400 uppercase tracking-wider">{h}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {recentCases.map((c, i) => (
+                        <motion.tr key={c.id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.35 + i * 0.05 }}
+                          className="border-b border-slate-100 hover:bg-slate-50/70 transition-colors">
+                          <td className="px-5 py-4 text-xs text-slate-400 font-mono">#{c.id}</td>
+                          <td className="px-5 py-4 font-semibold text-slate-800 max-w-[160px] truncate text-xs">{c.final_diagnosis || 'Awaiting'}</td>
+                          <td className="px-5 py-4">
+                            <span className={`px-2.5 py-0.5 rounded-lg border text-[9px] font-bold uppercase ${severityBadge(c.severity)}`}>{c.severity || 'N/A'}</span>
+                          </td>
+                          <td className="px-5 py-4">
+                            <span className={`px-2.5 py-0.5 rounded-lg border text-[9px] font-bold uppercase ${statusBadge(c.status)}`}>{c.status}</span>
+                          </td>
+                          <td className="px-5 py-4 text-[10px] text-slate-400">
+                            {new Date(c.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
+                          </td>
+                          <td className="px-5 py-4 text-right">
+                            <button onClick={() => navigate(`/reports/${c.id}`)}
+                              className="text-xs font-bold text-teal-600 hover:text-teal-700 hover:underline">
+                              View
+                            </button>
+                          </td>
+                        </motion.tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <div className="py-12 text-center text-sm text-slate-400 italic">No assessments yet.</div>
+              )}
+            </motion.div>
+          </div>
+
+          {/* Right column */}
+          <div className="space-y-5">
+
+            {/* Quick Actions */}
+            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.28 }}
+              className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+              <h3 className="font-bold text-slate-800 text-sm border-b border-slate-100 pb-3">Quick Actions</h3>
+              {[
+                { icon: Plus, label: 'New Assessment', sub: 'Run AI diagnostic', color: 'bg-teal-50 text-teal-600', path: '/patient/intake' },
+                { icon: FileSearch, label: 'Analyze Medical Report', sub: 'Upload PDF/Image', color: 'bg-indigo-50 text-indigo-600', path: '/reports/analyze' },
+                { icon: TrendingUp, label: 'Health Insights', sub: 'View analytics', color: 'bg-sky-50 text-sky-600', path: '/patient/insights' },
+              ].map(({ icon: Icon, label, sub, color, path }) => (
+                <button key={label} onClick={() => navigate(path)}
+                  className="w-full flex items-center gap-3 p-3 rounded-xl border border-slate-100 hover:border-teal-200 hover:bg-slate-50/60 transition-all group text-left">
+                  <div className={`w-9 h-9 rounded-xl ${color} flex items-center justify-center shrink-0`}>
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="text-xs font-bold text-slate-800 group-hover:text-teal-700 transition-colors">{label}</p>
+                    <p className="text-[10px] text-slate-400">{sub}</p>
+                  </div>
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-300 group-hover:text-teal-400 ml-auto shrink-0 transition-colors" />
+                </button>
+              ))}
+            </motion.div>
+
+            {/* Profile Card */}
+            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.33 }}
+              className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+              <div className="flex items-center gap-2 border-b border-slate-100 pb-3">
+                <div className="w-7 h-7 bg-slate-100 rounded-lg flex items-center justify-center">
+                  <Shield className="w-3.5 h-3.5 text-slate-500" />
+                </div>
+                <h3 className="font-bold text-slate-800 text-sm">Your Profile</h3>
+              </div>
+              <div className="space-y-2.5">
+                {[
+                  { label: 'Name', value: displayName },
+                  { label: 'Age', value: userAge ? `${userAge} years` : null },
+                  { label: 'Gender', value: user?.gender },
+                  { label: 'Total Visits', value: `${totalCases} assessments` },
+                ].filter(r => r.value).map(r => (
+                  <div key={r.label} className="flex justify-between items-center py-1 border-b border-slate-50">
+                    <span className="text-xs text-slate-500 font-medium">{r.label}</span>
+                    <span className="text-xs font-bold text-slate-800">{r.value}</span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Emergency alert */}
+            {latestAssessment?.triage_level != null && latestAssessment.triage_level <= 2 && (
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
+                className="bg-red-50 border border-red-200 rounded-2xl p-5 space-y-2">
+                <div className="flex items-center gap-2">
+                  <motion.span className="w-2.5 h-2.5 bg-red-500 rounded-full"
+                    animate={{ scale: [1, 1.5, 1], opacity: [1, 0.4, 1] }} transition={{ duration: 1, repeat: Infinity }} />
+                  <p className="text-xs font-extrabold text-red-800 uppercase tracking-wide">⚠ Emergency Alert</p>
+                </div>
+                <p className="text-[11px] text-red-700 leading-relaxed">
+                  Your last assessment indicates urgent findings. Please consult a doctor or visit the nearest emergency room immediately.
+                </p>
+              </motion.div>
+            )}
+
+            {/* Latest vitals */}
+            {(hrVal != null || spo2Val != null || bpVal || tempVal != null) && (
+              <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.38 }}
+                className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+                <div className="flex items-center gap-2 border-b border-slate-100 pb-3">
+                  <Heart className="w-4 h-4 text-rose-500" />
+                  <h3 className="font-bold text-slate-800 text-sm">Latest Vitals</h3>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  {hrVal != null && (
+                    <div className="text-center p-3 bg-rose-50 rounded-xl border border-rose-100">
+                      <p className="text-xl font-black text-slate-900">{hrVal}</p>
+                      <p className="text-[9px] font-bold text-slate-400 uppercase mt-0.5">bpm</p>
+                    </div>
+                  )}
+                  {spo2Val != null && (
+                    <div className="text-center p-3 bg-emerald-50 rounded-xl border border-emerald-100">
+                      <p className="text-xl font-black text-slate-900">{spo2Val}%</p>
+                      <p className="text-[9px] font-bold text-slate-400 uppercase mt-0.5">SpO2</p>
+                    </div>
+                  )}
+                  {bpVal && (
+                    <div className="text-center p-3 bg-sky-50 rounded-xl border border-sky-100">
+                      <p className="text-xl font-black text-slate-900">{bpVal}</p>
+                      <p className="text-[9px] font-bold text-slate-400 uppercase mt-0.5">BP</p>
+                    </div>
+                  )}
+                  {tempVal != null && (
+                    <div className="text-center p-3 bg-amber-50 rounded-xl border border-amber-100">
+                      <p className="text-xl font-black text-slate-900">{tempVal}°</p>
+                      <p className="text-[9px] font-bold text-slate-400 uppercase mt-0.5">Temp F</p>
+                    </div>
+                  )}
+                </div>
+              </motion.div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Disclaimer */}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}
+        className="bg-amber-50 border border-amber-200 rounded-xl px-5 py-3.5 flex items-start gap-3">
+        <Sparkles className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+        <p className="text-xs text-amber-800 leading-relaxed">
+          <strong>⚕ Medical Disclaimer:</strong> MedAgentix AI provides informational health assessments only —
+          it is NOT a substitute for professional medical diagnosis or treatment. Always consult a qualified doctor.
+        </p>
+      </motion.div>
     </div>
   );
 }

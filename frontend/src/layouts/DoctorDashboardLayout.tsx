@@ -4,24 +4,15 @@ import { motion } from 'framer-motion';
 import { Sidebar, SidebarNavItem } from '../components/common/Sidebar';
 import { Navbar } from '../components/common/Navbar';
 import { ROUTES } from '../routes/config';
-import { Activity, ClipboardList, Users } from 'lucide-react';
+import { Activity, ClipboardList, Users, Stethoscope, PlusCircle, FileSearch } from 'lucide-react';
 
 const DOCTOR_NAV_ITEMS: SidebarNavItem[] = [
-  {
-    name: 'Clinic Overview',
-    path: ROUTES.DOCTOR_DASHBOARD,
-    icon: Activity,
-  },
-  {
-    name: 'Triage Queue',
-    path: ROUTES.DOCTOR_QUEUE,
-    icon: ClipboardList,
-  },
-  {
-    name: 'My Patients',
-    path: ROUTES.DOCTOR_TRIAGE,
-    icon: Users,
-  },
+  { name: 'Clinic Overview', path: ROUTES.DOCTOR_DASHBOARD, icon: Activity },
+  { name: 'New Patient Assessment', path: ROUTES.DOCTOR_PATIENT_INTAKE, icon: PlusCircle },
+  { name: 'Patient Assessments', path: ROUTES.DOCTOR_ASSESSMENT, icon: Stethoscope },
+  { name: 'Medical Reports', path: ROUTES.REPORT_ANALYSIS, icon: FileSearch },
+  { name: 'Triage Queue', path: ROUTES.DOCTOR_QUEUE, icon: ClipboardList },
+  { name: 'My Patients', path: ROUTES.DOCTOR_TRIAGE, icon: Users },
 ];
 
 export const DoctorDashboardLayout: React.FC = () => {
