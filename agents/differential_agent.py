@@ -21,6 +21,7 @@ import json
 
 import numpy as np
 import joblib
+import xgboost as xgb
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import config
@@ -102,10 +103,11 @@ class DifferentialAgent:
     # LOADING
     # --------------------------------------------------------
     def _load_model(self):
-        """Load trained XGBoost model."""
+        """Load trained XGBoost model (native JSON format from Step 2 retraining)."""
         print(f"  Loading XGBoost model...")
-        self.model = joblib.load(config.DIFFERENTIAL_TRAINED_MODEL)
-        print(f"  [OK] Model loaded")
+        self.model = xgb.XGBClassifier()
+        self.model.load_model(config.DIFFERENTIAL_TRAINED_MODEL)
+        print(f"  [OK] Model loaded ({config.DIFFERENTIAL_TRAINED_MODEL})")
 
     def _load_knowledge_base(self):
         """Load disease-symptom knowledge base."""
@@ -122,14 +124,15 @@ class DifferentialAgent:
         print(f"  [OK] {len(self.symptom_disease_map)} symptoms mapped")
 
     def _load_encoders(self):
-        """Load label encoders and symptom index mapping."""
+        """Load label encoder and symptom column list from new retrained model."""
         print(f"  Loading Encoders...")
-        encoders = joblib.load(config.DIFFERENTIAL_ENCODERS_PATH)
-        self.disease_encoder = encoders['disease']
-        self.symptom_names = encoders['symptom_names']
-        self.symptom_to_idx = encoders['symptom_to_idx']
+        # New format: separate label_encoder.pkl and symptom_columns.json
+        self.disease_encoder = joblib.load(config.DIFFERENTIAL_LABEL_ENCODER_PATH)
+        with open(config.DIFFERENTIAL_SYMPTOM_COLS_PATH, 'r', encoding='utf-8') as f:
+            self.symptom_names = json.load(f)
+        self.symptom_to_idx = {s: i for i, s in enumerate(self.symptom_names)}
         self.disease_names = list(self.disease_encoder.classes_)
-        print(f"  [OK] Encoders loaded")
+        print(f"  [OK] Encoders loaded ({len(self.disease_names)} diseases, {len(self.symptom_names)} symptoms)")
 
     # --------------------------------------------------------
     # SYMPTOM MATCHING
@@ -149,6 +152,52 @@ class DifferentialAgent:
         matched = []
         unmatched = []
 
+        # Medical synonym expansion: patient language → clinical vocabulary
+        SYMPTOM_SYNONYMS = {
+            # Fever variants
+            "high fever": "fever", "low grade fever": "fever", "low-grade fever": "fever",
+            "temperature": "fever", "pyrexia": "fever", "febrile": "fever",
+            # Neck
+            "stiff neck": "neck stiffness or tightness", "neck stiffness": "neck stiffness or tightness",
+            "nuchal rigidity": "neck stiffness or tightness", "neck rigidity": "neck stiffness or tightness",
+            # Breathing
+            "shortness of breath": "shortness of breath", "sob": "shortness of breath",
+            "breathlessness": "shortness of breath", "dyspnea": "shortness of breath",
+            "difficulty breathing": "difficulty breathing", "hard to breathe": "difficulty breathing",
+            "can't breathe": "difficulty breathing",
+            # Pain
+            "stomach pain": "abdominal pain", "belly pain": "abdominal pain",
+            "tummy pain": "abdominal pain", "abdominal cramps": "abdominal pain",
+            "chest tightness": "chest pain", "chest pressure": "chest pain",
+            "back pain": "low back pain", "backache": "low back pain",
+            "joint pain": "joint pain", "muscle pain": "muscle aches",
+            "muscle aches": "muscle aches", "body aches": "muscle aches",
+            "body pain": "muscle aches", "myalgia": "muscle aches",
+            # Skin
+            "skin rash": "skin rash", "rash": "skin rash", "hives": "skin rash",
+            "itching": "itching of skin", "itchy skin": "itching of skin",
+            "itchy": "itching of skin",
+            # GI
+            "loose stools": "diarrhea", "loose motions": "diarrhea", "watery stool": "diarrhea",
+            "stomach upset": "nausea", "throwing up": "vomiting", "puke": "vomiting",
+            "puking": "vomiting", "throw up": "vomiting",
+            # Head/neuro
+            "headache": "headache", "head pain": "headache", "migraine": "headache",
+            "dizziness": "dizziness", "dizzy": "dizziness", "vertigo": "dizziness",
+            "fainting": "fainting", "loss of consciousness": "fainting",
+            "confusion": "confusion", "disoriented": "confusion",
+            # Respiratory
+            "runny nose": "runny nose", "sore throat": "throat pain",
+            "phlegm": "cough", "mucus": "cough",
+            # Other common
+            "tiredness": "fatigue", "tired": "fatigue", "exhaustion": "fatigue",
+            "weakness": "weakness", "weak": "weakness",
+            "swelling": "swelling", "bloating": "bloating",
+            "urination problem": "painful urination", "burning urination": "painful urination",
+            "frequent urination": "increased urination",
+            "yellow skin": "jaundice", "yellow eyes": "jaundice", "jaundiced": "jaundice",
+        }
+
         # Build lookup (lowercase, with underscores and spaces)
         lookup = {}
         for sym in self.symptom_names:
@@ -158,6 +207,7 @@ class DifferentialAgent:
 
         for input_sym in input_symptoms:
             clean = input_sym.strip().lower()
+            clean = SYMPTOM_SYNONYMS.get(clean, clean)
 
             # Exact match
             if clean in lookup:

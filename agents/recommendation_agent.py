@@ -239,44 +239,92 @@ class RecommendationAgent:
         print("  Recommendation Agent -- Initializing")
         print("=" * 60)
 
+        self._load_recommendation_kb()
         self._load_drug_knowledge()
         self._load_diagnostic_knowledge()
         self._load_maps()
 
         print(f"\n  [OK] Recommendation Agent ready")
+        print(f"       Recommendation KB: {len(self.recommendation_kb)} diseases")
         print(f"       Drug KB: {len(self.drug_kb)} diseases")
-        print(f"       Diagnostic KB: {len(self.diagnostic_kb)} diagnoses")
         print("=" * 60)
 
     # --------------------------------------------------------
     # LOADING
     # --------------------------------------------------------
+    def _load_recommendation_kb(self):
+        """Load new comprehensive recommendation knowledge base (Step 6 retrained)."""
+        print(f"  Loading Recommendation Knowledge Base...")
+        try:
+            with open(config.RECOMMENDATION_KB_PATH, 'r', encoding='utf-8') as f:
+                self.recommendation_kb = json.load(f)
+            # Build a normalized lookup for fast disease resolution
+            self._rec_lookup = {k.lower(): v for k, v in self.recommendation_kb.items()}
+            print(f"  [OK] {len(self.recommendation_kb)} diseases in recommendation KB")
+        except FileNotFoundError:
+            print(f"  [WARN] recommendation_knowledge.json not found, using empty KB")
+            self.recommendation_kb = {}
+            self._rec_lookup = {}
+
     def _load_drug_knowledge(self):
-        """Load drug knowledge base."""
+        """Load drug knowledge base (legacy, with graceful fallback)."""
         print(f"  Loading Drug Knowledge Base...")
-        with open(config.DRUG_KNOWLEDGE_PATH, 'r', encoding='utf-8') as f:
-            self.drug_kb = json.load(f)
-        print(f"  [OK] {len(self.drug_kb)} diseases loaded")
+        try:
+            with open(config.DRUG_KNOWLEDGE_PATH, 'r', encoding='utf-8') as f:
+                self.drug_kb = json.load(f)
+            print(f"  [OK] {len(self.drug_kb)} diseases loaded")
+        except FileNotFoundError:
+            print(f"  [WARN] drug_knowledge.json not found, using disease_drug_map fallback")
+            self.drug_kb = {}
 
     def _load_diagnostic_knowledge(self):
-        """Load diagnostic test knowledge base."""
+        """Load diagnostic test knowledge base (with graceful fallback)."""
         print(f"  Loading Diagnostic Test Knowledge Base...")
-        with open(config.DIAGNOSTIC_KNOWLEDGE_PATH, 'r', encoding='utf-8') as f:
-            self.diagnostic_kb = json.load(f)
-        print(f"  [OK] {len(self.diagnostic_kb)} diagnoses loaded")
+        try:
+            with open(config.DIAGNOSTIC_KNOWLEDGE_PATH, 'r', encoding='utf-8') as f:
+                self.diagnostic_kb = json.load(f)
+            print(f"  [OK] {len(self.diagnostic_kb)} diagnoses loaded")
+        except FileNotFoundError:
+            print(f"  [WARN] diagnostic_knowledge.json not found, using empty KB")
+            self.diagnostic_kb = {}
 
     def _load_maps(self):
         """Load lookup maps."""
         print(f"  Loading Lookup Maps...")
-        with open(config.DISEASE_DRUG_MAP_PATH, 'r', encoding='utf-8') as f:
-            self.disease_drug_map = json.load(f)
-        with open(config.DISEASE_TEST_MAP_PATH, 'r', encoding='utf-8') as f:
-            self.disease_test_map = json.load(f)
+        try:
+            with open(config.DISEASE_DRUG_MAP_PATH, 'r', encoding='utf-8') as f:
+                self.disease_drug_map = json.load(f)
+        except FileNotFoundError:
+            self.disease_drug_map = {}
+        try:
+            with open(config.DISEASE_TEST_MAP_PATH, 'r', encoding='utf-8') as f:
+                self.disease_test_map = json.load(f)
+        except FileNotFoundError:
+            self.disease_test_map = {}
         print(f"  [OK] Drug map: {len(self.disease_drug_map)} | Test map: {len(self.disease_test_map)}")
 
     # --------------------------------------------------------
     # DISEASE NAME RESOLUTION
     # --------------------------------------------------------
+    def _lookup_new_kb(self, disease):
+        """Look up disease in the new recommendation KB (1088 diseases) with fuzzy matching."""
+        normalized = disease.strip().lower()
+
+        # 1. Exact match
+        if normalized in self._rec_lookup:
+            return self._rec_lookup[normalized]
+
+        # 2. Substring match — normalized contains a KB key or vice versa
+        best_match = None
+        best_score = 0
+        for kb_key, kb_val in self._rec_lookup.items():
+            if normalized in kb_key and len(normalized) > best_score:
+                best_match, best_score = kb_val, len(normalized)
+            elif kb_key in normalized and len(kb_key) > best_score:
+                best_match, best_score = kb_val, len(kb_key)
+
+        return best_match  # None if not found
+
     def _resolve_drug_disease(self, disease):
         """Map prediction engine disease name to drug dataset name."""
         normalized = disease.strip().lower()
@@ -505,7 +553,16 @@ class RecommendationAgent:
         # Step 4: Risk alerts
         alerts = self._get_risk_alerts(drug_recs, patient_info, severity)
 
-        # Step 5: Build response
+        # Step 5: Enrich from new comprehensive KB (primary source)
+        new_kb_info = self._lookup_new_kb(disease) or {}
+        new_medications = new_kb_info.get('medications', [])
+        new_diet = new_kb_info.get('diet_recommendations', [])
+        new_workout = new_kb_info.get('workout_recommendations', [])
+        new_precautions = new_kb_info.get('precautions', [])
+        new_tests = new_kb_info.get('diagnostic_tests', [])
+        disease_description = new_kb_info.get('description', '')
+
+        # Step 6: Build response
         return {
             "input": {
                 "disease": disease,
@@ -518,17 +575,25 @@ class RecommendationAgent:
                 "drug_dataset_match": matched_drug_disease,
                 "diagnostic_dataset_match": matched_diag_disease,
             },
+            "description": disease_description,
             "treatment_plan": treatment,
             "diagnostic_tests": {
-                "total": len(test_recs),
+                "total": len(test_recs) + len(new_tests),
                 "primary_tests": [t for t in test_recs if t["priority"] == "Primary"],
                 "secondary_tests": [t for t in test_recs if t["priority"] == "Secondary"],
                 "all_tests": test_recs,
+                "additional_tests": new_tests,
             },
             "medications": {
-                "total": len(drug_recs),
+                "total": len(drug_recs) + len(new_medications),
                 "suitable": [d for d in drug_recs if d["suitable_for_patient"]],
                 "all_medications": drug_recs,
+                "recommended_medications": new_medications,
+            },
+            "lifestyle": {
+                "diet_recommendations": new_diet,
+                "workout_recommendations": new_workout,
+                "precautions": new_precautions,
             },
             "risk_alerts": alerts,
             "disclaimer": (
