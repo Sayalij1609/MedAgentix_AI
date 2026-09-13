@@ -2,12 +2,12 @@
 """
 MedAgentix AI -- OCR API Routes (Module C — Integration Layer)
 ================================================================
-Thin integration layer that wires Module A (PaddleOCR) and Module B
-(Gemini Post-Processing) into the Flask application.
+Routes medical document processing requests to the dedicated OCRAgent.
 
 Endpoints:
-    POST /api/v1/ocr/scan    — Upload a medical document for OCR + AI normalization
-    GET  /api/v1/ocr/status   — Health check for the OCR subsystem
+    POST /api/v1/ocr/scan          — Upload a medical document (image or PDF) for OCR + clinical intelligence
+    POST /api/v1/ocr/analyze-text  — Directly analyze medical document text (pasted or synthetic)
+    GET  /api/v1/ocr/status        — Health check for the OCR subsystem and agents
 """
 
 import os
@@ -20,6 +20,17 @@ logger = logging.getLogger("medagentix.ocr_routes")
 
 ocr_bp = Blueprint("ocr", __name__, url_prefix="/api/v1/ocr")
 
+# Lazy singleton for OCRAgent
+_ocr_agent = None
+
+
+def _get_ocr_agent():
+    global _ocr_agent
+    if _ocr_agent is None:
+        from agents.ocr_agent import OCRAgent
+        _ocr_agent = OCRAgent()
+    return _ocr_agent
+
 
 # ---------------------------------------------------------------------------
 # POST /api/v1/ocr/scan
@@ -28,13 +39,10 @@ ocr_bp = Blueprint("ocr", __name__, url_prefix="/api/v1/ocr")
 @ocr_bp.route("/scan", methods=["POST"])
 def scan_document():
     """
-    Upload a medical document image or PDF for OCR text extraction
-    and optional AI-powered normalization.
-
-    Returns both the raw OCR output and the Gemini-normalized structured JSON.
-    If Gemini is unavailable or fails, the raw OCR is still returned.
+    Upload a medical document (image or PDF) for OCR text extraction
+    and multi-schema clinical analysis via OCRAgent.
     """
-    # --- Step 1: Validate file presence ---
+    # Step 1: Validate file presence
     if "file" not in request.files:
         return jsonify({
             "success": False,
@@ -48,106 +56,60 @@ def scan_document():
             "error": "Empty filename. Please select a valid file.",
         }), 400
 
-    # --- Step 2: Validate file type and size ---
-    from ocr.paddleocr_service import validate_file, ALLOWED_EXTENSIONS
+    # Step 2: Validate file type and size
+    from ocr.paddleocr_service import validate_file
 
-    # Read file content to check size
     file_content = uploaded_file.read()
-    uploaded_file.seek(0)  # Reset stream position
+    uploaded_file.seek(0)
 
     try:
         file_ext = validate_file(uploaded_file.filename, len(file_content))
     except ValueError as e:
-        return jsonify({
-            "success": False,
-            "error": str(e),
-        }), 400
+        return jsonify({"success": False, "error": str(e)}), 400
 
-    # --- Step 3: Save to temporary file ---
+    # Step 3: Save to temporary file
     temp_path = None
     try:
-        # Create a temp file with the correct extension
         fd, temp_path = tempfile.mkstemp(suffix=file_ext)
         os.close(fd)
-
         uploaded_file.save(temp_path)
 
-        # --- Step 4: Run OCR (Module A) ---
-        from ocr.paddleocr_service import extract_text
+        # Step 4: Run analysis through OCRAgent
+        agent = _get_ocr_agent()
+        result = agent.analyze_document(temp_path, file_ext)
 
-        pipeline_start = time.time()
-
-        try:
-            ocr_result = extract_text(temp_path, file_ext)
-        except RuntimeError as e:
-            logger.error("OCR engine error: %s", type(e).__name__)
-            return jsonify({
-                "success": False,
-                "error": f"OCR processing failed: {str(e)}",
-            }), 500
-        except Exception as e:
-            import traceback
-            logger.error("Unexpected OCR error: %s\n%s", type(e).__name__, traceback.format_exc())
-            return jsonify({
-                "success": False,
-                "error": "OCR processing failed unexpectedly.",
-            }), 500
-
-        # --- Step 5: Check for empty OCR ---
-        raw_text = ocr_result.get("raw_text", "").strip()
-        segments = ocr_result.get("segments", [])
-
-        if not raw_text and not segments:
-            return jsonify({
-                "success": True,
-                "raw_ocr": {
-                    "raw_text": "",
-                    "segments": [],
-                    "segment_count": 0,
-                },
-                "normalized": None,
-                "normalization_status": "No text detected in document.",
-                "pipeline_time_seconds": round(time.time() - pipeline_start, 2),
-            }), 200
-
-        # --- Step 6: Run Gemini post-processing (Module B) ---
-        from ocr.gemini_ocr_postprocessor import normalize_ocr_output
-
-        gemini_result = normalize_ocr_output(ocr_result)
-
-        pipeline_elapsed = round(time.time() - pipeline_start, 2)
-
-        # Log safe pipeline metadata
-        logger.info(
-            "OCR pipeline complete: segments=%d, normalization=%s, time=%.2fs",
-            len(segments),
-            "success" if gemini_result["success"] else "unavailable",
-            pipeline_elapsed,
-        )
-
-        # --- Step 7: Build response with BOTH raw and normalized ---
-        response = {
+        # Structure response with backwards compatibility
+        analysis_data = result.get("analysis") or {}
+        return jsonify({
             "success": True,
-            "raw_ocr": {
-                "raw_text": ocr_result["raw_text"],
-                "segments": ocr_result["segments"],
-                "segment_count": len(segments),
-                "avg_confidence": round(
-                    sum(s["confidence"] for s in segments) / max(len(segments), 1), 4
-                ),
-            },
-            "normalized": gemini_result.get("normalized"),
+            "document_type": result.get("document_type", "medical_report"),
+            "raw_ocr": result.get("raw_ocr", {}),
+            "normalized": analysis_data,  # backwards compatibility
+            "analysis": analysis_data,
+            "diagnostic_state_preview": result.get("diagnostic_state_preview", {}),
             "normalization_status": (
-                "success" if gemini_result["success"]
-                else gemini_result.get("error", "AI normalization unavailable.")
+                f"success ({result.get('normalization_method')})"
+                if result.get("normalization_method") != "none"
+                else "Raw OCR only (normalization unavailable)"
             ),
-            "pipeline_time_seconds": pipeline_elapsed,
-        }
+            "normalization_method": result.get("normalization_method", "none"),
+            "pipeline_time_seconds": result.get("pipeline_time_seconds", 0.0),
+        }), 200
 
-        return jsonify(response), 200
-
+    except RuntimeError as e:
+        logger.error("OCR Agent engine error: %s", str(e))
+        return jsonify({
+            "success": False,
+            "error": f"OCR processing failed: {str(e)}",
+        }), 500
+    except Exception as e:
+        import traceback
+        logger.error("Unexpected OCR error: %s\n%s", type(e).__name__, traceback.format_exc())
+        return jsonify({
+            "success": False,
+            "error": f"OCR processing failed: {str(e)}",
+        }), 500
     finally:
-        # --- Cleanup: remove temporary file ---
         if temp_path and os.path.exists(temp_path):
             try:
                 os.remove(temp_path)
@@ -156,16 +118,45 @@ def scan_document():
 
 
 # ---------------------------------------------------------------------------
+# POST /api/v1/ocr/analyze-text
+# Accepts: JSON {"text": "..."}
+# ---------------------------------------------------------------------------
+@ocr_bp.route("/analyze-text", methods=["POST"])
+def analyze_text():
+    """Directly analyze pasted or pre-extracted medical report text."""
+    data = request.get_json() or {}
+    raw_text = data.get("text", "").strip()
+    if not raw_text:
+        return jsonify({"success": False, "error": "No text provided in request body."}), 400
+
+    try:
+        agent = _get_ocr_agent()
+        result = agent.analyze_text(raw_text)
+        return jsonify({
+            "success": True,
+            "document_type": result.get("document_type"),
+            "analysis": result.get("analysis"),
+            "normalized": result.get("analysis"),
+            "diagnostic_state_preview": result.get("diagnostic_state_preview"),
+        }), 200
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+
+# ---------------------------------------------------------------------------
 # GET /api/v1/ocr/status
-# Quick health check for the OCR subsystem
+# Health check for the full OCR subsystem
 # ---------------------------------------------------------------------------
 @ocr_bp.route("/status", methods=["GET"])
 def ocr_status():
-    """Return the initialization status of the OCR subsystem."""
+    """Return the readiness status of each OCR subsystem component."""
     checks = {
         "paddleocr_installed": False,
-        "gemini_sdk_installed": False,
-        "gemini_api_key_set": False,
+        "pymupdf_installed": False,
+        "clinicalbert_available": False,
+        "groq_installed": False,
+        "groq_api_key_set": False,
+        "ocr_agent_ready": False,
     }
 
     try:
@@ -175,18 +166,40 @@ def ocr_status():
         pass
 
     try:
-        import google.generativeai  # noqa: F401
-        checks["gemini_sdk_installed"] = True
+        import pymupdf  # noqa: F401
+        checks["pymupdf_installed"] = True
     except ImportError:
         pass
 
-    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    checks["gemini_api_key_set"] = bool(api_key) and api_key != "your_gemini_api_key_here"
+    try:
+        from transformers import pipeline  # noqa: F401
+        checks["clinicalbert_available"] = True
+    except ImportError:
+        pass
 
-    all_ready = checks["paddleocr_installed"]  # OCR is the minimum requirement
-    status_code = 200 if all_ready else 503
+    try:
+        import groq  # noqa: F401
+        checks["groq_installed"] = True
+    except ImportError:
+        pass
+
+    groq_key = os.environ.get("GROQ_API_KEY", "").strip()
+    checks["groq_api_key_set"] = bool(groq_key)
+
+    try:
+        _get_ocr_agent()
+        checks["ocr_agent_ready"] = True
+    except Exception:
+        pass
+
+    all_ready = checks["paddleocr_installed"]
 
     return jsonify({
         "status": "ready" if all_ready else "unavailable",
         "checks": checks,
-    }), status_code
+        "normalization_backend": (
+            "groq (multi-schema)" if (checks["groq_installed"] and checks["groq_api_key_set"])
+            else "clinicalbert (offline)" if checks["clinicalbert_available"]
+            else "none (raw OCR only)"
+        ),
+    }), 200 if all_ready else 503
