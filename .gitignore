@@ -3,6 +3,9 @@ __pycache__/
 
 *.egg-info/
 .env
+.env.*
+.env.local
+!.env.example
 
 # Virtual environment
 .venv/
@@ -30,6 +33,7 @@ models/recommendation_model/data/disease_drug_map.json
 
 # HuggingFace cache
 .cache/
+.env
 
 # Node dependencies
 node_modules/
