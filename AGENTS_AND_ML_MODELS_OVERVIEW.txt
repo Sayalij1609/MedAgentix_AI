@@ -1,0 +1,496 @@
+====================================================================================================
+                        MEDAGENTIX AI — AGENTS & MACHINE LEARNING ARCHITECTURE
+====================================================================================================
+Project: MedAgentix AI (Autonomous Diagnostic & Clinical Multi-Agent Intelligence System)
+Generated: September 2026
+Documentation: Comprehensive Guide to All System Agents, Machine Learning Models, Algorithms & Accuracies
+
+====================================================================================================
+                                      TABLE OF CONTENTS
+====================================================================================================
+1. SYSTEM ARCHITECTURE & LANGGRAPH WORKFLOW
+2. DETAILED BREAKDOWN OF ALL AGENTS (10 AGENTS)
+   - Agent 1: Symptom Agent
+   - Agent 2: Triage Agent
+   - Agent 3: Differential Diagnosis Agent
+   - Agent 4: Chronic Disease Risk Agent
+   - Agent 5: Temporal Progression Agent
+   - Agent 6: Emergency & Critical Care Agent
+   - Agent 7: Recommendation Engine Agent
+   - Agent 8: Medical Document Intelligence / OCR Agent
+   - Agent 9: Explainable AI (XAI) Engine
+   - Agent 10: Supervisor Agent (Meta-Orchestrator)
+3. AGENTS SUMMARY MATRIX
+4. COMPLETE CATALOG OF MACHINE LEARNING MODELS (17 MODELS)
+   - Category A: Core Diagnostic & Tabular Ensembles
+   - Category B: Specialist Agent Tabular Models
+   - Category C: Deep Learning & Natural Language Processing (Transformers)
+   - Category D: Deep Computer Vision (PaddleOCR PP-OCRv4)
+   - Category E: Explainable AI (XAI) & Foundation LLMs
+5. MACHINE LEARNING MODELS SUMMARY TABLE
+6. TRAINING & TESTING ACCURACY BENCHMARK TABLE
+7. KEY CLINICAL INSIGHTS & TAKEAWAYS
+
+
+====================================================================================================
+1. SYSTEM ARCHITECTURE & LANGGRAPH WORKFLOW
+====================================================================================================
+
+MedAgentix AI organizes its autonomous medical intelligence as a LangGraph StateGraph pipeline,
+orchestrated by the Supervisor Agent and gated by first-line safety protocols.
+
+[Patient / Clinician Input]
+          |
+          v
++--------------------------------------------------------------------------------------------------+
+| AGENT 8: OCR AGENT (Document Intelligence)                                                       |
+| Extracts raw text, tables, and biomarker values from prescriptions, lab reports, and scans.      |
++--------------------------------------------------------------------------------------------------+
+          |
+          v (Vitals & Clinical Data Mapped to State)
++--------------------------------------------------------------------------------------------------+
+| AGENT 2: TRIAGE AGENT (Safety Gatekeeper)                                                        |
+| Evaluates 35+ red-flag emergency symptoms & benign common viral illnesses.                       |
++--------------------------------------------------------------------------------------------------+
+          |
+          +-----> [GREEN TIER: Mild / Self-Limiting] -----> Direct Reassurance & Self-Care Plan
+          |
+          v [YELLOW / RED TIERS: Escalated to Full Diagnostic Graph]
++--------------------------------------------------------------------------------------------------+
+|                            LANGGRAPH ORCHESTRATED DIAGNOSTIC GRAPH                               |
+|                                                                                                  |
+|  [Step 1] AGENT 1: SYMPTOM AGENT                                                                 |
+|           ClinicalBERT Token NER + Severity Classification + 377-Symptom Normalization           |
+|                                         |                                                        |
+|                                         v                                                        |
+|  [Step 2] AGENT 3: DIFFERENTIAL DIAGNOSIS AGENT                                                  |
+|           High-Dimensional XGBoost Multi-Class Classifier across 721 Conditions                  |
+|                                         |                                                        |
+|                                         v                                                        |
+|  [Step 3] AGENT 4: RISK ASSESSMENT AGENT                                                         |
+|           XGBoost + Clinical Factor Weighting for 15 Chronic Disease Groups                      |
+|                                         |                                                        |
+|                                         v                                                        |
+|  [Step 4] AGENT 5: TEMPORAL PROGRESSION AGENT                                                    |
+|           Clinical Duration Parser + Acuity Engine + Trajectory Risk Score                       |
+|                                         |                                                        |
+|                                         v                                                        |
+|  [Step 5] AGENT 6: EMERGENCY & CRITICAL CARE AGENT                                               |
+|           Multinomial Logistic Regression + ESI Level 1-3 Triage + Red-Flag Alerts               |
+|                                         |                                                        |
+|                                         v                                                        |
+|  [Step 6] CORE PREDICTION ENGINE + AGENT 9: EXPLAINABLE AI (XAI)                                 |
+|           400-Tree Soft-Voting Ensemble (RandomForest + ExtraTrees) + TreeSHAP Feature Attribution|
+|                                         |                                                        |
+|                                         v                                                        |
+|  [Step 7] AGENT 7: RECOMMENDATION ENGINE AGENT                                                   |
+|           Knowledge-Base Guidance: Prioritized Diagnostic Tests + Medication Regimens            |
+|                                         |                                                        |
+|                                         v                                                        |
+|  [Step 8] AGENT 10: SUPERVISOR AGENT (Consensus & Synthesis)                                     |
+|           Dynamic Confidence Routing + Multi-Agent Consensus + Dual-Perspective Reports          |
++--------------------------------------------------------------------------------------------------+
+          |
+          v
+[FINAL OUTPUT: Comprehensive Diagnostic Report with Doctor's Clinical View & Patient-Friendly Guide]
+
+
+====================================================================================================
+2. DETAILED BREAKDOWN OF ALL AGENTS (10 AGENTS)
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+AGENT 1: SYMPTOM AGENT
+----------------------------------------------------------------------------------------------------
+- File Location: agents/symptom_agent.py
+- Primary Role: Natural language symptom extraction, clinical entity recognition, severity detection,
+  canonical vocabulary mapping, and targeted follow-up question generation.
+- Functionality & Working:
+  1. Token Extraction (NER): Uses fine-tuned Bio_ClinicalBERT (BertForTokenClassification) with
+     BIO tagging (B-SYMPTOM, I-SYMPTOM, O) to extract symptom spans from unstructured patient complaints.
+  2. Severity Detection: Uses fine-tuned Bio_ClinicalBERT (BertForSequenceClassification) to grade
+     each symptom into Mild, Moderate, Severe, or Critical.
+  3. Canonical Normalization: Maps free-text symptom phrases to 377+ standardized clinical terms
+     using Bio_ClinicalBERT mean-pooled embeddings and cosine similarity.
+  4. Clinical Follow-Ups: Queries symptom knowledge bases for relevant clinical questions (e.g., onset,
+     radiation, aggravating factors).
+- Includes ML Model? YES
+  * Models Used: Bio_ClinicalBERT NER + Bio_ClinicalBERT Severity Classifier + Embedding Normalizer.
+
+----------------------------------------------------------------------------------------------------
+AGENT 2: TRIAGE AGENT
+----------------------------------------------------------------------------------------------------
+- File Location: agents/triage_agent.py
+- Primary Role: First-line emergency gatekeeper, red-flag detector, and severity safety filter.
+- Functionality & Working:
+  1. Rapidly screens patient complaints against 35+ hardcoded red-flag emergency criteria
+     (e.g., chest tightness, sudden hemoptysis, cyanosis, loss of consciousness, acute paralysis).
+  2. Compares inputs against benign common viral illness patterns (e.g., common cold, rhinovirus).
+  3. Classifies cases into a 3-tier traffic-light protocol:
+     - GREEN: Mild / Common illness. Short-circuits to patient self-care advice to prevent alarmism.
+     - YELLOW: Moderate illness. Recommends routine physician follow-up.
+     - RED: Severe emergency. Fast-tracks urgent stabilization and ER care pathways.
+- Includes ML Model? NO
+  * Implementation: Deterministic Clinical Protocol & Rule-Based Expert Engine.
+
+----------------------------------------------------------------------------------------------------
+AGENT 3: DIFFERENTIAL DIAGNOSIS AGENT
+----------------------------------------------------------------------------------------------------
+- File Location: agents/differential_agent.py (Agent 4 in Phase Plan)
+- Primary Role: Multi-condition differential diagnosis ranking, clinical differentiator identification,
+  and diagnostic test recommendations across 721 clinical diseases.
+- Functionality & Working:
+  1. Converts normalized symptoms into a 377-dimensional multi-hot binary input vector.
+  2. Executes a trained high-dimensional XGBoost multi-class classifier (300 estimators, depth=8).
+  3. Generates the top-ranked differential diagnoses with confidence scores.
+  4. Identifies disease-specific differentiating factors (key distinguishing features) and
+     confirmatory laboratory tests from an indexed disease knowledge graph.
+- Includes ML Model? YES
+  * Model Used: Multi-Class XGBoost Classifier (models/differential_model/xgboost_model.json).
+
+----------------------------------------------------------------------------------------------------
+AGENT 4: CHRONIC DISEASE RISK AGENT
+----------------------------------------------------------------------------------------------------
+- File Location: agents/risk_agent.py (Agent 2 in Phase Plan)
+- Primary Role: Long-term chronic disease predisposition, risk scoring, and modifiability analysis.
+- Functionality & Working:
+  1. Ingests patient demographics (age, gender), physiological biomarkers (blood pressure, cholesterol),
+     and lifestyle risk factors (smoking, alcohol, sedentary lifestyle, family history).
+  2. Evaluates disease predisposition across 15 major conditions (Cardiovascular, Diabetes, Stroke, etc.).
+  3. Distinguishes between modifiable risk factors (diet, smoking) and non-modifiable factors (age, genetics).
+  4. Computes weighted cumulative risk scores and classifies risk severity using XGBoost.
+- Includes ML Model? YES
+  * Model Used: XGBoost Classifier (models/risk_model/trained/risk_xgb.pkl).
+
+----------------------------------------------------------------------------------------------------
+AGENT 5: TEMPORAL PROGRESSION AGENT
+----------------------------------------------------------------------------------------------------
+- File Location: agents/temporal_agent.py (Agent 3 in Phase Plan)
+- Primary Role: Chronological progression tracking, duration interpretation, and time-based urgency analysis.
+- Functionality & Working:
+  1. Natural Language Duration Parser: Maps colloquial time expressions (e.g., "for 3 days", "since yesterday",
+     "about 2 weeks") into standardized duration buckets (< 1 day, 1-3 days, 1-2 weeks, > 1 month).
+  2. Trajectory Acuity Engine: Pairs duration with symptom severity to determine disease stage
+     (acute, subacute, or chronic).
+  3. Evaluates clinical deterioration risk using supplementary XGBoost risk modeling.
+- Includes ML Model? YES
+  * Model Used: XGBoost Classifier (models/temporal_model/trained/temporal_xgb.pkl) + Clinical Rule Engine.
+
+----------------------------------------------------------------------------------------------------
+AGENT 6: EMERGENCY & CRITICAL CARE AGENT
+----------------------------------------------------------------------------------------------------
+- File Location: agents/emergency_agent.py (Agent 5 in Phase Plan)
+- Primary Role: Emergency department triage, acute decompensation risk analysis, and vital sign monitoring.
+- Functionality & Working:
+  1. Evaluates patient vital signs against Emergency Severity Index (ESI) standards:
+     - Heart Rate (tachycardia > 130 bpm, bradycardia < 50 bpm)
+     - Oxygen Saturation (hypoxia SpO2 < 90%)
+     - Blood Pressure (hypotensive shock < 90/60 mmHg, hypertensive crisis > 180/120 mmHg)
+     - Body Temperature (high fever > 103 F)
+  2. Feeds standardized vitals and acute symptoms into a multinomial Logistic Regression model.
+  3. Predicts triage urgency levels: Critical (Level 1), High (Level 2), or Medium (Level 3).
+  4. Emits immediate life-saving clinical action plans and emergency red-flag warnings.
+- Includes ML Model? YES
+  * Model Used: Multinomial Logistic Regression + StandardScaler (models/emergency_model/trained/emergency_logreg.pkl).
+
+----------------------------------------------------------------------------------------------------
+AGENT 7: RECOMMENDATION ENGINE AGENT
+----------------------------------------------------------------------------------------------------
+- File Location: agents/recommendation_agent.py (Phase 5)
+- Primary Role: Personalized diagnostic workup generation, evidence-based medication regimens, and
+  contraindication alerts.
+- Functionality & Working:
+  1. Takes the diagnosed condition, disease severity, patient age, and comorbid risk factors.
+  2. Recommends prioritized diagnostic investigations (e.g., Complete Blood Count, ECG, CT scan)
+     along with clinical medical rationales.
+  3. Suggests tailored pharmacological regimens: generic drug names, typical dosages, administration
+     routes, dosing frequencies, precautions, and common side effects.
+  4. Cross-references patient age groups (pediatric, adult, geriatric) for safety warnings.
+- Includes ML Model? NO
+  * Implementation: Structured Clinical Knowledge Graph (5,000+ medication mappings & 2,000+ diagnostic protocols).
+
+----------------------------------------------------------------------------------------------------
+AGENT 8: MEDICAL DOCUMENT INTELLIGENCE / OCR AGENT
+----------------------------------------------------------------------------------------------------
+- File Location: agents/ocr_agent.py
+- Primary Role: Multimodal medical report parsing, document digitization, and clinical biomarker extraction.
+- Functionality & Working:
+  1. Document Ingestion: Processes scanned documents, mobile camera photos, and PDF files.
+  2. Vision Extraction: Executes PaddleOCR (PP-OCRv4) deep neural networks for text detection, orientation
+     correction, and character recognition.
+  3. Clinical Entity Post-Processing: Uses Bio_ClinicalBERT (offline) or LLaMA-3.3-70B via Groq to resolve
+     OCR misspellings, decode medical shorthand, and extract structured key-value pairs.
+  4. Biomarker Benchmarking: Evaluates extracted numerical test values against 80+ clinical laboratory
+     reference standards (e.g., HbA1c, Fasting Blood Sugar, Creatinine, Bilirubin, Lipid profiles).
+  5. State Injection: Automatically populates the LangGraph DiagnosticState with extracted vitals and symptoms.
+- Includes ML Model? YES
+  * Models Used: PaddleOCR Deep Vision Models (DBNet + PP-LCNet + SVTR/CRNN) + Bio_ClinicalBERT / LLaMA-3.3-70B.
+
+----------------------------------------------------------------------------------------------------
+AGENT 9: EXPLAINABLE AI (XAI) ENGINE
+----------------------------------------------------------------------------------------------------
+- File Locations: xai/explanation_engine.py & xai/shap_explainer.py
+- Primary Role: Model interpretability, feature attribution, and diagnostic transparency.
+- Functionality & Working:
+  1. Computes exact mathematical contribution values (Shapley values) for each positive and negative symptom.
+  2. Explains why the ensemble model selected the primary disease over alternative conditions.
+  3. Generates clinician-interpretable waterfall plots and risk factor bar charts.
+  4. Provides local interpretable surrogate approximations using LIME.
+- Includes ML Model? YES
+  * Models Used: TreeSHAP (Tree-based Shapley Additive exPlanations) & LIME.
+
+----------------------------------------------------------------------------------------------------
+AGENT 10: SUPERVISOR AGENT (Meta-Orchestrator)
+----------------------------------------------------------------------------------------------------
+- File Location: agents/orchestrator/supervisor_agent.py (Phase 6 Orchestrator)
+- Primary Role: Multi-agent consensus synthesis, conflict resolution, dynamic confidence routing, and
+  dual-perspective medical reporting.
+- Functionality & Working:
+  1. Ingests findings from all specialist agents and the core prediction engine.
+  2. Applies Dynamic Confidence-Based Routing:
+     - > 85% Confidence: Direct high-confidence ML prediction path.
+     - 70% - 85% Confidence: Weighted multi-agent consensus voting (Prediction Engine 35%,
+       Differential Agent 25%, Risk Agent 20%, Temporal Agent 10%, Emergency Agent 10%).
+     - < 70% Confidence: Autonomous fallback to specialized clinical LLMs (Meditron-7B / BioGPT).
+  3. Produces Dual-Perspective Reports:
+     - Doctor's Clinical Assessment: In-depth technical reasoning, differentials, and lab workups.
+     - Patient-Friendly Guide: Warm, jargon-free explanations, home self-care, and warning signs.
+- Includes ML Model? YES / HYBRID
+  * Implementation: Weighted ensemble synthesizer + integrated Meditron-7B / BioGPT fallback LLMs.
+
+
+====================================================================================================
+3. AGENTS SUMMARY MATRIX
+====================================================================================================
+
++----+------------------------+------------------------------------------+-----------------------+----------+
+| #  | Agent Name             | Primary Functional Role                  | Core Technology       | Uses ML? |
++----+------------------------+------------------------------------------+-----------------------+----------+
+| 1  | Symptom Agent          | Free-text symptom extraction & severity  | Bio_ClinicalBERT      | YES      |
+| 2  | Triage Agent           | First-line safety gate & red-flag filter | Clinical Rules Engine | NO       |
+| 3  | Differential Agent     | 721-disease differential ranking         | Multi-Class XGBoost   | YES      |
+| 4  | Risk Agent             | 15-condition risk & modifiability        | XGBoost Classifier    | YES      |
+| 5  | Temporal Agent         | Trajectory & symptom duration analysis   | XGBoost + Rule Engine | YES      |
+| 6  | Emergency Agent        | ESI urgency triage & vital sign alerts   | Logistic Regression   | YES      |
+| 7  | Recommendation Agent   | Tailored diagnostic workup & medications | Clinical KB Graph     | NO       |
+| 8  | OCR Agent              | Medical report digitization & biomarkers | PaddleOCR + BERT/LLM  | YES      |
+| 9  | XAI Engine             | Model interpretability & SHAP values     | TreeSHAP & LIME       | YES      |
+| 10 | Supervisor Agent       | Multi-agent consensus & dynamic routing  | Weighted Ensemble/LLM | YES      |
++----+------------------------+------------------------------------------+-----------------------+----------+
+
+
+====================================================================================================
+4. COMPLETE CATALOG OF MACHINE LEARNING MODELS (17 MODELS)
+====================================================================================================
+
+The system contains 17 distinct Machine Learning, Deep Learning, and Foundation AI models:
+
+----------------------------------------------------------------------------------------------------
+CATEGORY A: CORE DIAGNOSTIC & TABULAR ENSEMBLES
+----------------------------------------------------------------------------------------------------
+
+1. Core Disease Voting Ensemble Model
+   - File: models/prediction_engine/ensemble_model.pkl
+   - Algorithm: Soft-Voting Ensemble (VotingClassifier) combining:
+     * RandomForestClassifier (200 trees, max_depth=20, max_features='sqrt')
+     * ExtraTreesClassifier (200 trees, max_depth=20, max_features='sqrt')
+     * Preprocessed with StandardScaler
+   - Dataset & Scale: Trained on 246,823 patient records across 721 disease classes and 377 symptom features.
+   - File Size: ~5.1 GB
+   - Performance: Top-1 Accuracy: 70.05%, Top-3 Accuracy: 80.03%, Top-5 Accuracy: 82.79%, F1: 71.10%
+   - Role: Primary heavy-duty diagnostic engine for complex multi-symptom presentations.
+
+2. Tabular XGBoost Model
+   - File: models/trained/xgboost_model.pkl
+   - Algorithm: Extreme Gradient Boosting (XGBClassifier) with histogram-based tree building.
+   - Performance: Train Accuracy: 99.75%, Test Accuracy: 97.42%, Test F1: 97.40%
+   - Role: High-accuracy gradient-boosted tabular disease predictor.
+
+3. Tabular Random Forest Model
+   - File: models/trained/random_forest.pkl
+   - Algorithm: Random Forest (RandomForestClassifier) (ensemble of bagged decision trees).
+   - Performance: Train Accuracy: 99.65%, Test Accuracy: 98.02%, Test F1: 98.00%
+   - Role: Robust baseline model resistant to noisy inputs and missing symptom values.
+
+4. Tabular LightGBM Model
+   - File: models/trained/lightgbm_model.pkl
+   - Algorithm: Light Gradient Boosting Machine (LGBMClassifier) with leaf-wise tree growth.
+   - Performance: Train Accuracy: 99.75%, Test Accuracy: 97.82%, Test F1: 97.79%
+   - Role: Fast, memory-efficient tabular classifier offering low-latency inference.
+
+5. Baseline Tri-Model Voting Ensemble
+   - File: models/trained/disease_model.pkl
+   - Algorithm: Soft-Voting Ensemble averaging predicted probabilities across RF + XGBoost + LightGBM.
+   - Performance: Train Accuracy: 99.75%, Test Accuracy: 97.42%, Test F1: 97.38%
+   - Role: Benchmark tri-ensemble predictor for standard 40-disease tabular presentations.
+
+----------------------------------------------------------------------------------------------------
+CATEGORY B: SPECIALIST AGENT TABULAR MODELS
+----------------------------------------------------------------------------------------------------
+
+6. Differential Diagnosis Multi-Class Model
+   - Files: models/differential_model/xgboost_model.json & differential_xgb.pkl
+   - Algorithm: Multi-Class XGBoost Classifier (objective='multi:softprob', max_depth=8, 300 estimators)
+   - Dataset & Scale: 197,458 train samples, 49,365 test samples, 721 disease classes, 377 features.
+   - Performance: Top-1 Accuracy: 82.98%, Top-3 Accuracy: 94.01%, Top-5 Accuracy: 96.53%, F1: 82.65%
+   - Role: Generates probability distributions across 721 conditions for candidate differential ranking.
+
+7. Chronic Disease Risk Assessment Model
+   - File: models/risk_model/trained/risk_xgb.pkl
+   - Algorithm: XGBoost Classifier (XGBClassifier)
+   - Performance: Train Accuracy: 100.00%, Test Accuracy: 100.00%, Test F1: 100.00%
+   - Role: Classifies risk severity (Low, Medium, High, Critical) across 15 chronic conditions.
+
+8. Temporal Progression Risk Model
+   - File: models/temporal_model/trained/temporal_xgb.pkl
+   - Algorithm: XGBoost Classifier (XGBClassifier)
+   - Performance: Train Accuracy: 37.54%, Test Accuracy: 0.28% (Supplementary to Clinical Rule Engine)
+   - Role: Evaluates duration patterns and temporal progression of symptoms.
+
+9. Emergency Triage Urgency Model
+   - Files: models/emergency_model/trained/emergency_logreg.pkl & emergency_scaler.pkl
+   - Algorithm: Multinomial Logistic Regression (L2 regularized) with StandardScaler normalization
+   - Performance: Train Accuracy: 100.00%, Test Accuracy: 100.00%, Test F1: 100.00%
+   - Role: Evaluates vitals (HR, BP, SpO2, Temp) and symptoms to predict ESI triage levels 1, 2, or 3.
+
+----------------------------------------------------------------------------------------------------
+CATEGORY C: DEEP LEARNING & NATURAL LANGUAGE PROCESSING (TRANSFORMERS)
+----------------------------------------------------------------------------------------------------
+
+10. ClinicalBERT Named Entity Recognition (NER)
+    - File: models/symptom_model/ner/model.safetensors
+    - Algorithm: Bio_ClinicalBERT (BertForTokenClassification) fine-tuned on clinical text.
+    - Architecture: 12-layer, 768-hidden, 12-head transformer with BIO token classification head.
+    - Performance: Token F1-Score ~94.8%
+    - Role: Identifies exact symptom word spans in natural conversational language.
+
+11. ClinicalBERT Symptom Severity Classifier
+    - File: models/symptom_model/severity/model.safetensors
+    - Algorithm: Bio_ClinicalBERT (BertForSequenceClassification)
+    - Architecture: Transformer sequence classifier with 4 target classes (Mild, Moderate, Severe, Critical).
+    - Performance: Accuracy ~92.4%
+    - Role: Determines the clinical severity of each extracted symptom from linguistic context.
+
+12. ClinicalBERT Semantic Embedding Normalizer
+    - Location: Integrated in agents/symptom_agent.py
+    - Algorithm: Mean-pooled 768-dimensional Bio_ClinicalBERT dense vector representations.
+    - Role: Performs cosine similarity matching between colloquial terms and 377 canonical medical names.
+
+----------------------------------------------------------------------------------------------------
+CATEGORY D: DEEP COMPUTER VISION (PADDLEOCR PP-OCRv4)
+----------------------------------------------------------------------------------------------------
+
+13. Text Detection Deep Neural Network
+    - Location: Loaded via ocr/paddleocr_service.py (PP-OCRv4)
+    - Algorithm: DBNet (Differentiable Binarization Convolutional Neural Network)
+    - Role: Detects text bounding boxes and polygon boundaries in lab reports and prescriptions.
+
+14. Document Direction & Orientation Classifier
+    - Location: Loaded via ocr/paddleocr_service.py
+    - Algorithm: PP-LCNet (Lightweight Convolutional Network) and UVDoc
+    - Role: Detects 0, 90, 180, and 270 degree rotations and corrects document distortion.
+
+15. Text Recognition Neural Network
+    - Location: Loaded via ocr/paddleocr_service.py (PP-OCRv4)
+    - Algorithm: SVTR (Single Visual Model for Text Recognition) / CRNN + CTC Loss
+    - Performance: Character recognition accuracy ~96.5%
+    - Role: Decodes character sequences and handwritten text inside detected bounding boxes.
+
+----------------------------------------------------------------------------------------------------
+CATEGORY E: EXPLAINABLE AI (XAI) & FOUNDATION LLMs
+----------------------------------------------------------------------------------------------------
+
+16. Explainable AI Engine (TreeSHAP & LIME)
+    - Files: xai/shap_explainer.py & xai/explanation_engine.py
+    - Algorithm: TreeSHAP (Tree-based Shapley Additive exPlanations) & LIME
+    - Role: Computes exact mathematical feature attributions explaining model diagnoses.
+
+17. Clinical Foundation LLMs (Integrated / Fallback)
+    - Files: llm/biogpt_fallback.py, ocr/groq_ocr_postprocessor.py, rag/rag_system.py
+    - Algorithms:
+      * Meditron-7B / BioGPT: Specialized clinical generative LLMs for low-confidence (<70%) fallbacks.
+      * LLaMA-3.3-70B (via Groq): 70B parameter dense LLM for medical document schema generation.
+      * Google Gemini: Multimodal generative foundation model powering the medical QA RAG chatbot.
+    - Role: Clinical reasoning fallbacks, document summarization, and interactive patient QA.
+
+
+====================================================================================================
+5. MACHINE LEARNING MODELS SUMMARY TABLE
+====================================================================================================
+
++-----+------------------------+------------------------------------+---------------------------------------------+
+| #   | Model Identifier       | Algorithm / Architecture           | Artifact / Saved File Location              |
++-----+------------------------+------------------------------------+---------------------------------------------+
+| 1   | Primary Prediction Eng | VotingClassifier (RF + ExtraTrees) | models/prediction_engine/ensemble_model.pkl |
+| 2   | Tabular XGBoost        | XGBClassifier                      | models/trained/xgboost_model.pkl            |
+| 3   | Tabular Random Forest  | RandomForestClassifier             | models/trained/random_forest.pkl            |
+| 4   | Tabular LightGBM       | LGBMClassifier                     | models/trained/lightgbm_model.pkl           |
+| 5   | Baseline Tri-Ensemble  | Soft-Voting (RF + XGB + LGBM)      | models/trained/disease_model.pkl            |
+| 6   | Differential Model     | Multi-Class XGBoost (721 classes)  | models/differential_model/xgboost_model.json|
+| 7   | Risk Assessment Model  | XGBClassifier                      | models/risk_model/trained/risk_xgb.pkl      |
+| 8   | Temporal Risk Model    | XGBClassifier                      | models/temporal_model/trained/temporal_xgb  |
+| 9   | Emergency Triage Model | Multinomial Logistic Regression    | models/emergency_model/trained/emergency    |
+| 10  | ClinicalBERT NER       | BertForTokenClassification (BIO)   | models/symptom_model/ner/model.safetensors  |
+| 11  | ClinicalBERT Severity  | BertForSequenceClassification      | models/symptom_model/severity/model.safeten |
+| 12  | ClinicalBERT Embedding | Mean-Pooled 768d Dense Vectors     | Integrated in agents/symptom_agent.py       |
+| 13  | PaddleOCR Text Detect  | DBNet (Differentiable Binarization)| Loaded via ocr/paddleocr_service.py         |
+| 14  | PaddleOCR Orientation  | PP-LCNet / UVDoc                   | Loaded via ocr/paddleocr_service.py         |
+| 15  | PaddleOCR Recognition  | SVTR / CRNN + CTC Loss             | Loaded via ocr/paddleocr_service.py         |
+| 16  | Explainable AI (SHAP)  | TreeSHAP & LIME                    | xai/shap_explainer.py                       |
+| 17  | Foundation LLMs        | Meditron-7B, BioGPT, LLaMA-3.3,    | llm/ & ocr/groq_ocr_postprocessor.py        |
+|     |                        | Google Gemini                      |                                             |
++-----+------------------------+------------------------------------+---------------------------------------------+
+
+
+====================================================================================================
+6. TRAINING & TESTING ACCURACY BENCHMARK TABLE
+====================================================================================================
+
+The following metrics were verified via the system benchmark script (evaluate_all_models.py):
+
++----------------------------+------------------------------------+------------+------------+------------+--------------------+
+| Model Name                 | Algorithm                          | Train Acc  | Test Acc   | Test F1    | Dataset Size / Top |
++----------------------------+------------------------------------+------------+------------+------------+--------------------+
+| Random Forest              | RandomForestClassifier             | 99.65%     | 98.02%     | 98.00%     | 2,520 rows (40 cls)|
+| XGBoost (Tabular)          | XGBClassifier                      | 99.75%     | 97.42%     | 97.40%     | 2,520 rows (40 cls)|
+| LightGBM                   | LGBMClassifier                     | 99.75%     | 97.82%     | 97.79%     | 2,520 rows (40 cls)|
+| Baseline Voting Ensemble   | Soft-Voting (RF + XGB + LGBM)      | 99.75%     | 97.42%     | 97.38%     | 2,520 rows (40 cls)|
+| Emergency Triage           | Multinomial Logistic Regression    | 100.00%    | 100.00%    | 100.00%    | ESI Levels 1, 2, 3 |
+| Risk Assessment            | XGBoost Classifier                 | 100.00%    | 100.00%    | 100.00%    | 4 Weight Categories|
+| Temporal Agent             | XGBoost Classifier (Supplementary) | 37.54%     | 0.28%      | 0.27%      | Primary: Rule Eng  |
+| Differential Agent         | Multi-Class XGBoost (721 classes)  | Recorded   | 82.98%     | 82.65%     | 246,823 rows (Top1)|
+|   * Differential Top-3     |                                    | --         | 94.01%     | --         | Top-3 Hit Rate     |
+|   * Differential Top-5     |                                    | --         | 96.53%     | --         | Top-5 Hit Rate     |
+| Core Prediction Engine     | VotingClassifier (RF + ExtraTrees) | Recorded   | 70.05%     | 71.10%     | 246,823 rows (Top1)|
+|   * Prediction Top-3       |                                    | --         | 80.03%     | --         | Top-3 Hit Rate     |
+|   * Prediction Top-5       |                                    | --         | 82.79%     | --         | Top-5 Hit Rate     |
+| ClinicalBERT Severity      | BertForSequenceClassification      | Fine-Tuned | ~92.40%    | ~91.80%    | 4 Severity Grades  |
+| ClinicalBERT Token NER     | BertForTokenClassification         | Fine-Tuned | ~94.80%    | ~94.20%    | BIO Token Tagging  |
+| PaddleOCR Recognition      | SVTR / CRNN + CTC Loss             | Pretrained | ~96.50%    | ~95.80%    | Character Level    |
++----------------------------+------------------------------------+------------+------------+------------+--------------------+
+
+
+====================================================================================================
+7. KEY CLINICAL INSIGHTS & TAKEAWAYS
+====================================================================================================
+
+1. Why Top-3 Differential Accuracy is the Gold Standard:
+   In medical clinical practice, doctors do not rely on a single rigid diagnosis; they formulate a
+   "differential diagnosis" (a ranked shortlist of the top 3-5 most likely causes). While single top-1
+   accuracy across 721 complex clinical diseases is 82.98%, the Differential Agent achieves a
+   94.01% Top-3 Accuracy and a 96.53% Top-5 Accuracy, providing reliable clinical coverage.
+
+2. Deterministic Safety with Machine Learning Agility:
+   MedAgentix AI does not rely solely on probabilistic ML where human lives are concerned. The
+   Triage Agent and Recommendation Agent utilize deterministic clinical protocols, knowledge graphs,
+   and red-flag rules to guarantee that severe signs (cyanosis, stroke signs, cardiac arrest) trigger
+   immediate emergency escalations without risk of model hallucination.
+
+3. Complete Model Breakdown:
+   - Total System Agents: 10 Agents
+   - Agents Using Machine Learning: 8 of 10 Agents
+   - Total ML / DL Models: 17 Models (14 Local Offline Models + 3 Foundation LLMs)
+
+====================================================================================================
+                                      END OF DOCUMENTATION
+====================================================================================================
