@@ -221,6 +221,7 @@ class OCRAgent:
         """
         Ensure analysis_data contains a complete, verified patient_guide synthesized from
         local clinical knowledge bases (disease_diet_map, disease_workout_map, recommendation_knowledge).
+        Extracts diagnoses from ALL possible document-type locations.
         """
         try:
             from ocr.clinical_knowledge_retriever import retrieve_clinical_guidance
@@ -235,7 +236,41 @@ class OCRAgent:
                             abnormal_labs.append(item)
 
             medications = analysis_data.get("prescription_analysis", {}).get("medications") or analysis_data.get("medications", [])
-            diagnoses = analysis_data.get("diagnoses", [])
+
+            # Collect diagnoses from ALL possible locations
+            diagnoses = list(analysis_data.get("diagnoses", []) or [])
+
+            # Extract from clinical_notes_analysis.diagnoses (discharge summaries, clinical notes)
+            cna = analysis_data.get("clinical_notes_analysis") or {}
+            cna_diags = cna.get("diagnoses", [])
+            if isinstance(cna_diags, list):
+                for d in cna_diags:
+                    if isinstance(d, dict):
+                        cond = d.get("condition", "")
+                        if cond and cond not in diagnoses:
+                            diagnoses.append(cond)
+                    elif isinstance(d, str) and d not in diagnoses:
+                        diagnoses.append(d)
+
+            # Add red_flag_symptoms as potential condition hints
+            red_flags = cna.get("red_flag_symptoms", [])
+            if isinstance(red_flags, list):
+                for rf in red_flags:
+                    if isinstance(rf, str) and rf not in diagnoses:
+                        diagnoses.append(rf)
+
+            # Extract from radiology_analysis.impression
+            rad = analysis_data.get("radiology_analysis") or {}
+            impression = rad.get("impression", "")
+            if impression and impression not in diagnoses:
+                diagnoses.append(impression)
+
+            # Add chief complaints as diagnosis hints
+            chief_complaints = cna.get("chief_complaints", [])
+            if isinstance(chief_complaints, list):
+                for cc in chief_complaints:
+                    if isinstance(cc, str) and cc not in diagnoses:
+                        diagnoses.append(cc)
 
             kb_guidance = retrieve_clinical_guidance(
                 abnormal_biomarkers=abnormal_labs,

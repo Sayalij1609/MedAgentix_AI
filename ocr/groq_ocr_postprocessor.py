@@ -292,8 +292,9 @@ def normalize_ocr_output(ocr_output: Dict[str, Any]) -> Dict[str, Any]:
         configured_model = os.getenv("GROQ_OCR_MODEL", "").strip()
         candidate_models = [m for m in [
             configured_model,
+            "meta-llama/llama-4-scout-17b-16e-instruct",
+            "llama-3.3-70b-versatile",
             "openai/gpt-oss-120b",
-            "openai/gpt-oss-20b",
             "qwen/qwen3.8-27b",
             "groq/compound",
         ] if m]
@@ -312,7 +313,7 @@ def normalize_ocr_output(ocr_output: Dict[str, Any]) -> Dict[str, Any]:
                         {"role": "user", "content": user_prompt},
                     ],
                     temperature=0.1,
-                    max_tokens=int(os.getenv("GROQ_MAX_TOKENS", "1200")),
+                    max_tokens=int(os.getenv("GROQ_MAX_TOKENS", "4096")),
                     response_format={"type": "json_object"},
                 )
                 used_model = model_name

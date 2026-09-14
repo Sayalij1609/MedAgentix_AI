@@ -418,41 +418,62 @@ def retrieve_clinical_guidance(
                     detected_conditions.add(cond)
                     break
 
-    # 2. Map diagnoses
+    # 2. Map diagnoses (including clinical notes diagnoses, red flags, and chief complaints)
     for d in diagnoses:
         d_str = str(d).lower()
-        if "diabet" in d_str or "sugar" in d_str or "a1c" in d_str:
+        if "diabet" in d_str or "sugar" in d_str or "a1c" in d_str or "glycem" in d_str:
             detected_conditions.add("diabetes")
-        if "hyperten" in d_str or "bp" in d_str or "blood pressure" in d_str or "cholesterol" in d_str:
+        if any(k in d_str for k in (
+            "hyperten", "bp", "blood pressure", "cholesterol", "chest pain",
+            "palpitat", "dyspnea", "angina", "coronary", "cardiac", "cardiomy",
+            "arrhythm", "tachycard", "bradycard", "heart fail", "atrial fib",
+            "myocard", "ischemi", "aortic", "valvular", "ecg", "ekg",
+            "exertional", "shortness of breath"
+        )):
             detected_conditions.add("hypertensive heart disease")
-        if "kidney" in d_str or "renal" in d_str:
+        if "kidney" in d_str or "renal" in d_str or "nephro" in d_str:
             detected_conditions.add("acute kidney injury")
-        if "liver" in d_str or "hepatic" in d_str:
+        if "liver" in d_str or "hepatic" in d_str or "hepatit" in d_str or "cirrho" in d_str:
             detected_conditions.add("liver disease")
-        if "anemi" in d_str or ("hemoglobin" in d_str and not any(k in d_str for k in ("a1c", "hba1c", "glycat"))):
+        if "anemi" in d_str or (
+            "hemoglobin" in d_str and not any(k in d_str for k in ("a1c", "hba1c", "glycat"))
+        ):
             detected_conditions.add("anemia")
+        if "thyroid" in d_str or "tsh" in d_str or "hypothyr" in d_str or "hyperthyr" in d_str:
+            detected_conditions.add("thyroid disease")
+        if any(k in d_str for k in ("pneumon", "bronchit", "asthma", "copd", "respiratory")):
+            detected_conditions.add("hypertensive heart disease")  # similar lifestyle/follow-up advice
 
     # 3. Map medications
     for m in medications:
         med_name = (m.get("name") or "").lower()
         if any(w in med_name for w in ("metformin", "glimepiride", "insulin", "sitagliptin", "empagliflozin")):
             detected_conditions.add("diabetes")
-        if any(w in med_name for w in ("atorvastatin", "rosuvastatin", "amlodipine", "losartan", "lisinopril", "telmisartan")):
+        if any(w in med_name for w in (
+            "atorvastatin", "rosuvastatin", "amlodipine", "losartan", "lisinopril",
+            "telmisartan", "ramipril", "metoprolol", "aspirin", "clopidogrel",
+            "enalapril", "valsartan", "propranolol", "diltiazem", "nitroglycerin"
+        )):
             detected_conditions.add("hypertensive heart disease")
         if any(w in med_name for w in ("amoxicillin", "azithromycin", "ciprofloxacin", "augmentin")):
             detected_conditions.add("infectious gastroenteritis")
+        if any(w in med_name for w in ("levothyroxine", "methimazole", "carbimazole")):
+            detected_conditions.add("thyroid disease")
 
     # 4. Fallback check on raw text
     raw_lower = raw_text.lower()
     if not detected_conditions:
         if "hba1c" in raw_lower or "glucose" in raw_lower or "sugar" in raw_lower:
             detected_conditions.add("diabetes")
-        elif "cholesterol" in raw_lower or "lipid" in raw_lower or "pressure" in raw_lower:
+        elif any(k in raw_lower for k in (
+            "cholesterol", "lipid", "pressure", "chest pain", "palpitat",
+            "dyspnea", "hypertens", "cardiac", "angina", "coronary"
+        )):
             detected_conditions.add("hypertensive heart disease")
 
-    # Default to diabetes or hypertensive heart disease if still empty for rich suggestions
+    # Default to hypertensive heart disease for broad general guidance if still empty
     if not detected_conditions:
-        detected_conditions.add("diabetes")
+        detected_conditions.add("hypertensive heart disease")
 
     # Compile unified guidance
     diet_to_enjoy = []

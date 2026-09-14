@@ -864,6 +864,23 @@ export default function ReportAnalysis() {
                           <span>Clinical Trajectory & Vitals</span>
                         </h3>
 
+                        {/* Chief Complaints */}
+                        {analysis.clinical_notes_analysis.chief_complaints && analysis.clinical_notes_analysis.chief_complaints.length > 0 && (
+                          <div className="p-4 bg-gradient-to-r from-sky-50/80 to-teal-50/60 border border-sky-200 rounded-2xl space-y-2">
+                            <div className="flex items-center gap-1.5 text-xs font-bold text-sky-900 uppercase tracking-wide">
+                              <Stethoscope className="w-4 h-4 text-sky-600" />
+                              <span>Chief Complaints & Presenting Symptoms</span>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                              {analysis.clinical_notes_analysis.chief_complaints.map((cc: string, i: number) => (
+                                <span key={i} className="text-xs font-semibold px-3 py-1.5 rounded-xl bg-white text-sky-800 border border-sky-200 shadow-xs">
+                                  {cc}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
                         {/* Vitals Grid */}
                         {analysis.clinical_notes_analysis.vitals && (
                           <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 text-center">
@@ -881,7 +898,7 @@ export default function ReportAnalysis() {
                           <div className="space-y-1.5">
                             <span className="text-xs font-bold text-slate-600 uppercase tracking-wide">Recorded Diagnoses</span>
                             <div className="flex flex-wrap gap-2">
-                              {analysis.clinical_notes_analysis.diagnoses.map((d, i) => (
+                              {analysis.clinical_notes_analysis.diagnoses.map((d: any, i: number) => (
                                 <span key={i} className="text-xs font-bold px-3 py-1 rounded-full bg-teal-50 text-teal-800 border border-teal-200">
                                   {typeof d === 'string' ? d : d.condition}
                                 </span>
@@ -892,16 +909,63 @@ export default function ReportAnalysis() {
 
                         {/* Red Flag Symptoms */}
                         {analysis.clinical_notes_analysis.red_flag_symptoms && analysis.clinical_notes_analysis.red_flag_symptoms.length > 0 && (
-                          <div className="p-4 bg-red-50 border border-red-200 rounded-2xl space-y-1.5">
+                          <div className="p-4 bg-red-50 border border-red-200 rounded-2xl space-y-2">
                             <p className="text-xs font-bold text-red-800 flex items-center gap-1.5">
                               <AlertCircle className="w-4 h-4 text-red-600" />
                               <span>Red Flag Symptoms (Seek Emergency Care if Present)</span>
                             </p>
-                            <ul className="text-xs text-red-700 list-disc list-inside space-y-1">
-                              {analysis.clinical_notes_analysis.red_flag_symptoms.map((rf, idx) => (
-                                <li key={idx} className="font-semibold">{rf}</li>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                              {analysis.clinical_notes_analysis.red_flag_symptoms.map((rf: string, idx: number) => (
+                                <div key={idx} className="flex items-start gap-2 p-2.5 bg-white/90 rounded-xl border border-red-200 text-xs text-red-900 font-semibold">
+                                  <span className="w-1.5 h-1.5 rounded-full bg-red-600 mt-1.5 shrink-0" />
+                                  <span>{rf}</span>
+                                </div>
                               ))}
-                            </ul>
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Hospital Course / Clinical Narrative */}
+                        {analysis.clinical_notes_analysis.hospital_course && (
+                          <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
+                            <div className="flex items-center gap-1.5 text-xs font-bold text-slate-700 uppercase tracking-wide">
+                              <FileCheck className="w-4 h-4 text-teal-600" />
+                              <span>Hospital Course & Clinical Narrative</span>
+                            </div>
+                            <p className="text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">
+                              {analysis.clinical_notes_analysis.hospital_course}
+                            </p>
+                          </div>
+                        )}
+
+                        {/* Post-Discharge Care */}
+                        {analysis.clinical_notes_analysis.post_discharge_care && analysis.clinical_notes_analysis.post_discharge_care.length > 0 && (
+                          <div className="p-4 bg-emerald-50/70 border border-emerald-200 rounded-2xl space-y-2">
+                            <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-900 uppercase tracking-wide">
+                              <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                              <span>Post-Discharge Care & Next Steps</span>
+                            </div>
+                            <div className="space-y-1.5">
+                              {analysis.clinical_notes_analysis.post_discharge_care.map((care: string, idx: number) => (
+                                <div key={idx} className="flex items-start gap-2 text-xs text-emerald-800 bg-white/80 p-2.5 rounded-xl border border-emerald-100">
+                                  <CheckCircle className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
+                                  <span>{care}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Patient-Friendly Explanation (always show for clinical notes) */}
+                        {analysis?.dual_summary?.patient_explanation && (
+                          <div className="p-4 bg-gradient-to-br from-teal-50/80 via-emerald-50/40 to-sky-50/60 border border-teal-200 rounded-2xl space-y-2">
+                            <div className="flex items-center gap-2 text-teal-900 font-bold text-xs">
+                              <User className="w-4 h-4 text-teal-600" />
+                              <span>What This Means For You (Patient Summary)</span>
+                            </div>
+                            <p className="text-xs text-slate-700 leading-relaxed">
+                              {analysis.dual_summary.patient_explanation}
+                            </p>
                           </div>
                         )}
                       </div>
@@ -1224,6 +1288,46 @@ export default function ReportAnalysis() {
                             <div key={idx} className="flex items-start gap-2 p-2.5 bg-white/90 rounded-2xl border border-rose-200 text-xs text-rose-950 font-medium">
                               <span className="w-1.5 h-1.5 rounded-full bg-rose-600 mt-1.5 shrink-0" />
                               <span>{sign}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Section 6: Medication Precautions & Safety Notes */}
+                    {analysis?.patient_guide?.medication_precautions && analysis.patient_guide.medication_precautions.length > 0 && (
+                      <div className="bg-white border border-slate-200/80 rounded-3xl p-5 shadow-xs space-y-4">
+                        <div className="flex items-center gap-2.5 border-b border-slate-100 pb-3">
+                          <div className="w-9 h-9 rounded-2xl bg-violet-50 text-violet-600 border border-violet-200 flex items-center justify-center">
+                            <Pill className="w-5 h-5" />
+                          </div>
+                          <div>
+                            <h4 className="text-sm font-bold text-slate-800">Medication Safety & Precautions</h4>
+                            <p className="text-xs text-slate-500">Drug-specific guidance from clinical knowledge base</p>
+                          </div>
+                        </div>
+
+                        <div className="space-y-3">
+                          {analysis.patient_guide.medication_precautions.map((mp: any, idx: number) => (
+                            <div key={idx} className="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
+                              <div className="flex items-center justify-between">
+                                <span className="text-xs font-extrabold text-slate-900">{mp.drug || 'Medication'}</span>
+                                {mp.dosage && (
+                                  <span className="text-[10px] font-bold px-2 py-0.5 bg-violet-50 text-violet-700 border border-violet-200 rounded-full">
+                                    {mp.dosage}
+                                  </span>
+                                )}
+                              </div>
+                              {mp.precaution && (
+                                <p className="text-xs text-slate-600">
+                                  <strong className="text-slate-800">Precaution:</strong> {mp.precaution}
+                                </p>
+                              )}
+                              {mp.side_effects && (
+                                <p className="text-xs text-amber-700 bg-amber-50/60 p-2 rounded-xl border border-amber-100">
+                                  <strong>Possible Side Effects:</strong> {mp.side_effects}
+                                </p>
+                              )}
                             </div>
                           ))}
                         </div>
