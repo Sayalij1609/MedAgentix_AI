@@ -1,0 +1,151 @@
+{
+  "timestamp": "2026-09-14T23:34:14.065792",
+  "total_models_evaluated": 12,
+  "execution_time_seconds": 5.83,
+  "models": [
+    {
+      "model_name": "Random Forest",
+      "algorithm": "RandomForestClassifier",
+      "category": "Tabular Baseline",
+      "train_samples": 2016,
+      "test_samples": 504,
+      "num_features": 27,
+      "num_classes": 40,
+      "train_accuracy": 99.65,
+      "test_accuracy": 98.02,
+      "test_f1_score": 98.0,
+      "test_recall": 98.02
+    },
+    {
+      "model_name": "XGBoost",
+      "algorithm": "XGBClassifier",
+      "category": "Tabular Baseline",
+      "train_samples": 2016,
+      "test_samples": 504,
+      "num_features": 27,
+      "num_classes": 40,
+      "train_accuracy": 99.75,
+      "test_accuracy": 97.42,
+      "test_f1_score": 97.4,
+      "test_recall": 97.42
+    },
+    {
+      "model_name": "LightGBM",
+      "algorithm": "LGBMClassifier",
+      "category": "Tabular Baseline",
+      "train_samples": 2016,
+      "test_samples": 504,
+      "num_features": 27,
+      "num_classes": 40,
+      "train_accuracy": 99.75,
+      "test_accuracy": 97.82,
+      "test_f1_score": 97.79,
+      "test_recall": 97.82
+    },
+    {
+      "model_name": "Voting Ensemble",
+      "algorithm": "Soft-Voting (RF+XGB+LGBM)",
+      "category": "Tabular Baseline",
+      "train_samples": 2016,
+      "test_samples": 504,
+      "num_features": 27,
+      "num_classes": 40,
+      "train_accuracy": 99.75,
+      "test_accuracy": 97.42,
+      "test_f1_score": 97.38,
+      "test_recall": 97.42
+    },
+    {
+      "model_name": "Emergency Triage",
+      "algorithm": "Multinomial Logistic Regression",
+      "category": "Specialist Agent",
+      "train_samples": 2400,
+      "test_samples": 600,
+      "num_features": 59,
+      "num_classes": 3,
+      "train_accuracy": 100.0,
+      "test_accuracy": 100.0,
+      "test_f1_score": 100.0,
+      "test_recall": 100.0
+    },
+    {
+      "model_name": "Risk Assessment",
+      "algorithm": "XGBClassifier (Gradient Boosted Trees)",
+      "category": "Specialist Agent",
+      "train_samples": 2352,
+      "test_samples": 588,
+      "num_features": 4,
+      "num_classes": 4,
+      "train_accuracy": 100.0,
+      "test_accuracy": 100.0,
+      "test_f1_score": 100.0,
+      "test_recall": 100.0
+    },
+    {
+      "model_name": "Temporal Agent",
+      "algorithm": "XGBClassifier (Supplementary to Rule Engine)",
+      "category": "Specialist Agent",
+      "train_samples": 1433,
+      "test_samples": 359,
+      "num_features": 3,
+      "num_classes": 4,
+      "train_accuracy": 37.54,
+      "test_accuracy": 0.28,
+      "test_f1_score": 0.27,
+      "test_recall": 0.28
+    },
+    {
+      "model_name": "Differential Agent",
+      "algorithm": "Multi-Class XGBoost (multi:softprob)",
+      "category": "Core Large-Scale Model",
+      "train_samples": 197458,
+      "test_samples": 49365,
+      "num_features": 377,
+      "num_classes": 721,
+      "train_accuracy": "Evaluated on Test",
+      "test_accuracy": 82.98,
+      "top3_accuracy": 94.01,
+      "top5_accuracy": 96.53,
+      "test_f1_score": 82.65
+    },
+    {
+      "model_name": "Core Prediction Engine",
+      "algorithm": "VotingClassifier (RandomForest + ExtraTrees, 400 trees)",
+      "category": "Core Large-Scale Model",
+      "train_samples": 197458,
+      "test_samples": 49365,
+      "num_features": 377,
+      "num_classes": 721,
+      "train_accuracy": "Evaluated on Test",
+      "test_accuracy": 70.05,
+      "top3_accuracy": 80.03,
+      "top5_accuracy": 82.79,
+      "test_f1_score": 71.1
+    }
+  ],
+  "deep_learning_models": [
+    {
+      "model_name": "ClinicalBERT Severity",
+      "algorithm": "Bio_ClinicalBERT (BertForSequenceClassification)",
+      "category": "Deep Learning Transformer",
+      "num_classes": 4,
+      "status": "Trained & Weights Verified",
+      "test_accuracy": "Fine-Tuned (~92.4%)"
+    },
+    {
+      "model_name": "ClinicalBERT NER",
+      "algorithm": "Bio_ClinicalBERT (BertForTokenClassification)",
+      "category": "Deep Learning Transformer",
+      "num_classes": 3,
+      "status": "Trained & Weights Verified",
+      "test_accuracy": "Fine-Tuned (~94.8% Token F1)"
+    },
+    {
+      "model_name": "PaddleOCR Document Engine",
+      "algorithm": "DBNet (Detection) + PP-LCNet (Orientation) + SVTR (Recognition)",
+      "category": "Computer Vision",
+      "status": "Active (Local PP-OCRv4)",
+      "test_accuracy": "Character Recog ~96.5%"
+    }
+  ]
+}
