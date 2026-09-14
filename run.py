@@ -1,3 +1,9 @@
+# Safely preload PyTorch to prevent DLL conflicts on Windows
+try:
+    import torch  # noqa: F401
+except ImportError:
+    pass
+
 import os
 from app import create_app
 

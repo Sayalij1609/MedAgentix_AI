@@ -260,6 +260,40 @@ REFERENCE_RANGES: Dict[str, Dict[str, Any]] = {
         "unit": "ng/mL", "category": "Cardiac",
         "aliases": ["troponin i", "troponin t", "hs-crp", "hs troponin"]
     },
+
+    # ── Glycemic & Diabetes Panel ───────────────────────────────────────────
+    "hba1c": {
+        "low": 4.0, "high": 5.6, "critical_low": 3.5, "critical_high": 10.0,
+        "unit": "%", "category": "Endocrine",
+        "aliases": [
+            "hemoglobin a1c", "glycated hemoglobin", "glycosylated hemoglobin",
+            "a1c", "hba1c %", "glycohemoglobin"
+        ]
+    },
+    "fasting_blood_glucose": {
+        "low": 70.0, "high": 99.0, "critical_low": 50.0, "critical_high": 250.0,
+        "unit": "mg/dL", "category": "Endocrine",
+        "aliases": [
+            "fasting blood sugar", "fbs", "fasting glucose", "glucose fasting",
+            "fasting plasma glucose", "fpg", "blood sugar fasting"
+        ]
+    },
+    "postprandial_blood_glucose": {
+        "low": 70.0, "high": 140.0, "critical_low": 50.0, "critical_high": 300.0,
+        "unit": "mg/dL", "category": "Endocrine",
+        "aliases": [
+            "ppbs", "post prandial blood sugar", "postprandial glucose",
+            "2 hour pp glucose", "glucose pp", "blood sugar pp"
+        ]
+    },
+    "random_blood_glucose": {
+        "low": 70.0, "high": 140.0, "critical_low": 50.0, "critical_high": 300.0,
+        "unit": "mg/dL", "category": "Endocrine",
+        "aliases": [
+            "rbs", "random blood sugar", "glucose random", "blood glucose random",
+            "serum glucose", "blood sugar"
+        ]
+    },
 }
 
 # Precompile alias lookup map
@@ -269,6 +303,9 @@ for canonical, meta in REFERENCE_RANGES.items():
     _ALIAS_MAP[canonical.replace("_", " ")] = canonical
     for alias in meta.get("aliases", []):
         _ALIAS_MAP[alias.lower().strip()] = canonical
+
+# Pre-sort aliases by length descending for greedy longest-first substring matching
+_SORTED_ALIASES = sorted(_ALIAS_MAP.keys(), key=len, reverse=True)
 
 
 def normalize_test_name(raw_name: str) -> Optional[str]:
@@ -281,10 +318,10 @@ def normalize_test_name(raw_name: str) -> Optional[str]:
     if cleaned in _ALIAS_MAP:
         return _ALIAS_MAP[cleaned]
 
-    # Partial substring search
-    for alias, canonical in _ALIAS_MAP.items():
+    # Partial substring search prioritizing longer aliases first
+    for alias in _SORTED_ALIASES:
         if len(alias) >= 3 and alias in cleaned:
-            return canonical
+            return _ALIAS_MAP[alias]
 
     return None
 

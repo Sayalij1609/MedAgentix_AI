@@ -233,6 +233,15 @@ ENSEMBLE_MODEL_PATH = os.path.join(PREDICTION_ENGINE_DIR, "ensemble_model.pkl")
 LABEL_ENCODER_PATH = os.path.join(PREDICTION_ENGINE_DIR, "label_encoder.pkl")
 PREDICTION_SCALER_PATH = os.path.join(PREDICTION_ENGINE_DIR, "scaler.pkl")
 PREDICTION_FEATURE_COLUMNS_PATH = os.path.join(PREDICTION_ENGINE_DIR, "feature_columns.json")
+try:
+    import json
+    if os.path.exists(PREDICTION_FEATURE_COLUMNS_PATH):
+        with open(PREDICTION_FEATURE_COLUMNS_PATH, "r", encoding="utf-8") as _f:
+            PREDICTION_FEATURE_COLUMNS = json.load(_f)
+    else:
+        PREDICTION_FEATURE_COLUMNS = []
+except Exception:
+    PREDICTION_FEATURE_COLUMNS = []
 
 # RAG Knowledge Base (Step 7 retrained)
 RAG_CHUNKS_PATH = os.path.join(PROJECT_ROOT, "data", "knowledge_base", "knowledge_chunks.json")

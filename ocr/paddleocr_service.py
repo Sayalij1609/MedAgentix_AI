@@ -22,6 +22,12 @@ import time
 import logging
 import tempfile
 
+# Pre-load PyTorch if available to initialize Windows OpenMP and DLL dependencies cleanly
+try:
+    import torch  # noqa: F401
+except ImportError:
+    pass
+
 logger = logging.getLogger("medagentix.ocr")
 
 # ---------------------------------------------------------------------------
@@ -39,11 +45,40 @@ MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024
 _ocr_engine = None
 
 
+def _apply_paddle_fix():
+    """
+    Disable MKLDNN on Paddle inference predictors.
+    This resolves a known issue in PaddlePaddle 3.3.1 on Windows CPU where
+    ConvertPirAttribute2RuntimeAttribute throws NotImplementedError for
+    pir::ArrayAttribute<pir::DoubleAttribute> inside the oneDNN executor.
+    """
+    try:
+        import paddle.inference as pi
+        if not getattr(pi, "_medagentix_patched", False):
+            _orig_create = pi.create_predictor
+
+            def _safe_create_predictor(config):
+                try:
+                    config.disable_mkldnn()
+                except Exception:
+                    pass
+                return _orig_create(config)
+
+            pi.create_predictor = _safe_create_predictor
+            pi._medagentix_patched = True
+            logger.info("Paddle inference MKLDNN patch applied successfully.")
+    except Exception as e:
+        logger.warning("Could not apply Paddle MKLDNN patch: %s", e)
+
+
 def _get_ocr_engine():
     """Lazily initialize and cache the PaddleOCR model instance."""
     global _ocr_engine
     if _ocr_engine is not None:
         return _ocr_engine
+
+    # Ensure MKLDNN patch is active before PaddleOCR loads models
+    _apply_paddle_fix()
 
     try:
         from paddleocr import PaddleOCR
@@ -53,13 +88,21 @@ def _get_ocr_engine():
             "Install it with: pip install paddlepaddle paddleocr"
         )
 
-    logger.info("Initializing PaddleOCR engine (PP-OCRv4)...")
+    logger.info("Initializing PaddleOCR engine...")
     start = time.time()
 
-    _ocr_engine = PaddleOCR(
-        use_angle_cls=True,   # Detect rotated text
-        lang="en",            # English medical documents
-    )
+    # In PaddleOCR 3.7+, use_textline_orientation replaces deprecated use_angle_cls
+    try:
+        _ocr_engine = PaddleOCR(
+            lang="en",
+            use_textline_orientation=True,
+        )
+    except (TypeError, ValueError):
+        # Fallback for older PaddleOCR versions
+        _ocr_engine = PaddleOCR(
+            lang="en",
+            use_angle_cls=True,
+        )
 
     elapsed = time.time() - start
     logger.info("PaddleOCR engine ready (%.2fs)", elapsed)
@@ -110,60 +153,73 @@ def _extract_from_image(image_path: str) -> dict:
     engine = _get_ocr_engine()
 
     start = time.time()
-    results = engine.ocr(image_path)
+    if hasattr(engine, "predict"):
+        results = engine.predict(image_path)
+    else:
+        results = engine.ocr(image_path)
     elapsed = time.time() - start
 
     segments = []
     text_parts = []
 
-    if results and len(results) > 0:
-        res = results[0]
-        
-        # New PaddleX/PaddleOCR 3.7+ dictionary format
-        if isinstance(res, dict) and "rec_texts" in res:
-            texts = res.get("rec_texts", [])
-            scores = res.get("rec_scores", [])
-            polys = res.get("rec_polys", [])
-            
-            for i in range(len(texts)):
-                text = texts[i]
-                confidence = float(scores[i])
-                bbox_points = polys[i]
-                
-                xs = [pt[0] for pt in bbox_points]
-                ys = [pt[1] for pt in bbox_points]
-                bbox = [
-                    round(min(xs)), round(min(ys)), round(max(xs)), round(max(ys))
-                ]
-                
-                segments.append({
-                    "text": text,
-                    "confidence": round(confidence, 4),
-                    "bbox": bbox,
-                })
-                text_parts.append(text)
-                
-        # Legacy PaddleOCR 2.x list format
-        elif isinstance(res, list):
-            for line in res:
-                if not line: continue
-                bbox_points = line[0]          # [[x1,y1],[x2,y2],[x3,y3],[x4,y4]]
-                text = line[1][0]              # Detected text string
-                confidence = float(line[1][1]) # Confidence score
-    
-                # Convert 4-point polygon to simple [x_min, y_min, x_max, y_max]
-                xs = [pt[0] for pt in bbox_points]
-                ys = [pt[1] for pt in bbox_points]
-                bbox = [
-                    round(min(xs)), round(min(ys)), round(max(xs)), round(max(ys))
-                ]
-    
-                segments.append({
-                    "text": text,
-                    "confidence": round(confidence, 4),
-                    "bbox": bbox,
-                })
-                text_parts.append(text)
+    if results:
+        items = results if isinstance(results, list) else [results]
+        for res in items:
+            if not res:
+                continue
+
+            # PaddleX/PaddleOCR 3.7+ dictionary format
+            if isinstance(res, dict) and "rec_texts" in res:
+                texts = res.get("rec_texts", [])
+                scores = res.get("rec_scores", [])
+                polys = res.get("rec_polys", [])
+
+                for i in range(len(texts)):
+                    text = texts[i]
+                    confidence = float(scores[i]) if i < len(scores) else 0.9
+                    bbox_points = polys[i] if (polys is not None and i < len(polys)) else None
+
+                    if bbox_points is not None and len(bbox_points) > 0:
+                        try:
+                            xs = [float(pt[0]) for pt in bbox_points]
+                            ys = [float(pt[1]) for pt in bbox_points]
+                            bbox = [
+                                int(round(min(xs))), int(round(min(ys))),
+                                int(round(max(xs))), int(round(max(ys)))
+                            ]
+                        except Exception:
+                            bbox = [0, 0, 0, 0]
+                    else:
+                        bbox = [0, 0, 0, 0]
+
+                    segments.append({
+                        "text": text,
+                        "confidence": round(confidence, 4),
+                        "bbox": bbox,
+                    })
+                    text_parts.append(text)
+
+            # Legacy PaddleOCR 2.x list format
+            elif isinstance(res, list):
+                for line in res:
+                    if not line:
+                        continue
+                    bbox_points = line[0]          # [[x1,y1],[x2,y2],[x3,y3],[x4,y4]]
+                    text = line[1][0]              # Detected text string
+                    confidence = float(line[1][1]) # Confidence score
+
+                    xs = [pt[0] for pt in bbox_points]
+                    ys = [pt[1] for pt in bbox_points]
+                    bbox = [
+                        round(min(xs)), round(min(ys)), round(max(xs)), round(max(ys))
+                    ]
+
+                    segments.append({
+                        "text": text,
+                        "confidence": round(confidence, 4),
+                        "bbox": bbox,
+                    })
+                    text_parts.append(text)
 
     raw_text = "\n".join(text_parts)
 
@@ -171,7 +227,7 @@ def _extract_from_image(image_path: str) -> dict:
     logger.info(
         "OCR completed: segments=%d, avg_confidence=%.3f, time=%.2fs",
         len(segments),
-        sum(s["confidence"] for s in segments) / max(len(segments), 1),
+        sum(s["confidence"] for s in segments) / max(len(segments), 1) if segments else 0.0,
         elapsed,
     )
 

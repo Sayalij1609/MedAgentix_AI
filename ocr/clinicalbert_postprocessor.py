@@ -260,6 +260,70 @@ def _ner_extract(raw_text: str, ner_pipeline) -> dict:
         return _regex_extract(raw_text)
 
 
+def _format_multi_schema(base: dict) -> dict:
+    """Ensure base output has lab_analysis, prescription_analysis, dual_summary, and executive_summary."""
+    if not isinstance(base, dict):
+        return base
+
+    doc_type = base.get("document_type", "medical_report")
+    labs = base.get("lab_results", [])
+    meds = base.get("medications", [])
+    diagnoses = base.get("diagnoses", [])
+
+    # Format lab_analysis
+    if labs or doc_type == "lab_report":
+        abnormal = [
+            {
+                "test_name": l.get("test_name", "Test"),
+                "value": f"{l.get('value', '')} {l.get('unit', '')}".strip(),
+                "severity": l.get("flag", "HIGH")
+            }
+            for l in labs if l.get("flag") in ("HIGH", "LOW", "CRITICAL", "CRITICAL_HIGH", "CRITICAL_LOW")
+        ]
+        base["lab_analysis"] = {
+            "test_results": labs,
+            "abnormal_findings": abnormal,
+            "organ_system_impact": {
+                "metabolic": f"Extracted {len(labs)} biomarker parameters for clinical evaluation."
+            },
+            "clinical_correlation": "Biomarkers parsed from document text.",
+            "follow_up_recommendations": ["Review with treating physician for clinical correlation."]
+        }
+
+    # Format prescription_analysis
+    if meds or doc_type == "prescription":
+        base["prescription_analysis"] = {
+            "medications": [
+                {
+                    "name": m.get("name", "Medication"),
+                    "dosage": m.get("dose") or m.get("strength") or "As directed",
+                    "frequency": m.get("frequency") or "Per prescription",
+                    "duration": m.get("duration") or "Standard course",
+                    "instructions": m.get("instructions") or "Follow doctor instructions.",
+                }
+                for m in meds
+            ],
+            "drug_interactions": [],
+            "schedule": "Follow prescribed dosing intervals."
+        }
+
+    # Format dual_summary & executive_summary if missing
+    if not base.get("executive_summary"):
+        findings_count = len(labs) + len(meds)
+        base["executive_summary"] = f"Processed {doc_type.replace('_', ' ')} with {findings_count} extracted clinical entities."
+
+    if not base.get("dual_summary"):
+        patient_name = base.get("patient_information", {}).get("name") or "the patient"
+        doc_note = f"Document reviewed for {patient_name}. Identified {len(labs)} laboratory parameters and {len(meds)} active medications/treatments. Correlate with clinical trajectory."
+        pt_note = f"This report contains your medical test and treatment information. Please consult your physician to discuss the results and next steps."
+        base["dual_summary"] = {
+            "doctor_notes": doc_note,
+            "patient_explanation": pt_note,
+        }
+
+    return base
+
+
 # ---------------------------------------------------------------------------
 # Public API — same interface as gemini_ocr_postprocessor.normalize_ocr_output
 # ---------------------------------------------------------------------------
@@ -295,7 +359,7 @@ def normalize_ocr_output(ocr_output: dict) -> dict:
             method = "clinicalbert"
         else:
             result = _regex_extract(raw_text)
-            method = "regex"
+        result = _format_multi_schema(result)
 
         logger.info(
             "ClinicalBERT post-processing: method=%s, doc_type=%s, meds=%d, labs=%d",

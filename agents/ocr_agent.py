@@ -26,6 +26,11 @@ from typing import Dict, Any, Optional, List
 # Ensure project root is in sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+try:
+    import config_loader  # Ensure .env is loaded
+except ImportError:
+    pass
+
 from ocr.medical_reference_ranges import evaluate_biomarker, normalize_test_name, REFERENCE_RANGES
 
 logger = logging.getLogger("medagentix.ocr_agent")
@@ -128,6 +133,7 @@ class OCRAgent:
 
         # Step 3: Deterministic Grounding via Medical Reference KB
         self._ground_lab_results(analysis_data)
+        self._ensure_patient_guide(analysis_data, raw_text=raw_text)
 
         # Step 4: Map into LangGraph DiagnosticState
         diagnostic_preview = self.map_to_diagnostic_state(analysis_data)
@@ -168,6 +174,7 @@ class OCRAgent:
             analysis_data = cb_res.get("normalized", {})
 
         self._ground_lab_results(analysis_data)
+        self._ensure_patient_guide(analysis_data, raw_text=raw_text)
         diagnostic_preview = self.map_to_diagnostic_state(analysis_data)
 
         return {
@@ -209,6 +216,53 @@ class OCRAgent:
                 if eval_res["flag"] != "UNKNOWN":
                     item["reference_range"] = eval_res["reference_interval"]
                     item["flag"] = eval_res["flag"]
+
+    def _ensure_patient_guide(self, analysis_data: Dict[str, Any], raw_text: str = "") -> None:
+        """
+        Ensure analysis_data contains a complete, verified patient_guide synthesized from
+        local clinical knowledge bases (disease_diet_map, disease_workout_map, recommendation_knowledge).
+        """
+        try:
+            from ocr.clinical_knowledge_retriever import retrieve_clinical_guidance
+
+            abnormal_labs = []
+            labs = analysis_data.get("lab_analysis", {}).get("test_results") or analysis_data.get("lab_results", [])
+            if isinstance(labs, list):
+                for item in labs:
+                    if isinstance(item, dict):
+                        flag = (item.get("flag") or "").upper()
+                        if flag in ("HIGH", "LOW", "CRITICAL", "CRITICAL_HIGH", "CRITICAL_LOW") or not flag:
+                            abnormal_labs.append(item)
+
+            medications = analysis_data.get("prescription_analysis", {}).get("medications") or analysis_data.get("medications", [])
+            diagnoses = analysis_data.get("diagnoses", [])
+
+            kb_guidance = retrieve_clinical_guidance(
+                abnormal_biomarkers=abnormal_labs,
+                medications=medications if isinstance(medications, list) else [],
+                diagnoses=diagnoses if isinstance(diagnoses, list) else [],
+                raw_text=raw_text,
+            )
+
+            existing_guide = analysis_data.get("patient_guide")
+            if not existing_guide or not isinstance(existing_guide, dict):
+                analysis_data["patient_guide"] = kb_guidance
+            else:
+                for section in ("diet_and_nutrition", "physical_activity", "follow_up_plan", "lifestyle_and_wellness"):
+                    if not existing_guide.get(section) or not isinstance(existing_guide.get(section), dict):
+                        existing_guide[section] = kb_guidance.get(section, {})
+                    else:
+                        for subk, subv in kb_guidance.get(section, {}).items():
+                            if not existing_guide[section].get(subk):
+                                existing_guide[section][subk] = subv
+                if not existing_guide.get("warning_signs"):
+                    existing_guide["warning_signs"] = kb_guidance.get("warning_signs", [])
+                if not existing_guide.get("matched_conditions"):
+                    existing_guide["matched_conditions"] = kb_guidance.get("matched_conditions", [])
+                if not existing_guide.get("medication_precautions"):
+                    existing_guide["medication_precautions"] = kb_guidance.get("medication_precautions", [])
+        except Exception as e:
+            logger.warning("Error synthesizing patient_guide from knowledge base: %s", e)
 
     def map_to_diagnostic_state(self, analysis: Dict[str, Any]) -> Dict[str, Any]:
         """

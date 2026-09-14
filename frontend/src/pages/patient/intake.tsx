@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { Sparkles, Zap, FileText } from 'lucide-react';
 import apiClient from '../../services/api-client';
 import { useAuth } from '../../context/auth-context';
 
@@ -7,11 +8,17 @@ import PipelineVisualizer from '../../components/common/PipelineVisualizer';
 
 export default function PatientIntake() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { user } = useAuth();
+
+  const ocrPrefill = location.state?.prefilledFromOCR;
+  const isAutoRun = Boolean(location.state?.autoRun);
+
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loadingStage, setLoadingStage] = useState(0);
   const [errorMsg, setErrorMsg] = useState('');
+
   // Helper to calculate age from DOB
   const calculateAge = (dob: string): number | null => {
     if (!dob) return null;
@@ -25,11 +32,31 @@ export default function PatientIntake() {
     return age >= 0 ? age : null;
   };
 
-  // Pre-fill from user profile (from registration)
-  const [name, setName] = useState(user?.name || '');
-  const [dateOfBirth, setDateOfBirth] = useState(user?.date_of_birth || '');
-  const [gender, setGender] = useState(user?.gender || '');
-  const [chiefComplaint, setChiefComplaint] = useState('');
+  // Compute default age/DOB from OCR if needed
+  let calculatedDobFromOCR = '';
+  if (ocrPrefill?.patient_age) {
+    const birthYear = new Date().getFullYear() - Number(ocrPrefill.patient_age);
+    calculatedDobFromOCR = `${birthYear}-01-01`;
+  }
+
+  // Parse blood pressure if provided as e.g. "120/80"
+  let defaultSys: number | '' = '';
+  let defaultDia: number | '' = '';
+  if (ocrPrefill?.blood_pressure_reading) {
+    const parts = String(ocrPrefill.blood_pressure_reading).split('/');
+    if (parts.length === 2) {
+      defaultSys = parseInt(parts[0].replace(/\D/g, ''), 10) || '';
+      defaultDia = parseInt(parts[1].replace(/\D/g, ''), 10) || '';
+    }
+  }
+
+  // Pre-fill from user profile (from registration) or OCR findings
+  const [name, setName] = useState(user?.name || ocrPrefill?.patient_name || '');
+  const [dateOfBirth, setDateOfBirth] = useState(user?.date_of_birth || calculatedDobFromOCR);
+  const [gender, setGender] = useState(ocrPrefill?.patient_gender || user?.gender || '');
+  const [chiefComplaint, setChiefComplaint] = useState(
+    ocrPrefill?.patient_text || ocrPrefill?.document_findings || ''
+  );
   
   // Quick symptom selector list
   const quickSymptoms = [
@@ -52,16 +79,18 @@ export default function PatientIntake() {
   const [selectedSymptoms, setSelectedSymptoms] = useState<{name: string, duration_days: number}[]>([]);
   
   // Vitals State — ALL OPTIONAL
-  const [heartRate, setHeartRate] = useState<number | ''>('');
-  const [oxygenLevel, setOxygenLevel] = useState<number | ''>('');
-  const [systolicBp, setSystolicBp] = useState<number | ''>('');
-  const [diastolicBp, setDiastolicBp] = useState<number | ''>('');
-  const [temperature, setTemperature] = useState<number | ''>('');
-  const [cholesterol, setCholesterol] = useState<number | ''>('');
-  const [showAdvancedVitals, setShowAdvancedVitals] = useState(false);
+  const [heartRate, setHeartRate] = useState<number | ''>(ocrPrefill?.heart_rate || '');
+  const [oxygenLevel, setOxygenLevel] = useState<number | ''>(ocrPrefill?.oxygen_level || '');
+  const [systolicBp, setSystolicBp] = useState<number | ''>(defaultSys);
+  const [diastolicBp, setDiastolicBp] = useState<number | ''>(defaultDia);
+  const [temperature, setTemperature] = useState<number | ''>(ocrPrefill?.body_temperature || '');
+  const [cholesterol, setCholesterol] = useState<number | ''>(ocrPrefill?.cholesterol || '');
+  const [showAdvancedVitals, setShowAdvancedVitals] = useState(Boolean(defaultSys || defaultDia || ocrPrefill?.cholesterol));
 
   // History & Lifestyle Checkboxes
-  const [medicalHistory, setMedicalHistory] = useState<string[]>([]);
+  const [medicalHistory, setMedicalHistory] = useState<string[]>(
+    Array.isArray(ocrPrefill?.medical_history) ? ocrPrefill.medical_history : []
+  );
   const [lifestyleFactors, setLifestyleFactors] = useState<string[]>([]);
 
   const toggleSymptom = (name: string) => {
@@ -144,9 +173,25 @@ export default function PatientIntake() {
     'Almost done — preparing your results...',
   ];
 
-  const handleSubmit = async () => {
+  const executeSubmission = async (override?: {
+    name?: string;
+    dob?: string;
+    gender?: string;
+    complaint?: string;
+    vitals?: Record<string, number>;
+  }) => {
     setErrorMsg('');
-    
+
+    const targetName = override?.name ?? name;
+    const targetDob = override?.dob ?? dateOfBirth;
+    const targetGender = override?.gender ?? gender;
+    const targetComplaint = override?.complaint ?? chiefComplaint;
+
+    if (!targetComplaint?.trim()) {
+      setErrorMsg('Please describe what you are feeling or the clinical issue.');
+      return;
+    }
+
     // Only validate vitals IF they have values (all optional)
     if (heartRate !== '' && (Number(heartRate) < 30 || Number(heartRate) > 220)) {
       setErrorMsg('Heart rate must be between 30 and 220 bpm.');
@@ -177,19 +222,22 @@ export default function PatientIntake() {
       setLoadingStage(prev => (prev + 1) % loadingStages.length);
     }, 2500);
     
-    // Build vitals — only include fields that the user filled in
-    const vitals: Record<string, number> = {};
-    if (heartRate !== '') vitals.heart_rate = Number(heartRate);
-    if (oxygenLevel !== '') vitals.oxygen_level = Number(oxygenLevel);
-    if (systolicBp !== '') vitals.systolic_bp = Number(systolicBp);
-    if (diastolicBp !== '') vitals.diastolic_bp = Number(diastolicBp);
-    if (temperature !== '') vitals.temperature = Number(temperature);
-    if (cholesterol !== '') vitals.cholesterol = Number(cholesterol);
+    const vitals: Record<string, number> = override?.vitals || {};
+    if (!override?.vitals) {
+      if (heartRate !== '') vitals.heart_rate = Number(heartRate);
+      if (oxygenLevel !== '') vitals.oxygen_level = Number(oxygenLevel);
+      if (systolicBp !== '') vitals.systolic_bp = Number(systolicBp);
+      if (diastolicBp !== '') vitals.diastolic_bp = Number(diastolicBp);
+      if (temperature !== '') vitals.temperature = Number(temperature);
+      if (cholesterol !== '') vitals.cholesterol = Number(cholesterol);
+    }
+
+    const computedAge = calculateAge(targetDob) || (ocrPrefill?.patient_age ? Number(ocrPrefill.patient_age) : 35);
 
     const payload = {
-      age: calculateAge(dateOfBirth) || 0,
-      gender: gender,
-      chief_complaint: chiefComplaint,
+      age: computedAge,
+      gender: targetGender || 'Other',
+      chief_complaint: targetComplaint,
       selected_symptoms: selectedSymptoms,
       vitals: vitals,
       medical_history: medicalHistory,
@@ -217,6 +265,33 @@ export default function PatientIntake() {
       setIsSubmitting(false);
     }
   };
+
+  const handleSubmit = () => executeSubmission();
+
+  useEffect(() => {
+    if (isAutoRun && !isSubmitting) {
+      const activeName = name || user?.name || ocrPrefill?.patient_name || 'Patient';
+      const activeDob = dateOfBirth || calculatedDobFromOCR || '1990-01-01';
+      const activeGender = gender || ocrPrefill?.patient_gender || 'Other';
+      const activeComplaint = chiefComplaint || ocrPrefill?.patient_text || ocrPrefill?.document_findings || 'Consultation requested from clinical report findings.';
+
+      const autoVitals: Record<string, number> = {};
+      if (heartRate !== '') autoVitals.heart_rate = Number(heartRate);
+      if (oxygenLevel !== '') autoVitals.oxygen_level = Number(oxygenLevel);
+      if (systolicBp !== '') autoVitals.systolic_bp = Number(systolicBp);
+      if (diastolicBp !== '') autoVitals.diastolic_bp = Number(diastolicBp);
+      if (temperature !== '') autoVitals.temperature = Number(temperature);
+      if (cholesterol !== '') autoVitals.cholesterol = Number(cholesterol);
+
+      executeSubmission({
+        name: activeName,
+        dob: activeDob,
+        gender: activeGender,
+        complaint: activeComplaint,
+        vitals: autoVitals,
+      });
+    }
+  }, []);
 
   if (isSubmitting) {
     return (
@@ -260,6 +335,33 @@ export default function PatientIntake() {
           Tell us about your symptoms and our AI will help you understand what might be going on.
         </p>
       </div>
+
+      {/* OCR Ingestion Indicator Banner */}
+      {ocrPrefill && (
+        <div className="bg-gradient-to-r from-teal-50 to-sky-50 border border-teal-200 rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-700 flex items-center justify-center shrink-0">
+              <Sparkles className="w-5 h-5" />
+            </div>
+            <div>
+              <p className="text-xs font-bold text-slate-800">
+                Data Ingested from Medical Report (OCRAgent)
+              </p>
+              <p className="text-[11px] text-slate-500">
+                Extracted vitals, diagnoses, and lab findings have pre-filled this clinical assessment.
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => executeSubmission()}
+            className="w-full sm:w-auto px-4 py-2 bg-gradient-to-r from-teal-600 to-sky-600 hover:opacity-95 text-white font-bold text-xs rounded-xl shadow-sm transition whitespace-nowrap flex items-center justify-center gap-2"
+          >
+            <Zap className="w-3.5 h-3.5" />
+            <span>Launch Consultation Now</span>
+          </button>
+        </div>
+      )}
 
       {/* Stepper Header with Labels */}
       <div className="flex items-center justify-center space-x-2">

@@ -41,35 +41,48 @@ def _get_client():
         return None
 
 
-def _call_groq(prompt: str, model: str = "llama-3.3-70b-versatile",
+def _call_groq(prompt: str, model: str = None,
                temperature: float = 0.4, max_tokens: int = 900) -> str:
-    """Make a call to Groq API."""
+    """Make a call to Groq API with candidate model fallbacks."""
     client = _get_client()
     if not client:
         return ""
 
-    try:
-        response = client.chat.completions.create(
-            model=model,
-            messages=[
-                {
-                    "role": "system",
-                    "content": (
-                        "You are MedAgentix, a compassionate AI health assistant. "
-                        "You provide clear, friendly, non-alarming health guidance. "
-                        "You always remind users to see a doctor when needed. "
-                        "Never diagnose definitively. Never prescribe. Be warm and reassuring."
-                    ),
-                },
-                {"role": "user", "content": prompt},
-            ],
-            temperature=temperature,
-            max_tokens=max_tokens,
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        print(f"  [WARN] Groq API call failed: {e}")
-        return ""
+    candidates = [m for m in [
+        model,
+        os.getenv("GROQ_MODEL", "").strip(),
+        "qwen/qwen3.8-27b",
+        "llama-3.3-70b-versatile",
+        "llama3-70b-8192",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b",
+    ] if m]
+
+    for cand in candidates:
+        try:
+            response = client.chat.completions.create(
+                model=cand,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "You are MedAgentix, a compassionate AI health assistant. "
+                            "You provide clear, friendly, non-alarming health guidance. "
+                            "You always remind users to see a doctor when needed. "
+                            "Never diagnose definitively. Never prescribe. Be warm and reassuring."
+                        ),
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+                temperature=temperature,
+                max_tokens=max_tokens,
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            continue
+
+    print("  [WARN] All Groq model candidates failed.")
+    return ""
 
 
 # ============================================================

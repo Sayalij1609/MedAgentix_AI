@@ -22,6 +22,11 @@ import time
 import logging
 from typing import Dict, Any, Optional
 
+try:
+    import config_loader  # Ensure .env is loaded
+except ImportError:
+    pass
+
 logger = logging.getLogger("medagentix.groq_ocr")
 
 # ---------------------------------------------------------------------------
@@ -37,15 +42,21 @@ YOUR CLINICAL MISSION:
 1. Accurately detect the document type: 'lab_report', 'prescription', 'discharge_summary', 'radiology_report', or 'medical_report'.
 2. Extract all patient, clinician, and facility metadata.
 3. Clean and normalize all medical terminology (correcting OCR misspellings).
-4. Extract complete details and populate the relevant specialized analysis section:
-   - If lab_report: populate 'lab_analysis' (all biomarkers, values, reference ranges, flags, organ system impact, clinical correlation, follow-up tests).
-   - If prescription: populate 'prescription_analysis' (all drugs, dosage, frequency, therapeutic indication, drug-drug interaction warnings, adherence schedule).
-   - If discharge_summary or medical_report: populate 'clinical_notes_analysis' (vitals, diagnoses, hospital course, red-flag symptoms, post-care).
-   - If radiology_report: populate 'radiology_analysis' (modality, anatomical site, findings, radiologist impression, plain-English translation).
+4. Extract complete details and populate ONLY the single relevant specialized analysis section (do NOT generate unused sections):
+   - If lab_report: populate ONLY 'lab_analysis' (all biomarkers, values, reference ranges, flags, organ system impact, clinical correlation, follow-up tests).
+   - If prescription: populate ONLY 'prescription_analysis' (all drugs, dosage, frequency, therapeutic indication, drug-drug interaction warnings, adherence schedule).
+   - If discharge_summary or medical_report: populate ONLY 'clinical_notes_analysis' (vitals, diagnoses, hospital course, red-flag symptoms, post-care).
+   - If radiology_report: populate ONLY 'radiology_analysis' (modality, anatomical site, findings, radiologist impression, plain-English translation).
 5. Generate dual-perspective summaries:
    - 'doctor_notes': Clinically rigorous, objective medical synthesis for doctors.
    - 'patient_explanation': Clear, warm, empathetic, jargon-free explanation for the patient.
 6. Populate top-level 'medications' and 'lab_results' arrays for seamless backwards compatibility.
+7. Populate 'patient_guide' with concise, practical recommendations (3-5 high-impact bullet points each):
+   - 'diet_and_nutrition': foods to enjoy, foods to limit/avoid, hydration advice.
+   - 'physical_activity': recommended activities, weekly targets, safe movement precautions.
+   - 'follow_up_plan': next recommended diagnostic tests, retest timeline, home monitoring checklist.
+   - 'lifestyle_and_wellness': sleep advice, stress management, daily wellness routines.
+   - 'warning_signs': red-flag symptoms requiring immediate medical evaluation.
 
 STRICT CLINICAL RULES:
 - Never invent patient numbers, names, or values not in the text.
@@ -69,6 +80,33 @@ REQUIRED JSON STRUCTURE:
   "dual_summary": {
     "doctor_notes": "Clinical synthesis for physicians including differential considerations and organ status",
     "patient_explanation": "Empathetic, clear, plain-language translation of what this document means for the patient"
+  },
+  "patient_guide": {
+    "diet_and_nutrition": {
+      "foods_to_enjoy": ["Leafy greens, oats, quinoa, lentils, berries"],
+      "foods_to_limit": ["Refined sugars, sweet beverages, high sodium foods"],
+      "hydration_advice": "Drink 2.5–3 liters of water daily"
+    },
+    "physical_activity": {
+      "recommended_activities": ["Brisk walking 30 mins daily post-meals", "Gentle resistance training"],
+      "weekly_target": "150 minutes of moderate aerobic activity",
+      "safety_precautions": ["Avoid sudden heavy exertion", "Stay well-hydrated"]
+    },
+    "follow_up_plan": {
+      "next_recommended_tests": ["Repeat biomarker panel in 90 days", "Routine clinical consultation"],
+      "retest_timeline": "90 days",
+      "home_monitoring": ["Log fasting values or blood pressure in a home diary"]
+    },
+    "lifestyle_and_wellness": {
+      "sleep_advice": "Ensure 7–8 hours of consistent, restorative sleep",
+      "stress_management": "Daily 10-minute mindful breathing or light relaxation",
+      "daily_routines": ["Take prescribed doses with scheduled meals", "Consistent sleep schedule"]
+    },
+    "warning_signs": [
+      "Severe or persistent dizziness",
+      "Shortness of breath at rest",
+      "Sudden extreme biomarker fluctuations"
+    ]
   },
   "lab_analysis": {
     "test_results": [
@@ -219,11 +257,24 @@ def normalize_ocr_output(ocr_output: Dict[str, Any]) -> Dict[str, Any]:
         for s in segments[:70]
     ) or "(no segments)"
 
+    # Pre-retrieve clinical guidance from local knowledge base to seed Groq prompt
+    from ocr.clinical_knowledge_retriever import retrieve_clinical_guidance
+    prelim_guidance = retrieve_clinical_guidance([], [], [], raw_text=raw_text)
+    kb_summary_str = json.dumps({
+        "foods_to_enjoy": prelim_guidance.get("diet_and_nutrition", {}).get("foods_to_enjoy", [])[:4],
+        "foods_to_limit": prelim_guidance.get("diet_and_nutrition", {}).get("foods_to_limit", [])[:3],
+        "recommended_activities": prelim_guidance.get("physical_activity", {}).get("recommended_activities", [])[:3],
+        "follow_up_tests": prelim_guidance.get("follow_up_plan", {}).get("next_recommended_tests", [])[:3],
+        "warning_signs": prelim_guidance.get("warning_signs", [])[:3],
+    }, indent=2)
+
     user_prompt = (
-        f"--- OCR EXTRACTED TEXT ---\n{raw_text[:6000]}\n\n"
+        f"--- OCR EXTRACTED TEXT ---\n{raw_text[:5000]}\n\n"
         f"--- SEGMENTS WITH CONFIDENCE ---\n{seg_preview}\n\n"
+        f"--- VERIFIED CLINICAL GUIDANCE FROM KNOWLEDGE BASE ---\n{kb_summary_str}\n\n"
         "Analyze this medical document thoroughly. Classify its document type, "
         "extract all clinical entities, populate the relevant specialized section, "
+        "synthesize a friendly, actionable patient_guide adhering to verified clinical knowledge base guidelines, "
         "generate doctor notes and patient explanation, and output ONLY valid JSON."
     )
 
@@ -237,16 +288,43 @@ def normalize_ocr_output(ocr_output: Dict[str, Any]) -> Dict[str, Any]:
         )
 
         start = time.time()
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[
-                {"role": "system", "content": _DYNAMIC_SYSTEM_PROMPT},
-                {"role": "user", "content": user_prompt},
-            ],
-            temperature=0.1,
-            max_tokens=3000,
-            response_format={"type": "json_object"},
-        )
+        # Prioritize fast, high-accuracy JSON models available on the Groq key
+        configured_model = os.getenv("GROQ_OCR_MODEL", "").strip()
+        candidate_models = [m for m in [
+            configured_model,
+            "openai/gpt-oss-120b",
+            "openai/gpt-oss-20b",
+            "qwen/qwen3.8-27b",
+            "groq/compound",
+        ] if m]
+
+        response = None
+        last_error = None
+        used_model = None
+
+        for model_name in candidate_models:
+            try:
+                logger.info("Attempting Groq completion with model: %s", model_name)
+                response = client.chat.completions.create(
+                    model=model_name,
+                    messages=[
+                        {"role": "system", "content": _DYNAMIC_SYSTEM_PROMPT},
+                        {"role": "user", "content": user_prompt},
+                    ],
+                    temperature=0.1,
+                    max_tokens=int(os.getenv("GROQ_MAX_TOKENS", "1200")),
+                    response_format={"type": "json_object"},
+                )
+                used_model = model_name
+                logger.info("Groq model %s succeeded!", model_name)
+                break
+            except Exception as model_err:
+                last_error = model_err
+                logger.warning("Groq model %s failed (%s), trying next candidate...", model_name, model_err)
+
+        if response is None:
+            raise RuntimeError(f"All Groq models failed. Last error: {last_error}")
+
         elapsed = round(time.time() - start, 2)
 
         raw_response = response.choices[0].message.content.strip()
@@ -263,6 +341,32 @@ def normalize_ocr_output(ocr_output: Dict[str, Any]) -> Dict[str, Any]:
                 d.get("condition") if isinstance(d, dict) else str(d)
                 for d in parsed["clinical_notes_analysis"]["diagnoses"]
             ]
+
+        # Ground and guarantee complete patient_guide using local clinical knowledge bases
+        full_kb_guidance = retrieve_clinical_guidance(
+            abnormal_biomarkers=parsed.get("lab_results", []),
+            medications=parsed.get("medications", []),
+            diagnoses=parsed.get("diagnoses", []),
+            raw_text=raw_text,
+        )
+
+        if not parsed.get("patient_guide") or not isinstance(parsed["patient_guide"], dict):
+            parsed["patient_guide"] = full_kb_guidance
+        else:
+            pg = parsed["patient_guide"]
+            for pillar in ("diet_and_nutrition", "physical_activity", "follow_up_plan", "lifestyle_and_wellness"):
+                if not pg.get(pillar) or not isinstance(pg.get(pillar), dict):
+                    pg[pillar] = full_kb_guidance.get(pillar, {})
+                else:
+                    for k, v in full_kb_guidance.get(pillar, {}).items():
+                        if not pg[pillar].get(k):
+                            pg[pillar][k] = v
+            if not pg.get("warning_signs"):
+                pg["warning_signs"] = full_kb_guidance.get("warning_signs", [])
+            if not pg.get("matched_conditions"):
+                pg["matched_conditions"] = full_kb_guidance.get("matched_conditions", [])
+            if not pg.get("medication_precautions"):
+                pg["medication_precautions"] = full_kb_guidance.get("medication_precautions", [])
 
         logger.info(
             "Groq clinical analysis successful: type=%s, elapsed=%.2fs",
