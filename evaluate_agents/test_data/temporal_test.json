@@ -1,0 +1,213 @@
+{
+  "duration_parsing": [
+    {
+      "text": "few hours",
+      "expected_bucket": "< 1 day"
+    },
+    {
+      "text": "today",
+      "expected_bucket": "< 1 day"
+    },
+    {
+      "text": "just now",
+      "expected_bucket": "< 1 day"
+    },
+    {
+      "text": "this morning",
+      "expected_bucket": "< 1 day"
+    },
+    {
+      "text": "since morning",
+      "expected_bucket": "< 1 day"
+    },
+    {
+      "text": "less than a day",
+      "expected_bucket": "< 1 day"
+    },
+    {
+      "text": "1 day",
+      "expected_bucket": "< 1 day"
+    },
+    {
+      "text": "2 days",
+      "expected_bucket": "1-3 days"
+    },
+    {
+      "text": "3 days",
+      "expected_bucket": "1-3 days"
+    },
+    {
+      "text": "yesterday",
+      "expected_bucket": "1-3 days"
+    },
+    {
+      "text": "since yesterday",
+      "expected_bucket": "1-3 days"
+    },
+    {
+      "text": "couple days",
+      "expected_bucket": "1-3 days"
+    },
+    {
+      "text": "5 days",
+      "expected_bucket": "3-7 days"
+    },
+    {
+      "text": "a week",
+      "expected_bucket": "3-7 days"
+    },
+    {
+      "text": "about a week",
+      "expected_bucket": "3-7 days"
+    },
+    {
+      "text": "7 days",
+      "expected_bucket": "3-7 days"
+    },
+    {
+      "text": "4 days",
+      "expected_bucket": "3-7 days"
+    },
+    {
+      "text": "10 days",
+      "expected_bucket": "1-2 weeks"
+    },
+    {
+      "text": "2 weeks",
+      "expected_bucket": "1-2 weeks"
+    },
+    {
+      "text": "14 days",
+      "expected_bucket": "1-2 weeks"
+    },
+    {
+      "text": "about 2 weeks",
+      "expected_bucket": "1-2 weeks"
+    },
+    {
+      "text": "3 weeks",
+      "expected_bucket": "2-4 weeks"
+    },
+    {
+      "text": "about a month",
+      "expected_bucket": "2-4 weeks"
+    },
+    {
+      "text": "20 days",
+      "expected_bucket": "2-4 weeks"
+    },
+    {
+      "text": "2 months",
+      "expected_bucket": "1-3 months"
+    },
+    {
+      "text": "a month",
+      "expected_bucket": "1-3 months"
+    },
+    {
+      "text": "couple months",
+      "expected_bucket": "1-3 months"
+    },
+    {
+      "text": "6 weeks",
+      "expected_bucket": "1-3 months"
+    },
+    {
+      "text": "6 months",
+      "expected_bucket": "Chronic (>3 months)"
+    },
+    {
+      "text": "a year",
+      "expected_bucket": "Chronic (>3 months)"
+    },
+    {
+      "text": "chronic",
+      "expected_bucket": "Chronic (>3 months)"
+    },
+    {
+      "text": "long time",
+      "expected_bucket": "Chronic (>3 months)"
+    },
+    {
+      "text": "years",
+      "expected_bucket": "Chronic (>3 months)"
+    }
+  ],
+  "urgency_classification": [
+    {
+      "symptom": "Chest Pain",
+      "duration": "few hours",
+      "expected_urgency": "Critical"
+    },
+    {
+      "symptom": "Chest Pain",
+      "duration": "3 days",
+      "expected_urgency": "Critical"
+    },
+    {
+      "symptom": "Fever",
+      "duration": "2 days",
+      "expected_urgency": "Medium"
+    },
+    {
+      "symptom": "Fever",
+      "duration": "2 weeks",
+      "expected_urgency": "High"
+    },
+    {
+      "symptom": "Cough",
+      "duration": "3 days",
+      "expected_urgency": "Low"
+    },
+    {
+      "symptom": "Cough",
+      "duration": "3 months",
+      "expected_urgency": "High"
+    },
+    {
+      "symptom": "Headache",
+      "duration": "today",
+      "expected_urgency": "Low"
+    },
+    {
+      "symptom": "Headache",
+      "duration": "2 weeks",
+      "expected_urgency": "Medium"
+    },
+    {
+      "symptom": "Breathlessness",
+      "duration": "few hours",
+      "expected_urgency": "Critical"
+    },
+    {
+      "symptom": "Abdominal Pain",
+      "duration": "5 days",
+      "expected_urgency": "High"
+    },
+    {
+      "symptom": "Fatigue",
+      "duration": "a month",
+      "expected_urgency": "High"
+    },
+    {
+      "symptom": "Dizziness",
+      "duration": "today",
+      "expected_urgency": "Low"
+    },
+    {
+      "symptom": "Joint Pain",
+      "duration": "chronic",
+      "expected_urgency": "Medium"
+    },
+    {
+      "symptom": "Rash",
+      "duration": "3 days",
+      "expected_urgency": "Medium"
+    },
+    {
+      "symptom": "Vomiting",
+      "duration": "2 days",
+      "expected_urgency": "Medium"
+    }
+  ]
+}

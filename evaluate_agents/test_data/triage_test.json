@@ -1,0 +1,634 @@
+[
+  {
+    "id": "RED_001",
+    "symptoms": [
+      "chest pain",
+      "fever",
+      "headache"
+    ],
+    "confidence": 0.74,
+    "patient_age": 45,
+    "symptom_text": "Patient reports chest pain, fever, headache",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: chest pain"
+  },
+  {
+    "id": "RED_002",
+    "symptoms": [
+      "difficulty breathing"
+    ],
+    "confidence": 0.38,
+    "patient_age": 25,
+    "symptom_text": "Patient reports difficulty breathing",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: difficulty breathing"
+  },
+  {
+    "id": "RED_003",
+    "symptoms": [
+      "loss of consciousness",
+      "headache",
+      "fever"
+    ],
+    "confidence": 0.65,
+    "patient_age": 25,
+    "symptom_text": "Patient reports loss of consciousness, headache, fever",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: loss of consciousness"
+  },
+  {
+    "id": "RED_004",
+    "symptoms": [
+      "seizure"
+    ],
+    "confidence": 0.36,
+    "patient_age": 45,
+    "symptom_text": "Patient reports seizure",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: seizure"
+  },
+  {
+    "id": "RED_005",
+    "symptoms": [
+      "paralysis",
+      "headache",
+      "fever"
+    ],
+    "confidence": 0.64,
+    "patient_age": 80,
+    "symptom_text": "Patient reports paralysis, headache, fever",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: paralysis"
+  },
+  {
+    "id": "RED_006",
+    "symptoms": [
+      "coughing blood"
+    ],
+    "confidence": 0.57,
+    "patient_age": 65,
+    "symptom_text": "Patient reports coughing blood",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: coughing blood"
+  },
+  {
+    "id": "RED_007",
+    "symptoms": [
+      "vomiting blood"
+    ],
+    "confidence": 0.76,
+    "patient_age": 45,
+    "symptom_text": "Patient reports vomiting blood",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: vomiting blood"
+  },
+  {
+    "id": "RED_008",
+    "symptoms": [
+      "severe abdominal pain",
+      "weakness",
+      "fatigue"
+    ],
+    "confidence": 0.47,
+    "patient_age": 45,
+    "symptom_text": "Patient reports severe abdominal pain, weakness, fatigue",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: severe abdominal pain"
+  },
+  {
+    "id": "RED_009",
+    "symptoms": [
+      "severe headache",
+      "fever"
+    ],
+    "confidence": 0.36,
+    "patient_age": 25,
+    "symptom_text": "Patient reports severe headache, fever",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: severe headache"
+  },
+  {
+    "id": "RED_010",
+    "symptoms": [
+      "slurred speech",
+      "fatigue"
+    ],
+    "confidence": 0.66,
+    "patient_age": 25,
+    "symptom_text": "Patient reports slurred speech, fatigue",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: slurred speech"
+  },
+  {
+    "id": "RED_011",
+    "symptoms": [
+      "altered mental status",
+      "weakness",
+      "fever"
+    ],
+    "confidence": 0.88,
+    "patient_age": 80,
+    "symptom_text": "Patient reports altered mental status, weakness, fever",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: altered mental status"
+  },
+  {
+    "id": "RED_012",
+    "symptoms": [
+      "confusion"
+    ],
+    "confidence": 0.63,
+    "patient_age": 65,
+    "symptom_text": "Patient reports confusion",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: confusion"
+  },
+  {
+    "id": "RED_013",
+    "symptoms": [
+      "heart palpitations",
+      "nausea",
+      "fever"
+    ],
+    "confidence": 0.33,
+    "patient_age": 45,
+    "symptom_text": "Patient reports heart palpitations, nausea, fever",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: heart palpitations"
+  },
+  {
+    "id": "RED_014",
+    "symptoms": [
+      "bluish lips",
+      "fever"
+    ],
+    "confidence": 0.81,
+    "patient_age": 25,
+    "symptom_text": "Patient reports bluish lips, fever",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: bluish lips"
+  },
+  {
+    "id": "RED_015",
+    "symptoms": [
+      "suicidal thoughts",
+      "fatigue"
+    ],
+    "confidence": 0.57,
+    "patient_age": 65,
+    "symptom_text": "Patient reports suicidal thoughts, fatigue",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: suicidal thoughts"
+  },
+  {
+    "id": "RED_016",
+    "symptoms": [
+      "blood in stool"
+    ],
+    "confidence": 0.52,
+    "patient_age": 45,
+    "symptom_text": "Patient reports blood in stool",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: blood in stool"
+  },
+  {
+    "id": "RED_017",
+    "symptoms": [
+      "stiff neck",
+      "fatigue",
+      "fever"
+    ],
+    "confidence": 0.67,
+    "patient_age": 45,
+    "symptom_text": "Patient reports stiff neck, fatigue, fever",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: stiff neck"
+  },
+  {
+    "id": "RED_018",
+    "symptoms": [
+      "anaphylaxis",
+      "nausea",
+      "headache"
+    ],
+    "confidence": 0.58,
+    "patient_age": 65,
+    "symptom_text": "Patient reports anaphylaxis, nausea, headache",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: anaphylaxis"
+  },
+  {
+    "id": "RED_019",
+    "symptoms": [
+      "sudden vision loss",
+      "headache",
+      "nausea"
+    ],
+    "confidence": 0.71,
+    "patient_age": 25,
+    "symptom_text": "Patient reports sudden vision loss, headache, nausea",
+    "expected_tier": "RED",
+    "reason": "Red-flag symptom: sudden vision loss"
+  },
+  {
+    "id": "RED_TEXT_001",
+    "symptoms": [
+      "fever"
+    ],
+    "confidence": 0.5,
+    "patient_age": 40,
+    "symptom_text": "I can't breathe and my chest is tight",
+    "expected_tier": "RED",
+    "reason": "Red-flag phrase in symptom text"
+  },
+  {
+    "id": "RED_TEXT_002",
+    "symptoms": [
+      "dizziness"
+    ],
+    "confidence": 0.5,
+    "patient_age": 40,
+    "symptom_text": "My heart is racing and I feel like I'm passing out",
+    "expected_tier": "RED",
+    "reason": "Red-flag phrase in symptom text"
+  },
+  {
+    "id": "RED_TEXT_003",
+    "symptoms": [
+      "headache"
+    ],
+    "confidence": 0.5,
+    "patient_age": 40,
+    "symptom_text": "I blacked out at work today",
+    "expected_tier": "RED",
+    "reason": "Red-flag phrase in symptom text"
+  },
+  {
+    "id": "RED_TEXT_004",
+    "symptoms": [
+      "fatigue"
+    ],
+    "confidence": 0.5,
+    "patient_age": 40,
+    "symptom_text": "The pain is very severe and I can't breathe",
+    "expected_tier": "RED",
+    "reason": "Red-flag phrase in symptom text"
+  },
+  {
+    "id": "GREEN_001",
+    "symptoms": [
+      "runny nose",
+      "sneezing",
+      "mild fever"
+    ],
+    "confidence": 0.2,
+    "patient_age": 20,
+    "symptom_text": "Patient has runny nose, sneezing, mild fever for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_002",
+    "symptoms": [
+      "sore throat",
+      "cough",
+      "fatigue"
+    ],
+    "confidence": 0.46,
+    "patient_age": 30,
+    "symptom_text": "Patient has sore throat, cough, fatigue for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_003",
+    "symptoms": [
+      "headache",
+      "tiredness",
+      "loss of appetite"
+    ],
+    "confidence": 0.22,
+    "patient_age": 20,
+    "symptom_text": "Patient has headache, tiredness, loss of appetite for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_004",
+    "symptoms": [
+      "mild cough",
+      "nasal congestion",
+      "body aches"
+    ],
+    "confidence": 0.51,
+    "patient_age": 40,
+    "symptom_text": "Patient has mild cough, nasal congestion, body aches for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_005",
+    "symptoms": [
+      "low grade fever",
+      "weakness",
+      "sneezing"
+    ],
+    "confidence": 0.49,
+    "patient_age": 30,
+    "symptom_text": "Patient has low grade fever, weakness, sneezing for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_006",
+    "symptoms": [
+      "watery eyes",
+      "sneezing",
+      "runny nose"
+    ],
+    "confidence": 0.2,
+    "patient_age": 30,
+    "symptom_text": "Patient has watery eyes, sneezing, runny nose for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_007",
+    "symptoms": [
+      "mild headache",
+      "fatigue",
+      "mild cough"
+    ],
+    "confidence": 0.28,
+    "patient_age": 40,
+    "symptom_text": "Patient has mild headache, fatigue, mild cough for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_008",
+    "symptoms": [
+      "sore throat",
+      "runny nose",
+      "mild fever"
+    ],
+    "confidence": 0.31,
+    "patient_age": 30,
+    "symptom_text": "Patient has sore throat, runny nose, mild fever for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_009",
+    "symptoms": [
+      "dry cough",
+      "mild tiredness"
+    ],
+    "confidence": 0.16,
+    "patient_age": 40,
+    "symptom_text": "Patient has dry cough, mild tiredness for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_010",
+    "symptoms": [
+      "nasal congestion",
+      "sneezing",
+      "throat pain"
+    ],
+    "confidence": 0.35,
+    "patient_age": 30,
+    "symptom_text": "Patient has nasal congestion, sneezing, throat pain for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_011",
+    "symptoms": [
+      "body aches",
+      "fatigue",
+      "mild fever"
+    ],
+    "confidence": 0.44,
+    "patient_age": 30,
+    "symptom_text": "Patient has body aches, fatigue, mild fever for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_012",
+    "symptoms": [
+      "cough",
+      "runny nose",
+      "sneezing"
+    ],
+    "confidence": 0.5,
+    "patient_age": 30,
+    "symptom_text": "Patient has cough, runny nose, sneezing for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_013",
+    "symptoms": [
+      "headache",
+      "fatigue"
+    ],
+    "confidence": 0.26,
+    "patient_age": 20,
+    "symptom_text": "Patient has headache, fatigue for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_014",
+    "symptoms": [
+      "mild nausea",
+      "weakness"
+    ],
+    "confidence": 0.33,
+    "patient_age": 20,
+    "symptom_text": "Patient has mild nausea, weakness for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "GREEN_015",
+    "symptoms": [
+      "sore throat",
+      "mild cough"
+    ],
+    "confidence": 0.44,
+    "patient_age": 20,
+    "symptom_text": "Patient has sore throat, mild cough for a few days",
+    "expected_tier": "GREEN",
+    "reason": "Mild common illness symptoms, low severity, no red flags"
+  },
+  {
+    "id": "YELLOW_001",
+    "symptoms": [
+      "vomiting",
+      "abdominal pain",
+      "dizziness"
+    ],
+    "confidence": 0.56,
+    "patient_age": 30,
+    "symptom_text": "Patient presents with vomiting, abdominal pain, dizziness",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "YELLOW_002",
+    "symptoms": [
+      "high fever",
+      "rash",
+      "joint pain"
+    ],
+    "confidence": 0.82,
+    "patient_age": 50,
+    "symptom_text": "Patient presents with high fever, rash, joint pain",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "YELLOW_003",
+    "symptoms": [
+      "diarrhea",
+      "abdominal pain",
+      "nausea"
+    ],
+    "confidence": 0.74,
+    "patient_age": 50,
+    "symptom_text": "Patient presents with diarrhea, abdominal pain, nausea",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "YELLOW_004",
+    "symptoms": [
+      "back pain",
+      "nausea",
+      "vomiting"
+    ],
+    "confidence": 0.65,
+    "patient_age": 50,
+    "symptom_text": "Patient presents with back pain, nausea, vomiting",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "YELLOW_005",
+    "symptoms": [
+      "dizziness",
+      "rash",
+      "swelling"
+    ],
+    "confidence": 0.71,
+    "patient_age": 70,
+    "symptom_text": "Patient presents with dizziness, rash, swelling",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "YELLOW_006",
+    "symptoms": [
+      "high fever",
+      "joint pain",
+      "back pain"
+    ],
+    "confidence": 0.84,
+    "patient_age": 30,
+    "symptom_text": "Patient presents with high fever, joint pain, back pain",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "YELLOW_007",
+    "symptoms": [
+      "vomiting",
+      "diarrhea",
+      "high fever"
+    ],
+    "confidence": 0.77,
+    "patient_age": 30,
+    "symptom_text": "Patient presents with vomiting, diarrhea, high fever",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "YELLOW_008",
+    "symptoms": [
+      "abdominal pain",
+      "nausea",
+      "dizziness"
+    ],
+    "confidence": 0.77,
+    "patient_age": 70,
+    "symptom_text": "Patient presents with abdominal pain, nausea, dizziness",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "YELLOW_009",
+    "symptoms": [
+      "swelling",
+      "rash",
+      "joint pain"
+    ],
+    "confidence": 0.8,
+    "patient_age": 70,
+    "symptom_text": "Patient presents with swelling, rash, joint pain",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "YELLOW_010",
+    "symptoms": [
+      "high fever",
+      "vomiting",
+      "dizziness"
+    ],
+    "confidence": 0.64,
+    "patient_age": 50,
+    "symptom_text": "Patient presents with high fever, vomiting, dizziness",
+    "expected_tier": "YELLOW",
+    "reason": "Moderate symptoms requiring medical attention"
+  },
+  {
+    "id": "EDGE_001",
+    "symptoms": [
+      "fever",
+      "cough"
+    ],
+    "confidence": 0.4,
+    "patient_age": 80,
+    "symptom_text": "80-year-old with fever and cough",
+    "expected_tier": "YELLOW",
+    "reason": "Elderly patient with mild symptoms gets age bump"
+  },
+  {
+    "id": "EDGE_002",
+    "symptoms": [
+      "fever",
+      "cough",
+      "runny nose"
+    ],
+    "confidence": 0.3,
+    "patient_age": 3,
+    "symptom_text": "3-year-old with fever and cough",
+    "expected_tier": "YELLOW",
+    "reason": "Pediatric patient with symptoms gets age bump"
+  },
+  {
+    "id": "EDGE_003",
+    "symptoms": [
+      "headache"
+    ],
+    "confidence": 0.2,
+    "patient_age": 25,
+    "symptom_text": "Just a headache",
+    "expected_tier": "GREEN",
+    "reason": "Single mild symptom"
+  }
+]

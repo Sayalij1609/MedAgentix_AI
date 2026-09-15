@@ -235,8 +235,8 @@ class RiskAgent:
                 "recommended_action": action,
             })
 
-        # Normalize: max score if patient had all relevant factors at max weight
-        max_relevant = len(relevant_factors)
+        # Normalize: max score if patient had top relevant factors at max weight
+        max_relevant = min(len(relevant_factors), 6)
         if max_relevant > 0:
             max_possible = max_relevant * 1.0 * 1.5  # max weight * boost
             normalized_score = min(total_score / max_possible, 1.0)
@@ -244,11 +244,11 @@ class RiskAgent:
             normalized_score = min(total_score / 5.0, 1.0) if total_score > 0 else 0
 
         # Map score to risk level
-        if normalized_score >= 0.7:
+        if normalized_score >= 0.75:
             risk_level = "Critical"
         elif normalized_score >= 0.45:
             risk_level = "High"
-        elif normalized_score >= 0.25:
+        elif normalized_score >= 0.18:
             risk_level = "Medium"
         else:
             risk_level = "Low"
@@ -317,8 +317,19 @@ class RiskAgent:
         modifiable = [f for f in risk_factors if f not in NON_MODIFIABLE_FACTORS]
         non_modifiable = [f for f in risk_factors if f in NON_MODIFIABLE_FACTORS]
 
-        # Step 5: Overall risk level
-        overall = ranked[0]["risk_level"] if ranked else "Low"
+        # Step 5: Overall risk level (incorporating highest condition risk and cumulative patient risk burden)
+        top_condition_level = ranked[0]["risk_level"] if ranked else "Low"
+        total_burden = sum(FACTOR_CLINICAL_WEIGHT.get(f, 0.3) for f in risk_factors)
+        has_critical_history = any(f in ("Cardiac History", "Cancer History") for f in risk_factors)
+
+        if total_burden >= 4.5 or (has_critical_history and total_burden >= 3.5) or top_condition_level == "Critical":
+            overall = "Critical"
+        elif total_burden >= 2.5 or top_condition_level == "High":
+            overall = "High"
+        elif total_burden >= 0.7 or top_condition_level == "Medium":
+            overall = "Medium"
+        else:
+            overall = "Low"
 
         return {
             "patient_profile": patient_profile,

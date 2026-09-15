@@ -1,0 +1,62 @@
+[
+  {
+    "id": "E2E_001",
+    "patient_text": "I have severe chest pain and difficulty breathing",
+    "patient_age": 55,
+    "patient_gender": "Male",
+    "heart_rate": 130,
+    "oxygen_level": 89,
+    "blood_pressure": "90/60",
+    "body_temperature": 101.5,
+    "expected_triage": "RED",
+    "expected_urgency": "Critical"
+  },
+  {
+    "id": "E2E_002",
+    "patient_text": "Runny nose, sneezing, and mild cough for 2 days",
+    "patient_age": 25,
+    "patient_gender": "Female",
+    "heart_rate": 72,
+    "oxygen_level": 98,
+    "blood_pressure": "115/75",
+    "body_temperature": 99.0,
+    "expected_triage": "GREEN",
+    "expected_urgency": "Medium"
+  },
+  {
+    "id": "E2E_003",
+    "patient_text": "High fever with vomiting and dizziness for 5 days",
+    "patient_age": 40,
+    "patient_gender": "Male",
+    "heart_rate": 105,
+    "oxygen_level": 95,
+    "blood_pressure": "130/85",
+    "body_temperature": 103.0,
+    "expected_triage": "YELLOW",
+    "expected_urgency": "High"
+  },
+  {
+    "id": "E2E_004",
+    "patient_text": "Joint pain and fatigue for several months",
+    "patient_age": 60,
+    "patient_gender": "Female",
+    "heart_rate": 70,
+    "oxygen_level": 97,
+    "blood_pressure": "135/88",
+    "body_temperature": 98.4,
+    "expected_triage": "YELLOW",
+    "expected_urgency": "Medium"
+  },
+  {
+    "id": "E2E_005",
+    "patient_text": "Seizure and confusion, found unresponsive",
+    "patient_age": 50,
+    "patient_gender": "Male",
+    "heart_rate": 145,
+    "oxygen_level": 83,
+    "blood_pressure": "85/50",
+    "body_temperature": 104.5,
+    "expected_triage": "RED",
+    "expected_urgency": "Critical"
+  }
+]

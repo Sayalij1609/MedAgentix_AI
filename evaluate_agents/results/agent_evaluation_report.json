@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-09-15T10:41:28.671998",
+  "total_agents_evaluated": 10,
+  "total_evaluation_time_seconds": 69.74,
+  "clinical_safety": {
+    "under_triage_rate": 0.0,
+    "under_triage_pass": true,
+    "critical_sensitivity": 100.0,
+    "critical_safety_pass": true,
+    "overall_pass": true
+  },
+  "agents": {
+    "Triage Agent": {
+      "agent": "Triage Agent",
+      "algorithm": "Rule-Based (Symptom Severity Scoring)",
+      "test_cases": 51,
+      "accuracy": 96.08,
+      "red_sensitivity_recall": 100.0,
+      "green_precision": 88.89,
+      "under_triage_rate": 0.0,
+      "over_triage_rate": 0.0,
+      "cohens_kappa": 0.9387,
+      "mean_latency_ms": 0.02,
+      "critical_safety_pass": true
+    },
+    "Temporal Agent": {
+      "agent": "Temporal Agent",
+      "algorithm": "Clinical Rule Engine + XGBoost (Supplementary)",
+      "duration_parse_accuracy": 100.0,
+      "duration_parse_cases": 33,
+      "urgency_accuracy": 100.0,
+      "urgency_cases": 15,
+      "mean_latency_ms": 0.0
+    },
+    "Risk Assessment Agent": {
+      "agent": "Risk Assessment Agent",
+      "algorithm": "XGBoost + Clinical Rule Engine",
+      "test_cases": 8,
+      "accuracy": 100.0,
+      "high_critical_recall": 100.0,
+      "mean_latency_ms": 0.0
+    },
+    "Recommendation Agent": {
+      "agent": "Recommendation Agent",
+      "algorithm": "Knowledge-Based (Drug + Diagnostic KB)",
+      "test_cases": 41,
+      "disease_coverage": 100.0,
+      "drug_recommendation_rate": 100.0,
+      "test_recommendation_rate": 100.0,
+      "lifestyle_recommendation_rate": 100.0,
+      "mean_latency_ms": 0.1
+    },
+    "Differential Diagnosis Agent": {
+      "agent": "Differential Diagnosis Agent",
+      "algorithm": "Multi-Class XGBoost (multi:softprob)",
+      "test_cases": 49365,
+      "n_classes": 721,
+      "n_features": 377,
+      "top1_accuracy": 82.98,
+      "top3_accuracy": 94.01,
+      "top5_accuracy": 96.53,
+      "macro_f1": 66.12,
+      "weighted_f1": 82.65,
+      "live_validation_count": 5,
+      "live_validation_success": 5,
+      "mean_latency_ms": 150.47
+    },
+    "Emergency Agent": {
+      "agent": "Emergency Agent",
+      "algorithm": "Multinomial Logistic Regression + Vital Sign Rules",
+      "test_cases": 50,
+      "accuracy": 78.0,
+      "critical_sensitivity": 100.0,
+      "critical_missed": 0,
+      "vital_flag_detection_rate": 100.0,
+      "mean_latency_ms": 1.17,
+      "critical_safety_pass": true
+    },
+    "XAI Engine": {
+      "agent": "XAI Engine",
+      "algorithm": "SHAP (TreeExplainer)",
+      "shap_explainer_loaded": true,
+      "coverage": "100% (all predictions get explanations)",
+      "explanation_type": "Feature importance (positive + negative factors)",
+      "note": "Faithfulness evaluation requires manual clinician review."
+    },
+    "Supervisor Agent": {
+      "agent": "Supervisor Agent",
+      "algorithm": "Confidence-Based Routing + Groq LLaMA-3.3-70B Fallback",
+      "initialization_status": "INITIALIZED",
+      "routing_accuracy": 100.0,
+      "routing_tests": 4,
+      "note": "LLM fallback quality requires manual review. Deterministic routing tested."
+    },
+    "Symptom Agent": {
+      "agent": "Symptom Agent",
+      "algorithm": "ClinicalBERT (NER + Severity + Embeddings)",
+      "ner_recall": 90.0,
+      "ner_expected_symptoms": 20,
+      "ner_found_symptoms": 18,
+      "severity_accuracy": 83.33,
+      "normalization_accuracy": 75.0,
+      "normalization_cases": 8,
+      "mean_latency_ms": 173.94
+    },
+    "OCR Agent": {
+      "agent": "OCR Agent",
+      "algorithm": "PaddleOCR (DBNet + SVTR) + Groq LLaMA-3.3-70B + ClinicalBERT",
+      "initialization_status": "INITIALIZED",
+      "reference_ranges_covered": 46,
+      "note": "Full OCR evaluation requires sample medical documents. Initialization and KB coverage tested."
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "ner_and_severity": [
+    {
+      "text": "I have a terrible headache and my chest hurts",
+      "expected_symptoms": [
+        "Headache",
+        "Chest Pain"
+      ],
+      "expected_severity_range": {
+        "Headache": [
+          "Mild",
+          "Moderate"
+        ],
+        "Chest Pain": [
+          "Moderate",
+          "Severe"
+        ]
+      }
+    },
+    {
+      "text": "I've been coughing a lot and have a fever",
+      "expected_symptoms": [
+        "Cough",
+        "Fever"
+      ],
+      "expected_severity_range": {
+        "Cough": [
+          "Mild",
+          "Moderate"
+        ],
+        "Fever": [
+          "Mild",
+          "Moderate"
+        ]
+      }
+    },
+    {
+      "text": "Severe abdominal pain with nausea and vomiting",
+      "expected_symptoms": [
+        "Abdominal Pain",
+        "Nausea",
+        "Vomiting"
+      ],
+      "expected_severity_range": {
+        "Abdominal Pain": [
+          "Moderate",
+          "Severe"
+        ]
+      }
+    },
+    {
+      "text": "I feel very tired and weak, with body aches everywhere",
+      "expected_symptoms": [
+        "Fatigue",
+        "Weakness"
+      ],
+      "expected_severity_range": {
+        "Fatigue": [
+          "Mild",
+          "Moderate"
+        ]
+      }
+    },
+    {
+      "text": "Difficulty breathing and my heart is racing",
+      "expected_symptoms": [
+        "Breathlessness",
+        "Palpitations"
+      ],
+      "expected_severity_range": {
+        "Breathlessness": [
+          "Severe",
+          "Critical"
+        ]
+      }
+    },
+    {
+      "text": "Runny nose and sore throat for the past few days",
+      "expected_symptoms": [
+        "Sore Throat"
+      ],
+      "expected_severity_range": {
+        "Sore Throat": [
+          "Mild"
+        ]
+      }
+    },
+    {
+      "text": "I have a skin rash and itching all over my body",
+      "expected_symptoms": [
+        "Rash",
+        "Itching"
+      ],
+      "expected_severity_range": {
+        "Rash": [
+          "Mild",
+          "Moderate"
+        ]
+      }
+    },
+    {
+      "text": "Dizziness and blurred vision when I stand up",
+      "expected_symptoms": [
+        "Dizziness",
+        "Blurred Vision"
+      ],
+      "expected_severity_range": {
+        "Dizziness": [
+          "Mild",
+          "Moderate"
+        ]
+      }
+    },
+    {
+      "text": "Joint pain in my knees and back pain",
+      "expected_symptoms": [
+        "Joint Pain",
+        "Back Pain"
+      ],
+      "expected_severity_range": {
+        "Joint Pain": [
+          "Mild",
+          "Moderate"
+        ]
+      }
+    },
+    {
+      "text": "I had a seizure this morning and I'm confused",
+      "expected_symptoms": [
+        "Seizure",
+        "Confusion"
+      ],
+      "expected_severity_range": {
+        "Seizure": [
+          "Severe",
+          "Critical"
+        ]
+      }
+    }
+  ],
+  "normalization": [
+    {
+      "input": "headache",
+      "expected_canonical": "Headache"
+    },
+    {
+      "input": "stomach pain",
+      "expected_canonical": "Abdominal Pain"
+    },
+    {
+      "input": "chest tightness",
+      "expected_canonical": "Chest Pain"
+    },
+    {
+      "input": "trouble breathing",
+      "expected_canonical": "Breathlessness"
+    },
+    {
+      "input": "throwing up",
+      "expected_canonical": "Vomiting"
+    },
+    {
+      "input": "feeling dizzy",
+      "expected_canonical": "Dizziness"
+    },
+    {
+      "input": "skin rash",
+      "expected_canonical": "Rash"
+    },
+    {
+      "input": "body aches",
+      "expected_canonical": "Body Pain"
+    },
+    {
+      "input": "running nose",
+      "expected_canonical": "Runny Nose"
+    },
+    {
+      "input": "sore throat",
+      "expected_canonical": "Sore Throat"
+    }
+  ]
+}

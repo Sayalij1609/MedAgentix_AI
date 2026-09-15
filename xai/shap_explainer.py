@@ -22,6 +22,175 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import config
 
 
+def _apply_shap_xgboost_patch():
+    """
+    Patch SHAP's XGBTreeModelLoader to handle multi-class XGBoost models where
+    base_score is serialized as a JSON array string (e.g. '[-7.92e-3, ...]').
+    SHAP natively attempts float(base_score), raising ValueError.
+    """
+    import io
+    import json
+    import scipy.special
+    import shap.explainers._tree as tree_module
+
+    if getattr(tree_module.XGBTreeModelLoader, "_medagentix_patched", False):
+        return
+
+    orig_init = tree_module.XGBTreeModelLoader.__init__
+
+    def patched_init(self, xgb_model) -> None:
+        import xgboost as xgb
+        tree_module._check_xgboost_version(xgb.__version__)
+        model = xgb_model
+
+        raw = xgb_model.save_raw(raw_format="ubj")
+        with io.BytesIO(raw) as fd:
+            jmodel = tree_module.decode_ubjson_buffer(fd)
+
+        learner = jmodel["learner"]
+        learner_model_param = learner["learner_model_param"]
+        objective = learner["objective"]
+
+        booster = learner["gradient_booster"]
+        n_classes = max(int(learner_model_param["num_class"]), 1)
+        n_targets = max(int(learner_model_param["num_target"]), 1)
+        n_targets = max(n_targets, n_classes)
+
+        if "gbtree" in booster and "model" not in booster:
+            booster = booster["gbtree"]
+        if booster["model"].get("iteration_indptr", None) is not None:
+            iteration_indptr = np.asarray(
+                booster["model"]["iteration_indptr"], dtype=np.int32
+            )
+            diff = np.diff(iteration_indptr)
+        else:
+            n_parallel_trees = int(
+                booster["model"]["gbtree_model_param"]["num_parallel_tree"]
+            )
+            diff = np.repeat(n_targets * n_parallel_trees, model.num_boosted_rounds())
+        if np.any(diff != diff[0]):
+            raise ValueError("vector-leaf is not yet supported.:", diff)
+
+        self.n_trees_per_iter = int(diff[0])
+        self.n_targets = n_targets
+
+        # Safe base_score parsing: handle array strings e.g. '[-7.92e-3, ...]'
+        raw_bs = learner_model_param["base_score"]
+        if isinstance(raw_bs, str) and raw_bs.strip().startswith("[") and raw_bs.strip().endswith("]"):
+            try:
+                parsed = json.loads(raw_bs)
+            except Exception:
+                parsed = [float(x.strip()) for x in raw_bs.strip()[1:-1].split(",") if x.strip()]
+            base_score = float(parsed[0]) if parsed else 0.5
+        else:
+            base_score = float(raw_bs)
+
+        self.base_score = base_score
+        assert self.n_trees_per_iter > 0
+
+        self.name_obj = objective["name"]
+        self.name_gbm = booster["name"]
+        if self.name_obj in ("binary:logistic", "reg:logistic"):
+            self.base_score = scipy.special.logit(base_score)
+        elif self.name_obj in (
+            "reg:gamma",
+            "reg:tweedie",
+            "count:poisson",
+            "survival:cox",
+            "survival:aft",
+        ):
+            self.base_score = np.log(self.base_score)
+        else:
+            self.base_score = base_score
+
+        self.num_feature = int(learner_model_param["num_feature"])
+        self.num_class = int(learner_model_param["num_class"])
+
+        trees = booster["model"]["trees"]
+        self.num_trees = len(trees)
+
+        self.node_parents = []
+        self.node_cleft = []
+        self.node_cright = []
+        self.node_sindex = []
+        self.children_default = []
+        self.sum_hess = []
+
+        self.values = []
+        self.thresholds = []
+        self.features = []
+
+        self.split_types = []
+        self.categories = []
+
+        feature_types = model.feature_types
+        if feature_types is not None:
+            cat_feature_indices = np.where(
+                np.asarray(feature_types) == "c"
+            )[0]
+            if len(cat_feature_indices) == 0:
+                self.cat_feature_indices = None
+            else:
+                self.cat_feature_indices = cat_feature_indices
+        else:
+            self.cat_feature_indices = None
+
+        def to_integers(data: list[int]) -> np.ndarray:
+            assert isinstance(data, list)
+            return np.asanyarray(data, dtype=np.uint8)
+
+        for i in range(self.num_trees):
+            tree = trees[i]
+            parents = np.asarray(tree["parents"])
+            self.node_parents.append(parents)
+            self.node_cleft.append(np.asarray(tree["left_children"], dtype=np.int32))
+            self.node_cright.append(np.asarray(tree["right_children"], dtype=np.int32))
+            self.node_sindex.append(np.asarray(tree["split_indices"], dtype=np.uint32))
+
+            base_weight = np.asarray(tree["base_weights"], dtype=np.float32)
+            if base_weight.size != self.node_cleft[-1].size:
+                raise ValueError("vector-leaf is not yet supported.")
+
+            default_left = to_integers(tree["default_left"])
+            default_child = np.where(
+                default_left == 1, self.node_cleft[-1], self.node_cright[-1]
+            ).astype(np.int64)
+            self.children_default.append(default_child)
+            self.sum_hess.append(np.asarray(tree["sum_hessian"], dtype=np.float64))
+
+            is_leaf = self.node_cleft[-1] == -1
+
+            split_cond = np.asarray(tree["split_conditions"], dtype=np.float32)
+            leaf_weight = np.where(is_leaf, split_cond, 0.0)
+            thresholds = np.where(is_leaf, 0.0, split_cond)
+
+            thresholds = np.where(
+                is_leaf, 0.0, np.nextafter(thresholds, -np.float32(np.inf))
+            )
+
+            self.values.append(leaf_weight.reshape(leaf_weight.size, 1))
+            self.thresholds.append(thresholds)
+
+            split_idx = np.asarray(tree["split_indices"], dtype=np.int64)
+            self.features.append(split_idx)
+
+            split_types = to_integers(tree["split_type"])
+            self.split_types.append(split_types)
+            cat_segments = tree["categories_segments"]
+            cat_sizes = tree["categories_sizes"]
+            cat_nodes = tree["categories_nodes"]
+            assert len(cat_segments) == len(cat_sizes) == len(cat_nodes)
+            cats = tree["categories"]
+
+            tree_categories = self.parse_categories(
+                cat_nodes, cat_segments, cat_sizes, cats, self.node_cleft[-1]
+            )
+            self.categories.append(tree_categories)
+
+    tree_module.XGBTreeModelLoader.__init__ = patched_init
+    tree_module.XGBTreeModelLoader._medagentix_patched = True
+
+
 class SHAPExplainer:
     """
     SHAPExplainer -- Computes and visualizes feature-level impact on ensemble predictions
@@ -39,6 +208,9 @@ class SHAPExplainer:
         self.model = joblib.load(self.model_path)
         self.label_encoder = joblib.load(self.encoder_path)
         
+        # Apply patch for multi-class XGBoost base_score
+        _apply_shap_xgboost_patch()
+
         print("  SHAP Explainer -- Initializing TreeExplainer...")
         self.explainer = shap.TreeExplainer(self.model)
         print("  [OK] SHAP Explainer initialized successfully")

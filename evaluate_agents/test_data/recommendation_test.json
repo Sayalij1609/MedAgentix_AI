@@ -1,0 +1,470 @@
+[
+  {
+    "disease": "Fungal infection",
+    "severity": "Mild",
+    "confidence": 0.75,
+    "symptoms": [
+      "rash",
+      "headache",
+      "nausea",
+      "cough"
+    ],
+    "patient_age": 68
+  },
+  {
+    "disease": "Allergy",
+    "severity": "Severe",
+    "confidence": 0.73,
+    "symptoms": [
+      "chest pain",
+      "headache"
+    ],
+    "patient_age": 30
+  },
+  {
+    "disease": "GERD",
+    "severity": "Moderate",
+    "confidence": 0.8,
+    "symptoms": [
+      "headache",
+      "fever",
+      "joint pain"
+    ],
+    "patient_age": 43
+  },
+  {
+    "disease": "Drug Reaction",
+    "severity": "Moderate",
+    "confidence": 0.78,
+    "symptoms": [
+      "nausea",
+      "vomiting"
+    ],
+    "patient_age": 59
+  },
+  {
+    "disease": "Gastroenteritis",
+    "severity": "Severe",
+    "confidence": 0.81,
+    "symptoms": [
+      "fever",
+      "cough",
+      "nausea",
+      "breathlessness"
+    ],
+    "patient_age": 55
+  },
+  {
+    "disease": "Bronchial Asthma",
+    "severity": "Moderate",
+    "confidence": 0.71,
+    "symptoms": [
+      "vomiting",
+      "joint pain",
+      "rash",
+      "nausea",
+      "chest pain"
+    ],
+    "patient_age": 25
+  },
+  {
+    "disease": "Hypertension ",
+    "severity": "Moderate",
+    "confidence": 0.95,
+    "symptoms": [
+      "nausea",
+      "fever",
+      "rash"
+    ],
+    "patient_age": 18
+  },
+  {
+    "disease": "Migraine",
+    "severity": "Severe",
+    "confidence": 0.96,
+    "symptoms": [
+      "vomiting",
+      "rash",
+      "cough"
+    ],
+    "patient_age": 78
+  },
+  {
+    "disease": "Malaria",
+    "severity": "Severe",
+    "confidence": 0.96,
+    "symptoms": [
+      "cough",
+      "nausea",
+      "breathlessness",
+      "vomiting"
+    ],
+    "patient_age": 44
+  },
+  {
+    "disease": "Chicken pox",
+    "severity": "Moderate",
+    "confidence": 0.81,
+    "symptoms": [
+      "breathlessness",
+      "fatigue",
+      "headache",
+      "chest pain"
+    ],
+    "patient_age": 60
+  },
+  {
+    "disease": "Dengue",
+    "severity": "Moderate",
+    "confidence": 0.89,
+    "symptoms": [
+      "joint pain",
+      "nausea",
+      "rash"
+    ],
+    "patient_age": 53
+  },
+  {
+    "disease": "Typhoid",
+    "severity": "Mild",
+    "confidence": 0.79,
+    "symptoms": [
+      "rash",
+      "vomiting",
+      "chest pain"
+    ],
+    "patient_age": 46
+  },
+  {
+    "disease": "hepatitis A",
+    "severity": "Moderate",
+    "confidence": 0.89,
+    "symptoms": [
+      "fatigue",
+      "cough",
+      "nausea",
+      "chest pain",
+      "vomiting"
+    ],
+    "patient_age": 58
+  },
+  {
+    "disease": "Hepatitis B",
+    "severity": "Severe",
+    "confidence": 0.79,
+    "symptoms": [
+      "nausea",
+      "headache",
+      "breathlessness"
+    ],
+    "patient_age": 27
+  },
+  {
+    "disease": "Tuberculosis",
+    "severity": "Mild",
+    "confidence": 0.71,
+    "symptoms": [
+      "joint pain",
+      "cough",
+      "chest pain",
+      "headache",
+      "vomiting"
+    ],
+    "patient_age": 54
+  },
+  {
+    "disease": "Common Cold",
+    "severity": "Mild",
+    "confidence": 0.9,
+    "symptoms": [
+      "chest pain",
+      "rash",
+      "headache",
+      "cough",
+      "vomiting"
+    ],
+    "patient_age": 62
+  },
+  {
+    "disease": "Pneumonia",
+    "severity": "Mild",
+    "confidence": 0.95,
+    "symptoms": [
+      "rash",
+      "headache"
+    ],
+    "patient_age": 29
+  },
+  {
+    "disease": "Heart attack",
+    "severity": "Severe",
+    "confidence": 0.85,
+    "symptoms": [
+      "breathlessness",
+      "headache"
+    ],
+    "patient_age": 76
+  },
+  {
+    "disease": "Hypothyroidism",
+    "severity": "Mild",
+    "confidence": 0.83,
+    "symptoms": [
+      "breathlessness",
+      "joint pain",
+      "vomiting",
+      "rash",
+      "headache"
+    ],
+    "patient_age": 57
+  },
+  {
+    "disease": "Hyperthyroidism",
+    "severity": "Severe",
+    "confidence": 0.95,
+    "symptoms": [
+      "breathlessness",
+      "chest pain",
+      "fatigue",
+      "vomiting",
+      "headache"
+    ],
+    "patient_age": 46
+  },
+  {
+    "disease": "Diabetes ",
+    "severity": "Moderate",
+    "confidence": 0.91,
+    "symptoms": [
+      "breathlessness",
+      "chest pain",
+      "headache",
+      "fatigue"
+    ],
+    "patient_age": 46
+  },
+  {
+    "disease": "Urinary tract infection",
+    "severity": "Mild",
+    "confidence": 0.9,
+    "symptoms": [
+      "nausea",
+      "vomiting",
+      "breathlessness"
+    ],
+    "patient_age": 75
+  },
+  {
+    "disease": "Psoriasis",
+    "severity": "Severe",
+    "confidence": 0.72,
+    "symptoms": [
+      "headache",
+      "rash",
+      "fatigue"
+    ],
+    "patient_age": 63
+  },
+  {
+    "disease": "Impetigo",
+    "severity": "Mild",
+    "confidence": 0.72,
+    "symptoms": [
+      "vomiting",
+      "breathlessness",
+      "chest pain",
+      "headache",
+      "fever"
+    ],
+    "patient_age": 31
+  },
+  {
+    "disease": "Acne",
+    "severity": "Moderate",
+    "confidence": 0.81,
+    "symptoms": [
+      "joint pain",
+      "rash"
+    ],
+    "patient_age": 48
+  },
+  {
+    "disease": "Arthritis",
+    "severity": "Mild",
+    "confidence": 0.96,
+    "symptoms": [
+      "rash",
+      "joint pain",
+      "headache",
+      "chest pain"
+    ],
+    "patient_age": 32
+  },
+  {
+    "disease": "Jaundice",
+    "severity": "Moderate",
+    "confidence": 0.82,
+    "symptoms": [
+      "rash",
+      "vomiting"
+    ],
+    "patient_age": 60
+  },
+  {
+    "disease": "AIDS",
+    "severity": "Severe",
+    "confidence": 0.92,
+    "symptoms": [
+      "chest pain",
+      "fatigue",
+      "fever"
+    ],
+    "patient_age": 76
+  },
+  {
+    "disease": "(vertigo) Paroymsal  Positional Vertigo",
+    "severity": "Moderate",
+    "confidence": 0.87,
+    "symptoms": [
+      "cough",
+      "rash"
+    ],
+    "patient_age": 26
+  },
+  {
+    "disease": "Osteoarthristis",
+    "severity": "Moderate",
+    "confidence": 0.75,
+    "symptoms": [
+      "rash",
+      "vomiting",
+      "headache",
+      "chest pain"
+    ],
+    "patient_age": 38
+  },
+  {
+    "disease": "Peptic ulcer diseae",
+    "severity": "Moderate",
+    "confidence": 0.91,
+    "symptoms": [
+      "nausea",
+      "rash",
+      "joint pain",
+      "breathlessness",
+      "fever"
+    ],
+    "patient_age": 48
+  },
+  {
+    "disease": "Varicose veins",
+    "severity": "Mild",
+    "confidence": 0.91,
+    "symptoms": [
+      "vomiting",
+      "headache"
+    ],
+    "patient_age": 59
+  },
+  {
+    "disease": "Hypoglycemia",
+    "severity": "Mild",
+    "confidence": 0.92,
+    "symptoms": [
+      "fever",
+      "headache"
+    ],
+    "patient_age": 30
+  },
+  {
+    "disease": "Cervical spondylosis",
+    "severity": "Mild",
+    "confidence": 0.87,
+    "symptoms": [
+      "fatigue",
+      "chest pain",
+      "cough"
+    ],
+    "patient_age": 54
+  },
+  {
+    "disease": "Alcoholic hepatitis",
+    "severity": "Mild",
+    "confidence": 0.83,
+    "symptoms": [
+      "vomiting",
+      "fatigue",
+      "cough",
+      "rash"
+    ],
+    "patient_age": 70
+  },
+  {
+    "disease": "Dimorphic hemmorhoids(piles)",
+    "severity": "Mild",
+    "confidence": 0.97,
+    "symptoms": [
+      "joint pain",
+      "fever"
+    ],
+    "patient_age": 77
+  },
+  {
+    "disease": "Hepatitis C",
+    "severity": "Moderate",
+    "confidence": 0.86,
+    "symptoms": [
+      "rash",
+      "headache",
+      "cough",
+      "nausea",
+      "vomiting"
+    ],
+    "patient_age": 71
+  },
+  {
+    "disease": "Hepatitis D",
+    "severity": "Severe",
+    "confidence": 0.77,
+    "symptoms": [
+      "joint pain",
+      "cough",
+      "fever",
+      "fatigue"
+    ],
+    "patient_age": 52
+  },
+  {
+    "disease": "Hepatitis E",
+    "severity": "Moderate",
+    "confidence": 0.89,
+    "symptoms": [
+      "breathlessness",
+      "vomiting"
+    ],
+    "patient_age": 18
+  },
+  {
+    "disease": "Chronic cholestasis",
+    "severity": "Moderate",
+    "confidence": 0.93,
+    "symptoms": [
+      "rash",
+      "vomiting"
+    ],
+    "patient_age": 58
+  },
+  {
+    "disease": "Paralysis (brain hemorrhage)",
+    "severity": "Moderate",
+    "confidence": 0.9,
+    "symptoms": [
+      "fatigue",
+      "breathlessness",
+      "nausea",
+      "chest pain",
+      "rash"
+    ],
+    "patient_age": 67
+  }
+]

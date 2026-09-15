@@ -1,0 +1,613 @@
+====================================================================================================
+                    MEDAGENTIX AI — COMPREHENSIVE AGENT EVALUATION FRAMEWORK
+====================================================================================================
+                         Generated: September 2026 | Version: 1.0
+====================================================================================================
+
+
+TABLE OF CONTENTS
+==================
+  1. Overview & Evaluation Dimensions
+  2. Per-Agent Evaluation Plan (All 10 Agents)
+  3. End-to-End Pipeline Evaluation
+  4. Clinical Safety Evaluation (Medical-Specific)
+  5. Recommended Test Set Design
+  6. Evaluation Script Structure
+  7. Documentation Template for Project Report
+  8. Quick-Reference: Which Metrics for Which Agent
+
+
+====================================================================================================
+1. OVERVIEW & EVALUATION DIMENSIONS
+====================================================================================================
+
+Evaluating a multi-agent medical AI system requires assessment across 5 key dimensions:
+
+  1. TASK-LEVEL ACCURACY       — Does each agent produce correct outputs?
+  2. CLINICAL SAFETY           — Does the system never miss a dangerous condition?
+  3. LATENCY & THROUGHPUT      — Is the system fast enough for clinical use?
+  4. ROBUSTNESS                — Does the system handle noisy/incomplete input gracefully?
+  5. END-TO-END PIPELINE       — Do all agents work well together as a unified system?
+
+
+----------------------------------------------------------------------------------------------------
+1.1  DIMENSION A: TASK-LEVEL ACCURACY METRICS
+----------------------------------------------------------------------------------------------------
+
+  Standard ML metrics — measures whether each agent produces the correct output for a given input.
+  Examples: Accuracy, Precision, Recall, F1-Score, Top-K Accuracy, MRR, NDCG.
+
+
+----------------------------------------------------------------------------------------------------
+1.2  DIMENSION B: CLINICAL SAFETY METRICS
+----------------------------------------------------------------------------------------------------
+
+  Medical-specific metrics — measures whether the system never misses a dangerous condition,
+  even if it occasionally over-alerts. In medicine, false negatives (missing a real disease) are
+  far more dangerous than false positives (flagging a harmless condition).
+
+
+----------------------------------------------------------------------------------------------------
+1.3  DIMENSION C: LATENCY & PERFORMANCE METRICS
+----------------------------------------------------------------------------------------------------
+
+  Engineering metrics — measures whether the system responds fast enough for clinical use.
+  Target: < 5 seconds for the full pipeline end-to-end.
+
+
+----------------------------------------------------------------------------------------------------
+1.4  DIMENSION D: ROBUSTNESS & STRESS TESTING
+----------------------------------------------------------------------------------------------------
+
+  Reliability metrics — measures whether the system degrades gracefully on noisy, incomplete,
+  or adversarial inputs rather than crashing or hallucinating.
+
+
+----------------------------------------------------------------------------------------------------
+1.5  DIMENSION E: END-TO-END PIPELINE METRICS
+----------------------------------------------------------------------------------------------------
+
+  System-level metrics — measures whether the full pipeline (all agents working together)
+  produces coherent, clinically sound results.
+
+
+====================================================================================================
+2. PER-AGENT EVALUATION PLAN
+====================================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 1: SYMPTOM AGENT (NER + Severity + Normalization)
+----------------------------------------------------------------------------------------------------
+
+This agent has 3 sub-tasks, each requiring different metrics:
+
+  Sub-Task 1A: Symptom NER (Named Entity Recognition)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Token-Level Precision         | TP / (TP + FP)                | Of predicted symptom tokens, how many    |
+  |                               |                               | are correct?                             |
+  | Token-Level Recall            | TP / (TP + FN)                | Of actual symptom tokens, how many       |
+  |                               |                               | were found?                              |
+  | Token-Level F1                | 2 x (P x R) / (P + R)        | Harmonic mean — balanced extraction      |
+  |                               |                               | quality                                  |
+  | Entity-Level Exact Match      | Correct entities / Total      | Full symptom span match (strict)         |
+  | Entity-Level Partial Match    | Overlapping entities / Total  | Partial symptom span overlap (lenient)   |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  How to Evaluate:
+    Test Set     : 200+ sentences with gold-standard BIO-tagged symptom annotations
+    Tool         : seqeval library (standard NER evaluation)
+    Expected     : Token F1 > 90%, Entity Exact Match > 85%
+
+
+  Sub-Task 1B: Severity Classification (4-class: Mild / Moderate / Severe / Critical)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Accuracy                      | Correct / Total               | Overall correctness                      |
+  | Macro F1                      | Average F1 across 4 classes   | Balanced across Mild/Moderate/Severe/    |
+  |                               |                               | Critical                                 |
+  | Weighted F1                   | Class-size-weighted F1        | Accounts for class imbalance             |
+  | Per-Class Recall              | Per-class TP / (TP + FN)      | Detection rate per severity level        |
+  | Confusion Matrix              | 4x4 matrix                    | Which severities get confused            |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  *** CRITICAL SAFETY METRIC ***
+  Severe/Critical Recall MUST be > 95% — never classify a "Severe" symptom as "Mild"
+
+
+  Sub-Task 1C: Symptom Normalization
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Top-1 Normalization Accuracy  | Correct canonical / Total     | Exact match to correct standard term     |
+  | Top-3 Normalization Accuracy  | Correct in top-3 / Total      | Correct term in top 3 candidates         |
+  | Mean Reciprocal Rank (MRR)    | 1/rank of correct answer      | Quality of ranking                       |
+  | Synonym Coverage              | Mapped synonyms / Total       | How many colloquial variations handled   |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 2: TRIAGE AGENT (Rule-Based 3-Tier Classification: GREEN / YELLOW / RED)
+----------------------------------------------------------------------------------------------------
+
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Classification Accuracy       | Correct tier / Total          | Overall tier assignment correctness      |
+  | RED Sensitivity (Recall)      | True RED / (True RED +        | CRITICAL: Never miss an emergency        |
+  |                               | Missed RED)                   |                                          |
+  | RED Specificity               | True non-RED / (True non-RED  | Don't over-triage mild cases to RED      |
+  |                               | + False RED)                  |                                          |
+  | GREEN Precision               | True GREEN / All predicted    | Don't send emergencies to self-care      |
+  |                               | GREEN                         |                                          |
+  | False Negative Rate (RED)     | Missed RED / Total RED        | MUST be 0% — no missed emergencies       |
+  | Over-Triage Rate              | GREEN/YELLOW sent to RED      | Acceptable if < 15% (safety margin)      |
+  |                               | / Total                       |                                          |
+  | Under-Triage Rate             | RED cases sent to GREEN/      | MUST be 0% — absolutely unacceptable     |
+  |                               | YELLOW / Total                |                                          |
+  | Cohen's Kappa                 | Agreement beyond chance       | Agreement vs. expert clinician labels    |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  How to Evaluate:
+    Test Set       : 500+ cases with expert-labeled triage tiers (GREEN/YELLOW/RED)
+    Include        : 100+ known RED-flag emergency scenarios
+    Include        : 100+ known GREEN mild/common illness scenarios
+    Include        : 100+ borderline YELLOW cases
+    Critical Rule  : Under-triage rate MUST be 0% (no emergency ever classified as mild)
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 3: DIFFERENTIAL DIAGNOSIS AGENT (721-Class Disease Ranking)
+----------------------------------------------------------------------------------------------------
+
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Top-1 Accuracy                | Correct #1 / Total            | Exact match of primary diagnosis         |
+  | Top-3 Accuracy                | Correct in top-3 / Total      | Correct disease in top 3 candidates      |
+  | Top-5 Accuracy                | Correct in top-5 / Total      | Correct disease in top 5 candidates      |
+  | Mean Reciprocal Rank (MRR)    | Mean(1/rank of correct)       | Average ranking quality                  |
+  | Weighted F1                   | Class-weighted F1             | Balanced F1 for disease prevalence       |
+  | Macro F1                      | Unweighted average F1         | Performance on rare diseases (important!)|
+  | NDCG@5                        | Normalized Discounted         | Quality of top-5 ranking order           |
+  |                               | Cumulative Gain               |                                          |
+  | Per-Disease-Group Accuracy    | Accuracy within disease       | Cardiac vs. respiratory vs. GI etc.      |
+  |                               | families                      |                                          |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  How to Evaluate:
+    Test Set       : 49,365 records (already split from training)
+    Stratified by  : Disease family, symptom count, rare vs. common diseases
+    Key Focus      : Macro F1 (ensures rare diseases are not ignored)
+    Expected       : Top-1 > 80%, Top-3 > 93%, Top-5 > 96%
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 4: RISK ASSESSMENT AGENT
+----------------------------------------------------------------------------------------------------
+
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Risk Tier Accuracy            | Correct tier / Total          | Overall risk classification correctness  |
+  | Weighted F1                   | Class-weighted F1             | Balanced across Low/Med/High/Critical    |
+  | High/Critical Recall          | True High-Critical / All      | Never miss a high-risk patient           |
+  |                               | High-Critical                 |                                          |
+  | Risk Score Correlation        | Spearman rho vs. expert       | Correlation with clinical expert ratings |
+  |                               | scores                        |                                          |
+  | Modifiability Accuracy        | Correct modifiable/non-mod    | Correctness of factor classification     |
+  |                               | / Total                       |                                          |
+  | Calibration (Brier Score)     | Mean(predicted_prob -          | Are predicted probabilities calibrated?  |
+  |                               | actual)^2                     |                                          |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  How to Evaluate:
+    Test Set       : 300+ patient profiles with expert-labeled risk tiers
+    Expected       : Risk Tier Accuracy > 85%, High/Critical Recall > 95%
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 5: TEMPORAL PROGRESSION AGENT
+----------------------------------------------------------------------------------------------------
+
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Duration Parsing Accuracy     | Correct bucket / Total        | "3 days" -> "1-3 days" accuracy          |
+  | Urgency Classification Acc    | Correct urgency / Total       | Overall urgency assignment correctness   |
+  | Rule Engine Coverage          | Handled by rules / Total      | % of inputs the rule engine covers       |
+  | Trajectory Detection Acc      | Correct trajectory / Total    | Acute vs. subacute vs. chronic           |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  How to Evaluate:
+    Test Set       : 300+ (symptom, duration_text) pairs with expert-labeled urgency
+    Include        : Edge cases like "on and off for months", "worsening since last week"
+    Duration Parser: Test 150+ natural language time expressions
+    Expected       : Duration Parsing > 95%, Urgency Classification > 85%
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 6: EMERGENCY & CRITICAL CARE AGENT
+----------------------------------------------------------------------------------------------------
+
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Triage Accuracy               | Correct ESI level / Total     | Overall ESI triage correctness           |
+  | Critical (Level 1) Sensitiv.  | True L1 / All L1              | CRITICAL: Never miss life-threatening    |
+  | Critical Specificity          | True non-L1 / All non-L1      | Don't overwhelm ER with false alerts     |
+  | Vital Sign Red-Flag Rate      | Detected flags / Total flags  | Catches hypoxia, tachycardia etc.        |
+  | False Critical Rate           | False L1 / Total L1 pred.     | Over-alerting on non-critical cases      |
+  | Weighted F1                   | Class-weighted F1             | Balanced across Medium/High/Critical     |
+  | AUC-ROC (per class)           | Area under ROC curve          | Discrimination per urgency level         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  *** CRITICAL SAFETY RULE ***
+  Critical (Level 1) Sensitivity MUST be 100% — zero tolerance for missed critical emergencies.
+
+  How to Evaluate:
+    Test Set       : 400+ vital sign + symptom records with expert-labeled ESI levels
+    Include        : 100+ known critical/life-threatening scenarios
+    Expected       : ESI Accuracy > 85%, Critical Sensitivity = 100%
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 7: RECOMMENDATION ENGINE (Knowledge-Based)
+----------------------------------------------------------------------------------------------------
+
+Since this is rule-based (not ML), evaluation focuses on coverage and clinical appropriateness:
+
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Disease Coverage              | Diseases with recommendations | How many diseases have mapped treatments |
+  |                               | / Total diseases              |                                          |
+  | Recommendation Relevance      | Clinically appropriate /      | Expert-judged clinical appropriateness   |
+  |                               | Total recommended             |                                          |
+  | Test Recommendation Precision | Relevant tests / Total tests  | Are recommended tests useful?            |
+  | Medication Appropriateness    | Correct drug-disease pairs    | Are medications matched correctly?       |
+  |                               | / Total pairs                 |                                          |
+  | Contraindication Coverage     | Checked contraindications /   | Safety flag coverage                     |
+  |                               | Known contraindications       |                                          |
+  | Age-Group Appropriateness     | Correct age adjustments /     | Pediatric/geriatric dose adjustments     |
+  |                               | Total cases                   |                                          |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  How to Evaluate:
+    Method         : Expert clinician review of 100+ disease-recommendation pairs
+    Scoring        : 1-5 Likert scale for clinical relevance, safety, and completeness
+    Expected       : Mean relevance score > 4.0/5.0, Contraindication coverage > 90%
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 8: OCR AGENT (Document Intelligence)
+----------------------------------------------------------------------------------------------------
+
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Character-Level Accuracy      | Correct chars / Total chars   | Raw OCR text extraction quality          |
+  | Word-Level Accuracy           | Correct words / Total words   | Word-level extraction correctness        |
+  | Field Extraction Accuracy     | Correct key-value / Total     | Structured data extraction               |
+  | Biomarker Value Accuracy      | Correct values / Total        | Numerical test result extraction         |
+  | Document Type Detection       | Correct type / Total docs     | Lab report vs. prescription vs. etc.     |
+  | Reference Range Eval Acc      | Correct Normal/Abnormal       | Biomarker vs. reference range benchmark  |
+  |                               | / Total                       |                                          |
+  | End-to-End F1 (Entity Extr.)  | F1 on extracted clinical      | Combined OCR + NER pipeline quality      |
+  |                               | entities                      |                                          |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  How to Evaluate:
+    Test Set       : 50+ real/synthetic medical documents (lab reports, prescriptions, discharge summaries)
+    Ground Truth   : Manually annotated key-value fields (test name, value, unit, status)
+    Include        : Low-quality scans, rotated images, handwritten text samples
+    Expected       : Field Extraction > 85%, Biomarker Accuracy > 90%
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 9: XAI / EXPLANATION ENGINE (Explainable AI)
+----------------------------------------------------------------------------------------------------
+
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Faithfulness                  | Correlation between SHAP and  | Do explanations reflect real model       |
+  |                               | actual model behavior         | reasoning?                               |
+  | Feature Agreement Rate        | Top-K SHAP features intersect | Do top SHAP features match actual        |
+  |                               | Top-K true importances        | important symptoms?                      |
+  | Explanation Consistency       | Same explanation for similar  | Stable explanations for similar cases    |
+  |                               | inputs                        |                                          |
+  | Clinical Plausibility         | Expert-rated plausibility     | Do explanations make clinical sense?     |
+  |                               | score                         |                                          |
+  | Coverage                      | Cases with explanations /     | What % of predictions get explanations?  |
+  |                               | Total cases                   |                                          |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  How to Evaluate:
+    Method         : Expert clinician review of 50+ explanation outputs
+    Scoring        : 1-5 Likert scale for plausibility, completeness, and usefulness
+    Expected       : Coverage = 100%, Clinical Plausibility > 4.0/5.0
+
+
+----------------------------------------------------------------------------------------------------
+AGENT 10: SUPERVISOR AGENT (Meta-Orchestrator)
+----------------------------------------------------------------------------------------------------
+
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Metric                        | Formula                       | What It Measures                         |
+  +-------------------------------+-------------------------------+------------------------------------------+
+  | Routing Accuracy              | Correct confidence path /     | High/Moderate/Low routing correctness    |
+  |                               | Total                         |                                          |
+  | Consensus Agreement           | Supervisor agrees with        | Agreement with specialist agent majority |
+  |                               | majority / Total              |                                          |
+  | LLM Fallback Trigger Rate     | LLM fallback invocations /    | How often low-confidence fallback needed |
+  |                               | Total cases                   |                                          |
+  | Final Diagnosis Accuracy      | Correct final disease / Total | End-to-end diagnostic correctness        |
+  | Dual-Report Quality           | Expert-rated quality (1-5)    | Quality of doctor + patient perspectives |
+  | Conflict Resolution Quality   | Correct resolution / Total    | When agents disagree, does supervisor    |
+  |                               | conflicts                     | pick correctly?                          |
+  +-------------------------------+-------------------------------+------------------------------------------+
+
+  How to Evaluate:
+    Test Set       : Full pipeline test with 200+ cases where agent outputs are logged
+    Include        : 50+ cases where agents disagree (conflict scenarios)
+    Expected       : Routing Accuracy > 90%, Conflict Resolution > 85%
+
+
+====================================================================================================
+3. END-TO-END PIPELINE EVALUATION
+====================================================================================================
+
+These metrics measure the full pipeline (all agents working together as a unified system):
+
+  +-------------------------------+--------------------------------------------------------------------+
+  | Metric                        | What It Measures                                                   |
+  +-------------------------------+--------------------------------------------------------------------+
+  | Pipeline Success Rate         | % of inputs that complete the full pipeline without errors          |
+  | End-to-End Diagnostic Acc     | Correct final diagnosis / Total test cases                         |
+  | End-to-End Top-3 Accuracy     | Correct disease in final top-3 differential                        |
+  | Mean Pipeline Latency         | Average time from patient input to final report (seconds)          |
+  | P95 Pipeline Latency          | 95th percentile latency (worst-case user experience)               |
+  | Agent Error Propagation Rate  | How often an error in one agent causes downstream failures         |
+  | Graceful Degradation Rate     | If one agent fails, does the pipeline still produce useful output? |
+  | Clinical Concordance          | Agreement between system output and expert clinician diagnosis     |
+  +-------------------------------+--------------------------------------------------------------------+
+
+  How to Evaluate:
+    Test Set       : 500+ full patient cases with expert-labeled final diagnosis
+    Method         : Run full pipeline end-to-end, log per-agent outputs and timings
+    Expected       : Pipeline Success Rate > 98%, E2E Top-3 > 93%, Mean Latency < 5s
+
+
+====================================================================================================
+4. CLINICAL SAFETY EVALUATION (Medical-Specific)
+====================================================================================================
+
+This is the most critical evaluation dimension for a medical AI system.
+In healthcare, the cost of a missed diagnosis is far greater than the cost of a false alarm.
+
+  +-------------------------------+----------+------------------------------------------------------------+
+  | Safety Metric                 | Target   | Rationale                                                  |
+  +-------------------------------+----------+------------------------------------------------------------+
+  | Emergency Sensitivity         | >= 99%   | Must detect nearly all true emergencies                    |
+  | Under-Triage Rate             | 0%       | Never classify a real emergency as non-urgent              |
+  | Critical Disease Miss Rate    | < 1%     | Almost never miss a life-threatening condition             |
+  | Harmful Recommendation Rate   | 0%       | Never recommend a contraindicated drug                     |
+  | False Reassurance Rate        | < 2%     | Rarely tell a sick patient "you're fine"                   |
+  | Appropriate Escalation Rate   | > 95%    | When unsure, escalate to physician review                  |
+  +-------------------------------+----------+------------------------------------------------------------+
+
+  How to Evaluate:
+    Test Set       : 150+ known emergency/critical cases + 100+ known mild cases
+    Method         : Track every case where system outputs "safe" or "mild" and cross-check
+    Critical Rule  : ANY missed emergency = system failure (zero tolerance)
+
+
+====================================================================================================
+5. RECOMMENDED TEST SET DESIGN
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+5.1  Test Set Composition (Target: 1,000+ cases)
+----------------------------------------------------------------------------------------------------
+
+  +-------------------------------+-------+--------------------------------------------------------------+
+  | Category                      | Count | Description                                                  |
+  +-------------------------------+-------+--------------------------------------------------------------+
+  | Common Illnesses              | 200   | Cold, flu, gastroenteritis, UTI, allergies                   |
+  | Serious Conditions            | 200   | Pneumonia, diabetes, hypertension, asthma                    |
+  | Rare Diseases                 | 100   | Conditions with < 1% prevalence in dataset                   |
+  | Emergency Cases               | 150   | Cardiac arrest, stroke, anaphylaxis, sepsis                  |
+  | Borderline Cases              | 100   | Ambiguous symptoms that could be mild or severe              |
+  | Multi-Symptom Complex         | 100   | 5+ symptoms, comorbidities, overlapping conditions           |
+  | Noisy/Misspelled Input        | 50    | "headake", "stomac pain", informal language                  |
+  | Edge Cases                    | 50    | No symptoms, contradictory vitals, extreme ages              |
+  | OCR Documents                 | 50    | Lab reports, prescriptions, discharge summaries              |
+  +-------------------------------+-------+--------------------------------------------------------------+
+  | TOTAL                         | 1,000 |                                                              |
+  +-------------------------------+-------+--------------------------------------------------------------+
+
+
+----------------------------------------------------------------------------------------------------
+5.2  Ground Truth Labeling Guidelines
+----------------------------------------------------------------------------------------------------
+
+  - Each case should be labeled by 2+ medical professionals.
+  - Inter-annotator agreement should be measured (Cohen's Kappa >= 0.75).
+  - Disagreements should be resolved by a third reviewer.
+  - Labels should include:
+      * Primary diagnosis (ground truth disease)
+      * Triage tier (GREEN / YELLOW / RED)
+      * Risk tier (Low / Medium / High / Critical)
+      * Emergency ESI level (1-5)
+      * Expected urgency classification
+
+
+====================================================================================================
+6. EVALUATION SCRIPT STRUCTURE
+====================================================================================================
+
+The recommended evaluation workflow and file organization:
+
+  evaluate_agents/
+  |
+  |-- test_data/
+  |   |-- symptom_ner_test.json              # 200+ BIO-tagged sentences
+  |   |-- severity_test.csv                  # Symptom + severity label pairs
+  |   |-- triage_test.json                   # Cases with GREEN/YELLOW/RED labels
+  |   |-- differential_test.csv              # Symptoms -> disease ground truth
+  |   |-- risk_test.csv                      # Patient profiles -> risk tier labels
+  |   |-- temporal_test.json                 # (symptom, duration) -> urgency labels
+  |   |-- emergency_test.csv                 # Vitals -> ESI level labels
+  |   |-- ocr_test_documents/                # Scanned documents with annotations
+  |   |-- e2e_pipeline_test.json             # Full patient cases with final diagnosis
+  |
+  |-- evaluate_symptom_agent.py              # NER + Severity + Normalization eval
+  |-- evaluate_triage_agent.py               # RED/YELLOW/GREEN classification eval
+  |-- evaluate_differential_agent.py         # Top-K accuracy, MRR, NDCG
+  |-- evaluate_risk_agent.py                 # Risk tier accuracy, calibration
+  |-- evaluate_temporal_agent.py             # Duration parsing + urgency eval
+  |-- evaluate_emergency_agent.py            # ESI triage + critical sensitivity
+  |-- evaluate_recommendation_agent.py       # Coverage + relevance scoring
+  |-- evaluate_ocr_agent.py                  # Field extraction + biomarker accuracy
+  |-- evaluate_xai_engine.py                 # Faithfulness + feature agreement
+  |-- evaluate_supervisor_agent.py           # Routing + conflict resolution
+  |-- evaluate_pipeline_e2e.py               # Full pipeline diagnostic accuracy
+  |-- evaluate_latency.py                    # Timing benchmarks for all agents
+  |-- evaluate_safety.py                     # Clinical safety metrics
+  |
+  |-- results/
+  |   |-- agent_evaluation_report.json       # Machine-readable results
+  |   |-- agent_evaluation_report.md         # Human-readable report
+  |   |-- per_agent_confusion_matrices/      # Confusion matrix plots per agent
+  |   |-- latency_benchmarks.json            # Per-agent and pipeline timing data
+  |
+  |-- run_all_evaluations.py                 # Master script to run everything
+
+
+====================================================================================================
+7. DOCUMENTATION TEMPLATE FOR PROJECT REPORT
+====================================================================================================
+
+When documenting evaluation results in your project report, use this structure:
+
+
+----------------------------------------------------------------------------------------------------
+7.1  Evaluation Methodology
+----------------------------------------------------------------------------------------------------
+
+  - Test set composition (size, categories, ground truth labeling process)
+  - Evaluation dimensions (accuracy, safety, latency, robustness, E2E)
+  - Tools and libraries used (scikit-learn, seqeval, custom scripts)
+  - Ground truth labeling process and inter-annotator agreement
+
+
+----------------------------------------------------------------------------------------------------
+7.2  Per-Agent Results Template
+----------------------------------------------------------------------------------------------------
+
+  For each of the 10 agents, document:
+
+    Agent Name: [Name]
+    ===================================================
+    Task Description    : [What it does]
+    Model / Algorithm   : [What powers it]
+    Test Set            : [Size and composition]
+
+    Performance Metrics:
+    +---------------------------+----------+
+    | Metric                    | Score    |
+    +---------------------------+----------+
+    | Accuracy                  | XX.XX%   |
+    | Precision                 | XX.XX%   |
+    | Recall                    | XX.XX%   |
+    | F1-Score                  | XX.XX%   |
+    | [Safety Metric]           | XX.XX%   |
+    | Mean Inference Time       | XX ms    |
+    +---------------------------+----------+
+
+    Strengths    : [What the agent does well]
+    Limitations  : [Known weaknesses or edge cases]
+    Future Work  : [Planned improvements]
+
+
+----------------------------------------------------------------------------------------------------
+7.3  End-to-End Pipeline Results
+----------------------------------------------------------------------------------------------------
+
+  - Pipeline success rate
+  - E2E diagnostic accuracy (Top-1, Top-3, Top-5)
+  - Mean pipeline latency and P95 latency
+  - Clinical concordance with expert labels
+  - Agent error propagation analysis
+
+
+----------------------------------------------------------------------------------------------------
+7.4  Clinical Safety Audit
+----------------------------------------------------------------------------------------------------
+
+  - Emergency detection sensitivity
+  - Under-triage rate (must be 0%)
+  - Critical disease miss rate (must be < 1%)
+  - Harmful recommendation rate (must be 0%)
+  - False reassurance rate analysis
+
+
+----------------------------------------------------------------------------------------------------
+7.5  Comparison with Baselines
+----------------------------------------------------------------------------------------------------
+
+  - Compare against: random baseline, majority-class baseline, single-model baseline
+  - Show that the multi-agent system outperforms simpler approaches
+  - Statistical significance testing (p-values, confidence intervals)
+
+
+====================================================================================================
+8. QUICK-REFERENCE: WHICH METRICS FOR WHICH AGENT
+====================================================================================================
+
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Agent            | Primary Metrics                 | Safety Metrics             | Latency Target  |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Symptom          | Token F1, Entity F1,            | Severe/Critical Recall     | < 500ms         |
+  |                  | Severity Accuracy               | > 95%                      |                 |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Triage           | Tier Accuracy, Cohen's Kappa    | Under-Triage Rate = 0%     | < 50ms          |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Differential     | Top-1/3/5 Accuracy, MRR, NDCG  | Rare Disease Recall        | < 200ms         |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Risk             | Tier Accuracy, Weighted F1,     | High/Critical Recall       | < 100ms         |
+  |                  | Calibration                     | > 95%                      |                 |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Temporal         | Duration Parse Accuracy,        | Acute Symptom Detection    | < 100ms         |
+  |                  | Urgency Accuracy                | > 95%                      |                 |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Emergency        | ESI Accuracy, AUC-ROC           | Critical Sensitivity       | < 100ms         |
+  |                  |                                 | = 100%                     |                 |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Recommendation   | Coverage, Expert Relevance      | Contraindication Coverage  | < 200ms         |
+  |                  | Score                           | > 90%                      |                 |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | OCR              | Field F1, Biomarker Accuracy    | Numerical Value Accuracy   | < 3000ms        |
+  |                  |                                 | > 95%                      |                 |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | XAI              | Faithfulness, Feature           | Clinical Plausibility      | < 500ms         |
+  |                  | Agreement                       | Score                      |                 |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Supervisor       | Final Accuracy, Routing         | Appropriate Escalation     | < 300ms         |
+  |                  | Correctness                     | > 95%                      |                 |
+  +------------------+---------------------------------+----------------------------+-----------------+
+  | Full Pipeline    | E2E Top-3 Accuracy, Pipeline    | Under-Triage = 0%,         | < 5000ms        |
+  |                  | Success Rate                    | Miss Rate < 1%             |                 |
+  +------------------+---------------------------------+----------------------------+-----------------+
+
+
+====================================================================================================
+                                      END OF DOCUMENTATION
+====================================================================================================

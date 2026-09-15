@@ -1,0 +1,112 @@
+[
+  {
+    "age": 72,
+    "gender": "Male",
+    "blood_pressure": "High",
+    "cholesterol": 280,
+    "lifestyle_factors": [
+      "Smoking",
+      "Obesity",
+      "Sedentary Lifestyle"
+    ],
+    "medical_history": [
+      "Cardiac History",
+      "Diabetes"
+    ],
+    "expected_tier": "Critical",
+    "id": "CRITICAL_001"
+  },
+  {
+    "age": 68,
+    "gender": "Female",
+    "blood_pressure": "High",
+    "cholesterol": 260,
+    "lifestyle_factors": [
+      "Smoking",
+      "High Fat Diet"
+    ],
+    "medical_history": [
+      "Cancer History",
+      "Hypertension"
+    ],
+    "expected_tier": "Critical",
+    "id": "CRITICAL_002"
+  },
+  {
+    "age": 55,
+    "gender": "Male",
+    "blood_pressure": "High",
+    "cholesterol": 240,
+    "lifestyle_factors": [
+      "Smoking",
+      "Alcohol Use"
+    ],
+    "medical_history": [
+      "Family History"
+    ],
+    "expected_tier": "High",
+    "id": "HIGH_001"
+  },
+  {
+    "age": 60,
+    "gender": "Female",
+    "blood_pressure": "Normal",
+    "cholesterol": 220,
+    "lifestyle_factors": [
+      "Obesity",
+      "Sedentary Lifestyle"
+    ],
+    "medical_history": [
+      "Diabetes"
+    ],
+    "expected_tier": "High",
+    "id": "HIGH_002"
+  },
+  {
+    "age": 45,
+    "gender": "Male",
+    "blood_pressure": "Normal",
+    "cholesterol": 200,
+    "lifestyle_factors": [
+      "Poor Diet"
+    ],
+    "medical_history": [
+      "Family History"
+    ],
+    "expected_tier": "Medium",
+    "id": "MEDIUM_001"
+  },
+  {
+    "age": 40,
+    "gender": "Female",
+    "blood_pressure": "Normal",
+    "cholesterol": 190,
+    "lifestyle_factors": [
+      "Chronic Stress",
+      "Sleep Deprivation"
+    ],
+    "medical_history": [],
+    "expected_tier": "Medium",
+    "id": "MEDIUM_002"
+  },
+  {
+    "age": 25,
+    "gender": "Male",
+    "blood_pressure": "Normal",
+    "cholesterol": 170,
+    "lifestyle_factors": [],
+    "medical_history": [],
+    "expected_tier": "Low",
+    "id": "LOW_001"
+  },
+  {
+    "age": 30,
+    "gender": "Female",
+    "blood_pressure": "Normal",
+    "cholesterol": 160,
+    "lifestyle_factors": [],
+    "medical_history": [],
+    "expected_tier": "Low",
+    "id": "LOW_002"
+  }
+]
