@@ -10,6 +10,20 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+      'lucide-react',
+      'framer-motion',
+      'recharts',
+      'axios',
+      '@tanstack/react-query',
+      'clsx',
+      'tailwind-merge',
+    ],
+  },
   server: {
     port: 3000,
     proxy: {

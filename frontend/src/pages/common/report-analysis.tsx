@@ -250,11 +250,11 @@ export default function ReportAnalysis() {
         formData.append('file', file);
         response = await apiClient.post('/ocr/scan', formData, {
           headers: { 'Content-Type': 'multipart/form-data' },
-          timeout: 120000,
+          timeout: 300000, // 5 minutes (CPU OCR & multi-model pipeline need time)
         });
       } else {
         response = await apiClient.post('/ocr/analyze-text', { text: pastedText }, {
-          timeout: 120000,
+          timeout: 300000,
         });
       }
 
@@ -267,10 +267,14 @@ export default function ReportAnalysis() {
       }
     } catch (err: any) {
       clearInterval(stageInterval);
-      setError(
-        err?.response?.data?.error ||
-        'Could not connect to the OCRAgent service. Please ensure the backend and PaddleOCR are running.'
-      );
+      if (err?.code === 'ECONNABORTED' || err?.message?.toLowerCase().includes('timeout')) {
+        setError('Document analysis timed out. The local OCR pipeline on CPU takes longer for documents. Please try again.');
+      } else {
+        setError(
+          err?.response?.data?.error ||
+          'Could not connect to the OCRAgent service. Please ensure the backend and PaddleOCR are running.'
+        );
+      }
     } finally {
       setIsAnalyzing(false);
       setAnalysisStage(0);

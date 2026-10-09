@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MedAgentix AI — System Architecture</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #ffffff;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+  }
+
+  .diagram {
+    width: 820px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  /* ---- Title ---- */
+  .fig-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  /* ---- Standard box ---- */
+  .box {
+    border: 1.6px solid #333;
+    border-radius: 6px;
+    padding: 10px 18px;
+    text-align: center;
+    background: #fff;
+    position: relative;
+  }
+  .box .label {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.35;
+  }
+  .box .sub {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* Highlighted input/output boxes */
+  .box.input-box {
+    background: #f0f4f8;
+    border-color: #444;
+  }
+  .box.output-doc {
+    background: #e8f0fe;
+    border-color: #3367d6;
+  }
+  .box.output-pat {
+    background: #e6f4ea;
+    border-color: #1e8e3e;
+  }
+
+  /* ---- Arrow connectors ---- */
+  .arrow-down {
+    width: 2px;
+    height: 22px;
+    background: #555;
+    position: relative;
+  }
+  .arrow-down::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #555;
+  }
+
+  .arrow-down.short { height: 14px; }
+  .arrow-down.tall  { height: 28px; }
+
+  /* ---- Group container (the pipeline box) ---- */
+  .group-box {
+    border: 1.8px solid #555;
+    border-radius: 10px;
+    padding: 18px 20px 16px;
+    background: #fafafa;
+    position: relative;
+    width: 100%;
+  }
+  .group-title {
+    position: absolute;
+    top: -11px;
+    left: 24px;
+    background: #fafafa;
+    padding: 0 8px;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  /* Agent grid inside the pipeline */
+  .agent-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 6px;
+  }
+  .agent-cell {
+    border: 1.4px solid #666;
+    border-radius: 5px;
+    padding: 10px 8px 8px;
+    text-align: center;
+    background: #fff;
+  }
+  .agent-cell .num {
+    font-size: 9.5px;
+    font-weight: 700;
+    color: #888;
+    margin-bottom: 3px;
+  }
+  .agent-cell .name {
+    font-size: 11px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.3;
+  }
+  .agent-cell .tech {
+    font-size: 9.5px;
+    color: #777;
+    margin-top: 2px;
+    font-style: italic;
+  }
+
+  /* Internal arrows between agent cells */
+  .agent-grid .agent-cell { position: relative; }
+
+  /* ---- Horizontal flow arrows inside grid ---- */
+  .flow-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    margin-top: 6px;
+  }
+  .flow-cell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .h-arrow {
+    width: 30px;
+    height: 2px;
+    background: #888;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .h-arrow::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 5px solid #888;
+  }
+
+  /* ---- Triage split ---- */
+  .triage-split {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 0;
+    position: relative;
+  }
+  .triage-left {
+    flex: 0 0 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .triage-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .triage-branch-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 30px;
+  }
+
+  /* ---- Confidence routing ---- */
+  .conf-row {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+  }
+  .conf-cell {
+    flex: 1;
+    max-width: 220px;
+    border: 1.4px solid #888;
+    border-radius: 5px;
+    padding: 8px 6px;
+    text-align: center;
+    background: #fff;
+  }
+  .conf-cell .tier {
+    font-size: 10px;
+    font-weight: 700;
+    color: #555;
+  }
+  .conf-cell .desc {
+    font-size: 10.5px;
+    color: #333;
+    margin-top: 2px;
+    font-weight: 500;
+  }
+
+  /* ---- Output row ---- */
+  .output-row {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+  .output-row .box { flex: 1; max-width: 340px; }
+
+  /* ---- SVG connector overlays ---- */
+  svg.connectors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  /* ---- Responsive spacer ---- */
+  .spacer { height: 6px; }
+</style>
+</head>
+<body>
+
+<div class="diagram">
+
+  <!-- Figure Title -->
+  <div class="fig-title">Figure 1: MedAgentix AI — Multi-Agent Clinical Decision Support System Architecture</div>
+
+  <!-- 1. Patient Input -->
+  <div class="box input-box" style="width:420px;">
+    <div class="label">Patient Input</div>
+    <div class="sub">Symptoms (Text / Form), Vitals, Uploaded Lab Reports</div>
+  </div>
+
+  <div class="arrow-down"></div>
+
+  <!-- 2. OCR Agent -->
+  <div class="box" style="width:380px;">
+    <div class="label">Document Intelligence Agent</div>
+    <div class="sub">PaddleOCR (PP-OCRv4) + LLM Post-Processing</div>
+  </div>
+
+  <div class="arrow-down"></div>
+
+  <!-- 3. Triage Agent -->
+  <div class="box" style="width:380px; border-color:#c53929;">
+    <div class="label">Triage Safety Gate</div>
+    <div class="sub">Deterministic Rule-Based Emergency Red-Flag Screening</div>
+  </div>
+
+  <div class="arrow-down short"></div>
+
+  <!-- Triage Split -->
+  <div style="display:flex; width:100%; align-items:flex-start; margin-bottom:2px;">
+    <!-- Left: Mild exit -->
+    <div style="flex:0 0 200px; display:flex; flex-direction:column; align-items:center; padding-top:0;">
+      <!-- horizontal branch line -->
+      <svg width="200" height="30" style="display:block;">
+        <line x1="100" y1="0" x2="100" y2="0" stroke="#888" stroke-width="1.6"/>
+        <line x1="100" y1="0" x2="0" y2="0" stroke="#888" stroke-width="1.6" stroke-dasharray="4,3"/>
+        <line x1="0" y1="0" x2="0" y2="28" stroke="#888" stroke-width="1.6" stroke-dasharray="4,3"/>
+        <polygon points="-4,24 4,24 0,30" fill="#888"/>
+      </svg>
+      <div class="box" style="width:170px; border-style:dashed; border-color:#888; background:#f9f9f9;">
+        <div class="label" style="font-size:10.5px; color:#666;">Self-Care Guidance</div>
+        <div class="sub" style="font-size:9px;">(Mild / Self-Limiting Cases)</div>
+      </div>
+    </div>
+
+    <!-- Center: Main pipeline continues -->
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center;">
+      <svg width="40" height="34" style="display:block;">
+        <line x1="20" y1="0" x2="20" y2="28" stroke="#555" stroke-width="2"/>
+        <polygon points="15,26 25,26 20,33" fill="#555"/>
+      </svg>
+
+      <!-- 4. LangGraph Pipeline Group -->
+      <div class="group-box" style="width:600px;">
+        <div class="group-title">LangGraph Multi-Agent Diagnostic Pipeline</div>
+
+        <!-- Row 1 of agents -->
+        <div class="agent-grid">
+          <div class="agent-cell">
+            <div class="num">AGENT 1</div>
+            <div class="name">Symptom Extraction</div>
+            <div class="tech">Bio_ClinicalBERT NER</div>
+          </div>
+          <div class="agent-cell">
+            <div class="num">AGENT 2</div>
+            <div class="name">Differential Diagnosis</div>
+            <div class="tech">Multi-Class XGBoost (721 Diseases)</div>
+          </div>
+          <div class="agent-cell">
+            <div class="num">AGENT 3</div>
+            <div class="name">Risk Assessment</div>
+            <div class="tech">XGBoost Classifier</div>
+          </div>
+
+          <div class="agent-cell">
+            <div class="num">AGENT 4</div>
+            <div class="name">Temporal Analysis</div>
+            <div class="tech">Duration Parser + Acuity Engine</div>
+          </div>
+          <div class="agent-cell">
+            <div class="num">AGENT 5</div>
+            <div class="name">Emergency Triage</div>
+            <div class="tech">Logistic Regression (ESI 1–3)</div>
+          </div>
+          <div class="agent-cell">
+            <div class="num">AGENT 6</div>
+            <div class="name">Prediction + XAI</div>
+            <div class="tech">Ensemble ML + SHAP / LIME</div>
+          </div>
+        </div>
+
+        <!-- Internal flow arrows overlay -->
+        <svg width="100%" height="14" style="display:block; margin-top:4px;">
+          <defs>
+            <marker id="ah" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+              <polygon points="0,0 6,3 0,6" fill="#aaa"/>
+            </marker>
+          </defs>
+          <!-- Row 1 arrows -->
+        </svg>
+      </div>
+
+      <div class="arrow-down"></div>
+
+      <!-- 5. Recommendation Agent -->
+      <div class="box" style="width:380px;">
+        <div class="label">Recommendation Engine</div>
+        <div class="sub">Clinical Knowledge Graph (5,000+ Drug Mappings, 2,000+ Diagnostic Protocols)</div>
+      </div>
+
+      <div class="arrow-down"></div>
+
+      <!-- 6. Supervisor Agent -->
+      <div class="box" style="width:420px; border-width:2px; border-color:#333;">
+        <div class="label">Supervisor Agent</div>
+        <div class="sub">Dynamic Confidence-Based Routing &amp; Multi-Agent Consensus</div>
+      </div>
+
+      <div class="arrow-down short"></div>
+
+      <!-- Confidence Routing Row -->
+      <div class="conf-row">
+        <div class="conf-cell">
+          <div class="tier">TIER 1: &gt; 85%</div>
+          <div class="desc">Direct ML Prediction</div>
+        </div>
+        <div class="conf-cell">
+          <div class="tier">TIER 2: 70–85%</div>
+          <div class="desc">Weighted Consensus Voting</div>
+        </div>
+        <div class="conf-cell">
+          <div class="tier">TIER 3: &lt; 70%</div>
+          <div class="desc">LLM Fallback + RAG Grounding</div>
+        </div>
+      </div>
+
+      <div class="arrow-down"></div>
+
+      <!-- 7. Dual Output -->
+      <div class="output-row">
+        <div class="box output-doc">
+          <div class="label">Doctor Clinical Report</div>
+          <div class="sub">ICD-10, Differentials, SHAP Plots, Pharmacotherapy</div>
+        </div>
+        <div class="box output-pat">
+          <div class="label">Patient Health Guide</div>
+          <div class="sub">Jargon-Free Summary, Self-Care, Emergency Signs</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
