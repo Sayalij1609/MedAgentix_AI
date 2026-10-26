@@ -15,6 +15,8 @@ from api.doctor_routes import doctor_bp
 from api.case_routes import case_bp
 from api.chatbot_routes import chatbot_bp
 from api.ocr_routes import ocr_bp
+from api.prediction_routes import prediction_bp
+from api.recommendation_routes import recommendation_bp
 
 # Import PostgreSQL Connector Binders
 from database.postgres.db_connection import db, init_db, verify_database_connection
@@ -79,6 +81,8 @@ def create_app(config_class=Config):
     app.register_blueprint(case_bp)
     app.register_blueprint(chatbot_bp)
     app.register_blueprint(ocr_bp)
+    app.register_blueprint(prediction_bp)
+    app.register_blueprint(recommendation_bp)
 
     # ----------------------------------------------------------
     # PRELOAD DIAGNOSTIC PIPELINE (background thread)

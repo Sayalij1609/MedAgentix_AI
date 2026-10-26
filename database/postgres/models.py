@@ -79,3 +79,62 @@ class Case(db.Model):
             "updated_at": self.updated_at.isoformat() if self.updated_at else None
         }
 
+
+class DoctorFeedback(db.Model):
+    """
+    DoctorFeedback ORM Model representing the 'doctor_feedback' table.
+    Captures physician review, validation, diagnosis overrides, rating,
+    and clinical notes for continuous model evaluation and human-in-the-loop audit.
+    """
+    __tablename__ = 'doctor_feedback'
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    case_id = db.Column(db.Integer, db.ForeignKey('cases.id', ondelete='CASCADE'), nullable=False, index=True)
+    doctor_id = db.Column(db.Integer, db.ForeignKey('users.id', ondelete='CASCADE'), nullable=False, index=True)
+
+    # Feedback on AI diagnosis
+    ai_diagnosis_correct = db.Column(db.Boolean, nullable=True)
+    corrected_diagnosis = db.Column(db.String(255), nullable=True)
+    severity_correct = db.Column(db.Boolean, nullable=True)
+    corrected_severity = db.Column(db.String(50), nullable=True)
+
+    # Feedback on recommendations
+    medications_appropriate = db.Column(db.Boolean, nullable=True)
+    medication_notes = db.Column(db.Text, nullable=True)
+    tests_appropriate = db.Column(db.Boolean, nullable=True)
+    test_notes = db.Column(db.Text, nullable=True)
+
+    # Overall review
+    overall_rating = db.Column(db.Integer, nullable=True)  # 1 to 5
+    clinical_notes = db.Column(db.Text, nullable=True)
+
+    created_at = db.Column(db.DateTime, nullable=False, default=lambda: datetime.now(timezone.utc))
+    updated_at = db.Column(db.DateTime, nullable=False, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
+
+    # Relationships
+    case = db.relationship('Case', foreign_keys=[case_id], backref=db.backref('doctor_feedbacks', lazy='dynamic', cascade='all, delete-orphan'))
+    doctor = db.relationship('User', foreign_keys=[doctor_id], backref=db.backref('feedbacks_given', lazy='dynamic'))
+
+    def __repr__(self):
+        return f"<DoctorFeedback id={self.id} case_id={self.case_id} doctor_id={self.doctor_id} correct={self.ai_diagnosis_correct}>"
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "case_id": self.case_id,
+            "doctor_id": self.doctor_id,
+            "ai_diagnosis_correct": self.ai_diagnosis_correct,
+            "corrected_diagnosis": self.corrected_diagnosis,
+            "severity_correct": self.severity_correct,
+            "corrected_severity": self.corrected_severity,
+            "medications_appropriate": self.medications_appropriate,
+            "medication_notes": self.medication_notes,
+            "tests_appropriate": self.tests_appropriate,
+            "test_notes": self.test_notes,
+            "overall_rating": self.overall_rating,
+            "clinical_notes": self.clinical_notes,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None,
+        }
+
+

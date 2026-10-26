@@ -22,6 +22,7 @@ Usage:
 
 import os
 import sys
+import threading
 import traceback
 from typing import TypedDict
 
@@ -54,6 +55,13 @@ class DiagnosticState(TypedDict, total=False):
     medical_history: list
     symptom_durations: list      # [{"symptom": ..., "duration": ...}]
 
+    # ---- Document / OCR Input & Findings ----
+    document_path: str           # Path to uploaded lab/prescription file
+    document_bytes: bytes        # Optional in-memory raw file bytes
+    document_text: str           # Raw or extracted report text
+    ocr_result: dict             # Full OCR extraction & analysis payload
+    document_findings: dict      # Structured lab abnormalities, vitals, red flags
+
     # ---- Agent Outputs ----
     symptom_result: dict
     differential_result: dict
@@ -61,6 +69,7 @@ class DiagnosticState(TypedDict, total=False):
     temporal_result: dict
     emergency_result: dict
     prediction_result: dict
+    xai_result: dict             # Unified SHAP + LIME explainability result
     recommendation_result: dict
 
     # ---- Supervisor Output ----
@@ -76,18 +85,30 @@ class DiagnosticState(TypedDict, total=False):
 # ============================================================
 _agents = {}
 _models = {}
+_loaded = False
+_load_lock = threading.Lock()
 
 
 def _load_agents():
-    """Load all agents into memory (once at startup)."""
-    global _agents, _models
+    """Load all agents into memory (once at startup, thread-safe)."""
+    global _agents, _models, _loaded
 
-    if _agents:
-        return  # Already loaded
+    with _load_lock:
+        if _loaded:
+            return  # Already fully loaded
 
     print("=" * 60)
     print("  MedAgentix AI -- Loading Diagnostic Pipeline")
     print("=" * 60)
+
+    # ---- OCR Agent (Medical Document Intelligence) ----
+    try:
+        from agents.ocr_agent import OCRAgent
+        _agents["ocr"] = OCRAgent()
+        print("  [OK] OCR Agent loaded")
+    except Exception as e:
+        print(f"  [WARN] OCR Agent failed to load: {e}")
+        _agents["ocr"] = None
 
     # ---- Symptom Agent ----
     try:
@@ -143,9 +164,32 @@ def _load_agents():
         _models["label_encoder"] = joblib.load(config.LABEL_ENCODER_PATH)
         print(f"\n  [OK] Prediction Engine loaded (VotingClassifier)")
     except Exception as e:
-        print(f"  [WARN] Prediction Engine failed to load: {e}")
+        # Fallback to trained disease_model or xgboost_model
+        try:
+            alt_m = os.path.join(config.PROJECT_ROOT, "models", "trained", "disease_model.pkl")
+            alt_le = os.path.join(config.PROJECT_ROOT, "models", "trained", "label_encoder.pkl")
+            if os.path.exists(alt_m) and os.path.exists(alt_le):
+                _models["ensemble"] = joblib.load(alt_m)
+                _models["label_encoder"] = joblib.load(alt_le)
+                print(f"\n  [OK] Prediction Engine loaded from fallback trained/disease_model.pkl")
+            else:
+                xgb_path = os.path.join(config.PROJECT_ROOT, "models", "trained", "xgboost_model.pkl")
+                _models["ensemble"] = joblib.load(xgb_path)
+                _models["label_encoder"] = joblib.load(alt_le)
+                print(f"\n  [OK] Prediction Engine loaded from fallback trained/xgboost_model.pkl")
+        except Exception as ex2:
+            print(f"  [WARN] Prediction Engine failed to load: {e} | fallback: {ex2}")
 
-    # ---- Explanation Engine (XAI SHAP Explainer) ----
+    # ---- XAI Agent (SHAP + LIME + Concordance) ----
+    try:
+        from agents.xai_agent import XAIAgent
+        _agents["xai"] = XAIAgent()
+        print("  [OK] XAI Agent loaded")
+    except Exception as e:
+        print(f"  [WARN] XAI Agent failed to load: {e}")
+        _agents["xai"] = None
+
+    # ---- Explanation Engine (XAI Portal) ----
     try:
         from xai.explanation_engine import ExplanationEngine
         _agents["explanation_engine"] = ExplanationEngine()
@@ -156,6 +200,8 @@ def _load_agents():
     # ---- Supervisor Agent ----
     from agents.orchestrator.supervisor_agent import SupervisorAgent
     _agents["supervisor"] = SupervisorAgent()
+
+    _loaded = True
 
     print(f"\n{'=' * 60}")
     print(f"  Pipeline loaded: {sum(1 for v in _agents.values() if v)} agents + "
@@ -250,6 +296,85 @@ SYMPTOM_TO_FEATURE = {
 # ============================================================
 # NODE FUNCTIONS
 # ============================================================
+def node_ocr(state: DiagnosticState) -> dict:
+    """
+    Node 1: OCR Medical Document Intelligence Agent.
+    Parses scanned medical lab reports, prescriptions, or clinical notes (images/PDFs)
+    and maps extracted biomarkers, abnormal lab ranges, vitals, and recorded conditions
+    directly into the DiagnosticState to enrich subsequent agents.
+    """
+    agent = _agents.get("ocr")
+    log = state.get("pipeline_log", [])
+    errors = state.get("errors", [])
+
+    doc_path = state.get("document_path")
+    doc_text = state.get("document_text")
+
+    # If no document is provided, pass-through cleanly
+    if not doc_path and not doc_text:
+        log.append("[1/10] OCR Agent — PASSED (no document provided)")
+        return {"ocr_result": {}, "document_findings": {}, "pipeline_log": log}
+
+    if not agent:
+        errors.append("OCR Agent not loaded — skipping document analysis")
+        log.append("[1/10] OCR Agent — SKIPPED (not loaded)")
+        return {"ocr_result": {}, "document_findings": {}, "errors": errors, "pipeline_log": log}
+
+    try:
+        if doc_path and os.path.exists(doc_path):
+            ocr_output = agent.analyze_document(doc_path)
+        elif doc_text:
+            ocr_output = agent.analyze_text(doc_text)
+        else:
+            log.append(f"[1/10] OCR Agent — File not found ({doc_path}), passing through")
+            return {"ocr_result": {}, "document_findings": {}, "pipeline_log": log}
+
+        analysis = ocr_output.get("analysis") or {}
+        state_patch = agent.map_to_diagnostic_state(analysis)
+
+        updates = {
+            "ocr_result": ocr_output,
+            "document_findings": state_patch.get("document_findings", {}),
+        }
+
+        # Demographics from document if not already set
+        if state_patch.get("patient_age") and not state.get("patient_age"):
+            updates["patient_age"] = state_patch["patient_age"]
+        if state_patch.get("patient_gender") and not state.get("patient_gender"):
+            updates["patient_gender"] = state_patch["patient_gender"]
+
+        # Vitals from document if not explicitly provided
+        for vk in ["heart_rate", "oxygen_level", "body_temperature", "blood_pressure", "blood_pressure_reading", "cholesterol"]:
+            if state_patch.get(vk) and (not state.get(vk) or state.get(vk) in (80, 98, 98.6, "Normal", "120/80", 180)):
+                updates[vk] = state_patch[vk]
+
+        # Merge recorded conditions into medical history
+        if state_patch.get("medical_history"):
+            existing_hist = list(state.get("medical_history", []))
+            for h in state_patch["medical_history"]:
+                if h not in existing_hist:
+                    existing_hist.append(h)
+            updates["medical_history"] = existing_hist
+
+        # Augment patient text narrative
+        doc_synth = state_patch.get("patient_text", "").strip()
+        curr_text = state.get("patient_text", "").strip()
+        if doc_synth:
+            updates["patient_text"] = f"{curr_text}. {doc_synth}".strip(" .")
+
+        abnormal_count = len(state_patch.get("document_findings", {}).get("abnormal_findings", []))
+        log.append(
+            f"[1/10] OCR Agent — Document ({ocr_output.get('document_type', 'report')}) processed, "
+            f"{abnormal_count} abnormal biomarkers detected"
+        )
+        updates["pipeline_log"] = log
+        return updates
+    except Exception as e:
+        errors.append(f"OCR Agent error: {str(e)}")
+        log.append(f"[1/10] OCR Agent — ERROR: {str(e)}")
+        return {"ocr_result": {}, "document_findings": {}, "errors": errors, "pipeline_log": log}
+
+
 def node_symptom(state: DiagnosticState) -> dict:
     """
     Node 1: Extract symptoms using 3-tier strategy:
@@ -367,7 +492,7 @@ def node_symptom(state: DiagnosticState) -> dict:
     }
 
     log.append(
-        f"[1/8] Symptom Agent — {result['symptom_count']} symptoms "
+        f"[2/10] Symptom Agent — {result['symptom_count']} symptoms "
         f"({ui_count} UI + {text_count} text + {nlp_count} NLP)"
     )
     return {"symptom_result": result, "pipeline_log": log, "errors": errors}
@@ -381,7 +506,7 @@ def node_differential(state: DiagnosticState) -> dict:
 
     if not agent:
         errors.append("Differential Agent not loaded — skipping")
-        log.append("[2/8] Differential Agent — SKIPPED (not loaded)")
+        log.append("[3/10] Differential Agent — SKIPPED (not loaded)")
         return {"differential_result": {}, "errors": errors, "pipeline_log": log}
 
     try:
@@ -474,13 +599,13 @@ def node_differential(state: DiagnosticState) -> dict:
 
         result = agent.diagnose(symptoms, top_k=5)
         log.append(
-            f"[2/8] Differential Agent — {len(result.get('differential_diagnoses', []))} diagnoses, "
+            f"[3/10] Differential Agent — {len(result.get('differential_diagnoses', []))} diagnoses, "
             f"primary={result.get('primary_diagnosis', 'None')}"
         )
         return {"differential_result": result, "pipeline_log": log}
     except Exception as e:
         errors.append(f"Differential Agent error: {str(e)}")
-        log.append(f"[2/8] Differential Agent — ERROR: {str(e)}")
+        log.append(f"[3/10] Differential Agent — ERROR: {str(e)}")
         return {"differential_result": {}, "errors": errors, "pipeline_log": log}
 
 
@@ -492,7 +617,7 @@ def node_risk(state: DiagnosticState) -> dict:
 
     if not agent:
         errors.append("Risk Agent not loaded — skipping")
-        log.append("[3/8] Risk Agent — SKIPPED (not loaded)")
+        log.append("[4/10] Risk Agent — SKIPPED (not loaded)")
         return {"risk_result": {}, "errors": errors, "pipeline_log": log}
 
     try:
@@ -507,13 +632,13 @@ def node_risk(state: DiagnosticState) -> dict:
 
         result = agent.assess_risk(patient_profile)
         log.append(
-            f"[3/8] Risk Agent — overall={result.get('overall_risk_level', 'N/A')}, "
+            f"[4/10] Risk Agent — overall={result.get('overall_risk_level', 'N/A')}, "
             f"{len(result.get('risk_factors_identified', []))} factors"
         )
         return {"risk_result": result, "pipeline_log": log}
     except Exception as e:
         errors.append(f"Risk Agent error: {str(e)}")
-        log.append(f"[3/8] Risk Agent — ERROR: {str(e)}")
+        log.append(f"[4/10] Risk Agent — ERROR: {str(e)}")
         return {"risk_result": {}, "errors": errors, "pipeline_log": log}
 
 
@@ -525,7 +650,7 @@ def node_temporal(state: DiagnosticState) -> dict:
 
     if not agent:
         errors.append("Temporal Agent not loaded — skipping")
-        log.append("[4/8] Temporal Agent — SKIPPED (not loaded)")
+        log.append("[5/10] Temporal Agent — SKIPPED (not loaded)")
         return {"temporal_result": {}, "errors": errors, "pipeline_log": log}
 
     try:
@@ -547,13 +672,13 @@ def node_temporal(state: DiagnosticState) -> dict:
                       "most_urgent_symptom": None}
 
         log.append(
-            f"[4/8] Temporal Agent — urgency={result.get('overall_urgency', 'N/A')}, "
+            f"[5/10] Temporal Agent — urgency={result.get('overall_urgency', 'N/A')}, "
             f"{result.get('symptom_count', 0)} symptoms analyzed"
         )
         return {"temporal_result": result, "pipeline_log": log}
     except Exception as e:
         errors.append(f"Temporal Agent error: {str(e)}")
-        log.append(f"[4/8] Temporal Agent — ERROR: {str(e)}")
+        log.append(f"[5/10] Temporal Agent — ERROR: {str(e)}")
         return {"temporal_result": {}, "errors": errors, "pipeline_log": log}
 
 
@@ -565,7 +690,7 @@ def node_emergency(state: DiagnosticState) -> dict:
 
     if not agent:
         errors.append("Emergency Agent not loaded — skipping")
-        log.append("[5/8] Emergency Agent — SKIPPED (not loaded)")
+        log.append("[6/10] Emergency Agent — SKIPPED (not loaded)")
         return {"emergency_result": {}, "errors": errors, "pipeline_log": log}
 
     try:
@@ -586,7 +711,7 @@ def node_emergency(state: DiagnosticState) -> dict:
 
         result = agent.assess(patient_data)
         log.append(
-            f"[5/8] Emergency Agent — urgency={result.get('urgency_level', 'N/A')}, "
+            f"[6/10] Emergency Agent — urgency={result.get('urgency_level', 'N/A')}, "
             f"triage={result.get('triage_level', 'N/A')}, "
             f"flags={result.get('vital_flag_count', 0)}"
         )
@@ -611,8 +736,9 @@ def node_predict(state: DiagnosticState) -> dict:
         return {"prediction_result": {}, "errors": errors, "pipeline_log": log}
 
     try:
-        # Build feature vector from state
-        features = {col: 0 for col in config.PREDICTION_FEATURE_COLUMNS}
+        # Build feature vector matching loaded model's schema
+        pred_cols = list(ensemble.feature_names_in_) if hasattr(ensemble, "feature_names_in_") else config.PREDICTION_FEATURE_COLUMNS
+        features = {col: 0 for col in pred_cols}
 
         # Demographics
         features["age"] = state.get("patient_age", 40)
@@ -632,6 +758,9 @@ def node_predict(state: DiagnosticState) -> dict:
             feature_col = SYMPTOM_TO_FEATURE.get(canonical)
             if feature_col and feature_col in features:
                 features[feature_col] = 1
+                symptom_count += 1
+            elif canonical in features:
+                features[canonical] = 1
                 symptom_count += 1
 
         features["symptom_count"] = max(symptom_count, 1)
@@ -662,7 +791,7 @@ def node_predict(state: DiagnosticState) -> dict:
         features["severity_duration_interaction"] = features["severity"] * features["duration"]
 
         # Build DataFrame
-        X = pd.DataFrame([features], columns=config.PREDICTION_FEATURE_COLUMNS)
+        X = pd.DataFrame([features], columns=pred_cols)
 
         # Predict
         probas = ensemble.predict_proba(X)[0]
@@ -695,31 +824,72 @@ def node_predict(state: DiagnosticState) -> dict:
                 
                 shap_explanation = explainer.explain_diagnosis(X, primary["disease"], plot_path)
                 result["shap_explanation"] = shap_explanation
-                log.append(f"[6/8] Prediction Engine — SHAP plot generated: {plot_filename}")
+                log.append(f"[7/10] Prediction Engine — SHAP plot generated: {plot_filename}")
             except Exception as ex:
                 print(f"  [WARN] SHAP generation failed inside predict node: {ex}")
 
         log.append(
-            f"[6/8] Prediction Engine — {primary['disease']} "
+            f"[7/10] Prediction Engine — {primary['disease']} "
             f"({primary['confidence']:.1%})"
         )
         return {"prediction_result": result, "pipeline_log": log}
     except Exception as e:
         errors.append(f"Prediction Engine error: {str(e)}")
-        log.append(f"[6/8] Prediction Engine — ERROR: {str(e)}")
+        log.append(f"[7/10] Prediction Engine — ERROR: {str(e)}")
         traceback.print_exc()
         return {"prediction_result": {}, "errors": errors, "pipeline_log": log}
 
 
+def node_xai(state: DiagnosticState) -> dict:
+    """Node 8: Explainable AI (XAI) Agent (SHAP + LIME + Concordance)."""
+    agent = _agents.get("xai")
+    log = state.get("pipeline_log", [])
+    errors = state.get("errors", [])
+
+    prediction = state.get("prediction_result", {})
+    primary_disease = prediction.get("primary_disease", "Unknown")
+
+    if not agent or primary_disease == "Unknown":
+        log.append("[8/10] XAI Agent — SKIPPED (no prediction or agent unavailable)")
+        return {"xai_result": {}, "pipeline_log": log}
+
+    try:
+        features_dict = prediction.get("features_used", {})
+        pred_model = getattr(agent.shap_explainer, "model", None)
+        pred_cols = list(pred_model.feature_names_in_) if (pred_model and hasattr(pred_model, "feature_names_in_")) else config.PREDICTION_FEATURE_COLUMNS
+        X_df = pd.DataFrame([{col: features_dict.get(col, 0) for col in pred_cols}], columns=pred_cols)
+
+        patient_info = {
+            "age": state.get("patient_age"),
+            "gender": state.get("patient_gender"),
+            "heart_rate": state.get("heart_rate"),
+            "oxygen_level": state.get("oxygen_level"),
+            "body_temperature": state.get("body_temperature"),
+            "blood_pressure": state.get("blood_pressure_reading") or state.get("blood_pressure"),
+        }
+
+        xai_res = agent.explain(X_df, primary_disease, patient_info)
+        concordance = xai_res.get("concordance_score", 0.0)
+        log.append(
+            f"[8/10] XAI Agent — Concordance={concordance}% ({xai_res.get('concordance_level', 'N/A')}), "
+            f"SHAP & LIME dual explanations generated"
+        )
+        return {"xai_result": xai_res, "pipeline_log": log}
+    except Exception as e:
+        errors.append(f"XAI Agent error: {str(e)}")
+        log.append(f"[8/10] XAI Agent — ERROR: {str(e)}")
+        return {"xai_result": {}, "errors": errors, "pipeline_log": log}
+
+
 def node_recommend(state: DiagnosticState) -> dict:
-    """Node 7: Generate treatment and medication recommendations."""
+    """Node 9: Generate treatment and medication recommendations."""
     agent = _agents.get("recommendation")
     log = state.get("pipeline_log", [])
     errors = state.get("errors", [])
 
     if not agent:
         errors.append("Recommendation Agent not loaded — skipping")
-        log.append("[7/8] Recommendation Agent — SKIPPED (not loaded)")
+        log.append("[9/10] Recommendation Agent — SKIPPED (not loaded)")
         return {"recommendation_result": {}, "errors": errors, "pipeline_log": log}
 
     try:
@@ -753,26 +923,30 @@ def node_recommend(state: DiagnosticState) -> dict:
         )
 
         log.append(
-            f"[7/8] Recommendation Agent — "
+            f"[9/10] Recommendation Agent — "
             f"{result.get('diagnostic_tests', {}).get('total', 0)} tests, "
             f"{result.get('medications', {}).get('total', 0)} meds"
         )
         return {"recommendation_result": result, "pipeline_log": log}
     except Exception as e:
         errors.append(f"Recommendation Agent error: {str(e)}")
-        log.append(f"[7/8] Recommendation Agent — ERROR: {str(e)}")
+        log.append(f"[9/10] Recommendation Agent — ERROR: {str(e)}")
         return {"recommendation_result": {}, "errors": errors, "pipeline_log": log}
 
 
 def node_supervisor(state: DiagnosticState) -> dict:
-    """Node 8: Merge all outputs into final diagnosis."""
+    """Node 10: Merge all outputs into final diagnosis."""
     agent = _agents.get("supervisor")
+    if agent is None:
+        from agents.orchestrator.supervisor_agent import SupervisorAgent
+        agent = SupervisorAgent()
+        _agents["supervisor"] = agent
     log = state.get("pipeline_log", [])
 
     final = agent.synthesize(state)
 
     log.append(
-        f"[8/8] Supervisor — {final['final_disease']} "
+        f"[10/10] Supervisor — {final['final_disease']} "
         f"({final['final_confidence']:.1%}, {final['confidence_level']})"
     )
     return {"final_diagnosis": final, "pipeline_log": log}
@@ -782,27 +956,31 @@ def node_supervisor(state: DiagnosticState) -> dict:
 # GRAPH DEFINITION
 # ============================================================
 def build_graph():
-    """Build and compile the LangGraph diagnostic pipeline."""
+    """Build and compile the 10-node LangGraph diagnostic pipeline."""
     graph = StateGraph(DiagnosticState)
 
-    # Add nodes
+    # Add 10 specialized agent nodes
+    graph.add_node("ocr", node_ocr)
     graph.add_node("symptom", node_symptom)
     graph.add_node("differential", node_differential)
     graph.add_node("risk", node_risk)
     graph.add_node("temporal", node_temporal)
     graph.add_node("emergency", node_emergency)
     graph.add_node("predict", node_predict)
+    graph.add_node("xai", node_xai)
     graph.add_node("recommend", node_recommend)
     graph.add_node("supervisor", node_supervisor)
 
-    # Define edges (sequential flow)
-    graph.add_edge(START, "symptom")
+    # Define edges (sequential multi-agent clinical flow)
+    graph.add_edge(START, "ocr")
+    graph.add_edge("ocr", "symptom")
     graph.add_edge("symptom", "differential")
     graph.add_edge("differential", "risk")
     graph.add_edge("risk", "temporal")
     graph.add_edge("temporal", "emergency")
     graph.add_edge("emergency", "predict")
-    graph.add_edge("predict", "recommend")
+    graph.add_edge("predict", "xai")
+    graph.add_edge("xai", "recommend")
     graph.add_edge("recommend", "supervisor")
     graph.add_edge("supervisor", END)
 
@@ -814,7 +992,7 @@ def build_graph():
 # ============================================================
 def run_pipeline(patient_input: dict) -> dict:
     """
-    Run the full diagnostic pipeline.
+    Run the full 10-agent diagnostic pipeline.
 
     Args:
         patient_input: dict with:
@@ -830,9 +1008,11 @@ def run_pipeline(patient_input: dict) -> dict:
             - lifestyle_factors (list, optional): risk factors
             - medical_history (list, optional): past history
             - symptom_durations (list, optional): [{"symptom": ..., "duration": ...}]
+            - document_path (str, optional): Path to scanned report/prescription PDF/image
+            - document_text (str, optional): Raw OCR or report text
 
     Returns:
-        dict with final_diagnosis and all intermediate results
+        dict with final_diagnosis, ocr_result, xai_result, and all intermediate results
     """
     # Ensure agents are loaded
     _load_agents()
@@ -851,6 +1031,12 @@ def run_pipeline(patient_input: dict) -> dict:
         "medical_history": [],
         "symptom_durations": [],
         "selected_symptoms": [],
+        "document_path": None,
+        "document_bytes": None,
+        "document_text": None,
+        "ocr_result": {},
+        "document_findings": {},
+        "xai_result": {},
         "errors": [],
         "pipeline_log": [],
     }

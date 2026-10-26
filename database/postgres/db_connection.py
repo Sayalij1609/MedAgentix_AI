@@ -38,8 +38,8 @@ def create_tables(app):
     Creates all tables from registered SQLAlchemy models if they do not exist.
     Ensure models are explicitly imported inside context to populate metadata.
     """
-    from database.postgres.models import User
-    _ = User  # Prevent unused import lint warnings in IDEs
+    from database.postgres.models import User, Case, DoctorFeedback
+    _ = (User, Case, DoctorFeedback)  # Prevent unused import lint warnings in IDEs
     with app.app_context():
         db.create_all()
 

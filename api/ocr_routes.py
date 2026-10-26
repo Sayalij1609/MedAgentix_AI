@@ -144,6 +144,99 @@ def analyze_text():
 
 
 # ---------------------------------------------------------------------------
+# POST /api/v1/ocr/upload-and-diagnose
+# Accepts: multipart/form-data with "file" OR JSON {"document_text": "..."}
+# ---------------------------------------------------------------------------
+@ocr_bp.route("/upload-and-diagnose", methods=["POST"])
+def upload_and_diagnose():
+    """
+    Upload a medical report/prescription (or pass text) and run the full
+    10-agent LangGraph diagnostic orchestration pipeline end-to-end.
+    Combines OCR document extraction with clinical symptom analysis, risk assessment,
+    predictive inference, dual SHAP+LIME XAI concordance, and treatment recommendations.
+    """
+    temp_path = None
+    try:
+        pipeline_input = {}
+
+        if "file" in request.files and request.files["file"].filename:
+            uploaded_file = request.files["file"]
+            from ocr.paddleocr_service import validate_file
+
+            file_content = uploaded_file.read()
+            uploaded_file.seek(0)
+            file_ext = validate_file(uploaded_file.filename, len(file_content))
+
+            fd, temp_path = tempfile.mkstemp(suffix=file_ext)
+            os.close(fd)
+            uploaded_file.save(temp_path)
+            pipeline_input["document_path"] = temp_path
+
+            # Form data extraction
+            form = request.form
+            if form.get("patient_text"):
+                pipeline_input["patient_text"] = form.get("patient_text")
+            if form.get("age"):
+                try: pipeline_input["patient_age"] = int(form.get("age"))
+                except ValueError: pass
+            if form.get("gender"):
+                pipeline_input["patient_gender"] = form.get("gender")
+            if form.get("heart_rate"):
+                try: pipeline_input["heart_rate"] = int(form.get("heart_rate"))
+                except ValueError: pass
+            if form.get("oxygen_level"):
+                try: pipeline_input["oxygen_level"] = int(form.get("oxygen_level"))
+                except ValueError: pass
+            if form.get("body_temperature"):
+                try: pipeline_input["body_temperature"] = float(form.get("body_temperature"))
+                except ValueError: pass
+            if form.get("blood_pressure"):
+                pipeline_input["blood_pressure"] = form.get("blood_pressure")
+        else:
+            # Check JSON
+            json_data = request.get_json(silent=True) or {}
+            doc_text = json_data.get("document_text") or json_data.get("text")
+            if not doc_text:
+                return jsonify({
+                    "success": False,
+                    "error": "No document provided. Send a file via 'file' form field or document text in 'document_text'."
+                }), 400
+
+            pipeline_input["document_text"] = doc_text
+            for k in ["patient_text", "patient_age", "patient_gender", "heart_rate", "oxygen_level", "body_temperature", "blood_pressure"]:
+                if k in json_data:
+                    pipeline_input[k] = json_data[k]
+
+        from agents.orchestrator.langgraph_workflow import run_pipeline
+        result = run_pipeline(pipeline_input)
+
+        return jsonify({
+            "success": True,
+            "document_type": result.get("ocr_result", {}).get("document_type", "medical_report"),
+            "ocr_findings": result.get("ocr_result", {}),
+            "document_findings": result.get("document_findings", {}),
+            "final_diagnosis": result.get("final_diagnosis", {}),
+            "xai_explanation": result.get("xai_result", {}),
+            "recommendations": result.get("recommendation_output", {}),
+            "differential_diagnosis": result.get("differential_output", {}),
+            "pipeline_log": result.get("pipeline_log", []),
+        }), 200
+
+    except Exception as e:
+        logger.error("Upload and diagnose pipeline error: %s", str(e), exc_info=True)
+        return jsonify({
+            "success": False,
+            "error": f"Diagnostic pipeline failed: {str(e)}"
+        }), 500
+    finally:
+        if temp_path and os.path.exists(temp_path):
+            try:
+                os.remove(temp_path)
+            except OSError:
+                pass
+
+
+# ---------------------------------------------------------------------------
 # GET /api/v1/ocr/status
 # Health check for the full OCR subsystem
 # ---------------------------------------------------------------------------

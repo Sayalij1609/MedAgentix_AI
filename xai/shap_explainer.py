@@ -208,12 +208,15 @@ class SHAPExplainer:
         self.model = joblib.load(self.model_path)
         self.label_encoder = joblib.load(self.encoder_path)
         
-        # Apply patch for multi-class XGBoost base_score
-        _apply_shap_xgboost_patch()
-
+        # Try native TreeExplainer first (modern SHAP natively supports XGBoost)
         print("  SHAP Explainer -- Initializing TreeExplainer...")
-        self.explainer = shap.TreeExplainer(self.model)
-        print("  [OK] SHAP Explainer initialized successfully")
+        try:
+            self.explainer = shap.TreeExplainer(self.model)
+            print("  [OK] SHAP Explainer initialized successfully (native)")
+        except Exception:
+            _apply_shap_xgboost_patch()
+            self.explainer = shap.TreeExplainer(self.model)
+            print("  [OK] SHAP Explainer initialized successfully (patched)")
 
     def explain(self, feature_df: pd.DataFrame, predicted_disease: str, output_path: str = None) -> dict:
         """
@@ -230,16 +233,32 @@ class SHAPExplainer:
         if feature_df.shape[0] != 1:
             raise ValueError("SHAP explanations are currently optimized for single patient samples (1 row).")
 
-        # 1. Resolve disease class index
+        # 1. Resolve disease class index (case-insensitive)
+        pred_lower = str(predicted_disease).lower().strip()
+        classes_lower = [str(c).lower().strip() for c in self.label_encoder.classes_]
         try:
-            class_idx = list(self.label_encoder.classes_).index(predicted_disease)
+            class_idx = classes_lower.index(pred_lower)
         except ValueError:
             # Fallback if disease name doesn't match label encoder
             print(f"  [WARN] Predicted disease '{predicted_disease}' not found in encoder classes. Defaulting to class index 0.")
             class_idx = 0
 
+        # Ensure feature alignment with model's expected inputs
+        if hasattr(self.model, "feature_names_in_"):
+            expected_cols = list(self.model.feature_names_in_)
+            aligned_data = {}
+            for col in expected_cols:
+                if col in feature_df.columns:
+                    aligned_data[col] = feature_df[col].iloc[0]
+                else:
+                    aligned_data[col] = 0
+            df_aligned = pd.DataFrame([aligned_data], columns=expected_cols)
+        else:
+            expected_cols = list(config.PREDICTION_FEATURE_COLUMNS)
+            df_aligned = feature_df
+
         # 2. Compute SHAP values
-        shap_values = self.explainer(feature_df)
+        shap_values = self.explainer(df_aligned)
         
         # Check SHAP shape. TreeExplainer on XGBoost multiclass returns a 3D array:
         # (num_samples, num_features, num_classes)
@@ -252,7 +271,7 @@ class SHAPExplainer:
 
         # 3. Align and map feature contributions
         contributions = []
-        for feat_name, shap_val in zip(config.PREDICTION_FEATURE_COLUMNS, class_shap_vals):
+        for feat_name, shap_val in zip(expected_cols, class_shap_vals):
             # Map raw column names to patient-friendly terms
             display_name = feat_name.replace("_", " ").title()
             

@@ -736,8 +736,16 @@ class SupervisorAgent:
             "risk_alerts": rec.get("risk_alerts", []),
             "treatment_plan": rec.get("treatment_plan", {}),
 
-            # SHAP Explanations
-            "shap_explanation": prediction.get("shap_explanation"),
+            # SHAP & LIME Explanations (Dual Doctor/Patient XAI)
+            "shap_explanation": prediction.get("shap_explanation") or state.get("xai_result", {}).get("primary_plot_path"),
+            "xai_explanation": state.get("xai_result", {}),
+            "doctor_xai": state.get("xai_result", {}).get("doctor_xai", {}),
+            "patient_xai": state.get("xai_result", {}).get("patient_xai", {}),
+            "xai_concordance": state.get("xai_result", {}).get("concordance_score"),
+
+            # Document Intelligence / OCR Findings
+            "document_findings": state.get("document_findings", {}),
+            "ocr_result": state.get("ocr_result", {}),
 
             # Symptom summary
             "symptoms_extracted": [
@@ -748,12 +756,14 @@ class SupervisorAgent:
 
             # Agent raw outputs (for transparency / debugging)
             "agent_outputs": {
+                "ocr": state.get("ocr_result", {}),
                 "symptom": state.get("symptom_result", {}),
                 "differential": state.get("differential_result", {}),
                 "risk": state.get("risk_result", {}),
                 "temporal": state.get("temporal_result", {}),
                 "emergency": state.get("emergency_result", {}),
                 "prediction": state.get("prediction_result", {}),
+                "xai": state.get("xai_result", {}),
                 "recommendation": state.get("recommendation_result", {}),
             },
 
